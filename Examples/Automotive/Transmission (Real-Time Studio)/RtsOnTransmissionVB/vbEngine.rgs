@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmissionVB.vbEngine.1 = s 'vbEngine Class'
+	{
+		CLSID = s '{B8E27D05-7F2A-4879-BCD7-D99D167EF626}'
+	}
+	RtsOnTransmissionVB.vbEngine = s 'vbEngine Class'
+	{
+		CLSID = s '{B8E27D05-7F2A-4879-BCD7-D99D167EF626}'
+		CurVer = s 'RtsOnTransmissionVB.vbEngine.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B8E27D05-7F2A-4879-BCD7-D99D167EF626} = s 'vbEngine Class'
+		{
+			ProgID = s 'RtsOnTransmissionVB.vbEngine.1'
+			VersionIndependentProgID = s 'RtsOnTransmissionVB.vbEngine'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A0FB58BE-0E08-45F6-8A4A-732A46D7FE96}'
+		}
+	}
+}

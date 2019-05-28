@@ -1,0 +1,212 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RtsOnTransmission - Win32 Unicode Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP1EA.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /I "c:\distcomponents\include" /I "c:\distcomponents\bin" /I "C:\Program Files\ARTiSAN Software Tools\ARTiSAN Real-time Studio\System\CppGen" /I ".\..\RtsOnTransmission\\" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_USRDLL" /D "_UNICODE" /D "_SIM_ARTISAN" /D "_RTSONTRANSMISSIONLIB_EXPORTS" /D "RTS_SIMULATION" /Fp"DebugU/RtsOnTransmission.pch" /Yu"stdafx.h" /Fo"DebugU/" /Fd"DebugU/" /FD /GZ /c 
+"C:\DistComponents\RtsTransmission\Car.cpp"
+"C:\DistComponents\RtsTransmission\Car1.cpp"
+"C:\DistComponents\RtsTransmission\Car2.cpp"
+"C:\DistComponents\RtsTransmission\Car3.cpp"
+"C:\DistComponents\RtsTransmission\Car5.cpp"
+"C:\DistComponents\RtsTransmission\Car_app.cpp"
+"C:\DistComponents\RtsTransmission\Car_app1.cpp"
+"C:\DistComponents\RtsTransmission\Car_app2.cpp"
+"C:\DistComponents\RtsTransmission\Car_app3.cpp"
+"C:\DistComponents\RtsTransmission\Car_app5.cpp"
+"C:\DistComponents\RtsTransmission\Chart.cpp"
+"C:\DistComponents\RtsTransmission\Clutch_Schedule.cpp"
+"C:\DistComponents\RtsOnTransmission\COnTestHarness.cpp"
+"C:\DistComponents\RtsTransmission\demo1.cpp"
+"C:\DistComponents\RtsTransmission\demo1_app.cpp"
+"C:\DistComponents\RtsTransmission\demo1_app1.cpp"
+"C:\DistComponents\RtsTransmission\Demo_ECM.cpp"
+"C:\DistComponents\RtsTransmission\Demo_ECM_app.cpp"
+"C:\DistComponents\RtsTransmission\Demo_ECMSD.cpp"
+"C:\DistComponents\RtsTransmission\Demo_ECMSD_app.cpp"
+"C:\DistComponents\RtsTransmission\demotest.cpp"
+"C:\DistComponents\RtsTransmission\demotest_app.cpp"
+"C:\DistComponents\RtsTransmission\Engine.cpp"
+"C:\DistComponents\RtsTransmission\leadVehicleSim.cpp"
+"C:\DistComponents\RtsOnTransmission\OnChart.cpp"
+"C:\DistComponents\RtsOnTransmission\RtsOnTransmission.cpp"
+"C:\DistComponents\RtsTransmission\ShiftData.cpp"
+"C:\DistComponents\RtsTransmission\SimpleCar1.cpp"
+"C:\DistComponents\RtsTransmission\SimpleCar1_app.cpp"
+"C:\DistComponents\RtsTransmission\TestHarness.cpp"
+"C:\DistComponents\RtsTransmission\Vehicle2.cpp"
+"C:\DistComponents\RtsTransmission\Vehicle5.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP1EA.tmp" 
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP1EB.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib OnUMLEso.lib IsDaeCOSolver.lib SMHarnessD.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"DebugU/RtsOnTransmission.pdb" /debug /machine:I386 /include:"_RtsStartTimers@0" /def:".\RtsOnTransmission.def" /out:".\..\bin\RtsOnTransmission.dll" /implib:".\..\bin\RtsOnTransmission.lib" /pdbtype:sept /libpath:"c:\Program Files\ARTiSAN Software Tools\ARTiSAN Real-time Studio\System\CppGen\\" /libpath:"c:\distcomponents\lib" 
+.\DebugU\Actuator.obj
+.\DebugU\ActuatorClutchConnector.obj
+.\DebugU\Band_Break.obj
+.\DebugU\BrakeActuator.obj
+.\DebugU\BrakeDlg.obj
+.\DebugU\Brakes.obj
+.\DebugU\Car.obj
+.\DebugU\Car1.obj
+.\DebugU\Car2.obj
+.\DebugU\Car3.obj
+.\DebugU\Car5.obj
+.\DebugU\Car_app.obj
+.\DebugU\Car_app1.obj
+.\DebugU\Car_app2.obj
+.\DebugU\Car_app3.obj
+.\DebugU\Car_app5.obj
+.\DebugU\CDamper.obj
+.\DebugU\CFrame.obj
+.\DebugU\Chart.obj
+.\DebugU\ChartDlg.obj
+.\DebugU\Clutch.obj
+.\DebugU\Clutch_Schedule.obj
+.\DebugU\ClutchBase.obj
+.\DebugU\CMass.obj
+.\DebugU\COnTestHarness.obj
+.\DebugU\Controller.obj
+.\DebugU\CSpring.obj
+.\DebugU\demo1.obj
+.\DebugU\demo1_app.obj
+.\DebugU\demo1_app1.obj
+.\DebugU\Demo_ECM.obj
+.\DebugU\Demo_ECM_app.obj
+.\DebugU\Demo_ECMSD.obj
+.\DebugU\Demo_ECMSD_app.obj
+.\DebugU\demotest.obj
+.\DebugU\demotest_app.obj
+.\DebugU\Engine.obj
+.\DebugU\Gear.obj
+.\DebugU\GearInfo.obj
+.\DebugU\leadVehicleSim.obj
+.\DebugU\LookupTable.obj
+.\DebugU\OnChart.obj
+.\DebugU\Oneway_Clutch.obj
+.\DebugU\PlanetaryCoupler.obj
+.\DebugU\Ravigneaux.obj
+.\DebugU\RigidConnector.obj
+.\DebugU\RtsFactory.obj
+.\DebugU\RtsOnTransmission.obj
+.\DebugU\ShiftData.obj
+.\DebugU\ShiftDlg.obj
+.\DebugU\ShiftLever.obj
+.\DebugU\SimpleCar1.obj
+.\DebugU\SimpleCar1_app.obj
+.\DebugU\SimpleController.obj
+.\DebugU\simpleGearbox.obj
+.\DebugU\StdAfx.obj
+.\DebugU\TestHarness.obj
+.\DebugU\Throttle.obj
+.\DebugU\ThrottleDlg.obj
+.\DebugU\Torque_Converter.obj
+.\DebugU\Vehicle.obj
+.\DebugU\Vehicle2.obj
+.\DebugU\Vehicle5.obj
+.\DebugU\RtsOnTransmission.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP1EB.tmp"
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP1EC.bat" with contents
+[
+@echo off
+if "%OS%"=="" goto NOTNT
+if not "%OS%"=="Windows_NT" goto NOTNT
+regsvr32 /s /c "\DistComponents\bin\RtsOnTransmission.dll"
+echo regsvr32 exec. time > ".\DebugU\regsvr32.trg"
+goto end
+:NOTNT
+echo Warning : Cannot register Unicode DLL on Windows 95
+:end
+]
+Creating command line "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP1EC.bat"
+Compiling...
+Car.cpp
+Generating Code...
+[Compiling with ARTiSAN RtS simulation support]
+Compiling...
+Car1.cpp
+Car2.cpp
+[Compiling with ARTiSAN RtS simulation support]
+Car3.cpp
+[Compiling with ARTiSAN RtS simulation support]
+Car5.cpp
+[Compiling with ARTiSAN RtS simulation support]
+Car_app.cpp
+[Compiling with ARTiSAN RtS simulation support]
+Car_app1.cpp
+[Compiling with ARTiSAN RtS simulation support]
+Car_app2.cpp
+[Compiling with ARTiSAN RtS simulation support]
+Car_app3.cpp
+[Compiling with ARTiSAN RtS simulation support]
+Car_app5.cpp
+[Compiling with ARTiSAN RtS simulation support]
+Chart.cpp
+[Compiling with ARTiSAN RtS simulation support]
+c:\distcomponents\rtsontransmission\chartdlg.h(65) : warning C4251: 'm_pChart' : class 'ATL::CComPtr<struct ITChart>' needs to have dll-interface to be used by clients of class 'CChartDlg'
+c:\distcomponents\rtsontransmission\chartdlg.h(66) : warning C4251: 'm_wnd' : class 'ATL::CAxWindowT<class ATL::CWindow>' needs to have dll-interface to be used by clients of class 'CChartDlg'
+Clutch_Schedule.cpp
+COnTestHarness.cpp
+demo1.cpp
+[Compiling with ARTiSAN RtS simulation support]
+demo1_app.cpp
+[Compiling with ARTiSAN RtS simulation support]
+demo1_app1.cpp
+[Compiling with ARTiSAN RtS simulation support]
+Demo_ECM.cpp
+[Compiling with ARTiSAN RtS simulation support]
+Demo_ECM_app.cpp
+[Compiling with ARTiSAN RtS simulation support]
+Demo_ECMSD.cpp
+[Compiling with ARTiSAN RtS simulation support]
+Demo_ECMSD_app.cpp
+[Compiling with ARTiSAN RtS simulation support]
+demotest.cpp
+Generating Code...
+[Compiling with ARTiSAN RtS simulation support]
+Compiling...
+demotest_app.cpp
+Engine.cpp
+[Compiling with ARTiSAN RtS simulation support]
+[Compiling with ARTiSAN RtS simulation support]
+C:\DistComponents\RtsTransmission\Engine.cpp(941) : warning C4101: 'StopString' : unreferenced local variable
+leadVehicleSim.cpp
+OnChart.cpp
+c:\distcomponents\rtsontransmission\chartdlg.h(65) : warning C4251: 'm_pChart' : class 'ATL::CComPtr<struct ITChart>' needs to have dll-interface to be used by clients of class 'CChartDlg'
+c:\distcomponents\rtsontransmission\chartdlg.h(66) : warning C4251: 'm_wnd' : class 'ATL::CAxWindowT<class ATL::CWindow>' needs to have dll-interface to be used by clients of class 'CChartDlg'
+RtsOnTransmission.cpp
+ShiftData.cpp
+SimpleCar1.cpp
+SimpleCar1_app.cpp
+[Compiling with ARTiSAN RtS simulation support]
+Vehicle2.cpp
+[Compiling with ARTiSAN RtS simulation support]
+[Compiling with ARTiSAN RtS simulation support]
+C:\DistComponents\RtsTransmission\Vehicle2.cpp(539) : warning C4101: 'StopString' : unreferenced local variable
+Vehicle5.cpp
+Generating Code...
+[Compiling with ARTiSAN RtS simulation support]
+Compiling...
+TestHarness.cpp
+Generating Code...
+[Compiling with ARTiSAN RtS simulation support]
+Linking...
+   Creating library .\..\bin\RtsOnTransmission.lib and object .\..\bin\RtsOnTransmission.exp
+<h3>Output Window</h3>
+Performing registration
+Bad command or file name
+Syntax error
+
+
+
+<h3>Results</h3>
+RtsOnTransmission.dll - 0 error(s), 6 warning(s)
+</pre>
+</body>
+</html>

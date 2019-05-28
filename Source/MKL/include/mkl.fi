@@ -1,0 +1,14 @@
+!!
+!!               INTEL CORPORATION PROPRIETARY INFORMATION
+!!  This software is supplied under the terms of a license agreement or
+!!  nondisclosure agreement with Intel Corporation and may not be copied
+!!  or disclosed except in accordance with the terms of that agreement.
+!!    Copyright (c) 1999, 2000 Intel Corporation. All Rights Reserved.
+!!
+!! File    : mkl.fi
+!! Purpose : MKL interface
+!! Author  : Shemyakin Andrey
+!!
+      include 'mkl_blas.fi'
+      include 'mkl_lapack.fi'
+      include 'vml.fi'

@@ -1,0 +1,102 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ ISubsystem 
+	- _id = GUID 70568de5-1c0f-4101-8f97-8cb6555a93e2;
+	- _myState = 8192;
+	- _name = "Requirement";
+	- _lastID = 4;
+	- Declaratives = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IUCDiagram 
+			- fileName = "ShiftLogic";
+			- _id = GUID 9f33a6b5-e553-48a5-8f9b-d90b42b9d5c5;
+		}
+	}
+	- weakCGTime = 6.4.2003::18:13:51;
+	- strongCGTime = 6.4.2003::8:44:9;
+	- _defaultComposite = GUID a0fb2a39-a60c-43f5-a6a1-66cec3564cf3;
+	- _eventsBaseID = 25601;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID a0fb2a39-a60c-43f5-a6a1-66cec3564cf3;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 12.31.1969::19:0:0;
+			- strongCGTime = 12.31.1969::19:0:0;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- Events = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Types = { IRPYRawContainer 
+		- size = 0;
+	}
+	- UseCases = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Actors = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IActor 
+			- _id = GUID 57c487ef-e637-4a31-b3d9-bda1f83879ad;
+			- _myState = 10240;
+			- _name = "actor_3";
+			- weakCGTime = 6.4.2003::9:2:39;
+			- strongCGTime = 6.4.2003::9:2:39;
+			- _multiplicity = "";
+			- _hotLink = "ShiftLogic";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 12.31.1969::19:0:0;
+}
+

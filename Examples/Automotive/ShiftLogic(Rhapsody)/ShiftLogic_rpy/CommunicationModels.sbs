@@ -1,0 +1,254 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ ISubsystem 
+	- _id = GUID 05abca3b-161d-4038-9ed0-876f234e72c8;
+	- _myState = 8192;
+	- _name = "CommunicationModels";
+	- weakCGTime = 7.28.2002::16:36:13;
+	- strongCGTime = 6.7.2002::16:9:17;
+	- _defaultComposite = GUID 6d2f4eac-062d-4ae5-861a-695e40c34624;
+	- _eventsBaseID = 2601;
+	- Classes = { IRPYRawContainer 
+		- size = 3;
+		- value = 
+		{ IClass 
+			- _id = GUID 6d2f4eac-062d-4ae5-861a-695e40c34624;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 7.28.2002::16:36:13;
+			- strongCGTime = 6.7.2002::16:9:17;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID ec17b6b2-ad21-407a-9dbf-7f9a8cae813d;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 2;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "Simulation";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 5;
+									- value = 
+									{ IProperty 
+										- _Name = "AttributeOrder";
+										- _Value = "";
+										- _Type = MultiLine;
+									}
+									{ IProperty 
+										- _Name = "OnCg";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "OperationOrder";
+										- _Value = "";
+										- _Type = MultiLine;
+									}
+									{ IProperty 
+										- _Name = "SimType";
+										- _Value = "NonSimulation";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Undefined,Model,AbstractModel,Connector,Structure,NonSimulation";
+									}
+									{ IProperty 
+										- _Name = "StateOrder";
+										- _Value = "";
+										- _Type = MultiLine;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "COnDataCollector";
+			- weakCGTime = 7.28.2002::16:36:13;
+			- strongCGTime = 7.28.2002::16:36:13;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 6a1de7d4-860a-482d-97e3-53a26f610951;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 2;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "Simulation";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 5;
+									- value = 
+									{ IProperty 
+										- _Name = "AttributeOrder";
+										- _Value = "";
+										- _Type = MultiLine;
+									}
+									{ IProperty 
+										- _Name = "OnCg";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "OperationOrder";
+										- _Value = "";
+										- _Type = MultiLine;
+									}
+									{ IProperty 
+										- _Name = "SimType";
+										- _Value = "NonSimulation";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Undefined,Model,AbstractModel,Connector,Structure,NonSimulation";
+									}
+									{ IProperty 
+										- _Name = "StateOrder";
+										- _Value = "";
+										- _Type = MultiLine;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "COnListener";
+			- weakCGTime = 7.28.2002::16:36:23;
+			- strongCGTime = 7.28.2002::16:36:23;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- Events = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Types = { IRPYRawContainer 
+		- size = 0;
+	}
+	- UseCases = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Actors = { IRPYRawContainer 
+		- size = 0;
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+

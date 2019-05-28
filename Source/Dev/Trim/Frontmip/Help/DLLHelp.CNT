@@ -1,0 +1,160 @@
+:Base DLLHelp.hlp
+1 Introduction
+2 Introduction=Introduction
+2 The Solver Dynamic Link Libraries=The_Solver_Dynamic_Link_Libraries
+2 The Small-Scale Solver DLL=The_Small_Scale_Solver_DLL
+2 The Large-Scale Solver DLL=The_Large_Scale_Solver_DLL
+2 Which Solver DLL Should You Use?
+3 Which Solver DLL Should You Use?=Which_Solver_DLL_Should_You_Use_
+3 Linear Solver=Linear_Solver
+3 Quadratic Solver=Quadratic_Solver
+3 Nonlinear Solver=Nonlinear_Solver
+3 Nonsmooth (Evolutionary) Solver=Nonsmooth_Evolutionary_Solver
+3 Solving Mixed-Integer Problems=Solving_Mixed_Integer_Problems
+3 16-Bit Versus 32-Bit Versions=16_Bit_Versus_32_Bit_Versions
+2 What's New in Version 3.5
+3 What's New in Version 3.5=What_s_New_in_Version_3_5
+3 Evolutionary Solver=Evolutionary_Solver
+3 Multi-Threaded Applications=Multi_Threaded_Applications
+3 Use-Based Licensing=Use_Based_Licensing
+3 Problems in Algebraic Notation=Problems_in_Algebraic_Notation_1
+2 How to Use This Guide
+3 How to Use This Guide=How_to_Use_This_Guide
+1 Installation
+2 Installation=Installation
+2 Running the Installation Program=Running_the_Installation_Program
+2 Copying Disk Files Manually=Copying_Disk_Files_Manually
+2 Directory Paths=Directory_Paths
+2 Licensing the Solver DLL=Licensing_the_Solver_DLL
+2 Registry Entries for Use-Based Licensing=Registry_Entries_for_Use_Based_Licensing
+1 Designing Your Application
+2 Designing Your Application=Designing_Your_Application
+2 Calling the Solver DLL=Calling_the_Solver_DLL
+2 Solving Linear and Quadratic Problems=Solving_Linear_and_Quadratic_Problems
+2 Solving Nonlinear Problems=Solving_Nonlinear_Problems
+2 Solving Nonsmooth Problems=Solving_Nonsmooth_Problems
+2 Genetic and Evolutionary Algorithms=Genetic_and_Evolutionary_Algorithms
+2 Problems in Algebraic Notation=Problems_in_Algebraic_Notation
+2 Using Other Solver DLL Routines=Using_Other_Solver_DLL_Routines
+2 Determining Linearity Automatically=Determining_Linearity_Automatically
+2 Supplying a Jacobian Matrix=Supplying_a_Jacobian_Matrix
+2 Diagnosing Infeasible Problems=Diagnosing_Infeasible_Problems
+2 Solution Properties of Quadratic Problems=Solution_Properties_of_Quadratic_Problems
+2 Passing Dense and Sparse Array Arguments=Passing_Dense_and_Sparse_Array_Arguments
+2 Arrays and Callback Functions in Visual Basic=Arrays_and_Callback_Functions_in_Visual_Basic
+2 Using the Solver DLL in Multi-Threaded Applications=Using_the_Solver_DLL_in_Multi_Threaded_Applications
+2 Use-Based Licensing=Use_Based_Licensing_1
+1 Calling the Solver DLL from C/C++
+2 Calling the Solver DLL from C/C++=Calling_the_Solver_DLL_from_C_C_
+2 C/C++ Compilers=C_C_Compilers
+2 Basic Steps=Basic_Steps
+2 Building a 32-Bit C/C++ Program=Building_a_32_Bit_C_C_Program
+2 Building a 16-Bit C/C++ Program=Building_a_16_Bit_C_C_Program
+2 C/C++ Source Code: Linear / Quadratic Problems=C_C_Source_Code_Linear_Quadratic_Problems
+2 C/C++ Source Code: Nonlinear / Nonsmooth Problems=C_C_Source_Code_Nonlinear_Nonsmooth_Problems
+2 Solver Memory Usage
+3 Solver Memory Usage=Solver_Memory_Usage
+3 Lifetime of Solver Arguments=Lifetime_of_Solver_Arguments
+3 Solving Multiple Problems Sequentially=Solving_Multiple_Problems_Sequentially
+3 Solving Multiple Problems Concurrently=Solving_Multiple_Problems_Concurrently
+1 Special Considerations for Windows 3.x
+2 Special Considerations for Windows 3.x=Special_Considerations_for_Windows_3_x
+2 Far and Huge Pointers
+3 Far and Huge Pointers=Far_and_Huge_Pointers
+3 Far Pointers=Far_Pointers
+3 Huge Pointers=Huge_Pointers
+2 Callback Functions
+3 Callback Functions=Callback_Functions
+3 MakeProcInstance=MakeProcInstance
+3 Using Callback Functions=Using_Callback_Functions
+3 Non-Preemptive Multitasking=Non_Preemptive_Multitasking
+1 Native Windows Applications
+2 Native Windows Applications=Native_Windows_Applications
+2 A Single-Threaded Application=A_Single_Threaded_Application
+2 A Multi-Threaded Application=A_Multi_Threaded_Application
+1 Calling the Solver DLL from Visual Basic
+2 Calling the Solver DLL from Visual Basic=Calling_the_Solver_DLL_from_Visual_Basic
+2 Basic Steps=Basic_Steps_1
+2 Passing Array Arguments=Passing_Array_Arguments
+2 Building a 32-Bit Visual Basic Program=Building_a_32_Bit_Visual_Basic_Program
+2 Building a 16-Bit Visual Basic Program=Building_a_16_Bit_Visual_Basic_Program
+2 Visual Basic Source Code: Linear / Quadratic Problems=Visual_Basic_Source_Code_Linear_Quadratic_Problems
+2 Visual Basic Source Code: Nonlinear / Nonsmooth Problems=Visual_Basic_Source_Code_Nonlinear_Nonsmooth_Problems
+2 Limitations of 16-Bit Visual Basic
+3 Limitations of 16-Bit Visual Basic=Limitations_of_16_Bit_Visual_Basic
+3 Callback Functions=Callback_Functions_1
+3 Array Size Limitations=Array_Size_Limitations
+1 Calling the Solver DLL from Delphi Pascal
+2 Calling the Solver DLL from Delphi Pascal=Calling_the_Solver_DLL_from_Delphi_Pascal
+2 Basic Steps=Basic_Steps_2
+2 Passing Array and Function Arguments=Passing_Array_and_Function_Arguments
+2 Building a 32-Bit Delphi Pascal Program=Building_a_32_Bit_Delphi_Pascal_Program
+2 Building a 16-Bit Delphi Pascal Program=Building_a_16_Bit_Delphi_Pascal_Program
+2 Delphi Pascal Example Source Code=Delphi_Pascal_Example_Source_Code
+1 Calling the Solver DLL from FORTRAN
+2 Calling the Solver DLL from FORTRAN=Calling_the_Solver_DLL_from_FORTRAN
+2 FORTRAN Compilers=FORTRAN_Compilers
+2 Basic Steps=Basic_Steps_3
+2 Building a 32-Bit FORTRAN Program=Building_a_32_Bit_FORTRAN_Program
+2 Building a 16-Bit FORTRAN Program=Building_a_16_Bit_FORTRAN_Program
+2 FORTRAN Example Source Code=FORTRAN_Example_Source_Code
+1 Solver API Reference
+2 Solver API Reference=Solver_API_Reference
+2 Overview
+3 Overview=Overview
+3 Argument Types=Argument_Types
+3 NULL Values for Arrays=NULL_Values_for_Arrays
+2 Problem Definition Routines
+3 Problem Definition Routines=Problem_Definition_Routines
+3 loadlp=loadlp
+3 loadquad=loadquad
+3 loadctype=loadctype
+3 loadnlp=loadnlp
+3 loadnltype=loadnltype
+3 testnltype=testnltype
+3 unloadprob=unloadprob
+2 Solution Routines
+3 Solution Routines=Solution_Routines
+3 optimize=optimize
+3 mipoptimize=mipoptimize
+3 solution=solution
+3 objsa=objsa
+3 rhssa=rhssa
+3 varstat=varstat
+3 constat=constat
+2 Diagnostic Routines
+3 Diagnostic Routines=Diagnostic_Routines
+3 findiis=findiis
+3 getiis=getiis
+3 iiswrite=iiswrite
+3 lpwrite=lpwrite
+3 lpread=lpread
+2 Use Control Routines
+3 Use Control Routines=Use_Control_Routines
+3 getuse=getuse
+3 reportuse=reportuse
+3 getproblimits=getproblimits
+2 Callback Routines for Nonlinear Problems
+3 Callback Routines for Nonlinear Problems=Callback_Routines_for_Nonlinear_Problems
+3 funceval=funceval
+3 jacobian=jacobian
+2 Other Callback Routines
+3 Other Callback Routines=Other_Callback_Routines
+3 setlpcallbackfunc=setlpcallbackfunc
+3 getlpcallbackfunc=getlpcallbackfunc
+3 setmipcallbackfunc=setmipcallbackfunc
+3 getmipcallbackfunc=getmipcallbackfunc
+3 getcallbackinfo=getcallbackinfo
+2 Solver Parameters
+3 Solver Parameters=Solver_Parameters
+3 Integer Parameters (General)=Integer_Parameters_General_
+3 Integer Parameters (Solver Engines)=Integer_Parameters_Solver_Engines_
+3 Integer Parameters (Mixed-Integer Problems)=Integer_Parameters_Mixed_Integer_Problems_
+3 Double Parameters=Double_Parameters
+3 setintparam=setintparam
+3 getintparam=getintparam
+3 infointparam=infointparam
+3 setdblparam=setdblparam
+3 getdblparam=getdblparam
+3 infodblparam=infodblparam
+3 setdefaults=setdefaults

@@ -1,0 +1,20 @@
+http://www1.uts.com/units/
+
+Mass Moment of Inertia
+to kg*m^2
+from:
+
+slug*m^2		14.593900
+lbf*ft^2			  0.042140
+lbf*in^2			  0.000293
+
+Torque
+to N*m
+from:
+
+lbf*ft			  1.355818
+lbf*in			  0.112985
+
+
+
+

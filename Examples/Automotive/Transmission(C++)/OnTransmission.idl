@@ -1,0 +1,61 @@
+// OnTransmission.idl : IDL source for OnTransmission.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (OnTransmission.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "$(ONIROOT)\IsDaeCOSolver\IsDaeCOSolver.idl";
+
+	[
+		object,
+		uuid(C632D18B-80C1-49A2-A8E4-86762B654A13),
+		dual,
+		helpstring("IOnTransModelFactory Interface"),
+		pointer_default(unique)
+	]
+	interface IOnTransModelFactory : IDispatch
+	{
+		[id(1), helpstring("method CreateModel")] HRESULT CreateModel([in] BSTR Name, [in, out] IDispatch** pModel);
+	};
+	
+	[
+		object,
+		uuid(0B55BCFE-DD2D-46E0-A624-3CAA4F1D40BC),
+		dual,
+		helpstring("ICBroadcastTest Interface"),
+		pointer_default(unique)
+	]
+	interface ICBroadcastTest : IDispatch
+	{
+		[id(1), helpstring("method RunTest")] HRESULT RunTest();
+	};
+
+[
+	uuid(FB938A98-05B5-48AE-A8C0-07AAA6FCF88B),
+	version(1.0),
+	helpstring("OnTransmission 1.0 Type Library")
+]
+library ONTRANSMISSIONLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(881EE912-657D-4CFA-B927-C64581CDE66F),
+		helpstring("OnTransModelFactory Class")
+	]
+	coclass OnTransModelFactory
+	{
+		[default] interface IOnTransModelFactory;
+	};
+	[
+		uuid(67532C3D-F849-4AC7-A1A1-067F3E90CB67),
+		helpstring("CBroadcastTest Class")
+	]
+	coclass CBroadcastTest
+	{
+		[default] interface ICBroadcastTest;
+	};
+};

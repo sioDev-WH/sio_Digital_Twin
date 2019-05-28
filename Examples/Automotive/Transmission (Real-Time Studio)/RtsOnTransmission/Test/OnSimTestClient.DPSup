@@ -1,0 +1,34 @@
+<Suppress Comment="Version 7.01.04">
+	<ErrType Category=5 >
+		<Module Name="OnUMLEso.DLL" >
+			<File Name="OnUMLDaeEsoBase.cpp" >
+				<Function Name="public: long __thiscall COnUMLDaeEsoBase::GetAssociationBlocks(long &,long * &,long * &,class COnUMLDaeEsoBase * * &)" >
+				</Function>
+			</File>
+		</Module>
+	</ErrType>
+	<ErrType Category=31 >
+		<Module Name="RtsOnTransmission.dll" >
+			<File Name="ActuatorClutchConnector.cpp" >
+				<Function Name="public: virtual long __thiscall ActuatorClutchConnector::GetDiffJacobianValues(long *,long,double,double *)" >
+				</Function>
+				<Function Name="public: virtual long __thiscall ActuatorClutchConnector::GetJacobianValues(long *,long,double,double *)" >
+				</Function>
+			</File>
+			<File Name="RigidConnector.cpp" >
+				<Function Name="public: virtual long __thiscall CRigidConnector::GetDiffJacobianValues(long *,long,double,double *)" >
+				</Function>
+				<Function Name="public: virtual long __thiscall CRigidConnector::GetJacobianValues(long *,long,double,double *)" >
+				</Function>
+			</File>
+		</Module>
+	</ErrType>
+	<ErrType Category=37 >
+		<Module Name="ISDaeCOSolver.DLL" >
+			<File Name="onmapbstr.cpp" >
+				<Function Name="protected: struct COnMapBSTR::CAssoc * __thiscall COnMapBSTR::NewAssoc(void)" >
+				</Function>
+			</File>
+		</Module>
+	</ErrType>
+</Suppress>

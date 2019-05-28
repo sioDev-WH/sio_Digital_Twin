@@ -1,0 +1,19 @@
+      INTERFACE
+	INTEGER*4 FUNCTION getcallbackinfo[STDCALL] (lpinfo, wherefrom,
+     +  infonumber, result_p)
+	INTEGER*4 lpinfo[VALUE], wherefrom[VALUE], infonumber[VALUE]
+	INTEGER*4 result_p[REFERENCE]
+      END
+	END INTERFACE
+
+      INTEGER*4 CBINFO_PRIMAL_OBJ, CBINFO_PRIMAL_INFMEAS,
+     +  CBINFO_PRIMAL_FEAS, CBINFO_ITCOUNT, CBINFO_BEST_INTEGER,
+     +  CBINFO_NODE_COUNT, CBINFO_MIP_ITERATIONS
+	PARAMETER (
+     +  CBINFO_PRIMAL_OBJ     = 1,
+     +  CBINFO_PRIMAL_INFMEAS = 3,
+     +  CBINFO_PRIMAL_FEAS    = 5,
+     +  CBINFO_ITCOUNT        = 7,
+     +  CBINFO_BEST_INTEGER   = 8,
+     +  CBINFO_NODE_COUNT     = 10,
+     +  CBINFO_MIP_ITERATIONS = 12)

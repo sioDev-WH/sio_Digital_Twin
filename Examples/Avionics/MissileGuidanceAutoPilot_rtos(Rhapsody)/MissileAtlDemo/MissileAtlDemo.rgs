@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{5B8D6598-E4A1-4731-8EB0-909B9D8B2EDB} = s 'MissileAtlDemo'
+		'MissileAtlDemo.EXE'
+		{
+			val AppID = s {5B8D6598-E4A1-4731-8EB0-909B9D8B2EDB}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+[Events]
+Controller[0]->GEN(shift())`Controller
+Controller[0]->GEN(upshift())`TransmissionControlModels::Controller
+Controller[0]->GEN(manualForwardShift())`TransmissionControlModels::Controller
+[Active Breakpoints]
+[Inactive Breakpoints]

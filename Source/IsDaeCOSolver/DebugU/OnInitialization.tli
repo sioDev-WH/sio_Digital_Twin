@@ -1,0 +1,693 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8964.0 (10432564).
+//
+// c:\distcomponents\isdaecosolver\debugu\OnInitialization.tli
+//
+// Wrapper implementations for Win32 type library OnInitialization.ocx
+// compiler-generated file created 05/31/03 at 17:21:48 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface _ctlInitialization wrapper method implementations
+//
+
+inline HRESULT _ctlInitialization::init ( struct _OnScriptParser * * sp, struct _clsVarManager * * vm ) {
+    HRESULT _hr = raw_init(sp, vm);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _ctlInitialization::Destroy ( ) {
+    HRESULT _hr = raw_Destroy();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _ctlInitialization::OnApply ( ) {
+    HRESULT _hr = raw_OnApply();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL _ctlInitialization::IsMsgWindowVisible ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_IsMsgWindowVisible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT _ctlInitialization::ShowMessageWindow ( ) {
+    HRESULT _hr = raw_ShowMessageWindow();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _ctlInitialization::SizeStatusBar ( long * Y ) {
+    HRESULT _hr = raw_SizeStatusBar(Y);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _clsVar wrapper method implementations
+//
+
+inline _bstr_t _clsVar::GetlongName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_longName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsVar::PutlongName ( _bstr_t longName ) {
+    HRESULT _hr = put_longName(longName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsVar::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsVar::PutName ( _bstr_t Name ) {
+    HRESULT _hr = put_Name(Name);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL _clsVar::GetForce ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_Force(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsVar::PutForce ( VARIANT_BOOL Force ) {
+    HRESULT _hr = put_Force(Force);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL _clsVar::GetDerForce ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_DerForce(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsVar::PutDerForce ( VARIANT_BOOL DerForce ) {
+    HRESULT _hr = put_DerForce(DerForce);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsVar::GetActiveIdx ( ) {
+    long _result;
+    HRESULT _hr = get_ActiveIdx(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsVar::PutActiveIdx ( long ActiveIdx ) {
+    HRESULT _hr = put_ActiveIdx(ActiveIdx);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _clsVar::GetGlobalIdx ( ) {
+    long _result;
+    HRESULT _hr = get_GlobalIdx(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsVar::PutGlobalIdx ( long GlobalIdx ) {
+    HRESULT _hr = put_GlobalIdx(GlobalIdx);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL _clsVar::GetGenEv ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_GenEv(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsVar::PutGenEv ( VARIANT_BOOL GenEv ) {
+    HRESULT _hr = put_GenEv(GenEv);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL _clsVar::GetRoot ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_Root(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsVar::PutRoot ( VARIANT_BOOL Root ) {
+    HRESULT _hr = put_Root(Root);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _clsVarManagerPtr _clsVar::Getm_vm ( ) {
+    struct _clsVarManager * _result;
+    HRESULT _hr = get_m_vm(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _clsVarManagerPtr(_result, false);
+}
+
+inline void _clsVar::PutRefm_vm ( struct _clsVarManager * m_vm ) {
+    HRESULT _hr = putref_m_vm(m_vm);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT _clsVar::init ( BSTR * itsName, BSTR * itsLongName, VARIANT_BOOL * IsRoot, long * ActiveId, long * GlobalId, double * v, double * dv, struct _clsVarManager * * vm ) {
+    HRESULT _hr = raw_init(itsName, itsLongName, IsRoot, ActiveId, GlobalId, v, dv, vm);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline double _clsVar::GetValue ( ) {
+    double _result;
+    HRESULT _hr = get_Value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsVar::PutValue ( double * _arg1 ) {
+    HRESULT _hr = put_Value(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double _clsVar::Getder ( long * derIdx ) {
+    double _result;
+    HRESULT _hr = get_der(derIdx, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsVar::Putder ( long * derIdx, double * _arg2 ) {
+    HRESULT _hr = put_der(derIdx, _arg2);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT _clsVar::Destroy ( ) {
+    HRESULT _hr = raw_Destroy();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _clsCVar wrapper method implementations
+//
+
+inline _bstr_t _clsCVar::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsCVar::PutName ( _bstr_t Name ) {
+    HRESULT _hr = put_Name(Name);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _clsCVar::GetlongName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_longName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _clsCVar::PutlongName ( _bstr_t longName ) {
+    HRESULT _hr = put_longName(longName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL _clsCVar::GetRoot ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_Root(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _clsCVar::PutRoot ( VARIANT_BOOL Root ) {
+    HRESULT _hr = put_Root(Root);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _clsVarManagerPtr _clsCVar::Getm_vm ( ) {
+    struct _clsVarManager * _result;
+    HRESULT _hr = get_m_vm(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _clsVarManagerPtr(_result, false);
+}
+
+inline void _clsCVar::PutRefm_vm ( struct _clsVarManager * m_vm ) {
+    HRESULT _hr = putref_m_vm(m_vm);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT _clsCVar::init ( BSTR * itsName, BSTR * itsLongName, VARIANT_BOOL * IsRoot, struct _clsVarManager * * vm ) {
+    HRESULT _hr = raw_init(itsName, itsLongName, IsRoot, vm);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsCVar::Add ( BSTR * itemKey, IDispatch * * newItem ) {
+    HRESULT _hr = raw_Add(itemKey, newItem);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsCVar::removeAll ( ) {
+    HRESULT _hr = raw_removeAll();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsCVar::remove ( VARIANT * itemKey ) {
+    HRESULT _hr = raw_remove(itemKey);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDispatchPtr _clsCVar::GetItem ( VARIANT * itemKey ) {
+    IDispatch * _result;
+    HRESULT _hr = get_Item(itemKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline long _clsCVar::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT _clsCVar::Destroy ( ) {
+    HRESULT _hr = raw_Destroy();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _clsVarManager wrapper method implementations
+//
+
+inline VBA::_CollectionPtr _clsVarManager::Getvars ( ) {
+    struct VBA::_Collection * _result;
+    HRESULT _hr = get_vars(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return VBA::_CollectionPtr(_result, false);
+}
+
+inline void _clsVarManager::PutRefvars ( struct VBA::_Collection * vars ) {
+    HRESULT _hr = putref_vars(vars);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VBA::_CollectionPtr _clsVarManager::GetCVars ( ) {
+    struct VBA::_Collection * _result;
+    HRESULT _hr = get_CVars(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return VBA::_CollectionPtr(_result, false);
+}
+
+inline void _clsVarManager::PutRefCVars ( struct VBA::_Collection * CVars ) {
+    HRESULT _hr = putref_CVars(CVars);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VBA::_CollectionPtr _clsVarManager::GetEqnV ( ) {
+    struct VBA::_Collection * _result;
+    HRESULT _hr = get_EqnV(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return VBA::_CollectionPtr(_result, false);
+}
+
+inline void _clsVarManager::PutRefEqnV ( struct VBA::_Collection * EqnV ) {
+    HRESULT _hr = putref_EqnV(EqnV);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VBA::_CollectionPtr _clsVarManager::GetEqnDV1 ( ) {
+    struct VBA::_Collection * _result;
+    HRESULT _hr = get_EqnDV1(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return VBA::_CollectionPtr(_result, false);
+}
+
+inline void _clsVarManager::PutRefEqnDV1 ( struct VBA::_Collection * EqnDV1 ) {
+    HRESULT _hr = putref_EqnDV1(EqnDV1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VBA::_CollectionPtr _clsVarManager::GetEqnDV2 ( ) {
+    struct VBA::_Collection * _result;
+    HRESULT _hr = get_EqnDV2(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return VBA::_CollectionPtr(_result, false);
+}
+
+inline void _clsVarManager::PutRefEqnDV2 ( struct VBA::_Collection * EqnDV2 ) {
+    HRESULT _hr = putref_EqnDV2(EqnDV2);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VBA::_CollectionPtr _clsVarManager::GetEqnDV3 ( ) {
+    struct VBA::_Collection * _result;
+    HRESULT _hr = get_EqnDV3(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return VBA::_CollectionPtr(_result, false);
+}
+
+inline void _clsVarManager::PutRefEqnDV3 ( struct VBA::_Collection * EqnDV3 ) {
+    HRESULT _hr = putref_EqnDV3(EqnDV3);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT _clsVarManager::Destroy ( ) {
+    HRESULT _hr = raw_Destroy();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsVarManager::EnableEvents ( ) {
+    HRESULT _hr = raw_EnableEvents();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsVarManager::DisableEvents ( ) {
+    HRESULT _hr = raw_DisableEvents();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsVarManager::init ( long * nVars, SAFEARRAY * * VarOrder, SAFEARRAY * * VarNames, SAFEARRAY * * Vals, SAFEARRAY * * DerVals ) {
+    HRESULT _hr = raw_init(nVars, VarOrder, VarNames, Vals, DerVals);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsVarManager::InitStruct ( ) {
+    HRESULT _hr = raw_InitStruct();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _clsVarManager::ReportStruct ( long * der, struct _clsVar * * var ) {
+    HRESULT _hr = raw_ReportStruct(der, var);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _ctlEquationEditor wrapper method implementations
+//
+
+inline long _ctlEquationEditor::GetGridIndex ( ) {
+    long _result;
+    HRESULT _hr = get_GridIndex(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _ctlEquationEditor::PutGridIndex ( long GridIndex ) {
+    HRESULT _hr = put_GridIndex(GridIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _ctlEquationEditor::GetEqnIndex ( ) {
+    long _result;
+    HRESULT _hr = get_EqnIndex(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _ctlEquationEditor::PutEqnIndex ( long EqnIndex ) {
+    HRESULT _hr = put_EqnIndex(EqnIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _ctlEquationEditor::GeteqnName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_eqnName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _ctlEquationEditor::PuteqnName ( _bstr_t eqnName ) {
+    HRESULT _hr = put_eqnName(eqnName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT _ctlEquationEditor::init ( struct _OnScriptParser * * sp, struct _clsVarManager * * vm, struct _ctlMessageWindow * * st ) {
+    HRESULT _hr = raw_init(sp, vm, st);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _ctlEquationEditor::Destroy ( ) {
+    HRESULT _hr = raw_Destroy();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void _ctlEquationEditor::PutEqnBody ( BSTR * _arg1 ) {
+    HRESULT _hr = put_EqnBody(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _ctlEquationEditor::GetEqnBody ( ) {
+    BSTR _result;
+    HRESULT _hr = get_EqnBody(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t _ctlEquationEditor::Fmt ( BSTR * VIn ) {
+    BSTR _result;
+    HRESULT _hr = raw_Fmt(VIn, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface _ctlMessageWindow wrapper method implementations
+//
+
+inline HRESULT _ctlMessageWindow::Destroy ( ) {
+    HRESULT _hr = raw_Destroy();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _ctlMessageWindow::LogMessage ( BSTR * strMsg ) {
+    HRESULT _hr = raw_LogMessage(strMsg);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _ctlMessageWindow::ClearMessageWindow ( ) {
+    HRESULT _hr = raw_ClearMessageWindow();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _ctlMessageWindow::MaximizeMessageWindow ( short * ucHeight, short * ucWidth ) {
+    HRESULT _hr = raw_MaximizeMessageWindow(ucHeight, ucWidth);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void _ctlMessageWindow::PutRefActiveForm ( IDispatch * * _arg1 ) {
+    HRESULT _hr = putref_ActiveForm(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface _OnScriptParser wrapper method implementations
+//
+
+inline HRESULT _OnScriptParser::SetModelExec ( IDispatch * * pModelExec ) {
+    HRESULT _hr = raw_SetModelExec(pModelExec);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long _OnScriptParser::GetnVars ( ) {
+    long _result;
+    HRESULT _hr = get_nVars(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long _OnScriptParser::GetnEqns ( ) {
+    long _result;
+    HRESULT _hr = get_nEqns(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long _OnScriptParser::GetnModelVars ( ) {
+    long _result;
+    HRESULT _hr = get_nModelVars(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long _OnScriptParser::GetnModelEqns ( ) {
+    long _result;
+    HRESULT _hr = get_nModelEqns(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long _OnScriptParser::GetnActiveEqns ( ) {
+    long _result;
+    HRESULT _hr = get_nActiveEqns(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long _OnScriptParser::GetnActiveVars ( ) {
+    long _result;
+    HRESULT _hr = get_nActiveVars(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long _OnScriptParser::GetVarOrder ( long * iActiveVar ) {
+    long _result;
+    HRESULT _hr = get_VarOrder(iActiveVar, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long _OnScriptParser::GetEqnOrder ( long * iActiveEqn ) {
+    long _result;
+    HRESULT _hr = get_EqnOrder(iActiveEqn, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long _OnScriptParser::GetitVarOrder ( long * iVar ) {
+    long _result;
+    HRESULT _hr = get_itVarOrder(iVar, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long _OnScriptParser::GetitEqnOrder ( long * iEqn ) {
+    long _result;
+    HRESULT _hr = get_itEqnOrder(iEqn, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT _OnScriptParser::ShowDialog ( ) {
+    HRESULT _hr = raw_ShowDialog();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _OnScriptParser::SetScripts ( long * nScripts, SAFEARRAY * * AssignedVars, SAFEARRAY * * ScriptNames, SAFEARRAY * * ScriptVars, SAFEARRAY * * ScriptResiduals, SAFEARRAY * * ScriptBodies, SAFEARRAY * * ScriptVarCount ) {
+    HRESULT _hr = raw_SetScripts(nScripts, AssignedVars, ScriptNames, ScriptVars, ScriptResiduals, ScriptBodies, ScriptVarCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _OnScriptParser::SetTrimVars ( long * nTrimVars, SAFEARRAY * * TrimVars, SAFEARRAY * * TrimVarVals ) {
+    HRESULT _hr = raw_SetTrimVars(nTrimVars, TrimVars, TrimVarVals);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _OnScriptParser::GetScripts ( long * nScripts, SAFEARRAY * * AssignedVars, SAFEARRAY * * ScriptNames, SAFEARRAY * * ScriptVars, SAFEARRAY * * ScriptResiduals, SAFEARRAY * * ScriptBodies, SAFEARRAY * * ScriptVarCount ) {
+    HRESULT _hr = raw_GetScripts(nScripts, AssignedVars, ScriptNames, ScriptVars, ScriptResiduals, ScriptBodies, ScriptVarCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _OnScriptParser::GetTrimVars ( long * nTrimVars, SAFEARRAY * * TrimVars, SAFEARRAY * * TrimVarVals ) {
+    HRESULT _hr = raw_GetTrimVars(nTrimVars, TrimVars, TrimVarVals);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t _OnScriptParser::eqnName ( long * iEqn ) {
+    BSTR _result;
+    HRESULT _hr = raw_eqnName(iEqn, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t _OnScriptParser::VarName ( long * iVar ) {
+    BSTR _result;
+    HRESULT _hr = raw_VarName(iVar, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT _OnScriptParser::initModelVar ( long * iActiveVar, VARIANT_BOOL * bActive, long * aIndex, BSTR * aAssignedEqn, BSTR * aName, long * aDER, double * aValue ) {
+    HRESULT _hr = raw_initModelVar(iActiveVar, bActive, aIndex, aAssignedEqn, aName, aDER, aValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _OnScriptParser::initModelEqn ( long * iActiveEqn, VARIANT_BOOL * bActive, long * aIndex, BSTR * aAssignedVar, BSTR * aName, BSTR * aVars, double * aResidual ) {
+    HRESULT _hr = raw_initModelEqn(iActiveEqn, bActive, aIndex, aAssignedVar, aName, aVars, aResidual);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _OnScriptParser::Test ( BSTR * sName, BSTR * sScript, BSTR * sFinalScript, VARIANT_BOOL * bErr, double * retVal, long * errLine, long * errCol, BSTR * errDesc, BSTR * errText ) {
+    HRESULT _hr = raw_Test(sName, sScript, sFinalScript, bErr, retVal, errLine, errCol, errDesc, errText);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline double _OnScriptParser::Eval ( BSTR * eqnName, BSTR * script, BSTR * finalScript ) {
+    double _result;
+    HRESULT _hr = raw_Eval(eqnName, script, finalScript, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT _OnScriptParser::GetEqnStruct ( BSTR * script, struct VBA::_Collection * * v, struct VBA::_Collection * * dv1, struct VBA::_Collection * * dv2, struct VBA::_Collection * * dv3, double * result ) {
+    HRESULT _hr = raw_GetEqnStruct(script, v, dv1, dv2, dv3, result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t _OnScriptParser::Fmt ( BSTR * VIn ) {
+    BSTR _result;
+    HRESULT _hr = raw_Fmt(VIn, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// dispinterface __ctlEquationEditor wrapper method implementations
+//
+
+inline HRESULT __ctlEquationEditor::OnApply ( long * GridIndex, long * EqnIndex, BSTR * sScript ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4003\x4003\x4008", GridIndex, EqnIndex, sScript);
+}
+
+inline HRESULT __ctlEquationEditor::OnCancel ( ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+//
+// dispinterface __OnScriptParser wrapper method implementations
+//
+
+inline HRESULT __OnScriptParser::OnError ( BSTR * Description ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x4008", Description);
+}

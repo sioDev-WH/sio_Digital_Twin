@@ -1,0 +1,169 @@
+AeroLib Scheduled Controllers
+
+StateSpaceABCD-1D
+Implement a state-space controller [A,B,C,D] where A, B, C, and D depend on one scheduling parameter, v.
+Parameters:
+A
+B
+C
+D
+AoA_vec
+x_initial=0
+
+[no Special Initialization]
+
+----------
+
+StateSpaceABCD-2D
+Implement a state-space controller [A,B,C,D] where A, B, C, and D depend on two scheduling parameters, v1,v2.
+Parameters:
+A
+B
+C
+D
+AoA_vec
+Mach_vec
+x_initial=0
+
+[no Special Initialization]
+----------
+
+StateSpaceABCD-3D
+Implement a state-space controller [A,B,C,D] where A, B, C, and D depend on three scheduling parameters, v1, v2, and v3.
+Parameters:
+A
+B
+C
+D
+AoA_vec
+AoS_vec
+Mach_vec
+x_initial=0
+
+[no Special Initialization]
+----------
+
+Gain Scheduled Lead-Lag
+Implement gain-scheduled first-order lead-lag of the form [1+a.s]/[1+b.s]. Initial output is given by (x_initial+a.e)/b where x_initial is the initial state defined in the mask dialog box. Note that b should never be allowed to be zero.
+
+Parameters:
+x_initial=0
+
+---------
+
+Self-Conditioned
+Implement a state-space controller [A,B,C,D] in a self-conditioned form. If u_meas = u_dem, then the implemented controller is [A,B,C,D]. If u_meas is limited, e.g., rate limiting, then the poles of the controller become those defined in the mask dialog box. Uses call to Control Systems Toolbox function place.m when initializing.
+Parameters:
+Ak=[-1 -0.2;0 -3]
+BK=[1;1]
+CK=[1 0]
+DK=0.02
+x_initial=0
+Poles of A-H*C = [w1 ... wn]:vec_w=[-5 -2]
+
+Initialization:
+L1 = place(Ak',Ck',vec_w);
+H=L1';
+
+----------------
+
+Blend-1D
+Blend between outputs of a 1-D vector of state-space controllers. All controllers must have the same state dimension.
+A-matrix(v):A
+B-matrix(v):B
+C-matrix(v):C
+D-matrix(v):D
+Scheduling variable breakpoints: breakpoints_v =[1 1.5 2]
+Initial state, x_initial: x_initial = 0
+Poles of A(v)-H(v)*C(v) = [w1 ... wn]:vec_w = [-5 -2]
+
+// Initialization:
+for i=1:length(breakpoints_v);
+    L1 = place(squeeze(A(:,:,i))',squeeze(C(:,:,i))',vec_w);
+    H(:,:,i)=L1';
+end
+
+------------
+Blend-2D
+Blend between outputs of a 2-D vector of state-space controllers. All controllers must have the same state dimension.
+A-matrix(v1,v2):A
+B-matrix(v1,v2):B
+C-matrix(v1,v2):C
+D-matrix(v1,v2):D
+First scheduling variable (v1) breakpoints:breakpoints_v1 = v1_vec
+Second scheduling variable (v2) breakpoints:breakpoints_v2 = v2_vec
+Initial state, x_initial:x_initial=0
+Poles of A(v)-H(v)*C(v) = [w1 ... wn]: vec_w = [-5 -2]
+// Initialization:
+for i=1:length(breakpoints_v1);
+  for j=1:length(breakpoints_v2);
+    L1 = place(squeeze(A(:,:,i,j))',squeeze(C(:,:,i,j))',vec_w);
+    H(:,:,i,j)=L1';
+  end
+end
+-----------
+StateSpaceSelfCond-1D
+Implement a state-space controller [A(v),B(v),C(v),D(v)] in a self-conditioned form. If u_meas = u_dem, then the implemented controller is [A,B,C,D]. If u_meas is limited, e.g., rate limiting, then the poles of the controller become those defined in the mask dialog box. Uses call to Control Systems Toolbox function place.m when initializing. A, B, C, and D should be 3-D matrices, the last dimension corresponding to the scheduling parameter, and the first two corresponding to the matrix for a given set of scheduling parameter values.
+
+Same parameters as Blend-1D
+for i=1:length(breakpoints_v);
+    L1 = place(squeeze(A(:,:,i))',squeeze(C(:,:,i))',vec_w);
+    H(:,:,i)=L1';
+end
+---------
+
+StateSpaceSelfCond-2D
+Implement a state-space controller [A(v1,v2),B(v1,v2),C(v1,v2),D(v1,v2)] in a self-conditioned form. If u_meas = u_dem, then the implemented controller is [A,B,C,D]. If u_meas is limited, e.g., rate limiting, then the poles of the controller become those defined in the mask dialog box. Uses call to Control Systems Toolbox function place.m when initializing. A, B, C, and D should be 4-D matrices, the last two dimensions corresponding to the scheduling parameters, and the first two corresponding to the matrix for a given set of scheduling parameter values.
+
+Same parameters as Blend-2D
+
+for i=1:length(breakpoints_v1);
+  for j=1:length(breakpoints_v2);
+    L1 = place(squeeze(A(:,:,i,j))',squeeze(C(:,:,i,j))',vec_w);
+    H(:,:,i,j)=L1';
+  end
+end
+----------
+
+StateSpaceSelfCond-3D
+Implement a state-space controller [A(v1,v2,v3),B(v1,v2,v3),C(v1,v2,v3),D(v1,v2,v3)] in a self-conditioned form. If u_meas = u_dem, then the implemented controller is [A,B,C,D]. If u_meas is limited, e.g., rate limiting, then the poles of the controller become those defined in the mask dialog box. Uses call to Control Systems Toolbox function place.m when initializing. A, B, C, and D should be 5-D matrices, the last three dimensions corresponding to the scheduling parameters, and the first two corresponding to the matrix for a given set of scheduling parameter values.
+
+Same Parameters StateSpaceSelfCond-2D but breakpoints for 3 v's
+
+for i=1:length(breakpoints_v1);
+  for j=1:length(breakpoints_v2);
+    for k=1:length(breakpoints_v3);
+      L1 = place(squeeze(A(:,:,i,j,k))',squeeze(C(:,:,i,j,k))',vec_w);
+      H(:,:,i,j,k)=L1';
+    end
+  end
+end
+-------------------
+
+StateSpaceABCFH-1D
+Implement a state-space controller [A,B,C,F,H] in observer form where A, B, C, F, and H depend on one scheduling parameter.
+
+A
+B
+C
+F
+H
+AoA_vec
+x_initial=0
+
+No Initialization
+---------------
+StateSpaceABCFH-2D
+Implement a state-space controller [A,B,C,F,H] in observer form where A, B, C, F, and H depend on two scheduling parameters.
+
+Same as 1D but add Mach_vec
+---------
+Mach_vec
+Implement a state-space controller [A,B,C,F,H] in observer form where A, B, C, F, and H depend on three scheduling parameters.
+
+Same as 2D but insert AoS_vec before Mach_vec
+
+no initialization
+-----------
+
+

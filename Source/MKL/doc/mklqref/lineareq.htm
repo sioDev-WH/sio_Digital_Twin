@@ -1,0 +1,183 @@
+<HTML>
+<HEAD>
+<title>Solving Linear Equations</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Solving Systems of Linear Equations
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="getrs"></A>
+
+<B>?getrs</B>
+solves a system of linear equations with an <i>LU</i>-factored square matrix, with multiple right-hand sides.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgetrs (trans, n, nrhs, SA, lda, IPIV, SB, ldb, info)<BR>
+call dgetrs (trans, n, nrhs, DA, lda, IPIV, DB, ldb, info)<BR>
+call cgetrs (trans, n, nrhs, CA, lda, IPIV, CB, ldb, info)<BR>
+call zgetrs (trans, n, nrhs, ZA, lda, IPIV, ZB, ldb, info)
+</font></code>
+
+<p><A NAME="gbtrs"></A>
+
+<B>?gbtrs</B>
+solves a system of linear equations with an <i>LU</i>-factored band matrix, with
+multiple right-hand sides.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgbtrs (trans, n, kl, ku, nrhs, SAB, ldab, IPIV, SB, ldb, info)<BR>
+call dgbtrs (trans, n, kl, ku, nrhs, DAB, ldab, IPIV, DB, ldb, info)<BR>
+call cgbtrs (trans, n, kl, ku, nrhs, CAB, ldab, IPIV, CB, ldb, info)<BR>
+call zgbtrs (trans, n, kl, ku, nrhs, ZAB, ldab, IPIV, ZB, ldb, info)
+</font></code>
+
+<p><A NAME="potrs"></A>
+
+<B>?potrs</B>
+solves a system of linear equations with a
+Cholesky-factored symmetric
+(Hermitian) positive-definite matrix, with multiple right-hand sides.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call spotrs (uplo, n, nrhs, SA, lda, SB, ldb, info)<BR>
+call dpotrs (uplo, n, nrhs, DA, lda, DB, ldb, info)<BR>
+call cpotrs (uplo, n, nrhs, CA, lda, CB, ldb, info)<BR>
+call zpotrs (uplo, n, nrhs, ZA, lda, ZB, ldb, info)
+</font></code>
+
+<p><A NAME="pptrs"></A>
+
+<B>?pptrs</B>
+solves a system of linear equations with a
+packed Cholesky-factored symmetric
+(Hermitian) positive-definite matrix, with multiple right-hand sides.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call spptrs (uplo, n, nrhs, SAP, SB, ldb, info)<BR>
+call dpptrs (uplo, n, nrhs, DAP, DB, ldb, info)<BR>
+call cpptrs (uplo, n, nrhs, CAP, CB, ldb, info)<BR>
+call zpptrs (uplo, n, nrhs, ZAP, ZB, ldb, info)
+</font></code>
+
+<p><A NAME="pbtrs"></A>
+
+<B>?pbtrs</B>
+solves a system of linear equations with a Cholesky-factored symmetric
+(Hermitian) positive-definite band matrix, with multiple right-hand sides.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call spbtrs (uplo, n, kd, nrhs, SAB, ldab, SB, ldb, info)<BR>
+call dpbtrs (uplo, n, kd, nrhs, DAB, ldab, DB, ldb, info)<BR>
+call cpbtrs (uplo, n, kd, nrhs, CAB, ldab, CB, ldb, info)<BR>
+call zpbtrs (uplo, n, kd, nrhs, ZAB, ldab, ZB, ldb, info)
+</font></code>
+
+<p><A NAME="sytrs"></A>
+
+<B>?sytrs</B>
+solves a system of linear equations with a
+<i>UDU</i>- or <i>LDL</i>-factored symmetric matrix, with multiple right-hand sides.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssytrs (uplo, n, nrhs, SA, lda, IPIV, SB, ldb, info)<BR>
+call dsytrs (uplo, n, nrhs, DA, lda, IPIV, DB, ldb, info)<BR>
+call csytrs (uplo, n, nrhs, CA, lda, IPIV, CB, ldb, info)<BR>
+call zsytrs (uplo, n, nrhs, ZA, lda, IPIV, ZB, ldb, info)
+</font></code>
+
+<p><A NAME="hetrs"></A>
+
+<B>?hetrs</B>
+solves a system of linear equations with a
+<i>UDU</i>- or <i>LDL</i>-factored Hermitian matrix, with multiple right-hand sides.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chetrs (uplo, n, nrhs, CA, lda, IPIV, CB, ldb, info)<BR>
+call zhetrs (uplo, n, nrhs, ZA, lda, IPIV, ZB, ldb, info)
+</font></code>
+
+<p><A NAME="sptrs"></A>
+
+<B>?sptrs</B>
+solves a system of linear equations with a
+<i>UDU</i>- or <i>LDL</i>-factored symmetric matrix in packed storage, with multiple right-hand sides.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssptrs (uplo, n, nrhs, SAP, IPIV, SB, ldb, info)<BR>
+call dsptrs (uplo, n, nrhs, DAP, IPIV, DB, ldb, info)<BR>
+call csptrs (uplo, n, nrhs, CAP, IPIV, CB, ldb, info)<BR>
+call zsptrs (uplo, n, nrhs, ZAP, IPIV, ZB, ldb, info)
+</font></code>
+
+<p><A NAME="hptrs"></A>
+
+<B>?hptrs</B>
+solves a system of linear equations with a
+<i>UDU</i>- or <i>LDL</i>-factored Hermitian matrix in packed storage, with multiple right-hand sides.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chptrs (uplo, n, nrhs, CAP, IPIV, CB, ldb, info)<BR>
+call zhptrs (uplo, n, nrhs, ZAP, IPIV, ZB, ldb, info)
+</font></code>
+
+<p><A NAME="trtrs"></A>
+
+<B>?trtrs</B>
+solves a system of linear equations with
+a triangular matrix, with multiple right-hand sides.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call strtrs (uplo, trans, diag, n, nrhs, SA, lda, SB, ldb, info)<BR>
+call dtrtrs (uplo, trans, diag, n, nrhs, DA, lda, DB, ldb, info)<BR>
+call ctrtrs (uplo, trans, diag, n, nrhs, CA, lda, CB, ldb, info)<BR>
+call ztrtrs (uplo, trans, diag, n, nrhs, ZA, lda, ZB, ldb, info)
+</font></code>
+
+<p><A NAME="tptrs"></A>
+
+<B>?tptrs</B>
+solves a system of linear equations with
+a packed triangular matrix, with
+multiple right-hand sides.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call stptrs (uplo, trans, diag, n, nrhs, SAP, SB, ldb, info)<BR>
+call dtptrs (uplo, trans, diag, n, nrhs, DAP, DB, ldb, info)<BR>
+call ctptrs (uplo, trans, diag, n, nrhs, CAP, CB, ldb, info)<BR>
+call ztptrs (uplo, trans, diag, n, nrhs, ZAP, ZB, ldb, info)
+</font></code>
+
+<p><A NAME="tbtrs"></A>
+
+<B>?tbtrs</B>
+solves a system of linear equations with
+a band triangular matrix, with multiple
+right-hand sides.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call stbtrs (uplo, trans, diag, n, kd, nrhs, SAB, ldab, SB, ldb, info)<BR>
+call dtbtrs (uplo, trans, diag, n, kd, nrhs, DAB, ldab, DB, ldb, info)<BR>
+call ctbtrs (uplo, trans, diag, n, kd, nrhs, CAB, ldab, CB, ldb, info)<BR>
+call ztbtrs (uplo, trans, diag, n, kd, nrhs, ZAB, ldab, ZB, ldb, info)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

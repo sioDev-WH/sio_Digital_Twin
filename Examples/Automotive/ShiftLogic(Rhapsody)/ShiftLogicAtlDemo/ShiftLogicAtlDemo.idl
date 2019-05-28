@@ -1,0 +1,20 @@
+// ShiftLogicAtlDemo.idl : IDL source for ShiftLogicAtlDemo.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ShiftLogicAtlDemo.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(397769DD-F530-4780-B0A1-DF93038E7316),
+	version(1.0),
+	helpstring("ShiftLogicAtlDemo 1.0 Type Library")
+]
+library SHIFTLOGICATLDEMOLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+};

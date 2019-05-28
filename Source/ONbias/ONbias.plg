@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ONbias - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP84A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ONBIAS_EXPORTS" /D "__ON_Machine__" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\DistComponents\ONbias\bias0.cpp"
+"C:\DistComponents\ONbias\bias1.cpp"
+"C:\DistComponents\ONbias\bias2.cpp"
+"C:\DistComponents\ONbias\biasf.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP84A.tmp" 
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP84B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ONBIAS_EXPORTS" /D "__ON_Machine__" /Fp"Release/ONbias.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\DistComponents\ONbias\ONbias.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP84B.tmp" 
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP84C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ONBIAS_EXPORTS" /D "__ON_Machine__" /Fp"Release/ONbias.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\DistComponents\ONbias\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP84C.tmp" 
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP84D.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"c:\distcomponents/bin/Release/ONbias.pdb" /debug /machine:I386 /out:"c:\distcomponents/bin/Release/ONbias.dll" /implib:"c:\distcomponents/lib/ONbias.lib" 
+.\Release\bias0.obj
+.\Release\bias1.obj
+.\Release\bias2.obj
+.\Release\biasf.obj
+.\Release\ONbias.obj
+.\Release\StdAfx.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP84D.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+bias0.cpp
+bias1.cpp
+bias2.cpp
+biasf.cpp
+Generating Code...
+Compiling...
+ONbias.cpp
+Linking...
+   Creating library c:\distcomponents/lib/ONbias.lib and object c:\distcomponents/lib/ONbias.exp
+
+
+
+<h3>Results</h3>
+ONbias.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,13 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8964.0 (d44131c9).
+//
+// c:\distcomponents\rtsontransmission\debugu\OnUMLEso.tlh
+//
+// C++ source equivalent of Win32 type library OnUMLEso.tlb
+// compiler-generated file created 02/12/03 at 23:53:16 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+#pragma pack(pop)

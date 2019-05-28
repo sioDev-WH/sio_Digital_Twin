@@ -1,0 +1,15 @@
+I-Logix-RPY-Archive version 4.0.4 *
+
+- filesTable = { IRPYRawContainer 
+	- size = 8;
+	- value = "GuidanceLogic.rpy" ""
+	"GuidanceLogic_rpy\\AnimationComponent.cmp" "AnimationComponent"
+	"GuidanceLogic_rpy\\Default.sbs" "Default"
+	"GuidanceLogic_rpy\\DefaultComponent.cmp" "DefaultComponent"
+	"GuidanceLogic_rpy\\GuidanceModels.omd" "GuidanceModels"
+	"GuidanceLogic_rpy\\GuidancePkg.sbs" "GuidancePkg"
+	"GuidanceLogic_rpy\\PhysicalModels.omd" "PhysicalModels"
+	"GuidanceLogic_rpy\\ReverseEngineering.sbs" "ReverseEngineering"
+	
+}
+

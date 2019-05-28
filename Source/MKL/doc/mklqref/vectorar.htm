@@ -1,0 +1,120 @@
+<HTML>
+<HEAD>
+<title>Vector Arguments</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Vector Arguments
+</h3>
+</font>
+
+<font face="times new roman,times,bodytxt">
+
+<p>
+<a name="blas"></a>
+<B>Vector arguments in BLAS.</B>
+
+Vector arguments are passed using three paramters:
+the vector length
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>,
+increment
+<code><font face="Courier New,Courier,codetxt" color="#000099">incx</font></code>,
+and one-dimensional array
+<code><font face="Courier New,Courier,codetxt" color="#000099">x</font></code>
+with the vector components stored in the following array elements:
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+x(1), x(1+abs(incx)), ..., x(1+(n-1)*abs(incx))
+</font></code>
+
+<p>
+If
+<code><font face="Courier New,Courier,codetxt" color="#000099">incx</font></code>
+is positive, then the elements in array
+<code><font face="Courier New,Courier,codetxt" color="#000099">x</font></code>
+are stored in increasing order.
+If
+<code><font face="Courier New,Courier,codetxt" color="#000099">incx</font></code>
+is negative, the elements in array
+<code><font face="Courier New,Courier,codetxt" color="#000099">x</font></code>
+are stored in decreasing order
+with the first element defined as
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+x(1+(n-1)*abs(incx))</font></code>.
+If
+<code><font face="Courier New,Courier,codetxt" color="#000099">incx</font></code>
+is zero, then all elements of the vector have the same value,
+<code><font face="Courier New,Courier,codetxt" color="#000099">x(1)</font></code>.
+
+<p>
+The dimension of the one-dimensional array that stores the vector must always be at least
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+1+(n-1)*abs(incx)
+</font></code>
+
+<p>
+<a name="sparseblas"></a>
+<B>Vector arguments in Sparse BLAS.</B>
+
+Sparse BLAS routines handle two types of vectors:
+full-storage vectors and compressed sparse vectors.
+
+<i><b>Full-storage vectors</b></i> are arrays that store all vector elements contiguously:
+<code><font face="Courier New,Courier,codetxt" color="#000099">a(1),a(2),...,a(n)</font></code>.
+(This corresponds to increment <code><font face="Courier New,Courier,codetxt" color="#000099">incx=1</font></code>
+in BLAS routines.)
+
+<p>
+If we assume that there are only
+<code><font face="Courier New,Courier,codetxt" color="#000099">nz</font></code>
+non-zero elements in the vector:
+
+<p>
+<code><font face="Courier New,Courier,codetxt" color="#000099">a(</font></code><small><i>k</i><sub>1</sub></small><code><font face="Courier New,Courier,codetxt" color="#000099">),</font></code>
+<code><font face="Courier New,Courier,codetxt" color="#000099">a(</font></code><small><i>k</i><sub>2</sub></small><code><font face="Courier New,Courier,codetxt" color="#000099">),...,</font></code>
+<code><font face="Courier New,Courier,codetxt" color="#000099">a(</font></code><small><i>k</i></small><code><font face="Courier New,Courier,codetxt" color="#000099"><sub>nz</sub>)</font></code>
+
+<p>
+then this vector can also be passed to Sparse BLAS in <i><b>compressed form</b></i> using two Fortran arrays:
+<code><font face="Courier New,Courier,codetxt" color="#000099">x</font></code> (values) and
+<code><font face="Courier New,Courier,codetxt" color="#000099">indx</font></code> (indices).
+Each of these arrays has
+<code><font face="Courier New,Courier,codetxt" color="#000099">nz</font></code> elements:
+
+<p>
+<code><font face="Courier New,Courier,codetxt" color="#000099">x(1)=a(</font></code><small><i>k</i><sub>1</sub></small><code><font face="Courier New,Courier,codetxt" color="#000099">),</font></code>
+<code><font face="Courier New,Courier,codetxt" color="#000099">x(2)=a(</font></code><small><i>k</i><sub>2</sub></small><code><font face="Courier New,Courier,codetxt" color="#000099">),...,</font></code>
+<code><font face="Courier New,Courier,codetxt" color="#000099">x(nz)=a(</font></code><small><i>k</i></small><code><font face="Courier New,Courier,codetxt" color="#000099"><sub>nz</sub>)</font></code>;
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">indx(1)=</font></code> <small><i>k</i><sub>1</sub></small><code><font face="Courier New,Courier,codetxt" color="#000099">,</font></code>
+<code><font face="Courier New,Courier,codetxt" color="#000099">indx(2)=</font></code> <small><i>k</i><sub>2</sub></small><code><font face="Courier New,Courier,codetxt" color="#000099">,...,</font></code>
+<code><font face="Courier New,Courier,codetxt" color="#000099">indx(nz)=</font></code> <small><i>k</i></small><code><font face="Courier New,Courier,codetxt" color="#000099"><sub>nz</sub></font></code>.
+
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

@@ -1,0 +1,106 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ ISubsystem 
+	- _id = GUID 89cb7ed0-2efd-46ad-ad38-f0cf301d5084;
+	- _myState = 8192;
+	- _name = "ReverseEngineering";
+	- weakCGTime = 9.15.2002::10:45:26;
+	- strongCGTime = 1.2.1990::0:0:0;
+	- _defaultComposite = GUID 57c00ead-48e2-468a-adfb-e016b9d61b74;
+	- _eventsBaseID = 10401;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID 57c00ead-48e2-468a-adfb-e016b9d61b74;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 9.15.2002::10:45:26;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID e14fb5f1-fa4f-4a72-a6ed-2ea53a109ad9;
+					- _name = "operator<<";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IArgument 
+							- _id = GUID 5f9dac48-2e61-47ed-9c06-213c168c0cac;
+							- _name = "os";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 8de68a85-6ccd-4e6b-a31a-d08016740822;
+								- _declaration = "ostream & %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID e4febc3a-78a4-48b1-8c99-16d275e3b303;
+							- _name = "o";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID d589f9a4-6fcf-4532-927a-8b0f1f134f91;
+								- _declaration = "const Fdouble & %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 86fc45ab-4959-4ccd-a1e2-e0b212db3bab;
+						- _declaration = "ostream & ";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+				}
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- Events = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Types = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IType 
+			- _id = GUID 8a82e4c2-2510-4866-94a0-06e888fbd360;
+			- _name = "_ON_AD_H_";
+			- _declaration = "#define %s";
+		}
+	}
+	- UseCases = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Actors = { IRPYRawContainer 
+		- size = 0;
+	}
+	- _configurationRelatedTime = 9.15.2002::10:45:26;
+}
+

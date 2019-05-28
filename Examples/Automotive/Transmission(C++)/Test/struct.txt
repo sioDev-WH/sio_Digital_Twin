@@ -1,0 +1,959 @@
+
+EqnNames
+0  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10  
+11  
+12  
+13  
+14  
+15  
+16  
+17  
+18  
+19  
+20  
+21  
+22  
+23  
+24  
+25  
+26  
+27  
+28  
+29  
+30  
+31  
+32  
+33  
+34  
+35  
+36  
+37  
+38  frame.res0
+39  engine.r_OffEngineDynamics
+40  engine.r_RPM
+41  engine.Undefined
+42  engine.r_StartingEngineDynamics
+43  engine.r_RPM
+44  engine.z_OnRPM
+45  engine.r_OnEngineDynamics
+46  engine.r_RPM
+47  engine.Undefined
+48  TC.r_ImpellerSpeed
+49  TC.r_ImpellerNewton
+50  TC.r_TurbineSpeed
+51  TC.r_TurbineNewton
+52  TC.r_FCM_ImpellerTorque
+53  TC.r_FCM_TurbineTorque
+54  TC.z_TorqueRatio_gt_one
+55  TC.r_ImpellerSpeed
+56  TC.r_ImpellerNewton
+57  TC.r_TurbineSpeed
+58  TC.r_TurbineNewton
+59  TC.r_TMM_ImpellerTorque
+60  TC.r_TMM_TurbineTorque
+61  TC.z_TorqueRatio_lt_one
+62  aTCC.r_ShiftTime
+63  aTCC.r_WaitProfile
+64  aTCC.s_ShiftTime
+65  aTCC.r_ShiftTime
+66  aTCC.r_EngageProfile
+67  aTCC.s_ShiftTime
+68  aTCC.r_ShiftTime
+69  aTCC.r_DisengageProfile
+70  aTCC.s_ShiftTime
+71  cTCC.r_StickDisplacement
+72  cTCC.r_clockwiseBreakfreeDisp
+73  cTCC.r_counterclockwiseBreakfreeDisp
+74  cTCC.r_forceBalance
+75  cTCC.r_relativeVelocity
+76  cTCC.z_velocity_neg
+77  cTCC.z_velocity_pos
+78  cTCC.z_disp_pos_slip
+79  cTCC.z_disp_neg_slip
+80  cTCC.r_StickFrictionTorque
+81  cTCC.Undefined
+82  cTCC.Undefined
+83  cTCC.r_cSlipDisplacement
+84  cTCC.r_clockwiseBreakfreeDisp
+85  cTCC.r_counterclockwiseBreakfreeDisp
+86  cTCC.r_forceBalance
+87  cTCC.r_relativeVelocity
+88  cTCC.z_velocity_neg
+89  cTCC.z_disp_pos_slip
+90  cTCC.z_disp_pos_stick
+91  cTCC.r_SlipFrictionTorque
+92  cTCC.Undefined
+93  cTCC.Undefined
+94  cTCC.Undefined
+95  cTCC.r_ccSlipDisplacement
+96  cTCC.r_clockwiseBreakfreeDisp
+97  cTCC.r_counterclockwiseBreakfreeDisp
+98  cTCC.r_forceBalance
+99  cTCC.r_relativeVelocity
+100  cTCC.z_velocity_pos
+101  cTCC.z_disp_neg_slip
+102  cTCC.z_disp_neg_stick
+103  cTCC.r_SlipFrictionTorque
+104  cTCC.Undefined
+105  cTCC.Undefined
+106  cTCC.Undefined
+107  cTCC.r_StickDisplacement
+108  cTCC.r_clockwiseBreakfreeDisp
+109  cTCC.r_counterclockwiseBreakfreeDisp
+110  cTCC.r_forceBalance
+111  cTCC.r_relativeVelocity
+112  cTCC.z_velocity_neg
+113  cTCC.z_velocity_pos
+114  cTCC.z_disp_pos_slip
+115  cTCC.z_disp_neg_slip
+116  cTCC.z_disp_pos_stick
+117  cTCC.z_disp_neg_stick
+118  cTCC.r_SlipFrictionTorque
+119  aIC.r_ShiftTime
+120  aIC.r_WaitProfile
+121  aIC.s_ShiftTime
+122  aIC.r_ShiftTime
+123  aIC.r_EngageProfile
+124  aIC.s_ShiftTime
+125  aIC.r_ShiftTime
+126  aIC.r_DisengageProfile
+127  aIC.s_ShiftTime
+128  cIC.r_StickDisplacement
+129  cIC.r_clockwiseBreakfreeDisp
+130  cIC.r_counterclockwiseBreakfreeDisp
+131  cIC.r_forceBalance
+132  cIC.r_relativeVelocity
+133  cIC.z_velocity_neg
+134  cIC.z_velocity_pos
+135  cIC.z_disp_pos_slip
+136  cIC.z_disp_neg_slip
+137  cIC.r_StickFrictionTorque
+138  cIC.Undefined
+139  cIC.Undefined
+140  cIC.r_cSlipDisplacement
+141  cIC.r_clockwiseBreakfreeDisp
+142  cIC.r_counterclockwiseBreakfreeDisp
+143  cIC.r_forceBalance
+144  cIC.r_relativeVelocity
+145  cIC.z_velocity_neg
+146  cIC.z_disp_pos_slip
+147  cIC.z_disp_pos_stick
+148  cIC.r_SlipFrictionTorque
+149  cIC.Undefined
+150  cIC.Undefined
+151  cIC.Undefined
+152  cIC.r_ccSlipDisplacement
+153  cIC.r_clockwiseBreakfreeDisp
+154  cIC.r_counterclockwiseBreakfreeDisp
+155  cIC.r_forceBalance
+156  cIC.r_relativeVelocity
+157  cIC.z_velocity_pos
+158  cIC.z_disp_neg_slip
+159  cIC.z_disp_neg_stick
+160  cIC.r_SlipFrictionTorque
+161  cIC.Undefined
+162  cIC.Undefined
+163  cIC.Undefined
+164  cIC.r_StickDisplacement
+165  cIC.r_clockwiseBreakfreeDisp
+166  cIC.r_counterclockwiseBreakfreeDisp
+167  cIC.r_forceBalance
+168  cIC.r_relativeVelocity
+169  cIC.z_velocity_neg
+170  cIC.z_velocity_pos
+171  cIC.z_disp_pos_slip
+172  cIC.z_disp_neg_slip
+173  cIC.z_disp_pos_stick
+174  cIC.z_disp_neg_stick
+175  cIC.r_SlipFrictionTorque
+176  ICMass.res0
+177  ICMass.res1
+178  ICMass.res2
+179  aIOC.r_ShiftTime
+180  aIOC.r_WaitProfile
+181  aIOC.s_ShiftTime
+182  aIOC.r_ShiftTime
+183  aIOC.r_EngageProfile
+184  aIOC.s_ShiftTime
+185  aIOC.r_ShiftTime
+186  aIOC.r_DisengageProfile
+187  aIOC.s_ShiftTime
+188  cIOC.r_StickDisplacement
+189  cIOC.r_clockwiseBreakfreeDisp
+190  cIOC.r_counterclockwiseBreakfreeDisp
+191  cIOC.r_forceBalance
+192  cIOC.r_relativeVelocity
+193  cIOC.z_velocity_neg
+194  cIOC.z_velocity_pos
+195  cIOC.z_disp_pos_slip
+196  cIOC.z_disp_neg_slip
+197  cIOC.r_StickFrictionTorque
+198  cIOC.Undefined
+199  cIOC.Undefined
+200  cIOC.r_cSlipDisplacement
+201  cIOC.r_clockwiseBreakfreeDisp
+202  cIOC.r_counterclockwiseBreakfreeDisp
+203  cIOC.r_forceBalance
+204  cIOC.r_relativeVelocity
+205  cIOC.z_velocity_neg
+206  cIOC.z_disp_pos_slip
+207  cIOC.z_disp_pos_stick
+208  cIOC.r_SlipFrictionTorque
+209  cIOC.Undefined
+210  cIOC.Undefined
+211  cIOC.Undefined
+212  cIOC.r_ccSlipDisplacement
+213  cIOC.r_clockwiseBreakfreeDisp
+214  cIOC.r_counterclockwiseBreakfreeDisp
+215  cIOC.r_forceBalance
+216  cIOC.r_relativeVelocity
+217  cIOC.z_velocity_pos
+218  cIOC.z_disp_neg_slip
+219  cIOC.z_disp_neg_stick
+220  cIOC.r_SlipFrictionTorque
+221  cIOC.Undefined
+222  cIOC.Undefined
+223  cIOC.Undefined
+224  cIOC.r_StickDisplacement
+225  cIOC.r_clockwiseBreakfreeDisp
+226  cIOC.r_counterclockwiseBreakfreeDisp
+227  cIOC.r_forceBalance
+228  cIOC.r_relativeVelocity
+229  cIOC.z_velocity_neg
+230  cIOC.z_velocity_pos
+231  cIOC.z_disp_pos_slip
+232  cIOC.z_disp_neg_slip
+233  cIOC.z_disp_pos_stick
+234  cIOC.z_disp_neg_stick
+235  cIOC.r_SlipFrictionTorque
+236  aRC.r_ShiftTime
+237  aRC.r_WaitProfile
+238  aRC.s_ShiftTime
+239  aRC.r_ShiftTime
+240  aRC.r_EngageProfile
+241  aRC.s_ShiftTime
+242  aRC.r_ShiftTime
+243  aRC.r_DisengageProfile
+244  aRC.s_ShiftTime
+245  cRC.r_StickDisplacement
+246  cRC.r_clockwiseBreakfreeDisp
+247  cRC.r_counterclockwiseBreakfreeDisp
+248  cRC.r_forceBalance
+249  cRC.r_relativeVelocity
+250  cRC.z_velocity_neg
+251  cRC.z_velocity_pos
+252  cRC.z_disp_pos_slip
+253  cRC.z_disp_neg_slip
+254  cRC.r_StickFrictionTorque
+255  cRC.Undefined
+256  cRC.Undefined
+257  cRC.r_cSlipDisplacement
+258  cRC.r_clockwiseBreakfreeDisp
+259  cRC.r_counterclockwiseBreakfreeDisp
+260  cRC.r_forceBalance
+261  cRC.r_relativeVelocity
+262  cRC.z_velocity_neg
+263  cRC.z_disp_pos_slip
+264  cRC.z_disp_pos_stick
+265  cRC.r_SlipFrictionTorque
+266  cRC.Undefined
+267  cRC.Undefined
+268  cRC.Undefined
+269  cRC.r_ccSlipDisplacement
+270  cRC.r_clockwiseBreakfreeDisp
+271  cRC.r_counterclockwiseBreakfreeDisp
+272  cRC.r_forceBalance
+273  cRC.r_relativeVelocity
+274  cRC.z_velocity_pos
+275  cRC.z_disp_neg_slip
+276  cRC.z_disp_neg_stick
+277  cRC.r_SlipFrictionTorque
+278  cRC.Undefined
+279  cRC.Undefined
+280  cRC.Undefined
+281  cRC.r_StickDisplacement
+282  cRC.r_clockwiseBreakfreeDisp
+283  cRC.r_counterclockwiseBreakfreeDisp
+284  cRC.r_forceBalance
+285  cRC.r_relativeVelocity
+286  cRC.z_velocity_neg
+287  cRC.z_velocity_pos
+288  cRC.z_disp_pos_slip
+289  cRC.z_disp_neg_slip
+290  cRC.z_disp_pos_stick
+291  cRC.z_disp_neg_stick
+292  cRC.r_SlipFrictionTorque
+293  aOB.r_ShiftTime
+294  aOB.r_WaitProfile
+295  aOB.s_ShiftTime
+296  aOB.r_ShiftTime
+297  aOB.r_EngageProfile
+298  aOB.s_ShiftTime
+299  aOB.r_ShiftTime
+300  aOB.r_DisengageProfile
+301  aOB.s_ShiftTime
+302  cOB.r_StickDisplacement
+303  cOB.r_clockwiseBreakfreeDisp
+304  cOB.r_counterclockwiseBreakfreeDisp
+305  cOB.r_forceBalance
+306  cOB.r_relativeVelocity
+307  cOB.z_velocity_neg
+308  cOB.z_velocity_pos
+309  cOB.z_disp_pos_slip
+310  cOB.z_disp_neg_slip
+311  cOB.r_StickFrictionTorque
+312  cOB.Undefined
+313  cOB.Undefined
+314  cOB.r_cSlipDisplacement
+315  cOB.r_clockwiseBreakfreeDisp
+316  cOB.r_counterclockwiseBreakfreeDisp
+317  cOB.r_forceBalance
+318  cOB.r_relativeVelocity
+319  cOB.z_velocity_neg
+320  cOB.z_disp_pos_slip
+321  cOB.z_disp_pos_stick
+322  cOB.r_SlipFrictionTorque
+323  cOB.Undefined
+324  cOB.Undefined
+325  cOB.Undefined
+326  cOB.r_ccSlipDisplacement
+327  cOB.r_clockwiseBreakfreeDisp
+328  cOB.r_counterclockwiseBreakfreeDisp
+329  cOB.r_forceBalance
+330  cOB.r_relativeVelocity
+331  cOB.z_velocity_pos
+332  cOB.z_disp_neg_slip
+333  cOB.z_disp_neg_stick
+334  cOB.r_SlipFrictionTorque
+335  cOB.Undefined
+336  cOB.Undefined
+337  cOB.Undefined
+338  cOB.r_StickDisplacement
+339  cOB.r_clockwiseBreakfreeDisp
+340  cOB.r_counterclockwiseBreakfreeDisp
+341  cOB.r_forceBalance
+342  cOB.r_relativeVelocity
+343  cOB.z_velocity_neg
+344  cOB.z_velocity_pos
+345  cOB.z_disp_pos_slip
+346  cOB.z_disp_neg_slip
+347  cOB.z_disp_pos_stick
+348  cOB.z_disp_neg_stick
+349  cOB.r_SlipFrictionTorque
+350  aFC.r_ShiftTime
+351  aFC.r_WaitProfile
+352  aFC.s_ShiftTime
+353  aFC.r_ShiftTime
+354  aFC.r_EngageProfile
+355  aFC.s_ShiftTime
+356  aFC.r_ShiftTime
+357  aFC.r_DisengageProfile
+358  aFC.s_ShiftTime
+359  cFC.r_StickDisplacement
+360  cFC.r_clockwiseBreakfreeDisp
+361  cFC.r_counterclockwiseBreakfreeDisp
+362  cFC.r_forceBalance
+363  cFC.r_relativeVelocity
+364  cFC.z_velocity_neg
+365  cFC.z_velocity_pos
+366  cFC.z_disp_pos_slip
+367  cFC.z_disp_neg_slip
+368  cFC.r_StickFrictionTorque
+369  cFC.Undefined
+370  cFC.Undefined
+371  cFC.r_cSlipDisplacement
+372  cFC.r_clockwiseBreakfreeDisp
+373  cFC.r_counterclockwiseBreakfreeDisp
+374  cFC.r_forceBalance
+375  cFC.r_relativeVelocity
+376  cFC.z_velocity_neg
+377  cFC.z_disp_pos_slip
+378  cFC.z_disp_pos_stick
+379  cFC.r_SlipFrictionTorque
+380  cFC.Undefined
+381  cFC.Undefined
+382  cFC.Undefined
+383  cFC.r_ccSlipDisplacement
+384  cFC.r_clockwiseBreakfreeDisp
+385  cFC.r_counterclockwiseBreakfreeDisp
+386  cFC.r_forceBalance
+387  cFC.r_relativeVelocity
+388  cFC.z_velocity_pos
+389  cFC.z_disp_neg_slip
+390  cFC.z_disp_neg_stick
+391  cFC.r_SlipFrictionTorque
+392  cFC.Undefined
+393  cFC.Undefined
+394  cFC.Undefined
+395  cFC.r_StickDisplacement
+396  cFC.r_clockwiseBreakfreeDisp
+397  cFC.r_counterclockwiseBreakfreeDisp
+398  cFC.r_forceBalance
+399  cFC.r_relativeVelocity
+400  cFC.z_velocity_neg
+401  cFC.z_velocity_pos
+402  cFC.z_disp_pos_slip
+403  cFC.z_disp_neg_slip
+404  cFC.z_disp_pos_stick
+405  cFC.z_disp_neg_stick
+406  cFC.r_SlipFrictionTorque
+407  aDC.r_ShiftTime
+408  aDC.r_WaitProfile
+409  aDC.s_ShiftTime
+410  aDC.r_ShiftTime
+411  aDC.r_EngageProfile
+412  aDC.s_ShiftTime
+413  aDC.r_ShiftTime
+414  aDC.r_DisengageProfile
+415  aDC.s_ShiftTime
+416  cDC.r_StickDisplacement
+417  cDC.r_clockwiseBreakfreeDisp
+418  cDC.r_counterclockwiseBreakfreeDisp
+419  cDC.r_forceBalance
+420  cDC.r_relativeVelocity
+421  cDC.z_velocity_neg
+422  cDC.z_velocity_pos
+423  cDC.z_disp_pos_slip
+424  cDC.z_disp_neg_slip
+425  cDC.r_StickFrictionTorque
+426  cDC.Undefined
+427  cDC.Undefined
+428  cDC.r_cSlipDisplacement
+429  cDC.r_clockwiseBreakfreeDisp
+430  cDC.r_counterclockwiseBreakfreeDisp
+431  cDC.r_forceBalance
+432  cDC.r_relativeVelocity
+433  cDC.z_velocity_neg
+434  cDC.z_disp_pos_slip
+435  cDC.z_disp_pos_stick
+436  cDC.r_SlipFrictionTorque
+437  cDC.Undefined
+438  cDC.Undefined
+439  cDC.Undefined
+440  cDC.r_ccSlipDisplacement
+441  cDC.r_clockwiseBreakfreeDisp
+442  cDC.r_counterclockwiseBreakfreeDisp
+443  cDC.r_forceBalance
+444  cDC.r_relativeVelocity
+445  cDC.z_velocity_pos
+446  cDC.z_disp_neg_slip
+447  cDC.z_disp_neg_stick
+448  cDC.r_SlipFrictionTorque
+449  cDC.Undefined
+450  cDC.Undefined
+451  cDC.Undefined
+452  cDC.r_StickDisplacement
+453  cDC.r_clockwiseBreakfreeDisp
+454  cDC.r_counterclockwiseBreakfreeDisp
+455  cDC.r_forceBalance
+456  cDC.r_relativeVelocity
+457  cDC.z_velocity_neg
+458  cDC.z_velocity_pos
+459  cDC.z_disp_pos_slip
+460  cDC.z_disp_neg_slip
+461  cDC.z_disp_pos_stick
+462  cDC.z_disp_neg_stick
+463  cDC.r_SlipFrictionTorque
+464  aPOC.r_ShiftTime
+465  aPOC.r_WaitProfile
+466  aPOC.s_ShiftTime
+467  aPOC.r_ShiftTime
+468  aPOC.r_EngageProfile
+469  aPOC.s_ShiftTime
+470  aPOC.r_ShiftTime
+471  aPOC.r_DisengageProfile
+472  aPOC.s_ShiftTime
+473  cPOC.r_StickDisplacement
+474  cPOC.r_clockwiseBreakfreeDisp
+475  cPOC.r_counterclockwiseBreakfreeDisp
+476  cPOC.r_forceBalance
+477  cPOC.r_relativeVelocity
+478  cPOC.z_velocity_neg
+479  cPOC.z_velocity_pos
+480  cPOC.z_disp_pos_slip
+481  cPOC.z_disp_neg_slip
+482  cPOC.r_StickFrictionTorque
+483  cPOC.Undefined
+484  cPOC.Undefined
+485  cPOC.r_cSlipDisplacement
+486  cPOC.r_clockwiseBreakfreeDisp
+487  cPOC.r_counterclockwiseBreakfreeDisp
+488  cPOC.r_forceBalance
+489  cPOC.r_relativeVelocity
+490  cPOC.z_velocity_neg
+491  cPOC.z_disp_pos_slip
+492  cPOC.z_disp_pos_stick
+493  cPOC.r_SlipFrictionTorque
+494  cPOC.Undefined
+495  cPOC.Undefined
+496  cPOC.Undefined
+497  cPOC.r_ccSlipDisplacement
+498  cPOC.r_clockwiseBreakfreeDisp
+499  cPOC.r_counterclockwiseBreakfreeDisp
+500  cPOC.r_forceBalance
+501  cPOC.r_relativeVelocity
+502  cPOC.z_velocity_pos
+503  cPOC.z_disp_neg_slip
+504  cPOC.z_disp_neg_stick
+505  cPOC.r_SlipFrictionTorque
+506  cPOC.Undefined
+507  cPOC.Undefined
+508  cPOC.Undefined
+509  cPOC.r_StickDisplacement
+510  cPOC.r_clockwiseBreakfreeDisp
+511  cPOC.r_counterclockwiseBreakfreeDisp
+512  cPOC.r_forceBalance
+513  cPOC.r_relativeVelocity
+514  cPOC.z_velocity_neg
+515  cPOC.z_velocity_pos
+516  cPOC.z_disp_pos_slip
+517  cPOC.z_disp_neg_slip
+518  cPOC.z_disp_pos_stick
+519  cPOC.z_disp_neg_stick
+520  cPOC.r_SlipFrictionTorque
+521  aLRB.r_ShiftTime
+522  aLRB.r_WaitProfile
+523  aLRB.s_ShiftTime
+524  aLRB.r_ShiftTime
+525  aLRB.r_EngageProfile
+526  aLRB.s_ShiftTime
+527  aLRB.r_ShiftTime
+528  aLRB.r_DisengageProfile
+529  aLRB.s_ShiftTime
+530  cLRB.r_StickDisplacement
+531  cLRB.r_clockwiseBreakfreeDisp
+532  cLRB.r_counterclockwiseBreakfreeDisp
+533  cLRB.r_forceBalance
+534  cLRB.r_relativeVelocity
+535  cLRB.z_velocity_neg
+536  cLRB.z_velocity_pos
+537  cLRB.z_disp_pos_slip
+538  cLRB.z_disp_neg_slip
+539  cLRB.r_StickFrictionTorque
+540  cLRB.Undefined
+541  cLRB.Undefined
+542  cLRB.r_cSlipDisplacement
+543  cLRB.r_clockwiseBreakfreeDisp
+544  cLRB.r_counterclockwiseBreakfreeDisp
+545  cLRB.r_forceBalance
+546  cLRB.r_relativeVelocity
+547  cLRB.z_velocity_neg
+548  cLRB.z_disp_pos_slip
+549  cLRB.z_disp_pos_stick
+550  cLRB.r_SlipFrictionTorque
+551  cLRB.Undefined
+552  cLRB.Undefined
+553  cLRB.Undefined
+554  cLRB.r_ccSlipDisplacement
+555  cLRB.r_clockwiseBreakfreeDisp
+556  cLRB.r_counterclockwiseBreakfreeDisp
+557  cLRB.r_forceBalance
+558  cLRB.r_relativeVelocity
+559  cLRB.z_velocity_pos
+560  cLRB.z_disp_neg_slip
+561  cLRB.z_disp_neg_stick
+562  cLRB.r_SlipFrictionTorque
+563  cLRB.Undefined
+564  cLRB.Undefined
+565  cLRB.Undefined
+566  cLRB.r_StickDisplacement
+567  cLRB.r_clockwiseBreakfreeDisp
+568  cLRB.r_counterclockwiseBreakfreeDisp
+569  cLRB.r_forceBalance
+570  cLRB.r_relativeVelocity
+571  cLRB.z_velocity_neg
+572  cLRB.z_velocity_pos
+573  cLRB.z_disp_pos_slip
+574  cLRB.z_disp_neg_slip
+575  cLRB.z_disp_pos_stick
+576  cLRB.z_disp_neg_stick
+577  cLRB.r_SlipFrictionTorque
+578  gearbox.r_ForwardToPinionKinematics
+579  gearbox.r_PinionToPinionKinematics
+580  gearbox.r_PinionToRingKinematics
+581  gearbox.r_ReverseToPinionKinematics
+582  gearbox.r_ForwardSunDynamics
+583  gearbox.r_ShortPinionDynamics
+584  gearbox.r_LongPinionDynamics
+585  gearbox.r_CarrierDynamics
+586  gearbox.r_ReverseSunDynamics
+587  gearbox.r_RingDynamics
+588  gearbox.r_shortPinionTorque
+589  gearbox.r_longPinionTorque
+590  gearbox.r_ifSunTorque
+591  gearbox.r_irSunTorque
+592  gearbox.r_iCouplerTorque
+593  gearbox.r_oRingTorque
+594  gearbox.r_ifSunAcceleration
+595  gearbox.r_irSunAcceleration
+596  gearbox.r_iCouplerAcceleration
+597  gearbox.r_oRingAcceleration
+598  gearbox.r_ifSunSpeed
+599  gearbox.r_irSunSpeed
+600  gearbox.r_iCouplerSpeed
+601  gearbox.r_oRingSpeed
+602  gearbox.r_shortPinionSpeed
+603  gearbox.r_longPinionSpeed
+604  vehicle.r_Newton
+605  vehicle.r_Speed
+606  vehicle.r_wheelSpeed
+
+VarNames
+0  frame.n.T
+1  frame.n.A
+2  engine.RPM
+3  
+4  engine.n.T
+5  engine.n.A
+6  TC.impellerTorque
+7  TC.impellerSpeed
+8  TC.turbineTorque
+9  TC.turbineSpeed
+10  
+11  TC.impeller.T
+12  TC.impeller.A
+13  TC.turbine.T
+14  TC.turbine.A
+15  aTCC.shiftTime
+16  aTCC.clutchConnector.pressure
+17  cTCC.displacement
+18  cTCC.relativeVelocity
+19  cTCC.cBreakfreeDisp
+20  cTCC.ccBreakfreeDisp
+21  
+22  
+23  
+24  
+25  
+26  
+27  cTCC.p.T
+28  cTCC.p.A
+29  cTCC.n.T
+30  cTCC.n.A
+31  cTCC.actuatorConnector.pressure
+32  aIC.shiftTime
+33  aIC.clutchConnector.pressure
+34  cIC.displacement
+35  cIC.relativeVelocity
+36  cIC.cBreakfreeDisp
+37  cIC.ccBreakfreeDisp
+38  
+39  
+40  
+41  
+42  
+43  
+44  cIC.p.T
+45  cIC.p.A
+46  cIC.n.T
+47  cIC.n.A
+48  cIC.actuatorConnector.pressure
+49  ICMass.W
+50  ICMass.p.T
+51  ICMass.p.A
+52  ICMass.n.T
+53  ICMass.n.A
+54  aIOC.shiftTime
+55  aIOC.clutchConnector.pressure
+56  cIOC.displacement
+57  cIOC.relativeVelocity
+58  cIOC.cBreakfreeDisp
+59  cIOC.ccBreakfreeDisp
+60  
+61  
+62  
+63  
+64  
+65  
+66  cIOC.p.T
+67  cIOC.p.A
+68  cIOC.n.T
+69  cIOC.n.A
+70  cIOC.actuatorConnector.pressure
+71  aRC.shiftTime
+72  aRC.clutchConnector.pressure
+73  cRC.displacement
+74  cRC.relativeVelocity
+75  cRC.cBreakfreeDisp
+76  cRC.ccBreakfreeDisp
+77  
+78  
+79  
+80  
+81  
+82  
+83  cRC.p.T
+84  cRC.p.A
+85  cRC.n.T
+86  cRC.n.A
+87  cRC.actuatorConnector.pressure
+88  aOB.shiftTime
+89  aOB.clutchConnector.pressure
+90  cOB.displacement
+91  cOB.relativeVelocity
+92  cOB.cBreakfreeDisp
+93  cOB.ccBreakfreeDisp
+94  
+95  
+96  
+97  
+98  
+99  
+100  cOB.p.T
+101  cOB.p.A
+102  cOB.n.T
+103  cOB.n.A
+104  cOB.actuatorConnector.pressure
+105  aFC.shiftTime
+106  aFC.clutchConnector.pressure
+107  cFC.displacement
+108  cFC.relativeVelocity
+109  cFC.cBreakfreeDisp
+110  cFC.ccBreakfreeDisp
+111  
+112  
+113  
+114  
+115  
+116  
+117  cFC.p.T
+118  cFC.p.A
+119  cFC.n.T
+120  cFC.n.A
+121  cFC.actuatorConnector.pressure
+122  aDC.shiftTime
+123  aDC.clutchConnector.pressure
+124  cDC.displacement
+125  cDC.relativeVelocity
+126  cDC.cBreakfreeDisp
+127  cDC.ccBreakfreeDisp
+128  
+129  
+130  
+131  
+132  
+133  
+134  cDC.p.T
+135  cDC.p.A
+136  cDC.n.T
+137  cDC.n.A
+138  cDC.actuatorConnector.pressure
+139  aPOC.shiftTime
+140  aPOC.clutchConnector.pressure
+141  cPOC.displacement
+142  cPOC.relativeVelocity
+143  cPOC.cBreakfreeDisp
+144  cPOC.ccBreakfreeDisp
+145  
+146  
+147  
+148  
+149  
+150  
+151  cPOC.p.T
+152  cPOC.p.A
+153  cPOC.n.T
+154  cPOC.n.A
+155  cPOC.actuatorConnector.pressure
+156  aLRB.shiftTime
+157  aLRB.clutchConnector.pressure
+158  cLRB.displacement
+159  cLRB.relativeVelocity
+160  cLRB.cBreakfreeDisp
+161  cLRB.ccBreakfreeDisp
+162  
+163  
+164  
+165  
+166  
+167  
+168  cLRB.p.T
+169  cLRB.p.A
+170  cLRB.n.T
+171  cLRB.n.A
+172  cLRB.actuatorConnector.pressure
+173  gearbox.forwardToPinionForce
+174  gearbox.pinionToPinionForce
+175  gearbox.ringToPinionForce
+176  gearbox.pinionToReverseForce
+177  gearbox.&forwardSun.torque
+178  gearbox.&forwardSun.speed
+179  gearbox.&forwardSun.acceleration
+180  gearbox.&shortPinion.torque
+181  gearbox.&shortPinion.speed
+182  gearbox.&shortPinion.acceleration
+183  gearbox.&longPinion.torque
+184  gearbox.&longPinion.speed
+185  gearbox.&longPinion.acceleration
+186  gearbox.&reverseSun.torque
+187  gearbox.&reverseSun.speed
+188  gearbox.&reverseSun.acceleration
+189  gearbox.&ring.torque
+190  gearbox.&ring.speed
+191  gearbox.&ring.acceleration
+192  gearbox.&carrier.torque
+193  gearbox.&carrier.acceleration
+194  gearbox.&carrier.speed
+195  gearbox.ifSun.T
+196  gearbox.ifSun.A
+197  gearbox.irSun.T
+198  gearbox.irSun.A
+199  gearbox.iCoupler.T
+200  gearbox.iCoupler.A
+201  gearbox.oRing.T
+202  gearbox.oRing.A
+203  vehicle.wheelSpeed
+204  vehicle.speed
+205  vehicle.p.T
+206  vehicle.p.A
+
+RParNames
+0  engine.throttle
+1  engine.inertia
+2  TC.impellerInertia
+3  TC.turbineInertia
+4  aTCC.shiftPeriod
+5  aTCC.rate
+6  aTCC.tolerance
+7  aTCC.pressureMax
+8  cTCC.area
+9  cTCC.radius
+10  cTCC.torqueRatio
+11  cTCC.damping
+12  cTCC.pressureMax
+13  cTCC.cBreakfreeDispMax
+14  cTCC.ccBreakfreeDispMax
+15  aIC.shiftPeriod
+16  aIC.rate
+17  aIC.tolerance
+18  aIC.pressureMax
+19  cIC.area
+20  cIC.radius
+21  cIC.torqueRatio
+22  cIC.damping
+23  cIC.pressureMax
+24  cIC.cBreakfreeDispMax
+25  cIC.ccBreakfreeDispMax
+26  ICMass.J
+27  aIOC.shiftPeriod
+28  aIOC.rate
+29  aIOC.tolerance
+30  aIOC.pressureMax
+31  cIOC.area
+32  cIOC.radius
+33  cIOC.torqueRatio
+34  cIOC.damping
+35  cIOC.pressureMax
+36  cIOC.cBreakfreeDispMax
+37  cIOC.ccBreakfreeDispMax
+38  aRC.shiftPeriod
+39  aRC.rate
+40  aRC.tolerance
+41  aRC.pressureMax
+42  cRC.area
+43  cRC.radius
+44  cRC.torqueRatio
+45  cRC.damping
+46  cRC.pressureMax
+47  cRC.cBreakfreeDispMax
+48  cRC.ccBreakfreeDispMax
+49  aOB.shiftPeriod
+50  aOB.rate
+51  aOB.tolerance
+52  aOB.pressureMax
+53  cOB.area
+54  cOB.radius
+55  cOB.torqueRatio
+56  cOB.damping
+57  cOB.pressureMax
+58  cOB.cBreakfreeDispMax
+59  cOB.ccBreakfreeDispMax
+60  cOB.wrapAngle
+61  aFC.shiftPeriod
+62  aFC.rate
+63  aFC.tolerance
+64  aFC.pressureMax
+65  cFC.area
+66  cFC.radius
+67  cFC.torqueRatio
+68  cFC.damping
+69  cFC.pressureMax
+70  cFC.cBreakfreeDispMax
+71  cFC.ccBreakfreeDispMax
+72  aDC.shiftPeriod
+73  aDC.rate
+74  aDC.tolerance
+75  aDC.pressureMax
+76  cDC.area
+77  cDC.radius
+78  cDC.torqueRatio
+79  cDC.damping
+80  cDC.pressureMax
+81  cDC.cBreakfreeDispMax
+82  cDC.ccBreakfreeDispMax
+83  aPOC.shiftPeriod
+84  aPOC.rate
+85  aPOC.tolerance
+86  aPOC.pressureMax
+87  cPOC.area
+88  cPOC.radius
+89  cPOC.torqueRatio
+90  cPOC.damping
+91  cPOC.pressureMax
+92  cPOC.cBreakfreeDispMax
+93  cPOC.ccBreakfreeDispMax
+94  aLRB.shiftPeriod
+95  aLRB.rate
+96  aLRB.tolerance
+97  aLRB.pressureMax
+98  cLRB.area
+99  cLRB.radius
+100  cLRB.torqueRatio
+101  cLRB.damping
+102  cLRB.pressureMax
+103  cLRB.cBreakfreeDispMax
+104  cLRB.ccBreakfreeDispMax
+105  cLRB.wrapAngle
+106  gearbox.forwardSun.inertia
+107  gearbox.forwardSun.radius
+108  gearbox.shortPinion.inertia
+109  gearbox.shortPinion.radius
+110  gearbox.longPinion.inertia
+111  gearbox.longPinion.radius
+112  gearbox.reverseSun.inertia
+113  gearbox.reverseSun.radius
+114  gearbox.ring.inertia
+115  gearbox.ring.radius
+116  gearbox.carrier.inertia
+117  vehicle.finalDriveRatio
+118  vehicle.wheelFrictionDrag
+119  vehicle.aerodynamicDrag
+120  vehicle.wheelRadius
+121  vehicle.vehicleInertia
+122  vehicle.breakTorque
+
+IParNames
+0  cTCC.nSurfaces
+1  cIC.nSurfaces
+2  cIOC.nSurfaces
+3  cIOC.(long&) direction
+4  cRC.nSurfaces
+5  cFC.nSurfaces
+6  cDC.nSurfaces
+7  cPOC.nSurfaces
+8  cPOC.(long&) direction
+9  gearbox.forwardSun.nTeeth
+10  gearbox.shortPinion.nTeeth
+11  gearbox.longPinion.nTeeth
+12  gearbox.reverseSun.nTeeth
+13  gearbox.ring.nTeeth

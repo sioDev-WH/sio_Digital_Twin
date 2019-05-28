@@ -1,0 +1,38 @@
+##
+##               INTEL CORPORATION PROPRIETARY INFORMATION
+##  This software is supplied under the terms of a license agreement or
+##  nondisclosure agreement with Intel Corporation and may not be copied
+##  or disclosed except in accordance with the terms of that agreement.
+##        Copyright (c) 2001 Intel Corporation. All Rights Reserved.
+##
+## File    : make_exe
+## Purpose : support for makefile
+##
+#===============================================================================
+build: install $T
+
+exe: $(E:+=x.exe)
+
+res: exe $(E:+=x.res)
+
+install:
+	set path=%path%;..\..\..\..\$(_IA)\bin
+	set lib=%lib%;..\..\..\..\$(_IA)\lib;..\..\lib
+	if not exist _results\$Y\res md _results\$Y\res
+	cd _results\$Y
+#------------------------------------------------------------------------------
+FCOMPILER = fl32 /threads /map /exe
+
+!  IF "$F"=="intel"
+FCOMPILER = ifl /w /MT /Fm /Fe
+!  ELSEIF "$F"=="intel64"
+FCOMPILER = efl /w /MT /Fm /Fe
+!  ENDIF
+#------------------------------------------------------------------------------
+.SUFFIXES:: .f .exe .res
+
+{..\..\source}.f.exe:
+	$(FCOMPILER) $< $(MKL_LIB:+=.lib) $(LPK_AUX:+=.lib)
+
+.exe.res:
+	$< <..\..\data\$(@B).d >res\$@

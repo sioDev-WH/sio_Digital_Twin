@@ -1,0 +1,158 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IUCDiagram 
+	- _ownerHandle = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Requirement.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Requirement";
+		- _id = GUID 70568de5-1c0f-4101-8f97-8cb6555a93e2;
+	}
+	- _id = GUID 9f33a6b5-e553-48a5-8f9b-d90b42b9d5c5;
+	- _myState = 8192;
+	- _name = "ShiftLogic";
+	- _graphicChart = { CGIClassChart 
+		- _id = GUID b7c6065a-ca01-4cc5-a346-bb473c0adb28;
+		- m_type = 0;
+		- m_pModelObject = { IHandle 
+			- _m2Class = "IUCDiagram";
+			- _id = GUID 9f33a6b5-e553-48a5-8f9b-d90b42b9d5c5;
+		}
+		- m_pParent = ;
+		- m_name = { CGIText 
+			- m_str = "";
+			- m_style = "Arial" 10 0 0 0 1 ;
+			- m_color = { IColor 
+				- m_fgColor = 0;
+				- m_bgColor = 0;
+				- m_bgFlag = 0;
+			}
+			- m_position = 1 0 0  ;
+			- m_nIdent = 0;
+			- m_bImplicitSetRectPoints = 0;
+		}
+		- m_drawBehavior = 0;
+		- elementList = 3;
+		{ CGIBasicClass 
+			- _id = GUID c3194f36-4cc7-47fd-9e84-80ab679580c0;
+			- m_type = 124;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IActor";
+				- _filename = "Requirement.sbs";
+				- _subsystem = "Requirement";
+				- _class = "";
+				- _name = "actor_3";
+				- _id = GUID 57c487ef-e637-4a31-b3d9-bda1f83879ad;
+			}
+			- m_pParent = GUID c45f67be-66a8-4155-958b-52da571dc714;
+			- m_name = { CGIText 
+				- m_str = "actor_3";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 4 2.45591722060645 13.9787091604209  2.45591722060645 12.2763223323735  -1.80004984951227 12.2763223323735  -1.80004984951227 13.9787091604209  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -0.39558054613441 17.2558038044124  -0.39558054613441 14.1915075139269  1.05144791722859 14.1915075139269  1.05144791722859 17.2558038044124  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGICompositeClass 
+			- _id = GUID c45f67be-66a8-4155-958b-52da571dc714;
+			- m_type = 78;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Requirement.sbs";
+				- _subsystem = "Requirement";
+				- _class = "";
+				- _name = "TopLevel";
+				- _id = GUID a0fb2a39-a60c-43f5-a6a1-66cec3564cf3;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 0;
+			- m_color = { IColor 
+				- m_fgColor = 1;
+				- m_bgColor = 1;
+				- m_bgFlag = 1;
+			}
+			- m_lineWidth = 0;
+			- m_polygon = 4 -0.39558054613441 18.9581906324599  16.1175720096009 18.9581906324599  16.1175720096009 4.82837995966569  -0.39558054613441 4.82837995966569  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBox 
+			- _id = GUID 04db21ae-995a-43cf-8347-2738ec94caec;
+			- m_type = 123;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "";
+			}
+			- m_pParent = GUID c45f67be-66a8-4155-958b-52da571dc714;
+			- m_name = { CGIText 
+				- m_str = "System Boundary Box";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 6.51611029941307 17.9581906324599  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 4.11574487186611 18.9581906324599  16.1175720096009 18.9581906324599  16.1175720096009 4.82837995966569  4.11574487186611 4.82837995966569  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		
+		- m_access = 'Z';
+		- m_modified = 'N';
+		- m_fileVersion = "";
+		- m_nModifyDate = 0;
+		- m_nCreateDate = 0;
+		- m_creator = "";
+		- m_bScaleWithZoom = 1;
+		- m_arrowStyle = 'S';
+		- m_pRoot = GUID c45f67be-66a8-4155-958b-52da571dc714;
+		- m_currentLeftTop = 0 0 ;
+		- m_currentRightBottom = 0 0 ;
+	}
+	- _defaultSubsystem = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Requirement.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Requirement";
+		- _id = GUID 70568de5-1c0f-4101-8f97-8cb6555a93e2;
+	}
+}
+

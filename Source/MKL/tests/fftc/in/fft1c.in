@@ -1,0 +1,17 @@
+fft1c.sum       ! NAME OF SUMMARY OUTPUT FILE
+fft1c.snp       ! NAME OF SNAPSHOT OUTPUT FILE
+1.0e-12         ! Epsilon for double functions (1.0e-12 is normal)
+1.0e-6          ! Epsilon for float functions  (1.0e-6 is normal)
+T               ! LOGICAL FLAG, T TO SELF TEST (DFT and SAMPLE FFT)
+F               ! LOGICAL FLAG, T FOR COMPARE WITH DFT ROUTINE
+T               ! LOGICAL FLAG, T TO TEST ERROR EXITS
+T               ! LOGICAL FLAG, T FOR COMPUTE TESTING
+16              ! Align arrays on number byte boundary    
+17              ! NUMBER OF VECTOR LENGTHS
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19      ! VECTOR LENGTHS
+ZFFT1DC   T     ! FFT FUNCTION NAME, PUT F FOR NO TEST
+CFFT1DC   T     ! FFT FUNCTION NAME, PUT F FOR NO TEST
+ZDFFT1DC  T     ! FFT FUNCTION NAME, PUT F FOR NO TEST
+DZFFT1DC  T     ! FFT FUNCTION NAME, PUT F FOR NO TEST
+SCFFT1DC  T     ! FFT FUNCTION NAME, PUT F FOR NO TEST
+CSFFT1DC  T     ! FFT FUNCTION NAME, PUT F FOR NO TEST

@@ -1,0 +1,438 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IDiagram 
+	- _id = GUID 6737987e-a981-477a-a21b-75221d6abd7d;
+	- _myState = 8192;
+	- _name = "Actuator";
+	- _graphicChart = { CGIClassChart 
+		- _id = GUID 313fca92-b711-4378-9412-3c53528fecaa;
+		- m_type = 0;
+		- m_pModelObject = { IHandle 
+			- _m2Class = "IDiagram";
+			- _id = GUID 6737987e-a981-477a-a21b-75221d6abd7d;
+		}
+		- m_pParent = ;
+		- m_name = { CGIText 
+			- m_str = "";
+			- m_style = "Arial" 10 0 0 0 0 ;
+			- m_color = { IColor 
+				- m_fgColor = 0;
+				- m_bgColor = 0;
+				- m_bgFlag = 0;
+			}
+			- m_position = 1 0 0  ;
+			- m_nIdent = 0;
+			- m_bImplicitSetRectPoints = 0;
+		}
+		- m_drawBehavior = 0;
+		- elementList = 4;
+		{ CGIClassAndInstance 
+			- _id = GUID a1844053-e32f-41bb-9947-098185c80ba4;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "TransmissionModels.sbs";
+				- _subsystem = "TransmissionModels";
+				- _class = "";
+				- _name = "ActuatorClutchConnector";
+				- _id = GUID f181b86e-6f1a-4033-9ab7-d3b96c208d45;
+			}
+			- m_pParent = GUID 1df6aad7-a399-4388-9bc2-95836627e60a;
+			- m_name = { CGIText 
+				- m_str = "TransmissionModels::ActuatorClutchConnector";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 28.5725404732254 15.358499377335  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 20.8086861768369 15.958499377335  36.336394769614 15.958499377335  36.336394769614 9.958499377335  20.8086861768369 9.958499377335  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID a2bd0ce3-dccd-4de6-93e0-3e991c43e822;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "TransmissionModels.sbs";
+				- _subsystem = "TransmissionModels";
+				- _class = "";
+				- _name = "Actuator";
+				- _id = GUID e28f8081-5825-4888-b501-7ed30445c386;
+			}
+			- m_pParent = GUID 1df6aad7-a399-4388-9bc2-95836627e60a;
+			- m_name = { CGIText 
+				- m_str = "TransmissionModels::Actuator";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 5.09612302996578 17.1493022368163  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -3.20283279000623 17.7493022368163  13.3950788499378 17.7493022368163  13.3950788499378 6.26547701786287  -3.20283279000623 6.26547701786287  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 5;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "shiftTime";
+					- _id = GUID 26913f25-994a-4cec-a7bb-bab25e5c775f;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "shiftPeriod";
+					- _id = GUID a4d406c8-dc58-44c8-a1d3-88ea3bda87ca;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "rate";
+					- _id = GUID 061d452f-ccbe-47fb-8893-6aec49d28a48;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "tolerance";
+					- _id = GUID ef45a8d5-c021-46bd-9924-701bb4d2c55b;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "pressureMax";
+					- _id = GUID 9179bbe5-3b00-461d-bb8a-a83d0ced1f71;
+				}
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 10;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "r_ShiftTime(double * )";
+					- _id = GUID dc9c16f9-713f-4ec9-848a-cb02d0c49d8f;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "r_EngageProfile(double * )";
+					- _id = GUID 594edad7-a8c2-4be7-8f3c-abd65866a04d;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "r_DisengageProfile(double * )";
+					- _id = GUID ddb77c00-134f-42f7-b09c-12eeb7ed0f11;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "s_ShiftTime(double * )";
+					- _id = GUID 4f7cdf6d-155b-4d5a-9fa4-4c044453c782;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "init()";
+					- _id = GUID 3c986be6-79b8-42a4-8a80-9d65943b2d3f;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "SetShiftPeriod(double)";
+					- _id = GUID ced45d97-428c-4db1-821c-e8b7873360fa;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "clean()";
+					- _id = GUID 4da2099f-3abe-44c9-81bf-96ce99ac7dbf;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "r_WaitProfile(double * )";
+					- _id = GUID 2e8cc1d8-545d-4da2-89c8-09e98e32f5e1;
+				}
+				{ IHandle 
+					- _m2Class = "IConstructor";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "Actuator()";
+					- _id = GUID 8cc507a9-a669-4285-9dfe-0c033a1bff9e;
+				}
+				{ IHandle 
+					- _m2Class = "IDestructor";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Actuator";
+					- _name = "~Actuator()";
+					- _id = GUID 47e42e31-e121-419e-b157-ab5b6d397b23;
+				}
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		{ CGILink 
+			- _id = GUID 1ba29de8-8757-497c-8400-78afdb0eaf05;
+			- m_type = 92;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "TransmissionModels.sbs";
+				- _subsystem = "TransmissionModels";
+				- _class = "Actuator";
+				- _name = "clutchConnector";
+				- _id = GUID 8ab23d8c-c2c4-4648-a17e-a2046bf0ffd4;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID a2bd0ce3-dccd-4de6-93e0-3e991c43e822;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID a1844053-e32f-41bb-9947-098185c80ba4;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 2 13.3950788499378 15.0248943845358  20.8086861768369 15.0248943845358  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = 1 0 ;
+			- m_anglePoint2 = 1 0 ;
+			- m_line_style = 2;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "";
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 1;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 1;
+			- m_bShowTargetRole = 1;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "clutchConnector";
+				- m_style = "Arial" 10 0 0 2 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 18.9065756701842 14.2420610211706  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "1";
+				- m_style = "Arial" 10 0 0 2 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 20.1519056826375 15.0677770859278  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = type_122;
+		}
+		{ CGICompositeClass 
+			- _id = GUID 1df6aad7-a399-4388-9bc2-95836627e60a;
+			- m_type = 78;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "TopLevel";
+				- _id = GUID 37a160c0-67c9-4713-a1f5-3cdc49d717d1;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "TopLevel";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 0;
+			- m_color = { IColor 
+				- m_fgColor = 1;
+				- m_bgColor = 1;
+				- m_bgFlag = 1;
+			}
+			- m_lineWidth = 0;
+			- m_polygon = 4 -3.20283279000623 22.7849315068493  36.336394769614 22.7849315068493  36.336394769614 6.26547701786287  -3.20283279000623 6.26547701786287  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		
+		- m_access = 'Z';
+		- m_modified = 'N';
+		- m_fileVersion = "";
+		- m_nModifyDate = 0;
+		- m_nCreateDate = 0;
+		- m_creator = "";
+		- m_bScaleWithZoom = 1;
+		- m_arrowStyle = 'S';
+		- m_pRoot = GUID 1df6aad7-a399-4388-9bc2-95836627e60a;
+		- m_currentLeftTop = -9.54623287671234 -14.6722602739726 ;
+		- m_currentRightBottom = 45.9098692403487 27.2408779576588 ;
+	}
+	- _defaultSubsystem = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Default.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Default";
+		- _id = GUID 9fcee889-9879-48b2-875c-62ca01308855;
+	}
+}
+

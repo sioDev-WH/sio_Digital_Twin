@@ -1,0 +1,66 @@
+I-Logix-RPY-Archive version 4.0.4 *
+{ CGEMdiWorkspace 
+	- stubList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- myViewsWithID = { IRPYRawContainer 
+		- size = 2;
+		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 0;
+				- m_nTop = 0;
+				- m_nRight = 680;
+				- m_nBottom = 432;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Model1.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Model1";
+				- _id = GUID 0fa550b8-dfa9-40d8-b400-60c4a596bb12;
+			}
+			- _UpLeft = -1.39573248393764 4.01412833981057 ;
+			- _DownRight = 26.3957324839376 20.2719225476641 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 26;
+				- m_nTop = 26;
+				- m_nRight = 679;
+				- m_nBottom = 462;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IUCDiagram";
+				- _filename = "ShiftLogic.ucd";
+				- _subsystem = "Requirement";
+				- _class = "";
+				- _name = "ShiftLogic";
+				- _id = GUID 9f33a6b5-e553-48a5-8f9b-d90b42b9d5c5;
+			}
+			- _UpLeft = -5.41762136519984 -1.68324965761596 ;
+			- _DownRight = 30.4176213651998 24.9165445306261 ;
+			- _instanceName = "";
+		}
+	}
+	- _fullName = "e:\\dev\\AOD_Controller\\AOD_Controller";
+}
+

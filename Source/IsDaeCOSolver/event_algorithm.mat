@@ -1,0 +1,56 @@
+y(1)=-0.1;
+y(2)=-20; %-19.8093; added interpolation/detection noise
+ydot(1)=-20.01; %-19.8093; added interpolation/detection noise
+ydot(2)=-9.81;
+yReset=19.8093; % interpolation/detection noise is automatically added if yReset=-ydot(1); is used
+delta_g= 2.0*.0001; % can be computed by evaluating 2.0*g(y(i)=atol_y(i);ydot(i)=atol_ydot(i))
+t= 2.01; % detected time
+ydotdot(1)=-9.81; %have no clue becuase it may rely on the new equations and reset values
+ydotdot(2)=0.0; %have no clue becuase it may rely on the new equations and reset values (interpol)
+
+% y[1] y[2] ydot[1] ydot[2] t     Algebraic Jacobian - can be extracted from  J and Mass
+J=[ 0   -1     1       0;
+    0    0     0       1;
+    0    0     1       0;
+    1    0     0       0];
+ residual = 1.0; %force entering the while loop
+ delta = zeros(4);
+ R(1) = ydot(1)- y(2); %f0		residual equations -- initialization with values t_event
+ R(2)= ydot(2) + 9.81;%f1
+ R(3) = ydot(1)-yReset; %reset
+ dgdt=[1 0 0 0]*[ydot(1);ydot(2);ydotdot(1);ydotdot(2)]
+ if(dgdt>0)
+    R(4) = y(1)- delta_g; %g positive
+ else
+    R(4) = y(1)+ delta_g; %g negative
+ end
+    
+ while(residual >1e-20)
+    delta = inv(J)*R'; %compute delta y's ydot's
+    % vars = [y(2); ydot(2); ydot(1); y(1)];
+    vars = [y(1);y(2); ydot(1); ydot(2)];
+    vars = vars - delta; %update iteration
+    y(1)= vars(1);
+    y(2)=vars(2);
+    ydot(1)=vars(3);
+    ydot(2)= vars(4);
+    R(1) = ydot(1)- y(2); %f0 calc resduals for loop
+	 R(2)= ydot(2) + 9.81;%f1
+	 R(3) = ydot(1)-yReset; %reset
+	 dgdt=[1 0 0 0]*[ydot(1);ydot(2);ydotdot(1);ydotdot(2)]
+    if(dgdt>0)
+       R(4) = y(1)- delta_g; %g positive
+    else
+       R(4) = y(1)+ delta_g; %g negative
+    end
+    residual = sqrt(sum(diag(R'*R)))% norm of residuals
+    vars
+ end
+%now push t forward a little -- based on delta_g(tolerance_g(tolerance(y,ydot))
+ dgdt = [1 0 0 0]*[ydot(1);ydot(2);ydotdot(1);ydotdot(2)] %calculated based on the new eqns and reset vals.
+  if(dgdt>0)%must find the sign for delta_g based on reset values
+    delta_t = delta_g/dgdt;
+  else
+    delta_t = delta_g/dgdt;
+  end
+ t=t+delta_t

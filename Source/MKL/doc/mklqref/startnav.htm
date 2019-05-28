@@ -1,0 +1,74 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Navigation Bar</title>
+<script language=JavaScript>
+<!--
+top.wizardButtons=0;
+
+if (document.images) {
+ var prv1=new Image(60,11);
+ var prv2=new Image(60,11);
+ var nxt1=new Image(40,11);
+ var nxt2=new Image(40,11);
+ prv1.src=top.iconPath+"prev.gif";
+ prv2.src=top.iconPath+"noprev.gif";
+ nxt1.src=top.iconPath+"next.gif";
+ nxt2.src=top.iconPath+"nonext.gif";
+}
+
+function upd() {
+ top.queryNum();
+ if (top.curPage!=-1) {
+  if (top.curPage!=top.prevPage && document.pr.src!=prv1.src) document.pr.src=prv1.src;
+  if (top.curPage==top.prevPage && document.pr.src!=prv2.src) document.pr.src=prv2.src;
+  if (top.curPage!=top.nextPage && document.nx.src!=nxt1.src) document.nx.src=nxt1.src;
+  if (top.curPage==top.nextPage && document.nx.src!=nxt2.src) document.nx.src=nxt2.src;
+ }
+ else {
+  document.pr.src=prv1.src; 
+  document.nx.src=nxt2.src; 
+ }
+ setTimeout("upd()",1000);
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#EEEEEE" onLoad="if(document.images)upd()">
+<script>
+<!--
+scriptsURL="";
+k=top.rootURL.lastIndexOf("/jstoc/projects");
+if (k>-1) {
+ scriptsURL=top.trueRootURL.substring(0,k)+"/jstoc/";
+}
+
+z="<A NAME=\"top\"></A>";
+if (scriptsURL!="") {
+ z="<A ";
+ z+="onMouseOver=\"self.status='run Wizard';return true\" ";
+ z+="onMouseOut=\"self.status='';return true\" ";
+ z+="HREF=\""+scriptsURL+"jstopics/wizstart.htm\"";
+ z+="><IMG width=50 height=11 border=0 align=left ";
+ z+="ALT=\"run Wizard\" ";
+ z+="SRC=\""+scriptsURL+"jstopics/wizard.gif\"";
+ z+="></A>";
+}
+z+="<center><A ";
+z+="onMouseOver=\"self.status='previous page';return true\" ";
+z+="onMouseOut=\"self.status='';return true\" ";
+z+="HREF=\"#top\" ";
+z+="onClick=\"top.showPrev();return false\"><IMG name=pr width=60 height=11 border=0 ";
+z+="ALT=\"previous page\" ";
+z+="SRC=\""+top.iconPath+"noprev.gif\"";
+z+="></A><A ";
+z+="onMouseOver=\"self.status='next page';return true\" ";
+z+="onMouseOut=\"self.status='';return true\" ";
+z+="HREF=\"#top\" ";
+z+="onClick=\"top.showNext();return false\"><IMG name=nx width=40 height=11 border=0 "; 
+z+="ALT=\"next page\" "; 
+z+="SRC=\""+top.iconPath+"next.gif\"></A></center>\r\n"; 
+document.write(z);
+//-->
+</script>
+</body></html>

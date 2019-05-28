@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmissionVB.vbDamper.1 = s 'vbDamper Class'
+	{
+		CLSID = s '{BC7E3159-6811-4BC8-B5ED-BAC856AB15F3}'
+	}
+	RtsOnTransmissionVB.vbDamper = s 'vbDamper Class'
+	{
+		CLSID = s '{BC7E3159-6811-4BC8-B5ED-BAC856AB15F3}'
+		CurVer = s 'RtsOnTransmissionVB.vbDamper.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {BC7E3159-6811-4BC8-B5ED-BAC856AB15F3} = s 'vbDamper Class'
+		{
+			ProgID = s 'RtsOnTransmissionVB.vbDamper.1'
+			VersionIndependentProgID = s 'RtsOnTransmissionVB.vbDamper'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A0FB58BE-0E08-45F6-8A4A-732A46D7FE96}'
+		}
+	}
+}

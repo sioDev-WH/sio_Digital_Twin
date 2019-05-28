@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmissionVB.vbComposite.1 = s 'vbComposite Class'
+	{
+		CLSID = s '{5FA80366-8AEB-4A36-9772-2B58F2B78EBA}'
+	}
+	RtsOnTransmissionVB.vbComposite = s 'vbComposite Class'
+	{
+		CLSID = s '{5FA80366-8AEB-4A36-9772-2B58F2B78EBA}'
+		CurVer = s 'RtsOnTransmissionVB.vbComposite.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {5FA80366-8AEB-4A36-9772-2B58F2B78EBA} = s 'vbComposite Class'
+		{
+			ProgID = s 'RtsOnTransmissionVB.vbComposite.1'
+			VersionIndependentProgID = s 'RtsOnTransmissionVB.vbComposite'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A0FB58BE-0E08-45F6-8A4A-732A46D7FE96}'
+		}
+	}
+}

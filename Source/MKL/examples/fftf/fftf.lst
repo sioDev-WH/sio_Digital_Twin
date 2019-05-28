@@ -1,0 +1,2 @@
+FFT =  cfft1d+  scfft1d+  csfft1d+  cfft2d+  csfft2d+ scfft2d+  \
+       zfft1d+  dzfft1d+  zdfft1d+  zfft2d+  dzfft2d+ zdfft2d+

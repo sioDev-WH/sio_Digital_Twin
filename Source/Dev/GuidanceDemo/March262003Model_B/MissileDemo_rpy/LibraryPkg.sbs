@@ -1,0 +1,69 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ ISubsystem 
+	- _id = GUID f7ea1d29-db32-4756-bf15-fef5352c82ba;
+	- _myState = 8192;
+	- _name = "LibraryPkg";
+	- _lastID = 1;
+	- Declaratives = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ ISubsystem 
+			- fileName = "AvionicsPkg";
+			- _id = GUID baea2038-eea5-4481-bac3-ef69bc8fc62a;
+		}
+	}
+	- weakCGTime = 2.17.2003::17:20:58;
+	- strongCGTime = 1.13.2003::9:50:2;
+	- _defaultComposite = GUID 22720377-42fd-4a23-8670-60f31a41d26c;
+	- _eventsBaseID = 21801;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID 22720377-42fd-4a23-8670-60f31a41d26c;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 2.17.2003::17:20:58;
+			- strongCGTime = 1.13.2003::9:50:2;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- Events = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Types = { IRPYRawContainer 
+		- size = 0;
+	}
+	- UseCases = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Actors = { IRPYRawContainer 
+		- size = 0;
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+

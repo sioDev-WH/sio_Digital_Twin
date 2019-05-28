@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmissionVB.vbPlanetaryCoupler.1 = s 'vbPlanetaryCoupler Class'
+	{
+		CLSID = s '{FD552CBE-3250-42F6-871C-E6CC93BBF45B}'
+	}
+	RtsOnTransmissionVB.vbPlanetaryCoupler = s 'vbPlanetaryCoupler Class'
+	{
+		CLSID = s '{FD552CBE-3250-42F6-871C-E6CC93BBF45B}'
+		CurVer = s 'RtsOnTransmissionVB.vbPlanetaryCoupler.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {FD552CBE-3250-42F6-871C-E6CC93BBF45B} = s 'vbPlanetaryCoupler Class'
+		{
+			ProgID = s 'RtsOnTransmissionVB.vbPlanetaryCoupler.1'
+			VersionIndependentProgID = s 'RtsOnTransmissionVB.vbPlanetaryCoupler'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A0FB58BE-0E08-45F6-8A4A-732A46D7FE96}'
+		}
+	}
+}

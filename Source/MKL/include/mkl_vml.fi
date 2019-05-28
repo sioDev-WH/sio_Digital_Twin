@@ -1,0 +1,63 @@
+!!
+!!               INTEL CORPORATION PROPRIETARY INFORMATION
+!!  This software is supplied under the terms of a license agreement or
+!!  nondisclosure agreement with Intel Corporation and may not be copied
+!!  or disclosed except in accordance with the terms of that agreement.
+!!        Copyright (c) 1999 Intel Corporation. All Rights Reserved.
+!!
+!! File   : vml.fi
+!! Purpose: VML header
+!! Author : Naraykin Andrey, Gilev Andrey
+!!
+
+	! For accuracy setting: LA or HA */
+	INTEGER*2, PARAMETER		:: VML_LA = Z"00000001"
+	INTEGER*2, PARAMETER		:: VML_HA = Z"00000002"
+
+	! For precision setting mode (to set or not to set :0))
+	INTEGER*2, PARAMETER		:: VML_DEFAULT_PRECISION = Z"00000000"
+	INTEGER*2, PARAMETER		:: VML_FLOAT_CONSISTENT  = Z"00000010"
+	INTEGER*2, PARAMETER		:: VML_DOUBLE_CONSISTENT = Z"00000020"
+	INTEGER*2, PARAMETER		:: VML_RESTORE           = Z"00000030"
+
+	! For error modes
+	INTEGER*2, PARAMETER		:: VML_ERRMODE_IGNORE   = Z"00000100"
+	INTEGER*2, PARAMETER		:: VML_ERRMODE_ERRNO    = Z"00000200"
+	INTEGER*2, PARAMETER		:: VML_ERRMODE_STDERR   = Z"00000400"
+	INTEGER*2, PARAMETER		:: VML_ERRMODE_EXCEPT   = Z"00000800"
+	INTEGER*2, PARAMETER		:: VML_ERRMODE_CALLBACK = Z"00001000"
+	INTEGER*2, PARAMETER		:: VML_ERRMODE_DEFAULT  = IOR(VML_ERRMODE_ERRNO,IOR(VML_ERRMODE_CALLBACK,VML_ERRMODE_EXCEPT))
+
+	! Mask for accuracy settings separation
+	INTEGER*2, PARAMETER		:: VML_ACCURACY_MASK = Z"0000000f"
+	! Mask for precision settings separation
+	INTEGER*2, PARAMETER		:: VML_FPUMODE_MASK  = Z"000000f0"
+	! Mask for error mode separation
+	INTEGER*2, PARAMETER		:: VML_ERRMODE_MASK  = Z"0000ff00"
+
+	! Codes for vml?Error function call and errstatus */
+	INTEGER*2, PARAMETER		:: VML_STATUS_OK        = 0
+	INTEGER*2, PARAMETER		:: VML_STATUS_BADSIZE   = -1
+	INTEGER*2, PARAMETER		:: VML_STATUS_BADMEM    = -2
+	INTEGER*2, PARAMETER		:: VML_STATUS_ERRDOM    = 1
+	INTEGER*2, PARAMETER		:: VML_STATUS_SING      = 2
+	INTEGER*2, PARAMETER		:: VML_STATUS_OVERFLOW  = 3
+	INTEGER*2, PARAMETER		:: VML_STATUS_UNDERFLOW = 4
+
+	! Mask for standard error handler modes separation
+	INTEGER*2, PARAMETER		:: VML_ERRMODE_STDHANDLER_MASK = Z"00000f00"
+	! Mask for additional callback switch bit separation
+	INTEGER*2, PARAMETER		:: VML_ERRMODE_CALLBACK_MASK = Z"0000f000"
+
+	! Type for error context structure (parameter for additional callback) 
+	TYPE ERROR_STRUCTURE
+		SEQUENCE
+		INTEGER*4	 ICODE
+		INTEGER*4	 IINDEX
+		REAL*8		 DBA1
+		REAL*8		 DBA2
+		REAL*8		 DBR1
+		REAL*8		 DBR2
+		CHARACTER(64) CFUNCNAME
+		INTEGER*4     IFUNCNAMELEN
+	END TYPE ERROR_STRUCTURE

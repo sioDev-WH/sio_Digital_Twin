@@ -1,0 +1,22 @@
+// OnUMLEso.idl : IDL source for OnUMLEso.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (OnUMLEso.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "IsDaeCOSolver.idl";
+
+
+[
+	uuid(F93405F0-4288-4346-B86B-AE265896EDC8),
+	version(1.0),
+	helpstring("OnUMLEso 1.0 Type Library")
+]
+library ONUMLESOLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+};

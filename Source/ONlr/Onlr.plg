@@ -1,0 +1,98 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Onlr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP841.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ONLR_EXPORTS" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\DistComponents\ONlr\dynmem.cpp"
+"C:\DistComponents\ONlr\licvt1.cpp"
+"C:\DistComponents\ONlr\licvt2.cpp"
+"C:\DistComponents\ONlr\limem.cpp"
+"C:\DistComponents\ONlr\liop0.cpp"
+"C:\DistComponents\ONlr\liop1.cpp"
+"C:\DistComponents\ONlr\lrcvt0.cpp"
+"C:\DistComponents\ONlr\lrcvt1.cpp"
+"C:\DistComponents\ONlr\lrcvt2.cpp"
+"C:\DistComponents\ONlr\lrintern.cpp"
+"C:\DistComponents\ONlr\lrmem.cpp"
+"C:\DistComponents\ONlr\lrop0.cpp"
+"C:\DistComponents\ONlr\lrop1.cpp"
+"C:\DistComponents\ONlr\lrop2.cpp"
+"C:\DistComponents\ONlr\lrsc.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP841.tmp" 
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP842.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ONLR_EXPORTS" /Fp"Release/Onlr.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\DistComponents\ONlr\Onlr.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP842.tmp" 
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP843.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ONLR_EXPORTS" /Fp"Release/Onlr.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\DistComponents\ONlr\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP843.tmp" 
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP844.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"c:\distcomponents/bin/Release/Onlr.pdb" /debug /machine:I386 /out:"c:\distcomponents/bin/Release/Onlr.dll" /implib:"c:\distcomponents/lib/Onlr.lib" 
+.\Release\dynmem.obj
+.\Release\licvt1.obj
+.\Release\licvt2.obj
+.\Release\limem.obj
+.\Release\liop0.obj
+.\Release\liop1.obj
+.\Release\lrcvt0.obj
+.\Release\lrcvt1.obj
+.\Release\lrcvt2.obj
+.\Release\lrintern.obj
+.\Release\lrmem.obj
+.\Release\lrop0.obj
+.\Release\lrop1.obj
+.\Release\lrop2.obj
+.\Release\lrsc.obj
+.\Release\Onlr.obj
+.\Release\StdAfx.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP844.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+dynmem.cpp
+licvt1.cpp
+licvt2.cpp
+limem.cpp
+liop0.cpp
+liop1.cpp
+lrcvt0.cpp
+lrcvt1.cpp
+lrcvt2.cpp
+C:\DistComponents\ONlr\lrcvt2.cpp(411) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+lrintern.cpp
+lrmem.cpp
+lrop0.cpp
+lrop1.cpp
+C:\DistComponents\ONlr\lrop1.cpp(1662) : warning C4244: '=' : conversion from 'long' to 'short', possible loss of data
+C:\DistComponents\ONlr\lrop1.cpp(1668) : warning C4244: '=' : conversion from 'long' to 'short', possible loss of data
+C:\DistComponents\ONlr\lrop1.cpp(1675) : warning C4244: '=' : conversion from 'long' to 'short', possible loss of data
+lrop2.cpp
+lrsc.cpp
+Generating Code...
+Compiling...
+Onlr.cpp
+Linking...
+   Creating library c:\distcomponents/lib/Onlr.lib and object c:\distcomponents/lib/Onlr.exp
+
+
+
+<h3>Results</h3>
+Onlr.dll - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>

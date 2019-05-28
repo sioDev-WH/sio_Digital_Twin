@@ -1,0 +1,142 @@
+I-Logix-RPY-Archive version 4.0.4 *
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 26;
+	- value = "DefaultComponent\\DefaultConfig\\BallDemo.cpp" 10.16.2002::22:36:11
+	"DefaultComponent\\DefaultConfig\\BallDemo.h" 10.16.2002::22:31:14
+	"DefaultComponent\\DefaultConfig\\BouncingBall.cpp" 11.21.2002::23:27:57
+	"DefaultComponent\\DefaultConfig\\BouncingBall.h" 11.21.2002::23:27:57
+	"DefaultComponent\\DefaultConfig\\ControlledReactor.cpp" 9.19.2002::16:10:58
+	"DefaultComponent\\DefaultConfig\\ControlledReactor.h" 9.15.2002::15:38:41
+	"DefaultComponent\\DefaultConfig\\Controller.cpp" 9.19.2002::15:5:13
+	"DefaultComponent\\DefaultConfig\\Controller.h" 9.19.2002::14:55:16
+	"DefaultComponent\\DefaultConfig\\Heater.cpp" 9.19.2002::14:58:38
+	"DefaultComponent\\DefaultConfig\\Heater.h" 9.19.2002::16:14:52
+	"DefaultComponent\\DefaultConfig\\OnModel_BouncingBall.cpp" 10.15.2002::23:44:34
+	"DefaultComponent\\DefaultConfig\\OnModel_BouncingBall.h" 10.15.2002::23:44:33
+	"DefaultComponent\\DefaultConfig\\OnModel_ControlledReactor.cpp" 9.15.2002::13:4:54
+	"DefaultComponent\\DefaultConfig\\OnModel_ControlledReactor.h" 9.15.2002::13:4:54
+	"DefaultComponent\\DefaultConfig\\OnModel_Controller.cpp" 9.15.2002::13:4:54
+	"DefaultComponent\\DefaultConfig\\OnModel_Controller.h" 9.15.2002::13:4:54
+	"DefaultComponent\\DefaultConfig\\OnModel_Heater.cpp" 9.15.2002::13:4:54
+	"DefaultComponent\\DefaultConfig\\OnModel_Heater.h" 9.15.2002::13:4:54
+	"DefaultComponent\\DefaultConfig\\OnModel_Reactor.cpp" 9.15.2002::13:4:54
+	"DefaultComponent\\DefaultConfig\\OnModel_Reactor.h" 9.15.2002::13:4:54
+	"DefaultComponent\\DefaultConfig\\ProcessModels.cpp" 9.15.2002::13:5:44
+	"DefaultComponent\\DefaultConfig\\ProcessModels.h" 9.15.2002::13:12:31
+	"DefaultComponent\\DefaultConfig\\Reactor.cpp" 9.19.2002::15:4:26
+	"DefaultComponent\\DefaultConfig\\Reactor.h" 9.19.2002::16:12:48
+	"DefaultComponent\\DefaultConfig\\junk.cpp" 10.16.2002::0:10:58
+	"DefaultComponent\\DefaultConfig\\junk.h" 10.16.2002::0:10:58
+	
+}
+- size = 12;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ProcessModels.sbs";
+	- _subsystem = "ProcessModels";
+	- _class = "";
+	- _name = "OnModel_Controller";
+	- _id = GUID f57a3249-67b0-45f1-b1bb-8c543857254f;
+}
+- genTime = 9.15.2002::13:4:54;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "ProcessModels.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "ProcessModels";
+	- _id = GUID 0988d413-962a-4fad-9570-19658fdc0eab;
+}
+- genTime = 9.15.2002::13:4:54;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "BallDemo.sbs";
+	- _subsystem = "BallDemo";
+	- _class = "";
+	- _name = "BouncingBall";
+	- _id = GUID 272ef324-9f56-4f10-9c22-305a8a60e296;
+}
+- genTime = 11.21.2002::23:27:57;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ProcessModels.sbs";
+	- _subsystem = "ProcessModels";
+	- _class = "";
+	- _name = "ControlledReactor";
+	- _id = GUID f58121db-dee8-4a2e-a2c6-f05028a02e7a;
+}
+- genTime = 9.15.2002::13:4:54;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ProcessModels.sbs";
+	- _subsystem = "ProcessModels";
+	- _class = "";
+	- _name = "Reactor";
+	- _id = GUID 562071b8-084c-4c41-85f2-55bc136175d3;
+}
+- genTime = 9.15.2002::13:4:54;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ProcessModels.sbs";
+	- _subsystem = "ProcessModels";
+	- _class = "";
+	- _name = "OnModel_Heater";
+	- _id = GUID eec5c0df-f95e-4e67-9b1d-ccc402297c26;
+}
+- genTime = 9.15.2002::13:4:54;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ProcessModels.sbs";
+	- _subsystem = "ProcessModels";
+	- _class = "";
+	- _name = "Heater";
+	- _id = GUID 7518a43b-6b77-4a70-a391-e90e11ee72cf;
+}
+- genTime = 9.15.2002::13:4:54;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "BallDemo.sbs";
+	- _subsystem = "BallDemo";
+	- _class = "";
+	- _name = "OnModel_BouncingBall";
+	- _id = GUID 0153eb33-70f1-4ee5-aec5-0392c933f529;
+}
+- genTime = 10.16.2002::23:31:14;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "BallDemo.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "BallDemo";
+	- _id = GUID dfef4c84-66df-455f-8010-deda6274d5bd;
+}
+- genTime = 10.16.2002::23:35:44;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ProcessModels.sbs";
+	- _subsystem = "ProcessModels";
+	- _class = "";
+	- _name = "OnModel_ControlledReactor";
+	- _id = GUID 805eafd6-d589-4548-a021-332d729e5c84;
+}
+- genTime = 9.15.2002::13:4:54;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ProcessModels.sbs";
+	- _subsystem = "ProcessModels";
+	- _class = "";
+	- _name = "Controller";
+	- _id = GUID 97e589ea-eedf-415d-bd66-88596156ad29;
+}
+- genTime = 9.15.2002::13:4:54;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "ProcessModels.sbs";
+	- _subsystem = "ProcessModels";
+	- _class = "";
+	- _name = "OnModel_Reactor";
+	- _id = GUID 246073a3-09f6-4692-8bf5-05f5eedd7b99;
+}
+- genTime = 9.15.2002::13:4:54;
+

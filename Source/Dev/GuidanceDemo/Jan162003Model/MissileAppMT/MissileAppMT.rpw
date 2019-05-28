@@ -1,0 +1,93 @@
+I-Logix-RPY-Archive version 4.0.4 *
+{ CGEMdiWorkspace 
+	- stubList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- myViewsWithID = { IRPYRawContainer 
+		- size = 3;
+		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -1;
+				- m_ptMaxPositionY = -1;
+				- m_nLeft = 0;
+				- m_nTop = 0;
+				- m_nRight = 681;
+				- m_nBottom = 464;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "ApplicationCG.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "ApplicationCG";
+				- _id = GUID 0ebe013b-55d9-4820-ba9b-c5b66642057a;
+			}
+			- _UpLeft = -8.21568841124474 6.20595138092171 ;
+			- _DownRight = 19.8200320580461 23.9533340633168 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -1;
+				- m_ptMaxPositionY = -1;
+				- m_nLeft = 66;
+				- m_nTop = 66;
+				- m_nRight = 559;
+				- m_nBottom = 534;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChart";
+				- _filename = "GuidancePkg.sbs";
+				- _subsystem = "GuidancePkg";
+				- _class = "GuidanceLogic";
+				- _name = "";
+				- _id = GUID 056a30f2-29f4-4b20-8fc1-7d3ff1c45e6d;
+			}
+			- _UpLeft = -3.55759346488568 -2.84826434207914 ;
+			- _DownRight = 22.9398477220674 20.9198266796942 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 22;
+				- m_nTop = 22;
+				- m_nRight = 341;
+				- m_nBottom = 356;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChart";
+				- _filename = "GuidancePkg.sbs";
+				- _subsystem = "GuidancePkg";
+				- _class = "GuidanceLogic";
+				- _name = "";
+				- _id = GUID 056a30f2-29f4-4b20-8fc1-7d3ff1c45e6d;
+			}
+			- _UpLeft = -15.6427870152809 -9.67821571133888 ;
+			- _DownRight = 35.406959576139 27.749778048954 ;
+			- _instanceName = "GuidanceLogic[0]";
+		}
+	}
+	- _fullName = "E:\\Dev\\GuidanceDemo\\Jan162003Model\\MissileAppMT\\MissileAppMT";
+}
+

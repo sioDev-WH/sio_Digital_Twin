@@ -1,0 +1,20 @@
+// ShiftLogicDialogs.idl : IDL source for ShiftLogicDialogs.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ShiftLogicDialogs.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(2C49A668-4B60-4287-914A-5018FEC8BAE5),
+	version(1.0),
+	helpstring("ShiftLogicDialogs 1.0 Type Library")
+]
+library SHIFTLOGICDIALOGSLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+};

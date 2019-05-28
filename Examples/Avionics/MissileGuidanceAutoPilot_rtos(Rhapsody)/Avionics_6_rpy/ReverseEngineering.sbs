@@ -1,0 +1,59 @@
+I-Logix-RPY-Archive version 4.1.8 C++
+{ ISubsystem 
+	- _id = GUID 782bd0ad-c4cc-4f94-8e3f-11bf56156b2f;
+	- _myState = 8192;
+	- _name = "ReverseEngineering";
+	- weakCGTime = 10.16.2003::17:3:15;
+	- strongCGTime = 1.2.1990::0:0:0;
+	- _defaultComposite = GUID 95c10ccb-1734-404c-bfd0-95d88358dfcf;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID 95c10ccb-1734-404c-bfd0-95d88358dfcf;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 10.16.2003::17:3:15;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- Events = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Types = { IRPYRawContainer 
+		- size = 0;
+	}
+	- UseCases = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Actors = { IRPYRawContainer 
+		- size = 0;
+	}
+	- _configurationRelatedTime = 10.16.2003::22:2:42;
+}
+

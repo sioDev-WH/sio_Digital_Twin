@@ -1,0 +1,4 @@
+[Events]
+AcmeGuidance[0]->GEN(evTargetAcquired())`AcmeGuidance
+[Active Breakpoints]
+[Inactive Breakpoints]

@@ -1,0 +1,488 @@
+<HTML>
+<HEAD>
+<title>BLAS Level 3</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+BLAS Level 3 Routines
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="gemm"></A>
+
+<B>?gemm</B>
+performs the matrix-matrix operation<BR>
+<i>C</i> = <code><font face="Courier New,Courier" color="#000099">alpha</font></code> op(<i>A</i>) op(<i>B</i>) +
+<code><font face="Courier New,Courier" color="#000099">beta</font></code><i> C</i>
+<BR>
+
+where <i>C</i> is an
+<code><font face="Courier New,Courier" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+matrix,
+<br>
+
+op(<i>A</i>) is an
+<code><font face="Courier New,Courier" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">k</font></code>
+matrix,
+<br>
+
+op(<i>B</i>) is a
+<code><font face="Courier New,Courier" color="#000099">k</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+matrix.
+<br>
+
+For the definition of op(<i>A</i>) and op(<i>B</i>), see <a href="matrixar.htm">Matrix Arguments</a>.
+<br>
+
+<code><font face="Courier New,Courier" color="#000099">
+call sgemm (transa, transb, m, n, k, salpha, SA, lda, SB, ldb, sbeta, SC, ldc)<br>
+call dgemm (transa, transb, m, n, k, dalpha, DA, lda, DB, ldb, dbeta, DC, ldc)<br>
+call cgemm (transa, transb, m, n, k, calpha, CA, lda, CB, ldb, cbeta, CC, ldc)<br>
+call zgemm (transa, transb, m, n, k, zalpha, ZA, lda, ZB, ldb, zbeta, ZC, ldc)
+</font></code>
+
+
+
+
+<p><A NAME="hemm"></A>
+
+<B>?hemm</B>
+performs one of the following matrix-matrix operations:<BR>
+<i>C</i> = <code><font face="Courier New,Courier" color="#000099">alpha</font></code> <i>AB</i> +
+<code><font face="Courier New,Courier" color="#000099">beta</font></code><i> C</i>
+
+&nbsp;for <code><font face="Courier New,Courier" color="#000099">side</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'L'</font></code>
+<BR>
+
+<i>C</i> = <code><font face="Courier New,Courier" color="#000099">alpha</font></code> <i>BA</i> +
+<code><font face="Courier New,Courier" color="#000099">beta</font></code><i> C</i>
+
+&nbsp;for <code><font face="Courier New,Courier" color="#000099">side</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'R'</font></code>
+<BR>
+
+where <i>A</i> is a complex Hermitian matrix,
+<br>
+<i>B</i> and <i>C</i> are complex
+<code><font face="Courier New,Courier" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+matrices.
+<br>
+
+<code><font face="Courier New,Courier" color="#000099">
+call chemm (side, uplo, m, n, calpha, CA, lda, CB, ldb, cbeta, CC, ldc)<br>
+call zhemm (side, uplo, m, n, zalpha, ZA, lda, ZB, ldb, zbeta, ZC, ldc)
+</font></code>
+
+
+
+<p><A NAME="herk"></A>
+<B>?herk</B>
+performs a rank-<i>k</i> update of an
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+Hermitian matrix <i>C</i>, that is, one of the following operations:<BR>
+<i>C</i> =
+<code><font face="Courier New,Courier" color="#000099">alpha</font></code>
+<i>AA<sup><small>H</small></sup></i> +
+<code><font face="Courier New,Courier" color="#000099">beta</font></code> <i>C</i>
+
+&nbsp;for <code><font face="Courier New,Courier,codetxt" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'N'</font></code>
+<BR>
+
+<i>C</i> =
+<code><font face="Courier New,Courier" color="#000099">alpha</font></code>
+<i>A<sup><small>H</small></sup>A</i> +
+<code><font face="Courier New,Courier" color="#000099">beta</font></code> <i>C</i>
+
+&nbsp;for <code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'C'</font></code>
+<BR>
+
+where <i>C</i> is an
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+Hermitian matrix;
+<br>
+<i>A</i> is an
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">k</font></code>
+matrix if
+<code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'N'</font></code>,
+<BR>
+<i>A</i> is a
+<code><font face="Courier New,Courier" color="#000099">k</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+matrix if
+<code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'C'</font></code>.
+<BR>
+
+<code><font face="Courier New,Courier" color="#000099">
+call cherk (uplo, trans, n, k, salpha, CA, lda, sbeta, CC, ldc)<br>
+call zherk (uplo, trans, n, k, dalpha, ZA, lda, dbeta, ZC, ldc)
+</font></code>
+
+
+<p><A NAME="her2k"></A>
+
+<B>?her2k</B>
+performs a rank-2<i>k</i> update of an
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+Hermitian matrix <i>C</i>, that is, one of the following operations:<BR>
+<i>C</i> =
+<code><font face="Courier New,Courier" color="#000099">alpha</font></code>
+<i>AB<sup><small>H</small></sup></i> +
+<code><font face="Courier New,Courier" color="#000099">conjg(alpha)</font></code>
+<i>BA<sup><small>H</small></sup></i> +
+<code><font face="Courier New,Courier" color="#000099">beta</font></code> <i>C</i>
+
+&nbsp;for <code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'N'</font></code>
+<BR>
+
+<i>C</i> =
+<code><font face="Courier New,Courier" color="#000099">alpha</font></code>
+<i>A<sup><small>H</small></sup>B</i> +
+<code><font face="Courier New,Courier" color="#000099">conjg(alpha)</font></code>
+<i>B<sup><small>H</small></sup>A</i> +
+<code><font face="Courier New,Courier" color="#000099">beta</font></code> <i>C</i>
+
+&nbsp;for <code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'C'</font></code>
+<BR>
+
+where <i>C</i> is an
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+Hermitian matrix;
+<br>
+<i>A</i> and <i>B</i> are
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">k</font></code>
+matrices if
+<code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'N'</font></code>,
+<BR>
+<i>A</i> and <i>B</i> are
+<code><font face="Courier New,Courier" color="#000099">k</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+matrices if
+<code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'C'</font></code>.
+<BR>
+
+<code><font face="Courier New,Courier" color="#000099">
+call cher2k (uplo, trans, n, k, calpha, CA, lda, CB, ldb, sbeta, CC, ldc)<br>
+call zher2k (uplo, trans, n, k, zalpha, ZA, lda, ZB, ldb, dbeta, ZC, ldc)
+</font></code>
+
+
+
+<p><A NAME="symm"></A>
+
+<B>?symm</B>
+performs one of the following matrix-matrix operations:<BR>
+<i>C</i> = <code><font face="Courier New,Courier" color="#000099">alpha</font></code> <i>AB</i> +
+<code><font face="Courier New,Courier" color="#000099">beta</font></code><i> C</i>
+
+&nbsp;for <code><font face="Courier New,Courier" color="#000099">side</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'L'</font></code>
+<BR>
+
+<i>C</i> = <code><font face="Courier New,Courier" color="#000099">alpha</font></code> <i>BA</i> +
+<code><font face="Courier New,Courier" color="#000099">beta</font></code><i> C</i>
+
+&nbsp;for <code><font face="Courier New,Courier" color="#000099">side</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'R'</font></code>
+<BR>
+
+where <i>A</i> is a  symmetric matrix,
+<br>
+<i>B</i> and <i>C</i> are
+<code><font face="Courier New,Courier" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+matrices.
+<br>
+
+<code><font face="Courier New,Courier" color="#000099">
+call ssymm (side, uplo, m, n, salpha, SA, lda, SB, ldb, sbeta, SC, ldc)<br>
+call dsymm (side, uplo, m, n, dalpha, DA, lda, DB, ldb, dbeta, DC, ldc)<br>
+call csymm (side, uplo, m, n, calpha, CA, lda, CB, ldb, cbeta, CC, ldc)<br>
+call zsymm (side, uplo, m, n, zalpha, ZA, lda, ZB, ldb, zbeta, ZC, ldc)
+</font></code>
+
+
+
+<p><A NAME="syrk"></A>
+
+<B>?syrk</B>
+performs a rank-<i>k</i> update of an
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+symmetric matrix <i>C</i>, that is, one of the following operations:<BR>
+<i>C</i> =
+<code><font face="Courier New,Courier" color="#000099">alpha</font></code>
+<i>AA<sup><small>T</small></sup></i> +
+<code><font face="Courier New,Courier" color="#000099">beta</font></code> <i>C</i>
+
+&nbsp;for <code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'N'</font></code>
+<BR>
+
+<i>C</i> =
+<code><font face="Courier New,Courier" color="#000099">alpha</font></code>
+<i>A<sup><small>T</small></sup>A</i> +
+<code><font face="Courier New,Courier" color="#000099">beta</font></code> <i>C</i>
+
+&nbsp;for <code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'T'</font></code>
+<BR>
+
+where <i>C</i> is an
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+symmetric matrix;
+<br>
+<i>A</i> is an
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">k</font></code>
+matrix if
+<code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'N'</font></code>,
+<BR>
+<i>A</i> is a
+<code><font face="Courier New,Courier" color="#000099">k</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+matrix if
+<code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'T'</font></code>.
+<BR>
+
+<code><font face="Courier New,Courier" color="#000099">
+call ssyrk (uplo, trans, n, k, salpha, SA, lda, sbeta, SC, ldc)<br>
+call dsyrk (uplo, trans, n, k, dalpha, DA, lda, dbeta, DC, ldc)<br>
+call csyrk (uplo, trans, n, k, calpha, CA, lda, cbeta, CC, ldc)<br>
+call zsyrk (uplo, trans, n, k, zalpha, ZA, lda, zbeta, ZC, ldc)
+</font></code>
+
+
+
+<p><A NAME="syr2k"></A>
+
+<B>?syr2k</B>
+performs a rank-2<i>k</i> update of an
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+symmetric matrix <i>C</i>, that is, one of the following operations:<BR>
+<i>C</i> =
+<code><font face="Courier New,Courier" color="#000099">alpha</font></code>
+<i>AB<sup><small>T</small></sup></i> +
+<code><font face="Courier New,Courier" color="#000099">alpha</font></code>
+<i>BA<sup><small>T</small></sup></i> +
+<code><font face="Courier New,Courier" color="#000099">beta</font></code> <i>C</i>
+
+&nbsp;for <code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'N'</font></code>
+<BR>
+
+<i>C</i> =
+<code><font face="Courier New,Courier" color="#000099">alpha</font></code>
+<i>A<sup><small>T</small></sup>B</i> +
+<code><font face="Courier New,Courier" color="#000099">alpha</font></code>
+<i>B<sup><small>T</small></sup>A</i> +
+<code><font face="Courier New,Courier" color="#000099">beta</font></code> <i>C</i>
+
+&nbsp;for <code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'T'</font></code>
+<BR>
+
+where <i>C</i> is an
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+symmetric matrix;
+<br>
+<i>A</i> and <i>B</i> are
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">k</font></code>
+matrices if
+<code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'N'</font></code>,
+<BR>
+<i>A</i> and <i>B</i> are
+<code><font face="Courier New,Courier" color="#000099">k</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+matrices if
+<code><font face="Courier New,Courier" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'T'</font></code>.
+<BR>
+
+<code><font face="Courier New,Courier" color="#000099">
+call ssyr2k (uplo, trans, n, k, salpha, SA, lda, SB, ldb, sbeta, SC, ldc)<br>
+call dsyr2k (uplo, trans, n, k, dalpha, DA, lda, DB, ldb, dbeta, DC, ldc)<br>
+call csyr2k (uplo, trans, n, k, calpha, CA, lda, CB, ldb, cbeta, CC, ldc)<br>
+call zsyr2k (uplo, trans, n, k, zalpha, ZA, lda, ZB, ldb, zbeta, ZC, ldc)
+</font></code>
+
+
+
+<p><A NAME="trmm"></A>
+
+<B>?trmm</B>
+performs one of the matrix-matrix operations<BR>
+<i>B</i> = <code><font face="Courier New,Courier" color="#000099">alpha</font></code> op(<i>A</i>)<i>B</i>
+
+&nbsp;for <code><font face="Courier New,Courier" color="#000099">side</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'L'</font></code>
+<BR>
+
+<i>B</i> = <code><font face="Courier New,Courier" color="#000099">alpha</font></code> <i>B</i> op(<i>A</i>)
+
+&nbsp;for <code><font face="Courier New,Courier" color="#000099">side</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'R'</font></code>
+<BR>
+
+where <i>B</i> is an
+<code><font face="Courier New,Courier" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+general matrix, and <i>A</i> is triangular;
+<br>
+
+op(<i>A</i>) must be an
+<code><font face="Courier New,Courier" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">m</font></code>
+matrix if
+<code><font face="Courier New,Courier" color="#000099">side</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'L'</font></code>
+<BR>
+
+op(<i>A</i>) must be an
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+matrix if
+<code><font face="Courier New,Courier" color="#000099">side</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'R'</font></code>.
+<BR>
+
+For the definition of op(<i>A</i>), see <a href="matrixar.htm">Matrix Arguments</a>.
+<br>
+
+<code><font face="Courier New,Courier" color="#000099">
+call strmm (side, uplo, transa, diag, m, n, salpha, SA, lda, SB, ldb)<br>
+call dtrmm (side, uplo, transa, diag, m, n, dalpha, DA, lda, DB, ldb)<br>
+call ctrmm (side, uplo, transa, diag, m, n, calpha, CA, lda, CB, ldb)<br>
+call ztrmm (side, uplo, transa, diag, m, n, zalpha, ZA, lda, ZB, ldb)
+</font></code>
+
+
+
+<p><A NAME="trsm"></A>
+
+<B>?trsm</B>
+solves for <i>X</i> one of the matrix equations<BR>
+op(<i>A</i>)<i>X</i> = <code><font face="Courier New,Courier" color="#000099">alpha</font></code> <i>B</i>
+
+&nbsp;or&nbsp;
+
+<i>X</i>op(<i>A</i>) = <code><font face="Courier New,Courier" color="#000099">alpha</font></code> <i>B</i>
+
+<BR>
+
+
+where <i>X</i> and <i>B</i> are
+<code><font face="Courier New,Courier" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+general matrices, and <i>A</i> is triangular;
+<br>
+
+op(<i>A</i>) must be an
+<code><font face="Courier New,Courier" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">m</font></code>
+matrix if
+<code><font face="Courier New,Courier" color="#000099">side</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'L'</font></code>
+<BR>
+
+op(<i>A</i>) must be an
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+matrix if
+<code><font face="Courier New,Courier" color="#000099">side</font></code> =
+<code><font face="Courier New,Courier" color="#000099">'R'</font></code>.
+<BR>
+
+For the definition of op(<i>A</i>), see <a href="matrixar.htm">Matrix Arguments</a>.
+The routine overwrites <i>X</i> on <i>B</i>.
+<br>
+
+<code><font face="Courier New,Courier" color="#000099">
+call strsm (side, uplo, transa, diag, m, n, salpha, SA, lda, SB, ldb)<br>
+call dtrsm (side, uplo, transa, diag, m, n, dalpha, DA, lda, DB, ldb)<br>
+call ctrsm (side, uplo, transa, diag, m, n, calpha, CA, lda, CB, ldb)<br>
+call ztrsm (side, uplo, transa, diag, m, n, zalpha, ZA, lda, ZB, ldb)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

@@ -1,0 +1,101 @@
+// geomove.idl : IDL source for geomov.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (geomove.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+interface IGeoObject;
+interface IModel;
+interface DIModel;
+
+	[
+		object,
+		uuid(4942183F-C793-11D3-83DD-00C093022CC1),
+		dual,
+		helpstring("IGeoObject Interface"),
+		pointer_default(unique)
+	]
+	interface IGeoObject : IDispatch
+	{
+		[propget, id(1), helpstring("property Dimension")] HRESULT Dimension([out, retval] long *pVal);
+		[propput, id(1), helpstring("property Dimension")] HRESULT Dimension([in] long newVal);
+		[propget, id(2), helpstring("property Span")] HRESULT Span([out, retval] double *pVal);
+		[propput, id(2), helpstring("property Span")] HRESULT Span([in] double newVal);
+		[id(3), helpstring("method SetInitialGuess")] HRESULT SetInitialGuess([in, out] SAFEARRAY(double)* ppsaArray);
+		[propget, id(4), helpstring("property Resolution")] HRESULT Resolution([out, retval] double *pVal);
+		[propput, id(4), helpstring("property Resolution")] HRESULT Resolution([in] double newVal);
+		[propget, id(5), helpstring("property MaxIteration")] HRESULT MaxIteration([out, retval] long *pVal);
+		[propput, id(5), helpstring("property MaxIteration")] HRESULT MaxIteration([in] long newVal);
+		[propget, id(6), helpstring("property MaxTime")] HRESULT MaxTime([out, retval] double *pVal);
+		[propput, id(6), helpstring("property MaxTime")] HRESULT MaxTime([in] double newVal);
+		[id(7), helpstring("method SetModel")] HRESULT SetModel([in] IDispatch* pModel);
+		[id(8), helpstring("method SetIModel")] HRESULT SetIModel([in] DIModel* pModel);
+		[id(9), helpstring("method Optimize")] HRESULT Optimize([in,out] SAFEARRAY(double)* ppsaArray,[out, retval] double* pVal);
+	};
+
+	[
+		object,
+		uuid(A49A1201-C930-11D3-83DF-00C093022CC1),
+		dual,
+		helpstring("IModel Interface"),
+		pointer_default(unique)
+	]
+	interface IModel : IDispatch
+	{
+		[propget, id(4), helpstring("property Dimension")] HRESULT Dimension([out, retval] VARIANT *pVal);
+		[propput, id(4), helpstring("property Dimension")] HRESULT Dimension([in] VARIANT newVal);
+		[propget, id(5), helpstring("property NIC")] HRESULT NIC([out, retval] VARIANT *pVal);
+		[propput, id(5), helpstring("property NIC")] HRESULT NIC([in] VARIANT newVal);
+		[propget, id(6), helpstring("property NEC")] HRESULT NEC([out, retval] VARIANT *pVal);
+		[propput, id(6), helpstring("property NEC")] HRESULT NEC([in] VARIANT newVal);
+		[id(1), helpstring("method Objective")] HRESULT Objective([in, out] VARIANT* pArray, [out, retval] VARIANT* pVal);
+		[id(2), helpstring("method EqualityConstraints")] HRESULT EqualityConstraints([in] VARIANT* pArray, [out, retval] VARIANT* pVal);
+		[id(3), helpstring("method InequalityConstraints")] HRESULT InequalityConstraints([in] VARIANT* pArray, [out, retval] VARIANT* pVal);
+
+	};
+
+	[
+		object,
+		uuid(8E0C8539-576C-4060-B536-6B7581E14E46),
+		dual,
+		helpstring("DIModel Interface"),
+		pointer_default(unique)
+	]
+	interface DIModel : IDispatch
+	{
+		[propget, id(4), helpstring("property Dimension")] HRESULT Dimension([out, retval] long *pVal);
+		[propput, id(4), helpstring("property Dimension")] HRESULT Dimension([in] long newVal);
+		[propget, id(5), helpstring("property NIC")] HRESULT NIC([out, retval] long *pVal);
+		[propput, id(5), helpstring("property NIC")] HRESULT NIC([in] long newVal);
+		[propget, id(6), helpstring("property NEC")] HRESULT NEC([out, retval] long *pVal);
+		[propput, id(6), helpstring("property NEC")] HRESULT NEC([in] long newVal);
+		[id(1), helpstring("method Objective")] HRESULT Objective([in, out] SAFEARRAY(double)* pArray, [out, retval] double* pVal);
+		[id(2), helpstring("method EqualityConstraints")] HRESULT EqualityConstraints([in] SAFEARRAY(double)* pArray, [out, retval] SAFEARRAY(double)* pVal);
+		[id(3), helpstring("method InequalityConstraints")] HRESULT InequalityConstraints([in] SAFEARRAY(double)* pArray, [out, retval] SAFEARRAY(double)* pVal);
+
+	};
+
+[
+	uuid(49421831-C793-11D3-83DD-00C093022CC1),
+	version(1.0),
+	helpstring("GeoMove 1.0 Type Library")
+]
+library GEOMOVELib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	
+	[
+		uuid(49421840-C793-11D3-83DD-00C093022CC1),
+		helpstring("GeoObject Class")
+	]
+	coclass GeoObject
+	{
+		[default] interface IGeoObject;
+	};
+	
+};

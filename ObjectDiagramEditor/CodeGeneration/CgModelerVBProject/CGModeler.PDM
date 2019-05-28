@@ -1,0 +1,154 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=E:\OpenNumerics\cgmodeler\Package
+Controls Design-Time Support=No
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=Yes
+Xbase=No
+Excel=No
+Exchange=No
+Text=No
+Jet 2.x=No
+Lotus=No
+Paradox=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+E:\OpenNumerics\MiscFiles\ABBCAToolbar.ocx=
+C:\WINNT\system32\CGCtrl.ocx=
+E:\Rhapsody\rhapsody.tlb=
+C:\WINNT\system32\msxml.dll=
+C:\WINNT\system32\msscript.ocx=
+E:\OpenNumerics\VSFlex\Vsflex6d.ocx=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\WINNT\system32\Richtx32.ocx=
+C:\WINNT\system32\MSCOMCTL.OCX=
+C:\WINNT\system32\COMDLG32.OCX=
+
+[Package|Standard Setup Package 1|Files Added]
+C:\WINNT\System32\MsStkPrp.dll=This file is needed for usercontrol design-time support.
+E:\Rhapsody\Share\Properties\~site.prp=
+
+[Package|Standard Setup Package 1|Files Removed]
+c:\winnt\system32\msstkprp.dll=
+
+[Package|Standard Setup Package 1|Files In Project]
+E:\OpenNumerics\cgmodeler\CGModeler_iLogix.ocx=Yes
+C:\WINNT\system32\msvbvm60.dll=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\WINNT\system32\MSJET35.DLL=Yes
+C:\WINNT\system32\MSJTER35.DLL=Yes
+C:\WINNT\system32\MSJINT35.DLL=Yes
+C:\WINNT\system32\vbajet32.dll=Yes
+C:\WINNT\system32\expsrv.dll=Yes
+C:\WINNT\system32\MSRD2X35.DLL=Yes
+C:\WINNT\system32\MSREPL35.DLL=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\WINNT\system32\VB5DB.DLL=Yes
+E:\OpenNumerics\VSFlex\Vsflex6d.ocx=Yes
+C:\WINNT\system32\msscript.ocx=Yes
+C:\WINNT\system32\msxml.dll=Yes
+E:\Rhapsody\rhapsody.tlb=Yes
+C:\WINNT\system32\COMDLG32.OCX=Yes
+C:\WINNT\system32\CGCtrl.ocx=Yes
+E:\OpenNumerics\MiscFiles\ABBCAToolbar.ocx=Yes
+E:\OpenNumerics\BeeGrid\beegd10.ocx=Yes
+C:\WINNT\system32\MSCOMCTL.OCX=Yes
+C:\WINNT\system32\Richtx32.ocx=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\system32\VB6STKIT.DLL=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\WINNT\system32\MSSTKPRP.DLL=No
+E:\Rhapsody\Share\Properties\~site.prp=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+E:\OpenNumerics\cgmodeler\CGModeler_iLogix.ocx=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINNT\system32\MSJET35.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\MSREPL35.DLL=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\VB5DB.DLL=$(WinSysPath)
+E:\OpenNumerics\VSFlex\Vsflex6d.ocx=$(WinSysPath)
+C:\WINNT\system32\msscript.ocx=$(WinSysPath)
+C:\WINNT\system32\msxml.dll=$(WinSysPath)
+E:\Rhapsody\rhapsody.tlb=$(WinSysPath)
+C:\WINNT\system32\COMDLG32.OCX=$(WinSysPath)
+C:\WINNT\system32\CGCtrl.ocx=$(WinSysPath)
+E:\OpenNumerics\MiscFiles\ABBCAToolbar.ocx=$(WinSysPath)
+E:\OpenNumerics\BeeGrid\beegd10.ocx=$(WinSysPath)
+C:\WINNT\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINNT\system32\Richtx32.ocx=$(WinSysPath)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+E:\Rhapsody\Share\Properties\~site.prp=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+E:\OpenNumerics\cgmodeler\CGModeler_iLogix.ocx=No
+E:\Rhapsody\Share\Properties\~site.prp=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=CGModelerInstall
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=$(Programs)
+PrivateGroup0=True
+Parent0=
+
+[Package|Standard Setup Package 1|$(Programs)]
+Icon1=CGModeler_iLogix.ocx
+Title1=CGModeler
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=E:\OpenNumerics\cgmodeler\Package
+ProjectFolder=E:\OpenNumerics\cgmodeler
+ServerSideCab=
+File1=E:\OpenNumerics\cgmodeler\Package\setup.exe
+File2=E:\OpenNumerics\cgmodeler\Package\Setup.Lst
+File3=E:\OpenNumerics\cgmodeler\Package\CGModeler_iLogix.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

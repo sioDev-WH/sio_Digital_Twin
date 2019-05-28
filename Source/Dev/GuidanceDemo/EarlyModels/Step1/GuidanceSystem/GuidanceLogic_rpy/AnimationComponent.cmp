@@ -1,0 +1,88 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IComponent 
+	- _id = GUID 0a783ff3-b74b-4411-9da7-87e5d8088c53;
+	- _myState = 8192;
+	- _name = "AnimationComponent";
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID eddb2565-9225-4037-918a-149ffedc8204;
+		- _myState = 8192;
+		- _name = "Files";
+		- m_path = "";
+		- Elements = { IRPYRawContainer 
+			- size = 2;
+			- value = 
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "GuidancePkg.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "GuidancePkg";
+				- _id = GUID e57df4ae-c7c0-4684-a34b-61f6e934aed0;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Default.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Default";
+				- _id = GUID 4582fb6c-0ad0-11d7-b329-00c04f680d9d;
+			}
+		}
+		- Files = { IRPYRawContainer 
+			- size = 0;
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID e77e2d5d-dba1-4a97-ab3c-cc91c8b446d3;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID e77e2d5d-dba1-4a97-ab3c-cc91c8b446d3;
+			- _myState = 8192;
+			- _name = "DefaultConfig";
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = Animation;
+			- _timeModel = RealTime;
+			- m_generateActors = 1;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _root = { IFolder 
+				- _id = GUID f2b3a2c3-b01c-48ec-b84e-78e4db92edb2;
+				- _name = "DefaultConfig";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 12.9.2002::13:35:10;
+			- strongCGTime = 12.9.2002::13:35:10;
+		}
+	}
+	- weakCGTime = 12.9.2002::15:24:41;
+	- strongCGTime = 12.9.2002::15:24:41;
+}
+

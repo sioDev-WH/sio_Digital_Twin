@@ -1,0 +1,26 @@
+HKCR
+{
+	OnTransmission.CBroadcastTest.1 = s 'CBroadcastTest Class'
+	{
+		CLSID = s '{67532C3D-F849-4AC7-A1A1-067F3E90CB67}'
+	}
+	OnTransmission.CBroadcastTest = s 'CBroadcastTest Class'
+	{
+		CLSID = s '{67532C3D-F849-4AC7-A1A1-067F3E90CB67}'
+		CurVer = s 'OnTransmission.CBroadcastTest.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {67532C3D-F849-4AC7-A1A1-067F3E90CB67} = s 'CBroadcastTest Class'
+		{
+			ProgID = s 'OnTransmission.CBroadcastTest.1'
+			VersionIndependentProgID = s 'OnTransmission.CBroadcastTest'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{FB938A98-05B5-48AE-A8C0-07AAA6FCF88B}'
+		}
+	}
+}

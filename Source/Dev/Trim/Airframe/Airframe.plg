@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Airframe - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\wassim\LOCALS~1\Temp\RSP4E.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Airframe.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Dev\Trim\Airframe\AeroDynamics.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\wassim\LOCALS~1\Temp\RSP4E.tmp" 
+<h3>Output Window</h3>
+Compiling...
+AeroDynamics.cpp
+E:\Dev\Trim\Airframe\AeroDynamics.cpp(57) : error C2065: 'm2ft' : undeclared identifier
+E:\Dev\Trim\Airframe\AeroDynamics.cpp(106) : error C2039: 'Fx' : is not a member of 'BodyDynamics'
+        e:\dev\trim\airframe\bodydynamics.h(26) : see declaration of 'BodyDynamics'
+E:\Dev\Trim\Airframe\AeroDynamics.cpp(118) : error C2039: 'Fz' : is not a member of 'BodyDynamics'
+        e:\dev\trim\airframe\bodydynamics.h(26) : see declaration of 'BodyDynamics'
+E:\Dev\Trim\Airframe\AeroDynamics.cpp(137) : error C2039: 'My' : is not a member of 'BodyDynamics'
+        e:\dev\trim\airframe\bodydynamics.h(26) : see declaration of 'BodyDynamics'
+E:\Dev\Trim\Airframe\AeroDynamics.cpp(138) : error C2039: 'q' : is not a member of 'BodyDynamics'
+        e:\dev\trim\airframe\bodydynamics.h(26) : see declaration of 'BodyDynamics'
+E:\Dev\Trim\Airframe\AeroDynamics.cpp(150) : error C2039: 'u' : is not a member of 'BodyDynamics'
+        e:\dev\trim\airframe\bodydynamics.h(26) : see declaration of 'BodyDynamics'
+E:\Dev\Trim\Airframe\AeroDynamics.cpp(151) : error C2039: 'w' : is not a member of 'BodyDynamics'
+        e:\dev\trim\airframe\bodydynamics.h(26) : see declaration of 'BodyDynamics'
+E:\Dev\Trim\Airframe\AeroDynamics.cpp(160) : error C2039: 'u' : is not a member of 'BodyDynamics'
+        e:\dev\trim\airframe\bodydynamics.h(26) : see declaration of 'BodyDynamics'
+E:\Dev\Trim\Airframe\AeroDynamics.cpp(161) : error C2039: 'w' : is not a member of 'BodyDynamics'
+        e:\dev\trim\airframe\bodydynamics.h(26) : see declaration of 'BodyDynamics'
+Error executing xicl6.exe.
+
+
+
+<h3>Results</h3>
+AeroDynamics.obj - 9 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

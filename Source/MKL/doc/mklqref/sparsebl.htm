@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<title>Sparse BLAS Routines</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Sparse BLAS Routines
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="axpyi"></A>
+
+<B>?axpyi</B>
+adds a scalar multiple of compressed sparse vector to a full-storage vector
+(see also <a href="blaslev1.htm#axpy">?axpy</a> in Level 1 BLAS).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call saxpyi (nz, a, SX, INDX, SY)<br>
+call daxpyi (nz, a, DX, INDX, DY)<br>
+call caxpyi (nz, a, CX, INDX, CY)<br>
+call zaxpyi (nz, a, ZX, INDX, ZY)
+</font></code>
+
+<p><A NAME="doti"></A>
+
+<B>?doti</B>
+computes the dot product of a compressed sparse real vector by a full-storage real vector
+(see also <a href="blaslev1.htm#dot">?dot</a> in Level 1 BLAS).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+svalue = sdoti (nz, SX, INDX, SY)<br>
+dvalue = ddoti (nz, DX, INDX, DY)
+</font></code>
+
+<p><A NAME="dotci"></A>
+
+<B>?dotci</B>
+computes the conjugated dot product of a compressed sparse complex vector by a full-storage complex vector
+(see also <a href="blaslev1.htm#dotc">?dotc</a> in Level 1 BLAS).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+cvalue = cdotci (nz, CX, INDX, CY)<br>
+zvalue = zdotci (nz, ZX, INDX, ZY)
+</font></code>
+
+<p><A NAME="dotui"></A>
+
+<B>?dotui</B>
+computes the dot product of a compressed sparse complex vector by a full-storage complex vector, without conjugation
+(see also <a href="blaslev1.htm#dotu">?dotu</a> in Level 1 BLAS).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+cvalue = cdotui (nz, CX, INDX, CY)<br>
+zvalue = zdotui (nz, ZX, INDX, ZY)
+</font></code>
+
+<p><A NAME="gthr"></A>
+
+<B>?gthr</B>
+gathers a full-storage sparse vector's elements into compressed form.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgthr (nz, SY, SX, INDX)<br>
+call dgthr (nz, DY, DX, INDX)<br>
+call cgthr (nz, CY, CX, INDX)<br>
+call zgthr (nz, ZY, ZX, INDX)
+</font></code>
+
+<p><A NAME="gthrz"></A>
+
+<B>?gthrz</B>
+gathers a sparse vector's elements into compressed form, replacing them by zeros.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgthrz (nz, SY, SX, INDX)<br>
+call dgthrz (nz, DY, DX, INDX)<br>
+call cgthrz (nz, CY, CX, INDX)<br>
+call zgthrz (nz, ZY, ZX, INDX)
+</font></code>
+
+<p><A NAME="roti"></A>
+
+<B>?roti</B>
+applies Givens rotation to sparse vectors one of which is in compressed form
+(see also <a href="blaslev1.htm#rot">?rot</a> in Level 1 BLAS).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sroti (nz, SX, INDX, SY, sc, ss)<br>
+call droti (nz, DX, INDX, DY, dc, ds)
+</font></code>
+
+<p><A NAME="sctr"></A>
+
+<B>?sctr</B>
+converts compressed sparse vectors into full storage form.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssctr (nz, SX, INDX, SY)<br>
+call dsctr (nz, DX, INDX, DY)<br>
+call csctr (nz, CX, INDX, CY)<br>
+call zsctr (nz, ZX, INDX, ZY)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

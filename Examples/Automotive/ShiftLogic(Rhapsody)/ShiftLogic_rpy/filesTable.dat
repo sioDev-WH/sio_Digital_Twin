@@ -1,0 +1,37 @@
+I-Logix-RPY-Archive version 4.0.4 *
+
+- filesTable = { IRPYRawContainer 
+	- size = 30;
+	- value = "ShiftLogic.rpy" ""
+	"ShiftLogic_rpy\\Actuator.omd" "Actuator"
+	"ShiftLogic_rpy\\AnimationComponent.cmp" "AnimationComponent"
+	"ShiftLogic_rpy\\AppSimple.sbs" "AppSimple"
+	"ShiftLogic_rpy\\Application.omd" "Application"
+	"ShiftLogic_rpy\\Application.sbs" "Application"
+	"ShiftLogic_rpy\\Application1.sbs" "Application1"
+	"ShiftLogic_rpy\\ClutchModels.omd" "ClutchModels"
+	"ShiftLogic_rpy\\ClutchSchedule.omd" "ClutchSchedule"
+	"ShiftLogic_rpy\\Default.sbs" "Default"
+	"ShiftLogic_rpy\\DefaultComponent.cmp" "DefaultComponent"
+	"ShiftLogic_rpy\\DemoApp.sbs" "DemoApp"
+	"ShiftLogic_rpy\\DiscreteTransmissionModels.sbs" "DiscreteTransmissionModels"
+	"ShiftLogic_rpy\\DriveTrain.omd" "DriveTrain"
+	"ShiftLogic_rpy\\DriveTrainApplication.omd" "DriveTrainApplication"
+	"ShiftLogic_rpy\\DrivetrainSubsystem.omd" "DrivetrainSubsystem"
+	"ShiftLogic_rpy\\Engine.omd" "Engine"
+	"ShiftLogic_rpy\\GUIModels.sbs" "GUIModels"
+	"ShiftLogic_rpy\\Gears.omd" "Gears"
+	"ShiftLogic_rpy\\Ravigneaux.omd" "Ravigneaux"
+	"ShiftLogic_rpy\\ReverseEngineering.sbs" "ReverseEngineering"
+	"ShiftLogic_rpy\\StandardModels.omd" "StandardModels"
+	"ShiftLogic_rpy\\StandardModels.sbs" "StandardModels"
+	"ShiftLogic_rpy\\TorqueConverter.omd" "TorqueConverter"
+	"ShiftLogic_rpy\\TransmissionControlModels.sbs" "TransmissionControlModels"
+	"ShiftLogic_rpy\\TransmissionController.omd" "TransmissionController"
+	"ShiftLogic_rpy\\TransmissionModels.sbs" "TransmissionModels"
+	"ShiftLogic_rpy\\UI.sbs" "UI"
+	"ShiftLogic_rpy\\Vehicle.omd" "Vehicle"
+	"ShiftLogic_rpy\\VehicleModels.sbs" "VehicleModels"
+	
+}
+

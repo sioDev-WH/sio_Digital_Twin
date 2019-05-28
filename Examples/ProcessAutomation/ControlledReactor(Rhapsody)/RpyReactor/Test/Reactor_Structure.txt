@@ -1,0 +1,61 @@
+
+row[0]: 4 5 
+row[1]: 0 6 
+row[2]: 7 
+row[3]: 0 9 
+row[4]: 0 1 4 10 
+row[5]: 0 1 2 12 
+row[6]: 0 1 3 13 
+row[7]: 0 1 11 
+row[8]: 5 6 14 
+row[9]: 9 15 
+
+EqnOrder: [ 0 1 2 3 4 5 6 7 8 9 ]
+
+
+VarOrder: [ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ]
+
+
+VAL: [ 10 11 12 13 -1 14 -1 -1 15 -1 -1 -1 -1 -1 -1 -1 ]
+
+Variables:
+0	itsReactor.T_reactor
+1	itsReactor.C_heptane
+2	itsReactor.C_toluene
+3	itsReactor.C_hydrogen
+4	itsReactor.T_recycle_in
+5	itsHeater.T_heater
+6	itsHeater.T_in
+7	itsHeater.Q_in
+8	itsController.S_integrator
+9	itsController.T_data_in
+10	itsReactor.T_reactor_dot
+11	itsReactor.C_heptane_dot
+12	itsReactor.C_toluene_dot
+13	itsReactor.C_hydrogen_dot
+14	itsHeater.T_heater_dot
+15	itsController.S_integrator_dot
+
+Equations (jacobian):
+r_RecycleTempBalance	itsReactor.T_recycle_in	itsHeater.T_heater
+r_HeaterTempBalance	itsReactor.T_reactor	itsHeater.T_in
+r_FlowBalance	itsHeater.Q_in
+r_ControllerTempBalance	itsReactor.T_reactor	itsController.T_data_in
+itsReactor.r_ReactorEnergyBalance	itsReactor.T_reactor	itsReactor.C_heptane	itsReactor.T_recycle_in
+itsReactor.r_ReactorMassBalance0	itsReactor.T_reactor	itsReactor.C_heptane	itsReactor.C_toluene
+itsReactor.r_ReactorMassBalance1	itsReactor.T_reactor	itsReactor.C_heptane	itsReactor.C_hydrogen
+itsReactor.r_ReactorMassBalance2	itsReactor.T_reactor	itsReactor.C_heptane
+itsHeater.r_HeaterEnergyBalance	itsHeater.T_heater	itsHeater.T_in
+itsController.r_ErrorIntegrator	itsController.T_data_in
+
+Equations (mass)
+r_RecycleTempBalance
+r_HeaterTempBalance
+r_FlowBalance
+r_ControllerTempBalance
+itsReactor.r_ReactorEnergyBalance	itsReactor.T_reactor
+itsReactor.r_ReactorMassBalance0	itsReactor.C_toluene
+itsReactor.r_ReactorMassBalance1	itsReactor.C_hydrogen
+itsReactor.r_ReactorMassBalance2	itsReactor.C_heptane
+itsHeater.r_HeaterEnergyBalance	itsHeater.T_heater
+itsController.r_ErrorIntegrator	itsController.S_integrator

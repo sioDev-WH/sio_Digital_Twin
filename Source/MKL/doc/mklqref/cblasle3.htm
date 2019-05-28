@@ -1,0 +1,272 @@
+<HTML>
+<HEAD>
+<title>CBLAS Level 3</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+CBLAS Level 3
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p>
+<a name="cblas_gemm"></A>
+<B>cblas_?gemm</B>
+is a C interface to <a href="blaslev3.htm#gemm">?gemm</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_sgemm(const enum CBLAS_ORDER Order, const enum CBLAS_TRANSPOSE TransA,
+const enum CBLAS_TRANSPOSE TransB, const int M, const int N,
+const int K, const float alpha, const float *A,
+const int lda, const float *B, const int ldb,
+const float beta, float *C, const int ldc);
+<p>
+void cblas_dgemm(const enum CBLAS_ORDER Order, const enum CBLAS_TRANSPOSE TransA,
+const enum CBLAS_TRANSPOSE TransB, const int M, const int N,
+const int K, const double alpha, const double *A,
+const int lda, const double *B, const int ldb,
+const double beta, double *C, const int ldc);
+<p>
+void cblas_cgemm(const enum CBLAS_ORDER Order, const enum CBLAS_TRANSPOSE TransA,
+const enum CBLAS_TRANSPOSE TransB, const int M, const int N,
+const int K, const void *alpha, const void *A,
+const int lda, const void *B, const int ldb,
+const void *beta, void *C, const int ldc);
+<p>
+void cblas_zgemm(const enum CBLAS_ORDER Order, const enum CBLAS_TRANSPOSE TransA,
+const enum CBLAS_TRANSPOSE TransB, const int M, const int N,
+const int K, const void *alpha, const void *A,
+const int lda, const void *B, const int ldb,
+const void *beta, void *C, const int ldc);
+
+</font></code>
+
+<p>
+<a name="cblas_hemm"></A>
+<B>cblas_?hemm</B>
+is a C interface to <a href="blaslev3.htm#hemm">?hemm</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_chemm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const int M, const int N,
+const void *alpha, const void *A, const int lda,
+const void *B, const int ldb, const void *beta,
+void *C, const int ldc);
+<p>
+void cblas_zhemm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const int M, const int N,
+const void *alpha, const void *A, const int lda,
+const void *B, const int ldb, const void *beta,
+void *C, const int ldc);
+</font></code>
+
+<p>
+<a name="cblas_herk"></A>
+<B>cblas_?herk</B>
+is a C interface to <a href="blaslev3.htm#herk">?herk</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_cherk(const enum CBLAS_ORDER Order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE Trans, const int N, const int K,
+const float alpha, const void *A, const int lda,
+const float beta, void *C, const int ldc);
+<p>
+void cblas_zherk(const enum CBLAS_ORDER Order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE Trans, const int N, const int K,
+const double alpha, const void *A, const int lda,
+const double beta, void *C, const int ldc);
+
+</font></code>
+
+<p>
+<a name="cblas_her2k"></A>
+<B>cblas_?her2k</B>
+is a C interface to <a href="blaslev3.htm#her2k">?her2k</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_cher2k(const enum CBLAS_ORDER Order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE Trans, const int N, const int K,
+const void *alpha, const void *A, const int lda,
+const void *B, const int ldb, const float beta,
+void *C, const int ldc);
+<p>
+void cblas_zher2k(const enum CBLAS_ORDER Order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE Trans, const int N, const int K,
+const void *alpha, const void *A, const int lda,
+const void *B, const int ldb, const double beta,
+void *C, const int ldc);
+
+</font></code>
+
+<p>
+<a name="cblas_symm"></A>
+<B>cblas_?symm</B>
+is a C interface to <a href="blaslev3.htm#symm">?symm</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_ssymm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const int M, const int N,
+const float alpha, const float *A, const int lda,
+const float *B, const int ldb, const float beta,
+float *C, const int ldc);
+<p>
+void cblas_dsymm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const int M, const int N,
+const double alpha, const double *A, const int lda,
+const double *B, const int ldb, const double beta,
+double *C, const int ldc);
+<p>
+void cblas_csymm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const int M, const int N,
+const void *alpha, const void *A, const int lda,
+const void *B, const int ldb, const void *beta,
+void *C, const int ldc);
+<p>
+void cblas_zsymm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const int M, const int N,
+const void *alpha, const void *A, const int lda,
+const void *B, const int ldb, const void *beta,
+void *C, const int ldc);
+</font></code>
+
+<p>
+<a name="cblas_syrk"></A>
+<B>cblas_?syrk</B>
+is a C interface to <a href="blaslev3.htm#syrk">?syrk</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_ssyrk(const enum CBLAS_ORDER Order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE Trans, const int N, const int K,
+const float alpha, const float *A, const int lda,
+const float beta, float *C, const int ldc);
+<p>
+void cblas_dsyrk(const enum CBLAS_ORDER Order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE Trans, const int N, const int K,
+const double alpha, const double *A, const int lda,
+const double beta, double *C, const int ldc);
+<p>
+void cblas_csyrk(const enum CBLAS_ORDER Order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE Trans, const int N, const int K,
+const void *alpha, const void *A, const int lda,
+const void *beta, void *C, const int ldc);
+<p>
+void cblas_zsyrk(const enum CBLAS_ORDER Order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE Trans, const int N, const int K,
+const void *alpha, const void *A, const int lda,
+const void *beta, void *C, const int ldc);
+</font></code>
+
+<p>
+<a name="cblas_syr2k"></A>
+<B>cblas_?syr2k</B>
+is a C interface to <a href="blaslev3.htm#syr2k">?syr2k</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_ssyr2k(const enum CBLAS_ORDER Order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE Trans, const int N, const int K,
+const float alpha, const float *A, const int lda,
+const float *B, const int ldb, const float beta,
+float *C, const int ldc);
+<p>
+void cblas_dsyr2k(const enum CBLAS_ORDER Order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE Trans, const int N, const int K,
+const double alpha, const double *A, const int lda,
+const double *B, const int ldb, const double beta,
+double *C, const int ldc);
+<p>
+void cblas_csyr2k(const enum CBLAS_ORDER Order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE Trans, const int N, const int K,
+const void *alpha, const void *A, const int lda,
+const void *B, const int ldb, const void *beta,
+void *C, const int ldc);
+<p>
+void cblas_zsyr2k(const enum CBLAS_ORDER Order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE Trans, const int N, const int K,
+const void *alpha, const void *A, const int lda,
+const void *B, const int ldb, const void *beta,
+void *C, const int ldc);
+
+</font></code>
+
+<p>
+<a name="cblas_trmm"></A>
+<B>cblas_?trmm</B>
+is a C interface to <a href="blaslev3.htm#trmm">?trmm</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_strmm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const enum CBLAS_TRANSPOSE TransA,
+const enum CBLAS_DIAG Diag, const int M, const int N,
+const float alpha, const float *A, const int lda,
+float *B, const int ldb);
+<p>
+void cblas_dtrmm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const enum CBLAS_TRANSPOSE TransA,
+const enum CBLAS_DIAG Diag, const int M, const int N,
+const double alpha, const double *A, const int lda,
+double *B, const int ldb);
+<p>
+void cblas_ctrmm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const enum CBLAS_TRANSPOSE TransA,
+const enum CBLAS_DIAG Diag, const int M, const int N,
+const void *alpha, const void *A, const int lda,
+void *B, const int ldb);
+<p>
+void cblas_ztrmm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const enum CBLAS_TRANSPOSE TransA,
+const enum CBLAS_DIAG Diag, const int M, const int N,
+const void *alpha, const void *A, const int lda,
+void *B, const int ldb);
+</font></code>
+
+<p>
+<a name="cblas_trsm"></A>
+<B>cblas_?trsm</B>
+is a C interface to <a href="blaslev3.htm#trsm">?trsm</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_strsm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const enum CBLAS_TRANSPOSE TransA,
+const enum CBLAS_DIAG Diag, const int M, const int N,
+const float alpha, const float *A, const int lda,
+float *B, const int ldb);
+<p>
+void cblas_dtrsm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const enum CBLAS_TRANSPOSE TransA,
+const enum CBLAS_DIAG Diag, const int M, const int N,
+const double alpha, const double *A, const int lda,
+double *B, const int ldb);
+<p>
+void cblas_ctrsm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const enum CBLAS_TRANSPOSE TransA,
+const enum CBLAS_DIAG Diag, const int M, const int N,
+const void *alpha, const void *A, const int lda,
+void *B, const int ldb);
+<p>
+void cblas_ztrsm(const enum CBLAS_ORDER Order, const enum CBLAS_SIDE Side,
+const enum CBLAS_UPLO Uplo, const enum CBLAS_TRANSPOSE TransA,
+const enum CBLAS_DIAG Diag, const int M, const int N,
+const void *alpha, const void *A, const int lda,
+void *B, const int ldb);
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

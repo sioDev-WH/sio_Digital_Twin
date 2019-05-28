@@ -1,0 +1,26 @@
+I-Logix-RPY-Archive version 4.1.8 *
+
+- filesTable = { IRPYRawContainer 
+	- size = 19;
+	- value = "Avionics_6.rpy" ""
+	"Avionics_6_rpy\\AirframePkg.sbs" "AirframePkg"
+	"Avionics_6_rpy\\AutopilotModels.omd" "AutopilotModels"
+	"Avionics_6_rpy\\AutopilotPkg.sbs" "AutopilotPkg"
+	"Avionics_6_rpy\\AvionicsPkg.sbs" "LibraryPkg::AvionicsPkg"
+	"Avionics_6_rpy\\Control_Software.sbs" "Control_Software"
+	"Avionics_6_rpy\\DefaultComponent.cmp" "DefaultComponent"
+	"Avionics_6_rpy\\Device_Interfaces.sbs" "Device_Interfaces"
+	"Avionics_6_rpy\\DisplayPkg.sbs" "DisplayPkg"
+	"Avionics_6_rpy\\Dynamics.omd" "Dynamics"
+	"Avionics_6_rpy\\GuidancePkg.sbs" "GuidancePkg"
+	"Avionics_6_rpy\\LibraryPkg.sbs" "LibraryPkg"
+	"Avionics_6_rpy\\Physical_Environment.sbs" "Physical_Environment"
+	"Avionics_6_rpy\\Prototype.sbs" "Prototype"
+	"Avionics_6_rpy\\RT_Environment.sbs" "RT_Environment"
+	"Avionics_6_rpy\\RequirementClasses.sbs" "RequirementClasses"
+	"Avionics_6_rpy\\ReverseEngineering.sbs" "ReverseEngineering"
+	"Avionics_6_rpy\\TargetPkg.sbs" "TargetPkg"
+	"Avionics_6_rpy\\TrackingSubsystemPkg.sbs" "TrackingSubsystemPkg"
+	
+}
+

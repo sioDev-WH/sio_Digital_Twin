@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+<title>Naming Conventions</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Naming Conventions
+</h3>
+</font>
+
+
+<font face="times new roman,times,bodytxt">
+
+<p>
+<a name="ArgumentTypes"></a>
+<B>Argument types.</B>
+
+Types of all arguments of Fortran routines in this Quick Reference
+follow these conventions:<br><br>
+
+<p>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+IMPLICIT COMPLEX (C)
+<br>
+IMPLICIT DOUBLE PRECISION (D)
+<br>
+IMPLICIT INTEGER (I-N)
+<br>
+IMPLICIT DOUBLE COMPLEX (Z)
+<br>
+CHARACTER*1 compq, compz, diag, eigsrc, howmny, initv, job, norm, order, range, side, trans, transa, transb, uplo, vect
+<br>
+LOGICAL select
+</font></code>
+
+<p>
+<a name="Arrays"></a>
+<B>Arrays.</B>
+
+Names of Fortran arrays are typeset in
+<code><font face="Courier New,Courier,codetxt" color="#000099">UPPERCASE</font></code>
+letters, and names of all other Fortran arguments are in
+<code><font face="Courier New,Courier,codetxt" color="#000099">lowercase</font></code> letters.
+
+<p>
+<a name="NamesOfRoutines"></a>
+<B>Names of routines.</B>
+
+The first letter of a routine name identifies the type of the result:
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+s &nbsp;&nbsp; COMPLEX
+<br>
+d &nbsp;&nbsp; DOUBLE PRECISION
+<br>
+c &nbsp;&nbsp; COMPLEX
+<br>
+z &nbsp;&nbsp; DOUBLE COMPLEX
+<br>
+i &nbsp;&nbsp; INTEGER
+</font></code>
+
+<p>
+To specify the group of routine names that differ in the first letter,
+this Quick Reference uses the question mark (<b>?</b>).
+For example, <b>?getrf</b> refers to the routines <b>sgetrf</b>,
+<b>dgetrf</b>, <b>cgetrf</b>, and <b>zgetrf</b>.
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

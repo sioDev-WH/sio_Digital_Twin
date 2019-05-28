@@ -1,0 +1,569 @@
+03, 27, 2003 (08:53:51): Opening rpy file E:\Rhapsody\Share/Properties\PredefinedTypes.sbs
+03, 27, 2003 (08:53:51): 
+ Started loading E:\Rhapsody\Share/Properties\PredefinedTypes.sbs on Thursday, March 27, 2003 (08:53:51).-
+
+03, 27, 2003 (08:53:51): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:53:51): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:53:51): 
+ Finished loading E:\Rhapsody\Share/Properties\PredefinedTypes.sbs on Thursday, March 27, 2003 (08:53:51).-
+
+03, 27, 2003 (08:53:51): Opening rpy file E:\Rhapsody\Share/Properties\PredefinedTypesC++.sbs
+03, 27, 2003 (08:53:51): 
+ Started loading E:\Rhapsody\Share/Properties\PredefinedTypesC++.sbs on Thursday, March 27, 2003 (08:53:51).-
+
+03, 27, 2003 (08:53:51): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:53:51): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:53:51): 
+ Finished loading E:\Rhapsody\Share/Properties\PredefinedTypesC++.sbs on Thursday, March 27, 2003 (08:53:51).-
+
+03, 27, 2003 (08:53:51): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo.rpy
+03, 27, 2003 (08:53:51): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo.rpy on Thursday, March 27, 2003 (08:53:51).-
+
+03, 27, 2003 (08:53:51): Opening rpy file Default.sbs
+03, 27, 2003 (08:53:51): 
+ Started loading Default.sbs on Thursday, March 27, 2003 (08:53:51).-
+
+03, 27, 2003 (08:53:51): 
+ Finished loading Default.sbs on Thursday, March 27, 2003 (08:53:51).-
+
+03, 27, 2003 (08:53:51): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Default.sbs
+03, 27, 2003 (08:53:51): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Default.sbs on Thursday, March 27, 2003 (08:53:51).-
+
+03, 27, 2003 (08:53:51): Opening rpy file Tracking_01.msc
+03, 27, 2003 (08:53:51): 
+ Started loading Tracking_01.msc on Thursday, March 27, 2003 (08:53:51).-
+
+03, 27, 2003 (08:53:51): 
+ Finished loading Tracking_01.msc on Thursday, March 27, 2003 (08:53:51).-
+
+03, 27, 2003 (08:53:51): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Tracking_01.msc
+03, 27, 2003 (08:53:51): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Tracking_01.msc on Thursday, March 27, 2003 (08:53:51).-
+
+03, 27, 2003 (08:53:51): File E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Tracking_01.msc 
+ Error (line 35) - Failed to find end object ( } )
+
+
+03, 27, 2003 (08:54:05): File E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Tracking_01.msc 
+ Error (line 35) - Found unexpected or superfluous Attribute %s. 
+
+
+03, 27, 2003 (08:54:06): File E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Tracking_01.msc 
+ Error (line 35) - Missing rpyAAttrName2Value in unknown attribute
+
+
+03, 27, 2003 (08:54:11): File E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Tracking_01.msc 
+ Error (line 33) - Type mismatch: Lmsc expected, IRPYObject found
+
+03, 27, 2003 (08:54:12): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:12): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:12): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Tracking_01.msc on Thursday, March 27, 2003 (08:54:12).-
+
+03, 27, 2003 (08:54:12): Opening rpy file Seeking_01.msc
+03, 27, 2003 (08:54:12): 
+ Started loading Seeking_01.msc on Thursday, March 27, 2003 (08:54:12).-
+
+03, 27, 2003 (08:54:12): 
+ Finished loading Seeking_01.msc on Thursday, March 27, 2003 (08:54:12).-
+
+03, 27, 2003 (08:54:12): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Seeking_01.msc
+03, 27, 2003 (08:54:12): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Seeking_01.msc on Thursday, March 27, 2003 (08:54:12).-
+
+03, 27, 2003 (08:54:12): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:12): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:12): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Seeking_01.msc on Thursday, March 27, 2003 (08:54:12).-
+
+03, 27, 2003 (08:54:14): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:14): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:14): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Default.sbs on Thursday, March 27, 2003 (08:54:14).-
+
+03, 27, 2003 (08:54:14): Opening rpy file AirframePkg.sbs
+03, 27, 2003 (08:54:14): 
+ Started loading AirframePkg.sbs on Thursday, March 27, 2003 (08:54:14).-
+
+03, 27, 2003 (08:54:14): 
+ Finished loading AirframePkg.sbs on Thursday, March 27, 2003 (08:54:14).-
+
+03, 27, 2003 (08:54:14): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AirframePkg.sbs
+03, 27, 2003 (08:54:14): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AirframePkg.sbs on Thursday, March 27, 2003 (08:54:14).-
+
+03, 27, 2003 (08:54:15): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:15): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:15): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AirframePkg.sbs on Thursday, March 27, 2003 (08:54:15).-
+
+03, 27, 2003 (08:54:15): Opening rpy file GuidancePkg.sbs
+03, 27, 2003 (08:54:15): 
+ Started loading GuidancePkg.sbs on Thursday, March 27, 2003 (08:54:15).-
+
+03, 27, 2003 (08:54:15): 
+ Finished loading GuidancePkg.sbs on Thursday, March 27, 2003 (08:54:15).-
+
+03, 27, 2003 (08:54:15): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\GuidancePkg.sbs
+03, 27, 2003 (08:54:15): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\GuidancePkg.sbs on Thursday, March 27, 2003 (08:54:15).-
+
+03, 27, 2003 (08:54:15): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:15): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:15): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\GuidancePkg.sbs on Thursday, March 27, 2003 (08:54:15).-
+
+03, 27, 2003 (08:54:15): Opening rpy file AutopilotPkg.sbs
+03, 27, 2003 (08:54:15): 
+ Started loading AutopilotPkg.sbs on Thursday, March 27, 2003 (08:54:15).-
+
+03, 27, 2003 (08:54:15): 
+ Finished loading AutopilotPkg.sbs on Thursday, March 27, 2003 (08:54:15).-
+
+03, 27, 2003 (08:54:15): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AutopilotPkg.sbs
+03, 27, 2003 (08:54:15): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AutopilotPkg.sbs on Thursday, March 27, 2003 (08:54:15).-
+
+03, 27, 2003 (08:54:16): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:16): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:16): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AutopilotPkg.sbs on Thursday, March 27, 2003 (08:54:16).-
+
+03, 27, 2003 (08:54:16): Opening rpy file Application.sbs
+03, 27, 2003 (08:54:16): 
+ Started loading Application.sbs on Thursday, March 27, 2003 (08:54:16).-
+
+03, 27, 2003 (08:54:16): 
+ Finished loading Application.sbs on Thursday, March 27, 2003 (08:54:16).-
+
+03, 27, 2003 (08:54:16): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Application.sbs
+03, 27, 2003 (08:54:16): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Application.sbs on Thursday, March 27, 2003 (08:54:16).-
+
+03, 27, 2003 (08:54:16): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:16): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:16): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\Application.sbs on Thursday, March 27, 2003 (08:54:16).-
+
+03, 27, 2003 (08:54:16): Opening rpy file TrackingSubsystemPkg.sbs
+03, 27, 2003 (08:54:16): 
+ Started loading TrackingSubsystemPkg.sbs on Thursday, March 27, 2003 (08:54:16).-
+
+03, 27, 2003 (08:54:16): 
+ Finished loading TrackingSubsystemPkg.sbs on Thursday, March 27, 2003 (08:54:16).-
+
+03, 27, 2003 (08:54:16): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\TrackingSubsystemPkg.sbs
+03, 27, 2003 (08:54:16): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\TrackingSubsystemPkg.sbs on Thursday, March 27, 2003 (08:54:16).-
+
+03, 27, 2003 (08:54:16): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:16): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:16): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\TrackingSubsystemPkg.sbs on Thursday, March 27, 2003 (08:54:16).-
+
+03, 27, 2003 (08:54:16): Opening rpy file TargetPkg.sbs
+03, 27, 2003 (08:54:16): 
+ Started loading TargetPkg.sbs on Thursday, March 27, 2003 (08:54:16).-
+
+03, 27, 2003 (08:54:16): 
+ Finished loading TargetPkg.sbs on Thursday, March 27, 2003 (08:54:16).-
+
+03, 27, 2003 (08:54:16): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\TargetPkg.sbs
+03, 27, 2003 (08:54:16): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\TargetPkg.sbs on Thursday, March 27, 2003 (08:54:16).-
+
+03, 27, 2003 (08:54:16): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:16): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:17): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\TargetPkg.sbs on Thursday, March 27, 2003 (08:54:17).-
+
+03, 27, 2003 (08:54:17): Opening rpy file DisplayPkg.sbs
+03, 27, 2003 (08:54:17): 
+ Started loading DisplayPkg.sbs on Thursday, March 27, 2003 (08:54:17).-
+
+03, 27, 2003 (08:54:17): 
+ Finished loading DisplayPkg.sbs on Thursday, March 27, 2003 (08:54:17).-
+
+03, 27, 2003 (08:54:17): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\DisplayPkg.sbs
+03, 27, 2003 (08:54:17): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\DisplayPkg.sbs on Thursday, March 27, 2003 (08:54:17).-
+
+03, 27, 2003 (08:54:17): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:17): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:17): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\DisplayPkg.sbs on Thursday, March 27, 2003 (08:54:17).-
+
+03, 27, 2003 (08:54:17): Opening rpy file LibraryPkg.sbs
+03, 27, 2003 (08:54:17): 
+ Started loading LibraryPkg.sbs on Thursday, March 27, 2003 (08:54:17).-
+
+03, 27, 2003 (08:54:17): 
+ Finished loading LibraryPkg.sbs on Thursday, March 27, 2003 (08:54:17).-
+
+03, 27, 2003 (08:54:17): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\LibraryPkg.sbs
+03, 27, 2003 (08:54:17): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\LibraryPkg.sbs on Thursday, March 27, 2003 (08:54:17).-
+
+03, 27, 2003 (08:54:17): Opening rpy file AvionicsPkg.sbs
+03, 27, 2003 (08:54:17): 
+ Started loading AvionicsPkg.sbs on Thursday, March 27, 2003 (08:54:17).-
+
+03, 27, 2003 (08:54:17): 
+ Finished loading AvionicsPkg.sbs on Thursday, March 27, 2003 (08:54:17).-
+
+03, 27, 2003 (08:54:17): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AvionicsPkg.sbs
+03, 27, 2003 (08:54:17): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AvionicsPkg.sbs on Thursday, March 27, 2003 (08:54:17).-
+
+03, 27, 2003 (08:54:18): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AvionicsPkg.sbs on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\LibraryPkg.sbs on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file New.sbs
+03, 27, 2003 (08:54:18): 
+ Started loading New.sbs on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+ Finished loading New.sbs on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\New.sbs
+03, 27, 2003 (08:54:18): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\New.sbs on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\New.sbs on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file AutopilotModels.omd
+03, 27, 2003 (08:54:18): 
+ Started loading AutopilotModels.omd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+ Finished loading AutopilotModels.omd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AutopilotModels.omd
+03, 27, 2003 (08:54:18): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AutopilotModels.omd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AutopilotModels.omd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file SeekerSubsystemModels.omd
+03, 27, 2003 (08:54:18): 
+ Started loading SeekerSubsystemModels.omd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+ Finished loading SeekerSubsystemModels.omd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\SeekerSubsystemModels.omd
+03, 27, 2003 (08:54:18): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\SeekerSubsystemModels.omd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\SeekerSubsystemModels.omd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file MissileGuidanceApplication.omd
+03, 27, 2003 (08:54:18): 
+ Started loading MissileGuidanceApplication.omd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+ Finished loading MissileGuidanceApplication.omd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\MissileGuidanceApplication.omd
+03, 27, 2003 (08:54:18): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\MissileGuidanceApplication.omd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\MissileGuidanceApplication.omd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file AnimationComponent.cmp
+03, 27, 2003 (08:54:18): 
+ Started loading AnimationComponent.cmp on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+ Finished loading AnimationComponent.cmp on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AnimationComponent.cmp
+03, 27, 2003 (08:54:18): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AnimationComponent.cmp on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AnimationComponent.cmp on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file DefaultComponent.cmp
+03, 27, 2003 (08:54:18): 
+ Started loading DefaultComponent.cmp on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+ Finished loading DefaultComponent.cmp on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\DefaultComponent.cmp
+03, 27, 2003 (08:54:18): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\DefaultComponent.cmp on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\DefaultComponent.cmp on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file AnimationComComponent.cmp
+03, 27, 2003 (08:54:18): 
+ Started loading AnimationComComponent.cmp on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+ Finished loading AnimationComComponent.cmp on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AnimationComComponent.cmp
+03, 27, 2003 (08:54:18): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AnimationComComponent.cmp on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\AnimationComComponent.cmp on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file GuidedMissileControlSystem.ucd
+03, 27, 2003 (08:54:18): 
+ Started loading GuidedMissileControlSystem.ucd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+ Finished loading GuidedMissileControlSystem.ucd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): Opening rpy file E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\GuidedMissileControlSystem.ucd
+03, 27, 2003 (08:54:18): 
+ Started loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\GuidedMissileControlSystem.ucd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo_rpy\GuidedMissileControlSystem.ucd on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:18): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Starting inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+
+Finished inUnit resolution phase
+
+
+03, 27, 2003 (08:54:18): 
+ Finished loading E:\Dev\GuidanceDemo\March262003Model_B\MissileDemo.rpy on Thursday, March 27, 2003 (08:54:18).-
+
+03, 27, 2003 (08:54:19): Starting checks of EventsBaseID conflicts
+03, 27, 2003 (08:54:19): Finished checks of EventsBaseID conflicts
+03, 27, 2003 (08:54:19): End Log

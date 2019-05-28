@@ -1,0 +1,307 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IComponent 
+	- _id = GUID 0a783ff3-b74b-4411-9da7-87e5d8088c53;
+	- _myState = 8192;
+	- _name = "AnimationComponent";
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID eddb2565-9225-4037-918a-149ffedc8204;
+		- _myState = 8192;
+		- _name = "Files";
+		- m_path = "";
+		- Elements = { IRPYRawContainer 
+			- size = 4;
+			- value = 
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AirframePkg.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AirframePkg";
+				- _id = GUID e57df4ae-c7c0-4684-a34b-61f6e934aed0;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Default.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Default";
+				- _id = GUID 4582fb6c-0ad0-11d7-b329-00c04f680d9d;
+			}
+			{ IHandle 
+				- _m2Class = "";
+			}
+			{ IHandle 
+				- _m2Class = "";
+			}
+		}
+		- Files = { IRPYRawContainer 
+			- size = 0;
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID e77e2d5d-dba1-4a97-ab3c-cc91c8b446d3;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID e77e2d5d-dba1-4a97-ab3c-cc91c8b446d3;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 3;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CPP_CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Microsoft";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
+									- value = 
+									{ IProperty 
+										- _Name = "CompileSwitches";
+										- _Value = "/I . /I $(OMROOT)\\LangCpp /I $(OMROOT)\\LangCpp\\oxf /nologo  $OMCPPCompileCommandSet /MDd /W3 /Gm /GR /GX /ZI /Od /D \"_UNICODE\" /D \"_SIM_ARTISAN\" /D \"_VAREX_UML_MACROS\" /D \"_AFXDLL\" /D \"WIN32\" /D \"_CONSOLE\" /D \"_MBCS\" /D \"_WINDOWS\" $(INST_FLAGS) $(INCLUDE_PATH) $(INST_INCLUDES) /c ";
+										- _Type = MultiLine;
+									}
+									{ IProperty 
+										- _Name = "LinkSwitches";
+										- _Value = "$OMLinkCommandSet /libpath:\"E:\\distcomponents\\bin\" /libpath:\"E:\\distcomponents\\mkl\\ia32\\lib\" /libpath:\"E:\\Program Files\\vtk40\\lib\\vtk\" /NOLOGO ";
+										- _Type = String;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "CPP_ReverseEngineering";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 3;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Filtering";
+								- Properties = { IRPYRawContainer 
+									- size = 6;
+									- value = 
+									{ IProperty 
+										- _Name = "AnalyzeGlobalFunctions";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "AnalyzeGlobalTypes";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "AnalyzeGlobalVariables";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "IncludeInheritanceInReference";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "ReferenceClasses";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "ReferenceDirectories";
+										- _Value = "";
+										- _Type = String;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "ImplementationTrait";
+								- Properties = { IRPYRawContainer 
+									- size = 6;
+									- value = 
+									{ IProperty 
+										- _Name = "AnalyzeIncludeFiles";
+										- _Value = "OnlyFromSelected";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "IgnoreIncludes, OnlyLogicalHeader, OnlyFromSelected, AllIncludes";
+									}
+									{ IProperty 
+										- _Name = "CreateDependencies";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "IncludeComponentInformation";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "MapToPackage";
+										- _Value = "User";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "User,Directory,FromExising";
+									}
+									{ IProperty 
+										- _Name = "UserDataTypes";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "UserPackage";
+										- _Value = "ReverseEngineering";
+										- _Type = String;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Parser";
+								- Properties = { IRPYRawContainer 
+									- size = 3;
+									- value = 
+									{ IProperty 
+										- _Name = "Defined";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "IncludePath";
+										- _Value = "";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "Undefined";
+										- _Value = "";
+										- _Type = String;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "ReverseEngineering";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 3;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Main";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Files";
+										- _Value = "E:\\DistComponents\\AvionicsLib\\AVIONICS\\Missile\\units.h";
+										- _Type = String;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Progress";
+								- Properties = { IRPYRawContainer 
+									- size = 5;
+									- value = 
+									{ IProperty 
+										- _Name = "AnalyzedCodeConstruct";
+										- _Value = "Class";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Class,File,All";
+									}
+									{ IProperty 
+										- _Name = "InformationLost";
+										- _Value = "Report";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Ignore,Report,Abort";
+									}
+									{ IProperty 
+										- _Name = "ModelUpdate";
+										- _Value = "Class";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Class,All";
+									}
+									{ IProperty 
+										- _Name = "ModelUpdatingFailed";
+										- _Value = "Report";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Ignore,Report,Abort";
+									}
+									{ IProperty 
+										- _Name = "ParsingError";
+										- _Value = "Report";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Ignore,Report,Abort";
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Update";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Policy";
+										- _Value = "Overwrite";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Overwrite,Merge";
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "DefaultConfig";
+			- _scopeType = Derived;
+			- _libraries = "OnUMLEso.lib IsDaeCOSolver.lib mkl_c.lib mkl_def.lib mkl_lapack.lib vtkRendering.lib vtkGraphics.lib vtkImaging.lib vtkFiltering.lib vtkCommon.lib vtkHybrid.lib";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "\"E:\\Program Files\\vtk40\\include\\vtk\",E:\\DistComponents\\MKL\\Include,E:\\DistComponents\\AvionicsLib\\Avionics\\Missile\\GuidanceApp2,E:\\DistComponents\\AvionicsLib\\Avionics\\Missile\\AnimationComponent\\DefaultConfig,E:\\Distcomponents\\IsDaeCOSolver,E:\\Distcomponents\\bin,E:\\Distcomponents\\CommonHeader,E:\\Distcomponents\\OnUMLEso,E:\\Rhapsody\\Share\\LangCpp";
+			- _targetMain = "";
+			- _instrumentation = Animation;
+			- _timeModel = RealTime;
+			- m_generateActors = 1;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "Application.sbs";
+					- _subsystem = "Application";
+					- _class = "";
+					- _name = "theApp";
+					- _id = GUID b8c65cbe-16b0-11d7-b32e-00c04f680d9d;
+				}
+			}
+			- _root = { IFolder 
+				- _id = GUID f2b3a2c3-b01c-48ec-b84e-78e4db92edb2;
+				- _name = "DefaultConfig";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 1.6.2003::12:26:59;
+			- strongCGTime = 1.6.2003::12:26:59;
+		}
+	}
+	- weakCGTime = 1.21.2003::17:11:5;
+	- strongCGTime = 12.26.2002::15:3:25;
+}
+

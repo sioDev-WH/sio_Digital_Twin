@@ -1,0 +1,39 @@
+.scroll {
+	SCROLLBAR-FACE-COLOR: #ff0000; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #000000; SCROLLBAR-3DLIGHT-COLOR: #ff0000; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #666666; SCROLLBAR-DARKSHADOW-COLOR: #ff0000
+}
+#m {
+	MARGIN-LEFT: 15pt; TEXT-INDENT: 20pt; MARGIN-RIGHT: 8pt; TEXT-ALIGN: justify
+}
+.fep {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A:link {
+	TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+.menu {
+	PADDING-LEFT: 1px; FONT-SIZE: 12px; BORDER-LEFT-COLOR: black; BORDER-BOTTOM-COLOR: #ffffff; BORDER-TOP-COLOR: #ffffff; FONT-FAMILY: sans-serif; BACKGROUND-COLOR: #330099; BORDER-RIGHT-COLOR: black
+}
+A.menutext:hover {
+	FONT-SIZE: 12px; COLOR: #ffff33; FONT-FAMILY: Verdana, sans-serif
+}
+A.menutext {
+	FONT-SIZE: 12px; COLOR: #ffff33; FONT-FAMILY: Verdana, sans-serif
+}
+.formnew {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #b30000; TEXT-DECORATION: none
+}
+.textboxes1 {
+	BORDER-RIGHT: black 1px groove; BORDER-TOP: black 1px groove; FONT-SIZE: 8pt; BORDER-LEFT: black 1px groove; BORDER-BOTTOM: black 1px groove; FONT-FAMILY: Verdana, arial; BACKGROUND-COLOR: #fbfbfb; TEXT-DECORATION: none
+}
+.comp {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.tit {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #000000; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}

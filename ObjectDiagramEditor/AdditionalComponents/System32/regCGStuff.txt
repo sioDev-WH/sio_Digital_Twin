@@ -1,0 +1,4 @@
+
+regsvr32 /s beegd10.ocx
+regsvr32 /s CGCtrl.ocx
+regsvr32 /s CGToolbar.ocx

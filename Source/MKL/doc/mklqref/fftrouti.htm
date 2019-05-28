@@ -1,0 +1,149 @@
+<HTML>
+<HEAD>
+<title>FFT Routines</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+FFT Routines
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+
+<p><A NAME="cfft1dzfft1d"></A>
+
+<B>cfft1d / zfft1d</B>
+computes a forward or inverse FFT of a complex vector (in-place).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cfft1d (CZ, n, isign, CWSAVE)<BR>
+call zfft1d (ZZ, n, isign, ZWSAVE)
+</font></code>
+
+<p><A NAME="cfft1dczfft1dc"></A>
+
+<B>cfft1dc / zfft1dc</B>
+computes a forward or inverse FFT of a complex vector (in-place).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cfft1dc (float* r, float* i, int n, int isign, float* wsave);<BR>
+void zfft1dc (double* r, double* i, int n, int isign, double* wsave);
+</font></code>
+
+<p><A NAME="scfft1ddzfft1d"></A>
+
+<B>scfft1d / dzfft1d</B>
+computes a one-dimensional forward FFT from real input data which represents the results from an inverse transform of complex data (in-place).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call scfft1d (SR, n, isign, SWSAVE)<BR>
+call dzfft1d (DR, n, isign, DWSAVE)
+</font></code>
+
+<p><A NAME="scfft1dcdzfft1dc"></A>
+
+<B>scfft1dc / dzfft1dc</B>
+computes a one-dimensional forward FFT from real input data, which represents the results from an inverse transform of complex data (in-place).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void scfft1dc (float* r, int n, int isign, float* wsave);<BR>
+void dzfft1dc (double* r, int n, int isign, double* wsave);
+</font></code>
+
+<p><A NAME="csfft1dzdfft1d"></A>
+
+<B>csfft1d / zdfft1d</B>
+computes a one-dimensional inverse FFT from complex input data, which represents the results from a forward transform of real data (in-place).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call csfft1d (SR, n, isign, SWSAVE)<BR>
+call zdfft1d (DR, n, isign, DWSAVE)
+</font></code>
+
+<p><A NAME="csfft1dczdfft1dc"></A>
+
+<B>csfft1dc / zdfft1dc</B>
+computes a one-dimensional inverse FFT from a complex input data, which represents the results from a forward transform of real data (in-place).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void csfft1dc (float* r, int n, int isign, float* wsave);<BR>
+void zdfft1dc (double* r, int n, int isign, double* wsave);
+</font></code>
+
+<p><A NAME="cfft2dzfft2d"></A>
+
+<B>cfft2d / zfft2d</B>
+computes a forward or inverse FFT of a complex two-dimensional array (in-place).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cfft2d (CR, nr, nc, isign)<BR>
+call zfft2d (ZR, nr, nc, isign)
+</font></code>
+
+<p><A NAME="cfft2dczfft2dc"></A>
+
+<B>cfft2dc / zfft2dc</B>
+computes a forward or inverse FFT of a complex two-dimensional array (in-place).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cfft2dc (float* r, float* i, int nr, int nc, int isign);<BR>
+void zfft1dc (double* r, double* i, int nr, int nc, int isign);
+</font></code>
+
+<p><A NAME="scfft2ddzfft2d"></A>
+
+<B>scfft2d / dzfft2d</B>
+computes a two-dimensional forward FFT from real input data (in-place).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call scfft2d (SR, nr, nc)<BR>
+call dzfft2d (DR, nr, nc)
+</font></code>
+
+<p><A NAME="scfft2dcdzfft2dc"></A>
+
+<B>scfft2dc / dzfft2dc</B>
+computes a two-dimensional forward FFT from real input data (in-place).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void scfft2dc (float* r, int nr, int nc);<BR>
+void dzfft2dc (double* r, int nr, int nc);
+</font></code>
+
+<p><A NAME="csfft2dzdfft2d"></A>
+
+<B>csfft2d / zdfft2d</B>
+computes a two-dimensional inverse FFT from complex input data, which represents the results from a forward transform of real data (in-place).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call csfft2d (SR, nr, nc)<BR>
+call zdfft2d (DR, nr, nc)
+</font></code>
+
+<p><A NAME="csfft2dczdfft2dc"></A>
+
+<B>csfft2dc / zdfft2dc</B>
+computes a two-dimensional inverse FFT from complex input data, which represents the results from a forward transform of real data (in-place).<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void csfft2dc (float* r, int nr, int nc);<BR>
+void zdfft2dc (double* r, int nr, int nc);
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

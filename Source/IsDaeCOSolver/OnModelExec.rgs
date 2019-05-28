@@ -1,0 +1,23 @@
+HKCR
+{
+	ISDaeCOSolver.OnModelExec.1 = s 'OnModelExec Class'
+	{
+		CLSID = s '{0BF65E89-4B0C-40E8-8065-DA9E82EF0FAA}'
+	}
+	ISDaeCOSolver.OnModelExec = s 'OnModelExec Class'
+	{
+		CLSID = s '{0BF65E89-4B0C-40E8-8065-DA9E82EF0FAA}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {0BF65E89-4B0C-40E8-8065-DA9E82EF0FAA} = s 'OnModelExec Class'
+		{
+			ProgID = s 'ISDaeCOSolver.OnModelExec.1'
+			VersionIndependentProgID = s 'ISDaeCOSolver.OnModelExec'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'both'
+			}
+		}
+	}
+}

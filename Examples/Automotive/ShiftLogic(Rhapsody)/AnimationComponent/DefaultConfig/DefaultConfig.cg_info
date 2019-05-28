@@ -1,0 +1,782 @@
+I-Logix-RPY-Archive version 4.0.4 *
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 198;
+	- value = "AnimationComponent\\DefaultConfig\\Actuator.cpp" 6.15.2003::16:0:11
+	"AnimationComponent\\DefaultConfig\\Actuator.h" 1.8.2003::23:52:49
+	"AnimationComponent\\DefaultConfig\\ActuatorClutchConnector.cpp" 1.9.2003::2:7:18
+	"AnimationComponent\\DefaultConfig\\ActuatorClutchConnector.h" 1.8.2003::23:52:50
+	"AnimationComponent\\DefaultConfig\\AppSimple.cpp" 6.9.2003::0:29:27
+	"AnimationComponent\\DefaultConfig\\AppSimple.h" 6.9.2003::23:7:16
+	"AnimationComponent\\DefaultConfig\\Application.cpp" 1.21.2003::12:5:24
+	"AnimationComponent\\DefaultConfig\\Application.h" 1.21.2003::12:5:24
+	"AnimationComponent\\DefaultConfig\\Band_Brake.cpp" 1.9.2003::2:7:18
+	"AnimationComponent\\DefaultConfig\\Band_Brake.h" 1.8.2003::23:52:50
+	"AnimationComponent\\DefaultConfig\\BrakeActuator.cpp" 6.18.2003::22:44:51
+	"AnimationComponent\\DefaultConfig\\BrakeActuator.h" 1.8.2003::23:52:50
+	"AnimationComponent\\DefaultConfig\\Brakes.cpp" 6.10.2003::23:13:10
+	"AnimationComponent\\DefaultConfig\\Brakes.h" 6.10.2003::22:41:9
+	"AnimationComponent\\DefaultConfig\\CBrakeDlg.cpp" 1.20.2003::18:58:50
+	"AnimationComponent\\DefaultConfig\\CBrakeDlg.h" 1.20.2003::18:58:50
+	"AnimationComponent\\DefaultConfig\\CChartDlg.cpp" 1.21.2003::10:10:18
+	"AnimationComponent\\DefaultConfig\\CChartDlg.h" 1.21.2003::10:9:16
+	"AnimationComponent\\DefaultConfig\\CDamper.cpp" 1.9.2003::1:7:33
+	"AnimationComponent\\DefaultConfig\\CDamper.h" 1.8.2003::22:52:26
+	"AnimationComponent\\DefaultConfig\\CFrame.cpp" 1.9.2003::2:7:33
+	"AnimationComponent\\DefaultConfig\\CFrame.h" 1.8.2003::23:52:27
+	"AnimationComponent\\DefaultConfig\\CMass.cpp" 1.9.2003::1:7:34
+	"AnimationComponent\\DefaultConfig\\CMass.h" 1.8.2003::22:52:27
+	"AnimationComponent\\DefaultConfig\\CRigidConnector.cpp" 1.9.2003::2:7:19
+	"AnimationComponent\\DefaultConfig\\CRigidConnector.h" 1.8.2003::23:52:50
+	"AnimationComponent\\DefaultConfig\\CShiftDlg.cpp" 1.20.2003::18:58:50
+	"AnimationComponent\\DefaultConfig\\CShiftDlg.h" 1.20.2003::18:58:50
+	"AnimationComponent\\DefaultConfig\\CSpring.cpp" 1.9.2003::1:7:34
+	"AnimationComponent\\DefaultConfig\\CSpring.h" 1.8.2003::22:52:27
+	"AnimationComponent\\DefaultConfig\\CThrottleDlg.cpp" 1.20.2003::19:17:39
+	"AnimationComponent\\DefaultConfig\\CThrottleDlg.h" 1.20.2003::18:58:50
+	"AnimationComponent\\DefaultConfig\\Chart.cpp" 6.10.2003::23:13:10
+	"AnimationComponent\\DefaultConfig\\Chart.h" 6.10.2003::22:52:18
+	"AnimationComponent\\DefaultConfig\\Clutch.cpp" 1.9.2003::2:7:18
+	"AnimationComponent\\DefaultConfig\\Clutch.h" 1.8.2003::23:52:50
+	"AnimationComponent\\DefaultConfig\\ClutchBase.cpp" 1.9.2003::2:7:19
+	"AnimationComponent\\DefaultConfig\\ClutchBase.h" 1.8.2003::23:52:50
+	"AnimationComponent\\DefaultConfig\\Clutch_Schedule.cpp" 1.19.2003::20:20:45
+	"AnimationComponent\\DefaultConfig\\Clutch_Schedule.h" 1.19.2003::20:20:44
+	"AnimationComponent\\DefaultConfig\\Controller.cpp" 6.18.2003::23:21:59
+	"AnimationComponent\\DefaultConfig\\Controller.h" 6.11.2003::19:34:4
+	"AnimationComponent\\DefaultConfig\\Demo.cpp" 1.8.2003::22:52:0
+	"AnimationComponent\\DefaultConfig\\Demo.h" 1.8.2003::22:52:0
+	"AnimationComponent\\DefaultConfig\\DemoDrivetrain.cpp" 1.23.2003::0:0:32
+	"AnimationComponent\\DefaultConfig\\DemoDrivetrain.h" 1.21.2003::11:5:24
+	"AnimationComponent\\DefaultConfig\\DemoDrivetrainApp.cpp" 1.21.2003::11:5:24
+	"AnimationComponent\\DefaultConfig\\DemoDrivetrainApp.h" 1.21.2003::11:5:24
+	"AnimationComponent\\DefaultConfig\\DemoDrivetrainSubsystem.cpp" 2.13.2003::23:24:32
+	"AnimationComponent\\DefaultConfig\\DemoDrivetrainSubsystem.h" 1.21.2003::11:13:53
+	"AnimationComponent\\DefaultConfig\\DemoDrivetrain_task_0100ms.cpp" 1.21.2003::11:5:24
+	"AnimationComponent\\DefaultConfig\\DemoDrivetrain_task_0100ms.h" 1.21.2003::11:5:24
+	"AnimationComponent\\DefaultConfig\\Demo_CarComplete2.cpp" 1.8.2003::22:52:0
+	"AnimationComponent\\DefaultConfig\\Demo_CarComplete2.h" 1.8.2003::22:51:59
+	"AnimationComponent\\DefaultConfig\\Demo_CarComplete2_app.cpp" 1.8.2003::22:52:0
+	"AnimationComponent\\DefaultConfig\\Demo_CarComplete2_app.h" 1.8.2003::22:51:59
+	"AnimationComponent\\DefaultConfig\\Demo_CompleteCar.cpp" 1.8.2003::22:52:0
+	"AnimationComponent\\DefaultConfig\\Demo_CompleteCar.h" 1.8.2003::22:52:0
+	"AnimationComponent\\DefaultConfig\\Demo_CompleteCar_app.cpp" 1.3.2003::16:0:35
+	"AnimationComponent\\DefaultConfig\\Demo_CompleteCar_app.h" 1.3.2003::16:0:35
+	"AnimationComponent\\DefaultConfig\\Demo_EngineCar.cpp" 1.8.2003::22:52:0
+	"AnimationComponent\\DefaultConfig\\Demo_EngineCar.h" 1.8.2003::21:15:52
+	"AnimationComponent\\DefaultConfig\\Demo_EngineCar_app.cpp" 1.8.2003::22:52:0
+	"AnimationComponent\\DefaultConfig\\Demo_EngineCar_app.h" 1.8.2003::22:52:0
+	"AnimationComponent\\DefaultConfig\\DiscreteTransmissionModels.cpp" 6.9.2003::23:4:4
+	"AnimationComponent\\DefaultConfig\\DiscreteTransmissionModels.h" 6.9.2003::23:4:4
+	"AnimationComponent\\DefaultConfig\\Driver.cpp" 2.16.2003::16:35:41
+	"AnimationComponent\\DefaultConfig\\Driver.h" 2.16.2003::16:35:41
+	"AnimationComponent\\DefaultConfig\\Drivetrain.cpp" 1.19.2003::23:13:54
+	"AnimationComponent\\DefaultConfig\\Drivetrain.h" 1.19.2003::22:33:14
+	"AnimationComponent\\DefaultConfig\\DrivetrainApp.cpp" 1.20.2003::21:29:46
+	"AnimationComponent\\DefaultConfig\\DrivetrainApp.h" 1.19.2003::22:33:14
+	"AnimationComponent\\DefaultConfig\\DrivetrainApp_task_0100ms.cpp" 1.20.2003::21:29:46
+	"AnimationComponent\\DefaultConfig\\DrivetrainApp_task_0100ms.h" 1.19.2003::22:33:14
+	"AnimationComponent\\DefaultConfig\\DrivetrainSubsystem.cpp" 1.19.2003::22:33:14
+	"AnimationComponent\\DefaultConfig\\DrivetrainSubsystem.h" 1.19.2003::22:45:7
+	"AnimationComponent\\DefaultConfig\\Engine.cpp" 1.9.2003::2:7:19
+	"AnimationComponent\\DefaultConfig\\Engine.h" 1.8.2003::23:52:50
+	"AnimationComponent\\DefaultConfig\\EngineWithMass.cpp" 1.9.2003::1:8:8
+	"AnimationComponent\\DefaultConfig\\EngineWithMass.h" 1.9.2003::1:8:8
+	"AnimationComponent\\DefaultConfig\\EngineWithMass_app.cpp" 1.3.2003::14:7:15
+	"AnimationComponent\\DefaultConfig\\EngineWithMass_app.h" 1.3.2003::14:7:15
+	"AnimationComponent\\DefaultConfig\\ExtApp.cpp" 6.19.2003::0:54:55
+	"AnimationComponent\\DefaultConfig\\ExtApp.h" 6.19.2003::0:54:55
+	"AnimationComponent\\DefaultConfig\\ExtApp_task_0100ms.cpp" 6.19.2003::0:55:0
+	"AnimationComponent\\DefaultConfig\\ExtApp_task_0100ms.h" 6.19.2003::0:55:0
+	"AnimationComponent\\DefaultConfig\\ExtCar.cpp" 6.19.2003::1:6:45
+	"AnimationComponent\\DefaultConfig\\ExtCar.h" 6.19.2003::0:55:6
+	"AnimationComponent\\DefaultConfig\\ExtCarSS.cpp" 6.19.2003::0:55:12
+	"AnimationComponent\\DefaultConfig\\ExtCarSS.h" 6.19.2003::0:55:12
+	"AnimationComponent\\DefaultConfig\\ForwardCar.cpp" 1.8.2003::22:52:0
+	"AnimationComponent\\DefaultConfig\\ForwardCar.h" 1.8.2003::22:52:0
+	"AnimationComponent\\DefaultConfig\\ForwardCar_nsd.cpp" 1.9.2003::3:13:14
+	"AnimationComponent\\DefaultConfig\\ForwardCar_nsd.h" 1.9.2003::3:13:14
+	"AnimationComponent\\DefaultConfig\\ForwardDemo.cpp" 1.8.2003::15:3:12
+	"AnimationComponent\\DefaultConfig\\ForwardDemo.h" 1.8.2003::15:3:12
+	"AnimationComponent\\DefaultConfig\\ForwardDemo_app.cpp" 1.8.2003::15:7:48
+	"AnimationComponent\\DefaultConfig\\ForwardDemo_app.h" 1.8.2003::15:3:15
+	"AnimationComponent\\DefaultConfig\\ForwardDemo_task_0100ms.cpp" 1.8.2003::15:3:18
+	"AnimationComponent\\DefaultConfig\\ForwardDemo_task_0100ms.h" 1.8.2003::15:3:18
+	"AnimationComponent\\DefaultConfig\\GUIModels.cpp" 1.20.2003::19:58:50
+	"AnimationComponent\\DefaultConfig\\GUIModels.h" 1.19.2003::20:19:11
+	"AnimationComponent\\DefaultConfig\\Gear.cpp" 1.8.2003::23:52:51
+	"AnimationComponent\\DefaultConfig\\Gear.h" 1.8.2003::23:52:50
+	"AnimationComponent\\DefaultConfig\\GearInfo.cpp" 1.19.2003::20:20:45
+	"AnimationComponent\\DefaultConfig\\GearInfo.h" 1.19.2003::20:20:45
+	"AnimationComponent\\DefaultConfig\\LookupTable.cpp" 1.8.2003::23:52:27
+	"AnimationComponent\\DefaultConfig\\LookupTable.h" 1.8.2003::23:52:27
+	"AnimationComponent\\DefaultConfig\\Oneway_Clutch.cpp" 1.23.2003::0:59:17
+	"AnimationComponent\\DefaultConfig\\Oneway_Clutch.h" 1.8.2003::23:52:50
+	"AnimationComponent\\DefaultConfig\\PlanetaryCoupler.cpp" 1.8.2003::23:52:51
+	"AnimationComponent\\DefaultConfig\\PlanetaryCoupler.h" 1.8.2003::23:52:50
+	"AnimationComponent\\DefaultConfig\\Ravigneaux.cpp" 1.9.2003::2:7:19
+	"AnimationComponent\\DefaultConfig\\Ravigneaux.h" 1.8.2003::23:52:50
+	"AnimationComponent\\DefaultConfig\\ShiftData.cpp" 1.19.2003::20:20:45
+	"AnimationComponent\\DefaultConfig\\ShiftData.h" 1.19.2003::20:20:45
+	"AnimationComponent\\DefaultConfig\\ShiftLever.cpp" 6.11.2003::18:3:43
+	"AnimationComponent\\DefaultConfig\\ShiftLever.h" 6.10.2003::23:0:51
+	"AnimationComponent\\DefaultConfig\\SimpleApp.cpp" 6.11.2003::21:3:3
+	"AnimationComponent\\DefaultConfig\\SimpleApp.h" 6.11.2003::21:3:3
+	"AnimationComponent\\DefaultConfig\\SimpleApp_task_0100ms.cpp" 6.11.2003::21:35:55
+	"AnimationComponent\\DefaultConfig\\SimpleApp_task_0100ms.h" 6.11.2003::21:3:10
+	"AnimationComponent\\DefaultConfig\\SimpleGearbox.cpp" 6.11.2003::19:48:52
+	"AnimationComponent\\DefaultConfig\\SimpleGearbox.h" 6.11.2003::16:20:33
+	"AnimationComponent\\DefaultConfig\\StandardModels.cpp" 1.3.2003::16:23:49
+	"AnimationComponent\\DefaultConfig\\StandardModels.h" 1.9.2003::2:9:13
+	"AnimationComponent\\DefaultConfig\\StdApp.cpp" 6.18.2003::21:42:30
+	"AnimationComponent\\DefaultConfig\\StdApp.h" 6.12.2003::0:8:53
+	"AnimationComponent\\DefaultConfig\\StdApp_task_0100ms.cpp" 6.17.2003::22:56:58
+	"AnimationComponent\\DefaultConfig\\StdApp_task_0100ms.h" 6.18.2003::21:42:25
+	"AnimationComponent\\DefaultConfig\\StdCar.cpp" 6.18.2003::21:46:47
+	"AnimationComponent\\DefaultConfig\\StdCar.h" 6.18.2003::21:46:47
+	"AnimationComponent\\DefaultConfig\\StdCarSS.cpp" 6.18.2003::22:13:58
+	"AnimationComponent\\DefaultConfig\\StdCarSS.h" 6.18.2003::21:42:14
+	"AnimationComponent\\DefaultConfig\\Test.cpp" 1.20.2003::21:29:46
+	"AnimationComponent\\DefaultConfig\\Test.h" 1.20.2003::21:29:46
+	"AnimationComponent\\DefaultConfig\\TestDrivetrain01.cpp" 6.27.2003::23:10:54
+	"AnimationComponent\\DefaultConfig\\TestDrivetrain01.h" 6.27.2003::22:32:5
+	"AnimationComponent\\DefaultConfig\\TestDrivetrainApp.cpp" 6.27.2003::22:33:34
+	"AnimationComponent\\DefaultConfig\\TestDrivetrainApp.h" 6.27.2003::22:21:4
+	"AnimationComponent\\DefaultConfig\\TestDrivetrainApp_task_0100ms.cpp" 6.27.2003::22:32:14
+	"AnimationComponent\\DefaultConfig\\TestDrivetrainApp_task_0100ms.h" 6.27.2003::22:32:14
+	"AnimationComponent\\DefaultConfig\\TestDrivetrainSS.cpp" 6.27.2003::23:10:11
+	"AnimationComponent\\DefaultConfig\\TestDrivetrainSS.h" 6.27.2003::22:32:18
+	"AnimationComponent\\DefaultConfig\\TestModel.cpp" 1.20.2003::21:29:46
+	"AnimationComponent\\DefaultConfig\\TestModel.h" 1.20.2003::21:29:46
+	"AnimationComponent\\DefaultConfig\\TestSubsystem.cpp" 1.20.2003::21:29:46
+	"AnimationComponent\\DefaultConfig\\TestSubsystem.h" 1.20.2003::21:40:3
+	"AnimationComponent\\DefaultConfig\\Test_task_0100ms.cpp" 1.20.2003::21:29:46
+	"AnimationComponent\\DefaultConfig\\Test_task_0100ms.h" 1.20.2003::21:29:46
+	"AnimationComponent\\DefaultConfig\\Throttle.cpp" 6.10.2003::23:13:10
+	"AnimationComponent\\DefaultConfig\\Throttle.h" 6.10.2003::23:4:20
+	"AnimationComponent\\DefaultConfig\\Torque_Converter.cpp" 1.9.2003::2:7:19
+	"AnimationComponent\\DefaultConfig\\Torque_Converter.h" 1.8.2003::23:52:50
+	"AnimationComponent\\DefaultConfig\\TransmissionControlModels.cpp" 1.19.2003::20:20:45
+	"AnimationComponent\\DefaultConfig\\TransmissionControlModels.h" 1.19.2003::21:31:49
+	"AnimationComponent\\DefaultConfig\\TransmissionModels.cpp" 1.3.2003::15:7:43
+	"AnimationComponent\\DefaultConfig\\TransmissionModels.h" 1.3.2003::16:52:49
+	"AnimationComponent\\DefaultConfig\\UI.cpp" 1.21.2003::0:53:22
+	"AnimationComponent\\DefaultConfig\\UI.h" 1.21.2003::1:18:3
+	"AnimationComponent\\DefaultConfig\\Vehicle.cpp" 1.9.2003::1:7:7
+	"AnimationComponent\\DefaultConfig\\Vehicle.h" 1.8.2003::22:52:57
+	"AnimationComponent\\DefaultConfig\\Vehicle5.cpp" 1.9.2003::2:7:7
+	"AnimationComponent\\DefaultConfig\\Vehicle5.h" 1.8.2003::23:52:57
+	"AnimationComponent\\DefaultConfig\\VehicleModels.cpp" 1.3.2003::15:7:52
+	"AnimationComponent\\DefaultConfig\\VehicleModels.h" 1.3.2003::15:7:52
+	"AnimationComponent\\DefaultConfig\\WassimDemo.cpp" 1.8.2003::13:19:48
+	"AnimationComponent\\DefaultConfig\\WassimDemo.h" 1.8.2003::12:44:1
+	"AnimationComponent\\DefaultConfig\\WassimDemo_app.cpp" 1.8.2003::13:14:30
+	"AnimationComponent\\DefaultConfig\\WassimDemo_app.h" 1.8.2003::12:21:58
+	"AnimationComponent\\DefaultConfig\\WassimDemo_task_0100ms.cpp" 1.8.2003::14:2:10
+	"AnimationComponent\\DefaultConfig\\WassimDemo_task_0100ms.h" 1.8.2003::12:40:58
+	"AnimationComponent\\DefaultConfig\\iDriveTrain.cpp" 1.21.2003::2:48:52
+	"AnimationComponent\\DefaultConfig\\iDriveTrain.h" 1.21.2003::0:52:32
+	"AnimationComponent\\DefaultConfig\\iDriveTrainApp.cpp" 1.21.2003::1:43:36
+	"AnimationComponent\\DefaultConfig\\iDriveTrainApp.h" 1.21.2003::0:52:32
+	"AnimationComponent\\DefaultConfig\\iDriveTrainSubsystem.cpp" 1.21.2003::9:41:18
+	"AnimationComponent\\DefaultConfig\\iDriveTrainSubsystem.h" 1.21.2003::1:6:0
+	"AnimationComponent\\DefaultConfig\\iDriveTrain_task_0100ms.cpp" 1.21.2003::10:11:11
+	"AnimationComponent\\DefaultConfig\\iDriveTrain_task_0100ms.h" 1.21.2003::0:52:32
+	"AnimationComponent\\DefaultConfig\\iLogixForwardCarDemo.cpp" 1.9.2003::10:12:22
+	"AnimationComponent\\DefaultConfig\\iLogixForwardCarDemo.h" 1.9.2003::10:14:14
+	"AnimationComponent\\DefaultConfig\\iLogixForwardCarDemo_app.cpp" 1.9.2003::10:13:4
+	"AnimationComponent\\DefaultConfig\\iLogixForwardCarDemo_app.h" 1.9.2003::1:17:49
+	"AnimationComponent\\DefaultConfig\\iLogixForwardCarDemo_task_0100ms.cpp" 1.9.2003::1:29:41
+	"AnimationComponent\\DefaultConfig\\iLogixForwardCarDemo_task_0100ms.h" 1.8.2003::15:13:13
+	"AnimationComponent\\DefaultConfig\\theApp.cpp" 2.4.2003::21:3:0
+	"AnimationComponent\\DefaultConfig\\theApp.h" 2.4.2003::21:2:59
+	"AnimationComponent\\DefaultConfig\\theExtApp.cpp" 6.19.2003::0:54:50
+	"AnimationComponent\\DefaultConfig\\theExtApp.h" 6.19.2003::0:54:50
+	"AnimationComponent\\DefaultConfig\\theExtApp2.cpp" 6.22.2003::13:11:57
+	"AnimationComponent\\DefaultConfig\\theExtApp2.h" 6.22.2003::13:11:57
+	"AnimationComponent\\DefaultConfig\\theSimpleApp.cpp" 6.11.2003::17:54:32
+	"AnimationComponent\\DefaultConfig\\theSimpleApp.h" 6.11.2003::17:43:19
+	"AnimationComponent\\DefaultConfig\\theStdApp.cpp" 6.18.2003::23:8:54
+	"AnimationComponent\\DefaultConfig\\theStdApp.h" 6.12.2003::0:28:29
+	"AnimationComponent\\DefaultConfig\\theTestApp.cpp" 6.27.2003::23:20:15
+	"AnimationComponent\\DefaultConfig\\theTestApp.h" 6.27.2003::23:20:15
+	
+}
+- size = 64;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "TransmissionModels";
+	- _class = "";
+	- _name = "Band_Brake";
+	- _id = GUID da252185-5aaf-46c2-be47-c7a31f5d42d0;
+}
+- genTime = 1.9.2003::1:7:19;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "Application.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Application";
+	- _id = GUID 4733a771-c671-4ffe-87f0-f44d8854f1c3;
+}
+- genTime = 1.21.2003::11:5:24;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "TransmissionModels";
+	- _class = "";
+	- _name = "Clutch";
+	- _id = GUID 77f03e67-69b5-438d-a104-7177191eaad8;
+}
+- genTime = 1.9.2003::1:7:19;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionControlModels.sbs";
+	- _subsystem = "TransmissionControlModels";
+	- _class = "";
+	- _name = "Controller";
+	- _id = GUID 7a6f97be-4759-4f68-ae25-5bf06a850182;
+}
+- genTime = 6.11.2003::21:51:49;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "TransmissionModels";
+	- _class = "";
+	- _name = "ClutchBase";
+	- _id = GUID c030246b-624f-4eda-9733-cd6a64b0bb57;
+}
+- genTime = 1.9.2003::1:7:19;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "DiscreteTransmissionModels.sbs";
+	- _subsystem = "DiscreteTransmissionModels";
+	- _class = "";
+	- _name = "SimpleGearbox";
+	- _id = GUID 79d55823-e7f5-4f5f-b669-d2dcbf4fd4b9;
+}
+- genTime = 6.11.2003::19:48:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Application.sbs";
+	- _subsystem = "Application";
+	- _class = "";
+	- _name = "TestDrivetrainApp_task_0100ms";
+	- _id = GUID 15d03c4e-9fc7-4f2f-ab31-9b83a48a14d9;
+}
+- genTime = 6.27.2003::23:10:6;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "VehicleModels.sbs";
+	- _subsystem = "VehicleModels";
+	- _class = "";
+	- _name = "Vehicle5";
+	- _id = GUID 8f57cd4d-ae06-4919-bafc-1929c2b2f915;
+}
+- genTime = 1.9.2003::1:7:7;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Application.sbs";
+	- _subsystem = "Application";
+	- _class = "";
+	- _name = "theTestApp";
+	- _id = GUID 1456de79-c1d6-4e99-bc0d-7fa2d72eb75f;
+}
+- genTime = 6.27.2003::23:20:15;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "TransmissionModels";
+	- _class = "";
+	- _name = "Oneway_Clutch";
+	- _id = GUID 4c79a9e9-e7f7-44ba-9872-19849266e8cd;
+}
+- genTime = 1.9.2003::1:7:19;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "TransmissionModels";
+	- _class = "";
+	- _name = "ActuatorClutchConnector";
+	- _id = GUID f181b86e-6f1a-4033-9ab7-d3b96c208d45;
+}
+- genTime = 1.9.2003::1:7:19;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "ExtCar";
+	- _id = GUID 312568a1-0acd-42c4-8c4f-104953e60843;
+}
+- genTime = 6.19.2003::0:55:6;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GUIModels.sbs";
+	- _subsystem = "GUIModels";
+	- _class = "";
+	- _name = "Throttle";
+	- _id = GUID 44b0da11-ac2a-4a82-870d-1ecfb7011543;
+}
+- genTime = 6.9.2003::0:11:12;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Application.sbs";
+	- _subsystem = "Application";
+	- _class = "";
+	- _name = "TestDrivetrainSS";
+	- _id = GUID 7a3ce1f7-2f67-4c62-8197-b6f4f6f7d3c0;
+}
+- genTime = 6.27.2003::23:10:12;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "UI.sbs";
+	- _subsystem = "UI";
+	- _class = "";
+	- _name = "Driver";
+	- _id = GUID 06e73b4e-2cd8-11d7-b349-00c04f680d9d;
+}
+- genTime = 2.16.2003::16:35:41;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "VehicleModels.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "VehicleModels";
+	- _id = GUID a7a94d15-ada1-46b6-a54b-8424efd5595d;
+}
+- genTime = 1.9.2003::1:7:7;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "UI.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "UI";
+	- _id = GUID 06e73ac4-2cd8-11d7-b349-00c04f680d9d;
+}
+- genTime = 1.21.2003::2:0:58;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "theExtApp2";
+	- _id = GUID ce4822cf-bfb5-4e68-8a54-539e0655576b;
+}
+- genTime = 6.22.2003::13:11:57;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Application.sbs";
+	- _subsystem = "Application";
+	- _class = "";
+	- _name = "DemoDrivetrainApp";
+	- _id = GUID 87f3ec8c-6315-4f63-b494-3ba2c4f8818a;
+}
+- genTime = 1.21.2003::11:5:24;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GUIModels.sbs";
+	- _subsystem = "GUIModels";
+	- _class = "";
+	- _name = "Chart";
+	- _id = GUID f0ab4546-6856-4cb4-b200-1afb4ccb4b37;
+}
+- genTime = 6.9.2003::23:21:48;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionControlModels.sbs";
+	- _subsystem = "TransmissionControlModels";
+	- _class = "";
+	- _name = "Clutch_Schedule";
+	- _id = GUID d962344e-41d1-414d-ad5b-6a468e0adfb1;
+}
+- genTime = 1.19.2003::19:33:39;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "theSimpleApp";
+	- _id = GUID f1f9629a-e711-422f-a0a5-a5e6fe511e11;
+}
+- genTime = 6.11.2003::17:54:32;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "StandardModels.sbs";
+	- _subsystem = "StandardModels";
+	- _class = "";
+	- _name = "CSpring";
+	- _id = GUID 59849dcd-2715-43f8-8514-d34a01645482;
+}
+- genTime = 1.9.2003::1:7:34;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "DiscreteTransmissionModels.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DiscreteTransmissionModels";
+	- _id = GUID 9f1ed50f-c3e5-42c5-b6ca-e736c51d1bb3;
+}
+- genTime = 6.9.2003::23:4:5;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "ExtApp_task_0100ms";
+	- _id = GUID 145ceccb-23cd-4c28-bb58-9b6252e6b96a;
+}
+- genTime = 6.19.2003::0:55:1;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "theStdApp";
+	- _id = GUID 8357aef0-e781-4f63-a2c6-90c0438f80c2;
+}
+- genTime = 6.18.2003::23:8:54;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "StdCar";
+	- _id = GUID 713d9987-786b-4f2c-af07-4941cc3cdf33;
+}
+- genTime = 6.18.2003::21:46:47;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "StdApp";
+	- _id = GUID 6d446f58-6b2e-4f5d-bc5b-e39567243afc;
+}
+- genTime = 6.18.2003::21:42:30;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "theExtApp";
+	- _id = GUID 1cf64689-e8bd-4ff7-a885-334a21acf10e;
+}
+- genTime = 6.19.2003::0:54:50;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "StandardModels.sbs";
+	- _subsystem = "StandardModels";
+	- _class = "";
+	- _name = "CMass";
+	- _id = GUID 6248d6f1-ca37-4b04-a503-d43b58d7e12b;
+}
+- genTime = 1.9.2003::1:7:34;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "TransmissionModels";
+	- _class = "";
+	- _name = "Actuator";
+	- _id = GUID e28f8081-5825-4888-b501-7ed30445c386;
+}
+- genTime = 1.9.2003::1:7:19;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Application.sbs";
+	- _subsystem = "Application";
+	- _class = "";
+	- _name = "DemoDrivetrain_task_0100ms";
+	- _id = GUID f5c89ab4-6504-4db1-ad11-5af4a67aaef0;
+}
+- genTime = 1.21.2003::11:5:24;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "StandardModels.sbs";
+	- _subsystem = "StandardModels";
+	- _class = "";
+	- _name = "CFrame";
+	- _id = GUID 8954490a-8855-4886-9f2d-115201fcabf7;
+}
+- genTime = 1.9.2003::1:7:34;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Application.sbs";
+	- _subsystem = "Application";
+	- _class = "";
+	- _name = "DemoDrivetrainSubsystem";
+	- _id = GUID 2ea8829b-b368-427b-aa4c-942c12ac4e57;
+}
+- genTime = 1.21.2003::11:5:24;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Application.sbs";
+	- _subsystem = "Application";
+	- _class = "";
+	- _name = "TestDrivetrain01";
+	- _id = GUID 2d884ff2-fb4e-4f80-9f0b-df1d162616b5;
+}
+- genTime = 6.27.2003::23:9:57;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GUIModels.sbs";
+	- _subsystem = "GUIModels";
+	- _class = "";
+	- _name = "ShiftLever";
+	- _id = GUID 6f61bb17-a8dd-42b8-b4f3-3620fc2fecce;
+}
+- genTime = 6.9.2003::0:11:9;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "TransmissionModels";
+	- _class = "";
+	- _name = "BrakeActuator";
+	- _id = GUID d7512002-89f7-4bb9-ac58-b2f122acac01;
+}
+- genTime = 1.9.2003::1:7:19;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "TransmissionModels";
+	- _class = "";
+	- _name = "PlanetaryCoupler";
+	- _id = GUID 722db8db-e232-4be8-9976-bb88a1858c5d;
+}
+- genTime = 1.8.2003::22:52:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "StandardModels.sbs";
+	- _subsystem = "StandardModels";
+	- _class = "";
+	- _name = "LookupTable";
+	- _id = GUID 3bd442d0-4897-43d5-867d-b0133fde7b73;
+}
+- genTime = 1.8.2003::22:58:6;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "StdCarSS";
+	- _id = GUID 25220968-a971-419f-ad3f-8b1681d4c55d;
+}
+- genTime = 6.18.2003::21:42:14;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "TransmissionModels";
+	- _class = "";
+	- _name = "Torque_Converter";
+	- _id = GUID 377a23f6-c276-4f83-88b1-cc3ef67aac3a;
+}
+- genTime = 1.9.2003::1:7:19;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "ExtCarSS";
+	- _id = GUID 23dfc2b0-6c2c-44ca-9ab9-2a15076ed3a9;
+}
+- genTime = 6.19.2003::0:55:12;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "SimpleApp";
+	- _id = GUID f1cec2d5-8fba-4481-bdeb-b757a17d180b;
+}
+- genTime = 6.11.2003::21:3:3;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "AppSimple";
+	- _id = GUID 39e523aa-b778-4336-b3ca-0d980f05b6ae;
+}
+- genTime = 6.9.2003::0:29:27;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionControlModels.sbs";
+	- _subsystem = "TransmissionControlModels";
+	- _class = "";
+	- _name = "ShiftData";
+	- _id = GUID dffab2a4-ea31-4cd9-8d05-912dc476d468;
+}
+- genTime = 1.19.2003::19:33:39;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "ExtApp";
+	- _id = GUID 0d13b77c-626d-44a9-87d4-0ab0d9a5fa3c;
+}
+- genTime = 6.19.2003::0:54:55;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Application.sbs";
+	- _subsystem = "Application";
+	- _class = "";
+	- _name = "theApp";
+	- _id = GUID 8a493155-bbbb-4655-bab0-6d1abc3d8070;
+}
+- genTime = 2.4.2003::21:3:0;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "TransmissionControlModels.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "TransmissionControlModels";
+	- _id = GUID 4e9450f2-fe60-4001-a990-d065fd57f1cb;
+}
+- genTime = 1.19.2003::20:31:49;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GUIModels.sbs";
+	- _subsystem = "GUIModels";
+	- _class = "";
+	- _name = "Brakes";
+	- _id = GUID e2330dc4-8a77-4958-8705-550417674840;
+}
+- genTime = 6.9.2003::0:11:2;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "TransmissionModels";
+	- _class = "";
+	- _name = "Gear";
+	- _id = GUID e5897e4f-a017-43b4-85c6-e658a47b62c9;
+}
+- genTime = 1.8.2003::22:52:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "TransmissionModels";
+	- _class = "";
+	- _name = "Engine";
+	- _id = GUID b07473cd-630a-49f6-833c-517286d91e2b;
+}
+- genTime = 1.9.2003::1:7:19;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "StdApp_task_0100ms";
+	- _id = GUID b06c846c-7c6c-43a6-80bd-e7f15d7e850e;
+}
+- genTime = 6.18.2003::21:42:25;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "TransmissionModels";
+	- _class = "";
+	- _name = "Ravigneaux";
+	- _id = GUID 81860606-94e3-4fcd-b92f-df574331591c;
+}
+- genTime = 1.9.2003::1:7:19;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "StandardModels.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "StandardModels";
+	- _id = GUID a2236308-c3da-4241-90a9-c1711c52e9f4;
+}
+- genTime = 1.9.2003::1:7:34;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "StandardModels.sbs";
+	- _subsystem = "StandardModels";
+	- _class = "";
+	- _name = "CDamper";
+	- _id = GUID 5348bad2-1499-4532-8437-230f50987d42;
+}
+- genTime = 1.9.2003::1:7:34;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Application.sbs";
+	- _subsystem = "Application";
+	- _class = "";
+	- _name = "TestDrivetrainApp";
+	- _id = GUID 54521690-143c-4de7-9982-8ff706e602fc;
+}
+- genTime = 6.27.2003::23:10:2;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "VehicleModels.sbs";
+	- _subsystem = "VehicleModels";
+	- _class = "";
+	- _name = "Vehicle";
+	- _id = GUID fe2f0b07-b907-465e-9f5c-5890344e2fb3;
+}
+- genTime = 1.9.2003::1:7:7;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "AppSimple.sbs";
+	- _subsystem = "AppSimple";
+	- _class = "";
+	- _name = "SimpleApp_task_0100ms";
+	- _id = GUID 3f4ed23b-00dd-4be9-ad5f-163db9ae9f0b;
+}
+- genTime = 6.11.2003::21:34:51;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Application.sbs";
+	- _subsystem = "Application";
+	- _class = "";
+	- _name = "DemoDrivetrain";
+	- _id = GUID 58e3c3ed-4cce-43ee-893a-44a8a8edde06;
+}
+- genTime = 1.21.2003::11:5:24;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = "AnimationComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "AnimationComponent\\DefaultConfig";
+	- _id = GUID 9113f221-b62d-4410-b6d5-007d9a85ef60;
+}
+- genTime = 1.3.2003::14:27:6;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "TransmissionModels";
+	- _id = GUID 7caa7464-2b8a-4465-8d85-fb8fef46bd60;
+}
+- genTime = 1.9.2003::1:7:19;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionControlModels.sbs";
+	- _subsystem = "TransmissionControlModels";
+	- _class = "";
+	- _name = "GearInfo";
+	- _id = GUID 0a253371-81a5-4299-9491-6ad30c5afd61;
+}
+- genTime = 1.19.2003::19:33:39;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "TransmissionModels.sbs";
+	- _subsystem = "TransmissionModels";
+	- _class = "";
+	- _name = "CRigidConnector";
+	- _id = GUID 2866d86d-dd8a-4892-837e-7a3a14435447;
+}
+- genTime = 1.9.2003::1:7:19;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "GUIModels.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "GUIModels";
+	- _id = GUID 376c0f1c-16a6-4c5e-92c2-a714945c0fa1;
+}
+- genTime = 1.20.2003::18:58:50;
+

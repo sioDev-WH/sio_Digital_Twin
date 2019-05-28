@@ -1,0 +1,135 @@
+<HTML>
+<HEAD>
+<title>Triangular Factorization</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Triangular Factorization
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="getrf"></A>
+
+<B>?getrf</B>
+computes the <i>LU</i> factorization of a general  matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgetrf (m, n, SA, lda, IPIV, info)<br>
+call dgetrf (m, n, DA, lda, IPIV, info)<br>
+call cgetrf (m, n, CA, lda, IPIV, info)<br>
+call zgetrf (m, n, ZA, lda, IPIV, info)
+</font></code>
+
+<p><A NAME="gbtrf"></A>
+
+<B>?gbtrf</B>
+computes the <i>LU</i> factorization of a general  band matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgbtrf (m, n, kl, ku, SAB, ldab, IPIV, info)<br>
+call dgbtrf (m, n, kl, ku, DAB, ldab, IPIV, info)<br>
+call cgbtrf (m, n, kl, ku, CAB, ldab, IPIV, info)<br>
+call zgbtrf (m, n, kl, ku, ZAB, ldab, IPIV, info)
+</font></code>
+
+<p><A NAME="potrf"></A>
+
+<B>?potrf</B>
+computes the Cholesky factorization of a symmetric (Hermitian) positive-definite matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call spotrf (uplo, n, SA, lda, info)<br>
+call dpotrf (uplo, n, DA, lda, info)<br>
+call cpotrf (uplo, n, CA, lda, info)<br>
+call zpotrf (uplo, n, ZA, lda, info)
+</font></code>
+
+<p><A NAME="pptrf"></A>
+
+<B>?pptrf</B>
+computes the Cholesky factorization of a symmetric (Hermitian) positive-definite matrix using packed storage.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call spptrf (uplo, n, SAP, info)<br>
+call dpptrf (uplo, n, DAP, info)<br>
+call cpptrf (uplo, n, CAP, info)<br>
+call zpptrf (uplo, n, ZAP, info)
+</font></code>
+
+<p><A NAME="pbtrf"></A>
+
+<B>?pbtrf</B>
+computes the Cholesky factorization of a symmetric (Hermitian) positive-definite band matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call spbtrf (uplo, n, kd, SAB, ldab, info)<br>
+call dpbtrf (uplo, n, kd, DAB, ldab, info)<br>
+call cpbtrf (uplo, n, kd, CAB, ldab, info)<br>
+call zpbtrf (uplo, n, kd, ZAB, ldab, info)
+</font></code>
+
+<p><A NAME="sytrf"></A>
+
+<B>?sytrf</B>
+computes the Bunch-Kaufman factorization of a symmetric matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssytrf (uplo, n, SA, lda, IPIV, SWORK, lwork, info)<br>
+call dsytrf (uplo, n, DA, lda, IPIV, DWORK, lwork, info)<br>
+call csytrf (uplo, n, CA, lda, IPIV, CWORK, lwork, info)<br>
+call zsytrf (uplo, n, ZA, lda, IPIV, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="hetrf"></A>
+
+<B>?hetrf</B>
+computes the Bunch-Kaufman factorization of a complex Hermitian matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chetrf (uplo, n, CA, lda, IPIV, CWORK, lwork, info)<br>
+call zhetrf (uplo, n, ZA, lda, IPIV, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="sptrf"></A>
+
+<B>?sptrf</B>
+computes the Bunch-Kaufman factorization of a symmetric matrix using packed storage.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssptrf (uplo, n, SAP, IPIV, info)<br>
+call dsptrf (uplo, n, DAP, IPIV, info)<br>
+call csptrf (uplo, n, CAP, IPIV, info)<br>
+call zsptrf (uplo, n, ZAP, IPIV, info)
+</font></code>
+
+<p><A NAME="hptrf"></A>
+
+<B>?hptrf</B>
+computes the Bunch-Kaufman factorization of a complex Hermitian matrix using packed storage.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chptrf (uplo, n, CAP, IPIV, info)<br>
+call zhptrf (uplo, n, ZAP, IPIV, info)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

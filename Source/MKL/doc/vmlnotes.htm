@@ -1,0 +1,53 @@
+<!-- Created by Shelepugin Pavel & Gilev Andrey, December 2000 -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD>
+	<META NAME="GENERATOR" Content="Visual Page 1.0 for Windows">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+	<TITLE>VML Notes</TITLE>
+</HEAD>
+
+<BODY>
+
+<P ALIGN="CENTER"><FONT SIZE="6"><STRONG><EM>Release Notes<BR>
+for the Vector Math Library<BR>
+for Intel<SUP>&reg; </SUP>Architecture Processors</EM></STRONG></FONT></P>
+
+<P>This document describes Vector Math Library (VML), which is designed to compute elementary functions on vector arguments. VML is an integral part of the Intel&reg; Math Kernel Library (MKL) and the VML terminology is used here for simplicity in discussing this group of functions.</P>
+
+<P>VML includes a set of highly optimized implementations of certain computationally expensive core mathematical functions (power, trigonometric, exponential, hyperbolic etc.) that operates on vectors. VML may significantly improve performance for such applications as nonlinear software, computations of integrals, and many others.</P>
+
+<P>Each vector function from VML (for each data format) can work in two modes: High Accuracy (HA) and Low Accuracy
+(LA). For many functions, using the LA version will improve performance at the cost of accuracy. For some cases,
+the advantage of relaxing the accuracy improves performance very little so the same function is employed for both
+versions. Error behavior depends not only on whether the HA or LA version is chosen, but also depends on the processor
+on which the software runs. For instance, the Streaming SIMD Extensions (SSE) have different arithmetic behavior than do X87 instructions,
+so results will differ between a Pentium&reg; processor and a Pentium 4 processor, the
+latter employing the SSE2 instructions. In addition, special value behavior may differ between the HA and LA
+versions of the functions. For more information see the <A HREF="Functions/_SvAll.html">special value behavior</A>
+and <A HREF="Functions/_AccuracyAll.html">accuracy</A> documents.</P>
+
+<P>This document is intended for more detail description of performance and accuracy properties of VML functions.  There are several considered issues (performance, accuracy, special values processing) and two levels of details (brief information for all functions in one table and more detailed information for every function on a separate page).</P>
+
+<P><B>Performance issues:</B> Performance numbers in table are shown for so-called &quot;working&quot; intervals arguments. For other intervals performance behavior may be different. For example, it's quite expensive to compute trigonometric functions on &quot;huge&quot; arguments. Therefore, to obtain needed accuracy, performance is sacrificed.  Each function lists the working interval over which performance is measured. On the same page one can&nbsp; find the graphics that describe how the performance behavior depends on vector's length. There are two extreme cases:  so-called &quot;short&quot; and &quot;long&quot; vectors (logarithmic scale is used to show both cases). For short vectors there are&nbsp;cycle organization and initialization overheads. The cost of such overheads is amortized with increasing vector length, and for vectors longer than a few ten's of elements the performance remains quite flat up until the L2 cache size is exceeded with the length of the vector.</P>
+
+<P>Data prefetching with the Pentium <FONT FACE="arial, helvetica">III</FONT> (explicit data prefetch in software) and Pentium 4 (implicit data prefetch in hardware) processors greatly reduce the out-of-cache problem.</P>
+
+<P><B>Accuracy issues</B>: The design requirements for the HA functions is less than 1.0 ulp error with all special values being processed correctly. For the LA version some of these requirements are relaxed. For more details, see table with ulp errors for all functions, particular page for each function, Special Values table for all functions.</P>
+
+<P>Special Values Processing issues: Special Values are processed in accordance to C9X standard. For a full list of special values for every function see the corresponding table.  This table shows also how the particular function implementation satisfies SV requirements: &quot;+&quot; or &quot;-&quot; in table. Note, that for HA it should be always &quot;+&quot;.</P>
+
+<P><A HREF="Functions/_ListFunc.html">List of VML Functions</A><BR>
+<A HREF="Functions/_PerfomanceAll.html">Perfomance of All VML Functions</A><BR>
+<A HREF="Functions/_AccuracyAll.html">Measured Accuracy of All VML Functions</A><BR>
+<A HREF="Functions/_SvAll.html">Special Values of All VML Functions</A></P>
+
+<br><P><FONT SIZE="1">Intel and Pentium are trademarks or registered trademarks of Intel Corporation or its subsidiaries in the United States and other countries.<BR><BR>
+
+* Other names and brands may be claimed as the property of others.
+
+<P>Copyright &copy; 2000-2001, Intel Corporation, All Rights Reserved.</FONT>
+
+</BODY>
+</HTML>

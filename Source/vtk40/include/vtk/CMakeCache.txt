@@ -1,0 +1,551 @@
+# This is the CMakeCache file.
+# For build in directory: c:/martink/vtk40/vtkdist
+# You can edit this file to change values found and used by cmake.
+# If you do not want to change any of the values, simply exit the editor.
+# If you do want to change a value, simply edit, save, and exit the editor.
+# The syntax for the file is as follows:
+# KEY:TYPE=VALUE
+# KEY is the name of a varible in the cache.
+# TYPE is a hint to GUI's for the type of VALUE, DO NOT EDIT TYPE!.
+# VALUE is the current value for the KEY.
+
+########################
+# EXTERNAL cache entries
+########################
+
+//Build the documentation (Doxygen).
+BUILD_DOCUMENTATION:BOOL=OFF
+
+//Build VTK examples.
+BUILD_EXAMPLES:BOOL=OFF
+
+//Build VTK with shared libraries.
+BUILD_SHARED_LIBS:BOOL=ON
+
+//Build the testing tree.
+BUILD_TESTING:BOOL=OFF
+
+//Name of C++ compiler used.
+CMAKE_CXX_COMPILER:STRING=VC++60
+
+//Flags used by the compiler during all build types, /GX /GR are
+// for exceptions and rtti in VC++, /Zm1000 increases the compiler's
+// memory allocation to support ANSI C++/stdlib
+CMAKE_CXX_FLAGS:STRING=/W3 /Zm1000 /GX /GR
+
+//Flags used by the compiler during debug builds
+CMAKE_CXX_FLAGS_DEBUG:STRING=/MDd /Zi /Od /GZ
+
+//Flags used by the compiler during release minsize builds
+CMAKE_CXX_FLAGS_MINSIZEREL:STRING=/MD /O1
+
+//Flags used by the compiler during release builds (/MD /Ob1 /Oi
+// /Ot /Oy /Gs will produce slightly less optimized but smaller
+// files)
+CMAKE_CXX_FLAGS_RELEASE:STRING=/MD /O2
+
+//Flags used by the compiler during Release with Debug Info builds
+//
+CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/MD /Zi /O2
+
+//Extra flags added to the link line for creation of exe and dlls.
+//
+CMAKE_EXTRA_LINK_FLAGS:STRING=/STACK:10000000
+
+//Program used to build from dsp files.
+CMAKE_MAKE_PROGRAM:STRING=msdev
+
+//Use the win32 thread library
+CMAKE_USE_WIN32_THREADS:BOOL=ON
+
+//What is the path where the file README.INSTALL can be found
+DART_ROOT:PATH=NOTFOUND
+
+//Single output directory for building all executables.
+EXECUTABLE_OUTPUT_PATH:PATH=C:/martink/vtk40/vtkdist/bin
+
+//What is the path where the file jawt.h can be found
+JAVA_AWT_INCLUDE_PATH:PATH=c:/program files/jdk1.3/include
+
+//Where can the jawt library be found
+JAVA_AWT_LIBRARY:FILEPATH=c:/program files/jdk1.3/lib/jawt.lib
+
+//What is the path where the file jni.h can be found
+JAVA_INCLUDE_PATH:PATH=c:/program files/jdk1.3/include
+
+//What is the path where the file jni_md.h can be found
+JAVA_INCLUDE_PATH2:PATH=c:/program files/jdk1.3/include/win32
+
+//What is the path where the file jawt.h can be found
+JAVE_AWT_INCLUDE_PATH:PATH=c:/program files/jdk1.3/include
+
+//Single output directory for building all libraries.
+LIBRARY_OUTPUT_PATH:PATH=C:/martink/vtk40/vtkdist/bin
+
+//Where can the OSMesa library be found
+MESA_OS_LIBRARY:FILEPATH=NOTFOUND
+
+//OpenGL library for win32
+OPENGL_LIBRARY:STRING=opengl32
+
+//What is the path where the file GL/osmesa.h can be found
+OSMESA_INCLUDE_PATH:PATH=NOTFOUND
+
+//Where can one of the python, python21_d or python20_d libraries
+// be found
+PYTHON_DEBUG_LIBRARY:FILEPATH=NOTFOUND
+
+//What is the path where the file Python.h can be found
+PYTHON_INCLUDE_PATH:PATH=C:/Python21/include
+
+//Where can one of the python, python21, python2.1, python20 or
+// python2.0 libraries be found
+PYTHON_LIBRARY:FILEPATH=C:/Python21/libs/python21.lib
+
+//What is the path where the file tcl.h can be found
+TCL_INCLUDE_PATH:PATH=C:/Program Files/Tcl/include
+
+//Where can one of the tcl, tcl84, tcl8.4, tcl83, tcl8.3, tcl82,
+// tcl8.2, tcl80 or tcl8.0 libraries be found
+TCL_LIBRARY:FILEPATH=C:/Program Files/Tcl/lib/tcl83.lib
+
+//Path to a program.
+TCL_TCLSH:FILEPATH=C:/PROGRA~1/TCL/bin/tclsh83.exe
+
+//What is the path where the file tk.h can be found
+TK_INCLUDE_PATH:PATH=C:/Program Files/Tcl/include
+
+//What is the path where the file tkWinInt.h can be found
+TK_INTERNAL_PATH:PATH=C:/martink/vtk40/VTK/Rendering/tkInternals/tk83
+
+//Where can one of the tk, tk84, tk8.4, tk83, tk8.3, tk82, tk8.2,
+// tk80 or tk8.0 libraries be found
+TK_LIBRARY:FILEPATH=C:/Program Files/Tcl/lib/tk83.lib
+
+//Path to a program.
+TK_WISH:FILEPATH=C:/PROGRA~1/TCL/bin/wish83.exe
+
+//What is the path where the file X11/Xlib.h can be found
+TK_XLIB_PATH:PATH=C:/Program Files/Tcl/include
+
+//Value Computed by CMake
+VTKJPEG_BINARY_DIR:STATIC=C:/martink/vtk40/vtkdist/Utilities/jpeg
+
+//Value Computed by CMake
+VTKJPEG_SOURCE_DIR:STATIC=C:/martink/vtk40/VTK/Utilities/jpeg
+
+//Value Computed by CMake
+VTKPNG_BINARY_DIR:STATIC=C:/martink/vtk40/vtkdist/Utilities/png
+
+//Value Computed by CMake
+VTKPNG_SOURCE_DIR:STATIC=C:/martink/vtk40/VTK/Utilities/png
+
+//Value Computed by CMake
+VTKZLIB_BINARY_DIR:STATIC=C:/martink/vtk40/vtkdist/Utilities/zlib
+
+//Value Computed by CMake
+VTKZLIB_SOURCE_DIR:STATIC=C:/martink/vtk40/VTK/Utilities/zlib
+
+//Value Computed by CMake
+VTK_BINARY_DIR:STATIC=C:/martink/vtk40/vtkdist
+
+//What is the path where the file VTKData.readme can be found
+VTK_DATA_ROOT:PATH=C:/martink/vtk40/VTKData
+
+//Build leak checking support into vtk.
+VTK_DEBUG_LEAKS:BOOL=OFF
+
+//Path to Java install
+VTK_JAVA_HOME:PATH=C:/martink/vtk40/vtkdist/java/vtk
+
+//Use mangled Mesa with OpenGL
+VTK_MANGLE_MESA:BOOL=OFF
+
+//Path to an internal program.
+VTK_PARSE_JAVA_EXE:FILEPATH=C:/martink/vtk40/vtkdist/bin/$(IntDir)/vtkParseJava.exe
+
+//Value Computed by CMake
+VTK_SOURCE_DIR:STATIC=C:/martink/vtk40/VTK
+
+//Build VTK with 64 bit ids
+VTK_USE_64BIT_IDS:BOOL=OFF
+
+//Use the ANSI standard iostream library
+VTK_USE_ANSI_STDLIB:BOOL=OFF
+
+//Build the hybrid directory classes
+VTK_USE_HYBRID:BOOL=ON
+
+//Use Matrox Imaging Library for video input
+VTK_USE_MATROX_IMAGING:BOOL=OFF
+
+//use MPI (Message Passing Interface) library for parallel support
+//
+VTK_USE_MPI:BOOL=OFF
+
+//Build the parallel directory classes
+VTK_USE_PARALLEL:BOOL=ON
+
+//Build the patented directory classes, these classes are patented
+// and may require a license to use
+VTK_USE_PATENTED:BOOL=OFF
+
+//Build the rendering classes used for displaying
+VTK_USE_RENDERING:BOOL=ON
+
+//Use Video for Windows for video input
+VTK_USE_VIDEO_FOR_WINDOWS:BOOL=OFF
+
+//Build VTK with volume pro support
+VTK_USE_VOLUMEPRO:BOOL=OFF
+
+//Where can the hints file be found
+VTK_WRAP_HINTS:FILEPATH=C:/martink/vtk40/VTK/Wrapping/hints
+
+//wrap classes into the Java language
+VTK_WRAP_JAVA:BOOL=ON
+
+//Path to an internal program.
+VTK_WRAP_JAVA_EXE:FILEPATH=C:/martink/vtk40/vtkdist/bin/$(IntDir)/vtkWrapJava.exe
+
+//wrap classes into the Python interpreted language
+VTK_WRAP_PYTHON:BOOL=ON
+
+//Path to an internal program.
+VTK_WRAP_PYTHON_EXE:FILEPATH=C:/martink/vtk40/vtkdist/bin/$(IntDir)/vtkWrapPython.exe
+
+//wrap classes into the TCL intepreted language
+VTK_WRAP_TCL:BOOL=ON
+
+//Path to an internal program.
+VTK_WRAP_TCL_EXE:FILEPATH=C:/martink/vtk40/vtkdist/bin/$(IntDir)/vtkWrapTcl.exe
+
+
+########################
+# INTERNAL cache entries
+########################
+
+//Advanced flag for variable: BUILD_DOCUMENTATION
+BUILD_DOCUMENTATION-ADVANCED:INTERNAL=1
+//Executable to project name.
+"C:/martink/vtk40/vtkdist/bin/$(IntDir)/vtkParseJava.exe":INTERNAL=vtkParseJava
+//Executable to project name.
+"C:/martink/vtk40/vtkdist/bin/$(IntDir)/vtkWrapJava.exe":INTERNAL=vtkWrapJava
+//Executable to project name.
+"C:/martink/vtk40/vtkdist/bin/$(IntDir)/vtkWrapPython.exe":INTERNAL=vtkWrapPython
+//Executable to project name.
+"C:/martink/vtk40/vtkdist/bin/$(IntDir)/vtkWrapTcl.exe":INTERNAL=vtkWrapTcl
+//This is the directory where this CMakeCahe.txt was created
+CMAKE_CACHEFILE_DIR:INTERNAL=c:/martink/vtk40/vtkdist
+//Major version of cmake used to create the current loaded cache
+//
+CMAKE_CACHE_MAJOR_VERSION:INTERNAL=1
+//Minor version of cmake used to create the current loaded cache
+//
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=2
+//Path to CMake executable.
+CMAKE_COMMAND:INTERNAL=C:/kitware/CMake/CMake/Source/cmake.exe
+//Advanced flag for variable: CMAKE_CXX_COMPILER
+CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
+//Advanced flag for variable: CMAKE_CXX_FLAGS_DEBUG
+CMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//Advanced flag for variable: CMAKE_CXX_FLAGS_MINSIZEREL
+CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//Advanced flag for variable: CMAKE_CXX_FLAGS_RELEASE
+CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//Advanced flag for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
+CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//Advanced flag for variable: CMAKE_EXTRA_LINK_FLAGS
+CMAKE_EXTRA_LINK_FLAGS-ADVANCED:INTERNAL=1
+//Name of generator.
+CMAKE_GENERATOR:INTERNAL=Visual Studio 6
+//Advanced flag for variable: CMAKE_MAKE_PROGRAM
+CMAKE_MAKE_PROGRAM-ADVANCED:INTERNAL=1
+//Path to CMake installation.
+CMAKE_ROOT:INTERNAL=C:/kitware/CMake/CMake
+//Size of char data type
+CMAKE_SIZEOF_CHAR:INTERNAL=1
+//Size of double data type
+CMAKE_SIZEOF_DOUBLE:INTERNAL=8
+//Size of float data type
+CMAKE_SIZEOF_FLOAT:INTERNAL=4
+//Size of int data type
+CMAKE_SIZEOF_INT:INTERNAL=4
+//Size of long data type
+CMAKE_SIZEOF_LONG:INTERNAL=4
+//Size of short data type
+CMAKE_SIZEOF_SHORT:INTERNAL=2
+//Size of void* data type
+CMAKE_SIZEOF_VOID_P:INTERNAL=4
+//Advanced flag for variable: CMAKE_USE_WIN32_THREADS
+CMAKE_USE_WIN32_THREADS-ADVANCED:INTERNAL=1
+//Path to an executable
+CellLocator:INTERNAL=C:/martink/vtk40/vtkdist/Graphics/Testing/Cxx
+//Advanced flag for variable: EXECUTABLE_OUTPUT_PATH
+EXECUTABLE_OUTPUT_PATH-ADVANCED:INTERNAL=1
+//Path to an executable
+FrustumClip:INTERNAL=C:/martink/vtk40/vtkdist/Graphics/Testing/Cxx
+//Advanced flag for variable: HAVE_LIMITS_H
+HAVE_LIMITS_H-ADVANCED:INTERNAL=1
+//Advanced flag for variable: HAVE_UNISTD_H
+HAVE_UNISTD_H-ADVANCED:INTERNAL=1
+//Path to an executable
+ImportExport:INTERNAL=C:/martink/vtk40/vtkdist/Imaging/Testing/Cxx
+//Advanced flag for variable: JAVA_AWT_INCLUDE_PATH
+JAVA_AWT_INCLUDE_PATH-ADVANCED:INTERNAL=1
+//Advanced flag for variable: JAVA_AWT_LIBRARY
+JAVA_AWT_LIBRARY-ADVANCED:INTERNAL=1
+//Advanced flag for variable: JAVA_INCLUDE_PATH
+JAVA_INCLUDE_PATH-ADVANCED:INTERNAL=1
+//Advanced flag for variable: JAVA_INCLUDE_PATH2
+JAVA_INCLUDE_PATH2-ADVANCED:INTERNAL=1
+//Advanced flag for variable: LIBRARY_OUTPUT_PATH
+LIBRARY_OUTPUT_PATH-ADVANCED:INTERNAL=1
+//Path to an executable
+Mace:INTERNAL=C:/martink/vtk40/vtkdist/Graphics/Testing/Cxx
+//Path to an executable
+ObjectFactory:INTERNAL=C:/martink/vtk40/vtkdist/Common/Testing/Cxx
+//Advanced flag for variable: PYTHON_DEBUG_LIBRARY
+PYTHON_DEBUG_LIBRARY-ADVANCED:INTERNAL=1
+//Advanced flag for variable: PYTHON_INCLUDE_PATH
+PYTHON_INCLUDE_PATH-ADVANCED:INTERNAL=1
+//Advanced flag for variable: PYTHON_LIBRARY
+PYTHON_LIBRARY-ADVANCED:INTERNAL=1
+//Path to an executable
+PointLocator:INTERNAL=C:/martink/vtk40/vtkdist/Graphics/Testing/Cxx
+//Path to an executable
+RGrid:INTERNAL=C:/martink/vtk40/vtkdist/Graphics/Testing/Cxx
+//Advanced flag for variable: TCL_INCLUDE_PATH
+TCL_INCLUDE_PATH-ADVANCED:INTERNAL=1
+//Advanced flag for variable: TCL_LIBRARY
+TCL_LIBRARY-ADVANCED:INTERNAL=1
+//Advanced flag for variable: TCL_TCLSH
+TCL_TCLSH-ADVANCED:INTERNAL=1
+//Advanced flag for variable: TCL_TCLSH_PATH
+TCL_TCLSH_PATH-ADVANCED:INTERNAL=1
+//Advanced flag for variable: TK_INCLUDE_PATH
+TK_INCLUDE_PATH-ADVANCED:INTERNAL=1
+//Advanced flag for variable: TK_INTERNAL_PATH
+TK_INTERNAL_PATH-ADVANCED:INTERNAL=1
+//Advanced flag for variable: TK_LIBRARY
+TK_LIBRARY-ADVANCED:INTERNAL=1
+//Advanced flag for variable: TK_WISH
+TK_WISH-ADVANCED:INTERNAL=1
+//Advanced flag for variable: TK_WISH_PATH
+TK_WISH_PATH-ADVANCED:INTERNAL=1
+//Advanced flag for variable: TK_XLIB_PATH
+TK_XLIB_PATH-ADVANCED:INTERNAL=1
+//Path to an executable
+TimeRenderer:INTERNAL=C:/martink/vtk40/vtkdist/Rendering/Testing/Cxx
+//Path to an executable
+TimeRenderer2:INTERNAL=C:/martink/vtk40/vtkdist/Rendering/Testing/Cxx
+//Is this VTK built with shared libraries.
+VTK_BUILD_SHARED_LIBS:INTERNAL=ON
+//Advanced flag for variable: VTK_DEBUG_LEAKS
+VTK_DEBUG_LEAKS-ADVANCED:INTERNAL=1
+//Where VTK libraries are. Used by projects which depend on VTK.
+// Do not remove.
+VTK_LIBRARY_PATH:INTERNAL=C:/martink/vtk40/vtkdist/bin
+//Advanced flag for variable: VTK_MANGLE_MESA
+VTK_MANGLE_MESA-ADVANCED:INTERNAL=1
+//Advanced flag for variable: VTK_PARSE_JAVA_EXE
+VTK_PARSE_JAVA_EXE-ADVANCED:INTERNAL=1
+//Advanced flag for variable: VTK_USE_64BIT_IDS
+VTK_USE_64BIT_IDS-ADVANCED:INTERNAL=1
+//Advanced flag for variable: VTK_USE_MPI
+VTK_USE_MPI-ADVANCED:INTERNAL=1
+//Advanced flag for variable: VTK_WRAP_HINTS
+VTK_WRAP_HINTS-ADVANCED:INTERNAL=1
+//Advanced flag for variable: VTK_WRAP_JAVA_EXE
+VTK_WRAP_JAVA_EXE-ADVANCED:INTERNAL=1
+//Advanced flag for variable: VTK_WRAP_PYTHON_EXE
+VTK_WRAP_PYTHON_EXE-ADVANCED:INTERNAL=1
+//Advanced flag for variable: VTK_WRAP_TCL_EXE
+VTK_WRAP_TCL_EXE-ADVANCED:INTERNAL=1
+//Advanced flag for variable: WORDS_BIGENDIAN
+WORDS_BIGENDIAN-ADVANCED:INTERNAL=1
+//Path to an executable
+expCos:INTERNAL=C:/martink/vtk40/vtkdist/Graphics/Testing/Cxx
+//Path to an executable
+otherArrays:INTERNAL=C:/martink/vtk40/vtkdist/Common/Testing/Cxx
+//Path to an executable
+otherByteSwap:INTERNAL=C:/martink/vtk40/vtkdist/Common/Testing/Cxx
+//Path to an executable
+otherCellArray:INTERNAL=C:/martink/vtk40/vtkdist/Common/Testing/Cxx
+//Path to an executable
+otherCellBoundaries:INTERNAL=C:/martink/vtk40/vtkdist/Common/Testing/Cxx
+//Path to an executable
+otherCellDerivatives:INTERNAL=C:/martink/vtk40/vtkdist/Common/Testing/Cxx
+//Path to an executable
+otherCellPosition:INTERNAL=C:/martink/vtk40/vtkdist/Common/Testing/Cxx
+//Path to an executable
+otherCellTypes:INTERNAL=C:/martink/vtk40/vtkdist/Common/Testing/Cxx
+//Path to an executable
+otherCoordinate:INTERNAL=C:/martink/vtk40/vtkdist/Rendering/Testing/Cxx
+//Path to an executable
+otherEmptyCell:INTERNAL=C:/martink/vtk40/vtkdist/Common/Testing/Cxx
+//Path to an executable
+otherLookupTable:INTERNAL=C:/martink/vtk40/vtkdist/Common/Testing/Cxx
+//Path to an executable
+otherRectilinearGrid:INTERNAL=C:/martink/vtk40/vtkdist/Common/Testing/Cxx
+//Path to an executable
+otherStructuredGrid:INTERNAL=C:/martink/vtk40/vtkdist/Common/Testing/Cxx
+//Path to an executable
+otherTimerLog:INTERNAL=C:/martink/vtk40/vtkdist/Common/Testing/Cxx
+//Path to an executable
+volProt:INTERNAL=C:/martink/vtk40/vtkdist/Graphics/Testing/Cxx
+//Path to an executable
+vtk:INTERNAL=C:/martink/vtk40/vtkdist/Wrapping/Tcl
+//Path to a library
+vtkCommon:INTERNAL=C:/martink/vtk40/vtkdist/Common
+//Path to a library
+vtkCommonJava:INTERNAL=C:/martink/vtk40/vtkdist/Common
+//Whether a library is static, shared or module.
+vtkCommonJava_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkCommonPython:INTERNAL=C:/martink/vtk40/vtkdist/Common
+//Whether a library is static, shared or module.
+vtkCommonPython_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkCommonTCL:INTERNAL=C:/martink/vtk40/vtkdist/Common
+//Whether a library is static, shared or module.
+vtkCommonTCL_LIBRARY_TYPE:INTERNAL=SHARED
+//Whether a library is static, shared or module.
+vtkCommon_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkFiltering:INTERNAL=C:/martink/vtk40/vtkdist/Filtering
+//Path to a library
+vtkFilteringJava:INTERNAL=C:/martink/vtk40/vtkdist/Filtering
+//Whether a library is static, shared or module.
+vtkFilteringJava_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkFilteringPython:INTERNAL=C:/martink/vtk40/vtkdist/Filtering
+//Whether a library is static, shared or module.
+vtkFilteringPython_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkFilteringTCL:INTERNAL=C:/martink/vtk40/vtkdist/Filtering
+//Whether a library is static, shared or module.
+vtkFilteringTCL_LIBRARY_TYPE:INTERNAL=SHARED
+//Whether a library is static, shared or module.
+vtkFiltering_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkGraphics:INTERNAL=C:/martink/vtk40/vtkdist/Graphics
+//Path to a library
+vtkGraphicsJava:INTERNAL=C:/martink/vtk40/vtkdist/Graphics
+//Whether a library is static, shared or module.
+vtkGraphicsJava_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkGraphicsPython:INTERNAL=C:/martink/vtk40/vtkdist/Graphics
+//Whether a library is static, shared or module.
+vtkGraphicsPython_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkGraphicsTCL:INTERNAL=C:/martink/vtk40/vtkdist/Graphics
+//Whether a library is static, shared or module.
+vtkGraphicsTCL_LIBRARY_TYPE:INTERNAL=SHARED
+//Whether a library is static, shared or module.
+vtkGraphics_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkHybrid:INTERNAL=C:/martink/vtk40/vtkdist/Hybrid
+//Path to a library
+vtkHybridJava:INTERNAL=C:/martink/vtk40/vtkdist/Hybrid
+//Whether a library is static, shared or module.
+vtkHybridJava_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkHybridPython:INTERNAL=C:/martink/vtk40/vtkdist/Hybrid
+//Whether a library is static, shared or module.
+vtkHybridPython_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkHybridTCL:INTERNAL=C:/martink/vtk40/vtkdist/Hybrid
+//Whether a library is static, shared or module.
+vtkHybridTCL_LIBRARY_TYPE:INTERNAL=SHARED
+//Whether a library is static, shared or module.
+vtkHybrid_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkIO:INTERNAL=C:/martink/vtk40/vtkdist/IO
+//Path to a library
+vtkIOJava:INTERNAL=C:/martink/vtk40/vtkdist/IO
+//Whether a library is static, shared or module.
+vtkIOJava_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkIOPython:INTERNAL=C:/martink/vtk40/vtkdist/IO
+//Whether a library is static, shared or module.
+vtkIOPython_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkIOTCL:INTERNAL=C:/martink/vtk40/vtkdist/IO
+//Whether a library is static, shared or module.
+vtkIOTCL_LIBRARY_TYPE:INTERNAL=SHARED
+//Whether a library is static, shared or module.
+vtkIO_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkImaging:INTERNAL=C:/martink/vtk40/vtkdist/Imaging
+//Path to a library
+vtkImagingJava:INTERNAL=C:/martink/vtk40/vtkdist/Imaging
+//Whether a library is static, shared or module.
+vtkImagingJava_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkImagingPython:INTERNAL=C:/martink/vtk40/vtkdist/Imaging
+//Whether a library is static, shared or module.
+vtkImagingPython_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkImagingTCL:INTERNAL=C:/martink/vtk40/vtkdist/Imaging
+//Whether a library is static, shared or module.
+vtkImagingTCL_LIBRARY_TYPE:INTERNAL=SHARED
+//Whether a library is static, shared or module.
+vtkImaging_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkParallel:INTERNAL=C:/martink/vtk40/vtkdist/Parallel
+//Path to a library
+vtkParallelJava:INTERNAL=C:/martink/vtk40/vtkdist/Parallel
+//Whether a library is static, shared or module.
+vtkParallelJava_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkParallelPython:INTERNAL=C:/martink/vtk40/vtkdist/Parallel
+//Whether a library is static, shared or module.
+vtkParallelPython_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkParallelTCL:INTERNAL=C:/martink/vtk40/vtkdist/Parallel
+//Whether a library is static, shared or module.
+vtkParallelTCL_LIBRARY_TYPE:INTERNAL=SHARED
+//Whether a library is static, shared or module.
+vtkParallel_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to an executable
+vtkParseJava:INTERNAL=C:/martink/vtk40/vtkdist/Wrapping
+//Path to a library
+vtkRendering:INTERNAL=C:/martink/vtk40/vtkdist/Rendering
+//Path to a library
+vtkRenderingJava:INTERNAL=C:/martink/vtk40/vtkdist/Rendering
+//Whether a library is static, shared or module.
+vtkRenderingJava_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkRenderingPython:INTERNAL=C:/martink/vtk40/vtkdist/Rendering
+//Path to a library
+vtkRenderingPythonTkWidgets:INTERNAL=C:/martink/vtk40/vtkdist/Rendering
+//Whether a library is static, shared or module.
+vtkRenderingPythonTkWidgets_LIBRARY_TYPE:INTERNAL=SHARED
+//Whether a library is static, shared or module.
+vtkRenderingPython_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkRenderingTCL:INTERNAL=C:/martink/vtk40/vtkdist/Rendering
+//Whether a library is static, shared or module.
+vtkRenderingTCL_LIBRARY_TYPE:INTERNAL=SHARED
+//Whether a library is static, shared or module.
+vtkRendering_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to an executable
+vtkWrapJava:INTERNAL=C:/martink/vtk40/vtkdist/Wrapping
+//Path to an executable
+vtkWrapPython:INTERNAL=C:/martink/vtk40/vtkdist/Wrapping
+//Path to an executable
+vtkWrapTcl:INTERNAL=C:/martink/vtk40/vtkdist/Wrapping
+//Path to a library
+vtkjpeg:INTERNAL=C:/martink/vtk40/vtkdist/Utilities/jpeg
+//Whether a library is static, shared or module.
+vtkjpeg_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkpng:INTERNAL=C:/martink/vtk40/vtkdist/Utilities/png
+//Whether a library is static, shared or module.
+vtkpng_LIBRARY_TYPE:INTERNAL=SHARED
+//Path to a library
+vtkzlib:INTERNAL=C:/martink/vtk40/vtkdist/Utilities/zlib
+//Whether a library is static, shared or module.
+vtkzlib_LIBRARY_TYPE:INTERNAL=SHARED
+

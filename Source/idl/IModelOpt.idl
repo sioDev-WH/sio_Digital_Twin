@@ -1,0 +1,50 @@
+// IModelOpt.idl : IDL source for IModelOpt.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (IModelOpt.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	
+	[
+		object,
+		uuid(A49A1201-C930-11D3-83DF-00C093022CC1),
+		dual,
+		helpstring("IModel Interface"),
+		pointer_default(unique)
+	]
+	interface IModel : IDispatch
+	{
+		[propget, id(4), helpstring("property Dimension")] HRESULT Dimension([out, retval] VARIANT *pVal);
+		[propput, id(4), helpstring("property Dimension")] HRESULT Dimension([in] VARIANT newVal);
+		[propget, id(5), helpstring("property NIC")] HRESULT NIC([out, retval] VARIANT *pVal);
+		[propput, id(5), helpstring("property NIC")] HRESULT NIC([in] VARIANT newVal);
+		[propget, id(6), helpstring("property NEC")] HRESULT NEC([out, retval] VARIANT *pVal);
+		[propput, id(6), helpstring("property NEC")] HRESULT NEC([in] VARIANT newVal);
+		[id(1), helpstring("method Objective")] HRESULT Objective([in, out] VARIANT* pArray, [out, retval] VARIANT* pVal);
+		[id(2), helpstring("method EqualityConstraints")] HRESULT EqualityConstraints([in] VARIANT* pArray, [out, retval] VARIANT* pVal);
+		[id(3), helpstring("method InequalityConstraints")] HRESULT InequalityConstraints([in] VARIANT* pArray, [out, retval] VARIANT* pVal);
+
+	};
+
+[
+	uuid(A49A11F5-C930-11D3-83DF-00C093022CC1),
+	version(1.0),
+	helpstring("IModelOpt 1.0 Type Library")
+]
+library IMODELOPTLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	
+	[
+		uuid(A49A1202-C930-11D3-83DF-00C093022CC1),
+		helpstring("Model Class")
+	]
+	coclass Model
+	{
+		[default] interface IModel;
+	};
+};

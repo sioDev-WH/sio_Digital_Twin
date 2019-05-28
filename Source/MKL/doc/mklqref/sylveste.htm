@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<title>Sylvester's Equation</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Sylvester's Equation
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="trsyl"></A>
+
+<B>?trsyl</B>
+solves Sylvester’s equation for real quasi-triangular or complex triangular matrices <i>A</i> and <i>B</i>:
+<BR>
+<center>
+op(<i>A</i>)<i>X</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">isgn</font></code>
+<i>X</i>op(<i>B</i>) =
+<code><font face="Courier New,Courier,codetxt" color="#000099">scale</font></code>
+<i>C</i>
+</center>
+
+<BR>
+where
+
+<i>A</i> is an
+<code><font face="Courier New,Courier" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">m</font></code>
+matrix,
+<br>
+
+<i>B</i> is an
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+matrix
+<br>
+
+<i>C</i> and <i>X</i> are
+<code><font face="Courier New,Courier" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier" color="#000099">n</font></code>
+matrices,
+<br>
+
+<code><font face="Courier New,Courier,codetxt" color="#000099">isgn</font></code>
+is either 1 or <font face="Courier New,Courier">-</font>1;
+<br>
+
+<code><font face="Courier New,Courier,codetxt" color="#000099">scale</font></code>
+is a scale factor determined by the routine to avoid overflow in <i>X</i>.
+For the definition of op(<i>A</i>) and op(<i>B</i>), see <a href="matrixar.htm">Matrix Arguments</a>.
+
+
+<p>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call strsyl (trana, tranb, isgn, m, n, SA, lda, SB, ldb, SC, ldc, sscale, info)<br>
+call dtrsyl (trana, tranb, isgn, m, n, DA, lda, DB, ldb, DC, ldc, dscale, info)<br>
+call ctrsyl (trana, tranb, isgn, m, n, CA, lda, CB, ldb, CC, ldc, sscale, info)<br>
+call ztrsyl (trana, tranb, isgn, m, n, ZA, lda, ZB, ldb, ZC, ldc, dscale, info)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

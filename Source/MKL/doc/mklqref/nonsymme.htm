@@ -1,0 +1,186 @@
+<HTML>
+<HEAD>
+<title>Nonsymmetric Eigenvalue Problems</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Nonsymmetric Eigenvalue Problems
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="gehrd"></A>
+
+<B>?gehrd</B>
+reduces a general matrix to upper Hessenberg form.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgehrd (n, ilo, ihi, SA, lda, STAU, SWORK, lwork, info)<br>
+call dgehrd (n, ilo, ihi, DA, lda, DTAU, DWORK, lwork, info)<br>
+call cgehrd (n, ilo, ihi, CA, lda, CTAU, CWORK, lwork, info)<br>
+call zgehrd (n, ilo, ihi, ZA, lda, ZTAU, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="orghr"></A>
+
+<B>?orghr</B>
+generates the real orthogonal matrix <i>Q</i> determined by
+<a href="#gehrd">?gehrd</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sorghr (n, ilo, ihi, SA, lda, STAU, SWORK, lwork, info)<br>
+call dorghr (n, ilo, ihi, DA, lda, DTAU, DWORK, lwork, info)
+</font></code>
+
+<p><A NAME="ormhr"></A>
+
+<B>?ormhr</B>
+multiplies an arbitrary real matrix <i>C</i> by the real orthogonal matrix <i>Q</i> determined by
+<a href="#gehrd">?gehrd</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sormhr (side, trans, m, n, ilo, ihi, SA, lda, STAU, SC, ldc, SWORK, lwork, info)<br>
+call dormhr (side, trans, m, n, ilo, ihi, DA, lda, DTAU, DC, ldc, DWORK, lwork, info)
+</font></code>
+
+<p><A NAME="unghr"></A>
+
+<B>?unghr</B>
+generates the complex unitary matrix <i>Q</i> determined by
+<a href="#gehrd">?gehrd</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cunghr (n, ilo, ihi, CA, lda, CTAU, CWORK, lwork, info)<br>
+call zunghr (n, ilo, ihi, ZA, lda, ZTAU, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="unmhr"></A>
+
+<B>?unmhr</B>
+multiplies an arbitrary complex matrix <i>C</i>
+by the complex unitary matrix <i>Q</i> determined by
+<a href="#gehrd">?gehrd</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cunmhr (side, trans, m, n, ilo, ihi, CA, lda, CTAU, CC, ldc, CWORK, lwork, info)<br>
+call zunmhr (side, trans, m, n, ilo, ihi, ZA, lda, ZTAU, ZC, ldc, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="gebal"></A>
+
+<B>?gebal</B>
+balances a general matrix to improve the accuracy of computed eigenvalues and eigenvectors.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgebal (job, n, SA, lda, ilo, ihi, SSCALE, info)<br>
+call dgebal (job, n, DA, lda, ilo, ihi, DSCALE, info)<br>
+call cgebal (job, n, CA, lda, ilo, ihi, SSCALE, info)<br>
+call zgebal (job, n, ZA, lda, ilo, ihi, DSCALE, info)
+</font></code>
+
+<p><A NAME="gebak"></A>
+
+<B>?gebak</B>
+transforms eigenvectors of a balanced matrix to those of the original nonsymmetric matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgebak (job, side, n, ilo, ihi, SSCALE, m, SV, ldv, info)<br>
+call dgebak (job, side, n, ilo, ihi, DSCALE, m, DV, ldv, info)<br>
+call cgebak (job, side, n, ilo, ihi, SSCALE, m, CV, ldv, info)<br>
+call zgebak (job, side, n, ilo, ihi, DSCALE, m, ZV, ldv, info)
+</font></code>
+
+<p><A NAME="hseqr"></A>
+
+<B>?hseqr</B>
+computes all eigenvalues and (optionally) the Schur factorization of a matrix reduced to Hessenberg form.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call shseqr (job, compz, n, ilo, ihi, h, ldh, SWR, SWI, SZ, ldz, SWORK, lwork, info)<br>
+call dhseqr (job, compz, n, ilo, ihi, h, ldh, DWR, DWI, DZ, ldz, DWORK, lwork, info)<br>
+call chseqr (job, compz, n, ilo, ihi, h, ldh, CW, CZ, ldz, CWORK, lwork, info)<br>
+call zhseqr (job, compz, n, ilo, ihi, h, ldh, ZW, ZZ, ldz, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="hsein"></A>
+
+<B>?hsein</B>
+computes selected eigenvectors of an upper Hessenberg matrix that correspond to specified eigenvalues.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call shsein (job, eigsrc, initv, select, n, SH, ldh, SWR, SWI, SVL, ldvl, SVR, ldvr, mm, m, SWORK, IFAILL, IFAILR, info)<br>
+call dhsein (job, eigsrc, initv, select, n, DH, ldh, DWR, DWI, DVL, ldvl, DVR, ldvr, mm, m, DWORK, IFAILL, IFAILR, info)<br>
+call chsein (job, eigsrc, initv, select, n, CH, ldh, CW, CVL, ldvl, CVR, ldvr, mm, m, CWORK, SRWORK, IFAILL, IFAILR, info)<br>
+call zhsein (job, eigsrc, initv, select, n, ZH, ldh, ZW, ZVL, ldvl, ZVR, ldvr, mm, m, ZWORK, DRWORK, IFAILL, IFAILR, info)
+</font></code>
+
+<p><A NAME="trevc"></A>
+
+<B>?trevc</B>
+computes selected eigenvectors of an upper (quasi-) triangular matrix computed by
+<a href="#hseqr">?hseqr</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call strevc (job, howmny, select, n, ST, ldt, SVL, ldvl, SVR, ldvr, mm, m, SWORK, info)<br>
+call dtrevc (job, howmny, select, n, DT, ldt, DVL, ldvl, DVR, ldvr, mm, m, DWORK, info)<br>
+call ctrevc (job, howmny, select, n, CT, ldt, CVL, ldvl, CVR, ldvr, mm, m, CWORK, SRWORK, info)<br>
+call ztrevc (job, howmny, select, n, ZT, ldt, ZVL, ldvl, ZVR, ldvr, mm, m, ZWORK, DRWORK, info)
+</font></code>
+
+<p><A NAME="trsna"></A>
+
+<B>?trsna</B>
+estimates condition numbers for specified eigenvalues and right eigenvectors of an upper (quasi-) triangular matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call strsna (job, howmny, select, n, ST, ldt, SVL, ldvl, SVR, ldvr, SS, SSEP, mm, m, SWORK, ldwork, IWORK, info)<br>
+call dtrsna (job, howmny, select, n, DT, ldt, DVL, ldvl, DVR, ldvr, DS, DSEP, mm, m, DWORK, ldwork, IWORK, info)<br>
+call ctrsna (job, howmny, select, n, CT, ldt, CVL, ldvl, CVR, ldvr, SS, SSEP, mm, m, CWORK, ldwork, SRWORK, info)<br>
+call ztrsna (job, howmny, select, n, ZT, ldt, ZVL, ldvl, ZVR, ldvr, DS, DSEP, mm, m, ZWORK, ldwork, DRWORK, info)
+</font></code>
+
+<p><A NAME="trexc"></A>
+
+<B>?trexc</B>
+reorders the Schur factorization of a general matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call strexc (compq, n, ST, ldt, SQ, ldq, ifst, ilst, work, info)<br>
+call dtrexc (compq, n, DT, ldt, DQ, ldq, ifst, ilst, work, info)<br>
+call ctrexc (compq, n, CT, ldt, CQ, ldq, ifst, ilst, info)<br>
+call ztrexc (compq, n, ZT, ldt, ZQ, ldq, ifst, ilst, info)
+</font></code>
+
+<p><A NAME="trsen"></A>
+
+<B>?trsen</B>
+reorders the Schur factorization of a matrix and (optionally) computes the reciprocal condition numbers and invariant subspace for the selected cluster of eigenvalues.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call strsen (job, compq, select, n, ST, ldt, SQ, ldq, SWR, SWI, m, ss, ssep, SWORK, lwork, IWORK, liwork, info)<br>
+call dtrsen (job, compq, select, n, DT, ldt, DQ, ldq, DWR, DWI, m, ds, dssep, DWORK, lwork, IWORK, liwork, info)<br>
+call ctrsen (job, compq, select, n, CT, ldt, CQ, ldq, CW, m, ss, ssep, CWORK, lwork, info)<br>
+call ztrsen (job, compq, select, n, ZT, ldt, ZQ, ldq, ZW, m, ds, dsep, ZWORK, lwork, info)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

@@ -1,0 +1,11 @@
+I-Logix-RPY-Archive version 4.0.4 *
+{ CGEMdiWorkspace 
+	- stubList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- myViewsWithID = { IRPYRawContainer 
+		- size = 0;
+	}
+	- _fullName = "C:\\Rhapsody40\\GuidanceSystem\\GuidanceLogic";
+}
+

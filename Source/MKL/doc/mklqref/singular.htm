@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+<title>Singular Value Decomposition</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Singular Value Decomposition
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="gebrd"></A>
+
+<B>?gebrd</B>
+reduces a general matrix to bidiagonal form by an orthogonal (unitary) transformation.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgebrd (m, n, SA, lda, SD, SE, STAUQ, STAUP, WORK, lwork, info)<br>
+call dgebrd (m, n, DA, lda, DD, DE, DTAUQ, DTAUP, WORK, lwork, info)<br>
+call cgebrd (m, n, CA, lda, SD, SE, CTAUQ, CTAUP, WORK, lwork, info)<br>
+call zgebrd (m, n, ZA, lda, DD, DE, ZTAUQ, ZTAUP, WORK, lwork, info)
+</font></code>
+
+<p><A NAME="gbbrd"></A>
+
+<B>?gbbrd</B>
+reduces a general band matrix to bidiagonal form by an orthogonal (unitary) transformation.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgbbrd (vect, m, n, ncc, kl, ku, SAB, ldab, SD, SE, SQ, ldq, SPT, ldpt, SC, ldc, SWORK, info)<br>
+call dgbbrd (vect, m, n, ncc, kl, ku, DAB, ldab, DD, DE, DQ, ldq, DPT, ldpt, DC, ldc, DWORK, info)<br>
+call cgbbrd (vect, m, n, ncc, kl, ku, CAB, ldab, SD, SE, CQ, ldq, CPT, ldpt, CC, ldc, CWORK, SRWORK, info)<br>
+call zgbbrd (vect, m, n, ncc, kl, ku, ZAB, ldab, DD, DE, ZQ, ldq, ZPT, ldpt, ZC, ldc, ZWORK, DRWORK, info)
+</font></code>
+
+<p><A NAME="orgbr"></A>
+
+<B>?orgbr</B>
+generates the real orthogonal matrix <i>Q</i> or <i>P<sup><small>T</small></sup></i>
+determined by <a href="#gebrd">?gebrd</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sorgbr (vect, m, n, k, SA, lda, STAU, SWORK, lwork, info)<br>
+call dorgbr (vect, m, n, k, DA, lda, DTAU, DWORK, lwork, info)
+</font></code>
+
+<p><A NAME="ormbr"></A>
+
+<B>?ormbr</B>
+multiplies an arbitrary real matrix by the real orthogonal matrix <i>Q</i> or <i>P</i>
+determined by <a href="#gebrd">?gebrd</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sormbr (vect, side, trans, m, n, k, SA, lda, STAU, SC, ldc, SWORK, lwork, info)<br>
+call dormbr (vect, side, trans, m, n, k, DA, lda, DTAU, DC, ldc, DWORK, lwork, info)
+</font></code>
+
+<p><A NAME="ungbr"></A>
+
+<B>?ungbr</B>
+generates the complex unitary matrix <i>Q</i> or <i>P<sup><small>H</small></sup></i>
+determined by <a href="#gebrd">?gebrd</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cungbr (vect, m, n, k, CA, lda, CTAU, CWORK, lwork, info)<br>
+call zungbr (vect, m, n, k, ZA, lda, ZTAU, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="unmbr"></A>
+
+<B>?unmbr</B>
+multiplies an arbitrary complex matrix by the unitary matrix <i>Q</i> or <i>P</i>
+determined by ?gebrd.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cunmbr (vect, side, trans, m, n, k, CA, lda, CTAU, CC, ldc, CWORK, lwork, info)<br>
+call zunmbr (vect, side, trans, m, n, k, ZA, lda, ZTAU, ZC, ldc, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="bdsqr"></A>
+
+<B>?bdsqr</B>
+computes the singular value decomposition of a general matrix
+that has been reduced to bidiagonal form.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sbdsqr (uplo, n, ncvt, nru, ncc, SD, SE, SVT, ldvt, SU, ldu, SC, ldc, SWORK, info)<br>
+call dbdsqr (uplo, n, ncvt, nru, ncc, DD, DE, DVT, ldvt, DU, ldu, DC, ldc, DWORK, info)<br>
+call cbdsqr (uplo, n, ncvt, nru, ncc, SD, SE, CVT, ldvt, CU, ldu, CC, ldc, CWORK, info)<br>
+call zbdsqr (uplo, n, ncvt, nru, ncc, DD, DE, ZVT, ldvt, ZU, ldu, ZC, ldc, ZWORK, info)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

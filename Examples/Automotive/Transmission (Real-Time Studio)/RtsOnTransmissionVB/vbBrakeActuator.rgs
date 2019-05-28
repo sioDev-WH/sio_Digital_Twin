@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmissionVB.vbBrakeActuator.1 = s 'vbBrakeActuator Class'
+	{
+		CLSID = s '{4ED98690-219A-45D5-9E93-428D81E82B35}'
+	}
+	RtsOnTransmissionVB.vbBrakeActuator = s 'vbBrakeActuator Class'
+	{
+		CLSID = s '{4ED98690-219A-45D5-9E93-428D81E82B35}'
+		CurVer = s 'RtsOnTransmissionVB.vbBrakeActuator.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {4ED98690-219A-45D5-9E93-428D81E82B35} = s 'vbBrakeActuator Class'
+		{
+			ProgID = s 'RtsOnTransmissionVB.vbBrakeActuator.1'
+			VersionIndependentProgID = s 'RtsOnTransmissionVB.vbBrakeActuator'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A0FB58BE-0E08-45F6-8A4A-732A46D7FE96}'
+		}
+	}
+}

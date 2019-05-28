@@ -1,0 +1,9 @@
+ctlInitialization = 60, 216, 966, 566, Z, 32, 12, 860, 875, C
+clsVar = 88, 88, 994, 438, C
+clsCVar = 22, 22, 872, 638, C
+clsVarManager = 60, 110, 966, 460, C
+modUtilities = 0, 0, 0, 0, C
+ctlEquationEditor = 66, 66, 951, 682, , 0, 0, 685, 616, C
+ctlMessageWindow = 132, 132, 817, 748, C, 88, 88, 773, 704, C
+OnScriptParser = 110, 110, 993, 726, 
+frmInitialization = 88, 88, 773, 704, , 57, 52, 742, 668, C

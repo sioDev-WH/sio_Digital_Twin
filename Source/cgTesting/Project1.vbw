@@ -1,0 +1,12 @@
+Form1 = 0, 0, 0, 0, C, 22, 22, 707, 638, C
+frmAutoGenShapeDef = 88, 88, 673, 704, Z, 226, 99, 811, 715, C
+GeLibraryMgr = 110, 110, 795, 726, 
+frmShapeLibMgr = 66, 66, 651, 682, , 0, 0, 0, 0, C
+GeShapeDefInfo = 0, 0, 0, 0, C
+mGeneralPurposeTools = 176, 176, 761, 792, 
+mGlobalConstants = 198, 198, 783, 814, 
+mCommonDialog = 242, 242, 960, 731, 
+mGEEditor = 22, 22, 740, 511, 
+frmStatus = 66, 66, 784, 555, , 88, 88, 673, 704, C
+mDBHelper = 0, 0, 0, 0, C
+mGEConst = 0, 0, 0, 0, C

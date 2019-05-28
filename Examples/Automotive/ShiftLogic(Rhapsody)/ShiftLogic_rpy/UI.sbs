@@ -1,0 +1,2772 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ ISubsystem 
+	- _id = GUID 06e73ac4-2cd8-11d7-b349-00c04f680d9d;
+	- _myState = 8192;
+	- _properties = { IPropertyContainer 
+		- Subjects = { IRPYRawContainer 
+			- size = 1;
+			- value = 
+			{ IPropertySubject 
+				- _Name = "CPP_CG";
+				- Metaclasses = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertyMetaclass 
+						- _Name = "Package";
+						- Properties = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IProperty 
+								- _Name = "SpecIncludes";
+								- _Value = "stdafx.h";
+								- _Type = String;
+							}
+							{ IProperty 
+								- _Name = "SpecificationProlog";
+								- _Value = "template <class A> class COnBroadcaster;";
+								- _Type = MultiLine;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	- _name = "UI";
+	- _lastID = 4;
+	- weakCGTime = 6.27.2003::23:8:27;
+	- strongCGTime = 1.21.2003::1:17:50;
+	- _defaultComposite = GUID 06e73ac5-2cd8-11d7-b349-00c04f680d9d;
+	- _eventsBaseID = 801;
+	- Classes = { IRPYRawContainer 
+		- size = 2;
+		- value = 
+		{ IClass 
+			- _id = GUID 06e73ac5-2cd8-11d7-b349-00c04f680d9d;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 6.27.2003::23:8:27;
+			- strongCGTime = 1.21.2003::1:17:50;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 06e73b4e-2cd8-11d7-b349-00c04f680d9d;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 3;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CPP_CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 3;
+									- value = 
+									{ IProperty 
+										- _Name = "AdditionalBaseClasses";
+										- _Value = "public COnModelBase";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "ImpIncludes";
+										- _Value = "<math.h>, EventBroadcast.h";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "SpecIncludes";
+										- _Value = "OnModelBase.h";
+										- _Type = String;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "ShapeDefinitions";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UDIDefCollection";
+										- _Value = "<UDIDef Name=\"39A70A1B48EF479AB4628B223C240D78\" ClassName=\"Driver\" ID=\"GUID 06e73b4e-2cd8-11d7-b349-00c04f680d9d\" TS=\"100\" Library=\"ShiftLogic.cgl\" Folder=\"ShiftLogic\" Shape=\"Driver\" ShapeID=\"54\" >
+<CgAttribute Name=\"shiftLever\" sType=\"6\" sSubType=\"1\" dim1=\"0\" dim2=\"0\" Value=\"\" bSim=\"False\" />
+<CgAttribute Name=\"accelerator\" sType=\"6\" sSubType=\"1\" dim1=\"0\" dim2=\"0\" Value=\"\" bSim=\"False\" />
+<CgAttribute Name=\"brakes\" sType=\"6\" sSubType=\"1\" dim1=\"0\" dim2=\"0\" Value=\"\" bSim=\"False\" />
+<CgAttribute Name=\"actionTime\" sType=\"0\" sSubType=\"1\" dim1=\"0\" dim2=\"0\" Value=\"\" bSim=\"False\" />
+<CgAttribute Name=\"currentTime\" sType=\"0\" sSubType=\"1\" dim1=\"0\" dim2=\"0\" Value=\"\" bSim=\"False\" />
+<CgAttribute Name=\"brakeVal\" sType=\"0\" sSubType=\"1\" dim1=\"0\" dim2=\"0\" Value=\"\" bSim=\"False\" />
+<CgAttribute Name=\"shiftVal\" sType=\"0\" sSubType=\"1\" dim1=\"0\" dim2=\"0\" Value=\"\" bSim=\"False\" />
+<CgAttribute Name=\"acceleratorVal\" sType=\"0\" sSubType=\"1\" dim1=\"0\" dim2=\"0\" Value=\"\" bSim=\"False\" />
+<CgConnectionDef Name=\"shiftLever\" ItemType=\"1\" ItemID=\"GUID 06e73c0f-2cd8-11d7-b349-00c04f680d9d\" AttrType=\"6\" OperType=\"0\" ConnName=\"shiftLever\" ItemSizeName=\"0\" UserID=\"-1\" />
+<CgConnectionDef Name=\"accelerator\" ItemType=\"1\" ItemID=\"GUID 06e73c6e-2cd8-11d7-b349-00c04f680d9d\" AttrType=\"6\" OperType=\"0\" ConnName=\"throttle\" ItemSizeName=\"0\" UserID=\"-1\" />
+<CgConnectionDef Name=\"brakes\" ItemType=\"1\" ItemID=\"GUID 06e73d55-2cd8-11d7-b349-00c04f680d9d\" AttrType=\"6\" OperType=\"0\" ConnName=\"brake\" ItemSizeName=\"0\" UserID=\"-1\" />
+</UDIDef>
+";
+										- _Type = MultiLine;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "Simulation";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 5;
+									- value = 
+									{ IProperty 
+										- _Name = "AttributeOrder";
+										- _Value = "shiftLever,accelerator,brakes,actionTime,currentTime";
+										- _Type = MultiLine;
+									}
+									{ IProperty 
+										- _Name = "OnCg";
+										- _Value = "False";
+										- _Type = Bool;
+									}
+									{ IProperty 
+										- _Name = "OperationOrder";
+										- _Value = "Driver,~Driver,init,handle_tick,updateActionTime,clean";
+										- _Type = MultiLine;
+									}
+									{ IProperty 
+										- _Name = "SimType";
+										- _Value = "NonSimulation";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "Undefined,Model,AbstractModel,Connector,Structure,NonSimulation";
+									}
+									{ IProperty 
+										- _Name = "StateOrder";
+										- _Value = "Init,ShiftForward,Accelerate,Brake";
+										- _Type = MultiLine;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "Driver";
+			- _lastID = 13;
+			- weakCGTime = 6.27.2003::23:8:27;
+			- strongCGTime = 6.27.2003::23:8:27;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = { IStateChart 
+				- _id = GUID 06e73bd7-2cd8-11d7-b349-00c04f680d9d;
+				- _myState = 8192;
+				- _lastID = 8;
+				- _graphicChart = { CGIStateChart 
+					- _id = GUID 06e73bd8-2cd8-11d7-b349-00c04f680d9d;
+					- m_type = 0;
+					- m_pModelObject = { IHandle 
+						- _m2Class = "IStateChart";
+						- _id = GUID 06e73bd7-2cd8-11d7-b349-00c04f680d9d;
+					}
+					- m_pParent = ;
+					- m_name = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 0 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+					}
+					- m_drawBehavior = 0;
+					- elementList = 13;
+					{ CGIState 
+						- _id = GUID 06e73bd9-2cd8-11d7-b349-00c04f680d9d;
+						- m_type = 5;
+						- m_pModelObject = { IHandle 
+							- _m2Class = "IState";
+							- _id = GUID 06e73bda-2cd8-11d7-b349-00c04f680d9d;
+						}
+						- m_pParent = ;
+						- m_name = { CGIText 
+							- m_str = "ROOT";
+							- m_style = "Arial" 10 0 0 0 0 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 0 0  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_drawBehavior = 0;
+						- m_color = { IColor 
+							- m_fgColor = 1;
+							- m_bgColor = 1;
+							- m_bgFlag = 1;
+						}
+						- m_lineWidth = 0;
+						- m_polygon = 4 -7.91173723536738 26.774501867995  34.9522114174238 26.774501867995  34.9522114174238 -1.55675591531756  -7.91173723536738 -1.55675591531756  ;
+						- m_nNameFormat = 0;
+						- m_nIsNameFormat = 0;
+						- nAndLineCount = 0;
+						- m_pInheritsFrom = { IHandle 
+							- _m2Class = "";
+						}
+						- m_nInheritanceMask = 0;
+						- m_bFixGraphics = 0;
+						- m_bFixGraphicsText = 0;
+						- m_fixByParentMode = FixByInherited;
+						- m_pDefaultComponentRelation = ;
+					}
+					{ CGIState 
+						- _id = GUID 06e73bdf-2cd8-11d7-b349-00c04f680d9d;
+						- m_type = 8;
+						- m_pModelObject = { IHandle 
+							- _m2Class = "IState";
+							- _id = GUID 06e73be0-2cd8-11d7-b349-00c04f680d9d;
+						}
+						- m_pParent = GUID 06e73bd9-2cd8-11d7-b349-00c04f680d9d;
+						- m_name = { CGIText 
+							- m_str = "Init";
+							- m_style = "Arial" 10 0 0 0 1 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 -1.40850038514799 20.6190212446981  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_drawBehavior = 0;
+						- m_color = { IColor 
+							- m_fgColor = 32;
+							- m_bgColor = 21;
+							- m_bgFlag = 0;
+						}
+						- m_lineWidth = 1;
+						- m_polygon = 4 -1.88516869700129 21.6190212446981  -1.88516869700129 20.1294327701565  0.498172862265195 20.1294327701565  0.498172862265195 21.6190212446981  ;
+						- m_nNameFormat = 0;
+						- m_nIsNameFormat = 0;
+						- nAndLineCount = 0;
+						- m_pInheritsFrom = { IHandle 
+							- _m2Class = "";
+						}
+						- m_nInheritanceMask = 0;
+						- m_bFixGraphics = 0;
+						- m_bFixGraphicsText = 0;
+						- m_fixByParentMode = FixByInherited;
+						- m_pDefaultComponentRelation = ;
+					}
+					{ CGIState 
+						- _id = GUID 06e73be3-2cd8-11d7-b349-00c04f680d9d;
+						- m_type = 8;
+						- m_pModelObject = { IHandle 
+							- _m2Class = "IState";
+							- _id = GUID 06e73be4-2cd8-11d7-b349-00c04f680d9d;
+						}
+						- m_pParent = GUID 06e73bd9-2cd8-11d7-b349-00c04f680d9d;
+						- m_name = { CGIText 
+							- m_str = "ShiftForward";
+							- m_style = "Arial" 10 0 0 0 1 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 7.18245994280961 16.5044310983139  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_drawBehavior = 0;
+						- m_color = { IColor 
+							- m_fgColor = 32;
+							- m_bgColor = 21;
+							- m_bgFlag = 0;
+						}
+						- m_lineWidth = 1;
+						- m_polygon = 6 5.95674129042447 17.1654631095366  5.95674129042447 14.3838835189347  12.0853345523502 14.3838835189347  12.0853345523502 17.5758600983139  6.00697566142386 17.5758600983139  6.00697566142386 17.1654631095366  ;
+						- m_nNameFormat = 0;
+						- m_nIsNameFormat = 0;
+						- nAndLineCount = 0;
+						- m_pInheritsFrom = { IHandle 
+							- _m2Class = "";
+						}
+						- m_nInheritanceMask = 0;
+						- m_bFixGraphics = 0;
+						- m_bFixGraphicsText = 0;
+						- m_fixByParentMode = FixByInherited;
+						- m_pDefaultComponentRelation = ;
+					}
+					{ CGITrans 
+						- _id = GUID 06e73ede-2cd8-11d7-b349-00c04f680d9d;
+						- m_type = 29;
+						- m_pModelObject = { IHandle 
+							- _m2Class = "ITransition";
+							- _id = GUID 06e73ee0-2cd8-11d7-b349-00c04f680d9d;
+						}
+						- m_pParent = ;
+						- m_name = { CGIText 
+							- m_str = "";
+							- m_style = "Arial" 10 0 0 0 0 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 0 0  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_drawBehavior = 0;
+						- m_pSource = GUID 06e73bd9-2cd8-11d7-b349-00c04f680d9d;
+						- m_sourceType = 'F';
+						- m_pTarget = GUID 06e73bdf-2cd8-11d7-b349-00c04f680d9d;
+						- m_targetType = 'T';
+						- m_direction = ' ';
+						- m_rpn = { CGIText 
+							- m_str = "";
+							- m_style = "Arial" 10 0 0 0 0 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 0 0  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_color = { IColor 
+							- m_fgColor = 4;
+							- m_bgColor = 4;
+							- m_bgFlag = 0;
+						}
+						- m_lineWidth = 0;
+						- m_arrow = 2 -0.99141561227636 24.0874821453669  -0.778617258770423 21.6190212446981  ;
+						- m_lineWidth = 0;
+						- m_anglePoint1 = 0 -1 ;
+						- m_anglePoint2 = 0 -1 ;
+						- m_line_style = 3;
+						- m_pInheritsFrom = { IHandle 
+							- _m2Class = "";
+						}
+						- m_nInheritanceMask = 0;
+						- m_bFixGraphics = 0;
+						- m_bFixGraphicsText = 0;
+						- m_fixByParentMode = FixByInherited;
+					}
+					{ CGITrans 
+						- _id = GUID 06e74574-2cd8-11d7-b349-00c04f680d9d;
+						- m_type = 28;
+						- m_pModelObject = { IHandle 
+							- _m2Class = "ITransition";
+							- _id = GUID 06e74576-2cd8-11d7-b349-00c04f680d9d;
+						}
+						- m_pParent = ;
+						- m_name = { CGIText 
+							- m_str = "";
+							- m_style = "Arial" 10 0 0 0 0 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 0 0  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_drawBehavior = 0;
+						- m_pSource = GUID 06e73bdf-2cd8-11d7-b349-00c04f680d9d;
+						- m_sourceType = 'F';
+						- m_pTarget = GUID 06e73be3-2cd8-11d7-b349-00c04f680d9d;
+						- m_targetType = 'T';
+						- m_direction = ' ';
+						- m_rpn = { CGIText 
+							- m_str = "/shiftForward();";
+							- m_style = "Arial" 10 0 0 0 1 ;
+							- m_color = { IColor 
+								- m_fgColor = 2;
+								- m_bgColor = 2;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 5.45690335025796 20.6974701591596  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_color = { IColor 
+							- m_fgColor = 4;
+							- m_bgColor = 4;
+							- m_bgFlag = 0;
+						}
+						- m_lineWidth = 1;
+						- m_arrow = 3 0.498172862265195 20.8955068427779  7.26516050375397 20.1294327701565  8.88242799039909 17.5758600983139  ;
+						- m_lineWidth = 1;
+						- m_anglePoint1 = 0 -1 ;
+						- m_anglePoint2 = 1 0 ;
+						- m_line_style = 1;
+						- m_pInheritsFrom = { IHandle 
+							- _m2Class = "";
+						}
+						- m_nInheritanceMask = 0;
+						- m_bFixGraphics = 0;
+						- m_bFixGraphicsText = 0;
+						- m_fixByParentMode = FixByInherited;
+					}
+					{ CGIState 
+						- _id = GUID 06e74581-2cd8-11d7-b349-00c04f680d9d;
+						- m_type = 8;
+						- m_pModelObject = { IHandle 
+							- _m2Class = "IState";
+							- _id = GUID 06e74582-2cd8-11d7-b349-00c04f680d9d;
+						}
+						- m_pParent = GUID 06e73bd9-2cd8-11d7-b349-00c04f680d9d;
+						- m_name = { CGIText 
+							- m_str = "Accelerate";
+							- m_style = "Arial" 10 0 0 0 1 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 4.75413993238392 10.6600583006203  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_drawBehavior = 0;
+						- m_color = { IColor 
+							- m_fgColor = 32;
+							- m_bgColor = 21;
+							- m_bgFlag = 0;
+						}
+						- m_lineWidth = 1;
+						- m_polygon = 4 3.51990948204949 11.6600583006203  9.69106173372164 11.6600583006203  9.69106173372164 8.89367970504309  3.51990948204949 8.89367970504309  ;
+						- m_nNameFormat = 0;
+						- m_nIsNameFormat = 0;
+						- nAndLineCount = 0;
+						- m_pInheritsFrom = { IHandle 
+							- _m2Class = "";
+						}
+						- m_nInheritanceMask = 0;
+						- m_bFixGraphics = 0;
+						- m_bFixGraphicsText = 0;
+						- m_fixByParentMode = FixByInherited;
+						- m_pDefaultComponentRelation = ;
+					}
+					{ CGITrans 
+						- _id = GUID 06e74585-2cd8-11d7-b349-00c04f680d9d;
+						- m_type = 28;
+						- m_pModelObject = { IHandle 
+							- _m2Class = "ITransition";
+							- _id = GUID 06e74587-2cd8-11d7-b349-00c04f680d9d;
+						}
+						- m_pParent = ;
+						- m_name = { CGIText 
+							- m_str = "";
+							- m_style = "Arial" 10 0 0 0 0 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 0 0  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_drawBehavior = 0;
+						- m_pSource = GUID 06e74581-2cd8-11d7-b349-00c04f680d9d;
+						- m_sourceType = 'F';
+						- m_pTarget = GUID 06e74581-2cd8-11d7-b349-00c04f680d9d;
+						- m_targetType = 'T';
+						- m_direction = ' ';
+						- m_rpn = { CGIText 
+							- m_str = "evDriverTick";
+							- m_style = "Arial" 10 0 0 0 1 ;
+							- m_color = { IColor 
+								- m_fgColor = 2;
+								- m_bgColor = 2;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 1.38352206101118 6.22478992958801  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_color = { IColor 
+							- m_fgColor = 4;
+							- m_bgColor = 4;
+							- m_bgFlag = 0;
+						}
+						- m_lineWidth = 1;
+						- m_arrow = 5 6.8395637967421 8.89367970504309  6.96724280884566 6.25498012156948  0.115135825954509 6.85081551138611  0.200255167356883 10.0853504846763  3.51990948204949 10.1279101553775  ;
+						- m_lineWidth = 1;
+						- m_anglePoint1 = 1 0 ;
+						- m_anglePoint2 = 0 -1 ;
+						- m_line_style = 1;
+						- m_pInheritsFrom = { IHandle 
+							- _m2Class = "";
+						}
+						- m_nInheritanceMask = 0;
+						- m_bFixGraphics = 0;
+						- m_bFixGraphicsText = 0;
+						- m_fixByParentMode = FixByInherited;
+					}
+					{ CGITrans 
+						- _id = GUID 06e74591-2cd8-11d7-b349-00c04f680d9d;
+						- m_type = 28;
+						- m_pModelObject = { IHandle 
+							- _m2Class = "ITransition";
+							- _id = GUID 06e74593-2cd8-11d7-b349-00c04f680d9d;
+						}
+						- m_pParent = ;
+						- m_name = { CGIText 
+							- m_str = "";
+							- m_style = "Arial" 10 0 0 0 0 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 0 0  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_drawBehavior = 0;
+						- m_pSource = GUID 06e73be3-2cd8-11d7-b349-00c04f680d9d;
+						- m_sourceType = 'F';
+						- m_pTarget = GUID 06e74581-2cd8-11d7-b349-00c04f680d9d;
+						- m_targetType = 'T';
+						- m_direction = ' ';
+						- m_rpn = { CGIText 
+							- m_str = "[currentTime > actionTime]/fast();";
+							- m_style = "Arial" 10 0 0 0 1 ;
+							- m_color = { IColor 
+								- m_fgColor = 2;
+								- m_bgColor = 2;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 8.73346914294493 12.5112548613633  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_color = { IColor 
+							- m_fgColor = 4;
+							- m_bgColor = 4;
+							- m_bgFlag = 0;
+						}
+						- m_lineWidth = 1;
+						- m_arrow = 2 8.88242799039909 14.3838835189347  7.22260083305278 11.6600583006203  ;
+						- m_lineWidth = 1;
+						- m_anglePoint1 = 0 -1 ;
+						- m_anglePoint2 = 0 -1 ;
+						- m_line_style = 1;
+						- m_pInheritsFrom = { IHandle 
+							- _m2Class = "";
+						}
+						- m_nInheritanceMask = 0;
+						- m_bFixGraphics = 0;
+						- m_bFixGraphicsText = 0;
+						- m_fixByParentMode = FixByInherited;
+					}
+					{ CGIState 
+						- _id = GUID 06e7459e-2cd8-11d7-b349-00c04f680d9d;
+						- m_type = 8;
+						- m_pModelObject = { IHandle 
+							- _m2Class = "IState";
+							- _id = GUID 06e7459f-2cd8-11d7-b349-00c04f680d9d;
+						}
+						- m_pParent = GUID 06e73bd9-2cd8-11d7-b349-00c04f680d9d;
+						- m_name = { CGIText 
+							- m_str = "Brake";
+							- m_style = "Arial" 10 0 0 0 1 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 11.0529711961596 3.60792086543353  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_drawBehavior = 0;
+						- m_color = { IColor 
+							- m_fgColor = 32;
+							- m_bgColor = 21;
+							- m_bgFlag = 0;
+						}
+						- m_lineWidth = 1;
+						- m_polygon = 4 9.56338272161808 4.60792086543353  17.0113250943259 4.60792086543353  17.0113250943259 1.41594556284449  9.56338272161808 1.41594556284449  ;
+						- m_nNameFormat = 0;
+						- m_nIsNameFormat = 0;
+						- nAndLineCount = 0;
+						- m_pInheritsFrom = { IHandle 
+							- _m2Class = "";
+						}
+						- m_nInheritanceMask = 0;
+						- m_bFixGraphics = 0;
+						- m_bFixGraphicsText = 0;
+						- m_fixByParentMode = FixByInherited;
+						- m_pDefaultComponentRelation = ;
+					}
+					{ CGITrans 
+						- _id = GUID 06e745ac-2cd8-11d7-b349-00c04f680d9d;
+						- m_type = 28;
+						- m_pModelObject = { IHandle 
+							- _m2Class = "ITransition";
+							- _id = GUID 06e745ae-2cd8-11d7-b349-00c04f680d9d;
+						}
+						- m_pParent = ;
+						- m_name = { CGIText 
+							- m_str = "";
+							- m_style = "Arial" 10 0 0 0 0 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 0 0  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_drawBehavior = 0;
+						- m_pSource = GUID 06e74581-2cd8-11d7-b349-00c04f680d9d;
+						- m_sourceType = 'F';
+						- m_pTarget = GUID 06e7459e-2cd8-11d7-b349-00c04f680d9d;
+						- m_targetType = 'T';
+						- m_direction = ' ';
+						- m_rpn = { CGIText 
+							- m_str = "[currentTime > actionTime]/slow();";
+							- m_style = "Arial" 10 0 0 0 1 ;
+							- m_color = { IColor 
+								- m_fgColor = 2;
+								- m_bgColor = 2;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 12.1004019489422 7.67361104813977  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_color = { IColor 
+							- m_fgColor = 4;
+							- m_bgColor = 4;
+							- m_bgFlag = 0;
+						}
+						- m_lineWidth = 1;
+						- m_arrow = 3 7.94611523497297 8.89367970504309  13.7767901210356 7.16190542437643  14.1598271573463 4.60792086543353  ;
+						- m_lineWidth = 1;
+						- m_anglePoint1 = 0 -1 ;
+						- m_anglePoint2 = 0 -1 ;
+						- m_line_style = 1;
+						- m_pInheritsFrom = { IHandle 
+							- _m2Class = "";
+						}
+						- m_nInheritanceMask = 0;
+						- m_bFixGraphics = 0;
+						- m_bFixGraphicsText = 0;
+						- m_fixByParentMode = FixByInherited;
+					}
+					{ CGITrans 
+						- _id = GUID 06e745b8-2cd8-11d7-b349-00c04f680d9d;
+						- m_type = 28;
+						- m_pModelObject = { IHandle 
+							- _m2Class = "ITransition";
+							- _id = GUID 06e745ba-2cd8-11d7-b349-00c04f680d9d;
+						}
+						- m_pParent = ;
+						- m_name = { CGIText 
+							- m_str = "";
+							- m_style = "Arial" 10 0 0 0 0 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 0 0  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_drawBehavior = 0;
+						- m_pSource = GUID 06e7459e-2cd8-11d7-b349-00c04f680d9d;
+						- m_sourceType = 'F';
+						- m_pTarget = GUID 06e7459e-2cd8-11d7-b349-00c04f680d9d;
+						- m_targetType = 'T';
+						- m_direction = ' ';
+						- m_rpn = { CGIText 
+							- m_str = "evDriverTick";
+							- m_style = "Arial" 10 0 0 0 1 ;
+							- m_color = { IColor 
+								- m_fgColor = 2;
+								- m_bgColor = 2;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 8.42705888305546 0.0365736158618721  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_color = { IColor 
+							- m_fgColor = 4;
+							- m_bgColor = 4;
+							- m_bgFlag = 0;
+						}
+						- m_lineWidth = 1;
+						- m_arrow = 4 13.9044691331392 1.41594556284449  6.03093005341954 0.565156465692407  6.71188478463854 3.50177374407433  9.56338272161808 3.54433341477551  ;
+						- m_lineWidth = 1;
+						- m_anglePoint1 = 1 0 ;
+						- m_anglePoint2 = 0 -1 ;
+						- m_line_style = 1;
+						- m_pInheritsFrom = { IHandle 
+							- _m2Class = "";
+						}
+						- m_nInheritanceMask = 0;
+						- m_bFixGraphics = 0;
+						- m_bFixGraphicsText = 0;
+						- m_fixByParentMode = FixByInherited;
+					}
+					{ CGITrans 
+						- _id = GUID 06e74626-2cd8-11d7-b349-00c04f680d9d;
+						- m_type = 28;
+						- m_pModelObject = { IHandle 
+							- _m2Class = "ITransition";
+							- _id = GUID 06e74628-2cd8-11d7-b349-00c04f680d9d;
+						}
+						- m_pParent = ;
+						- m_name = { CGIText 
+							- m_str = "";
+							- m_style = "Arial" 10 0 0 0 0 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 0 0  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_drawBehavior = 0;
+						- m_pSource = GUID 06e7459e-2cd8-11d7-b349-00c04f680d9d;
+						- m_sourceType = 'F';
+						- m_pTarget = GUID 06e74581-2cd8-11d7-b349-00c04f680d9d;
+						- m_targetType = 'T';
+						- m_direction = ' ';
+						- m_rpn = { CGIText 
+							- m_str = "[currentTime > actionTime]/fast();";
+							- m_style = "Arial" 10 0 0 0 1 ;
+							- m_color = { IColor 
+								- m_fgColor = 2;
+								- m_bgColor = 2;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 24.6004056889057 10.6107735910575  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_color = { IColor 
+							- m_fgColor = 4;
+							- m_bgColor = 4;
+							- m_bgFlag = 0;
+						}
+						- m_lineWidth = 1;
+						- m_arrow = 4 17.0113250943259 3.06473126344587  27.4413238211314 3.01611064975931  24.5330820964929 10.6495469985495  9.69106173372164 10.4064439301167  ;
+						- m_lineWidth = 1;
+						- m_anglePoint1 = -1 0 ;
+						- m_anglePoint2 = 1 0 ;
+						- m_line_style = 1;
+						- m_pInheritsFrom = { IHandle 
+							- _m2Class = "";
+						}
+						- m_nInheritanceMask = 0;
+						- m_bFixGraphics = 0;
+						- m_bFixGraphicsText = 0;
+						- m_fixByParentMode = FixByInherited;
+					}
+					{ CGITrans 
+						- _id = GUID 06e7482a-2cd8-11d7-b349-00c04f680d9d;
+						- m_type = 28;
+						- m_pModelObject = { IHandle 
+							- _m2Class = "ITransition";
+							- _id = GUID 06e7482c-2cd8-11d7-b349-00c04f680d9d;
+						}
+						- m_pParent = ;
+						- m_name = { CGIText 
+							- m_str = "";
+							- m_style = "Arial" 10 0 0 0 0 ;
+							- m_color = { IColor 
+								- m_fgColor = 0;
+								- m_bgColor = 0;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 0 0  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_drawBehavior = 0;
+						- m_pSource = GUID 06e73be3-2cd8-11d7-b349-00c04f680d9d;
+						- m_sourceType = 'F';
+						- m_pTarget = GUID 06e73be3-2cd8-11d7-b349-00c04f680d9d;
+						- m_targetType = 'T';
+						- m_direction = ' ';
+						- m_rpn = { CGIText 
+							- m_str = "evDriverTick";
+							- m_style = "Arial" 10 0 0 0 1 ;
+							- m_color = { IColor 
+								- m_fgColor = 2;
+								- m_bgColor = 2;
+								- m_bgFlag = 0;
+							}
+							- m_position = 1 1.56410845537611 13.7616525262056  ;
+							- m_nIdent = 0;
+							- m_bImplicitSetRectPoints = 0;
+						}
+						- m_color = { IColor 
+							- m_fgColor = 4;
+							- m_bgColor = 4;
+							- m_bgFlag = 0;
+						}
+						- m_lineWidth = 1;
+						- m_arrow = 5 7.2241436240769 14.3838835189347  6.61158410744598 13.0805776828776  1.68139366380886 13.7612662744895  1.92449673224167 15.9491938903847  5.95674129042447 16.1922969588175  ;
+						- m_lineWidth = 1;
+						- m_anglePoint1 = 1 0 ;
+						- m_anglePoint2 = 0 -1 ;
+						- m_line_style = 1;
+						- m_pInheritsFrom = { IHandle 
+							- _m2Class = "";
+						}
+						- m_nInheritanceMask = 0;
+						- m_bFixGraphics = 0;
+						- m_bFixGraphicsText = 0;
+						- m_fixByParentMode = FixByInherited;
+					}
+					
+					- m_access = 'Z';
+					- m_modified = 'N';
+					- m_fileVersion = "";
+					- m_nModifyDate = 0;
+					- m_nCreateDate = 0;
+					- m_creator = "";
+					- m_bScaleWithZoom = 1;
+					- m_arrowStyle = 'S';
+					- m_pRoot = GUID 06e73bd9-2cd8-11d7-b349-00c04f680d9d;
+					- m_currentLeftTop = -2.43772939871767 -0.970779672538761 ;
+					- m_currentRightBottom = 35.5047721191401 24.457801285533 ;
+					- m_pInheritsFrom = { IHandle 
+						- _m2Class = "";
+					}
+					- DiagramList = { IRPYRawContainer 
+						- size = 0;
+					}
+				}
+				- _defNumber = 4;
+				- Transitions = { IRPYRawContainer 
+					- size = 8;
+					- value = 
+					{ IDefaultDrvdTrans 
+						- _id = GUID 06e73ee0-2cd8-11d7-b349-00c04f680d9d;
+						- _myState = 2048;
+						- _name = "defaulttransition_0";
+						- _itsLabel = { ILabel 
+							- _id = GUID 06e73ee6-2cd8-11d7-b349-00c04f680d9d;
+							- _itsTrigger = NULL;
+							- _itsGuard = NULL;
+							- _itsAction = NULL;
+						}
+						- _itsTarget = GUID 06e73be0-2cd8-11d7-b349-00c04f680d9d;
+						- _staticReaction = 0;
+						- _itsSource = ;
+						- _ofState = GUID 06e73bda-2cd8-11d7-b349-00c04f680d9d;
+					}
+					{ ITransition 
+						- _id = GUID 06e74576-2cd8-11d7-b349-00c04f680d9d;
+						- _myState = 2048;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "Simulation";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "Transition";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ResetEqns";
+													- _Value = "<CgTransition Name=\"Init_/updateActionTime();\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "Triggers";
+													- _Value = "<CgTransition Name=\"Init_/updateActionTime();\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "nResetEqn";
+													- _Value = "0";
+													- _Type = Int;
+												}
+												{ IProperty 
+													- _Name = "nTrigger";
+													- _Value = "0";
+													- _Type = Int;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "transition_1";
+						- _itsLabel = { ILabel 
+							- _id = GUID 06e7457c-2cd8-11d7-b349-00c04f680d9d;
+							- _itsTrigger = NULL;
+							- _itsGuard = NULL;
+							- _itsAction = { IAction 
+								- _id = GUID 06e75700-2cd8-11d7-b349-00c04f680d9d;
+								- _body = "shiftForward();";
+							}
+						}
+						- _itsTarget = GUID 06e73be4-2cd8-11d7-b349-00c04f680d9d;
+						- _staticReaction = 0;
+						- _itsSource = GUID 06e73be0-2cd8-11d7-b349-00c04f680d9d;
+					}
+					{ ITransition 
+						- _id = GUID 06e74587-2cd8-11d7-b349-00c04f680d9d;
+						- _myState = 2048;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "Simulation";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "Transition";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ResetEqns";
+													- _Value = "<CgTransition Name=\"Accelerate_evDriverTick\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "Triggers";
+													- _Value = "<CgTransition Name=\"Accelerate_evDriverTick\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "nResetEqn";
+													- _Value = "0";
+													- _Type = Int;
+												}
+												{ IProperty 
+													- _Name = "nTrigger";
+													- _Value = "0";
+													- _Type = Int;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "transition_2";
+						- _itsLabel = { ILabel 
+							- _id = GUID 06e7458d-2cd8-11d7-b349-00c04f680d9d;
+							- _itsTrigger = { IInterfaceItemTrigger 
+								- _id = GUID 4b30fb82-74a4-4197-8587-3007b2d40be6;
+								- _body = "evDriverTick";
+								- _info = "";
+								- _itsInterfaceItem = { IHandle 
+									- _m2Class = "IEvent";
+									- _id = GUID 06e7461c-2cd8-11d7-b349-00c04f680d9d;
+								}
+							}
+							- _itsGuard = NULL;
+							- _itsAction = NULL;
+						}
+						- _itsTarget = GUID 06e74582-2cd8-11d7-b349-00c04f680d9d;
+						- _staticReaction = 0;
+						- _itsSource = GUID 06e74582-2cd8-11d7-b349-00c04f680d9d;
+					}
+					{ ITransition 
+						- _id = GUID 06e74593-2cd8-11d7-b349-00c04f680d9d;
+						- _myState = 2048;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "Simulation";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "Transition";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ResetEqns";
+													- _Value = "<CgTransition Name=\"ShiftForward_[currentTime > actionTime]/updateActionTime();\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "Triggers";
+													- _Value = "<CgTransition Name=\"ShiftForward_[currentTime > actionTime]/updateActionTime();\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "nResetEqn";
+													- _Value = "0";
+													- _Type = Int;
+												}
+												{ IProperty 
+													- _Name = "nTrigger";
+													- _Value = "0";
+													- _Type = Int;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "transition_3";
+						- _itsLabel = { ILabel 
+							- _id = GUID 06e74599-2cd8-11d7-b349-00c04f680d9d;
+							- _itsTrigger = NULL;
+							- _itsGuard = { IGuard 
+								- _id = GUID 06e7459c-2cd8-11d7-b349-00c04f680d9d;
+								- _body = "currentTime > actionTime";
+							}
+							- _itsAction = { IAction 
+								- _id = GUID 06e75702-2cd8-11d7-b349-00c04f680d9d;
+								- _body = "fast();";
+							}
+						}
+						- _itsTarget = GUID 06e74582-2cd8-11d7-b349-00c04f680d9d;
+						- _staticReaction = 0;
+						- _itsSource = GUID 06e73be4-2cd8-11d7-b349-00c04f680d9d;
+					}
+					{ ITransition 
+						- _id = GUID 06e745ae-2cd8-11d7-b349-00c04f680d9d;
+						- _myState = 2048;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "Simulation";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "Transition";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ResetEqns";
+													- _Value = "<CgTransition Name=\"Accelerate_[currentTime > actionTime]/updateActionTime();\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "Triggers";
+													- _Value = "<CgTransition Name=\"Accelerate_[currentTime > actionTime]/updateActionTime();\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "nResetEqn";
+													- _Value = "0";
+													- _Type = Int;
+												}
+												{ IProperty 
+													- _Name = "nTrigger";
+													- _Value = "0";
+													- _Type = Int;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "transition_4";
+						- _itsLabel = { ILabel 
+							- _id = GUID 06e745b4-2cd8-11d7-b349-00c04f680d9d;
+							- _itsTrigger = NULL;
+							- _itsGuard = { IGuard 
+								- _id = GUID 06e745b7-2cd8-11d7-b349-00c04f680d9d;
+								- _body = "currentTime > actionTime";
+							}
+							- _itsAction = { IAction 
+								- _id = GUID 06e75706-2cd8-11d7-b349-00c04f680d9d;
+								- _body = "slow();";
+							}
+						}
+						- _itsTarget = GUID 06e7459f-2cd8-11d7-b349-00c04f680d9d;
+						- _staticReaction = 0;
+						- _itsSource = GUID 06e74582-2cd8-11d7-b349-00c04f680d9d;
+					}
+					{ ITransition 
+						- _id = GUID 06e745ba-2cd8-11d7-b349-00c04f680d9d;
+						- _myState = 2048;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "Simulation";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "Transition";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ResetEqns";
+													- _Value = "<CgTransition Name=\"Brake_evDriverTick\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "Triggers";
+													- _Value = "<CgTransition Name=\"Brake_evDriverTick\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "nResetEqn";
+													- _Value = "0";
+													- _Type = Int;
+												}
+												{ IProperty 
+													- _Name = "nTrigger";
+													- _Value = "0";
+													- _Type = Int;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "transition_5";
+						- _itsLabel = { ILabel 
+							- _id = GUID 06e745c0-2cd8-11d7-b349-00c04f680d9d;
+							- _itsTrigger = { IInterfaceItemTrigger 
+								- _id = GUID d45dd340-1aeb-4832-9875-96b141adced4;
+								- _body = "evDriverTick";
+								- _info = "";
+								- _itsInterfaceItem = { IHandle 
+									- _m2Class = "IEvent";
+									- _id = GUID 06e7461c-2cd8-11d7-b349-00c04f680d9d;
+								}
+							}
+							- _itsGuard = NULL;
+							- _itsAction = NULL;
+						}
+						- _itsTarget = GUID 06e7459f-2cd8-11d7-b349-00c04f680d9d;
+						- _staticReaction = 0;
+						- _itsSource = GUID 06e7459f-2cd8-11d7-b349-00c04f680d9d;
+					}
+					{ ITransition 
+						- _id = GUID 06e74628-2cd8-11d7-b349-00c04f680d9d;
+						- _myState = 2048;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "Simulation";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "Transition";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ResetEqns";
+													- _Value = "<CgTransition Name=\"Brake_[currentTime > actionTime]/updateActionTime();\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "Triggers";
+													- _Value = "<CgTransition Name=\"Brake_[currentTime > actionTime]/updateActionTime();\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "nResetEqn";
+													- _Value = "0";
+													- _Type = Int;
+												}
+												{ IProperty 
+													- _Name = "nTrigger";
+													- _Value = "0";
+													- _Type = Int;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "transition_6";
+						- _itsLabel = { ILabel 
+							- _id = GUID 06e7462e-2cd8-11d7-b349-00c04f680d9d;
+							- _itsTrigger = NULL;
+							- _itsGuard = { IGuard 
+								- _id = GUID 06e74631-2cd8-11d7-b349-00c04f680d9d;
+								- _body = "currentTime > actionTime";
+							}
+							- _itsAction = { IAction 
+								- _id = GUID 06e75708-2cd8-11d7-b349-00c04f680d9d;
+								- _body = "fast();";
+							}
+						}
+						- _itsTarget = GUID 06e74582-2cd8-11d7-b349-00c04f680d9d;
+						- _staticReaction = 0;
+						- _itsSource = GUID 06e7459f-2cd8-11d7-b349-00c04f680d9d;
+					}
+					{ ITransition 
+						- _id = GUID 06e7482c-2cd8-11d7-b349-00c04f680d9d;
+						- _myState = 2048;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "Simulation";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "Transition";
+											- Properties = { IRPYRawContainer 
+												- size = 4;
+												- value = 
+												{ IProperty 
+													- _Name = "ResetEqns";
+													- _Value = "<CgTransition Name=\"ShiftForward_evDriverTick\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "Triggers";
+													- _Value = "<CgTransition Name=\"ShiftForward_evDriverTick\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgTransition>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "nResetEqn";
+													- _Value = "0";
+													- _Type = Int;
+												}
+												{ IProperty 
+													- _Name = "nTrigger";
+													- _Value = "0";
+													- _Type = Int;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "transition_7";
+						- _itsLabel = { ILabel 
+							- _id = GUID 06e74832-2cd8-11d7-b349-00c04f680d9d;
+							- _itsTrigger = { IInterfaceItemTrigger 
+								- _id = GUID 50bd09a2-fea4-4b8a-9189-d7cb2baeb5bf;
+								- _body = "evDriverTick";
+								- _info = "";
+								- _itsInterfaceItem = { IHandle 
+									- _m2Class = "IEvent";
+									- _id = GUID 06e7461c-2cd8-11d7-b349-00c04f680d9d;
+								}
+							}
+							- _itsGuard = NULL;
+							- _itsAction = NULL;
+						}
+						- _itsTarget = GUID 06e73be4-2cd8-11d7-b349-00c04f680d9d;
+						- _staticReaction = 0;
+						- _itsSource = GUID 06e73be4-2cd8-11d7-b349-00c04f680d9d;
+					}
+				}
+				- Connectors = { IRPYRawContainer 
+					- size = 0;
+				}
+				- States = { IRPYRawContainer 
+					- size = 5;
+					- value = 
+					{ IState 
+						- _id = GUID 06e73bda-2cd8-11d7-b349-00c04f680d9d;
+						- _parent = ;
+						- _defaultTrans = GUID 06e73ee0-2cd8-11d7-b349-00c04f680d9d;
+					}
+					{ IState 
+						- _id = GUID 06e73be0-2cd8-11d7-b349-00c04f680d9d;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "Simulation";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "State";
+											- Properties = { IRPYRawContainer 
+												- size = 2;
+												- value = 
+												{ IProperty 
+													- _Name = "Eqns";
+													- _Value = "<CgState Name=\"Init\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgState>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "nEqn";
+													- _Value = "0";
+													- _Type = Int;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "Init";
+						- _parent = GUID 06e73bda-2cd8-11d7-b349-00c04f680d9d;
+						- _defaultTrans = ;
+						- _entryAction = { IAction 
+							- _id = GUID 06e7458f-2cd8-11d7-b349-00c04f680d9d;
+							- _myState = 4096;
+							- _body = "init();";
+						}
+					}
+					{ IState 
+						- _id = GUID 06e73be4-2cd8-11d7-b349-00c04f680d9d;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "Simulation";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "State";
+											- Properties = { IRPYRawContainer 
+												- size = 2;
+												- value = 
+												{ IProperty 
+													- _Name = "Eqns";
+													- _Value = "<CgState Name=\"ShiftForward\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgState>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "nEqn";
+													- _Value = "0";
+													- _Type = Int;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "ShiftForward";
+						- _parent = GUID 06e73bda-2cd8-11d7-b349-00c04f680d9d;
+						- _defaultTrans = ;
+						- _entryAction = { IAction 
+							- _id = GUID 06e74580-2cd8-11d7-b349-00c04f680d9d;
+							- _myState = 4096;
+							- _body = "currentTime = getTime();
+";
+						}
+					}
+					{ IState 
+						- _id = GUID 06e74582-2cd8-11d7-b349-00c04f680d9d;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "Simulation";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "State";
+											- Properties = { IRPYRawContainer 
+												- size = 2;
+												- value = 
+												{ IProperty 
+													- _Name = "Eqns";
+													- _Value = "<CgState Name=\"Accelerate\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgState>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "nEqn";
+													- _Value = "0";
+													- _Type = Int;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "Accelerate";
+						- _parent = GUID 06e73bda-2cd8-11d7-b349-00c04f680d9d;
+						- _defaultTrans = ;
+						- _entryAction = { IAction 
+							- _id = GUID 06e74584-2cd8-11d7-b349-00c04f680d9d;
+							- _myState = 4096;
+							- _body = "currentTime = getTime();
+";
+						}
+					}
+					{ IState 
+						- _id = GUID 06e7459f-2cd8-11d7-b349-00c04f680d9d;
+						- _properties = { IPropertyContainer 
+							- Subjects = { IRPYRawContainer 
+								- size = 1;
+								- value = 
+								{ IPropertySubject 
+									- _Name = "Simulation";
+									- Metaclasses = { IRPYRawContainer 
+										- size = 1;
+										- value = 
+										{ IPropertyMetaclass 
+											- _Name = "State";
+											- Properties = { IRPYRawContainer 
+												- size = 2;
+												- value = 
+												{ IProperty 
+													- _Name = "Eqns";
+													- _Value = "<CgState Name=\"Brake\" xmlns= \"x-schema:\\xmldata\\ModelDefinition.xml\">
+</CgState>
+";
+													- _Type = MultiLine;
+												}
+												{ IProperty 
+													- _Name = "nEqn";
+													- _Value = "0";
+													- _Type = Int;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						- _name = "Brake";
+						- _parent = GUID 06e73bda-2cd8-11d7-b349-00c04f680d9d;
+						- _defaultTrans = ;
+						- _entryAction = { IAction 
+							- _id = GUID 06e74633-2cd8-11d7-b349-00c04f680d9d;
+							- _myState = 4096;
+							- _body = "currentTime = getTime();";
+						}
+					}
+				}
+				- _version = 2.16.2003::16:35:20;
+				- _baseVersion = 1.2.1990::0:0:0;
+			}
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 9;
+				- value = 
+				{ IDestructor 
+					- _id = GUID 06e73e89-2cd8-11d7-b349-00c04f680d9d;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "Simulation";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 5;
+											- value = 
+											{ IProperty 
+												- _Name = "AutoDiff";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "DiffType";
+												- _Value = "Automatic";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Automatic,Numeric";
+											}
+											{ IProperty 
+												- _Name = "OnCg";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "SimType";
+												- _Value = "Continuous";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Continuous,Discontinuous,Reset,Get,Set";
+											}
+											{ IProperty 
+												- _Name = "bSim";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "clean();";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 06e73ee8-2cd8-11d7-b349-00c04f680d9d;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "Simulation";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 5;
+											- value = 
+											{ IProperty 
+												- _Name = "AutoDiff";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "DiffType";
+												- _Value = "Automatic";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Automatic,Numeric";
+											}
+											{ IProperty 
+												- _Name = "OnCg";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "SimType";
+												- _Value = "Continuous";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Continuous,Discontinuous,Reset,Get,Set";
+											}
+											{ IProperty 
+												- _Name = "bSim";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "init";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "
+accelerator = new Port_Double();
+shiftLever = new Port_Int();
+brakes = new Port_Double();
+
+currentTime = getTime();
+actionTime = currentTime + 4.0 * ((double)rand())/RAND_MAX;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 06e73f47-2cd8-11d7-b349-00c04f680d9d;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "Simulation";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 5;
+											- value = 
+											{ IProperty 
+												- _Name = "AutoDiff";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "DiffType";
+												- _Value = "Automatic";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Automatic,Numeric";
+											}
+											{ IProperty 
+												- _Name = "OnCg";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "SimType";
+												- _Value = "Continuous";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Continuous,Discontinuous,Reset,Get,Set";
+											}
+											{ IProperty 
+												- _Name = "bSim";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "handle_tick";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "
+evDriverTick ev;
+takeTrigger(&ev);
+//GEN(evDriverTick);";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 06e756a0-2cd8-11d7-b349-00c04f680d9d;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "Simulation";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 5;
+											- value = 
+											{ IProperty 
+												- _Name = "AutoDiff";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "DiffType";
+												- _Value = "Automatic";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Automatic,Numeric";
+											}
+											{ IProperty 
+												- _Name = "OnCg";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "SimType";
+												- _Value = "Continuous";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Continuous,Discontinuous,Reset,Get,Set";
+											}
+											{ IProperty 
+												- _Name = "bSim";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "updateActionTime";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "actionTime = currentTime + 5.0 + 5.0 * ((double)rand())/RAND_MAX;
+";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 581aca36-5554-482d-9a63-fc2d1aa28689;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+							{ IPropertySubject 
+								- _Name = "Simulation";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 5;
+											- value = 
+											{ IProperty 
+												- _Name = "AutoDiff";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "DiffType";
+												- _Value = "Automatic";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Automatic,Numeric";
+											}
+											{ IProperty 
+												- _Name = "OnCg";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "SimType";
+												- _Value = "Continuous";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Continuous,Discontinuous,Reset,Get,Set";
+											}
+											{ IProperty 
+												- _Name = "bSim";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "clean";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "if (accelerator)
+{
+	accelerator->Release();
+	accelerator = NULL;
+}
+
+if (brakes)
+{
+	brakes->Release();
+	brakes = NULL;
+}
+
+if (shiftLever)
+{
+	shiftLever->Release();
+	shiftLever = NULL;
+}";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID e63c60de-a4fc-4c39-8365-7ed6116e118d;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "fast";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = " // release brakes
+ATLTRACE(\"\\nDriver::fast()\");
+
+brakeVal = 0.0;
+brakes->gen(&brakeVal);
+
+// apply acceleration
+acceleratorVal = 50 + 30 * (0.5 - ((double)rand())/RAND_MAX);
+accelerator->gen(&acceleratorVal); 
+
+updateActionTime();";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 7c0e8650-71b7-4b27-bff0-0a7ead641c0f;
+					- _name = "slow";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "// release accelerator
+ATLTRACE(\"\\nDriver::slow()\");
+
+acceleratorVal  = 0.0; 
+accelerator->gen(&acceleratorVal);  
+
+// apply brakes
+brakeVal = 60 + 10 * (0.5 - ((double)rand())/RAND_MAX); 
+brakes->gen(&brakeVal);
+
+updateActionTime();";
+					}
+				}
+				{ IConstructor 
+					- _id = GUID 06e73e0a-2cd8-11d7-b349-00c04f680d9d;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "Simulation";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 5;
+											- value = 
+											{ IProperty 
+												- _Name = "AutoDiff";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "DiffType";
+												- _Value = "Automatic";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Automatic,Numeric";
+											}
+											{ IProperty 
+												- _Name = "OnCg";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "SimType";
+												- _Value = "Continuous";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Continuous,Discontinuous,Reset,Get,Set";
+											}
+											{ IProperty 
+												- _Name = "bSim";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "";
+					}
+					- _initializer = "";
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID fba7b05b-0480-4f8e-8ab5-38fb50f517e8;
+					- _name = "shiftForward";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "ATLTRACE(\"\\nDriver::shiftForward()\");
+
+brakeVal = 20.0;
+brakes->gen(&brakeVal);
+
+shiftVal = 1;
+shiftLever->gen(&shiftVal);
+
+updateActionTime();";
+					}
+				}
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IEvent";
+					- _id = GUID 06e7461c-2cd8-11d7-b349-00c04f680d9d;
+				}
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 8;
+				- value = 
+				{ IAttribute 
+					- _id = GUID 06e73c0f-2cd8-11d7-b349-00c04f680d9d;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Attribute";
+										- Properties = { IRPYRawContainer 
+											- size = 3;
+											- value = 
+											{ IProperty 
+												- _Name = "AccessorGenerate";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "MutatorGenerate";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "Visibility";
+												- _Value = "public";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "private,protected,public,fromAttribute";
+											}
+										}
+									}
+								}
+							}
+							{ IPropertySubject 
+								- _Name = "Simulation";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Attribute";
+										- Properties = { IRPYRawContainer 
+											- size = 7;
+											- value = 
+											{ IProperty 
+												- _Name = "AutoDiff";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "Derivative";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "OldValue";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "OnCg";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "SimSubType";
+												- _Value = "Scalar";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Scalar,Array,Matrix";
+											}
+											{ IProperty 
+												- _Name = "SimType";
+												- _Value = "Broadcaster";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Variable,Parameter,Connector,Model,Struct,Broadcaster,Listener,DataCollector,Input,Output";
+											}
+											{ IProperty 
+												- _Name = "bSim";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "shiftLever";
+					- _defaultValue = "NULL";
+					- myTypeOf = { IType 
+						- _id = GUID 7d383cf4-ef55-4e75-9144-e0eb238fb4a5;
+						- _declaration = "Port_Int *";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 06e73c6e-2cd8-11d7-b349-00c04f680d9d;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Attribute";
+										- Properties = { IRPYRawContainer 
+											- size = 3;
+											- value = 
+											{ IProperty 
+												- _Name = "AccessorGenerate";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "MutatorGenerate";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "Visibility";
+												- _Value = "public";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "private,protected,public,fromAttribute";
+											}
+										}
+									}
+								}
+							}
+							{ IPropertySubject 
+								- _Name = "Simulation";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Attribute";
+										- Properties = { IRPYRawContainer 
+											- size = 7;
+											- value = 
+											{ IProperty 
+												- _Name = "AutoDiff";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "Derivative";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "OldValue";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "OnCg";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "SimSubType";
+												- _Value = "Scalar";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Scalar,Array,Matrix";
+											}
+											{ IProperty 
+												- _Name = "SimType";
+												- _Value = "Broadcaster";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Variable,Parameter,Connector,Model,Struct,Broadcaster,Listener,DataCollector,Input,Output";
+											}
+											{ IProperty 
+												- _Name = "bSim";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "accelerator";
+					- _defaultValue = "NULL";
+					- myTypeOf = { IType 
+						- _id = GUID d7281cf1-169f-4806-9a13-3f1a14a48644;
+						- _declaration = "Port_Double *";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 06e73d55-2cd8-11d7-b349-00c04f680d9d;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Attribute";
+										- Properties = { IRPYRawContainer 
+											- size = 3;
+											- value = 
+											{ IProperty 
+												- _Name = "AccessorGenerate";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "MutatorGenerate";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "Visibility";
+												- _Value = "public";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "private,protected,public,fromAttribute";
+											}
+										}
+									}
+								}
+							}
+							{ IPropertySubject 
+								- _Name = "Simulation";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Attribute";
+										- Properties = { IRPYRawContainer 
+											- size = 7;
+											- value = 
+											{ IProperty 
+												- _Name = "AutoDiff";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "Derivative";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "OldValue";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "OnCg";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "SimSubType";
+												- _Value = "Scalar";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Scalar,Array,Matrix";
+											}
+											{ IProperty 
+												- _Name = "SimType";
+												- _Value = "Broadcaster";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Variable,Parameter,Connector,Model,Struct,Broadcaster,Listener,DataCollector,Input,Output";
+											}
+											{ IProperty 
+												- _Name = "bSim";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "brakes";
+					- _defaultValue = "NULL";
+					- myTypeOf = { IType 
+						- _id = GUID a8712d75-133e-4b6e-847f-64ae0d881ed4;
+						- _declaration = "Port_Double *";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 06e7414a-2cd8-11d7-b349-00c04f680d9d;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Attribute";
+										- Properties = { IRPYRawContainer 
+											- size = 3;
+											- value = 
+											{ IProperty 
+												- _Name = "AccessorGenerate";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "MutatorGenerate";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "Visibility";
+												- _Value = "public";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "private,protected,public,fromAttribute";
+											}
+										}
+									}
+								}
+							}
+							{ IPropertySubject 
+								- _Name = "Simulation";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Attribute";
+										- Properties = { IRPYRawContainer 
+											- size = 7;
+											- value = 
+											{ IProperty 
+												- _Name = "AutoDiff";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "Derivative";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "OldValue";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "OnCg";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "SimSubType";
+												- _Value = "Scalar";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Scalar,Array,Matrix";
+											}
+											{ IProperty 
+												- _Name = "SimType";
+												- _Value = "Undefined";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Variable,Parameter,Connector,Model,Struct,Broadcaster,Listener,DataCollector,Input,Output";
+											}
+											{ IProperty 
+												- _Name = "bSim";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "actionTime";
+					- _defaultValue = "0.0";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 06e741d8-2cd8-11d7-b349-00c04f680d9d;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Attribute";
+										- Properties = { IRPYRawContainer 
+											- size = 3;
+											- value = 
+											{ IProperty 
+												- _Name = "AccessorGenerate";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "MutatorGenerate";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "Visibility";
+												- _Value = "public";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "private,protected,public,fromAttribute";
+											}
+										}
+									}
+								}
+							}
+							{ IPropertySubject 
+								- _Name = "Simulation";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Attribute";
+										- Properties = { IRPYRawContainer 
+											- size = 7;
+											- value = 
+											{ IProperty 
+												- _Name = "AutoDiff";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "Derivative";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "OldValue";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "OnCg";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+											{ IProperty 
+												- _Name = "SimSubType";
+												- _Value = "Scalar";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Scalar,Array,Matrix";
+											}
+											{ IProperty 
+												- _Name = "SimType";
+												- _Value = "Undefined";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "Undefined,Variable,Parameter,Connector,Model,Struct,Broadcaster,Listener,DataCollector,Input,Output";
+											}
+											{ IProperty 
+												- _Name = "bSim";
+												- _Value = "False";
+												- _Type = Bool;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "currentTime";
+					- _defaultValue = "0.0";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 93b76b9a-0160-4ac4-b4b2-5a7865352864;
+					- _name = "brakeVal";
+					- _defaultValue = "";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID d93628f3-b281-401c-aede-82524d72ced5;
+					- _name = "shiftVal";
+					- _defaultValue = "";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "long";
+						- _id = GUID 8d6ece2f-4774-4e46-a346-b71b55717d33;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID c73c5c41-630a-419d-b637-2eb5ab5bf0c4;
+					- _name = "acceleratorVal";
+					- _defaultValue = "";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- Events = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IEvent 
+			- _id = GUID 06e7461c-2cd8-11d7-b349-00c04f680d9d;
+			- _name = "evDriverTick";
+			- _virtual = 0;
+			- Args = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _superEvent = { IHandle 
+				- _m2Class = "";
+			}
+		}
+	}
+	- Types = { IRPYRawContainer 
+		- size = 2;
+		- value = 
+		{ IType 
+			- _id = GUID d8245d39-1c47-491c-9071-ece361b6ea22;
+			- _name = "Port_Int";
+			- _declaration = "typedef COnBroadcaster<long> Port_Int;";
+		}
+		{ IType 
+			- _id = GUID c31a7980-70ec-46d2-8615-fc8a442216b7;
+			- _name = "Port_Double";
+			- _declaration = "typedef COnBroadcaster<double> Port_Double;";
+		}
+	}
+	- UseCases = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Actors = { IRPYRawContainer 
+		- size = 0;
+	}
+	- _configurationRelatedTime = 1.20.2003::21:11:4;
+}
+

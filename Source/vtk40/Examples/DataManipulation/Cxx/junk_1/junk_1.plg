@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: junk_1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\wassim\LOCALS~1\Temp\RSP15.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /I "E:\Program Files\vtk40\include\vtk\\" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/junk_1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Program Files\vtk40\Examples\DataManipulation\Cxx\Cube.cxx"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\wassim\LOCALS~1\Temp\RSP15.tmp" 
+Creating temporary file "C:\DOCUME~1\wassim\LOCALS~1\Temp\RSP16.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib vtkRendering.lib vtkGraphics.lib vtkImaging.lib vtkFiltering.lib vtkCommon.lib opengl32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/junk_1.pdb" /debug /machine:I386 /out:"Debug/junk_1.exe" /pdbtype:sept /libpath:"E:\Program Files\vtk40\lib\vtk" 
+".\Debug\Cube.obj"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\wassim\LOCALS~1\Temp\RSP16.tmp"
+<h3>Output Window</h3>
+Compiling...
+Cube.cxx
+Linking...
+xilink6: executing 'E:\PROGRA~1\MICROS~2\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+junk_1.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

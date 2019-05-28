@@ -1,0 +1,4 @@
+[Events]
+GuidanceLogic[0]->GEN(evTargetAcquired())`GuidanceLogic
+[Active Breakpoints]
+[Inactive Breakpoints]

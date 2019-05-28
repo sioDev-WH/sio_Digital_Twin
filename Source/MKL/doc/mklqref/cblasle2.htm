@@ -1,0 +1,537 @@
+<HTML>
+<HEAD>
+<title>CBLAS Level 2</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+CBLAS Level 2
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p>
+<a name="cblas_gbmv"></A>
+<B>cblas_?gbmv</B>
+is a C interface to <a href="blaslev2.htm#gbmv">?gbmv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_sgbmv(const enum CBLAS_ORDER order,
+const enum CBLAS_TRANSPOSE TransA, const int M, const int N,
+const int KL, const int KU, const float alpha,
+const float *A, const int lda, const float *X,
+const int incX, const float beta, float *Y, const int incY);
+<p>
+void cblas_dgbmv(const enum CBLAS_ORDER order,
+const enum CBLAS_TRANSPOSE TransA, const int M, const int N,
+const int KL, const int KU, const double alpha,
+const double *A, const int lda, const double *X,
+const int incX, const double beta, double *Y, const int incY);
+<p>
+void cblas_cgbmv(const enum CBLAS_ORDER order,
+const enum CBLAS_TRANSPOSE TransA, const int M, const int N,
+const int KL, const int KU, const void *alpha,
+const void *A, const int lda, const void *X,
+const int incX, const void *beta, void *Y, const int incY);
+<p>
+void cblas_zgbmv(const enum CBLAS_ORDER order,
+const enum CBLAS_TRANSPOSE TransA, const int M, const int N,
+const int KL, const int KU, const void *alpha,
+const void *A, const int lda, const void *X,
+const int incX, const void *beta, void *Y, const int incY);
+
+
+</font></code>
+
+<p>
+<a name="cblas_gemv"></A>
+<B>cblas_?gemv</B>
+is a C interface to <a href="blaslev2.htm#gemv">?gemv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_sgemv(const enum CBLAS_ORDER order,
+const enum CBLAS_TRANSPOSE TransA, const int M, const int N,
+const float alpha, const float *A, const int lda,
+const float *X, const int incX, const float beta,
+float *Y, const int incY);
+<p>
+void cblas_dgemv(const enum CBLAS_ORDER order,
+const enum CBLAS_TRANSPOSE TransA, const int M, const int N,
+const double alpha, const double *A, const int lda,
+const double *X, const int incX, const double beta,
+double *Y, const int incY);
+<p>
+void cblas_cgemv(const enum CBLAS_ORDER order,
+const enum CBLAS_TRANSPOSE TransA, const int M, const int N,
+const void *alpha, const void *A, const int lda,
+const void *X, const int incX, const void *beta,
+void *Y, const int incY);
+<p>
+void cblas_zgemv(const enum CBLAS_ORDER order,
+const enum CBLAS_TRANSPOSE TransA, const int M, const int N,
+const void *alpha, const void *A, const int lda,
+const void *X, const int incX, const void *beta,
+void *Y, const int incY);
+
+
+</font></code>
+
+<p>
+<a name="cblas_ger"></A>
+<B>cblas_?ger</B>
+is a C interface to <a href="blaslev2.htm#ger">?ger</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_sger(const enum CBLAS_ORDER order, const int M, const int N,
+const float alpha, const float *X, const int incX,
+const float *Y, const int incY, float *A, const int lda);
+<p>
+void cblas_dger(const enum CBLAS_ORDER order, const int M, const int N,
+const double alpha, const double *X, const int incX,
+const double *Y, const int incY, double *A, const int lda);
+
+
+</font></code>
+
+<p>
+<a name="cblas_gerc"></A>
+<B>cblas_?gerc</B>
+is a C interface to <a href="blaslev2.htm#gerc">?gerc</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_cgerc(const enum CBLAS_ORDER order, const int M, const int N,
+const void *alpha, const void *X, const int incX,
+const void *Y, const int incY, void *A, const int lda);
+<p>
+void cblas_zgerc(const enum CBLAS_ORDER order, const int M, const int N,
+const void *alpha, const void *X, const int incX,
+const void *Y, const int incY, void *A, const int lda);
+
+
+</font></code>
+
+<p>
+<a name="cblas_geru"></A>
+<B>cblas_?geru</B>
+is a C interface to <a href="blaslev2.htm#geru">?geru</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_cgeru(const enum CBLAS_ORDER order, const int M, const int N,
+const void *alpha, const void *X, const int incX,
+const void *Y, const int incY, void *A, const int lda);
+<p>
+void cblas_zgeru(const enum CBLAS_ORDER order, const int M, const int N,
+const void *alpha, const void *X, const int incX,
+const void *Y, const int incY, void *A, const int lda);
+
+
+</font></code>
+
+<p>
+<a name="cblas_hbmv"></A>
+<B>cblas_?hbmv</B>
+is a C interface to <a href="blaslev2.htm#hbmv">?hbmv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_chbmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const int K, const void *alpha, const void *A,
+const int lda, const void *X, const int incX,
+const void *beta, void *Y, const int incY);
+<p>
+void cblas_zhbmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const int K, const void *alpha, const void *A,
+const int lda, const void *X, const int incX,
+const void *beta, void *Y, const int incY);
+
+
+</font></code>
+
+<p>
+<a name="cblas_hemv"></A>
+<B>cblas_?hemv</B>
+is a C interface to <a href="blaslev2.htm#hemv">?hemv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_chemv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const void *alpha, const void *A,
+const int lda, const void *X, const int incX,
+const void *beta, void *Y, const int incY);
+<p>
+void cblas_zhemv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const void *alpha, const void *A,
+const int lda, const void *X, const int incX,
+const void *beta, void *Y, const int incY);
+
+
+</font></code>
+
+<p>
+<a name="cblas_her"></A>
+<B>cblas_?her</B>
+is a C interface to <a href="blaslev2.htm#her">?her</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_cher(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const float alpha, const void *X, const int incX,
+void *A, const int lda);
+<p>
+void cblas_zher(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const double alpha, const void *X, const int incX,
+void *A, const int lda);
+
+</font></code>
+
+<p>
+<a name="cblas_her2"></A>
+<B>cblas_?her2</B>
+is a C interface to <a href="blaslev2.htm#her2">?her2</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_cher2(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo, const int N,
+const void *alpha, const void *X, const int incX,
+const void *Y, const int incY, void *A, const int lda);
+<p>
+void cblas_zher2(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo, const int N,
+const void *alpha, const void *X, const int incX,
+const void *Y, const int incY, void *A, const int lda);
+
+</font></code>
+
+<p>
+<a name="cblas_hpmv"></A>
+<B>cblas_?hpmv</B>
+is a C interface to <a href="blaslev2.htm#hpmv">?hpmv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_chpmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const void *alpha, const void *Ap,
+const void *X, const int incX,
+const void *beta, void *Y, const int incY);
+<p>
+void cblas_zhpmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const void *alpha, const void *Ap,
+const void *X, const int incX,
+const void *beta, void *Y, const int incY);
+
+</font></code>
+
+<p>
+<a name="cblas_hpr"></A>
+<B>cblas_?hpr</B>
+is a C interface to <a href="blaslev2.htm#hpr">?hpr</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_chpr(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const float alpha, const void *X,
+const int incX, void *A);
+<p>
+void cblas_zhpr(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const double alpha, const void *X,
+const int incX, void *A);
+
+</font></code>
+
+<p>
+<a name="cblas_hpr2"></A>
+<B>cblas_?hpr2</B>
+is a C interface to <a href="blaslev2.htm#hpr2">?hpr2</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_chpr2(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo, const int N,
+const void *alpha, const void *X, const int incX,
+const void *Y, const int incY, void *Ap);
+<p>
+void cblas_zhpr2(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo, const int N,
+const void *alpha, const void *X, const int incX,
+const void *Y, const int incY, void *Ap);
+
+</font></code>
+
+<p>
+<a name="cblas_sbmv"></A>
+<B>cblas_?sbmv</B>
+is a C interface to <a href="blaslev2.htm#sbmv">?sbmv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_ssbmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const int K, const float alpha, const float *A,
+const int lda, const float *X, const int incX,
+const float beta, float *Y, const int incY);
+<p>
+void cblas_dsbmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const int K, const double alpha, const double *A,
+const int lda, const double *X, const int incX,
+const double beta, double *Y, const int incY);
+
+
+</font></code>
+
+<p>
+<a name="cblas_spmv"></A>
+<B>cblas_?spmv</B>
+is a C interface to <a href="blaslev2.htm#spmv">?spmv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_sspmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const float alpha, const float *Ap,
+const float *X, const int incX,
+const float beta, float *Y, const int incY);
+<p>
+void cblas_dspmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const double alpha, const double *Ap,
+const double *X, const int incX,
+const double beta, double *Y, const int incY);
+
+
+</font></code>
+
+<p>
+<a name="cblas_spr"></A>
+<B>cblas_?spr</B>
+is a C interface to <a href="blaslev2.htm#spr">?spr</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_sspr(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const float alpha, const float *X,
+const int incX, float *Ap);
+<p>
+void cblas_dspr(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const double alpha, const double *X,
+const int incX, double *Ap);
+
+
+</font></code>
+
+<p>
+<a name="cblas_spr2"></A>
+<B>cblas_?spr2</B>
+is a C interface to <a href="blaslev2.htm#spr2">?spr2</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_sspr2(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const float alpha, const float *X,
+const int incX, const float *Y, const int incY, float *A);
+<p>
+void cblas_dspr2(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const double alpha, const double *X,
+const int incX, const double *Y, const int incY, double *A);
+
+
+
+</font></code>
+
+<p>
+<a name="cblas_symv"></A>
+<B>cblas_?symv</B>
+is a C interface to <a href="blaslev2.htm#symv">?symv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_ssymv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const float alpha, const float *A,
+const int lda, const float *X, const int incX,
+const float beta, float *Y, const int incY);
+<p>
+void cblas_dsymv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const double alpha, const double *A,
+const int lda, const double *X, const int incX,
+const double beta, double *Y, const int incY);
+
+
+</font></code>
+
+<p>
+<a name="cblas_syr"></A>
+<B>cblas_?syr</B>
+is a C interface to <a href="blaslev2.htm#syr">?syr</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_ssyr(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const float alpha, const float *X,
+const int incX, float *A, const int lda);
+<p>
+void cblas_dsyr(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const double alpha, const double *X,
+const int incX, double *A, const int lda);
+
+
+</font></code>
+
+<p>
+<a name="cblas_syr2"></A>
+<B>cblas_?syr2</B>
+is a C interface to <a href="blaslev2.htm#syr2">?syr2</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_ssyr2(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const float alpha, const float *X,
+const int incX, const float *Y, const int incY, float *A,
+const int lda);
+<p>
+void cblas_dsyr2(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const int N, const double alpha, const double *X,
+const int incX, const double *Y, const int incY, double *A,
+const int lda);
+
+
+</font></code>
+
+<p>
+<a name="cblas_tbmv"></A>
+<B>cblas_?tbmv</B>
+is a C interface to <a href="blaslev2.htm#tbmv">?tbmv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_stbmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const int K, const float *A, const int lda,
+float *X, const int incX);
+<p>
+void cblas_dtbmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const int K, const double *A, const int lda,
+double *X, const int incX);
+<p>
+void cblas_ctbmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const int K, const void *A, const int lda,
+void *X, const int incX);
+<p>
+void cblas_ztbmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const int K, const void *A, const int lda,
+void *X, const int incX);
+</font></code>
+
+<p>
+<a name="cblas_tbsv"></A>
+<B>cblas_?tbsv</B>
+is a C interface to <a href="blaslev2.htm#tbsv">?tbsv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_stbsv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const int K, const float *A, const int lda,
+float *X, const int incX);
+<p>
+void cblas_dtbsv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const int K, const double *A, const int lda,
+double *X, const int incX);
+<p>
+void cblas_ctbsv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const int K, const void *A, const int lda,
+void *X, const int incX);
+<p>
+void cblas_ztbsv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const int K, const void *A, const int lda,
+void *X, const int incX);
+
+</font></code>
+
+<p>
+<a name="cblas_tpmv"></A>
+<B>cblas_?tpmv</B>
+is a C interface to <a href="blaslev2.htm#tpmv">?tpmv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_stpmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const float *Ap, float *X, const int incX);
+<p>
+void cblas_dtpmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const double *Ap, double *X, const int incX);
+<p>
+void cblas_ctpmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const void *Ap, void *X, const int incX);
+<p>
+void cblas_ztpmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const void *Ap, void *X, const int incX);
+</font></code>
+
+<p>
+<a name="cblas_tpsv"></A>
+<B>cblas_?tpsv</B>
+is a C interface to <a href="blaslev2.htm#tpsv">?tpsv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_stpsv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const float *Ap, float *X, const int incX);
+<p>
+void cblas_dtpsv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const double *Ap, double *X, const int incX);
+<p>
+void cblas_ctpsv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const void *Ap, void *X, const int incX);
+<p>
+void cblas_ztpsv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const void *Ap, void *X, const int incX);
+</font></code>
+
+<p>
+<a name="cblas_trmv"></A>
+<B>cblas_?trmv</B>
+is a C interface to <a href="blaslev2.htm#trmv">?trmv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_strmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const float *A, const int lda,
+float *X, const int incX);
+<p>
+void cblas_dtrmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const double *A, const int lda,
+double *X, const int incX);
+<p>
+void cblas_ctrmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const void *A, const int lda,
+void *X, const int incX);
+<p>
+void cblas_ztrmv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const void *A, const int lda,
+void *X, const int incX);
+
+
+</font></code>
+
+<p>
+<a name="cblas_trsv"></A>
+<B>cblas_?trsv</B>
+is a C interface to <a href="blaslev2.htm#trsv">?trsv</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_strsv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const float *A, const int lda, float *X,
+const int incX);
+<p>
+void cblas_dtrsv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const double *A, const int lda, double *X,
+const int incX);
+<p>
+void cblas_ctrsv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const void *A, const int lda, void *X,
+const int incX);
+<p>
+void cblas_ztrsv(const enum CBLAS_ORDER order, const enum CBLAS_UPLO Uplo,
+const enum CBLAS_TRANSPOSE TransA, const enum CBLAS_DIAG Diag,
+const int N, const void *A, const int lda, void *X,
+const int incX);
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

@@ -1,0 +1,127 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IComponent 
+	- _id = GUID 4582fb72-0ad0-11d7-b329-00c04f680d9d;
+	- _myState = 8192;
+	- _name = "DefaultComponent";
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID 4582fb73-0ad0-11d7-b329-00c04f680d9d;
+		- _myState = 8192;
+		- _name = "Files";
+		- m_path = "";
+		- Elements = { IRPYRawContainer 
+			- size = 2;
+			- value = 
+			{ IHandle 
+				- _m2Class = "";
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AirframePkg.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AirframePkg";
+				- _id = GUID e57df4ae-c7c0-4684-a34b-61f6e934aed0;
+			}
+		}
+		- Files = { IRPYRawContainer 
+			- size = 0;
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID 4582fb74-0ad0-11d7-b329-00c04f680d9d;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID 4582fb74-0ad0-11d7-b329-00c04f680d9d;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 2;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CPP_CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Microsoft";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "CompileSwitches";
+										- _Value = "/I E:\\Distcomponents\\CommonHeader /I E:\\DistComponents\\OnUMLEso /I E:\\Distcomponents\\IsDaeCOSolver /I E:\\Distcomponents\\bin /I . /I $(OMROOT)\\LangCpp /I $(OMROOT)\\LangCpp\\oxf /nologo /W3 /GX $OMCPPCompileCommandSet /D \"_AFXDLL\" /D \"WIN32\" /D \"_CONSOLE\" /D \"_MBCS\" /D \"_WINDOWS\" $(INST_FLAGS) $(INCLUDE_PATH) $(INST_INCLUDES) /c ";
+										- _Type = MultiLine;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "ReverseEngineering";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Main";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Files";
+										- _Value = "C:\\DistComponents\\AvionicsLib\\StdAfx.h,C:\\DistComponents\\AvionicsLib\\AeroDynamics.h,C:\\DistComponents\\AvionicsLib\\AirFrame.cpp,C:\\DistComponents\\AvionicsLib\\AirFrame.h,C:\\DistComponents\\AvionicsLib\\AirFrameAutoPilotSystem.cpp,C:\\DistComponents\\AvionicsLib\\AirFrameAutoPilotSystem.h,C:\\DistComponents\\AvionicsLib\\Atmosphere.cpp,C:\\DistComponents\\AvionicsLib\\Atmosphere.h,C:\\DistComponents\\AvionicsLib\\AutoPilot.cpp,C:\\DistComponents\\AvionicsLib\\AutoPilot.h,C:\\DistComponents\\AvionicsLib\\AvionicsLib.cpp,C:\\DistComponents\\AvionicsLib\\AvionicsLib.h,C:\\DistComponents\\AvionicsLib\\AvionicsLib_i.c,C:\\DistComponents\\AvionicsLib\\AvionicsLib_p.c,C:\\DistComponents\\AvionicsLib\\BodyDynamics.cpp,C:\\DistComponents\\AvionicsLib\\BodyDynamics.h,C:\\DistComponents\\AvionicsLib\\dlldata.c,C:\\DistComponents\\AvionicsLib\\FinActuator.cpp,C:\\DistComponents\\AvionicsLib\\FinActuator.h,C:\\DistComponents\\AvionicsLib\\On1DConn.cpp,C:\\DistComponents\\AvionicsLib\\On1DConn.h,C:\\DistComponents\\AvionicsLib\\On3DConn.cpp,C:\\DistComponents\\AvionicsLib\\On3DConn.h,C:\\DistComponents\\AvionicsLib\\OnAirFrameAutoPilotTest.cpp,C:\\DistComponents\\AvionicsLib\\OnAirFrameAutoPilotTest.h,C:\\DistComponents\\AvionicsLib\\resource.h,C:\\DistComponents\\AvionicsLib\\std_include.h,C:\\DistComponents\\AvionicsLib\\StdAfx.cpp,C:\\DistComponents\\AvionicsLib\\AeroDynamics.cpp,C:\\DistComponents\\OnUMLEso\\IOnUMLDaeEsoBase.h,C:\\DistComponents\\OnUMLEso\\FDistributedVar.h,C:\\DistComponents\\OnUMLEso\\DistributedVar.h,C:\\DistComponents\\OnUMLEso\\IOnVarInit.h,C:\\DistComponents\\OnUMLEso\\OnUMLAssociation.h,C:\\DistComponents\\OnUMLEso\\OnUMLConnectorImpl.h,C:\\DistComponents\\OnUMLEso\\OnUMLDaeEsoBase.h,C:\\DistComponents\\OnUMLEso\\OnUMLDaeEsoBaseImpl.h,C:\\DistComponents\\OnUMLEso\\OnUMLDaeEsoImpl.h";
+										- _Type = String;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "DefaultConfig";
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = Animation;
+			- _timeModel = Simulated;
+			- m_generateActors = 0;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _root = { IFolder 
+				- _id = GUID 4582fb75-0ad0-11d7-b329-00c04f680d9d;
+				- _name = "DefaultConfig";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 12.22.2002::14:23:57;
+			- strongCGTime = 12.22.2002::14:23:57;
+		}
+	}
+	- weakCGTime = 1.21.2003::17:11:5;
+	- strongCGTime = 12.21.2002::14:33:18;
+}
+

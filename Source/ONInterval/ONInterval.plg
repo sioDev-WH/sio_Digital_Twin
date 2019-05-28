@@ -1,0 +1,107 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ONInterval - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP876.tmp" with contents
+[
+/nologo /MD /GX /O2 /I "c:\distcomponents\ONlr" /I "c:\distcomponents\ONbias" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ONINTERVAL_EXPORTS" /D __STDC__=1 /D "__NICEINOUT__" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\DistComponents\ONInterval\complex.cpp"
+"C:\DistComponents\ONInterval\const.cpp"
+"C:\DistComponents\ONInterval\error.cpp"
+"C:\DistComponents\ONInterval\func.cpp"
+"C:\DistComponents\ONInterval\highprec.cpp"
+"C:\DistComponents\ONInterval\intmat.cpp"
+"C:\DistComponents\ONInterval\intvec.cpp"
+"C:\DistComponents\ONInterval\ival.cpp"
+"C:\DistComponents\ONInterval\ivalmat.cpp"
+"C:\DistComponents\ONInterval\ivalvec.cpp"
+"C:\DistComponents\ONInterval\longival.cpp"
+"C:\DistComponents\ONInterval\longreal.cpp"
+"C:\DistComponents\ONInterval\lss.cpp"
+"C:\DistComponents\ONInterval\matrix.cpp"
+"C:\DistComponents\ONInterval\niceio.cpp"
+"C:\DistComponents\ONInterval\realop.c"
+"C:\DistComponents\ONInterval\util.cpp"
+"C:\DistComponents\ONInterval\vector.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP876.tmp" 
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP877.tmp" with contents
+[
+/nologo /MD /GX /O2 /I "c:\distcomponents\ONlr" /I "c:\distcomponents\ONbias" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ONINTERVAL_EXPORTS" /D __STDC__=1 /D "__NICEINOUT__" /Fp"Release/ONInterval.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\DistComponents\ONInterval\ONInterval.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP877.tmp" 
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP878.tmp" with contents
+[
+/nologo /MD /GX /O2 /I "c:\distcomponents\ONlr" /I "c:\distcomponents\ONbias" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ONINTERVAL_EXPORTS" /D __STDC__=1 /D "__NICEINOUT__" /Fp"Release/ONInterval.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\DistComponents\ONInterval\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP878.tmp" 
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP879.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ONbias.lib ONlr.lib /nologo /dll /incremental:no /pdb:"c:\distcomponents\bin\Release\ONInterval.pdb" /debug /machine:I386 /out:"c:\distcomponents\bin\Release\ONInterval.dll" /implib:"c:\distcomponents\lib\ONInterval.lib" /libpath:"c:\distcomponents\lib" 
+.\Release\complex.obj
+.\Release\const.obj
+.\Release\error.obj
+.\Release\func.obj
+.\Release\highprec.obj
+.\Release\intmat.obj
+.\Release\intvec.obj
+.\Release\ival.obj
+.\Release\ivalmat.obj
+.\Release\ivalvec.obj
+.\Release\longival.obj
+.\Release\longreal.obj
+.\Release\lss.obj
+.\Release\matrix.obj
+.\Release\niceio.obj
+.\Release\ONInterval.obj
+.\Release\realop.obj
+.\Release\StdAfx.obj
+.\Release\util.obj
+.\Release\vector.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP879.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+complex.cpp
+const.cpp
+error.cpp
+func.cpp
+highprec.cpp
+intmat.cpp
+intvec.cpp
+ival.cpp
+ivalmat.cpp
+ivalvec.cpp
+longival.cpp
+longreal.cpp
+lss.cpp
+matrix.cpp
+niceio.cpp
+Generating Code...
+Compiling...
+realop.c
+Generating Code...
+Compiling...
+util.cpp
+vector.cpp
+Generating Code...
+Compiling...
+ONInterval.cpp
+Linking...
+   Creating library c:\distcomponents\lib\ONInterval.lib and object c:\distcomponents\lib\ONInterval.exp
+
+
+
+<h3>Results</h3>
+ONInterval.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

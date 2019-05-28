@@ -1,0 +1,193 @@
+<HTML>
+<HEAD>
+<title>CBLAS Level 1</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+CBLAS Level 1
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p>
+<a name="cblas_asum"></A>
+<B>cblas_?asum</B>
+is a C interface to <a href="blaslev1.htm#asum">?asum</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+float cblas_sasum(const int N, const float *X, const int incX);
+<br>double cblas_dasum(const int N, const double *X, const int incX);
+<br>float cblas_scasum(const int N, const void *X, const int incX);
+<br>double cblas_dzasum(const int N, const void *X, const int incX);
+</font></code>
+
+<p>
+<a name="cblas_axpy"></A>
+<B>cblas_?axpy</B>
+is a C interface to <a href="blaslev1.htm#axpy">?axpy</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_saxpy(const int N, const float alpha, const float *X, const int incX, float *Y, const int incY);<br>
+void cblas_daxpy(const int N, const double alpha, const double *X, const int incX, double *Y, const int incY);<br>
+void cblas_caxpy(const int N, const void *alpha, const void *X, const int incX, void *Y, const int incY);<br>
+void cblas_zaxpy(const int N, const void *alpha, const void *X, const int incX, void *Y, const int incY);
+</font></code>
+
+<p>
+<a name="cblas_copy"></A>
+<B>cblas_?copy</B>
+is a C interface to <a href="blaslev1.htm#copy">?copy</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_scopy(const int N, const float *X, const int incX, float *Y, const int incY);
+<br>void cblas_dcopy(const int N, const double *X, const int incX, double *Y, const int incY);
+<br>void cblas_ccopy(const int N, const void *X, const int incX, void *Y, const int incY);
+<br>void cblas_zcopy(const int N, const void *X, const int incX, void *Y, const int incY);
+</font></code>
+
+<p>
+<a name="cblas_dot"></A>
+<B>cblas_?dot</B>
+is a C interface to <a href="blaslev1.htm#dot">?dot</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+float cblas_sdot(const int N, const float *X, const int incX, const float *Y, const int incY);
+<br>double cblas_ddot(const int N, const double *X, const int incX, const double *Y, const int incY);
+</font></code>
+
+<p>
+<a name="cblas_dotc_sub"></A>
+<B>cblas_?dotc_sub</B>
+is a C interface to <a href="blaslev1.htm#dotc">?dotc</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_cdotc_sub(const int N, const void *X, const int incX, const void *Y, const int incY, void *dotc);
+<br>void cblas_zdotc_sub(const int N, const void *X, const int incX, const void *Y, const int incY, void *dotc);
+</font></code>
+
+<p>
+<a name="cblas_dotu_sub"></A>
+<B>cblas_?dotu_sub</B>
+is a C interface to <a href="blaslev1.htm#dotu">?dotu</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_cdotu_sub(const int N, const void *X, const int incX, const void *Y, const int incY, void *dotu);
+<br>void cblas_zdotu_sub(const int N, const void *X, const int incX, const void *Y, const int incY, void *dotu);
+</font></code>
+
+<p>
+<a name="cblas_nrm2"></A>
+<B>cblas_nrm2</B>
+is a C interface to <a href="blaslev1.htm#nrm2">?nrm2</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+float cblas_snrm2(const int N, const float *X, const int incX);
+<br>double cblas_dnrm2(const int N, const double *X, const int incX);
+<br>float cblas_scnrm2(const int N, const void *X, const int incX);
+<br>double cblas_dznrm2(const int N, const void *X, const int incX);
+</font></code>
+
+<p>
+<a name="cblas_rot"></A>
+<B>cblas_?rot</B>
+is a C interface to <a href="blaslev1.htm#rot">?rot</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_srot(const int N, float *X, const int incX, float *Y, const int incY, const float c, const float s);
+<br>void cblas_drot(const int N, double *X, const int incX, double *Y, const int incY, const double c, const double s);
+</font></code>
+
+<p>
+<a name="cblas_rotg"></A>
+<B>cblas_?rotg</B>
+is a C interface to <a href="blaslev1.htm#rotg">?rotg</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_srotg(float *a, float *b, float *c, float *s);
+<br>void cblas_drotg(double *a, double *b, double *c, double *s);
+</font></code>
+
+<p>
+<a name="cblas_rotm"></A>
+<B>cblas_?rotm</B>
+is a C interface to <a href="blaslev1.htm#rotm">?rotm</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_srotm(const int N, float *X, const int incX, float *Y, const int incY, const float *P);
+<br>void cblas_drotm(const int N, double *X, const int incX, double *Y, const int incY, const double *P);
+</font></code>
+
+<p>
+<a name="cblas_rotmg"></A>
+<B>cblas_?rotmg</B>
+is a C interface to <a href="blaslev1.htm#rotmg">?rotmg</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_srotmg(float *d1, float *d2, float *b1, const float b2, float *P);
+<br>void cblas_drotmg(double *d1, double *d2, double *b1, const double b2, double *P);
+</font></code>
+
+<p>
+<a name="cblas_scal"></A>
+<B>cblas_?scal</B>
+is a C interface to <a href="blaslev1.htm#scal">?scal</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_sscal(const int N, const float alpha, float *X, const int incX);
+<br>void cblas_dscal(const int N, const double alpha, double *X, const int incX);
+<br>void cblas_cscal(const int N, const void *alpha, void *X, const int incX);
+<br>void cblas_zscal(const int N, const void *alpha, void *X, const int incX);
+<br>void cblas_csscal(const int N, const float alpha, void *X, const int incX);
+<br>void cblas_zdscal(const int N, const double alpha, void *X, const int incX);
+</font></code>
+
+<p>
+<a name="cblas_swap"></A>
+<B>cblas_?swap</B>
+is a C interface to <a href="blaslev1.htm#swap">?swap</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+void cblas_sswap(const int N, float *X, const int incX, float *Y, const int incY);
+<br>void cblas_dswap(const int N, double *X, const int incX, double *Y, const int incY);
+<br>void cblas_cswap(const int N, void *X, const int incX, void *Y, const int incY);
+<br>void cblas_zswap(const int N, void *X, const int incX, void *Y, const int incY);
+</font></code>
+
+<p>
+<a name="cblas_iamax"></A>
+<B>cblas_i?amax</B>
+is a C interface to <a href="blaslev1.htm#iamax">i?amax</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+CBLAS_INDEX cblas_isamax(const int N, const float *X, const int incX);
+<br>CBLAS_INDEX cblas_idamax(const int N, const double *X, const int incX);
+<br>CBLAS_INDEX cblas_icamax(const int N, const void *X, const int incX);
+<br>CBLAS_INDEX cblas_izamax(const int N, const void *X, const int incX);
+</font></code>
+
+<p>
+<a name="cblas_iamin"></A>
+<B>cblas_i?amin</B>
+is a C interface to <a href="blaslev1.htm#iamin">i?amin</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+CBLAS_INDEX cblas_isamin(const int N, const float *X, const int incX);
+<br>CBLAS_INDEX cblas_idamin(const int N, const double *X, const int incX);
+<br>CBLAS_INDEX cblas_icamin(const int N, const void *X, const int incX);
+<br>CBLAS_INDEX cblas_izamin(const int N, const void *X, const int incX);
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

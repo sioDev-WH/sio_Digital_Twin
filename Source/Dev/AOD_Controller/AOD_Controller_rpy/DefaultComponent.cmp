@@ -1,0 +1,115 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IComponent 
+	- _id = GUID 1a0c87bb-8f9d-4e14-b5b6-909d5c8fce3c;
+	- _myState = 139264;
+	- _name = "DefaultComponent";
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID 34e43c07-5422-402e-be94-5aa51a3c7d7c;
+		- _myState = 8192;
+		- _name = "Files";
+		- m_path = "";
+		- Elements = { IRPYRawContainer 
+			- size = 0;
+		}
+		- Files = { IRPYRawContainer 
+			- size = 0;
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID 0e93c4fd-a40d-46e1-beea-674bf836158c;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID 0e93c4fd-a40d-46e1-beea-674bf836158c;
+			- _myState = 8192;
+			- _name = "DefaultConfig";
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = None;
+			- _timeModel = RealTime;
+			- m_generateActors = 1;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _root = { IFolder 
+				- _id = GUID 357a0f41-1f10-433c-afb1-15d75cea53d8;
+				- _name = "DefaultConfig";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 12.31.1969::19:0:0;
+			- strongCGTime = 12.31.1969::19:0:0;
+		}
+	}
+	- HandlesInMe = { IRPYRawContainer 
+		- size = 5;
+		- value = 
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Default.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Default";
+			- _id = GUID 34978dbe-326a-4791-a79f-328753292ae0;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Requirement.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Requirement";
+			- _id = GUID 70568de5-1c0f-4101-8f97-8cb6555a93e2;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID d720061c-7041-4da1-b10c-627d0da3090d;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Requirement.sbs";
+			- _subsystem = "Requirement";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID a0fb2a39-a60c-43f5-a6a1-66cec3564cf3;
+		}
+		{ IHandle 
+			- _m2Class = "IActor";
+			- _filename = "Requirement.sbs";
+			- _subsystem = "Requirement";
+			- _class = "";
+			- _name = "actor_3";
+			- _id = GUID 57c487ef-e637-4a31-b3d9-bda1f83879ad;
+		}
+	}
+	- weakCGTime = 6.4.2003::8:43:50;
+	- strongCGTime = 12.31.1969::19:0:0;
+}
+

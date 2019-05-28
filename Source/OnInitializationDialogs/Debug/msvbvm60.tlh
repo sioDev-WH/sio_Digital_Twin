@@ -1,0 +1,895 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8964.0 (267f44d4).
+//
+// c:\distcomponents\oninitializationdialogs\debug\msvbvm60.tlh
+//
+// C++ source equivalent of Win32 type library msvbvm60.dll
+// compiler-generated file created 06/23/03 at 00:17:16 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("1e196b20-1f3c-1069-996b-00dd010ef676"))
+/* interface */ _HiddenInterface;
+struct __declspec(uuid("a4c466b8-499f-101b-bb78-00aa00383cbb"))
+/* dual interface */ _ErrObject;
+struct /* coclass */ ErrObject;
+struct __declspec(uuid("a4c46780-499f-101b-bb78-00aa00383cbb"))
+/* dual interface */ _Collection;
+struct /* coclass */ Collection;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_HiddenInterface, __uuidof(_HiddenInterface));
+_COM_SMARTPTR_TYPEDEF(_ErrObject, __uuidof(_ErrObject));
+_COM_SMARTPTR_TYPEDEF(_Collection, __uuidof(_Collection));
+
+//
+// Type library items
+//
+
+enum VbVarType
+{
+    vbEmpty = 0,
+    vbNull = 1,
+    vbInteger = 2,
+    vbLong = 3,
+    vbSingle = 4,
+    vbDouble = 5,
+    vbCurrency = 6,
+    vbDate = 7,
+    vbString = 8,
+    vbObject = 9,
+    vbError = 10,
+    vbBoolean = 11,
+    vbVariant = 12,
+    vbDataObject = 13,
+    vbDecimal = 14,
+    vbByte = 17,
+    vbUserDefinedType = 36,
+    vbArray = 8192
+};
+
+enum VbMsgBoxStyle
+{
+    vbOKOnly = 0,
+    vbOKCancel = 1,
+    vbAbortRetryIgnore = 2,
+    vbYesNoCancel = 3,
+    vbYesNo = 4,
+    vbRetryCancel = 5,
+    vbCritical = 16,
+    vbQuestion = 32,
+    vbExclamation = 48,
+    vbInformation = 64,
+    vbDefaultButton1 = 0,
+    vbDefaultButton2 = 256,
+    vbDefaultButton3 = 512,
+    vbDefaultButton4 = 768,
+    vbApplicationModal = 0,
+    vbSystemModal = 4096,
+    vbMsgBoxHelpButton = 16384,
+    vbMsgBoxRight = 524288,
+    vbMsgBoxRtlReading = 1048576,
+    vbMsgBoxSetForeground = 65536
+};
+
+enum VbMsgBoxResult
+{
+    vbOK = 1,
+    vbCancel = 2,
+    vbAbort = 3,
+    vbRetry = 4,
+    vbIgnore = 5,
+    vbYes = 6,
+    vbNo = 7
+};
+
+enum VbFileAttribute
+{
+    vbNormal = 0,
+    vbReadOnly = 1,
+    vbHidden = 2,
+    vbSystem = 4,
+    vbVolume = 8,
+    vbDirectory = 16,
+    vbArchive = 32,
+    vbAlias = 64
+};
+
+enum VbStrConv
+{
+    vbUpperCase = 1,
+    vbLowerCase = 2,
+    vbProperCase = 3,
+    vbWide = 4,
+    vbNarrow = 8,
+    vbKatakana = 16,
+    vbHiragana = 32,
+    vbUnicode = 64,
+    vbFromUnicode = 128
+};
+
+enum VbDayOfWeek
+{
+    vbUseSystemDayOfWeek = 0,
+    vbSunday = 1,
+    vbMonday = 2,
+    vbTuesday = 3,
+    vbWednesday = 4,
+    vbThursday = 5,
+    vbFriday = 6,
+    vbSaturday = 7
+};
+
+enum VbFirstWeekOfYear
+{
+    vbUseSystem = 0,
+    vbFirstJan1 = 1,
+    vbFirstFourDays = 2,
+    vbFirstFullWeek = 3
+};
+
+enum VbIMEStatus
+{
+    vbIMENoOp = 0,
+    vbIMEModeNoControl = 0,
+    vbIMEOn = 1,
+    vbIMEModeOn = 1,
+    vbIMEOff = 2,
+    vbIMEModeOff = 2,
+    vbIMEDisable = 3,
+    vbIMEModeDisable = 3,
+    vbIMEHiragana = 4,
+    vbIMEModeHiragana = 4,
+    vbIMEKatakanaDbl = 5,
+    vbIMEModeKatakana = 5,
+    vbIMEKatakanaSng = 6,
+    vbIMEModeKatakanaHalf = 6,
+    vbIMEAlphaDbl = 7,
+    vbIMEModeAlphaFull = 7,
+    vbIMEAlphaSng = 8,
+    vbIMEModeAlpha = 8,
+    vbIMEModeHangulFull = 9,
+    vbIMEModeHangul = 10
+};
+
+enum VbAppWinStyle
+{
+    vbHide = 0,
+    vbNormalFocus = 1,
+    vbMinimizedFocus = 2,
+    vbMaximizedFocus = 3,
+    vbNormalNoFocus = 4,
+    vbMinimizedNoFocus = 6
+};
+
+enum VbCompareMethod
+{
+    vbBinaryCompare = 0,
+    vbTextCompare = 1,
+    vbDatabaseCompare = 2
+};
+
+enum VbCalendar
+{
+    vbCalGreg = 0,
+    vbCalHijri = 1
+};
+
+enum VbDateTimeFormat
+{
+    vbGeneralDate = 0,
+    vbLongDate = 1,
+    vbShortDate = 2,
+    vbLongTime = 3,
+    vbShortTime = 4
+};
+
+enum VbTriState
+{
+    vbUseDefault = -2,
+    vbTrue = -1,
+    vbFalse = 0
+};
+
+enum VbCallType
+{
+    VbMethod = 1,
+    VbGet = 2,
+    VbLet = 4,
+    VbSet = 8
+};
+    const long vbObjectError = -2147221504;
+    const LPSTR vbNullString = (char*) 0;
+    const LPSTR vbNullChar = (char*) "";
+    const LPSTR vbCrLf = (char*) "\r\n";
+    const LPSTR vbNewLine = (char*) "\r\n";
+    const LPSTR vbCr = (char*) "\r";
+    const LPSTR vbLf = (char*) "\n";
+    const LPSTR vbBack = (char*) "\b";
+    const LPSTR vbFormFeed = (char*) "\f";
+    const LPSTR vbTab = (char*) "\t";
+    const LPSTR vbVerticalTab = (char*) "\v";
+    short __stdcall Asc(
+        BSTR String );
+    BSTR __stdcall _B_str_Chr(
+        long CharCode );
+    VARIANT __stdcall _B_var_Chr(
+        long CharCode );
+    BSTR __stdcall _B_str_LCase(
+        BSTR String );
+    VARIANT __stdcall _B_var_LCase(
+        VARIANT * String );
+    BSTR __stdcall _B_str_Mid(
+        BSTR String,
+        long Start,
+        VARIANT * Length );
+    VARIANT __stdcall _B_var_Mid(
+        VARIANT * String,
+        long Start,
+        VARIANT * Length );
+    BSTR __stdcall _B_str_MidB(
+        BSTR String,
+        long Start,
+        VARIANT * Length );
+    VARIANT __stdcall _B_var_MidB(
+        VARIANT * String,
+        long Start,
+        VARIANT * Length );
+    VARIANT __stdcall InStr(
+        VARIANT * Start,
+        VARIANT * String1,
+        VARIANT * String2,
+        enum VbCompareMethod Compare );
+    VARIANT __stdcall InStrB(
+        VARIANT * Start,
+        VARIANT * String1,
+        VARIANT * String2,
+        enum VbCompareMethod Compare );
+    BSTR __stdcall _B_str_Left(
+        BSTR String,
+        long Length );
+    VARIANT __stdcall _B_var_Left(
+        VARIANT * String,
+        long Length );
+    BSTR __stdcall _B_str_LeftB(
+        BSTR String,
+        long Length );
+    VARIANT __stdcall _B_var_LeftB(
+        VARIANT * String,
+        long Length );
+    BSTR __stdcall _B_str_LTrim(
+        BSTR String );
+    VARIANT __stdcall _B_var_LTrim(
+        VARIANT * String );
+    BSTR __stdcall _B_str_RightB(
+        BSTR String,
+        long Length );
+    VARIANT __stdcall _B_var_RightB(
+        VARIANT * String,
+        long Length );
+    BSTR __stdcall _B_str_Right(
+        BSTR String,
+        long Length );
+    VARIANT __stdcall _B_var_Right(
+        VARIANT * String,
+        long Length );
+    BSTR __stdcall _B_str_RTrim(
+        BSTR String );
+    VARIANT __stdcall _B_var_RTrim(
+        VARIANT * String );
+    BSTR __stdcall _B_str_Space(
+        long Number );
+    VARIANT __stdcall _B_var_Space(
+        long Number );
+    VARIANT __stdcall _B_var_StrConv(
+        VARIANT * String,
+        enum VbStrConv Conversion,
+        long LocaleID );
+    BSTR __stdcall _B_str_String(
+        long Number,
+        VARIANT * Character );
+    VARIANT __stdcall _B_var_String(
+        long Number,
+        VARIANT * Character );
+    BSTR __stdcall _B_str_Trim(
+        BSTR String );
+    VARIANT __stdcall _B_var_Trim(
+        VARIANT * String );
+    BSTR __stdcall _B_str_UCase(
+        BSTR String );
+    VARIANT __stdcall _B_var_UCase(
+        VARIANT * String );
+    VARIANT __stdcall StrComp(
+        VARIANT * String1,
+        VARIANT * String2,
+        enum VbCompareMethod Compare );
+    BSTR __stdcall _B_str_Format(
+        VARIANT * Expression,
+        VARIANT * Format,
+        enum VbDayOfWeek FirstDayOfWeek,
+        enum VbFirstWeekOfYear FirstWeekOfYear );
+    VARIANT __stdcall _B_var_Format(
+        VARIANT * Expression,
+        VARIANT * Format,
+        enum VbDayOfWeek FirstDayOfWeek,
+        enum VbFirstWeekOfYear FirstWeekOfYear );
+    VARIANT __stdcall Len(
+        VARIANT * Expression );
+    VARIANT __stdcall LenB(
+        VARIANT * Expression );
+    unsigned char __stdcall AscB(
+        BSTR String );
+    BSTR __stdcall _B_str_ChrB(
+        unsigned char CharCode );
+    VARIANT __stdcall _B_var_ChrB(
+        unsigned char CharCode );
+    short __stdcall AscW(
+        BSTR String );
+    BSTR __stdcall _B_str_ChrW(
+        long CharCode );
+    VARIANT __stdcall _B_var_ChrW(
+        long CharCode );
+    BSTR __stdcall FormatDateTime(
+        VARIANT * Expression,
+        enum VbDateTimeFormat NamedFormat );
+    BSTR __stdcall FormatNumber(
+        VARIANT * Expression,
+        int NumDigitsAfterDecimal,
+        enum VbTriState IncludeLeadingDigit,
+        enum VbTriState UseParensForNegativeNumbers,
+        enum VbTriState GroupDigits );
+    BSTR __stdcall FormatPercent(
+        VARIANT * Expression,
+        int NumDigitsAfterDecimal,
+        enum VbTriState IncludeLeadingDigit,
+        enum VbTriState UseParensForNegativeNumbers,
+        enum VbTriState GroupDigits );
+    BSTR __stdcall FormatCurrency(
+        VARIANT * Expression,
+        int NumDigitsAfterDecimal,
+        enum VbTriState IncludeLeadingDigit,
+        enum VbTriState UseParensForNegativeNumbers,
+        enum VbTriState GroupDigits );
+    BSTR __stdcall WeekdayName(
+        int Weekday,
+        VARIANT_BOOL Abbreviate,
+        enum VbDayOfWeek FirstDayOfWeek );
+    BSTR __stdcall MonthName(
+        int Month,
+        VARIANT_BOOL Abbreviate );
+    BSTR __stdcall Replace(
+        BSTR Expression,
+        BSTR Find,
+        BSTR Replace,
+        long Start,
+        long Count,
+        enum VbCompareMethod Compare );
+    BSTR __stdcall StrReverse(
+        BSTR Expression );
+    BSTR __stdcall Join(
+        VARIANT * SourceArray,
+        VARIANT * Delimiter );
+    VARIANT __stdcall Filter(
+        VARIANT * SourceArray,
+        BSTR Match,
+        VARIANT_BOOL Include,
+        enum VbCompareMethod Compare );
+    long __stdcall InStrRev(
+        BSTR StringCheck,
+        BSTR StringMatch,
+        long Start,
+        enum VbCompareMethod Compare );
+    VARIANT __stdcall Split(
+        BSTR Expression,
+        VARIANT * Delimiter,
+        long Limit,
+        enum VbCompareMethod Compare );
+    BSTR __stdcall _B_str_Hex(
+        VARIANT * Number );
+    VARIANT __stdcall _B_var_Hex(
+        VARIANT * Number );
+    BSTR __stdcall _B_str_Oct(
+        VARIANT * Number );
+    VARIANT __stdcall _B_var_Oct(
+        VARIANT * Number );
+    long __stdcall MacID(
+        BSTR Constant );
+    BSTR __stdcall _B_str_Str(
+        VARIANT * Number );
+    VARIANT __stdcall _B_var_Str(
+        VARIANT * Number );
+    double __stdcall Val(
+        BSTR String );
+    BSTR __stdcall CStr(
+        VARIANT * Expression );
+    unsigned char __stdcall CByte(
+        VARIANT * Expression );
+    VARIANT_BOOL __stdcall CBool(
+        VARIANT * Expression );
+    CURRENCY __stdcall CCur(
+        VARIANT * Expression );
+    DATE __stdcall CDate(
+        VARIANT * Expression );
+    VARIANT __stdcall CVDate(
+        VARIANT * Expression );
+    short __stdcall CInt(
+        VARIANT * Expression );
+    long __stdcall CLng(
+        VARIANT * Expression );
+    float __stdcall CSng(
+        VARIANT * Expression );
+    double __stdcall CDbl(
+        VARIANT * Expression );
+    VARIANT __stdcall CVar(
+        VARIANT * Expression );
+    VARIANT __stdcall CVErr(
+        VARIANT * Expression );
+    BSTR __stdcall _B_str_Error(
+        VARIANT * ErrorNumber );
+    VARIANT __stdcall _B_var_Error(
+        VARIANT * ErrorNumber );
+    VARIANT __stdcall Fix(
+        VARIANT * Number );
+    VARIANT __stdcall Int(
+        VARIANT * Number );
+    HRESULT __stdcall CDec(
+        VARIANT * Expression,
+        VARIANT * pvar );
+    void __stdcall ChDir(
+        BSTR Path );
+    void __stdcall ChDrive(
+        BSTR Drive );
+    VARIANT_BOOL __stdcall EOF(
+        short FileNumber );
+    long __stdcall FileAttr(
+        short FileNumber,
+        short ReturnType );
+    void __stdcall FileCopy(
+        BSTR Source,
+        BSTR Destination );
+    VARIANT __stdcall FileDateTime(
+        BSTR PathName );
+    long __stdcall FileLen(
+        BSTR PathName );
+    enum VbFileAttribute __stdcall GetAttr(
+        BSTR PathName );
+    void __stdcall Kill(
+        VARIANT * PathName );
+    long __stdcall Loc(
+        short FileNumber );
+    long __stdcall LOF(
+        short FileNumber );
+    void __stdcall MkDir(
+        BSTR Path );
+    void __stdcall Reset( );
+    void __stdcall RmDir(
+        BSTR Path );
+    long __stdcall Seek(
+        short FileNumber );
+    void __stdcall SetAttr(
+        BSTR PathName,
+        enum VbFileAttribute Attributes );
+    BSTR __stdcall _B_str_CurDir(
+        VARIANT * Drive );
+    VARIANT __stdcall _B_var_CurDir(
+        VARIANT * Drive );
+    short __stdcall FreeFile(
+        VARIANT * RangeNumber );
+    BSTR __stdcall Dir(
+        VARIANT * PathName,
+        enum VbFileAttribute Attributes );
+    VARIANT __stdcall _B_var_Date( );
+    void __stdcall _B_str_Date(
+        BSTR _arg1 );
+    void __stdcall _B_var_Date(
+        VARIANT * _arg1 );
+    BSTR __stdcall _B_str_Date( );
+    VARIANT __stdcall DateSerial(
+        short Year,
+        short Month,
+        short Day );
+    VARIANT __stdcall DateValue(
+        BSTR Date );
+    VARIANT __stdcall Day(
+        VARIANT * Date );
+    VARIANT __stdcall Hour(
+        VARIANT * Time );
+    VARIANT __stdcall Minute(
+        VARIANT * Time );
+    VARIANT __stdcall Month(
+        VARIANT * Date );
+    VARIANT __stdcall Now( );
+    VARIANT __stdcall Second(
+        VARIANT * Time );
+    VARIANT __stdcall _B_var_Time( );
+    void __stdcall _B_str_Time(
+        BSTR _arg1 );
+    void __stdcall _B_var_Time(
+        VARIANT * _arg1 );
+    BSTR __stdcall _B_str_Time( );
+    float __stdcall Timer( );
+    VARIANT __stdcall TimeSerial(
+        short Hour,
+        short Minute,
+        short Second );
+    VARIANT __stdcall TimeValue(
+        BSTR Time );
+    VARIANT __stdcall Weekday(
+        VARIANT * Date,
+        enum VbDayOfWeek FirstDayOfWeek );
+    VARIANT __stdcall Year(
+        VARIANT * Date );
+    VARIANT __stdcall DateAdd(
+        BSTR Interval,
+        double Number,
+        VARIANT * Date );
+    VARIANT __stdcall DateDiff(
+        BSTR Interval,
+        VARIANT * Date1,
+        VARIANT * Date2,
+        enum VbDayOfWeek FirstDayOfWeek,
+        enum VbFirstWeekOfYear FirstWeekOfYear );
+    VARIANT __stdcall DatePart(
+        BSTR Interval,
+        VARIANT * Date,
+        enum VbDayOfWeek FirstDayOfWeek,
+        enum VbFirstWeekOfYear FirstWeekOfYear );
+    enum VbCalendar __stdcall Calendar( );
+    void __stdcall Calendar(
+        enum VbCalendar _arg1 );
+    long __stdcall Erl( );
+    struct _ErrObject * __stdcall Err( );
+    enum VbIMEStatus __stdcall IMEStatus( );
+    VARIANT_BOOL __stdcall IsArray(
+        VARIANT * VarName );
+    VARIANT_BOOL __stdcall IsDate(
+        VARIANT * Expression );
+    VARIANT_BOOL __stdcall IsEmpty(
+        VARIANT * Expression );
+    VARIANT_BOOL __stdcall IsError(
+        VARIANT * Expression );
+    VARIANT_BOOL __stdcall IsMissing(
+        VARIANT * ArgName );
+    VARIANT_BOOL __stdcall IsNull(
+        VARIANT * Expression );
+    VARIANT_BOOL __stdcall IsNumeric(
+        VARIANT * Expression );
+    VARIANT_BOOL __stdcall IsObject(
+        VARIANT * Expression );
+    BSTR __stdcall TypeName(
+        VARIANT * VarName );
+    enum VbVarType __stdcall VarType(
+        VARIANT * VarName );
+    long __stdcall QBColor(
+        short Color );
+    long __stdcall RGB(
+        short Red,
+        short Green,
+        short Blue );
+    void __stdcall AppActivate(
+        VARIANT * Title,
+        VARIANT * Wait );
+    void __stdcall Beep( );
+    VARIANT __stdcall CreateObject(
+        BSTR Class,
+        BSTR ServerName );
+    short __stdcall DoEvents( );
+    VARIANT __stdcall GetObject(
+        VARIANT * PathName,
+        VARIANT * Class );
+    BSTR __stdcall InputBox(
+        VARIANT * Prompt,
+        VARIANT * Title,
+        VARIANT * Default,
+        VARIANT * XPos,
+        VARIANT * YPos,
+        VARIANT * HelpFile,
+        VARIANT * Context );
+    BSTR __stdcall MacScript(
+        BSTR Script );
+    enum VbMsgBoxResult __stdcall MsgBox(
+        VARIANT * Prompt,
+        enum VbMsgBoxStyle Buttons,
+        VARIANT * Title,
+        VARIANT * HelpFile,
+        VARIANT * Context );
+    void __stdcall SendKeys(
+        BSTR String,
+        VARIANT * Wait );
+    double __stdcall Shell(
+        VARIANT * PathName,
+        enum VbAppWinStyle WindowStyle );
+    VARIANT __stdcall Partition(
+        VARIANT * Number,
+        VARIANT * Start,
+        VARIANT * Stop,
+        VARIANT * Interval );
+    VARIANT __stdcall Choose(
+        float Index,
+        SAFEARRAY * * Choice );
+    VARIANT __stdcall _B_var_Environ(
+        VARIANT * Expression );
+    BSTR __stdcall _B_str_Environ(
+        VARIANT * Expression );
+    VARIANT __stdcall Switch(
+        SAFEARRAY * * VarExpr );
+    VARIANT __stdcall _B_var_Command( );
+    BSTR __stdcall _B_str_Command( );
+    VARIANT __stdcall IIf(
+        VARIANT * Expression,
+        VARIANT * TruePart,
+        VARIANT * FalsePart );
+    BSTR __stdcall GetSetting(
+        BSTR AppName,
+        BSTR Section,
+        BSTR Key,
+        VARIANT Default );
+    void __stdcall SaveSetting(
+        BSTR AppName,
+        BSTR Section,
+        BSTR Key,
+        BSTR Setting );
+    void __stdcall DeleteSetting(
+        BSTR AppName,
+        VARIANT Section,
+        VARIANT Key );
+    VARIANT __stdcall GetAllSettings(
+        BSTR AppName,
+        BSTR Section );
+    VARIANT __stdcall CallByName(
+        IDispatch * Object,
+        BSTR ProcName,
+        enum VbCallType CallType,
+        SAFEARRAY * * Args,
+        long lcid );
+    VARIANT __stdcall Abs(
+        VARIANT * Number );
+    double __stdcall Atn(
+        double Number );
+    double __stdcall Cos(
+        double Number );
+    double __stdcall Exp(
+        double Number );
+    double __stdcall Log(
+        double Number );
+    void __stdcall Randomize(
+        VARIANT * Number );
+    float __stdcall Rnd(
+        VARIANT * Number );
+    double __stdcall Sin(
+        double Number );
+    double __stdcall Sqr(
+        double Number );
+    double __stdcall Tan(
+        double Number );
+    VARIANT __stdcall Sgn(
+        VARIANT * Number );
+    VARIANT __stdcall Round(
+        VARIANT * Number,
+        long NumDigitsAfterDecimal );
+    double __stdcall SLN(
+        double Cost,
+        double Salvage,
+        double Life );
+    double __stdcall SYD(
+        double Cost,
+        double Salvage,
+        double Life,
+        double Period );
+    double __stdcall DDB(
+        double Cost,
+        double Salvage,
+        double Life,
+        double Period,
+        VARIANT * Factor );
+    double __stdcall IPmt(
+        double Rate,
+        double Per,
+        double NPer,
+        double PV,
+        VARIANT * FV,
+        VARIANT * Due );
+    double __stdcall PPmt(
+        double Rate,
+        double Per,
+        double NPer,
+        double PV,
+        VARIANT * FV,
+        VARIANT * Due );
+    double __stdcall Pmt(
+        double Rate,
+        double NPer,
+        double PV,
+        VARIANT * FV,
+        VARIANT * Due );
+    double __stdcall PV(
+        double Rate,
+        double NPer,
+        double Pmt,
+        VARIANT * FV,
+        VARIANT * Due );
+    double __stdcall FV(
+        double Rate,
+        double NPer,
+        double Pmt,
+        VARIANT * PV,
+        VARIANT * Due );
+    double __stdcall NPer(
+        double Rate,
+        double Pmt,
+        double PV,
+        VARIANT * FV,
+        VARIANT * Due );
+    double __stdcall Rate(
+        double NPer,
+        double Pmt,
+        double PV,
+        VARIANT * FV,
+        VARIANT * Due,
+        VARIANT * Guess );
+    double __stdcall IRR(
+        SAFEARRAY * * ValueArray,
+        VARIANT * Guess );
+    double __stdcall MIRR(
+        SAFEARRAY * * ValueArray,
+        double FinanceRate,
+        double ReinvestRate );
+    double __stdcall NPV(
+        double Rate,
+        SAFEARRAY * * ValueArray );
+    VARIANT __stdcall Array(
+        SAFEARRAY * * ArgList );
+    BSTR __stdcall _B_str_InputB(
+        long Number,
+        short FileNumber );
+    VARIANT __stdcall _B_var_InputB(
+        long Number,
+        short FileNumber );
+    BSTR __stdcall _B_str_Input(
+        long Number,
+        short FileNumber );
+    VARIANT __stdcall _B_var_Input(
+        long Number,
+        short FileNumber );
+    void __stdcall Width(
+        short FileNumber,
+        short Width );
+    long __stdcall VarPtr(
+        void * Ptr );
+    long __stdcall StrPtr(
+        BSTR Ptr );
+    long __stdcall ObjPtr(
+        IUnknown * Ptr );
+
+struct __declspec(uuid("1e196b20-1f3c-1069-996b-00dd010ef676"))
+_HiddenInterface
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual void __stdcall LCase ( ) = 0;
+    virtual void __stdcall Left ( ) = 0;
+    virtual void __stdcall LTrim ( ) = 0;
+    virtual void __stdcall Right ( ) = 0;
+    virtual void __stdcall RTrim ( ) = 0;
+    virtual void __stdcall Space ( ) = 0;
+    virtual void __stdcall Trim ( ) = 0;
+    virtual void __stdcall String ( ) = 0;
+    virtual void __stdcall UCase ( ) = 0;
+    virtual void __stdcall Str ( ) = 0;
+    virtual void __stdcall Chr ( ) = 0;
+    virtual void __stdcall Date ( ) = 0;
+    virtual void __stdcall Time ( ) = 0;
+    virtual void __stdcall Hex ( ) = 0;
+    virtual void __stdcall Oct ( ) = 0;
+    virtual void __stdcall LeftB ( ) = 0;
+    virtual void __stdcall RightB ( ) = 0;
+    virtual void __stdcall Mid ( ) = 0;
+    virtual void __stdcall MidB ( ) = 0;
+    virtual void __stdcall StrConv ( ) = 0;
+    virtual void __stdcall Error ( ) = 0;
+    virtual void __stdcall CurDir ( ) = 0;
+    virtual void __stdcall Format ( ) = 0;
+    virtual void __stdcall Environ ( ) = 0;
+    virtual void __stdcall Command ( ) = 0;
+    virtual void __stdcall ChrB ( ) = 0;
+    virtual void __stdcall ChrW ( ) = 0;
+};
+
+struct __declspec(uuid("a4c466b8-499f-101b-bb78-00aa00383cbb"))
+_ErrObject : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Number (
+        long * pi4 ) = 0;
+    virtual HRESULT __stdcall put_Number (
+        long pi4 ) = 0;
+    virtual HRESULT __stdcall get_Source (
+        BSTR * pbstr ) = 0;
+    virtual HRESULT __stdcall put_Source (
+        BSTR pbstr ) = 0;
+    virtual HRESULT __stdcall get_Description (
+        BSTR * pbstr ) = 0;
+    virtual HRESULT __stdcall put_Description (
+        BSTR pbstr ) = 0;
+    virtual HRESULT __stdcall get_HelpFile (
+        BSTR * pbstr ) = 0;
+    virtual HRESULT __stdcall put_HelpFile (
+        BSTR pbstr ) = 0;
+    virtual HRESULT __stdcall get_HelpContext (
+        long * pi4 ) = 0;
+    virtual HRESULT __stdcall put_HelpContext (
+        long pi4 ) = 0;
+    virtual HRESULT __stdcall Raise (
+        long Number,
+        VARIANT * Source = &vtMissing,
+        VARIANT * Description = &vtMissing,
+        VARIANT * HelpFile = &vtMissing,
+        VARIANT * HelpContext = &vtMissing ) = 0;
+    virtual void __stdcall Clear ( ) = 0;
+    virtual HRESULT __stdcall get_LastDllError (
+        long * pi4 ) = 0;
+};
+
+struct __declspec(uuid("a4c46654-499f-101b-bb78-00aa00383cbb"))
+ErrObject;
+    // [ default ] interface _ErrObject
+
+struct __declspec(uuid("a4c46780-499f-101b-bb78-00aa00383cbb"))
+_Collection : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Item (
+        VARIANT * Index,
+        VARIANT * pvarRet ) = 0;
+    virtual HRESULT __stdcall Add (
+        VARIANT * Item,
+        VARIANT * Key = &vtMissing,
+        VARIANT * Before = &vtMissing,
+        VARIANT * After = &vtMissing ) = 0;
+    virtual HRESULT __stdcall Count (
+        long * pi4 ) = 0;
+    virtual HRESULT __stdcall Remove (
+        VARIANT * Index ) = 0;
+    virtual HRESULT __stdcall _NewEnum (
+        IUnknown * * ppunk ) = 0;
+};
+
+struct __declspec(uuid("a4c4671c-499f-101b-bb78-00aa00383cbb"))
+Collection;
+    // [ default ] interface _Collection
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_VBA =
+    {0x000204ef,0x0000,0x0000,{0xc0,0x00,0x00,0x00,0x00,0x00,0x00,0x46}};
+extern "C" const GUID __declspec(selectany) IID__HiddenInterface =
+    {0x1e196b20,0x1f3c,0x1069,{0x99,0x6b,0x00,0xdd,0x01,0x0e,0xf6,0x76}};
+extern "C" const GUID __declspec(selectany) IID__ErrObject =
+    {0xa4c466b8,0x499f,0x101b,{0xbb,0x78,0x00,0xaa,0x00,0x38,0x3c,0xbb}};
+extern "C" const GUID __declspec(selectany) CLSID_ErrObject =
+    {0xa4c46654,0x499f,0x101b,{0xbb,0x78,0x00,0xaa,0x00,0x38,0x3c,0xbb}};
+extern "C" const GUID __declspec(selectany) IID__Collection =
+    {0xa4c46780,0x499f,0x101b,{0xbb,0x78,0x00,0xaa,0x00,0x38,0x3c,0xbb}};
+extern "C" const GUID __declspec(selectany) CLSID_Collection =
+    {0xa4c4671c,0x499f,0x101b,{0xbb,0x78,0x00,0xaa,0x00,0x38,0x3c,0xbb}};
+
+#pragma pack(pop)

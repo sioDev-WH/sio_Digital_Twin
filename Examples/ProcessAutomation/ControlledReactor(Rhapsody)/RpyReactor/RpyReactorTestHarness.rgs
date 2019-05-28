@@ -1,0 +1,26 @@
+HKCR
+{
+	RpyReactor.RpyReactorTestHarness.1 = s 'RpyReactorTestHarness Class'
+	{
+		CLSID = s '{774DFAF5-DEA7-4BB8-B67D-BD14889EA494}'
+	}
+	RpyReactor.RpyReactorTestHarness = s 'RpyReactorTestHarness Class'
+	{
+		CLSID = s '{774DFAF5-DEA7-4BB8-B67D-BD14889EA494}'
+		CurVer = s 'RpyReactor.RpyReactorTestHarness.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {774DFAF5-DEA7-4BB8-B67D-BD14889EA494} = s 'RpyReactorTestHarness Class'
+		{
+			ProgID = s 'RpyReactor.RpyReactorTestHarness.1'
+			VersionIndependentProgID = s 'RpyReactor.RpyReactorTestHarness'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7D17EB5E-6EA4-40A1-B3F3-985283EAA5A3}'
+		}
+	}
+}

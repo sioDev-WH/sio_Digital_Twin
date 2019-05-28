@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmissionVB.vbActuator.1 = s 'vbActuator Class'
+	{
+		CLSID = s '{A69B361D-1B99-4C58-8E39-AE74998408FF}'
+	}
+	RtsOnTransmissionVB.vbActuator = s 'vbActuator Class'
+	{
+		CLSID = s '{A69B361D-1B99-4C58-8E39-AE74998408FF}'
+		CurVer = s 'RtsOnTransmissionVB.vbActuator.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {A69B361D-1B99-4C58-8E39-AE74998408FF} = s 'vbActuator Class'
+		{
+			ProgID = s 'RtsOnTransmissionVB.vbActuator.1'
+			VersionIndependentProgID = s 'RtsOnTransmissionVB.vbActuator'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A0FB58BE-0E08-45F6-8A4A-732A46D7FE96}'
+		}
+	}
+}

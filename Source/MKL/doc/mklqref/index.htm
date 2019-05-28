@@ -1,0 +1,751 @@
+<HTML>
+<HEAD>
+<TITLE>Intel&reg; Math Kernel Library Quick Reference</TITLE>
+<SCRIPT language="JavaScript">
+<!--
+// JSTOC - A DYNAMIC TABLE OF CONTENTS GENERATOR
+// Version 2.0
+//
+// (C) 1997 Intel Corporation
+//
+// You may reuse this script if you DO NOT CHANGE ANY PART OF THIS FILE -
+// except for these sections:
+//   CUSTOMIZATIONS
+//   HIERARCHY DEFINITION
+// (you may also change the TITLE and the topic file name in the FRAMESET)
+//
+// Several HTML files are essential for this script:
+//   index.htm    (this file)
+//   starttoc.htm (initial page in the TOC frame)
+//   startnav.htm (page for the prev/next frame)
+//   enablejs.htm (explains how to enable JavaScript)
+//
+// All icon images for the TOC are stored in the icons/ directory.
+// You may use several TOC icon styles (books,triangles,folders).
+// Depending on the style, different GIF images are used:
+//
+// style 0   style 1   style 2
+// -------   -------   -------
+//  0.gif,   10.gif,   20.gif...  topic that has no subtopics ("file")
+//  1.gif,   11.gif,   21.gif...  topic with visible subtopics ("open folder")
+//  2.gif,   12.gif,   22.gif...  topic with hidden subtopics only ("closed folder")
+//
+// To control icons style, use iconStyle in CUSTOMIZATIONS.
+// A special icon - icons/internet.gif - is used for outside links
+// (HREFs with http: or https: or ftp:).
+//
+// Please send bug reports to the author:
+// Alexei.Kourbatov@intel.com or kourbatov@hotmail.com
+
+if (document.location!=top.document.location) window.top.location.href = window.location.href;
+
+wizardEnabled=1;
+wizLastChange="no_name";
+
+var i,j,imax,n,spc,altxt,docID,tgt,rootURL,trueRootURL,docURL,trueDocURL,testStr;
+toShow=-1; curLevel=1; iconStyle=0; nowOpen=1; nowClosed=2; i=0; addPath="";
+nPages=0; prevPage=0; nextPage=0; curPage=0; curTopic=0;
+
+txt =new Array();
+addr=new Array();
+stat=new Array();
+levl=new Array();
+nxtt=new Array();
+nxtp=new Array();
+page=new Array();
+pagetop=new Array();
+wizButtonCode=new Array();
+
+emptyTopic="jstopics/xxxxxxxx.htm";
+iconPath="../icons/";           /* path to icon images directory */
+iconSize="width=17 height=15";  /* if you use your own icons, set their size here */
+
+hghlight="<img alt=\"current page\" border=0 width=8 height=15 src=\""+iconPath+"hlight.gif\">";
+lowlight="<img border=0 width=8 height=15 src=\""+iconPath+"spacer.gif\">";
+
+// CUSTOMIZATIONS
+iconStyle=14;
+bgrColor="#FFFFCC";
+txtColor="#666666";
+lnkColor="#0000FF";
+fontName="Arial,Helvetica";
+fontItalic="no";
+fontBold="no";
+hideSubtopics="collapse";
+showSubtopics="expand";
+showPage="go to this page";
+plusMinus="no";
+hlight=false;
+
+// END OF CUSTOMIZATIONS
+
+function defHierarchy() {
+i=0;
+
+// HIERARCHY DEFINITION
+
+addPath="";
+item("Intel&reg; Math Kernel Library Quick Reference","intelmat.htm#top");
+Group(nowOpen);
+ item("Conventions","");
+ Group(nowClosed);
+  item("Naming Conventions","namingco.htm#top");
+  Group(nowClosed);
+   item("Argument Types","namingco.htm#ArgumentTypes");
+   item("Names of Arrays","namingco.htm#Arrays");
+   item("Names of Routines","namingco.htm#NamesOfRoutines");
+  endGroup();
+
+  item("Vector Arguments","vectorar.htm#top");
+  Group(nowClosed);
+   item("BLAS Vector Arguments","vectorar.htm#blas");
+   item("Sparse BLAS Vector Arguments","vectorar.htm#sparseblas");
+  endGroup();
+
+  item("Matrix Arguments","matrixar.htm#top");
+  Group(nowClosed);
+   item("array","matrixar.htm#Array");
+   item("leading dimension","matrixar.htm#LeadingDimension");
+   item("matrix order","matrixar.htm#MatrixOrder");
+   item("uplo parameter","matrixar.htm#uploParameter");
+   item("trans parameter","matrixar.htm#transParameter");
+   item("diag parameter","matrixar.htm#diagParameter");
+  endGroup();
+
+  item("Matrix Storage Schemes","matrixst.htm#top");
+  Group(nowClosed);
+   item("Full Storage","matrixst.htm#FullStorage");
+   item("Packed Storage","matrixst.htm#PackedStorage");
+   item("Band Storage","matrixst.htm#BandStorage");
+  endGroup();
+
+ endGroup();
+
+ item("BLAS Routines","blasrout.htm#top");
+ Group(nowClosed);
+  item("BLAS Level 1","blaslev1.htm#top");
+  Group(nowClosed);
+   item("?asum","blaslev1.htm#asum");
+   item("?axpy","blaslev1.htm#axpy");
+   item("?copy","blaslev1.htm#copy");
+   item("?dot","blaslev1.htm#dot");
+   item("?dotc","blaslev1.htm#dotc");
+   item("?dotu","blaslev1.htm#dotu");
+   item("?nrm2","blaslev1.htm#nrm2");
+   item("?rot","blaslev1.htm#rot");
+   item("?rotg","blaslev1.htm#rotg");
+   item("?rotm","blaslev1.htm#rotm");
+   item("?rotmg","blaslev1.htm#rotmg");
+   item("?scal","blaslev1.htm#scal");
+   item("?swap","blaslev1.htm#swap");
+   item("i?amax","blaslev1.htm#iamax");
+   item("i?amin","blaslev1.htm#iamin");
+  endGroup();
+
+  item("BLAS Level 2","blaslev2.htm#top");
+  Group(nowClosed);
+   item("?gbmv","blaslev2.htm#gbmv");
+   item("?gemv","blaslev2.htm#gemv");
+   item("?ger","blaslev2.htm#ger");
+   item("?gerc","blaslev2.htm#gerc");
+   item("?geru","blaslev2.htm#geru");
+   item("?hbmv","blaslev2.htm#hbmv");
+   item("?hemv","blaslev2.htm#hemv");
+   item("?her","blaslev2.htm#her");
+   item("?her2","blaslev2.htm#her2");
+   item("?hpmv","blaslev2.htm#hpmv");
+   item("?hpr","blaslev2.htm#hpr");
+   item("?hpr2","blaslev2.htm#hpr2");
+   item("?sbmv","blaslev2.htm#sbmv");
+   item("?spmv","blaslev2.htm#spmv");
+   item("?spr","blaslev2.htm#spr");
+   item("?spr2","blaslev2.htm#spr2");
+   item("?symv","blaslev2.htm#symv");
+   item("?syr","blaslev2.htm#syr");
+   item("?syr2","blaslev2.htm#syr2");
+   item("?tbmv","blaslev2.htm#tbmv");
+   item("?tbsv","blaslev2.htm#tbsv");
+   item("?tpmv","blaslev2.htm#tpmv");
+   item("?tpsv","blaslev2.htm#tpsv");
+   item("?trmv","blaslev2.htm#trmv");
+   item("?trsv","blaslev2.htm#trsv");
+  endGroup();
+
+  item("BLAS Level 3","blaslev3.htm#top");
+  Group(nowClosed);
+   item("?gemm","blaslev3.htm#gemm");
+   item("?hemm","blaslev3.htm#hemm");
+   item("?herk","blaslev3.htm#herk");
+   item("?her2k","blaslev3.htm#her2k");
+   item("?symm","blaslev3.htm#symm");
+   item("?syrk","blaslev3.htm#syrk");
+   item("?syr2k","blaslev3.htm#syr2k");
+   item("?trmm","blaslev3.htm#trmm");
+   item("?trsm","blaslev3.htm#trsm");
+  endGroup();
+
+ endGroup();
+
+ item("Sparse BLAS Routines","sparsebl.htm#top");
+ Group(nowClosed);
+  item("?axpyi","sparsebl.htm#axpyi");
+  item("?doti","sparsebl.htm#doti");
+  item("?dotci","sparsebl.htm#dotci");
+  item("?dotui","sparsebl.htm#dotui");
+  item("?gthr","sparsebl.htm#gthr");
+  item("?gthrz","sparsebl.htm#gthrz");
+  item("?roti","sparsebl.htm#roti");
+  item("?sctr","sparsebl.htm#sctr");
+ endGroup();
+
+ item("CBLAS Interface to BLAS","cblas.htm#top");
+ Group(nowClosed);
+  item("CBLAS Arguments","cblasarg.htm#top");
+  Group(nowClosed);
+   item("Enumerated Types","cblasarg.htm#EnumeratedTypes");
+  endGroup();
+
+  item("CBLAS Level 1","cblasle1.htm#top");
+  Group(nowClosed);
+   item("cblas_?asum","cblasle1.htm#cblas_asum");
+   item("cblas_?axpy","cblasle1.htm#cblas_axpy");
+   item("cblas_?copy","cblasle1.htm#cblas_copy");
+   item("cblas_?dot","cblasle1.htm#cblas_dot");
+   item("cblas_?dotc_sub","cblasle1.htm#cblas_dotc_sub");
+   item("cblas_?dotu_sub","cblasle1.htm#cblas_dotu_sub");
+   item("cblas_?nrm2","cblasle1.htm#cblas_nrm2");
+   item("cblas_?rot","cblasle1.htm#cblas_rot");
+   item("cblas_?rotg","cblasle1.htm#cblas_rotg");
+   item("cblas_?rotm","cblasle1.htm#cblas_rotm");
+   item("cblas_?rotmg","cblasle1.htm#cblas_rotmg");
+   item("cblas_?scal","cblasle1.htm#cblas_scal");
+   item("cblas_?swap","cblasle1.htm#cblas_swap");
+   item("cblas_i?amax","cblasle1.htm#cblas_iamax");
+   item("cblas_i?amin","cblasle1.htm#cblas_iamin");
+  endGroup();
+
+  item("CBLAS Level 2","cblasle2.htm#top");
+  Group(nowClosed);
+   item("cblas_?gbmv","cblasle2.htm#cblas_gbmv");
+   item("cblas_?gemv","cblasle2.htm#cblas_gemv");
+   item("cblas_?ger","cblasle2.htm#cblas_ger");
+   item("cblas_?gerc","cblasle2.htm#cblas_gerc");
+   item("cblas_?geru","cblasle2.htm#cblas_geru");
+   item("cblas_?hbmv","cblasle2.htm#cblas_hbmv");
+   item("cblas_?hemv","cblasle2.htm#cblas_hemv");
+   item("cblas_?her","cblasle2.htm#cblas_her");
+   item("cblas_?her2","cblasle2.htm#cblas_her2");
+   item("cblas_?hpmv","cblasle2.htm#cblas_hpmv");
+   item("cblas_?hpr","cblasle2.htm#cblas_hpr");
+   item("cblas_?hpr2","cblasle2.htm#cblas_hpr2");
+   item("cblas_?sbmv","cblasle2.htm#cblas_sbmv");
+   item("cblas_?spmv","cblasle2.htm#cblas_spmv");
+   item("cblas_?spr","cblasle2.htm#cblas_spr");
+   item("cblas_?spr2","cblasle2.htm#cblas_spr2");
+   item("cblas_?symv","cblasle2.htm#cblas_symv");
+   item("cblas_?syr","cblasle2.htm#cblas_syr");
+   item("cblas_?syr2","cblasle2.htm#cblas_syr2");
+   item("cblas_?tbmv","cblasle2.htm#cblas_tbmv");
+   item("cblas_?tbsv","cblasle2.htm#cblas_tbsv");
+   item("cblas_?tpmv","cblasle2.htm#cblas_tpmv");
+   item("cblas_?tpsv","cblasle2.htm#cblas_tpsv");
+   item("cblas_?trmv","cblasle2.htm#cblas_trmv");
+   item("cblas_?trsv","cblasle2.htm#cblas_trsv");
+  endGroup();
+
+  item("CBLAS Level 3","cblasle3.htm#top");
+  Group(nowClosed);
+   item("cblas_?gemm","cblasle3.htm#cblas_gemm");
+   item("cblas_?hemm","cblasle3.htm#cblas_hemm");
+   item("cblas_?herk","cblasle3.htm#cblas_herk");
+   item("cblas_?her2k","cblasle3.htm#cblas_her2k");
+   item("cblas_?symm","cblasle3.htm#cblas_symm");
+   item("cblas_?syrk","cblasle3.htm#cblas_syrk");
+   item("cblas_?syr2k","cblasle3.htm#cblas_syr2k");
+   item("cblas_?trmm","cblasle3.htm#cblas_trmm");
+   item("cblas_?trsm","cblasle3.htm#cblas_trsm");
+  endGroup();
+
+ endGroup();
+
+ item("LAPACK Routines","lapackro.htm");
+ Group(nowClosed);
+  item("Triangular Factorization","triangul.htm#top");
+  Group(nowClosed);
+   item("?getrf","triangul.htm#getrf");
+   item("?gbtrf","triangul.htm#gbtrf");
+   item("?potrf","triangul.htm#potrf");
+   item("?pptrf","triangul.htm#pptrf");
+   item("?pbtrf","triangul.htm#pbtrf");
+   item("?sytrf","triangul.htm#sytrf");
+   item("?hetrf","triangul.htm#hetrf");
+   item("?sptrf","triangul.htm#sptrf");
+   item("?hptrf","triangul.htm#hptrf");
+  endGroup();
+
+  item("Solving Linear Equations","lineareq.htm#top");
+  Group(nowClosed);
+   item("?getrs","lineareq.htm#getrs");
+   item("?gbtrs","lineareq.htm#gbtrs");
+   item("?potrs","lineareq.htm#potrs");
+   item("?pptrs","lineareq.htm#pptrs");
+   item("?pbtrs","lineareq.htm#pbtrs");
+   item("?sytrs","lineareq.htm#sytrs");
+   item("?hetrs","lineareq.htm#hetrs");
+   item("?sptrs","lineareq.htm#sptrs");
+   item("?hptrs","lineareq.htm#hptrs");
+   item("?trtrs","lineareq.htm#trtrs");
+   item("?tptrs","lineareq.htm#tptrs");
+   item("?tbtrs","lineareq.htm#tbtrs");
+  endGroup();
+
+  item("Error Bounds for Linear Equations","errorbou.htm#top");
+  Group(nowClosed);
+   item("?gerfs","errorbou.htm#gerfs");
+   item("?gbrfs","errorbou.htm#gbrfs");
+   item("?porfs","errorbou.htm#porfs");
+   item("?pprfs","errorbou.htm#pprfs");
+   item("?pbrfs","errorbou.htm#pbrfs");
+   item("?syrfs","errorbou.htm#syrfs");
+   item("?herfs","errorbou.htm#herfs");
+   item("?sprfs","errorbou.htm#sprfs");
+   item("?hprfs","errorbou.htm#hprfs");
+   item("?trrfs","errorbou.htm#trrfs");
+   item("?tprfs","errorbou.htm#tprfs");
+   item("?tbrfs","errorbou.htm#tbrfs");
+  endGroup();
+
+  item("Condition Numbers","conditio.htm#top");
+  Group(nowClosed);
+   item("?gecon","conditio.htm#gecon");
+   item("?gbcon","conditio.htm#gbcon");
+   item("?pocon","conditio.htm#pocon");
+   item("?ppcon","conditio.htm#ppcon");
+   item("?pbcon","conditio.htm#pbcon");
+   item("?sycon","conditio.htm#sycon");
+   item("?hecon","conditio.htm#hecon");
+   item("?spcon","conditio.htm#spcon");
+   item("?hpcon","conditio.htm#hpcon");
+   item("?trcon","conditio.htm#trcon");
+   item("?tpcon","conditio.htm#tpcon");
+   item("?tbcon","conditio.htm#tbcon");
+  endGroup();
+
+  item("Matrix Inversion","matrixin.htm#top");
+  Group(nowClosed);
+   item("?getri","matrixin.htm#getri");
+   item("?potri","matrixin.htm#potri");
+   item("?pptri","matrixin.htm#pptri");
+   item("?sytri","matrixin.htm#sytri");
+   item("?hetri","matrixin.htm#hetri");
+   item("?sptri","matrixin.htm#sptri");
+   item("?hptri","matrixin.htm#hptri");
+   item("?trtri","matrixin.htm#trtri");
+   item("?tptri","matrixin.htm#tptri");
+  endGroup();
+
+  item("QR and LQ Factorizations","orthogon.htm#top");
+  Group(nowClosed);
+   item("?geqrf","orthogon.htm#geqrf");
+   item("?geqpf","orthogon.htm#geqpf");
+   item("?orgqr","orthogon.htm#orgqr");
+   item("?ormqr","orthogon.htm#ormqr");
+   item("?ungqr","orthogon.htm#ungqr");
+   item("?unmqr","orthogon.htm#unmqr");
+   item("?gelqf","orthogon.htm#gelqf");
+   item("?orglq","orthogon.htm#orglq");
+   item("?ormlq","orthogon.htm#ormlq");
+   item("?unglq","orthogon.htm#unglq");
+   item("?unmlq","orthogon.htm#unmlq");
+  endGroup();
+
+  item("Singular Value Decomposition","singular.htm#top");
+  Group(nowClosed);
+   item("?gebrd","singular.htm#gebrd");
+   item("?gbbrd","singular.htm#gbbrd");
+   item("?orgbr","singular.htm#orgbr");
+   item("?ormbr","singular.htm#ormbr");
+   item("?ungbr","singular.htm#ungbr");
+   item("?unmbr","singular.htm#unmbr");
+   item("?bdsqr","singular.htm#bdsqr");
+  endGroup();
+
+  item("Symmetric Eigenvalue Problems","symmetri.htm#top");
+  Group(nowClosed);
+   item("?sytrd","symmetri.htm#sytrd");
+   item("?orgtr","symmetri.htm#orgtr");
+   item("?ormtr","symmetri.htm#ormtr");
+   item("?hetrd","symmetri.htm#hetrd");
+   item("?ungtr","symmetri.htm#ungtr");
+   item("?unmtr","symmetri.htm#unmtr");
+   item("?sptrd","symmetri.htm#sptrd");
+   item("?opgtr","symmetri.htm#opgtr");
+   item("?opmtr","symmetri.htm#opmtr");
+   item("?hptrd","symmetri.htm#hptrd");
+   item("?upgtr","symmetri.htm#upgtr");
+   item("?upmtr","symmetri.htm#upmtr");
+   item("?sbtrd","symmetri.htm#sbtrd");
+   item("?hbtrd","symmetri.htm#hbtrd");
+   item("?steqr","symmetri.htm#steqr");
+   item("?sterf","symmetri.htm#sterf");
+   item("?pteqr","symmetri.htm#pteqr");
+   item("?stebz","symmetri.htm#stebz");
+   item("?stein","symmetri.htm#stein");
+  endGroup();
+
+  item("Nonsymmetric Eigenvalue Problems","nonsymme.htm#top");
+  Group(nowClosed);
+   item("?gehrd","nonsymme.htm#gehrd");
+   item("?orghr","nonsymme.htm#orghr");
+   item("?ormhr","nonsymme.htm#ormhr");
+   item("?unghr","nonsymme.htm#unghr");
+   item("?unmhr","nonsymme.htm#unmhr");
+   item("?gebal","nonsymme.htm#gebal");
+   item("?gebak","nonsymme.htm#gebak");
+   item("?hseqr","nonsymme.htm#hseqr");
+   item("?hsein","nonsymme.htm#hsein");
+   item("?trevc","nonsymme.htm#trevc");
+   item("?trsna","nonsymme.htm#trsna");
+   item("?trexc","nonsymme.htm#trexc");
+   item("?trsen","nonsymme.htm#trsen");
+  endGroup();
+
+  item("Generalized Eigenvalue Problems","generali.htm#top");
+  Group(nowClosed);
+   item("?sygst","generali.htm#sygst");
+   item("?hegst","generali.htm#hegst");
+   item("?spgst","generali.htm#spgst");
+   item("?hpgst","generali.htm#hpgst");
+  endGroup();
+
+  item("Sylvester's Equation","sylveste.htm#top");
+  Group(nowClosed);
+   item("?trsyl","sylveste.htm#trsyl");
+  endGroup();
+
+ endGroup();
+
+ item("FFT Routines","fftrouti.htm#top");
+ Group(nowClosed);
+  item("cfft1d / zfft1d","fftrouti.htm#cfft1dzfft1d");
+  item("cfft1dc / zfft1dc","fftrouti.htm#cfft1dczfft1dc");
+  item("scfft1d / dzfft1d","fftrouti.htm#scfft1ddzfft1d");
+  item("scfft1dc / dzfft1dc","fftrouti.htm#scfft1dcdzfft1dc");
+  item("csfft1d / zdfft1d","fftrouti.htm#csfft1dzdfft1d");
+  item("csfft1dc / zdfft1dc","fftrouti.htm#csfft1dczdfft1dc");
+  item("cfft2d / zfft2d","fftrouti.htm#cfft2dzfft2d");
+  item("cfft2dc / zfft2dc","fftrouti.htm#cfft2dczfft2dc");
+  item("scfft2d / dzfft2d","fftrouti.htm#scfft2ddzfft2d");
+  item("scfft2dc / dzfft2dc","fftrouti.htm#scfft2dcdzfft2dc");
+  item("csfft2d / zdfft2d","fftrouti.htm#csfft2dzdfft2d");
+  item("csfft2dc / zdfft2dc","fftrouti.htm#csfft2dczdfft2dc");
+ endGroup();
+
+ item("Index of Fortran Routines","indexpg.htm");
+ item("Index of C Functions","indexpg2.htm");
+ item("Revision History","revision.htm#top");
+ item("Legal Information","legal.htm#top");
+endGroup();
+
+item("Web Site of the Math Kernel Library","http://developer.intel.com/software/products/MKL/");
+
+// END OF HIERARCHY DEFINITION
+
+imax=i;
+
+} //end function defHierarchy
+
+function fillArrays() {
+ n=0;
+ for (i=0;i<imax;i++) {
+  j=i+1;
+  while (j<imax && txt[j]=="") {j++}
+  nxtp[i]=j;
+  nxtt[i]=j;
+  if (stat[i]%10!=0) {
+   j=nxtp[i];
+   while (j<imax && levl[j]>levl[i]) {j++}
+   nxtt[i]=j;
+  }
+  if (addr[i]!="" && !isExtLink(addr[i])) {
+   if (n==0 || n>0 && cutAnchor(addr[i])!=page[n-1] ) {
+    page[n]=cutAnchor(addr[i]);
+    pagetop[n]=i;
+    n++;
+   }
+  }
+ }
+ nPages=n;
+}
+
+function Group(grStat) {
+ j=i-1; while (j>0 && txt[j]=="") {j--;}
+ stat[j]=10*iconStyle+grStat;
+ curLevel++;
+}
+
+function endGroup() {
+ curLevel--; if (curLevel<1) curLevel=1;
+}
+
+function item(itemTitle,itemURL) {
+ levl[i]=curLevel;
+ stat[i]=10*iconStyle;
+ addr[i]=addPath+itemURL;
+ if (isExtLink(itemURL) || itemURL=="") addr[i]=itemURL;
+ txt[i]=itemTitle;
+ i++;
+}
+
+function isExtLink(theURL) {
+ L=theURL.length;
+ if (L>6) L=6;
+ tStr=theURL.substring(0,L);
+ if (tStr=="http:/" || tStr=="https:" || tStr=="ftp://") return true;
+ return false;
+}
+
+function changeStat(n) {
+ if (n%10==1) return n+1;
+ if (n%10==2) return n-1;
+ return n;
+}
+
+
+buf="";
+wizardButtons=0;
+
+function renewTOC() {
+ setFont="";
+ endFont="";
+ if (fontItalic=="yes") {setFont="<i>"+setFont; endFont=endFont+"</i>";}
+ if (fontBold=="yes")   {setFont="<b>"+setFont; endFont=endFont+"</b>";}
+
+ i=0;
+
+ buf="<HTML>\r\n";
+ buf+="<STYLE TYPE=\"text/css\">\r\n";
+ buf+="<!"+"--\r\n";
+ buf+="PRE { font: 9pt;\r\n font-family: \""+fontName+"\";}\r\n";
+ buf+="--"+">\r\n";
+ buf+="</STYLE>\r\n";
+ buf+="<HEAD><TITLE>TOC</TITLE><BASE HREF=\""+top.trueRootURL+"\"></HEAD>\r\n";
+ buf+="<BODY BGCOLOR=\""+bgrColor+"\" text=\""+(hlight?lnkColor:txtColor)+"\" link=\""+lnkColor+"\" alink=\""+lnkColor+"\" vlink=\""+lnkColor+"\"><PRE><font face=\""+fontName+"\">";
+
+ while (i<imax) {
+  tgt = isExtLink(addr[i]) ? " target=_top" : " target=\"right\"";
+  nexti=(stat[i]%10==nowClosed)?nxtt[i]:nxtp[i];
+
+  if (wizardButtons!=0) {
+   for (wbc=0;wbc<=wizardButtons;wbc++) {
+    buf+=wizButtonCode[wbc] + ((wbc!=wizardButtons)?(i):" ");
+   }
+  }
+
+  if (hlight && i==curTopic)
+  {
+   hComment="!";
+   setColor="<font color=\""+txtColor+"\">";
+   endColor="</font>";
+  }
+  else {hComment=""; setColor=""; endColor="";}
+
+  if (hlight) buf+=((i==curTopic)?hghlight:lowlight);
+  for (jbf=1;jbf<levl[i];jbf++) {buf+="    ";}
+
+  if (stat[i]%10==0) {
+   pageIMGtag="<IMG alt=\""+showPage+"\" border=0 "+iconSize+" SRC=\""+iconPath+((tgt==" target=_top")?"internet":stat[i])+".gif\">";
+   if (plusMinus=="yes") buf+="<IMG border=0 width=8 height=15 SRC=\""+iconPath+"spacer.gif\">";
+
+   buf+="<"+hComment+"A onClick=\"top.refresh("+i+",0)\" onMouseOver=\"self.status=\'"+showPage+"\';return true\" onMouseOut=\"self.status=\'\';return true\" HREF=\""+addr[i]+"\""+tgt+">"+pageIMGtag+"<"+hComment+"/A>";
+   buf+="<"+hComment+"A onClick=\"top.refresh("+i+",0)\" HREF=\""+addr[i]+"\""+tgt+">"+setColor+setFont+txt[i]+endFont+endColor+"<"+hComment+"/A>";
+   i=nxtp[i];
+  }
+  else {
+   isOpen=(stat[i]%10==nowOpen);
+   altxt=isOpen ? hideSubtopics : showSubtopics;
+
+   buf+="<A onMouseOver=\"self.status=\'"+altxt+"\';return true\" onMouseOut=\"self.status=\'\';return true\" HREF=\"javascript:top.showTopics("+i+")\">";
+   if (plusMinus=="yes") buf+="<IMG alt=\""+altxt+"\" border=0 width=8 height=15 SRC=\""+iconPath+"_"+stat[i]%10+".gif\">";
+   buf+="<IMG alt=\""+altxt+"\" border=0 "+iconSize+" SRC=\""+iconPath+stat[i]+".gif\">";
+   if (addr[i]!="") buf+="</A><"+hComment+"A onClick=\"top.refresh("+i+",0)\" HREF=\""+addr[i]+"\""+tgt+">";
+   if (addr[i]=="" && isOpen) buf+="</A>";
+   buf+=setColor+setFont+txt[i]+endFont+endColor;
+
+   if (addr[i]!="") buf+="<"+hComment+"/A>";
+   else if (!isOpen) buf+="</A>";
+  }
+  i=nexti;
+  buf+="\n";
+  if (buf.length>30000) {top.left.document.write(buf);buf="";}
+ } //end while loop
+
+ buf+="</font></PRE></BODY></HTML>";
+ top.left.document.writeln(buf);
+ top.left.document.close();
+ return;
+}
+
+function cutAnchor(inStr) {
+ outStr=""+inStr;
+ ind=outStr.indexOf("#");
+ if (ind>-1) outStr=outStr.substring(0,ind);
+ return outStr;
+}
+
+function regularize(theURL) {
+ theURL=cutAnchor(theURL);
+ n=theURL.length;
+ for (j=0;j<n;j++) {
+  if (theURL.charAt(j)=="\\") theURL=theURL.substring(0,j)+"/"+theURL.substring(j+1,n);
+ }
+ return theURL;
+}
+
+function queryNum() {
+ if (top.right.document) {
+  trueDocURL=regularize(""+top.right.document.location);
+  docURL=trueDocURL.toLowerCase();
+  for (j=0;j<nPages;j++) {
+   testStr=rootURL+page[j].toLowerCase();
+   if (docURL.indexOf(testStr)!=-1) {
+    curPage=j;
+    prevPage=j-1;
+    nextPage=j+1;
+    if (prevPage<0) prevPage=curPage;
+    if (nextPage>=nPages) nextPage=curPage;
+    return;
+   }
+  }
+  curPage=-1;
+  prevPage=0;
+  nextPage=0;
+ }
+ return;
+}
+
+function findRootURL() {
+ trueRootURL=regularize(""+top.document.location);
+ trueRootURL=trueRootURL.substring(0,trueRootURL.lastIndexOf("/")+1);
+ rootURL=trueRootURL.toLowerCase();
+}
+
+function showNext() {
+ queryNum();
+ if (curPage==-1) {
+  if (confirm("Return to "+txt[0]+"?")) {
+   window.top.right.location=trueRootURL+page[0];
+   return;
+  }
+  else return;
+ }
+ if (nextPage!=curPage) {
+  window.top.right.location=trueRootURL+page[nextPage];
+ }
+}
+
+function showPrev() {
+ queryNum();
+ if (curPage==-1) {
+  if (confirm("Return to "+txt[0]+"?")) {
+   window.top.right.location=trueRootURL+page[0];
+   return;
+  }
+  else return;
+ }
+ if (prevPage!=curPage) {
+  window.top.right.location=trueRootURL+page[prevPage];
+ }
+}
+
+function showTopics(k) {
+ if (k>=0) stat[k]=changeStat(stat[k]);
+ tmout=setTimeout("renewTOC()",1);
+}
+
+function collapseAll(ci) {
+ for (i=0;i<imax;i++) {if (stat[i]%10==nowOpen && i!=ci) stat[i]++;}
+}
+
+function expandThis(ci) {
+ i=ci;
+ OL=levl[ci];
+ while (i>=0) {
+  CL=levl[i];
+  if (CL<OL) { OL=CL; if (stat[i]%10==nowClosed && i!=ci) stat[i]--; }
+  if (CL==1) break;
+  i--; while (txt[i]=="") {i--;}
+ }
+}
+
+nowLoadingPage=-1;
+function refresh (ntopic,adapt) {
+ if (hlight) {
+  if (adapt==0) {nowLoadingPage=ntopic; return;}
+  while (txt[ntopic]=="") {ntopic--;}
+  while (ntopic>0 && addr[ntopic-1].indexOf(cutAnchor(addr[ntopic]))!=-1) {ntopic--;}
+  if (curTopic!=ntopic && !isExtLink(addr[ntopic])) {
+   if (ntopic != nowLoadingPage) {
+    collapseAll(ntopic);
+    toExpand=ntopic; if (levl[ntopic]<levl[curTopic]) toExpand=curTopic;
+    expandThis(toExpand);
+   }
+   nowLoadingPage=-1;
+   curTopic=ntopic;
+   setTimeout("renewTOC()",10);
+  }
+ }
+}
+
+findRootURL();
+defHierarchy();
+fillArrays();
+
+function sync() {
+ queryNum();
+ if (curPage>=0) refresh(pagetop[curPage],1);
+ setTimeout("sync()",1600);
+}
+
+function init() {
+ showTopics(-1);
+ if (hlight) setTimeout("sync()",1000);
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+
+<FRAMESET cols="190,*" border=3 onLoad="init()">
+ <FRAME SRC="starttoc.htm" NAME="left" marginheight=10 marginwidth=6>
+ <FRAMESET rows="*,20" border=0 frameborder=no framespacing=0>
+  <!--TOPIC FRAME CODE BEGINS HERE. Don't delete this line-->
+  <FRAME SRC="intelmat.htm#top" NAME="right">
+  <!--TOPIC FRAME CODE ENDS HERE. Don't delete this line-->
+  <FRAME SRC="startnav.htm" NAME="nav" scrolling="no" marginheight=1 marginwidth=5>
+ </FRAMESET>
+</FRAMESET>
+
+<NOFRAMES>
+<H3>JSTOC - A Dynamic Table of Contents Generator</H3>
+<p>
+<small>Copyright &#169; 1999-2000 Intel Corporation</small>
+<p>
+Table of Contents for these pages is dynamically generated.
+To be able to view it, please follow these instructions:
+<UL>
+<LI>Use a frame-capable browser that can execute JavaScript programs.
+<BR>For example, you can use
+<BR>&nbsp;&nbsp;&nbsp;Netscape Navigator* 3.0 or newer version, or
+<BR>&nbsp;&nbsp;&nbsp;Microsoft Internet Explorer* 3.0 or newer version.
+<LI>Make sure that JavaScript is enabled in your browser:
+<font size=-1>
+<BR>In Netscape Navigator 4, go to <b>Edit</b> | <b>Preferences</b> | <b>Advanced</b>.
+<BR>In Netscape Navigator 3, go to <b>Options</b> | <b>Network Preferences</b> | <b>Languages</b>.
+<BR>In Microsoft Internet Explorer, go to <b>View</b> | <b>Internet Options</b> | <b>Security</b> and check <b>ActiveX scripts</b> box.
+</font>
+<LI>If you did the above and still have problems, reloading the page may help.
+</UL>
+<p>
+</NOFRAMES>
+</HTML>

@@ -1,0 +1,1758 @@
+<!-- Created by Shelepugin Pavel & Gilev Andrey, December 2000 -->
+<head><title>Accuracy of All VML functions</title></head>
+<body  title="Accuracy of All VML functions">
+<P align=left><FONT size=6><STRONG>Measured Accuracy of VML Functions</STRONG></FONT></P>
+<TABLE border=1 borderColor=#065601 cellPadding=2 cellSpacing=2 width=760>
+
+  <TR>
+    <TD rowSpan="3" height=24 >
+      <P >&nbsp;</P></TD>
+    <TD bgColor=#00ff00 colSpan=4 height=24 ><B><FONT color=#000000
+      face=Arial>
+      <P align=center>Default processor</B></FONT></P></TD>
+    <TD bgColor=#ffff00 colSpan=4 height=24 ><B><FONT color=#000000
+      face=Arial>
+      <P align=center>Pentium&reg; III processor</B></FONT></P></TD>
+    <TD bgColor=#ff6600 colSpan=4 height=24 ><B><FONT color=#000000
+      face=Arial>
+      <P align=center>Pentium&reg; 4 processor</B></FONT></P></TD>
+    <TD bgColor=#80ffff colSpan=4 height=24 ><B><FONT color=#000000
+      face=Arial>
+      <P align=center>Itanium<SUP><FONT size=-1>TM</FONT></SUP> processor</B></FONT></P></TD>
+  </TR>
+  <TR>
+    <TD bgColor=#00ff00 colSpan=2 height=20 ><B><FONT color=#000000
+      face=Arial size=2>
+      <P align=center>float</B></FONT></P></TD>
+    <TD bgColor=#00ff00 colSpan=2 height=20 ><B><FONT color=#000000
+      face=Arial size=2>
+      <P align=center>double</B></FONT></P></TD>
+    <TD bgColor=#ffff00 colSpan=2 height=20 ><B><FONT color=#000000
+      face=Arial size=2>
+      <P align=center>float</B></FONT></P></TD>
+    <TD bgColor=#ffff00 colSpan=2 height=20 ><B><FONT color=#000000
+      face=Arial size=2>
+      <P align=center>double</B></FONT></P></TD>
+    <TD bgColor=#ff6600 colSpan=2 height=20 ><B><FONT color=#000000
+      face=Arial size=2>
+      <P align=center>float</B></FONT></P></TD>
+    <TD bgColor=#ff6600 colSpan=2 height=20 ><B><FONT color=#000000
+      face=Arial size=2>
+      <P align=center>double</B></FONT></P></TD>
+    <TD bgColor=#80ffff colSpan=2 height=20 ><B><FONT color=#000000
+      face=Arial size=2>
+      <P align=center>float</B></FONT></P></TD>
+    <TD bgColor=#80ffff colSpan=2 height=20 ><B><FONT color=#000000
+      face=Arial size=2>
+      <P align=center>double</B></FONT></P></TD>
+  </TR>
+  <TR>
+    <TD bgColor=#00ff00 height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>HA</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>LA</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>HA</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>LA</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>HA</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>LA</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>HA</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>LA</B></FONT></P></TD>
+    <TD bgColor=#ff6600 height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>HA</B></FONT></P></TD>
+    <TD bgColor=#ff6600 height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>LA</B></FONT></P></TD>
+    <TD bgColor=#ff6600 height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>HA</B></FONT></P></TD>
+    <TD bgColor=#ff6600 height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>LA</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>HA</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>LA</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>HA</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=21 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>LA</B></FONT></P></TD>
+  </TR>
+  <TR>
+    <TD bgColor=#ccffff height=20 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=left>Inv</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20 ><B><FONT color=#000000 face=Arial
+      size=2>
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>20.0 *</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>20.0 *</B></FONT></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+  </TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Div</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>20.0 *</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20>
+      <P align=center><b><font color="#000000" face="Arial" size="2">0.50</font></b></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Sqrt</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.58</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.58</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.74</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.74</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.75</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.75</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.74</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.74</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.75</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.75</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>InvSqrt</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.56</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.56</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.78</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.78</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.96</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.96</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.78</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.78</B></FONT></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.96</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.96</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.78</B></FONT></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.78</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Cbrt</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.58</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.58</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.68</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.68</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.58</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.58</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.68</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.68</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.88</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.88</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>InvCbrt</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.77</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.77</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.78</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.78</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.77</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.77</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.78</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.78</B></FONT></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.85</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.85</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Pow</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.60</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.60</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.03</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.03</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.60</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.60</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.03</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.03</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.52</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.52</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.03</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.03</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Exp</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.77</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.77</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.60</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.60</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.77</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.77</B></FONT></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.60</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.70</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.74</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.74</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.52</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.52</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.52</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.52</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Ln</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.65</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.65</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.64</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.64</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.65</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.65</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.64</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.64</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.87</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.87</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.64</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.64</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Log10</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.66</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.66</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.91</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.91</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.66</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.66</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.91</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.91</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.59</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.59</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.91</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.91</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Cos</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.79</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.79</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.91</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.90</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.79</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>2.00</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.91</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.90</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.79</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>2.00</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.93</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.90</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Sin</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.79</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.79</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.90</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.50</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.79</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>2.00</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.90</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.50</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.79</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.60</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.83</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.60</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>SinCos</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.55</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.55</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.72</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.40</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.55</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.20</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.72</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.40</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.55</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>2.30</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.53</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.70</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Tan</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.93</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.93</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.97</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>3.60</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.93</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>3.60</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.97</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>3.60</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.93</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>2.80</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.97</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>2.50</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Acos</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.53</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.53</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.63</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.63</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.76</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>26.0</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.63</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.63</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.76</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>26.0</B></FONT></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.75</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.75</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Asin</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.54</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.54</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.64</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.64</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.89</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>3.60</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.64</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.64</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.89</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>3.69</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.77</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>1.70</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Atan</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.92</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.92</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.83</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.83</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.88</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>3.20</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.83</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.83</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.92</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>3.20</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.84</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.84</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Atan2</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.75</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.75</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.56</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.56</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.90</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>3.30</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.56</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.56</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.96</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>3.30</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.74</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>2.80</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Cosh</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.81</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.81</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.60</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>57.0</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.81</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.81</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.74</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.74</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.74</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.74</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Sinh</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.84</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.84</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.83</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.83</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.84</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.84</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.75</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.75</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Tanh</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.61</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.61</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.83</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.83</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.61</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.61</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.83</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.83</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.73</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>3.30</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.50</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Acosh</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.61</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.61</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.57</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.57</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.87</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.87</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.57</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.57</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.87</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.87</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.57</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.57</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Asinh</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.69</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.69</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.63</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.63</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.90</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.90</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.63</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.63</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.90</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.90</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.63</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.63</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD></TR>
+  <TR>
+    <TD bgColor=#ccffff height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>Atanh</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.65</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.65</B></FONT></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.65</FONT></B></P></TD>
+    <TD bgColor=#00ff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.65</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.89</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.89</B></FONT></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.65</FONT></B></P></TD>
+    <TD bgColor=#ffff00 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.65</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.89</B></FONT></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.89</B></FONT></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.61</FONT></B></P></TD>
+    <TD bgColor=#ff6600 height=21><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.61</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</B></FONT></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD>
+    <TD bgColor=#80ffff height=20><B
+      ><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>0.51</FONT></B></P></TD></TR>
+  </TABLE><FONT size=2><BR>Remarks:<BR>1)
+Units - ULP (Units in The Last Place)<BR>2)
+* - without denormals<BR>3) "Default" means X87 code for all IA-32
+processors<BR></FONT>
+<P><FONT SIZE="1">Intel, Pentium, Pentium <font face="Arial">III</font>, Pentium 4, and Itanium are trademarks or registered trademarks of Intel Corporation or its subsidiaries in the United States and other countries.<BR></FONT></P>
+<P><FONT face="Arial, Helvetica" size=1>Copyright &copy; 2000-2001, Intel Corporation, All Rights
+Reserved.</FONT></P>
+</body>

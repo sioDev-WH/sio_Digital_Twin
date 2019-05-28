@@ -1,0 +1,125 @@
+<?xml version="1.0"?> 
+<Schema name="ModelDefinition" xmlns = "urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  
+ <AttributeType name="Name"/>
+ <AttributeType name="DefName"/>
+ <ElementType name="Eqn">
+ <attribute type="Name"/>
+ </ElementType>
+
+ <AttributeType name="ClassType"/> 
+ <AttributeType name="EqnName"/> 
+ <AttributeType name="sType"/>
+ <AttributeType name="sSubType"/>
+ <AttributeType name="dim1"/>
+ <AttributeType name="dim2"/>
+ <AttributeType name="bNot"/>
+ <AttributeType name="Operation"/>
+ <AttributeType name="sDiffType"/>
+ <AttributeType name="Value"/>
+ <AttributeType name="bSim"/> 
+
+ <AttributeType name="ProjectName"/>
+ <AttributeType name="PackageName"/>
+ <AttributeType name="TS"/>
+ <AttributeType name="ClassName"/>
+ <AttributeType name="Library"/>
+ <AttributeType name="Folder"/>
+ <AttributeType name="Shape"/>
+
+ <AttributeType name="SID"/>
+ <AttributeType name="OldSID"/>
+
+ <AttributeType name="ItemType"/>
+ <AttributeType name="AttrType"/>
+ <AttributeType name="OperType"/>
+ <AttributeType name="ConnName"/>
+ <AttributeType name="ItemSizeName"/>
+
+ <ElementType name="CgAttribute">
+ <attribute type="Name"/>
+ <attribute type="sType"/>
+ <attribute type="sSubType"/>
+ <attribute type="dim1"/>
+ <attribute type="dim2"/>
+ <attribute type="Value"/>
+ <attribute type="bSim"/>
+ </ElementType>
+ 
+ <ElementType name="CgOperation">
+ <attribute type="Name"/>
+ <attribute type="sType"/>
+ <attribute type="sDiffType"/>
+ </ElementType>
+
+ <ElementType name="CgState">
+ <attribute type="Name"/>
+ <element type="Eqn"/>
+ </ElementType>
+  
+ <ElementType name="CgTriggerCondition">
+ <attribute type="bNot"/>
+ <attribute type="EqnName"/>
+ <attribute type="Operation"/>
+ </ElementType>
+
+ <ElementType name="CgTrigger">
+ <attribute type="Name"/>
+ <element type="CgTriggerCondition"/>
+ </ElementType>
+    
+ <ElementType name="CgTransition">
+ <attribute type="Name"/>
+ <element type="Eqn"/> 
+ <element type="CgTrigger"/>
+ </ElementType>
+  
+ <ElementType name="CgModel">
+ <attribute type="ClassType"/>
+ <element type="CgAttribute"/>
+ <element type="CgOperation"/>
+ <element type="CgState"/>
+ <element type="CgTransition"/>
+ </ElementType>
+
+ <ElementType name="CgConnectionDef">
+ <attribute type="Name"/>
+ <attribute type="ItemType"/>
+ <attribute type="AttrType"/>
+ <attribute type="OperType"/>
+ <attribute type="ConnName"/>
+ <attribute type="ItemSizeName"/>
+ </ElementType>
+ 
+
+ <ElementType name="UDIDef">
+ <attribute type="Name"/>
+ <attribute type="ProjectName"/>
+ <attribute type="PackageName"/>
+ <attribute type="ClassName"/>
+ <attribute type="Library"/>
+ <attribute type="Folder"/>
+ <attribute type="Shape"/>
+ <attribute type="TS"/>
+ <element type="CgAttribute"/>
+ <element type="CgConnectionDef"/>
+ </ElementType>
+
+ <ElementType name="UDI">
+ <attribute type="Name"/>
+ <attribute type="DefName"/>
+ <attribute type="ProjectName"/>
+ <attribute type="PackageName"/>
+ <attribute type="ClassName"/>
+ <attribute type="SID"/>
+ <attribute type="OldSID"/>
+ <attribute type="TS"/>
+ <element type="CgAttribute"/>
+ </ElementType>
+ 
+
+ <ElementType name="UDIDefs">
+ <element type="UDIDef"/>
+ </ElementType>
+
+ </Schema>

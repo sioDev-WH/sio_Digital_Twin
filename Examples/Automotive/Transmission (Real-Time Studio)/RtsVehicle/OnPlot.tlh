@@ -1,0 +1,111 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8447.0 (51988cfe).
+//
+// OnPlot.tlh
+//
+// C++ source equivalent of Win32 type library .\..\..\GUI\OnPlot.dll
+// compiler-generated file created 09/05/01 at 07:32:08 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("4c8acdb3-456e-4731-b172-42980d647da2"))
+/* dual interface */ _OnPlotObject;
+struct /* coclass */ OnPlotObject;
+struct __declspec(uuid("a44dc777-8014-4de6-9290-cbbe08257509"))
+/* dual interface */ _OnBrakes;
+struct /* coclass */ OnBrakes;
+struct __declspec(uuid("f6a8ccf6-912e-4ba9-a341-14684551c1c2"))
+/* dual interface */ _OnShiftLever;
+struct /* coclass */ OnShiftLever;
+struct __declspec(uuid("af29f16d-2a8a-4448-9507-4ba6f60b502d"))
+/* dual interface */ _OnThrottle;
+struct /* coclass */ OnThrottle;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_OnPlotObject, __uuidof(_OnPlotObject));
+_COM_SMARTPTR_TYPEDEF(_OnBrakes, __uuidof(_OnBrakes));
+_COM_SMARTPTR_TYPEDEF(_OnShiftLever, __uuidof(_OnShiftLever));
+_COM_SMARTPTR_TYPEDEF(_OnThrottle, __uuidof(_OnThrottle));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("4c8acdb3-456e-4731-b172-42980d647da2"))
+_OnPlotObject : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall initPlot (
+        long * numberOfSeries,
+        VARIANT_BOOL * bPoint ) = 0;
+    virtual HRESULT __stdcall plotData (
+        SAFEARRAY * * Vars,
+        long * numberOfVars ) = 0;
+    virtual HRESULT __stdcall cleanPlot ( ) = 0;
+};
+
+struct __declspec(uuid("9e0f27b3-a099-11d5-b19b-00c04f680d9d"))
+OnPlotObject;
+    // [ default ] interface _OnPlotObject
+
+struct __declspec(uuid("a44dc777-8014-4de6-9290-cbbe08257509"))
+_OnBrakes : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall initBrakes ( ) = 0;
+    virtual HRESULT __stdcall getPosition (
+        double * val ) = 0;
+};
+
+struct __declspec(uuid("99570ae8-a0e2-11d5-b19b-00c04f680d9d"))
+OnBrakes;
+    // [ default ] interface _OnBrakes
+
+struct __declspec(uuid("f6a8ccf6-912e-4ba9-a341-14684551c1c2"))
+_OnShiftLever : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall initLever ( ) = 0;
+    virtual HRESULT __stdcall getPosition (
+        long * val ) = 0;
+};
+
+struct __declspec(uuid("901d32ae-a0b4-11d5-b19b-00c04f680d9d"))
+OnShiftLever;
+    // [ default ] interface _OnShiftLever
+
+struct __declspec(uuid("af29f16d-2a8a-4448-9507-4ba6f60b502d"))
+_OnThrottle : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall initThrottle ( ) = 0;
+    virtual HRESULT __stdcall getPosition (
+        double * val ) = 0;
+};
+
+struct __declspec(uuid("901d36a6-a0b4-11d5-b19b-00c04f680d9d"))
+OnThrottle;
+    // [ default ] interface _OnThrottle
+
+#pragma pack(pop)

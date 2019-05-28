@@ -1,0 +1,66 @@
+
+Reverse Engineering 'C:\DistComponents\PDE\Unit.cpp'
+File: C:\DistComponents\PDE\Unit.cpp, Line: 5 #include stdafx.h ignored--file not found.
+Reverse Engineering include file 'C:\DistComponents\PDE\Unit.h'
+Adding package 'ReverseEngineering' to Project 'PDEReactor'. ok.
+Reverse Engineering include file 'C:\DistComponents\PDE\D_Mesh.h'
+Adding Type '_D_Mesh' to package 'ReverseEngineering'. ok.
+Adding Type 'D_Method' to package 'ReverseEngineering'. ok.
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributionDomain.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\D_Mesh.h'
+Analyzing class 'D_Mesh' from File: C:\DistComponents\PDE\D_Mesh.h, Line: 10
+Adding Class 'D_Mesh' to Package 'ReverseEngineering'. ok.
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributedVar.h'
+Analyzing class 'DistributionDomain' from File: C:\DistComponents\PDE\DistributionDomain.h, Line: 13
+Adding Class 'DistributionDomain' to Package 'ReverseEngineering'. ok.
+Analyzing class 'DistributedVar' from File: C:\DistComponents\PDE\DistributedVar.h, Line: 14
+Adding Class 'DistributedVar' to Package 'ReverseEngineering'. ok.
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributedEqn.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributedVar.h'
+Analyzing class 'DistributedEqn' from File: C:\DistComponents\PDE\DistributedEqn.h, Line: 14
+Adding Class 'DistributedEqn' to Package 'ReverseEngineering'. ok.
+Analyzing class 'Unit' from File: C:\DistComponents\PDE\Unit.h, Line: 18
+Adding Class 'Unit' to Package 'ReverseEngineering'. ok.
+
+Reverse Engineering 'C:\DistComponents\PDE\DistributedEqn.cpp'
+File: C:\DistComponents\PDE\DistributedEqn.cpp, Line: 5 #include stdafx.h ignored--file not found.
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributionDomain.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\D_Mesh.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributedEqn.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributedVar.h'
+
+Reverse Engineering 'C:\DistComponents\PDE\DistributedEqn.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributedVar.h'
+
+Reverse Engineering 'C:\DistComponents\PDE\DistributedVar.cpp'
+File: C:\DistComponents\PDE\DistributedVar.cpp, Line: 5 #include stdafx.h ignored--file not found.
+File: C:\DistComponents\PDE\DistributedVar.cpp, Line: 6 #include string.h ignored--file not found.
+File: C:\DistComponents\PDE\DistributedVar.cpp, Line: 7 #include math.h ignored--file not found.
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributionDomain.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\D_Mesh.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributedVar.h'
+
+Reverse Engineering 'C:\DistComponents\PDE\DistributedVar.h'
+
+Reverse Engineering 'C:\DistComponents\PDE\DistributionDomain.cpp'
+File: C:\DistComponents\PDE\DistributionDomain.cpp, Line: 5 #include stdafx.h ignored--file not found.
+File: C:\DistComponents\PDE\DistributionDomain.cpp, Line: 6 #include string.h ignored--file not found.
+Reverse Engineering include file 'C:\DistComponents\PDE\D_Mesh.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributionDomain.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\D_Mesh.h'
+
+Reverse Engineering 'C:\DistComponents\PDE\DistributionDomain.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\D_Mesh.h'
+
+Reverse Engineering 'C:\DistComponents\PDE\D_Mesh.h'
+
+Reverse Engineering 'C:\DistComponents\PDE\Unit.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\D_Mesh.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributionDomain.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\D_Mesh.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributedVar.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributedEqn.h'
+Reverse Engineering include file 'C:\DistComponents\PDE\DistributedVar.h'
+
+Reverse Engineering Done.
+

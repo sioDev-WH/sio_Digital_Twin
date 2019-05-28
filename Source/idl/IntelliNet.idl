@@ -1,0 +1,297 @@
+// IntelliNet.idl : IDL source for IntelliNet.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (IntelliNet.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+interface INeuralNet;
+interface IModelOpt;
+interface IModelSim;
+interface INeuralPattern;
+interface INeuralPatternList;
+
+typedef enum PatternListType  // P_TYPE
+{ 
+	PatternListType_Train = 0,
+	PatternListType_Consult = 1,
+	PatternListType_Validate = 2,
+	PatternListType_Unspecified = 3,
+} PatternListType;
+
+typedef enum KernelType // KERNEL
+{
+	KernelType_Linear = 0,
+	KernelType_Polynomial = 1,
+	KernelType_Gaussian = 2,
+	KernelType_Cauchy = 3,
+	KernelType_Reciprocal = 4,
+	KernelType_Illegal = 5,
+} KernelType;
+
+
+	[
+		object,
+		uuid(646C2FE1-E991-11D3-835C-00600894E802),
+		dual,
+		helpstring("INeuralNet Interface"),
+		pointer_default(unique)
+	]
+	interface INeuralNet : IDispatch
+	{
+		[propget, id(1), helpstring("Input count")]
+		HRESULT cInput([out, retval] long* pcInput);
+		[propput, id(1), helpstring("Input count")]
+		HRESULT cInput([in] long cInput);
+		[propget, id(2), helpstring("Output count")]
+		HRESULT cOutput([out, retval] long* pcOutput);
+		[propput, id(2), helpstring("Output count")]
+		HRESULT cOutput([in] long cOutput);
+
+		[propget, id(3), helpstring("Input scaling flag")]
+		HRESULT InputScaling([out, retval] VARIANT_BOOL* pIS);
+		[propput, id(3), helpstring("Input scaling flag")]
+		HRESULT InputScaling([in] VARIANT_BOOL newIS);
+		[propget, id(4), helpstring("Output scaling flag")]
+		HRESULT OutputScaling([out, retval] VARIANT_BOOL* pOS);
+		[propput, id(4), helpstring("Output scaling flag")]
+		HRESULT OutputScaling([in] VARIANT_BOOL newOS);
+
+		[propget, id(5), helpstring("Kernel count")]
+		HRESULT cKernel([out, retval] long* pcKernel);
+		[propput, id(5), helpstring("Kernel count")]
+		HRESULT cKernel([in] long cKernel); 	
+		[propget, id(6), helpstring("Kernel type")]
+		HRESULT KernelType([in] long Index, [out, retval] KernelType* pType);
+		[propput, id(6), helpstring("Kernel type")]
+		HRESULT KernelType([in] long Index, [in] KernelType newType);
+
+		[propget, id(7), helpstring("Maximum number of threshold iterations (n_max). rn = n_max * dr + r0")]
+		HRESULT MaxThresholdIterations([out, retval] long* pcIterations);
+		[propput, id(7), helpstring("Maximum number of threshold iterations (n_max). rn = n_max * dr + r0")]
+		HRESULT MaxThresholdIterations([in] long cIterations);
+		[propget, id(8), helpstring("Threshold step size (dr)  0 < r0 + dr < 0 (0.1 for small data sets, 0.2 for large data sets)")]
+		HRESULT ThresholdStepSize([out, retval] double* pSize);
+		[propput, id(8), helpstring("Threshold step size (dr)  0 < r0 + dr < 0 (0.1 for small data sets, 0.2 for large data sets)")]
+		HRESULT ThresholdStepSize([in] double Size);
+		[propget, id(9), helpstring("Initial threshold (r0).  0 < r0 < 1 (0.15 recommended)")]
+		HRESULT InitialThreshold([out, retval] double* pThreshold);
+		[propput, id(9), helpstring("Initial threshold (r0).  0 < r0 < 1 (0.15 recommended)")]
+		HRESULT InitialThreshold([in] double Threshold);
+		[propget, id(10), helpstring("beta clustering control.  0 < b < 2")]
+		HRESULT beta([out, retval] double* pbeta);
+		[propput, id(10), helpstring("beta clustering control.  0 < b < 2")]
+		HRESULT beta([in] double beta);
+
+		[propget, id(11), helpstring("Node count")]
+		HRESULT cNode([out, retval] long* pcNode);
+
+		[id(15), helpstring("Train")]
+		HRESULT Train([in] INeuralPatternList* pTrainingData);
+		[id(16), helpstring("Validate")]
+		HRESULT Validate([in] INeuralPatternList* pValidateData);
+		[id(17), helpstring("Consult")]
+		HRESULT Consult([in] INeuralPatternList* pConsultData);
+		[id(18), helpstring("Sensitivity")]
+		HRESULT Sensitivity([in] INeuralPatternList* pSensitivityData);
+
+		[id(19), helpstring("Save")]
+		HRESULT Save([in] BSTR FileName);
+		[id(20), helpstring("Load")]
+		HRESULT Load([in] BSTR FileName);
+
+		[id(21), hidden, helpstring("Get member cpp pointer")]
+		HRESULT GetDataCPPPtr([out] DWORD* ppNetwork);
+	};
+
+	[
+		object,
+		uuid(673DD4E0-E994-11d3-835C-00600894E802),
+		dual,
+		helpstring("IModel Interface"),
+		pointer_default(unique)
+	]
+	interface IModelOpt : IDispatch
+	{
+		[id(1), helpstring("Get model dimension")]
+		HRESULT GetDimension([out] long* pDim);
+		[id(2), helpstring("Set model dimension")]
+		HRESULT SetDimension([in] long newDim);
+		[id(3), helpstring("Get number of inequality constraints")]
+		HRESULT GetNIC([out] long* pNIC);
+		[id(4), helpstring("Set number of inequality constraints")]
+		HRESULT SetNIC([in] long newNIC);
+		[id(5), helpstring("Get number of equality constraints")]
+		HRESULT GetNEC([out] long* pNEC);
+		[id(6), helpstring("Set number of equality constraints")]
+		HRESULT SetNEC([in] long newNEC);
+		[id(7), helpstring("Optimization objective function")]
+		HRESULT Objective([in] SAFEARRAY(double)* ppsa, [out] double* pRet);
+		[id(8), helpstring("Equality constraints")]
+		HRESULT EqualityConstraints([in] SAFEARRAY(double)* ppsa, [out] double* pRet);
+		[id(9), helpstring("Inequality constraints")]
+		HRESULT InequalityConstraints([in] SAFEARRAY(double)* ppsa, [out] double* pRet);
+	};
+
+	[
+		object,
+		uuid(5636E270-E999-11d3-835C-00600894E802),
+		dual,
+		helpstring("IModelSim Interface"),
+		pointer_default(unique)
+	]
+	interface IModelSim : IDispatch
+	{
+		[id(1), helpstring("GetModelInfo")]
+		HRESULT GetModelInfo([out] long* pId, [out] long* pcInput, [out] long* pcOutput, [out] long* pcContinuous, [out] long* pcDiscrete, [out] long* pcParameters);
+		[id(2), helpstring("GetInputSources")]
+		HRESULT GetInputSources([in, out] SAFEARRAY(double)* ppsaIS);
+		[id(3), helpstring("GetParameterSources")]
+		HRESULT GetParameterSources([in, out] SAFEARRAY(double)* ppsaPS);
+		[id(4), helpstring("GetgradXc")]
+		HRESULT GetgradXc([in] SAFEARRAY(double)* ppsaU, [in] SAFEARRAY(double)* ppsaXc, [in] SAFEARRAY(double)* ppsaXd, [in] SAFEARRAY(double)* ppsaP, [in] double Time, [in, out] SAFEARRAY(double)* ppsaGradXc);
+		[id(5), helpstring("GetgradXd")]
+		HRESULT GetgradXd([in] SAFEARRAY(double)* ppsaU, [in] SAFEARRAY(double)* ppsaXc, [in] SAFEARRAY(double)* ppsaXd, [in] SAFEARRAY(double)* ppsaP, [in] double Time, [in, out] SAFEARRAY(double)* ppsaGradXd);
+		[id(6), helpstring("GetOutput")]
+		HRESULT GetOutput([in] SAFEARRAY(double)* ppsaU, [in] SAFEARRAY(double)* ppsaXc, [in] SAFEARRAY(double)* ppsaXd, [in] SAFEARRAY(double)* ppsaP, [in] double Time, [in, out] SAFEARRAY(double)* ppsaY);
+	};
+
+	[
+		object,
+		uuid(D9D93F5E-EA09-11D3-9876-00C04F6801A9),
+		dual,
+		helpstring("INeuralPattern Interface"),
+		pointer_default(unique)
+	]
+	interface INeuralPattern : IDispatch
+	{
+		[id(1), helpstring("Initialize pattern dimensions")]
+		HRESULT Initialize([in] long cInput, [in] long cOutput);
+		[propget, id(2), helpstring("Input")]
+		HRESULT Input([in] long Index, [out, retval] double* pValue);
+		[propput, id(2), helpstring("Input")]
+		HRESULT Input([in] long Index, [in] double Value);
+		[propget, id(3), helpstring("Output")]
+		HRESULT Output([in] long Index, [out, retval] double* pValue);
+		[propput, id(3), helpstring("Output")]
+		HRESULT Output([in] long Index, [in] double Value);
+		[propget, id(4), helpstring("Target")]
+		HRESULT Target([in] long Index, [out, retval] double* pValue);
+		[propput, id(4), helpstring("Target")]
+		HRESULT Target([in] long Index, [in] double Value);
+		[propget, id(5), helpstring("Error")]
+		HRESULT Error([in] long Index, [out, retval] double* pValue);
+		[propget, id(6), helpstring("Sensitivity")]
+		HRESULT Sensitivity([in] long iInput, [in] long iOutput, [out, retval] double* pValue);
+		[propput, id(6), helpstring("Sensitivity")]
+		HRESULT Sensitivity([in] long iInput, [in] long iOutput, [in] double Value);
+		[id(7), hidden, helpstring("Get member cpp pointer")]
+		HRESULT GetDataCPPPtr([out] DWORD* ppPattern);
+	};
+
+	[
+		object,
+		uuid(D9D93F60-EA09-11D3-9876-00C04F6801A9),
+		dual,
+		helpstring("INeuralPatternList Interface"),
+		pointer_default(unique)
+	]
+	interface INeuralPatternList : IDispatch
+	{
+		[propget, id(1), helpstring("Pattern count")]
+		HRESULT cPattern([out, retval] long* pcPattern);
+		[propget, id(2), helpstring("Pattern type")]
+		HRESULT Type([out, retval] PatternListType* pType);
+		[propput, id(2), helpstring("Pattern type")]
+		HRESULT Type([in] PatternListType Type);
+		[propget, id(3), helpstring("Input count")]
+		HRESULT cInput([out, retval] long* pcInput);
+		[propput, id(3), helpstring("Input count")]
+		HRESULT cInput([in] long cInput);
+		[propget, id(4), helpstring("Output count")]
+		HRESULT cOutput([out, retval] long* pcOutput);
+		[propput, id(4), helpstring("Output count")]
+		HRESULT cOutput([in] long cOutput);
+		[propget, id(5), helpstring("Is labeled")]
+		HRESULT Labeled([out, retval] VARIANT_BOOL* pVal);
+		[propput, id(5), helpstring("Output count")]
+		HRESULT Labeled([in] VARIANT_BOOL Val);
+		[id(6), helpstring("Set input labels")]
+		HRESULT SetInputLabels([in] SAFEARRAY(BSTR)* ppsaLabels);
+		[propget, id(7), helpstring("Input label")]
+		HRESULT InputLabel([in] long Index, [out, retval] BSTR* pVal);
+		[propput, id(7), helpstring("Input label")]
+		HRESULT InputLabel([in] long Index, BSTR Val);
+		[id(8), helpstring("Set output labels")]
+		HRESULT SetOutputLabels([in] SAFEARRAY(BSTR)* ppsaLabels);
+		[propget, id(9), helpstring("Output label")]
+		HRESULT OutputLabel([in] long Index, [out, retval] BSTR* pVal);
+		[propput, id(9), helpstring("Output label")]
+		HRESULT OutputLabel([in] long Index, BSTR Val);
+
+		[propget, id(DISPID_VALUE), helpstring("Get pattern by index")]
+		HRESULT Item([in] long index, [out, retval] INeuralPattern** ppPattern);
+		[id(11), helpstring("Add pattern")]
+		HRESULT Add([out, retval] INeuralPattern** ppPattern);
+		[id(12), helpstring("Remove pattern by index")]
+		HRESULT Remove([in] long index);
+		[id(13), helpstring("Remove all patterns")]
+		HRESULT RemoveAll();
+
+		[id(20), helpstring("Load")]
+		HRESULT Load([in] BSTR url);
+		[id(21), helpstring("Save Outputs")]
+		HRESULT SaveOutputs([in] BSTR url);
+		[id(22), helpstring("Save Errors")]
+		HRESULT SaveErrors([in] BSTR url);
+		[id(23), helpstring("Save Sensitivity")]
+		HRESULT SaveSensitivity([in] BSTR url);
+		[id(24), helpstring("Save Annotated Outputs")]
+		HRESULT SaveAnnotatedOutputs([in] BSTR url);
+		[id(25), helpstring("Save Annotated Errors")]
+		HRESULT SaveAnnotatedErrors([in] BSTR url);
+		[id(26), helpstring("Save Annotated Sensitivity")]
+		HRESULT SaveAnnotatedSensitivity([in] BSTR url);
+		[id(27), hidden, helpstring("Get member cpp pointer")]
+		HRESULT GetDataCPPPtr([out] DWORD* ppCPPData);
+	};
+
+[
+	uuid(526C4CC1-E885-11D3-9876-00C04F6801A9),
+	version(1.0),
+	helpstring("IntelliNet 1.0 Type Library")
+]
+library INTELLINETLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(646C2FE2-E991-11D3-835C-00600894E802),
+		helpstring("NeuralNet Class")
+	]
+	coclass NeuralNet
+	{
+		[default] interface INeuralNet;
+		interface IModelOpt;
+		interface IModelSim;
+	};
+	[
+		uuid(D9D93F5F-EA09-11D3-9876-00C04F6801A9),
+		helpstring("NeuralPattern Class")
+	]
+	coclass NeuralPattern
+	{
+		[default] interface INeuralPattern;
+	};
+	[
+		uuid(D9D93F61-EA09-11D3-9876-00C04F6801A9),
+		helpstring("NeuralPatternList Class")
+	]
+	coclass NeuralPatternList
+	{
+		[default] interface INeuralPatternList;
+	};
+};

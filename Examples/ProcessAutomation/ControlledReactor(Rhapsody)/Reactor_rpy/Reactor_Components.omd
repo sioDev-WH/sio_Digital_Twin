@@ -1,0 +1,1608 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IDiagram 
+	- _id = GUID 785bd510-88e0-47b3-bd71-7ae17b46dd09;
+	- _myState = 8192;
+	- _name = "Reactor Components";
+	- _graphicChart = { CGIClassChart 
+		- _id = GUID 4f46a361-5099-4ee7-a487-a934da67665e;
+		- m_type = 0;
+		- m_pModelObject = { IHandle 
+			- _m2Class = "IDiagram";
+			- _id = GUID 785bd510-88e0-47b3-bd71-7ae17b46dd09;
+		}
+		- m_pParent = ;
+		- m_name = { CGIText 
+			- m_str = "";
+			- m_style = "Arial" 10 0 0 0 0 ;
+			- m_color = { IColor 
+				- m_fgColor = 0;
+				- m_bgColor = 0;
+				- m_bgFlag = 0;
+			}
+			- m_position = 1 0 0  ;
+			- m_nIdent = 0;
+			- m_bImplicitSetRectPoints = 0;
+		}
+		- m_drawBehavior = 0;
+		- elementList = 17;
+		{ CGILink 
+			- _id = GUID 5856c3e5-82a4-4b9e-984d-7cb59a35d858;
+			- m_type = 92;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "ControlledReactor";
+				- _name = "itsController";
+				- _id = GUID e71120c0-a244-48af-921c-8af89f7a0a50;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID af14d65c-c556-4ab2-9632-639365f7644f;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID c33ba670-c1fa-42ad-8e6b-529b15be351b;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 3 32.3454496978365 34.9631696036336  48.7776662073886 34.9631696036336  48.7776662073886 24.3358268193606  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = 0 -1 ;
+			- m_anglePoint2 = 1 0 ;
+			- m_line_style = 2;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "";
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 1;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 1;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "1";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 48.8611899025606 24.9912082882176  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = type_122;
+		}
+		{ CGICompositeClass 
+			- _id = GUID 65b0676e-fea9-4db7-a05a-d2325746d95e;
+			- m_type = 78;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "TopLevel";
+				- _id = GUID 69c3a60b-bdc6-4604-ada5-3f8c38e9ee40;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "TopLevel";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 0;
+			- m_color = { IColor 
+				- m_fgColor = 1;
+				- m_bgColor = 1;
+				- m_bgFlag = 1;
+			}
+			- m_lineWidth = 0;
+			- m_polygon = 4 -11.7582157360696 50.5245340483211  62.129965839646 50.5245340483211  62.129965839646 -0.863629849633624  -11.7582157360696 -0.863629849633624  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID 68a2499c-1447-4681-9daa-ee2e7f4f2f8e;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "";
+				- _name = "OnModel_Controller";
+				- _id = GUID f57a3249-67b0-45f1-b1bb-8c543857254f;
+			}
+			- m_pParent = GUID 65b0676e-fea9-4db7-a05a-d2325746d95e;
+			- m_name = { CGIText 
+				- m_str = "ProcessModels::OnModel_Controller";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 55.7649425804031 28.0670227986513  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 49.3999193211602 28.6670227986513  62.129965839646 28.6670227986513  62.129965839646 26.3527507986513  49.3999193211602 26.3527507986513  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID 7ab9fa29-ce73-46c2-b60d-0057508dd4a9;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "";
+				- _name = "OnModel_Reactor";
+				- _id = GUID 246073a3-09f6-4692-8bf5-05f5eedd7b99;
+			}
+			- m_pParent = GUID 65b0676e-fea9-4db7-a05a-d2325746d95e;
+			- m_name = { CGIText 
+				- m_str = "ProcessModels::OnModel_Reactor";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 -5.85422962445783 27.6384830313066  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -11.7582157360696 28.2384830313066  0.049756487153898 28.2384830313066  0.049756487153898 26.2670598170466  -11.7582157360696 26.2670598170466  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID 920a3870-0eb7-43f5-a58c-4473366c8170;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "";
+				- _name = "OnModel_Heater";
+				- _id = GUID eec5c0df-f95e-4e67-9b1d-ccc402297c26;
+			}
+			- m_pParent = GUID 65b0676e-fea9-4db7-a05a-d2325746d95e;
+			- m_name = { CGIText 
+				- m_str = "ProcessModels::OnModel_Heater";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 31.2502610683012 26.7813160131665  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 25.5281053312288 28.4956197182621  37.3152794838646 28.4956197182621  37.3152794838646 26.3527737182621  25.5281053312288 26.3527737182621  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		{ CGIInheritance 
+			- _id = GUID 9f671608-b095-449b-9de6-caaacfb64a77;
+			- m_type = 103;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IGeneralization";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "Heater";
+				- _name = "OnModel_Heater";
+				- _id = GUID 47119d06-9397-4d46-85fe-4dae47580109;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID c4871b4e-f871-4138-870c-65cc2e8ae7b1;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 920a3870-0eb7-43f5-a58c-4473366c8170;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 2 32.0217020949058 23.6251872122766  32.0217020949058 26.3527737182621  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = 0 1 ;
+			- m_anglePoint2 = 0 1 ;
+			- m_line_style = 0;
+		}
+		{ CGILink 
+			- _id = GUID adf73d0d-a6eb-41ed-9cf2-bc78439b3fff;
+			- m_type = 92;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "Heater";
+				- _name = "itsController";
+				- _id = GUID f57d5c10-f711-4a65-8175-f6136b0db2ab;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID c4871b4e-f871-4138-870c-65cc2e8ae7b1;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID c33ba670-c1fa-42ad-8e6b-529b15be351b;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 3 36.0193826166835 11.750075549378  52.0758449122454 11.750075549378  52.0758449122454 13.9318735581527  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = 0 1 ;
+			- m_anglePoint2 = 1 0 ;
+			- m_line_style = 2;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "";
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 1;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 1;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "1";
+				- m_style = "Arial" 10 0 0 0 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 52.1690977481397 12.7148865588475  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = type_122;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID af14d65c-c556-4ab2-9632-639365f7644f;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "";
+				- _name = "ControlledReactor";
+				- _id = GUID f58121db-dee8-4a2e-a2c6-f05028a02e7a;
+			}
+			- m_pParent = GUID 65b0676e-fea9-4db7-a05a-d2325746d95e;
+			- m_name = { CGIText 
+				- m_str = "ProcessModels::ControlledReactor";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 21.8963525620956 45.9560908320427  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 11.4472554263546 46.5560908320427  32.3454496978365 46.5560908320427  32.3454496978365 31.9276888628645  11.4472554263546 31.9276888628645  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 6;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "ControlledReactor";
+					- _name = "r_RecycleTempBalance(double*)";
+					- _id = GUID 17310369-8168-411f-9b7b-ee8a495956cf;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "ControlledReactor";
+					- _name = "r_HeaterTempBalance(double*)";
+					- _id = GUID b22b61c9-0512-4720-b7de-850b1f6b7d6d;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "ControlledReactor";
+					- _name = "r_FlowBalance(double * )";
+					- _id = GUID 3073aa2a-bffb-479e-82ef-7ae7acdfc796;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "ControlledReactor";
+					- _name = "r_ControllerTempBalance(double*)";
+					- _id = GUID 64bde6b1-1eb0-4654-b2d6-31fbf1e64a09;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "ControlledReactor";
+					- _name = "init()";
+					- _id = GUID 26815394-4bff-4180-aa65-8855b1c39cd7;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "ControlledReactor";
+					- _name = "clean()";
+					- _id = GUID 1c83a917-1f95-415e-bd89-9c88f746c892;
+				}
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		{ CGIInheritance 
+			- _id = GUID b5cdfd5f-e241-49e2-8098-2d8653be7c1b;
+			- m_type = 103;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IGeneralization";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "Controller";
+				- _name = "OnModel_Controller";
+				- _id = GUID 0142ee82-5b93-410c-859e-585f0196231a;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID c33ba670-c1fa-42ad-8e6b-529b15be351b;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 68a2499c-1447-4681-9daa-ee2e7f4f2f8e;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 2 57.3078246336123 24.3358268193606  57.3078246336123 26.3527507986513  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = 0 1 ;
+			- m_anglePoint2 = 0 1 ;
+			- m_line_style = 0;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID c33ba670-c1fa-42ad-8e6b-529b15be351b;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "";
+				- _name = "Controller";
+				- _id = GUID 97e589ea-eedf-415d-bd66-88596156ad29;
+			}
+			- m_pParent = GUID 65b0676e-fea9-4db7-a05a-d2325746d95e;
+			- m_name = { CGIText 
+				- m_str = "ProcessModels::Controller";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 52.5331621939679 23.7358268193606  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 45.049799024603 24.3358268193606  60.0165253633328 24.3358268193606  60.0165253633328 13.9318735581527  45.049799024603 13.9318735581527  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 7;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Controller";
+					- _name = "S_integrator";
+					- _id = GUID f67b09fe-8048-46af-a128-ad22f3fb4f61;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Controller";
+					- _name = "T_data_in";
+					- _id = GUID 50eb38a2-88d2-48f8-b11a-ac6c0b5b5d72;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Controller";
+					- _name = "Setpoint";
+					- _id = GUID 8f9d78b0-5c91-4952-b42a-018a76454914;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Controller";
+					- _name = "output";
+					- _id = GUID 8cbf1bb1-3aed-4688-9ebe-480344c39fb4;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Controller";
+					- _name = "Kp";
+					- _id = GUID 70bfddae-74d2-4bda-9418-b527f58c670f;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Controller";
+					- _name = "Ki";
+					- _id = GUID ced4f9f2-927c-42be-a321-f6b46c416365;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Controller";
+					- _name = "K";
+					- _id = GUID 3d8a72f7-2611-464b-84bb-59c08f8a00cf;
+				}
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Controller";
+					- _name = "get_Output(double)";
+					- _id = GUID acd6b212-11d1-4e32-8945-a6b03c75da69;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Controller";
+					- _name = "r_ErrorIntegrator(double*)";
+					- _id = GUID a70e5800-40d1-4644-9c35-9b5deb4555c0;
+				}
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID c4871b4e-f871-4138-870c-65cc2e8ae7b1;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "";
+				- _name = "Heater";
+				- _id = GUID 7518a43b-6b77-4a70-a391-e90e11ee72cf;
+			}
+			- m_pParent = GUID 65b0676e-fea9-4db7-a05a-d2325746d95e;
+			- m_name = { CGIText 
+				- m_str = "ProcessModels::Heater";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 25.9136567152979 23.0251872122766  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 15.8079308139123 23.6251872122766  36.0193826166835 23.6251872122766  36.0193826166835 8.39558147597524  15.8079308139123 8.39558147597524  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 7;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Heater";
+					- _name = "T_heater";
+					- _id = GUID 7e2ee308-bd87-41a1-9a4c-f58e464b10a3;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Heater";
+					- _name = "T_in";
+					- _id = GUID 30b8e36a-74c2-4e11-9ec4-5d9ab58cdc60;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Heater";
+					- _name = "Q_in";
+					- _id = GUID c4468f33-4d5f-4799-9772-4a54025fa637;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Heater";
+					- _name = "Sh";
+					- _id = GUID 0b929dd7-62e5-4b58-9a58-aecb0e29bc48;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Heater";
+					- _name = "tau";
+					- _id = GUID 5e8b62c7-9469-4290-a9a7-f235fe126df2;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Heater";
+					- _name = "Gain";
+					- _id = GUID 7665b3ff-c2b3-401d-b48e-1a71e307ec58;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Heater";
+					- _name = "Recycle_Ratio";
+					- _id = GUID dc0f69c6-c0fc-4ec7-9edf-31022b9fae39;
+				}
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Heater";
+					- _name = "r_HeaterEnergyBalance(double*)";
+					- _id = GUID 68877fe3-356c-4987-9144-f16bb0d85fde;
+				}
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		{ CGIInheritance 
+			- _id = GUID cd74559c-5bc3-4d43-b88e-068469c9ec83;
+			- m_type = 103;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IGeneralization";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "ControlledReactor";
+				- _name = "OnModel_ControlledReactor";
+				- _id = GUID 79872619-d896-4598-adbb-5b82ba8a9413;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID af14d65c-c556-4ab2-9632-639365f7644f;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID fb75022f-1991-43ee-9319-39b021ee10d5;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 2 15.9265687863109 46.5560908320427  15.9265687863109 48.1245243466571  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = 0 1 ;
+			- m_anglePoint2 = 0 1 ;
+			- m_line_style = 2;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID d24a9481-4497-4c31-9813-0d29d82a5613;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "";
+				- _name = "Reactor";
+				- _id = GUID 562071b8-084c-4c41-85f2-55bc136175d3;
+			}
+			- m_pParent = GUID 65b0676e-fea9-4db7-a05a-d2325746d95e;
+			- m_name = { CGIText 
+				- m_str = "ProcessModels::Reactor";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 -1.31765492629452 23.3680484947764  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -11.6273329704181 23.9680484947764  8.99202311782907 23.9680484947764  8.99202311782907 -0.863629849633624  -11.6273329704181 -0.863629849633624  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 18;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "T_reactor";
+					- _id = GUID 0fc6ec28-d99d-44da-ae95-a4c966d809e5;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "C_heptane";
+					- _id = GUID 75503902-35a3-41ef-b174-a9ecbd339252;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "C_toluene";
+					- _id = GUID af6550d3-5894-462a-a457-610feeb1e414;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "C_hydrogen";
+					- _id = GUID 8e349772-0322-41c5-80ea-a9f2c7078b88;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "Delta_H";
+					- _id = GUID 14c84d8c-7615-45cc-9744-579e694a602f;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "K";
+					- _id = GUID fc05d48c-5285-4bce-a0d3-e91bf6057208;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "Q_heptane_in";
+					- _id = GUID 2793b267-c915-482e-8e3d-a8312dc77238;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "T_heptane_in";
+					- _id = GUID 71fe7d33-a40a-46ff-bbc9-d692b321a845;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "C_heptane_in";
+					- _id = GUID ee6c002f-795c-4e80-9103-900dcb59395c;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "T_recycle_in";
+					- _id = GUID a0674687-d88d-4ef4-8b7a-e7a117c5ad5e;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "K0";
+					- _id = GUID 16b89d42-2ed8-4c8d-8bec-a523c8804cd8;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "E0";
+					- _id = GUID ffe8c482-687a-4d96-a120-2c7ce7e66d3a;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "R";
+					- _id = GUID f8cce574-a1e5-4312-bd29-236a8e30bf84;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "Cp";
+					- _id = GUID 24f7e011-c96c-4152-9571-36cb6a4df296;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "rho";
+					- _id = GUID b34ae7c4-01f0-422a-b440-44e5d55d81a3;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "a";
+					- _id = GUID 88184cd8-1288-43b4-bcc1-409c84c71977;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "h";
+					- _id = GUID b9a8de5a-679a-48a9-8d70-db7fdf9fbd3b;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "V";
+					- _id = GUID 92bb1b12-6afa-483b-842c-c1613ca1e0d7;
+				}
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 6;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "get_K()";
+					- _id = GUID 261d7ea3-f382-497e-97b5-4fa5816406e8;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "get_Delta_H()";
+					- _id = GUID f2637580-db92-489b-bda8-2530e04ce3de;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "r_ReactorEnergyBalance(double*)";
+					- _id = GUID bf8a3ac6-c3bf-464d-8f51-4abff8106d8a;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "r_ReactorMassBalance0(double*)";
+					- _id = GUID 4be9fc1f-813b-485e-97fe-ef6c32463764;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "r_ReactorMassBalance1(double*)";
+					- _id = GUID a27de2b6-120d-4714-811a-6aaa65aa69a7;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "ProcessModels.sbs";
+					- _subsystem = "ProcessModels";
+					- _class = "Reactor";
+					- _name = "r_ReactorMassBalance2(double*)";
+					- _id = GUID 059aa049-ac1e-4a64-ba84-d8a00b733f9f;
+				}
+			}
+			- m_dSeparatorPosition = 0.315473692497733;
+			- m_pInstance = NULL;
+		}
+		{ CGILink 
+			- _id = GUID f902a9c8-9008-4f6b-8050-862cbb2e6fa5;
+			- m_type = 92;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "ControlledReactor";
+				- _name = "itsHeater";
+				- _id = GUID fe7b3dca-e949-4286-9f00-6c45863811b0;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID af14d65c-c556-4ab2-9632-639365f7644f;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID c4871b4e-f871-4138-870c-65cc2e8ae7b1;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 2 24.114596646778 31.9276888628645  24.114596646778 23.6251872122766  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = 0 -1 ;
+			- m_anglePoint2 = 0 -1 ;
+			- m_line_style = 2;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "";
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 1;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 1;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "1";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 24.1786620605054 24.3000326725719  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = type_122;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID fb75022f-1991-43ee-9319-39b021ee10d5;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "";
+				- _name = "OnModel_ControlledReactor";
+				- _id = GUID 805eafd6-d589-4548-a021-332d729e5c84;
+			}
+			- m_pParent = GUID 65b0676e-fea9-4db7-a05a-d2325746d95e;
+			- m_name = { CGIText 
+				- m_str = "ProcessModels::OnModel_ControlledReactor";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 21.6819344407595 49.9245340483211  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 13.9993537393944 50.5245340483211  29.3645151421245 50.5245340483211  29.3645151421245 48.1245243466571  13.9993537393944 48.1245243466571  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		{ CGILink 
+			- _id = GUID 01d6f836-2dad-448d-94ca-6f744f6ae47d;
+			- m_type = 92;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "ControlledReactor";
+				- _name = "itsReactor";
+				- _id = GUID 07197de6-95c0-4bf6-b6a7-5bbb5c1f4fd8;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID af14d65c-c556-4ab2-9632-639365f7644f;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID d24a9481-4497-4c31-9813-0d29d82a5613;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 3 11.4472554263546 34.4961708489636  2.28240486595612 34.4961708489636  2.28240486595612 23.9680484947764  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = 0 -1 ;
+			- m_anglePoint2 = -1 0 ;
+			- m_line_style = 2;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "";
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 1;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 1;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "1";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 2.34647027968355 24.6428953510629  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = type_122;
+		}
+		{ CGIInheritance 
+			- _id = GUID 11ca6f54-50b7-4703-9cc8-840fd8caf178;
+			- m_type = 103;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IGeneralization";
+				- _filename = "ProcessModels.sbs";
+				- _subsystem = "ProcessModels";
+				- _class = "Reactor";
+				- _name = "OnModel_Reactor";
+				- _id = GUID 5ef1ba3a-c454-432a-9807-aeb68ed6e086;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID d24a9481-4497-4c31-9813-0d29d82a5613;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 7ab9fa29-ce73-46c2-b60d-0057508dd4a9;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 2 -8.69324097589275 23.9680484947764  -8.69324097589275 26.2670598170466  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = 0 1 ;
+			- m_anglePoint2 = 0 1 ;
+			- m_line_style = 0;
+		}
+		
+		- m_access = 'Z';
+		- m_modified = 'N';
+		- m_fileVersion = "";
+		- m_nModifyDate = 0;
+		- m_nCreateDate = 0;
+		- m_creator = "";
+		- m_bScaleWithZoom = 1;
+		- m_arrowStyle = 'S';
+		- m_pRoot = GUID 65b0676e-fea9-4db7-a05a-d2325746d95e;
+		- m_currentLeftTop = -12.8665384597053 -1.63445230810295 ;
+		- m_currentRightBottom = 63.2382885632817 51.2953565067904 ;
+	}
+	- _defaultSubsystem = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Default.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Default";
+		- _id = GUID 23de58ff-7f57-4eb1-9dd5-0308fb505795;
+	}
+}
+

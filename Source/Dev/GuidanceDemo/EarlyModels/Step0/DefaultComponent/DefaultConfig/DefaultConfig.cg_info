@@ -1,0 +1,54 @@
+I-Logix-RPY-Archive version 4.0.4 *
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 10;
+	- value = "DefaultComponent\\DefaultConfig\\AcmeGuidance.cpp" 12.8.2002::15:42:30
+	"DefaultComponent\\DefaultConfig\\AcmeGuidance.h" 12.8.2002::15:42:30
+	"DefaultComponent\\DefaultConfig\\Default.cpp" 12.20.2002::10:44:50
+	"DefaultComponent\\DefaultConfig\\Default.h" 12.20.2002::10:44:50
+	"DefaultComponent\\DefaultConfig\\Guidance.cpp" 12.20.2002::12:43:50
+	"DefaultComponent\\DefaultConfig\\Guidance.h" 12.20.2002::12:43:50
+	"DefaultComponent\\DefaultConfig\\myAcmeGuidance.cpp" 12.8.2002::16:33:36
+	"DefaultComponent\\DefaultConfig\\myAcmeGuidance.h" 12.8.2002::16:33:36
+	"DefaultComponent\\DefaultConfig\\myFactory.cpp" 12.19.2002::17:29:30
+	"DefaultComponent\\DefaultConfig\\myFactory.h" 12.19.2002::17:29:30
+	
+}
+- size = 4;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "Guidance";
+	- _id = GUID 4582fbf7-0ad0-11d7-b329-00c04f680d9d;
+}
+- genTime = 12.20.2002::12:43:49;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\DefaultConfig";
+	- _id = GUID 4582fb74-0ad0-11d7-b329-00c04f680d9d;
+}
+- genTime = 12.20.2002::12:43:49;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "Default.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Default";
+	- _id = GUID 4582fb6c-0ad0-11d7-b329-00c04f680d9d;
+}
+- genTime = 12.20.2002::12:43:49;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "myFactory";
+	- _id = GUID 16514675-0af4-11d7-b329-00c04f680d9d;
+}
+- genTime = 12.19.2002::17:29:29;
+

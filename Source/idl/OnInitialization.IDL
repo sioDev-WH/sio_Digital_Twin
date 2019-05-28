@@ -1,0 +1,547 @@
+// Generated .IDL file (by the OLE/COM Object Viewer)
+// 
+// typelib filename: OnInitialization.ocx
+
+[
+  uuid(0AD9F58C-D5A4-489E-8C61-92DB65AB8248),
+  version(1.0),
+  helpstring("OnInitialization")
+]
+library OnInitialization
+{
+    // TLib :     // TLib : ISDaeCOSolver 1.0 Type Library : {77CBD757-8006-11D4-98A7-00C04F6801A9}
+    importlib(".\..\bin\ISDaeCOSolver.dll");
+    // TLib : OLE Automation : {00020430-0000-0000-C000-000000000046}
+    importlib("STDOLE2.TLB");
+    // TLib : Visual Basic For Applications : {000204EF-0000-0000-C000-000000000046}
+    importlib("msvbvm60.dll");
+
+    // Forward declare all types defined in this typelib
+    interface _ctlInitialization;
+    interface _clsVar;
+    interface _clsCVar;
+    interface _clsVarManager;
+    interface _ctlEquationEditor;
+    interface _ctlMessageWindow;
+    interface _OnScriptParser;
+    dispinterface __ctlInitialization;
+    dispinterface __ctlEquationEditor;
+    dispinterface __ctlMessageWindow;
+    dispinterface __OnScriptParser;
+
+    [
+      odl,
+      uuid(ED7DF5FA-20BE-45C3-B101-6A4B53C2B2FE),
+      version(1.0),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _ctlInitialization : IDispatch {
+        [id(0x60030000)]
+        HRESULT init(
+                        [in, out] _OnScriptParser** sp, 
+                        [in, out] _clsVarManager** vm);
+        [id(0x60030001)]
+        HRESULT Destroy();
+        [id(0x60030003)]
+        HRESULT OnApply();
+        [id(0x60030011)]
+        HRESULT IsMsgWindowVisible([out, retval] VARIANT_BOOL* );
+        [id(0x60030012)]
+        HRESULT ShowMessageWindow();
+        [id(0x60030013)]
+        HRESULT SizeStatusBar([in, out] long* Y);
+    };
+
+    [
+      uuid(D16FD96C-E4D6-46B6-AC9E-BD2CE0BE9F2E),
+      version(1.0),
+      noncreatable,
+      licensed,
+      control
+    ]
+    coclass ctlInitialization {
+        [default] interface _ctlInitialization;
+        [default, source] dispinterface __ctlInitialization;
+    };
+
+    [
+      odl,
+      uuid(4C9143EA-7080-4BC1-84F6-50935435E0A7),
+      version(1.0),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _clsVar : IDispatch {
+        [id(0x40030000), propget]
+        HRESULT longName([out, retval] BSTR* longName);
+        [id(0x40030000), propput]
+        HRESULT longName([in] BSTR longName);
+        [id(0x40030001), propget]
+        HRESULT Name([out, retval] BSTR* Name);
+        [id(0x40030001), propput]
+        HRESULT Name([in] BSTR Name);
+        [id(0x40030002), propget]
+        HRESULT Force([out, retval] VARIANT_BOOL* Force);
+        [id(0x40030002), propput]
+        HRESULT Force([in] VARIANT_BOOL Force);
+        [id(0x40030003), propget]
+        HRESULT DerForce([out, retval] VARIANT_BOOL* DerForce);
+        [id(0x40030003), propput]
+        HRESULT DerForce([in] VARIANT_BOOL DerForce);
+        [id(0x40030004), propget]
+        HRESULT ActiveIdx([out, retval] long* ActiveIdx);
+        [id(0x40030004), propput]
+        HRESULT ActiveIdx([in] long ActiveIdx);
+        [id(0x40030005), propget]
+        HRESULT GlobalIdx([out, retval] long* GlobalIdx);
+        [id(0x40030005), propput]
+        HRESULT GlobalIdx([in] long GlobalIdx);
+        [id(0x40030006), propget]
+        HRESULT GenEv([out, retval] VARIANT_BOOL* GenEv);
+        [id(0x40030006), propput]
+        HRESULT GenEv([in] VARIANT_BOOL GenEv);
+        [id(0x40030007), propget]
+        HRESULT Root([out, retval] VARIANT_BOOL* Root);
+        [id(0x40030007), propput]
+        HRESULT Root([in] VARIANT_BOOL Root);
+        [id(0x40030008), propget]
+        HRESULT m_vm([out, retval] _clsVarManager** m_vm);
+        [id(0x40030008), propputref]
+        HRESULT m_vm([in] _clsVarManager* m_vm);
+        [id(0x60030001)]
+        HRESULT init(
+                        [in, out] BSTR* itsName, 
+                        [in, out] BSTR* itsLongName, 
+                        [in, out] VARIANT_BOOL* IsRoot, 
+                        [in, out] long* ActiveId, 
+                        [in, out] long* GlobalId, 
+                        [in, out] double* v, 
+                        [in, out] double* dv, 
+                        [in, out] _clsVarManager** vm);
+        [id(00000000), propget]
+        HRESULT Value([out, retval] double* );
+        [id(00000000), propput]
+        HRESULT Value([in, out] double* );
+        [id(0x68030000), propget]
+        HRESULT der(
+                        [in, out, optional, defaultvalue(1)] long* derIdx, 
+                        [out, retval] double* );
+        [id(0x68030000), propput]
+        HRESULT der(
+                        [in, out, optional, defaultvalue(1)] long* derIdx, 
+                        [in, out] double* );
+        [id(0x60030003)]
+        HRESULT Destroy();
+    };
+
+    [
+      uuid(0897D1F1-6FC5-4649-9854-AF148ED60049),
+      version(1.0),
+      noncreatable
+    ]
+    coclass clsVar {
+        [default] interface _clsVar;
+    };
+
+    [
+      odl,
+      uuid(53163479-35EC-4972-B481-FAA0F53BCC89),
+      version(1.0),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _clsCVar : IDispatch {
+        [id(0x40030000), propget]
+        HRESULT Name([out, retval] BSTR* Name);
+        [id(0x40030000), propput]
+        HRESULT Name([in] BSTR Name);
+        [id(0x40030001), propget]
+        HRESULT longName([out, retval] BSTR* longName);
+        [id(0x40030001), propput]
+        HRESULT longName([in] BSTR longName);
+        [id(0x40030002), propget]
+        HRESULT Root([out, retval] VARIANT_BOOL* Root);
+        [id(0x40030002), propput]
+        HRESULT Root([in] VARIANT_BOOL Root);
+        [id(0x40030003), propget]
+        HRESULT m_vm([out, retval] _clsVarManager** m_vm);
+        [id(0x40030003), propputref]
+        HRESULT m_vm([in] _clsVarManager* m_vm);
+        [id(0x60030001)]
+        HRESULT init(
+                        [in, out] BSTR* itsName, 
+                        [in, out] BSTR* itsLongName, 
+                        [in, out] VARIANT_BOOL* IsRoot, 
+                        [in, out] _clsVarManager** vm);
+        [id(0x60030003)]
+        HRESULT Add(
+                        [in, out] BSTR* itemKey, 
+                        [in, out] IDispatch** newItem);
+        [id(0x60030004)]
+        HRESULT removeAll();
+        [id(0x60030005)]
+        HRESULT remove([in, out] VARIANT* itemKey);
+        [id(00000000), propget]
+        HRESULT Item(
+                        [in, out] VARIANT* itemKey, 
+                        [out, retval] IDispatch** );
+        [id(0x68030000), propget]
+        HRESULT Count([out, retval] long* );
+        [id(0x60030006)]
+        HRESULT Destroy();
+    };
+
+    [
+      uuid(47A4423A-34A8-4DE5-AB74-3948B3F7AA2A),
+      version(1.0),
+      noncreatable
+    ]
+    coclass clsCVar {
+        [default] interface _clsCVar;
+    };
+
+    [
+      odl,
+      uuid(DECA34C4-1F6B-4DF0-8F19-3533DC83B0DB),
+      version(1.0),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _clsVarManager : IDispatch {
+        [id(0x40030000), propget]
+        HRESULT vars([out, retval] _Collection** vars);
+        [id(0x40030000), propputref]
+        HRESULT vars([in] _Collection* vars);
+        [id(0x40030001), propget]
+        HRESULT CVars([out, retval] _Collection** CVars);
+        [id(0x40030001), propputref]
+        HRESULT CVars([in] _Collection* CVars);
+        [id(0x40030002), propget]
+        HRESULT EqnV([out, retval] _Collection** EqnV);
+        [id(0x40030002), propputref]
+        HRESULT EqnV([in] _Collection* EqnV);
+        [id(0x40030003), propget]
+        HRESULT EqnDV1([out, retval] _Collection** EqnDV1);
+        [id(0x40030003), propputref]
+        HRESULT EqnDV1([in] _Collection* EqnDV1);
+        [id(0x40030004), propget]
+        HRESULT EqnDV2([out, retval] _Collection** EqnDV2);
+        [id(0x40030004), propputref]
+        HRESULT EqnDV2([in] _Collection* EqnDV2);
+        [id(0x40030005), propget]
+        HRESULT EqnDV3([out, retval] _Collection** EqnDV3);
+        [id(0x40030005), propputref]
+        HRESULT EqnDV3([in] _Collection* EqnDV3);
+        [id(0x60030001)]
+        HRESULT Destroy();
+        [id(0x60030002)]
+        HRESULT EnableEvents();
+        [id(0x60030003)]
+        HRESULT DisableEvents();
+        [id(0x60030004)]
+        HRESULT init(
+                        [in, out] long* nVars, 
+                        [in, out] SAFEARRAY(long)* VarOrder, 
+                        [in, out] SAFEARRAY(BSTR)* VarNames, 
+                        [in, out] SAFEARRAY(double)* Vals, 
+                        [in, out] SAFEARRAY(double)* DerVals);
+        [id(0x60030005)]
+        HRESULT InitStruct();
+        [id(0x60030006)]
+        HRESULT ReportStruct(
+                        [in, out] long* der, 
+                        [in, out] _clsVar** var);
+    };
+
+    [
+      uuid(F469F156-6AC1-4063-A534-E054BF7B8A86),
+      version(1.0),
+      noncreatable
+    ]
+    coclass clsVarManager {
+        [default] interface _clsVarManager;
+    };
+
+    [
+      odl,
+      uuid(4ACDF901-8C5E-4F8B-8FFD-AFDF5509C45D),
+      version(1.0),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _ctlEquationEditor : IDispatch {
+        [id(0x40030005), propget]
+        HRESULT GridIndex([out, retval] long* GridIndex);
+        [id(0x40030005), propput]
+        HRESULT GridIndex([in] long GridIndex);
+        [id(0x40030006), propget]
+        HRESULT EqnIndex([out, retval] long* EqnIndex);
+        [id(0x40030006), propput]
+        HRESULT EqnIndex([in] long EqnIndex);
+        [id(0x40030007), propget]
+        HRESULT eqnName([out, retval] BSTR* eqnName);
+        [id(0x40030007), propput]
+        HRESULT eqnName([in] BSTR eqnName);
+        [id(0x60030001)]
+        HRESULT init(
+                        [in, out] _OnScriptParser** sp, 
+                        [in, out] _clsVarManager** vm, 
+                        [in, out] _ctlMessageWindow** st);
+        [id(0x60030002)]
+        HRESULT Destroy();
+        [id(0x68030000), propput]
+        HRESULT EqnBody([in, out] BSTR* );
+        [id(0x68030000), propget]
+        HRESULT EqnBody([out, retval] BSTR* );
+        [id(0x6003000f)]
+        HRESULT Fmt(
+                        [in, out] BSTR* VIn, 
+                        [out, retval] BSTR* );
+    };
+
+    [
+      uuid(F16D8DA2-A244-4F7A-9E2C-ABF5C1AB126A),
+      version(1.0),
+      noncreatable,
+      control
+    ]
+    coclass ctlEquationEditor {
+        [default] interface _ctlEquationEditor;
+        [default, source] dispinterface __ctlEquationEditor;
+    };
+
+    [
+      odl,
+      uuid(C9A0A35F-4543-433B-9FD2-EE99D985AEA3),
+      version(1.0),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _ctlMessageWindow : IDispatch {
+        [id(0x60030001)]
+        HRESULT Destroy();
+        [id(0x60030002)]
+        HRESULT LogMessage([in, out] BSTR* strMsg);
+        [id(0x6003000c)]
+        HRESULT ClearMessageWindow();
+        [id(0x6003000d)]
+        HRESULT MaximizeMessageWindow(
+                        [in, out] short* ucHeight, 
+                        [in, out] short* ucWidth);
+        [id(0x68030000), propputref]
+        HRESULT ActiveForm([in, out] IDispatch** rhs);
+    };
+
+    [
+      uuid(FDC0FDCE-FD09-42D9-A667-0BE7A75591D0),
+      version(1.0),
+      noncreatable,
+      control
+    ]
+    coclass ctlMessageWindow {
+        [default] interface _ctlMessageWindow;
+        [default, source] dispinterface __ctlMessageWindow;
+    };
+
+    [
+      odl,
+      uuid(388305A9-A31C-4D2E-BAC8-52D6AF9F9D26),
+      version(1.0),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _OnScriptParser : IDispatch {
+        [id(0x6003000c)]
+        HRESULT SetModelExec([in, out] IOnModelExec** pModelExec);
+        [id(0x68030009), propget]
+        HRESULT nVars([out, retval] long* );
+        [id(0x68030008), propget]
+        HRESULT nEqns([out, retval] long* );
+        [id(0x68030007), propget]
+        HRESULT nModelVars([out, retval] long* );
+        [id(0x68030006), propget]
+        HRESULT nModelEqns([out, retval] long* );
+        [id(0x68030005), propget]
+        HRESULT nActiveEqns([out, retval] long* );
+        [id(0x68030004), propget]
+        HRESULT nActiveVars([out, retval] long* );
+        [id(0x68030003), propget]
+        HRESULT VarOrder(
+                        [in, out] long* iActiveVar, 
+                        [out, retval] long* );
+        [id(0x68030002), propget]
+        HRESULT EqnOrder(
+                        [in, out] long* iActiveEqn, 
+                        [out, retval] long* );
+        [id(0x68030001), propget]
+        HRESULT itVarOrder(
+                        [in, out] long* iVar, 
+                        [out, retval] long* );
+        [id(0x68030000), propget]
+        HRESULT itEqnOrder(
+                        [in, out] long* iEqn, 
+                        [out, retval] long* );
+        [id(0x6003000d)]
+        HRESULT ShowDialog();
+        [id(0x6003000e)]
+        HRESULT SetScripts(
+                        [in, out] long* nScripts, 
+                        [in, out] SAFEARRAY(BSTR)* AssignedVars, 
+                        [in, out] SAFEARRAY(BSTR)* ScriptNames, 
+                        [in, out] SAFEARRAY(BSTR)* ScriptVars, 
+                        [in, out] SAFEARRAY(double)* ScriptResiduals, 
+                        [in, out] SAFEARRAY(BSTR)* ScriptBodies, 
+                        [in, out] SAFEARRAY(long)* ScriptVarCount);
+        [id(0x6003000f)]
+        HRESULT SetTrimVars(
+                        [in, out] long* nTrimVars, 
+                        [in, out] SAFEARRAY(long)* TrimVars, 
+                        [in, out] SAFEARRAY(double)* TrimVarVals);
+        [id(0x60030010)]
+        HRESULT GetScripts(
+                        [in, out] long* nScripts, 
+                        [in, out] SAFEARRAY(BSTR)* AssignedVars, 
+                        [in, out] SAFEARRAY(BSTR)* ScriptNames, 
+                        [in, out] SAFEARRAY(BSTR)* ScriptVars, 
+                        [in, out] SAFEARRAY(double)* ScriptResiduals, 
+                        [in, out] SAFEARRAY(BSTR)* ScriptBodies, 
+                        [in, out] SAFEARRAY(long)* ScriptVarCount);
+        [id(0x60030011)]
+        HRESULT GetTrimVars(
+                        [in, out] long* nTrimVars, 
+                        [in, out] SAFEARRAY(long)* TrimVars, 
+                        [in, out] SAFEARRAY(double)* TrimVarVals);
+        [id(0x60030012)]
+        HRESULT eqnName(
+                        [in, out] long* iEqn, 
+                        [out, retval] BSTR* );
+        [id(0x60030013)]
+        HRESULT VarName(
+                        [in, out] long* iVar, 
+                        [out, retval] BSTR* );
+        [id(0x60030014)]
+        HRESULT initModelVar(
+                        [in, out] long* iActiveVar, 
+                        [in, out] VARIANT_BOOL* bActive, 
+                        [in, out] long* aIndex, 
+                        [in, out] BSTR* aAssignedEqn, 
+                        [in, out] BSTR* aName, 
+                        [in, out] long* aDER, 
+                        [in, out] double* aValue);
+        [id(0x60030015)]
+        HRESULT initModelEqn(
+                        [in, out] long* iActiveEqn, 
+                        [in, out] VARIANT_BOOL* bActive, 
+                        [in, out] long* aIndex, 
+                        [in, out] BSTR* aAssignedVar, 
+                        [in, out] BSTR* aName, 
+                        [in, out] BSTR* aVars, 
+                        [in, out] double* aResidual);
+        [id(0x60030016)]
+        HRESULT Test(
+                        [in, out] BSTR* sName, 
+                        [in, out] BSTR* sScript, 
+                        [in, out] BSTR* sFinalScript, 
+                        [in, out] VARIANT_BOOL* bErr, 
+                        [in, out] double* retVal, 
+                        [in, out] long* errLine, 
+                        [in, out] long* errCol, 
+                        [in, out] BSTR* errDesc, 
+                        [in, out] BSTR* errText);
+        [id(0x60030017)]
+        HRESULT Eval(
+                        [in, out] BSTR* eqnName, 
+                        [in, out] BSTR* script, 
+                        [in, out] BSTR* finalScript, 
+                        [out, retval] double* );
+        [id(0x60030020)]
+        HRESULT GetEqnStruct(
+                        [in, out] BSTR* script, 
+                        [in, out] _Collection** v, 
+                        [in, out] _Collection** dv1, 
+                        [in, out] _Collection** dv2, 
+                        [in, out] _Collection** dv3, 
+                        [in, out] double* result);
+        [id(0x60030021)]
+        HRESULT Fmt(
+                        [in, out] BSTR* VIn, 
+                        [out, retval] BSTR* );
+    };
+
+    [
+      uuid(FBE4C91A-6686-4133-BB27-9956857B6C99),
+      version(1.0)
+    ]
+    coclass OnScriptParser {
+        [default] interface _OnScriptParser;
+        [default, source] dispinterface __OnScriptParser;
+    };
+
+    [
+      uuid(64970E55-6C10-4F33-90E9-62EFC31E3C07),
+      version(1.0),
+      hidden,
+      nonextensible
+    ]
+    dispinterface __ctlInitialization {
+        properties:
+        methods:
+    };
+
+    [
+      uuid(0ECAEA74-52A4-4A81-9557-601ED4112FFB),
+      version(1.0),
+      hidden,
+      nonextensible
+    ]
+    dispinterface __ctlEquationEditor {
+        properties:
+        methods:
+            [id(0x00000001)]
+            void OnApply(
+                            [in, out] long* GridIndex, 
+                            [in, out] long* EqnIndex, 
+                            [in, out] BSTR* sScript);
+            [id(0x00000002)]
+            void OnCancel();
+    };
+
+    [
+      uuid(7785B142-E38D-4A67-9EDD-5B25439F09DE),
+      version(1.0),
+      hidden,
+      nonextensible
+    ]
+    dispinterface __ctlMessageWindow {
+        properties:
+        methods:
+    };
+
+    [
+      uuid(F2D89834-D2C8-47AA-893F-C19C01AFD00B),
+      version(1.0),
+      hidden,
+      nonextensible
+    ]
+    dispinterface __OnScriptParser {
+        properties:
+        methods:
+            [id(0x00000001)]
+            void OnError([in, out] BSTR* Description);
+    };
+};

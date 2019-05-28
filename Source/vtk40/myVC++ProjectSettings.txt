@@ -1,0 +1,6 @@
+
+E:\Program Files\vtk40\include\vtk\
+
+vtkRendering.lib vtkGraphics.lib vtkImaging.lib vtkFiltering.lib vtkCommon.lib opengl32.lib
+
+E:\Program Files\vtk40\link\vtk\

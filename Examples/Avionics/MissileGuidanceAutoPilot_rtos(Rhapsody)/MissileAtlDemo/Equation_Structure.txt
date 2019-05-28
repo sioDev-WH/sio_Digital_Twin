@@ -1,0 +1,321 @@
+
+
+
+Equation List
+0	0	(null)
+1	1	(null)
+2	2	(null)
+3	3	(null)
+4	4	(null)
+5	5	(null)
+6	6	(null)
+7	7	(null)
+8	8	(null)
+9	9	(null)
+10	10	(null)
+11	11	(null)
+12	12	(null)
+13	13	(null)
+14	14	(null)
+15	15	(null)
+16	16	(null)
+17	17	(null)
+18	18	(null)
+19	19	(null)
+20	20	(null)
+21	21	(null)
+22	22	(null)
+23	23	(null)
+24	24	(null)
+25	25	(null)
+26	26	(null)
+27	27	(null)
+28	28	(null)
+29	29	(null)
+30	30	(null)
+31	31	(null)
+32	32	(null)
+33	33	(null)
+34	34	(null)
+35	35	(null)
+36	36	(null)
+37	37	(null)
+38	38	(null)
+39	39	(null)
+40	40	(null)
+41	41	(null)
+42	42	(null)
+43	43	(null)
+44	44	(null)
+45	45	(null)
+46	46	(null)
+47	47	(null)
+48	55	finDynamicsBlock.r_angle_aileron
+49	56	finDynamicsBlock.r_angle_rudder
+50	57	finDynamicsBlock.r_saturation_angle
+51	58	finDynamicsBlock.r_saturation_rate
+52	67	engineDynamicsBlock.r_Force[0]
+53	68	engineDynamicsBlock.r_Force[1]
+54	69	engineDynamicsBlock.r_Force[2]
+55	70	engineDynamicsBlock.r_Moments[0]
+56	71	engineDynamicsBlock.r_Moments[1]
+57	72	engineDynamicsBlock.r_Moments[2]
+58	73	bodyDynamicsBlock.r_velocity[0]
+59	74	bodyDynamicsBlock.r_velocity[1]
+60	75	bodyDynamicsBlock.r_velocity[2]
+61	76	bodyDynamicsBlock.r_position[0]
+62	77	bodyDynamicsBlock.r_position[1]
+63	78	bodyDynamicsBlock.r_position[2]
+64	79	bodyDynamicsBlock.r_rate[0]
+65	80	bodyDynamicsBlock.r_rate[1]
+66	81	bodyDynamicsBlock.r_rate[2]
+67	82	bodyDynamicsBlock.r_euler[0]
+68	83	bodyDynamicsBlock.r_euler[1]
+69	84	bodyDynamicsBlock.r_euler[2]
+70	85	atmosphereBlock.r_airDensity
+71	86	atmosphereBlock.r_speedOfSound
+72	87	aeroFrameBlock.r_Position
+73	88	aeroFrameBlock.r_Force[0]
+74	89	aeroFrameBlock.r_Force[1]
+75	90	aeroFrameBlock.r_Force[2]
+76	91	aeroFrameBlock.r_Moments[0]
+77	92	aeroFrameBlock.r_Moments[1]
+78	93	aeroFrameBlock.r_Moments[2]
+79	94	aeroDynamicsBlock.r_AoA
+80	95	aeroDynamicsBlock.r_SSA
+81	96	aeroDynamicsBlock.r_V
+82	97	aeroDynamicsBlock.r_Mach
+83	98	aeroDynamicsBlock.r_C[0]
+84	99	aeroDynamicsBlock.r_C[1]
+85	100	aeroDynamicsBlock.r_C[2]
+86	101	aeroDynamicsBlock.r_Forces[0]
+87	102	aeroDynamicsBlock.r_Forces[1]
+88	103	aeroDynamicsBlock.r_Forces[2]
+89	104	aeroDynamicsBlock.r_Moments[0]
+90	105	aeroDynamicsBlock.r_Moments[1]
+91	106	aeroDynamicsBlock.r_Moments[2]
+
+
+Variable List
+0	0	finDynamicsBlock.rate
+1	3	finDynamicsBlock.&pFin.angle[0]
+2	4	finDynamicsBlock.&pFin.angle[1]
+3	5	finDynamicsBlock.&pFin.angle[2]
+4	6	engineDynamicsBlock.&p.force[0]
+5	7	engineDynamicsBlock.&p.force[1]
+6	8	engineDynamicsBlock.&p.force[2]
+7	9	engineDynamicsBlock.&p.moment[0]
+8	10	engineDynamicsBlock.&p.moment[1]
+9	11	engineDynamicsBlock.&p.moment[2]
+10	12	engineDynamicsBlock.&p.velocity[0]
+11	13	engineDynamicsBlock.&p.velocity[1]
+12	14	engineDynamicsBlock.&p.velocity[2]
+13	15	engineDynamicsBlock.&p.rate[0]
+14	16	engineDynamicsBlock.&p.rate[1]
+15	17	engineDynamicsBlock.&p.rate[2]
+16	18	engineDynamicsBlock.&p.position[0]
+17	19	engineDynamicsBlock.&p.position[1]
+18	20	engineDynamicsBlock.&p.position[2]
+19	21	engineDynamicsBlock.&p.angle[0]
+20	22	engineDynamicsBlock.&p.angle[1]
+21	23	engineDynamicsBlock.&p.angle[2]
+22	24	bodyDynamicsBlock.&p.force[0]
+23	25	bodyDynamicsBlock.&p.force[1]
+24	26	bodyDynamicsBlock.&p.force[2]
+25	27	bodyDynamicsBlock.&p.moment[0]
+26	28	bodyDynamicsBlock.&p.moment[1]
+27	29	bodyDynamicsBlock.&p.moment[2]
+28	30	bodyDynamicsBlock.&p.velocity[0]
+29	31	bodyDynamicsBlock.&p.velocity[1]
+30	32	bodyDynamicsBlock.&p.velocity[2]
+31	33	bodyDynamicsBlock.&p.rate[0]
+32	34	bodyDynamicsBlock.&p.rate[1]
+33	35	bodyDynamicsBlock.&p.rate[2]
+34	36	bodyDynamicsBlock.&p.position[0]
+35	37	bodyDynamicsBlock.&p.position[1]
+36	38	bodyDynamicsBlock.&p.position[2]
+37	39	bodyDynamicsBlock.&p.angle[0]
+38	40	bodyDynamicsBlock.&p.angle[1]
+39	41	bodyDynamicsBlock.&p.angle[2]
+40	42	atmosphereBlock.&pAtmo.airDensity[0]
+41	43	atmosphereBlock.&pAtmo.speedOfSound[0]
+42	44	atmosphereBlock.&ph.height[0]
+43	45	aeroFrameBlock.&p.force[0]
+44	46	aeroFrameBlock.&p.force[1]
+45	47	aeroFrameBlock.&p.force[2]
+46	48	aeroFrameBlock.&p.moment[0]
+47	49	aeroFrameBlock.&p.moment[1]
+48	50	aeroFrameBlock.&p.moment[2]
+49	51	aeroFrameBlock.&p.velocity[0]
+50	52	aeroFrameBlock.&p.velocity[1]
+51	53	aeroFrameBlock.&p.velocity[2]
+52	54	aeroFrameBlock.&p.rate[0]
+53	55	aeroFrameBlock.&p.rate[1]
+54	56	aeroFrameBlock.&p.rate[2]
+55	57	aeroFrameBlock.&p.position[0]
+56	58	aeroFrameBlock.&p.position[1]
+57	59	aeroFrameBlock.&p.position[2]
+58	60	aeroFrameBlock.&p.angle[0]
+59	61	aeroFrameBlock.&p.angle[1]
+60	62	aeroFrameBlock.&p.angle[2]
+61	63	aeroFrameBlock.&ph.height[0]
+62	64	aeroDynamicsBlock.Cx_alpha
+63	65	aeroDynamicsBlock.Cz_alpha
+64	66	aeroDynamicsBlock.Cm_alpha
+65	67	aeroDynamicsBlock.AoA
+66	68	aeroDynamicsBlock.SSA
+67	69	aeroDynamicsBlock.V
+68	70	aeroDynamicsBlock.Mach
+69	71	aeroDynamicsBlock.&p.force[0]
+70	72	aeroDynamicsBlock.&p.force[1]
+71	73	aeroDynamicsBlock.&p.force[2]
+72	74	aeroDynamicsBlock.&p.moment[0]
+73	75	aeroDynamicsBlock.&p.moment[1]
+74	76	aeroDynamicsBlock.&p.moment[2]
+75	77	aeroDynamicsBlock.&p.velocity[0]
+76	78	aeroDynamicsBlock.&p.velocity[1]
+77	79	aeroDynamicsBlock.&p.velocity[2]
+78	80	aeroDynamicsBlock.&p.rate[0]
+79	81	aeroDynamicsBlock.&p.rate[1]
+80	82	aeroDynamicsBlock.&p.rate[2]
+81	83	aeroDynamicsBlock.&p.position[0]
+82	84	aeroDynamicsBlock.&p.position[1]
+83	85	aeroDynamicsBlock.&p.position[2]
+84	86	aeroDynamicsBlock.&p.angle[0]
+85	87	aeroDynamicsBlock.&p.angle[1]
+86	88	aeroDynamicsBlock.&p.angle[2]
+87	89	aeroDynamicsBlock.&pAtmosphere.airDensity[0]
+88	90	aeroDynamicsBlock.&pAtmosphere.speedOfSound[0]
+89	91	aeroDynamicsBlock.&pFin.angle[0]
+90	92	aeroDynamicsBlock.&pFin.angle[1]
+91	93	aeroDynamicsBlock.&pFin.angle[2]
+92	0	DER(finDynamicsBlock.rate)
+93	3	DER(finDynamicsBlock.&pFin.angle[0])
+94	4	DER(finDynamicsBlock.&pFin.angle[1])
+95	5	DER(finDynamicsBlock.&pFin.angle[2])
+96	30	DER(bodyDynamicsBlock.&p.velocity[0])
+97	31	DER(bodyDynamicsBlock.&p.velocity[1])
+98	32	DER(bodyDynamicsBlock.&p.velocity[2])
+99	33	DER(bodyDynamicsBlock.&p.rate[0])
+100	34	DER(bodyDynamicsBlock.&p.rate[1])
+101	35	DER(bodyDynamicsBlock.&p.rate[2])
+102	36	DER(bodyDynamicsBlock.&p.position[0])
+103	37	DER(bodyDynamicsBlock.&p.position[1])
+104	38	DER(bodyDynamicsBlock.&p.position[2])
+105	39	DER(bodyDynamicsBlock.&p.angle[0])
+106	40	DER(bodyDynamicsBlock.&p.angle[1])
+107	41	DER(bodyDynamicsBlock.&p.angle[2])
+
+
+Jacobian Matrix
+0	0	(null)	45	aeroFrameBlock.&p.force[0]	24	bodyDynamicsBlock.&p.force[0]	71	aeroDynamicsBlock.&p.force[0]	6	engineDynamicsBlock.&p.force[0]
+1	1	(null)	46	aeroFrameBlock.&p.force[1]	25	bodyDynamicsBlock.&p.force[1]	72	aeroDynamicsBlock.&p.force[1]	7	engineDynamicsBlock.&p.force[1]
+2	2	(null)	47	aeroFrameBlock.&p.force[2]	26	bodyDynamicsBlock.&p.force[2]	73	aeroDynamicsBlock.&p.force[2]	8	engineDynamicsBlock.&p.force[2]
+3	3	(null)	48	aeroFrameBlock.&p.moment[0]	27	bodyDynamicsBlock.&p.moment[0]	74	aeroDynamicsBlock.&p.moment[0]	9	engineDynamicsBlock.&p.moment[0]
+4	4	(null)	49	aeroFrameBlock.&p.moment[1]	28	bodyDynamicsBlock.&p.moment[1]	75	aeroDynamicsBlock.&p.moment[1]	10	engineDynamicsBlock.&p.moment[1]
+5	5	(null)	50	aeroFrameBlock.&p.moment[2]	29	bodyDynamicsBlock.&p.moment[2]	76	aeroDynamicsBlock.&p.moment[2]	11	engineDynamicsBlock.&p.moment[2]
+6	6	(null)	51	aeroFrameBlock.&p.velocity[0]	30	bodyDynamicsBlock.&p.velocity[0]
+7	7	(null)	51	aeroFrameBlock.&p.velocity[0]	77	aeroDynamicsBlock.&p.velocity[0]
+8	8	(null)	51	aeroFrameBlock.&p.velocity[0]	12	engineDynamicsBlock.&p.velocity[0]
+9	9	(null)	52	aeroFrameBlock.&p.velocity[1]	31	bodyDynamicsBlock.&p.velocity[1]
+10	10	(null)	52	aeroFrameBlock.&p.velocity[1]	78	aeroDynamicsBlock.&p.velocity[1]
+11	11	(null)	52	aeroFrameBlock.&p.velocity[1]	13	engineDynamicsBlock.&p.velocity[1]
+12	12	(null)	53	aeroFrameBlock.&p.velocity[2]	32	bodyDynamicsBlock.&p.velocity[2]
+13	13	(null)	53	aeroFrameBlock.&p.velocity[2]	79	aeroDynamicsBlock.&p.velocity[2]
+14	14	(null)	53	aeroFrameBlock.&p.velocity[2]	14	engineDynamicsBlock.&p.velocity[2]
+15	15	(null)	54	aeroFrameBlock.&p.rate[0]	33	bodyDynamicsBlock.&p.rate[0]
+16	16	(null)	54	aeroFrameBlock.&p.rate[0]	80	aeroDynamicsBlock.&p.rate[0]
+17	17	(null)	54	aeroFrameBlock.&p.rate[0]	15	engineDynamicsBlock.&p.rate[0]
+18	18	(null)	55	aeroFrameBlock.&p.rate[1]	34	bodyDynamicsBlock.&p.rate[1]
+19	19	(null)	55	aeroFrameBlock.&p.rate[1]	81	aeroDynamicsBlock.&p.rate[1]
+20	20	(null)	55	aeroFrameBlock.&p.rate[1]	16	engineDynamicsBlock.&p.rate[1]
+21	21	(null)	56	aeroFrameBlock.&p.rate[2]	35	bodyDynamicsBlock.&p.rate[2]
+22	22	(null)	56	aeroFrameBlock.&p.rate[2]	82	aeroDynamicsBlock.&p.rate[2]
+23	23	(null)	56	aeroFrameBlock.&p.rate[2]	17	engineDynamicsBlock.&p.rate[2]
+24	24	(null)	57	aeroFrameBlock.&p.position[0]	36	bodyDynamicsBlock.&p.position[0]
+25	25	(null)	57	aeroFrameBlock.&p.position[0]	83	aeroDynamicsBlock.&p.position[0]
+26	26	(null)	57	aeroFrameBlock.&p.position[0]	18	engineDynamicsBlock.&p.position[0]
+27	27	(null)	58	aeroFrameBlock.&p.position[1]	37	bodyDynamicsBlock.&p.position[1]
+28	28	(null)	58	aeroFrameBlock.&p.position[1]	84	aeroDynamicsBlock.&p.position[1]
+29	29	(null)	58	aeroFrameBlock.&p.position[1]	19	engineDynamicsBlock.&p.position[1]
+30	30	(null)	59	aeroFrameBlock.&p.position[2]	38	bodyDynamicsBlock.&p.position[2]
+31	31	(null)	59	aeroFrameBlock.&p.position[2]	85	aeroDynamicsBlock.&p.position[2]
+32	32	(null)	59	aeroFrameBlock.&p.position[2]	20	engineDynamicsBlock.&p.position[2]
+33	33	(null)	60	aeroFrameBlock.&p.angle[0]	39	bodyDynamicsBlock.&p.angle[0]
+34	34	(null)	60	aeroFrameBlock.&p.angle[0]	86	aeroDynamicsBlock.&p.angle[0]
+35	35	(null)	60	aeroFrameBlock.&p.angle[0]	21	engineDynamicsBlock.&p.angle[0]
+36	36	(null)	61	aeroFrameBlock.&p.angle[1]	40	bodyDynamicsBlock.&p.angle[1]
+37	37	(null)	61	aeroFrameBlock.&p.angle[1]	87	aeroDynamicsBlock.&p.angle[1]
+38	38	(null)	61	aeroFrameBlock.&p.angle[1]	22	engineDynamicsBlock.&p.angle[1]
+39	39	(null)	62	aeroFrameBlock.&p.angle[2]	41	bodyDynamicsBlock.&p.angle[2]
+40	40	(null)	62	aeroFrameBlock.&p.angle[2]	88	aeroDynamicsBlock.&p.angle[2]
+41	41	(null)	62	aeroFrameBlock.&p.angle[2]	23	engineDynamicsBlock.&p.angle[2]
+42	42	(null)	63	aeroFrameBlock.&ph.height[0]	44	atmosphereBlock.&ph.height[0]
+43	43	(null)	89	aeroDynamicsBlock.&pAtmosphere.airDensity[0]	42	atmosphereBlock.&pAtmo.airDensity[0]
+44	44	(null)	90	aeroDynamicsBlock.&pAtmosphere.speedOfSound[0]	43	atmosphereBlock.&pAtmo.speedOfSound[0]
+45	45	(null)	91	aeroDynamicsBlock.&pFin.angle[0]	3	finDynamicsBlock.&pFin.angle[0]
+46	46	(null)	92	aeroDynamicsBlock.&pFin.angle[1]	4	finDynamicsBlock.&pFin.angle[1]
+47	47	(null)	93	aeroDynamicsBlock.&pFin.angle[2]	5	finDynamicsBlock.&pFin.angle[2]
+48	55	finDynamicsBlock.r_angle_aileron
+49	56	finDynamicsBlock.r_angle_rudder
+50	57	finDynamicsBlock.r_saturation_angle	0	finDynamicsBlock.rate
+51	58	finDynamicsBlock.r_saturation_rate
+52	67	engineDynamicsBlock.r_Force[0]	6	engineDynamicsBlock.&p.force[0]
+53	68	engineDynamicsBlock.r_Force[1]	7	engineDynamicsBlock.&p.force[1]
+54	69	engineDynamicsBlock.r_Force[2]	8	engineDynamicsBlock.&p.force[2]
+55	70	engineDynamicsBlock.r_Moments[0]	9	engineDynamicsBlock.&p.moment[0]
+56	71	engineDynamicsBlock.r_Moments[1]	10	engineDynamicsBlock.&p.moment[1]
+57	72	engineDynamicsBlock.r_Moments[2]	11	engineDynamicsBlock.&p.moment[2]
+58	73	bodyDynamicsBlock.r_velocity[0]	24	bodyDynamicsBlock.&p.force[0]	31	bodyDynamicsBlock.&p.velocity[1]	32	bodyDynamicsBlock.&p.velocity[2]	34	bodyDynamicsBlock.&p.rate[1]	35	bodyDynamicsBlock.&p.rate[2]
+59	74	bodyDynamicsBlock.r_velocity[1]	25	bodyDynamicsBlock.&p.force[1]	30	bodyDynamicsBlock.&p.velocity[0]	32	bodyDynamicsBlock.&p.velocity[2]	33	bodyDynamicsBlock.&p.rate[0]	35	bodyDynamicsBlock.&p.rate[2]
+60	75	bodyDynamicsBlock.r_velocity[2]	26	bodyDynamicsBlock.&p.force[2]	30	bodyDynamicsBlock.&p.velocity[0]	31	bodyDynamicsBlock.&p.velocity[1]	33	bodyDynamicsBlock.&p.rate[0]	34	bodyDynamicsBlock.&p.rate[1]
+61	76	bodyDynamicsBlock.r_position[0]	30	bodyDynamicsBlock.&p.velocity[0]	31	bodyDynamicsBlock.&p.velocity[1]	32	bodyDynamicsBlock.&p.velocity[2]	39	bodyDynamicsBlock.&p.angle[0]	40	bodyDynamicsBlock.&p.angle[1]	41	bodyDynamicsBlock.&p.angle[2]
+62	77	bodyDynamicsBlock.r_position[1]	30	bodyDynamicsBlock.&p.velocity[0]	31	bodyDynamicsBlock.&p.velocity[1]	32	bodyDynamicsBlock.&p.velocity[2]	39	bodyDynamicsBlock.&p.angle[0]	40	bodyDynamicsBlock.&p.angle[1]	41	bodyDynamicsBlock.&p.angle[2]
+63	78	bodyDynamicsBlock.r_position[2]	30	bodyDynamicsBlock.&p.velocity[0]	31	bodyDynamicsBlock.&p.velocity[1]	32	bodyDynamicsBlock.&p.velocity[2]	39	bodyDynamicsBlock.&p.angle[0]	40	bodyDynamicsBlock.&p.angle[1]
+64	79	bodyDynamicsBlock.r_rate[0]	27	bodyDynamicsBlock.&p.moment[0]	34	bodyDynamicsBlock.&p.rate[1]	35	bodyDynamicsBlock.&p.rate[2]
+65	80	bodyDynamicsBlock.r_rate[1]	28	bodyDynamicsBlock.&p.moment[1]
+66	81	bodyDynamicsBlock.r_rate[2]	29	bodyDynamicsBlock.&p.moment[2]	33	bodyDynamicsBlock.&p.rate[0]	34	bodyDynamicsBlock.&p.rate[1]
+67	82	bodyDynamicsBlock.r_euler[0]	33	bodyDynamicsBlock.&p.rate[0]	34	bodyDynamicsBlock.&p.rate[1]	35	bodyDynamicsBlock.&p.rate[2]
+68	83	bodyDynamicsBlock.r_euler[1]	34	bodyDynamicsBlock.&p.rate[1]	35	bodyDynamicsBlock.&p.rate[2]
+69	84	bodyDynamicsBlock.r_euler[2]	34	bodyDynamicsBlock.&p.rate[1]	35	bodyDynamicsBlock.&p.rate[2]
+70	85	atmosphereBlock.r_airDensity	42	atmosphereBlock.&pAtmo.airDensity[0]
+71	86	atmosphereBlock.r_speedOfSound	43	atmosphereBlock.&pAtmo.speedOfSound[0]
+72	87	aeroFrameBlock.r_Position	59	aeroFrameBlock.&p.position[2]	63	aeroFrameBlock.&ph.height[0]
+73	88	aeroFrameBlock.r_Force[0]	45	aeroFrameBlock.&p.force[0]	61	aeroFrameBlock.&p.angle[1]
+74	89	aeroFrameBlock.r_Force[1]	46	aeroFrameBlock.&p.force[1]
+75	90	aeroFrameBlock.r_Force[2]	47	aeroFrameBlock.&p.force[2]	61	aeroFrameBlock.&p.angle[1]
+76	91	aeroFrameBlock.r_Moments[0]	48	aeroFrameBlock.&p.moment[0]
+77	92	aeroFrameBlock.r_Moments[1]	49	aeroFrameBlock.&p.moment[1]
+78	93	aeroFrameBlock.r_Moments[2]	50	aeroFrameBlock.&p.moment[2]
+79	94	aeroDynamicsBlock.r_AoA	67	aeroDynamicsBlock.AoA	77	aeroDynamicsBlock.&p.velocity[0]	79	aeroDynamicsBlock.&p.velocity[2]
+80	95	aeroDynamicsBlock.r_SSA	68	aeroDynamicsBlock.SSA	77	aeroDynamicsBlock.&p.velocity[0]	78	aeroDynamicsBlock.&p.velocity[1]
+81	96	aeroDynamicsBlock.r_V	69	aeroDynamicsBlock.V	77	aeroDynamicsBlock.&p.velocity[0]	78	aeroDynamicsBlock.&p.velocity[1]	79	aeroDynamicsBlock.&p.velocity[2]
+82	97	aeroDynamicsBlock.r_Mach	69	aeroDynamicsBlock.V	70	aeroDynamicsBlock.Mach	90	aeroDynamicsBlock.&pAtmosphere.speedOfSound[0]
+83	98	aeroDynamicsBlock.r_C[0]	66	aeroDynamicsBlock.Cm_alpha	67	aeroDynamicsBlock.AoA	70	aeroDynamicsBlock.Mach
+84	99	aeroDynamicsBlock.r_C[1]	64	aeroDynamicsBlock.Cx_alpha
+85	100	aeroDynamicsBlock.r_C[2]	65	aeroDynamicsBlock.Cz_alpha	67	aeroDynamicsBlock.AoA	70	aeroDynamicsBlock.Mach
+86	101	aeroDynamicsBlock.r_Forces[0]	64	aeroDynamicsBlock.Cx_alpha	69	aeroDynamicsBlock.V	71	aeroDynamicsBlock.&p.force[0]	89	aeroDynamicsBlock.&pAtmosphere.airDensity[0]	92	aeroDynamicsBlock.&pFin.angle[1]
+87	102	aeroDynamicsBlock.r_Forces[1]	69	aeroDynamicsBlock.V	72	aeroDynamicsBlock.&p.force[1]	89	aeroDynamicsBlock.&pAtmosphere.airDensity[0]	93	aeroDynamicsBlock.&pFin.angle[2]
+88	103	aeroDynamicsBlock.r_Forces[2]	65	aeroDynamicsBlock.Cz_alpha	69	aeroDynamicsBlock.V	73	aeroDynamicsBlock.&p.force[2]	89	aeroDynamicsBlock.&pAtmosphere.airDensity[0]	92	aeroDynamicsBlock.&pFin.angle[1]
+89	104	aeroDynamicsBlock.r_Moments[0]	69	aeroDynamicsBlock.V	74	aeroDynamicsBlock.&p.moment[0]	80	aeroDynamicsBlock.&p.rate[0]	89	aeroDynamicsBlock.&pAtmosphere.airDensity[0]	91	aeroDynamicsBlock.&pFin.angle[0]
+90	105	aeroDynamicsBlock.r_Moments[1]	66	aeroDynamicsBlock.Cm_alpha	69	aeroDynamicsBlock.V	75	aeroDynamicsBlock.&p.moment[1]	81	aeroDynamicsBlock.&p.rate[1]	89	aeroDynamicsBlock.&pAtmosphere.airDensity[0]	92	aeroDynamicsBlock.&pFin.angle[1]
+91	106	aeroDynamicsBlock.r_Moments[2]	69	aeroDynamicsBlock.V	76	aeroDynamicsBlock.&p.moment[2]	82	aeroDynamicsBlock.&p.rate[2]	89	aeroDynamicsBlock.&pAtmosphere.airDensity[0]	93	aeroDynamicsBlock.&pFin.angle[2]
+
+
+Mass Matrix
+48	55	finDynamicsBlock.r_angle_aileron	3	DER(finDynamicsBlock.&pFin.angle[0])
+49	56	finDynamicsBlock.r_angle_rudder	5	DER(finDynamicsBlock.&pFin.angle[2])
+50	57	finDynamicsBlock.r_saturation_angle	4	DER(finDynamicsBlock.&pFin.angle[1])
+51	58	finDynamicsBlock.r_saturation_rate	0	DER(finDynamicsBlock.rate)
+58	73	bodyDynamicsBlock.r_velocity[0]	30	DER(bodyDynamicsBlock.&p.velocity[0])
+59	74	bodyDynamicsBlock.r_velocity[1]	31	DER(bodyDynamicsBlock.&p.velocity[1])
+60	75	bodyDynamicsBlock.r_velocity[2]	32	DER(bodyDynamicsBlock.&p.velocity[2])
+61	76	bodyDynamicsBlock.r_position[0]	36	DER(bodyDynamicsBlock.&p.position[0])
+62	77	bodyDynamicsBlock.r_position[1]	37	DER(bodyDynamicsBlock.&p.position[1])
+63	78	bodyDynamicsBlock.r_position[2]	38	DER(bodyDynamicsBlock.&p.position[2])
+64	79	bodyDynamicsBlock.r_rate[0]	33	DER(bodyDynamicsBlock.&p.rate[0])
+65	80	bodyDynamicsBlock.r_rate[1]	34	DER(bodyDynamicsBlock.&p.rate[1])
+66	81	bodyDynamicsBlock.r_rate[2]	35	DER(bodyDynamicsBlock.&p.rate[2])
+67	82	bodyDynamicsBlock.r_euler[0]	39	DER(bodyDynamicsBlock.&p.angle[0])	40	DER(bodyDynamicsBlock.&p.angle[1])
+68	83	bodyDynamicsBlock.r_euler[1]	39	DER(bodyDynamicsBlock.&p.angle[0])	40	DER(bodyDynamicsBlock.&p.angle[1])
+69	84	bodyDynamicsBlock.r_euler[2]	39	DER(bodyDynamicsBlock.&p.angle[0])	40	DER(bodyDynamicsBlock.&p.angle[1])	41	DER(bodyDynamicsBlock.&p.angle[2])

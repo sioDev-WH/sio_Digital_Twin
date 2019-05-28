@@ -1,0 +1,20 @@
+// MissileAtlDemo.idl : IDL source for MissileAtlDemo.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (MissileAtlDemo.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(F29365A0-A9FB-44C3-86E7-BA3874389574),
+	version(1.0),
+	helpstring("MissileAtlDemo 1.0 Type Library")
+]
+library MISSILEATLDEMOLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+};

@@ -1,0 +1,202 @@
+<!-- Created by Shelepugin Pavel & Gilev Andrey, December 2000 -->
+<head><title>InvCbrt</title></head>
+<body  title="Inv functions page">
+<P align=center><FONT size=6>Function <STRONG>InvCbrt</STRONG></FONT></P>
+<P>The <STRONG>InvCbrt</STRONG>
+function computes an inverse
+   cube root.
+</P>
+<P><STRONG>Performance:</STRONG></P>
+<P>
+<TABLE border=2 cellPadding=2 cellSpacing=2>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>
+      <P align=center>Default processor</P></TD>
+    <TD>
+      <P align=center>Pentium&reg; <FONT face=Arial>III</FONT> processor</P> </TD>
+    <TD>
+      <P align=center>Pentium&reg;&nbsp;4 processor</P></TD>
+    <TD>
+      <P align=center>Itanium<SUP><FONT size=-1>TM</FONT></SUP>
+  processor</P></TD></TR>
+  <TR>
+    <TD><STRONG>vsInvCbrt </STRONG><FONT size=2>(HA
+      version)</FONT></TD>
+    <TD>
+      <P align=right>30.8 </P>  </TD>
+    <TD>
+      <P align=right>30.8 </P>  </TD>
+    <TD>
+      <P align=right>29.5</P></TD>
+    <TD>
+      <P align=right>7.2</P></TD></TR>
+  <TR>
+    <TD><STRONG>vdInvCbrt </STRONG><FONT size=2>(HA
+      version)</FONT></TD>
+    <TD>
+      <P align=right>43.9 </P>  </TD>
+    <TD>
+      <P align=right>43.4 </P>  </TD>
+    <TD>
+      <P align=right>40.7</P></TD>
+    <TD>
+      <P align=right>9.4</P></TD></TR>
+</TABLE>
+<FONT size=2>
+Notes:<BR>
+  1) Units - CPE
+(Clocks per Element)<BR>2) Performance was measured on "working" interval (double
+precision: [3e-308,10000]; single precision: [2e-38,10000])<BR>3) Data - vectors of 1000
+elements with random generated numbers<BR>4) "Default" means X87 code for all IA-32
+processors<BR>5)
+Performance of "default" version was measured on Pentium&reg;  <FONT
+face=Arial>III</FONT> processor<BR><BR>
+</FONT>
+<P>
+<IMG alt="" border=0 height=217 src="../Images/sInvCbrt.GIF" width=314>&nbsp;
+<IMG alt="" border=0 height=217 src="../Images/dInvCbrt.GIF" width=314> <BR>
+<FONT size=2>
+Notes:<BR>
+1) <FONT
+color=#ff0000>*</FONT> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X87 code for
+all processors<BR>2) <FONT color=#0000ff>**</FONT>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pentium&reg; <FONT face=Arial>III</FONT>
+processor<BR>3) <FONT color=#ff00ff>***</FONT> &nbsp;&nbsp;&nbsp;Pentium&reg; 4
+processor<BR>4) <FONT color=#000000>****</FONT>&nbsp;Itanium<SUP><FONT
+size=-1>TM</FONT></SUP> processor<BR>5) Logarithmic
+ scale is
+used for "Vectors Size" axis
+</FONT>
+</P>
+
+<P><STRONG><STRONG><STRONG><STRONG><STRONG>Maximal
+</STRONG></STRONG></STRONG>observed error
+for the whole function domain:</STRONG></STRONG></P>
+<P>
+<TABLE border=2 cellPadding=2 cellSpacing=2>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>
+      <P align=center>Default processor</P></TD>
+    <TD>
+      <P align=center>Pentium&reg; <FONT face=Arial>III</FONT> processor</P> </TD>
+    <TD>
+      <P align=center>Pentium&reg;&nbsp;4 processor</P></TD>
+    <TD>
+      <P align=center>Itanium<SUP><FONT size=-1>TM</FONT></SUP>
+  processor</P></TD></TR>
+  <TR>
+    <TD><STRONG>vsInvCbrt </STRONG><FONT
+      size=2>(HA version)</FONT> </TD>
+    <TD>
+      <P align=right>0.77</P> </TD>
+    <TD>
+      <P align=right>0.77</P> </TD>
+    <TD>
+      <P align=right>0.85</P></TD>
+    <TD>
+      <P align=right>0.50</P></TD></TR>
+  <TR>
+    <TD><STRONG>vdInvCbrt </STRONG><FONT
+      size=2>(HA version)</FONT> </TD>
+    <TD>
+      <P align=right>0.78</P> </TD>
+    <TD>
+      <P align=right>0.78</P> </TD>
+    <TD>
+      <P align=right>0.51</P></TD>
+    <TD>
+      <P align=right>0.50</P></TD></TR>
+</TABLE>
+<FONT size=2>
+Notes:<BR>
+1) Units - ULP (Units
+in The Last Place)
+</FONT>
+
+<P><STRONG>Special values:</STRONG></P>
+<table cellspacing="2" cellpadding="2" border="2">
+<tr>
+    <td>
+      <P align=center>Function</P></td>
+    <td>
+      <P align=center>Input Argument</P> </td>
+    <td>
+      <P align=center>Result</P></td>
+    <td>
+      <P align=center>Default processor</P></td>
+    <td>
+      <P align=center>Pentium&reg; <FONT face=Arial>III</FONT> processor</P> </td>
+    <td>
+      <P align=center>Pentium&reg; 4 processor</P></td>
+    <td>
+      <P align=center>Itanium<SUP><FONT size=-1>TM</FONT></SUP>
+  processor</P></td>
+</tr>
+  <TR>
+    <TD height=20 rowSpan=3><FONT color=#000000 size=2
+      >
+      <P align=center><FONT
+      size=3><STRONG>vsInvCbrt/vdInvCbrt</STRONG></FONT></P>
+      <P align=center><FONT size=2>(HA version)</FONT></FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>+/- 0</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>+/- Inf (Raise DZ Exeption)</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>+</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>+</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>+</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>+</FONT></P></TD></TR>
+  <TR>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>NaN (Both QnaN and SNaN)</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>NaN (Raise Invalid Exeption for SnaN)</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>+</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>+</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>+</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>+</FONT></P></TD></TR>
+  <TR>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>+/- Inf</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=left>+/- 0</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>+</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>+</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>+</FONT></P></TD>
+    <TD height=20><FONT color=#000000 face=Arial size=2
+      >
+      <P align=center>+</FONT></P></TD></TR>
+</table>
+<P><FONT SIZE="1">Intel, Pentium, Pentium <font face="Arial">III</font>, Pentium 4, and Itanium are trademarks or registered trademarks of Intel Corporation or its subsidiaries in the United States and other countries.<BR></FONT></P>
+<P><FONT SIZE="1" face="Arial, Helvetica">Copyright &copy; 2000-2001, Intel Corporation, All Rights Reserved.</FONT></P>
+</body>

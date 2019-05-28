@@ -1,0 +1,20 @@
+// OnInitializationDialogs.idl : IDL source for OnInitializationDialogs.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (OnInitializationDialogs.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(09A7C587-80FC-4ADA-BB9A-6B2B9276227E),
+	version(1.0),
+	helpstring("OnInitializationDialogs 1.0 Type Library")
+]
+library ONINITIALIZATIONDIALOGSLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+};

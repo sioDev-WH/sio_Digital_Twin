@@ -1,0 +1,406 @@
+// RtsOnTransmissionVB.idl : IDL source for RtsOnTransmissionVB.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (RtsOnTransmissionVB.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "IsDaeCOSolver.idl";
+
+	[
+		object,
+		uuid(151A17E2-EE49-48CB-8F80-37E3A84D4200),
+		dual,
+		helpstring("IvbActuator Interface"),
+		pointer_default(unique)
+	]
+	interface IvbActuator : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+		[id(2), helpstring("shift Event")] 
+		HRESULT shiftEvent([in] double t, [in] long val);
+		[propget, id(3), helpstring("clutch connector path")] 
+		HRESULT clutch([out, retval] SAFEARRAY(long)* val);
+	};
+	[
+		object,
+		uuid(C3FEA6B9-2A67-4730-84FF-339F49C63FC7),
+		dual,
+		helpstring("IvbBand_Brake Interface"),
+		pointer_default(unique)
+	]
+	interface IvbBand_Brake : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+		[propget, id(2), helpstring("actuator connector index")] 
+		HRESULT actuator([out, retval] SAFEARRAY(long)* val);
+		[propget, id(3), helpstring("n connector path")] 
+		HRESULT n([out, retval] SAFEARRAY(long)* val);
+		[propget, id(4), helpstring("p connector path")] 
+		HRESULT p([out, retval] SAFEARRAY(long)* val);
+	};
+	[
+		object,
+		uuid(C9F40039-5DD0-4731-BB00-FDC87037A7CB),
+		dual,
+		helpstring("IvbBrakeActuator Interface"),
+		pointer_default(unique)
+	]
+	interface IvbBrakeActuator : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+		[propget, id(2), helpstring("p connector path")] 
+		HRESULT p([out, retval] SAFEARRAY(long)* val);
+	};
+	[
+		object,
+		uuid(5F57111A-D6E0-4682-90C1-D2D859C753C2),
+		dual,
+		helpstring("IvbDamper Interface"),
+		pointer_default(unique)
+	]
+	interface IvbDamper : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+		[propget, id(2), helpstring("n connector path")] 
+		HRESULT n([out, retval] SAFEARRAY(long)* val);
+		[propget, id(3), helpstring("p connector path")] 
+		HRESULT p([out, retval] SAFEARRAY(long)* val);
+	};
+	[
+		object,
+		uuid(E33F7692-C1EC-4F20-8345-B2E5CCD4F435),
+		dual,
+		helpstring("IvbFrame Interface"),
+		pointer_default(unique)
+	]
+	interface IvbFrame : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+		[propget, id(2), helpstring("p connector path")] 
+		HRESULT p([out, retval] SAFEARRAY(long)* val);
+	};
+	[
+		object,
+		uuid(1D54BCFB-53EF-4C9D-9CF4-942641C9CDB9),
+		dual,
+		helpstring("IvbClutch Interface"),
+		pointer_default(unique)
+	]
+	interface IvbClutch : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+		[propget, id(2), helpstring("actuator connector path")] 
+		HRESULT actuator([out, retval] SAFEARRAY(long)* val);
+		[propget, id(3), helpstring("n connector path")] 
+		HRESULT n([out, retval] SAFEARRAY(long)* val);
+		[propget, id(4), helpstring("p connector path")] 
+		HRESULT p([out, retval] SAFEARRAY(long)* val);
+	};
+	[
+		object,
+		uuid(E3830D21-7568-4546-872A-F8C84FFD7C54),
+		dual,
+		helpstring("IvbMass Interface"),
+		pointer_default(unique)
+	]
+	interface IvbMass : IDispatch
+	{	
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+		[propget, id(2), helpstring("p connector path")] 
+		HRESULT p([out, retval] SAFEARRAY(long)* val);
+		[propget, id(3), helpstring("n connector path")] 
+		HRESULT n([out, retval] SAFEARRAY(long)* val);
+	};
+	[
+		object,
+		uuid(8F903BCD-9C46-4933-9877-4C452E8CC0D7),
+		dual,
+		helpstring("IvbSpring Interface"),
+		pointer_default(unique)
+	]
+	interface IvbSpring : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+		[propget, id(2), helpstring("p connector path")] 
+		HRESULT p([out, retval] SAFEARRAY(long)* val);
+		[propget, id(3), helpstring("n connector path")] 
+		HRESULT n([out, retval] SAFEARRAY(long)* val);
+	};
+	[
+		object,
+		uuid(AA69FC5D-A2CE-4CFF-A9F3-D393C5678298),
+		dual,
+		helpstring("IvbEngine Interface"),
+		pointer_default(unique)
+	]
+	interface IvbEngine : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+		[propget, id(2), helpstring("n connector path")] 
+		HRESULT n([out, retval] SAFEARRAY(long)* val);
+		[id(3), helpstring("throttle Event")] 
+		HRESULT throttleEvent([in] double t, [in] double val);
+		[id(4), helpstring("start Event")] 
+		HRESULT startEvent([in] double t, [in] long val);
+	};
+	[
+		object,
+		uuid(C9AEA849-120B-4EA2-BEB2-11EE70EB0F62),
+		dual,
+		helpstring("IvbOneway_Clutch Interface"),
+		pointer_default(unique)
+	]
+	interface IvbOneway_Clutch : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+		[propget, id(2), helpstring("actuator connector path")] 
+		HRESULT actuator([out, retval] SAFEARRAY(long)* val);
+		[propget, id(3), helpstring("n connector path")] 
+		HRESULT n([out, retval] SAFEARRAY(long)* val);
+		[propget, id(4), helpstring("p connector path")] 
+		HRESULT p([out, retval] SAFEARRAY(long)* val);
+	};
+	[
+		object,
+		uuid(F6220946-F942-4853-A335-33FD405B7055),
+		dual,
+		helpstring("IvbRavigneaux Interface"),
+		pointer_default(unique)
+	]
+	interface IvbRavigneaux : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+        [propget, id(2), helpstring("forwardSun path")] 
+		HRESULT forwardSun([out, retval] SAFEARRAY(long)* val);
+        [propget, id(3), helpstring("reverseSun path")] 
+		HRESULT reverseSun([out, retval] SAFEARRAY(long)* val);
+        [propget, id(4), helpstring("coupler path")] 
+		HRESULT coupler([out, retval] SAFEARRAY(long)* val);
+        [propget, id(5), helpstring("ring path")] 
+		HRESULT ring([out, retval] SAFEARRAY(long)* val);
+	};
+	[
+		object,
+		uuid(C56FE92D-F08E-448C-8F20-05667414F879),
+		dual,
+		helpstring("IvbTorque_Converter Interface"),
+		pointer_default(unique)
+	]
+	interface IvbTorque_Converter : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+        [propget, id(2), helpstring("turbine path")] 
+		HRESULT turbine([out, retval] SAFEARRAY(long)* val);
+        [propget, id(3), helpstring("impeller path")] 
+		HRESULT impeller([out, retval] SAFEARRAY(long)* val);
+	};
+	[
+		object,
+		uuid(FAD2DA42-98D1-41B7-B54B-A0AB359AE3C3),
+		dual,
+		helpstring("IvbVehicle Interface"),
+		pointer_default(unique)
+	]
+	interface IvbVehicle : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+        [propget, id(2), helpstring("p path")] 
+		HRESULT p([out, retval] SAFEARRAY(long)* val);
+	};
+	[
+		object,
+		uuid(42DF008C-3E57-4C41-B3E5-FFAA1F025987),
+		dual,
+		helpstring("IvbVehicle2 Interface"),
+		pointer_default(unique)
+	]
+	interface IvbVehicle2 : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+        [propget, id(2), helpstring("p path")] 
+		HRESULT p([out, retval] SAFEARRAY(long)* val);
+	};
+	[
+		object,
+		uuid(B0C261A7-451A-42D5-9DB0-B7AF75E749BB),
+		dual,
+		helpstring("IvbVehicle5 Interface"),
+		pointer_default(unique)
+	]
+	interface IvbVehicle5 : IDispatch
+	{
+		[propget, id(1), helpstring("Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+        [propget, id(2), helpstring("p path")] 
+		HRESULT p([out, retval] SAFEARRAY(long)* val);
+		[id(3), helpstring("brake Event")] 
+		HRESULT brakeEvent([in] double t, [in] double val);
+	};
+	[
+		object,
+		uuid(B43C1171-8D2A-4285-ABF0-01A11605E4B2),
+		dual,
+		helpstring("IvbComposite Interface"),
+		pointer_default(unique)
+	]
+	interface IvbComposite : IDispatch
+	{
+		[propget, id(1), helpstring("Composite Eso")] 
+		HRESULT Eso([out, retval] IDispatch* *pVal);
+	};
+
+[
+	uuid(A0FB58BE-0E08-45F6-8A4A-732A46D7FE96),
+	version(1.0),
+	helpstring("RtsOnTransmissionVB 1.0 Type Library")
+]
+library RTSONTRANSMISSIONVBLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(A69B361D-1B99-4C58-8E39-AE74998408FF),
+		helpstring("vbActuator Class")
+	]
+	coclass vbActuator
+	{
+		[default] interface IvbActuator;
+	};
+	[
+		uuid(68106DC2-0D2E-43EE-9C27-9631CD9A76FA),
+		helpstring("vbBand_Brake Class")
+	]
+	coclass vbBand_Brake
+	{
+		[default] interface IvbBand_Brake;
+	};
+	[
+		uuid(4ED98690-219A-45D5-9E93-428D81E82B35),
+		helpstring("vbBrakeActuator Class")
+	]
+	coclass vbBrakeActuator
+	{
+		[default] interface IvbBrakeActuator;
+	};
+	[
+		uuid(BC7E3159-6811-4BC8-B5ED-BAC856AB15F3),
+		helpstring("vbDamper Class")
+	]
+	coclass vbDamper
+	{
+		[default] interface IvbDamper;
+	};
+	[
+		uuid(5097F3C6-277B-4F3A-9ADF-EC976FE35897),
+		helpstring("vbFrame Class")
+	]
+	coclass vbFrame
+	{
+		[default] interface IvbFrame;
+	};
+	[
+		uuid(32066F91-763F-42D5-8BE6-FFE063A21F00),
+		helpstring("vbClutch Class")
+	]
+	coclass vbClutch
+	{
+		[default] interface IvbClutch;
+	};
+	[
+		uuid(42C9605E-F2CA-46BA-9172-E6B0E5A601CA),
+		helpstring("vbMass Class")
+	]
+	coclass vbMass
+	{
+		[default] interface IvbMass;
+	};
+	[
+		uuid(DE8ED079-5EFD-4C95-A250-8B2D59CB6D95),
+		helpstring("vbSpring Class")
+	]
+	coclass vbSpring
+	{
+		[default] interface IvbSpring;
+	};
+	[
+		uuid(B8E27D05-7F2A-4879-BCD7-D99D167EF626),
+		helpstring("vbEngine Class")
+	]
+	coclass vbEngine
+	{
+		[default] interface IvbEngine;
+	};
+	[
+		uuid(0CA0A218-5C05-4FB5-81EB-5B21174F833D),
+		helpstring("vbOneway_Clutch Class")
+	]
+	coclass vbOneway_Clutch
+	{
+		[default] interface IvbOneway_Clutch;
+	};
+	[
+		uuid(4EB24F1A-7F7B-4AFD-8171-C49BC53EC8BF),
+		helpstring("vbRavigneaux Class")
+	]
+	coclass vbRavigneaux
+	{
+		[default] interface IvbRavigneaux;
+	};
+	[
+		uuid(33F21A86-FAAC-4D64-885C-70DE23EE4AFE),
+		helpstring("vbTorque_Converter Class")
+	]
+	coclass vbTorque_Converter
+	{
+		[default] interface IvbTorque_Converter;
+	};
+	[
+		uuid(851E4885-7325-454B-B66C-705BCCCBF30E),
+		helpstring("vbVehicle Class")
+	]
+	coclass vbVehicle
+	{
+		[default] interface IvbVehicle;
+	};
+	[
+		uuid(FFF1C150-F7EC-4B84-8218-3319FCF9F5FF),
+		helpstring("vbVehicle2 Class")
+	]
+	coclass vbVehicle2
+	{
+		[default] interface IvbVehicle2;
+	};
+	[
+		uuid(E3752EB2-F95C-4749-B185-18E62877F73E),
+		helpstring("vbVehicle5 Class")
+	]
+	coclass vbVehicle5
+	{
+		[default] interface IvbVehicle5;
+	};
+	[
+		uuid(5FA80366-8AEB-4A36-9772-2B58F2B78EBA),
+		helpstring("vbComposite Class")
+	]
+	coclass vbComposite
+	{
+		[default] interface IvbComposite;
+	};
+};

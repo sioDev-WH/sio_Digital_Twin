@@ -1,0 +1,635 @@
+I-Logix-RPY-Archive version 4.1.8 C++
+{ IComponent 
+	- _id = GUID c13b2e42-2888-44b8-a1e1-99224ceb536e;
+	- _myState = 139264;
+	- _name = "DefaultComponent";
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID f5b92012-4102-4b44-91dc-915b6925ee46;
+		- _myState = 8192;
+		- _name = "Files";
+		- m_path = "";
+		- Elements = { IRPYRawContainer 
+			- size = 8;
+			- value = 
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AirframePkg.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AirframePkg";
+				- _id = GUID 718c6e07-37b5-4bc4-b24a-1a6ac6912471;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "AutopilotPkg.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AutopilotPkg";
+				- _id = GUID c9142634-dee8-4f23-9ab2-94629976d079;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "Prototype.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Prototype";
+				- _id = GUID 87d3fdb2-70de-4bb3-a8a9-e998cf9bc9b5;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "DisplayPkg.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "DisplayPkg";
+				- _id = GUID 1f4df77a-ce15-4b4b-9f30-a2b94de5daf8;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "GuidancePkg.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "GuidancePkg";
+				- _id = GUID 48747585-d7db-4893-aea1-35e124e95403;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "TargetPkg.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "TargetPkg";
+				- _id = GUID 9d763caf-f44a-4d2e-82ea-44a15b60ea2a;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "TrackingSubsystemPkg.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "TrackingSubsystemPkg";
+				- _id = GUID 48655bb2-120d-40c8-b6b2-5fbfff52ea49;
+			}
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "ReverseEngineering.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "ReverseEngineering";
+				- _id = GUID 782bd0ad-c4cc-4f94-8e3f-11bf56156b2f;
+			}
+		}
+		- Files = { IRPYRawContainer 
+			- size = 0;
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID e9a6a706-2d23-42cf-b0bf-b82dd8d43e6b;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID e9a6a706-2d23-42cf-b0bf-b82dd8d43e6b;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 2;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CPP_ReverseEngineering";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "ImplementationTrait";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "ReflectDataMembers";
+										- _Value = "None";
+										- _Type = Enum;
+										- _ExtraTypeInfo = "None,VisibilityOnly,VisibilityAndHelpers";
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "ReverseEngineering";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Main";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Files";
+										- _Value = "C:\\ARTIST\\Avionics_6\\MissileAtlDemo\\theTest.h,C:\\ARTIST\\Avionics_6\\MissileAtlDemo\\theTest.cpp";
+										- _Type = String;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "DefaultConfig";
+			- _scopeType = Derived;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = None;
+			- _timeModel = RealTime;
+			- m_generateActors = 0;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "// Constructs the simulation circuit 
+RT_Node theNode;
+theNode.build( );
+// Main message loop
+while(theNode.step())
+continue;";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 14;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "AirframePkg.sbs";
+					- _subsystem = "AirframePkg";
+					- _class = "";
+					- _name = "aeroComposition";
+					- _id = GUID bd5666db-e67e-4b6f-809c-facf13590335;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "AirframePkg.sbs";
+					- _subsystem = "AirframePkg";
+					- _class = "";
+					- _name = "aeroDynamics";
+					- _id = GUID 010916a0-e153-4944-98ad-476b2b0fa403;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "AirframePkg.sbs";
+					- _subsystem = "AirframePkg";
+					- _class = "";
+					- _name = "aeroPort";
+					- _id = GUID 72439b59-e56a-4bfc-8a4a-8bd28556cecf;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "AirframePkg.sbs";
+					- _subsystem = "AirframePkg";
+					- _class = "";
+					- _name = "AtmoHeightPort";
+					- _id = GUID ddf3e2ae-279f-4136-b0ff-35d53c3e1ad5;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "AirframePkg.sbs";
+					- _subsystem = "AirframePkg";
+					- _class = "";
+					- _name = "AtmoPort";
+					- _id = GUID 53e0e0cd-5546-4d33-8ce5-7c374aed184b;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "AirframePkg.sbs";
+					- _subsystem = "AirframePkg";
+					- _class = "";
+					- _name = "atmosphere";
+					- _id = GUID d561d441-efef-479d-a89b-f9ec1e2a15ea;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "AirframePkg.sbs";
+					- _subsystem = "AirframePkg";
+					- _class = "";
+					- _name = "bodyDynamics";
+					- _id = GUID ec5eac36-3f82-46db-b2f8-c0ede31958c7;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "AirframePkg.sbs";
+					- _subsystem = "AirframePkg";
+					- _class = "";
+					- _name = "engineDynamics";
+					- _id = GUID d75d081c-bbee-4934-a95b-6229e5cc2f48;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "AirframePkg.sbs";
+					- _subsystem = "AirframePkg";
+					- _class = "";
+					- _name = "finDynamics";
+					- _id = GUID 82974356-7a0a-4c1a-a5f7-f21d8113da11;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "AirframePkg.sbs";
+					- _subsystem = "AirframePkg";
+					- _class = "";
+					- _name = "FinPort";
+					- _id = GUID 2e81bf58-1f69-4cfb-b137-028d9afd8c05;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "AirframePkg.sbs";
+					- _subsystem = "AirframePkg";
+					- _class = "";
+					- _name = "GustPort";
+					- _id = GUID 58ae5b04-a7c5-416d-a67b-062912cc5a66;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "AirframePkg.sbs";
+					- _subsystem = "AirframePkg";
+					- _class = "";
+					- _name = "gustWind";
+					- _id = GUID b3e270cb-f346-4e81-bc0d-9d34bea457fc;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "AirframePkg.sbs";
+					- _subsystem = "AirframePkg";
+					- _class = "";
+					- _name = "Units";
+					- _id = GUID 92518336-bbe8-42d8-945f-6fadefb14216;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "Prototype.sbs";
+					- _subsystem = "Prototype";
+					- _class = "";
+					- _name = "App";
+					- _id = GUID 3e3caf26-e286-4e98-a920-ee8d7d9eeab2;
+				}
+			}
+			- _root = { IFolder 
+				- _id = GUID f87f8bd5-ed3a-4b31-9bfa-bcc64a13a530;
+				- _name = "DefaultConfig";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 12.3.2003::2:7:37;
+			- strongCGTime = 11.26.2003::16:2:9;
+			- AnimScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_allInAnimScope = 1;
+		}
+	}
+	- HandlesInMe = { IRPYRawContainer 
+		- size = 41;
+		- value = 
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Prototype.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Prototype";
+			- _id = GUID 87d3fdb2-70de-4bb3-a8a9-e998cf9bc9b5;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "AirframePkg";
+			- _id = GUID 718c6e07-37b5-4bc4-b24a-1a6ac6912471;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "AutopilotPkg.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "AutopilotPkg";
+			- _id = GUID c9142634-dee8-4f23-9ab2-94629976d079;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "DisplayPkg.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "DisplayPkg";
+			- _id = GUID 1f4df77a-ce15-4b4b-9f30-a2b94de5daf8;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "GuidancePkg.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "GuidancePkg";
+			- _id = GUID 48747585-d7db-4893-aea1-35e124e95403;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "LibraryPkg.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "LibraryPkg";
+			- _id = GUID f7ea1d29-db32-4756-bf15-fef5352c82ba;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "RequirementClasses.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "RequirementClasses";
+			- _id = GUID f2460322-6b82-11d7-b382-00c04f680d9d;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "TargetPkg.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "TargetPkg";
+			- _id = GUID 9d763caf-f44a-4d2e-82ea-44a15b60ea2a;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "TrackingSubsystemPkg.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "TrackingSubsystemPkg";
+			- _id = GUID 48655bb2-120d-40c8-b6b2-5fbfff52ea49;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "ReverseEngineering.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "ReverseEngineering";
+			- _id = GUID 782bd0ad-c4cc-4f94-8e3f-11bf56156b2f;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "RT_Environment.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "RT_Environment";
+			- _id = GUID c123d7ab-34dd-4221-b21f-edfa14ce93c7;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Control_Software.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Control_Software";
+			- _id = GUID 4430277f-f52e-4b69-84fb-15b14461ceb7;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Device_Interfaces.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Device_Interfaces";
+			- _id = GUID 5f3609d1-5804-4b8d-8015-bcc8f6dfe56e;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Physical_Environment.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Physical_Environment";
+			- _id = GUID d2283d97-9ead-42f6-8004-f4bd40fc7c8b;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Prototype.sbs";
+			- _subsystem = "Prototype";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 609746eb-8e42-4459-83e1-027edbbbcec7;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Prototype.sbs";
+			- _subsystem = "Prototype";
+			- _class = "";
+			- _name = "AppAirFrame";
+			- _id = GUID d7edd091-daab-4a21-a0bc-8be6aa083603;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Prototype.sbs";
+			- _subsystem = "Prototype";
+			- _class = "";
+			- _name = "App_task_0040ms";
+			- _id = GUID 184b1160-9f71-425a-8c6d-43a642293434;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Prototype.sbs";
+			- _subsystem = "Prototype";
+			- _class = "";
+			- _name = "App_task_0010ms";
+			- _id = GUID 84e4d1e3-1262-4e28-abe7-d124771e85d9;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Prototype.sbs";
+			- _subsystem = "Prototype";
+			- _class = "";
+			- _name = "App_task_0001ms";
+			- _id = GUID 525d6433-ac28-444b-9ff1-c9dd494640e2;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Prototype.sbs";
+			- _subsystem = "Prototype";
+			- _class = "";
+			- _name = "App";
+			- _id = GUID 3e3caf26-e286-4e98-a920-ee8d7d9eeab2;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID debb9ca6-42b9-40ec-8df3-fe7fcd905365;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "Units";
+			- _id = GUID 92518336-bbe8-42d8-945f-6fadefb14216;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "aeroPort";
+			- _id = GUID 72439b59-e56a-4bfc-8a4a-8bd28556cecf;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "bodyDynamics";
+			- _id = GUID ec5eac36-3f82-46db-b2f8-c0ede31958c7;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "engineDynamics";
+			- _id = GUID d75d081c-bbee-4934-a95b-6229e5cc2f48;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "gustWind";
+			- _id = GUID b3e270cb-f346-4e81-bc0d-9d34bea457fc;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "GustPort";
+			- _id = GUID 58ae5b04-a7c5-416d-a67b-062912cc5a66;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "AtmoHeightPort";
+			- _id = GUID ddf3e2ae-279f-4136-b0ff-35d53c3e1ad5;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "AtmoPort";
+			- _id = GUID 53e0e0cd-5546-4d33-8ce5-7c374aed184b;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "FinPort";
+			- _id = GUID 2e81bf58-1f69-4cfb-b137-028d9afd8c05;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "atmosphere";
+			- _id = GUID d561d441-efef-479d-a89b-f9ec1e2a15ea;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "aeroFrame";
+			- _id = GUID f06876f0-cf8c-4e53-ad78-afab1a359910;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "aeroDynamics";
+			- _id = GUID 010916a0-e153-4944-98ad-476b2b0fa403;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "finDynamics";
+			- _id = GUID 82974356-7a0a-4c1a-a5f7-f21d8113da11;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AirframePkg.sbs";
+			- _subsystem = "AirframePkg";
+			- _class = "";
+			- _name = "aeroComposition";
+			- _id = GUID bd5666db-e67e-4b6f-809c-facf13590335;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "DisplayPkg.sbs";
+			- _subsystem = "DisplayPkg";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 4e0bd444-694f-400a-8a6e-81dab4afe006;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "DisplayPkg.sbs";
+			- _subsystem = "DisplayPkg";
+			- _class = "";
+			- _name = "Animation";
+			- _id = GUID de89020a-078c-4cfd-a94c-258007f12582;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "DisplayPkg.sbs";
+			- _subsystem = "DisplayPkg";
+			- _class = "";
+			- _name = "CChartDlg";
+			- _id = GUID e34abbac-4bae-431d-a695-a93e4aee4dbb;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "DisplayPkg.sbs";
+			- _subsystem = "DisplayPkg";
+			- _class = "";
+			- _name = "Chart";
+			- _id = GUID 665f6928-751f-4b05-87f5-545aa598c872;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TargetPkg.sbs";
+			- _subsystem = "TargetPkg";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID d5681b08-8807-43b4-8777-79a5eae8108d;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TargetPkg.sbs";
+			- _subsystem = "TargetPkg";
+			- _class = "";
+			- _name = "Target";
+			- _id = GUID 7d73ed67-6670-4690-97c9-6fe046428225;
+		}
+	}
+	- weakCGTime = 12.3.2003::2:7:37;
+	- strongCGTime = 10.16.2003::17:1:14;
+}
+

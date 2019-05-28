@@ -1,0 +1,363 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+
+	<META NAME="GENERATOR" Content="Microsoft FrontPage 4.0">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+	<TITLE>User Notes</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#800080">
+
+<P><!--CTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"><--></P>
+<!--g SRC="logo.gif" align="bottom" BORDER="0" width="75" height="47"> -->
+<P ALIGN="CENTER"><FONT SIZE="6"><I><B>Intel<SUP>&reg;</SUP> Math Kernel Library 5.1<BR>
+User Notes</B></I></FONT></P>
+
+
+
+<P>
+<H3><FONT FACE="Arial, helvetica">Contents</FONT></H3>
+
+<P><A HREF="#Overview"><FONT FACE="Arial, helvetica">Overview</FONT></A></P>
+
+<P><A HREF="#Compiler Support"><FONT FACE="Arial, helvetica">Compiler Support</FONT></A></P>
+
+<P><A HREF="#Directory Structure"><FONT FACE="Arial, helvetica">Directory Structure</FONT></A></P>
+
+<P><A HREF="#Linking with MKL"><FONT FACE="Arial, helvetica">Linking with MKL</FONT></A></P>
+
+<P><A HREF="#Using MKL Parallelism"><FONT FACE="Arial, helvetica">Using MKL Parallelism</FONT></A></P>
+
+<P><a HREF="#Performance"><FONT FACE="Arial, helvetica">Performance</FONT></a></P>
+
+<P><A HREF="#Obtaining Version Information"><FONT FACE="Arial, helvetica">Obtaining Version Information</FONT></A></P>
+
+
+
+<br><br>
+
+
+
+
+
+
+
+<A NAME="Overview"></A>
+<H3><FONT FACE="Arial, helvetica">Overview</FONT></H3>
+
+<P>This version of the Intel&reg; Math Kernel Library (MKL) supports both 32-bit and 64-bit Intel processors.  This release has optimized libraries that support 1) all Intel processors from the Pentium&reg; processor forward, 2) the Pentium <FONT FACE="Arial">III</FONT> processor, 3) the Pentium 4 processor and 4) the first Intel 64-bit processor, the Itanium&#153 processor.</P>
+
+<P>MKL contains the basic linear algebra subprograms (BLAS), the extended BLAS (sparse) and a small set of BLAS-like functions to compute minima for various data types.  In addition, there is a set of fast Fourier transforms in single- and double-precision, real and complex data types with both Fortran and C interfaces.  Each version of the library also includes the cblas interfaces, which allow the C programmer to access all the functionality of the BLAS without considering C-Fortran issues.</P>
+
+<P>MKL also contains LAPACK.  A number of the LAPACK routines have been threaded which improves performance over threading at the BLAS level when run on a system with multiple processors.  In this version, the driver programs and some computational routines have been added.</P>
+
+
+<P>VML is a recent addition to MKL consisting of a set of vectorized transcendental functions which offer both high performance and excellent accuracy compared to the libm functions for most of the processors. For the Itanium processor, the accuracy of these functions approaches that of libm, but are considerably faster for vectors longer than a few elements.</P>
+
+<P>The directory structure of the library has changed from the last version of MKL.  The interface, LAPACK, and processor specific kernels are now supplied as separated libraries, which reduces redundancy and thus the size of the MKL package.</P>
+
+<P>The original versions of the BLAS from which that part of the MKL library was derived can be obtained from <A HREF="http://www.netlib.org/blas/index.html">http://www.netlib.org/blas/index.html</A>.  The original versions of LAPACK from which that part of the MKL library was derived can be obtained from <A HREF="http://www.netlib.org/lapack/index.html">http://www.netlib.org/lapack/index.html</A>.  The authors of LAPACK are Anderson, E. and Bai, Z. and Bischof, C. and Blackford, S. and Demmel, J. and Dongarra, J. and Du Croz, J. and Greenbaum, A. and Hammarling, S. and McKenney, A. and Sorensen, D.</P>
+
+<P>Additional information on this software as well as other Intel software performance products is available at <A HREF="http://developer.intel.com/software/products/mkl/index.htm">http://developer.intel.com/software/products/mkl/index.htm</A>.</P>
+
+
+<P><A NAME="Compiler Support"></A>
+<H3><FONT FACE="Arial, helvetica">Compiler Support</FONT></H3>
+
+<P>Intel does not support MKL for use with any compilers other than those identified in the release notes.  However, other compilers have successfully linked with the libraries.</P>
+
+<P>In the following discussion &quot;stdcall&quot; is really the Compaq* Visual Fortran* compiler default compilation which differs from stdcall in the way strings are passed to the routine.</P>
+
+<P>There are both cdecl (default Microsoft* Visual C++* interface) and stdcall (default Compaq Visual Fortran interface) versions of the library. The cdecl versions are called "mkl_c.lib" and the stdcall versions are called "mkl_s.lib". Whether you choose to link with cdecl or stdcall depends on factors that only you can determine.  Calling routines in mkl_s.lib from C require your using a statement like &quot;extern __stdcall name( &lt;prototype variable1&gt;, &lt;prototype variable2&gt;, .. );&quot;.  However, because the default Compaq Visual Fortran format is not identical with stdcall, you will need to handle strings in the calling sequence specially.  Dealing with this issue is complex and the user is advised to refer to sections on interfaces in the Compaq Visual Fortran documentation. </P>
+
+<P>Calling routines in mkl_c.lib requires a similar declaration, such as &quot;&lt;type&gt; name( &lt;prototype variable1&gt;, &lt;prototype variable2&gt;, .. );&quot;.</P>
+
+<P>Similarly the Compaq Visual Fortran compiler uses stdcall by default, but if the user compiles with the switch /iface=(cref,nomixed_str_len_arg), the appropriate library to use is mkl_c.lib.</P>
+
+<P>When using the cblas interface, the header file mkl.h will simplify the programmer's development as it specifies enumerated values as well as prototypes of all the functions. The header determines if the program is being compiled with a C++ compiler, and if it is, the included file will be correct for use with C++ compilation.</P>
+
+<P>There is currently no support for compilers that require OMF file format.</P><BR>
+
+
+
+
+
+<P><A NAME="Directory Structure"></A>
+<H3><FONT FACE="Arial, helvetica">Directory Structure</FONT></H3>
+
+
+
+<P>MKL now separates 32-bit and 64-bit versions of the library.  The 32-bit versions are located in the ia32 directory and the 64-bit version is located in the ia64 directory.  Semantically, MKL consists of three parts:  interface, LAPACK, and processor specific kernels.  There are currently two libraries for the 32-bit processor versions that support interface:  mkl_c.lib - for cdecl interface, and mkl_s.lib - for Compaq Visual Fortran default interface.  There is no separated interface library for the 64-bit processor version that has a cdecl interface only.  The LAPACK library contains LAPACK routines and drivers that were optimized without regard to processor so that it can be used effectively on processors from Pentium to Pentium 4.  Processor specific kernels contain BLAS, FFTs, CBLAS, VML that were optimized for the specific processor.  New to this version of the library, is a dynamic link library for runtime support issues that arise with the LAPACK software - mkl_support.dll. This library is needed only if statically linking LAPACK software.  Also, threading software is supplied as a separate dynamic link library, libguide40.dll, for linking dynamically to MKL. 
+
+<P>The information below indicates the library's directory structure.</p>
+
+<P>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+
+
+<TR>
+<TD VALIGN="TOP" COLSPAN="2"><FONT SIZE="2"><B>mkl\ia32</B></FONT></TD>
+<TD VALIGN="TOP" WIDTH="69%"><font size="2">Contains all libraries for 32-bit applications</font></TD>
+</TR>
+
+<TR>
+<TD VALIGN="TOP" COLSPAN="2"><FONT SIZE="2"><B>mkl\ia32\bin</B></FONT></TD>
+<TD VALIGN="TOP" WIDTH="69%"><FONT SIZE="2">Contains DLLs for 32-bit applications</FONT></TD>
+</TR>
+
+<tr>
+<TD VALIGN="TOP" WIDTH="8%"></TD>
+<TD VALIGN="TOP" WIDTH="23%"><font size="2">mkl_lapack32.dll</font></TD>
+<TD VALIGN="TOP" WIDTH="69%"><font size="2"> LAPACK routines and drivers, single precision data types</font></TD>
+</tr>
+
+<tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_lapack64.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> LAPACK routines and drivers, double precision data types</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_support.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2">LAPACK runtime support</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_def.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> default kernel (Pentium, Pentium Pro, Pentium II
+          processors)</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_p3.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> Pentium <font face="Arial">III</font> processor kernel</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_p4.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> Pentium 4 processor kernel</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_vml_def.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> VML part of default kernel (Pentium, Pentium Pro, Pentium II
+          processors)</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_vml_p3.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> VML part of Pentium <font face="Arial">III</font> processor kernel</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_vml_p4.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> VML part of Pentium 4 processor kernel</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">libguide40.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2">Threading library</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP" COLSPAN="2"><FONT SIZE="2"><B>mkl\ia32\lib</B></FONT></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><FONT SIZE="2">Contains static libraries and static
+          interfaces to DLLs for 32-bit applications</FONT></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_c.lib</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> cdecl interface library</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_s.lib</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> Compaq Visual Fortran default interface library</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_c_dll.lib</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> cdecl interface library for dynamic
+          library</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_s_dll.lib</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> Compaq Visual Fortran default interface library for dynamic
+          library</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_lapack.lib</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> LAPACK routines and drivers</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_def.lib</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> default kernel (Pentium, Pentium Pro, Pentium II
+          processors)</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_p3.lib</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> Pentium <font face="Arial">III</font> processor kernel</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_p4.lib</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> Pentium 4 processor kernel</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP" COLSPAN="2"><FONT SIZE="2"><B>mkl\ia64</B></FONT></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2">Contains all libraries for 64-bit
+          applications</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP" COLSPAN="2"><FONT SIZE="2"><B>mkl\ia64\bin</B></FONT></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><FONT SIZE="2">Contains DLLs for 64-bit applications</FONT></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_lapack32.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> LAPACK routines and drivers, single precision data types</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_lapack64.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> LAPACK routines and drivers, double precision data types</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_support.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2">LAPACK runtime support</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_itp.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> Itanium processor kernel</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_vml_itp.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> VML part of Itanium processor kernel</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">libguide40.dll</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2">Threading library</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP" COLSPAN="2"><FONT SIZE="2"><B>mkl\ia64\lib</B></FONT></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><FONT SIZE="2">Contains static libraries and static
+          interfaces to DLLs for 64-bit applications</FONT></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_lapack.lib</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> LAPACK routines and drivers</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_itp.lib</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2"> Itanium processor kernel</font></TD>
+    </tr>
+    <tr>
+		<TD VALIGN="TOP"></TD>
+		<TD VALIGN="TOP"><font size="2">mkl_dll.lib</font></TD>
+		<TD VALIGN="TOP" WIDTH="69%"><font size="2">Interface library to DLL</font></TD>
+    </tr>
+</TABLE>
+
+
+
+
+
+
+<P><A NAME="Linking with MKL"></A></P>
+<H3><FONT FACE="Arial, helvetica">Linking with MKL</FONT></H3>
+
+
+<P>To use LAPACK and BLAS software you must link three libraries: an interface, LAPACK, and one of the processor specific kernels.  Some possible variants:</P>
+
+<DL>
+
+<DT><CODE><B>link myprog.obj mkl32_c.lib mkl32_lapack.lib mkl32_p3.lib</B></CODE>
+
+<DD> cdecl interface for 32-bit processor static linking, LAPACK library, Pentium <font face="Arial">III</font> processor kernel.</li>
+
+<DT><CODE><B>link myprog.obj mkl32_s.lib mkl32_lapack.lib mkl32_p4.lib</B></CODE>
+
+<DD> Compaq Visual Fortran default interface for 32-bit processor static linking, LAPACK library, Pentium 4 processor kernel.</li>
+
+<DT><CODE><B>link myprog.obj mkl32_c_dll.lib</B></CODE> 
+
+<DD> cdecl interface for 32-bit processor dynamic linking.  DLL dispatcher will load the appropriate dll for the processor dynamic kernel.</li>
+
+<DT><CODE><B>link myprog.obj mkl64_lapack.lib mkl64_itp.lib</B></CODE>
+
+<DD> 64-bit processor static linking of LAPACK and kernel.</li>
+
+</DL>
+
+
+
+
+<P><A NAME="Using MKL Parallelism"></A></P>
+<H3><FONT FACE="Arial, helvetica">Using MKL Parallelism</FONT></H3>
+
+<P>MKL is threaded in a number of places: LAPACK (*GETRF, *POTRF, *GBTRF routines), Level 3 BLAS, and FFTs. MKL 5.1 uses KAI OpenMP threading software.
+</P>
+
+<P><B>Setting the number of threads:</B> The OMP software responds to the environmental variable <CODE>OMP_NUM_THREADS</CODE>.  The number of threads can either be set as an environmental variable in the Environment panel of the System Properties box of the Control Panel on Microsoft Windows* NT*, or it can be set in the shell the program is running in. To change the number of threads, in a command shell in which the program is going to run, enter: </P>
+
+<P><CODE>set OMP_NUM_THREADS=</CODE>&lt;number of threads to use&gt;. </P>
+
+<P>Some other shells require the variable and its value to be exported, as in: </P>
+
+<P><CODE>export OMP_NUM_THREADS=</CODE>&lt;number of threads to use&gt;.</P>
+
+<P>Setting the variable when running on Microsoft Windows 95 or Microsoft Windows 98 is meaningless since multiprocessing is not supported.</P>
+
+<P>If the variable <CODE>OMP_NUM_THREADS </CODE>is not set, MKL software will run on the number of threads equal to the number of processors.  We recommend always setting <CODE>OMP_NUM_THREADS</CODE>.</P>
+
+
+<p><a NAME="Performance"></a>
+
+<h3><FONT FACE="Arial, helvetica">Performance&nbsp;</FONT></h3>
+
+<P>The obtain the best performance with MKL, make sure the  following conditions are fulfilled:  arrays must be aligned on 16-byte boundary and leading dimension values (n*element_size) of two-dimensional arrays must be divisible by 16.  There are additional conditions for the FFT functions.  The addresses of first elements of arrays and leading dimension values (n*element_size) of two-dimensional arrays should be divisible by cache line size (32 byte for Pentium <font face="Arial">III</font> processor and 64 byte for Pentium 4 processor).  Furthermore, for the C-style FFTs on the Pentium 4 processor the distance L between arrays that represent real and imaginary parts should not satisfy the following inequality:</P>
+
+<P>k*2**16 &lt;= L &lt; k*2**16+64</P>
+
+<P>These conditions are needed due to the use of Streaming SIMD Extensions (SSE).</P>
+
+<P>For the C-style FFT on the Itanium processor it is enough if the distance L between arrays that represent real and imaginary parts is not divisible by 64. The best case is if L=k*64 + 16.</P>
+
+
+
+<P><A NAME="Obtaining Version Information"></A></P>
+<H3><FONT FACE="Arial, helvetica">Obtaining Version Information</FONT></H3>
+
+<P>MKL provides a facility by which one can obtain information about the library (e.g., the version number).  Two methods are provided for extracting this information.  One, you may extract a version string using the function <code>MKLGetVersionString</code>.  Two, you can use the <code>MKLGetVersion</code> function to obtain a <code>MKLVersion</code> structure that contains the version information.  Example programs for extracting this information are provided in the <code>mkl\examples\VersionQuery</code> directory. Batch files are also provided to automatically build the examples and output summary files containing the version information for the current library. An example summary file can be found in the readme.htm file in the same directory.</P>
+
+
+
+
+
+<P><FONT SIZE="2">
+
+Intel, Pentium, and Itanium are trademarks or registered trademarks of Intel Corporation or its subsidiaries in the United States and other countries.<BR><br>
+
+* Other names and brands may be claimed as the property of others.
+
+</FONT></P>
+
+
+
+<P><FONT SIZE="2">Copyright 1999-2001, Intel Corporation, All Rights Reserved.</FONT>
+
+</BODY>
+
+</HTML>

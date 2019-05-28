@@ -1,0 +1,45 @@
+// RpyReactor.idl : IDL source for RpyReactor.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (RpyReactor.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(E36160FD-AA21-4318-A452-15FF518B5A07),
+		dual,
+		helpstring("IRpyReactorTestHarness Interface"),
+		pointer_default(unique)
+	]
+	interface IRpyReactorTestHarness : IDispatch
+	{
+		[id(1), helpstring("method GetModel")] 
+		HRESULT GetModel(IDispatch** ppModel);
+		[id(2), helpstring("method GetModelExec")] 
+		HRESULT GetModelExec(IDispatch** ppModelExec);
+		[id(3), helpstring("method Step")] HRESULT Step([in] double t);
+		[id(4), helpstring("method GetControllerOutput")] HRESULT GetControllerOutput([in] double time, [out] double* pOut);
+		[id(5), helpstring("method setSetpoint")] HRESULT setSetpoint([in] double val);
+	};
+
+[
+	uuid(7D17EB5E-6EA4-40A1-B3F3-985283EAA5A3),
+	version(1.0),
+	helpstring("RpyReactor 1.0 Type Library")
+]
+library RPYREACTORLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(774DFAF5-DEA7-4BB8-B67D-BD14889EA494),
+		helpstring("RpyReactorTestHarness Class")
+	]
+	coclass RpyReactorTestHarness
+	{
+		[default] interface IRpyReactorTestHarness;
+	};
+};

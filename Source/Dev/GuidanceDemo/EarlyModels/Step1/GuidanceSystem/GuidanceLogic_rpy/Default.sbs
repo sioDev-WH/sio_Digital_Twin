@@ -1,0 +1,2715 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ ISubsystem 
+	- _id = GUID 4582fb6c-0ad0-11d7-b329-00c04f680d9d;
+	- _myState = 8192;
+	- _properties = { IPropertyContainer 
+		- Subjects = { IRPYRawContainer 
+			- size = 1;
+			- value = 
+			{ IPropertySubject 
+				- _Name = "CG";
+				- Metaclasses = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertyMetaclass 
+						- _Name = "Package";
+						- Properties = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IProperty 
+								- _Name = "GenerateWithAggregates";
+								- _Value = "True";
+								- _Type = Bool;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	- _name = "Default";
+	- _lastID = 11;
+	- weakCGTime = 12.10.2002::22:28:42;
+	- strongCGTime = 12.9.2002::15:24:41;
+	- _defaultComposite = GUID 4582fb6d-0ad0-11d7-b329-00c04f680d9d;
+	- _eventsBaseID = 18601;
+	- Classes = { IRPYRawContainer 
+		- size = 15;
+		- value = 
+		{ IClass 
+			- _id = GUID 4582fb6d-0ad0-11d7-b329-00c04f680d9d;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 12.9.2002::14:14:43;
+			- strongCGTime = 12.8.2002::16:31:32;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 488fcb06-6848-4f57-8371-181eacd2d0a1;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "COnUMLAssociation";
+			- weakCGTime = 12.9.2002::12:34:14;
+			- strongCGTime = 12.9.2002::12:34:14;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID a5cea131-79df-4a64-94a8-fa7888b08574;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 2;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
+									- value = 
+									{ IProperty 
+										- _Name = "FileName";
+										- _Value = "OnUMLConnectorImpl";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "CPP_CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "AdditionalBaseClasses";
+										- _Value = "public COnUMLDaeEsoBaseImpl<T>";
+										- _Type = String;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "COnUMLConnectorImpl";
+			- TemplateParameters = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ ITemplateParameter 
+					- _id = GUID 032416a6-70fd-4528-b31b-d2157aa95e27;
+					- _name = "T";
+					- _defaultValue = "";
+					- myTypeOf = { IType 
+						- _id = GUID 97d5ad5a-964d-4e50-a788-58d1282d4c2e;
+						- _declaration = "class";
+					}
+					- _tpDefaultValue = { IHandle 
+						- _m2Class = "";
+					}
+					- _tpName = NULL;
+					- _tpDefaultValueOnTheFly = NULL;
+				}
+			}
+			- weakCGTime = 12.9.2002::15:5:18;
+			- strongCGTime = 12.9.2002::15:5:18;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 6;
+				- value = 
+				{ IConstructor 
+					- _id = GUID dd5ea06c-876b-40ae-988a-dbbfc3ee3a3d;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "//CopyGUID(TypeID_IOnUMLConnector, m_TypeGUID);
+m_bEsosByRef = true;";
+					}
+					- _initializer = "";
+				}
+				{ IDestructor 
+					- _id = GUID 5c3bdbc5-705b-4c80-ae06-b1f10877d7f2;
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "
+ ";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID ec7a2197-7b64-4b47-9a9f-58db626699d6;
+					- _name = "Connect";
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IArgument 
+							- _id = GUID 7ba9485f-6ebd-4d3e-b1b9-c9e08e219a84;
+							- _name = "ConnA";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID c4c03b94-b793-44f1-a601-5675c2eb8b1a;
+								- _declaration = "SAFEARRAY * * %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 993d9dd0-2fa2-4ca2-be44-fbd329c5a63a;
+							- _name = "ConnB";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 7777ad2d-fa32-48c8-999e-4fa49c71ceb5;
+								- _declaration = "SAFEARRAY * * %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID c78e2f12-8c15-4981-95b4-be2a0298b9a9;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 2f6dc4cd-36a3-4307-9a9e-e7427bc1fb79;
+					- _name = "GetADResidual";
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 3;
+						- value = 
+						{ IArgument 
+							- _id = GUID e1b29f98-2b92-455e-a346-537c92836e83;
+							- _name = "iEqn";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "long";
+								- _id = GUID 8d6ece2f-4774-4e46-a346-b71b55717d33;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 10132ac6-a929-45a0-9f34-7ea9d7d13bb0;
+							- _name = "t";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "double";
+								- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID d6caec47-69c6-4943-98bb-44052d74ca81;
+							- _name = "residual";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 5ab1d1db-4bc7-4134-8bab-83b0cba735c5;
+								- _declaration = "Fdouble * %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 70779406-ac86-418b-9f36-6a5f8dd26868;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 002a9069-73fe-4455-bee9-1ad8dd54a545;
+					- _name = "GetJacobianValues";
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 4;
+						- value = 
+						{ IArgument 
+							- _id = GUID 0aa4f6a0-18b2-4888-b14b-04e60eae3e32;
+							- _name = "iJac";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 46127c6e-617f-49e9-bb11-62242be101e8;
+								- _declaration = "long * %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID f2ad8f05-fb38-44bf-83df-455c9d6a85d7;
+							- _name = "nJac";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "long";
+								- _id = GUID 8d6ece2f-4774-4e46-a346-b71b55717d33;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 279dd014-fd44-42da-ab69-e6d7adefe3c1;
+							- _name = "t";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "double";
+								- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 2a529c0f-9d62-44bb-9def-c420b1ac1a4b;
+							- _name = "jacobians";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 012cc47d-a173-4924-aabe-bb02f722c98e;
+								- _declaration = "double * %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 8408611a-1c8b-4b42-a36e-d61ad8bb2103;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "HRESULT hr = S_OK;
+  long i, j;
+long iEqn, iVar, nVar;
+
+  Fdouble res;
+
+i = 0;
+while ( (i < nJac) && SUCCEEDED(hr) )
+{
+  iEqn = iJac[2*i];
+  for (j = i, nVar = 0; (iEqn == iJac[2*j]) && (j < nJac); j++) nVar++;
+
+  for (j = 0; j < m_varC.nADVars; j++) 
+  {
+    m_varC.FVars[j]->diff(-1, 0);
+    m_varC.derFVars[j]->diff(-1,0);
+  }
+
+  for (j = 0; j < nVar; j++)
+  {
+    iVar = iJac[2*(i+j)+1];
+    m_varC.FVars[iVar]->diff(j, nVar);
+  }
+
+  res.diff(-1,0);
+	  hr = GetADResidual(iEqn, t, &res);
+
+  for (j = 0; j < nVar; j++) jacobians[i+j] = res.d(j);
+
+  i += nVar;
+}
+
+return hr;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 296a3048-d602-4618-8f5c-ac4501ddf3a1;
+					- _name = "GetDiffJacobianValues";
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 4;
+						- value = 
+						{ IArgument 
+							- _id = GUID b259c19a-b787-401b-8931-b4b5e4d540a2;
+							- _name = "iJac";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 32f4a11b-94cf-44ae-95a9-6dc824e73fce;
+								- _declaration = "long * %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 7b204e1c-66e1-43c5-b3a2-642fa0b5bc2a;
+							- _name = "nJac";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "long";
+								- _id = GUID 8d6ece2f-4774-4e46-a346-b71b55717d33;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 775a9836-387f-43ae-8fb0-328f95f6e288;
+							- _name = "t";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "double";
+								- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID f8981c85-f883-4f39-802f-cbe34f8253c2;
+							- _name = "jacobians";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 1a2a399e-b8f8-41b9-9f0b-eaa0235d7582;
+								- _declaration = "double * %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID fafa6289-ca4c-418a-9fcc-79934da9ecb0;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "HRESULT hr = S_OK;
+  long i, j;
+long iEqn, iVar, nVar;
+
+  Fdouble res;
+i = 0;
+while ( (i < nJac) && SUCCEEDED(hr) )
+{
+  iEqn = iJac[2*i];
+  for (j = i, nVar = 0; (iEqn == iJac[2*j]) && (j < nJac); j++) nVar++;
+
+  for (j = 0; j < m_varC.nADVars; j++) 
+  {
+    m_varC.FVars[j]->diff(-1, 0);
+    m_varC.derFVars[j]->diff(-1, 0);
+  }
+
+  for (j = 0; j < nVar; j++)
+  {
+    iVar = iJac[2*(i+j)+1];
+    m_varC.derFVars[iVar]->diff(j, nVar);
+  }
+
+  res.diff(-1,0);
+	  hr = GetADResidual(iEqn, t, &res);
+
+  for (j = 0; j < nVar; j++) jacobians[i+j] = res.d(j);
+
+  i += nVar;
+}
+
+return hr;";
+					}
+				}
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 47a564de-20e8-459a-b579-50a798c7f20d;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "COnUMLDaeEsoBase";
+			- weakCGTime = 12.9.2002::12:34:23;
+			- strongCGTime = 12.9.2002::12:34:23;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 5b848c6b-3cd8-47ab-83ac-643b11521179;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "COnUMLDaeEsoBaseImpl";
+			- TemplateParameters = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ ITemplateParameter 
+					- _id = GUID 8028a4cf-c2cf-4f44-9864-e79bea913aba;
+					- _name = "T";
+					- _defaultValue = "";
+					- myTypeOf = { IType 
+						- _id = GUID e58a8b2c-8d82-4723-ab62-632fc9131e82;
+						- _declaration = "class";
+					}
+					- _tpDefaultValue = { IHandle 
+						- _m2Class = "";
+					}
+					- _tpName = NULL;
+					- _tpDefaultValueOnTheFly = NULL;
+				}
+			}
+			- Declaratives = { IRPYRawContainer 
+				- size = 4;
+				- value = 
+				{ IType 
+					- _id = GUID 0e1b6628-b19b-49b5-9db9-245050b8e230;
+					- _name = "residual_eqn";
+					- _declaration = "typedef HRESULT  ( template-parm::*%s)(double & ) ";
+				}
+				{ IType 
+					- _id = GUID a4b91de4-05fd-451c-85a8-1204e8b21fbd;
+					- _name = "ad_residual_eqn";
+					- _declaration = "typedef HRESULT  ( template-parm::*%s)(Fdouble & ) ";
+				}
+				{ IType 
+					- _id = GUID 2827d9e6-9a34-454a-b2e9-cde9f67861f3;
+					- _name = "dist_residual_eqn";
+					- _declaration = "typedef HRESULT  ( template-parm::*%s)() ";
+				}
+				{ IType 
+					- _id = GUID 175ef899-68d8-4b03-abf7-8fdaace3a000;
+					- _name = "ad_dist_residual_eqn";
+					- _declaration = "typedef HRESULT  ( template-parm::*%s)() ";
+				}
+			}
+			- weakCGTime = 12.9.2002::12:49:51;
+			- strongCGTime = 12.9.2002::12:49:51;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 9;
+				- value = 
+				{ IConstructor 
+					- _id = GUID bca3a8b3-33fb-45de-931c-fcf08fd0944b;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "m_LocalEqns = NULL;
+m_LocalADEqns = NULL;
+m_LocalDistEqns = NULL;
+m_LocalDistADEqns = NULL;";
+					}
+					- _initializer = "";
+				}
+				{ IDestructor 
+					- _id = GUID 69e560e9-5b9a-49ea-b791-3d55a011eff2;
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "if (m_LocalEqns)
+{
+  delete[] (double*) m_LocalEqns;
+  m_LocalEqns = NULL;
+}
+
+if (m_LocalADEqns)
+{
+  delete[] (double*) m_LocalADEqns;
+  m_LocalADEqns = NULL;
+}
+
+if (m_LocalDistEqns)
+{
+  delete[] (double*) m_LocalDistEqns;
+  m_LocalDistEqns = NULL;
+}
+
+
+if (m_LocalDistADEqns)
+{
+  delete[] (double*) m_LocalDistADEqns;
+  m_LocalDistADEqns = NULL;
+}
+";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID c1677f62-e76a-45ab-a277-b0f0e480f8b8;
+					- _name = "GetResiduals";
+					- _comment = "*********************************************************************
+Default implementation of GetResiduals
+*******************************************";
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 4;
+						- value = 
+						{ IArgument 
+							- _id = GUID e8794e8f-e0ff-4dd0-ac13-87a436d84c77;
+							- _name = "iEqns";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 4121581b-e4e5-44b3-b38f-1edb048b5eb3;
+								- _declaration = "long * %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 65b99dba-14d5-47e3-a4dd-1a9c6e7d0b06;
+							- _name = "nEqns";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "long";
+								- _id = GUID 8d6ece2f-4774-4e46-a346-b71b55717d33;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 68c55c5d-c628-45ce-986d-40105c8f8a82;
+							- _name = "t";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "double";
+								- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID e040cc48-ce7b-4b08-a453-e6547b750a92;
+							- _name = "residuals";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 5892fd06-96c9-4177-9d70-ac49e060879d;
+								- _declaration = "double * %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 8fdc7f33-711f-4e79-a100-41abf8724a6d;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "HRESULT hr = S_OK;
+long i;
+T* pT = static_cast<T*>(this);
+
+m_time = t;
+
+if (m_nLocalDistEqns == 0)
+{
+  for (i = 0; i < nEqns && SUCCEEDED(hr); i++)
+  {
+    #ifdef _SIM_ARTISAN
+      hr = (pT->*(m_LocalEqns[iEqns[i]]))(&residuals[i]);
+    #else
+      hr = (pT->*(m_LocalEqns[iEqns[i]]))(residuals[i]);
+    #endif
+  }
+}
+else
+{
+  long iDistEqn, iRes;
+
+  // clear the color array (so equations will be called once again)
+  for (i = 0; i < m_nLocalDistEqns; i++) m_LocalDistEqnColor[i] = false;
+
+  // call the equations
+  for (i = 0; i < nEqns && SUCCEEDED(hr); i++)
+  {
+    if (iEqns[i] < m_nLocalEqns)
+    {
+      #ifdef _SIM_ARTISAN
+        hr = (pT->*(m_LocalEqns[iEqns[i]]))(&residuals[i]);
+      #else
+        hr = (pT->*(m_LocalEqns[iEqns[i]]))(residuals[i]);
+      #endif
+    }
+    else
+    {
+      iRes = iEqns[i] - m_nLocalEqns;
+      for (iDistEqn = 0; iDistEqn < m_nLocalDistEqns; iDistEqn++)
+      {
+        if (iRes < m_LocalDistEqnResCount[iDistEqn])
+        {
+          if (!m_LocalDistEqnColor[iDistEqn])
+          {
+            hr = (pT->*(m_LocalDistEqns[iDistEqn]))();
+            m_LocalDistEqnColor[iDistEqn] = true;      
+          }
+          residuals[iEqns[i]] = m_LocalDistEqnVars[iDistEqn]->pVal[iRes];
+          break;
+        }
+        else
+        {
+          iRes -= m_LocalDistEqnResCount[iDistEqn];
+        }
+      }
+    }
+  }
+
+}
+
+return hr;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 6ed90164-1e2d-4e13-a7df-d8ac539151d2;
+					- _name = "AddLocalEqn";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IArgument 
+							- _id = GUID 0b4dfa3c-bcea-447a-a002-33859abfbe1b;
+							- _name = "eqn";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _id = GUID 0e1b6628-b19b-49b5-9db9-245050b8e230;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 233078b8-16f2-443a-a93d-62d04283fb8f;
+							- _name = "Name";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 6dccd26d-4712-490e-b5d7-1593288067e9;
+								- _declaration = "_TCHAR * %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iProtected;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long Dim;
+
+Dim = m_dLocalEqns;
+size_array(20, m_nLocalEqns, Dim, (double*&) m_LocalEqns);
+size_array(20, m_nLocalEqns, m_dLocalEqns, m_EqnNames);
+
+m_LocalEqns[m_nLocalEqns] = eqn;
+m_EqnNames[m_nLocalEqns] = ::SysAllocString(Name);
+m_nLocalEqns++;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 8b12fdae-b9b3-4620-b7c7-20e59482c737;
+					- _name = "AddLocalDistEqn";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 3;
+						- value = 
+						{ IArgument 
+							- _id = GUID 625ddfc8-380c-4dce-ab6f-cc3bc15a171c;
+							- _name = "eqn";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _id = GUID 2827d9e6-9a34-454a-b2e9-cde9f67861f3;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 38d532d6-7d21-48ad-89d5-b5492621f9cb;
+							- _name = "Name";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID f13f0381-5de7-4dde-9423-9574017e7226;
+								- _declaration = "_TCHAR * %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID d0453936-a0e4-4711-9010-67ecadb23289;
+							- _name = "eqnVar";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID b7cd1430-b05e-4be1-883a-5edc603de23c;
+								- _declaration = "DistributedVar * %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iProtected;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "T* pT = static_cast<T*>(this);
+long Dim;
+
+Dim = m_dLocalDistEqns;
+size_array(20, m_nLocalDistEqns, Dim, (double*&) m_LocalDistEqns);
+Dim = m_dLocalDistEqns;
+size_array(20, m_nLocalDistEqns, Dim, m_DistEqnNames);
+Dim = m_dLocalDistEqns;
+size_array(20, m_nLocalDistEqns, Dim, m_LocalDistEqnResCount);
+Dim = m_dLocalDistEqns;
+size_array(20, m_nLocalDistEqns, Dim, m_LocalDistEqnColor);
+size_array(20, m_nLocalDistEqns, m_dLocalDistEqns, m_LocalDistEqnVars);
+
+// call the equation once to ensure the distributed variable is initialized to correct size.
+(pT->*(eqn))();
+
+m_LocalDistEqns[m_nLocalDistEqns] = eqn;
+m_LocalDistEqnVars[m_nLocalDistEqns] = eqnVar;
+m_LocalDistEqnResCount[m_nLocalDistEqns] = eqnVar->nVal;
+m_DistEqnNames[m_nLocalDistEqns] = ::SysAllocString(Name);
+m_nLocalDistEqns++;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 76faa643-c6a5-4bb1-b778-57e5b5bd17aa;
+					- _name = "AddLocalADEqn";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IArgument 
+							- _id = GUID c2dca951-6f08-4cd7-b8b5-edf29b3500d8;
+							- _name = "eqn";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _id = GUID a4b91de4-05fd-451c-85a8-1204e8b21fbd;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 46720dd2-6791-47ea-9eeb-30af2ced5b9a;
+							- _name = "Name";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID cdaaa4f4-fb14-4daa-85e2-6f49015b85b4;
+								- _declaration = "_TCHAR * %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iProtected;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "size_array(20, m_nLocalADEqns, m_dLocalADEqns, (double*&) m_LocalADEqns);
+m_LocalADEqns[m_nLocalADEqns++] = eqn;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID b69c8dec-868a-4947-84ae-fa61d79bc454;
+					- _name = "AddLocalDistADEqn";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 3;
+						- value = 
+						{ IArgument 
+							- _id = GUID 21f9135c-7386-4af2-8de8-67d46222fe27;
+							- _name = "eqn";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _id = GUID 175ef899-68d8-4b03-abf7-8fdaace3a000;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 4ed884da-6917-4fbe-867f-c31a132279dc;
+							- _name = "Name";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID db570537-b620-4446-a368-bc4d81c157ae;
+								- _declaration = "_TCHAR * %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 53d7a8df-0248-412b-b015-1cc726740911;
+							- _name = "eqnVar";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 8126ba88-e95f-4985-a784-78f607a18978;
+								- _declaration = "FDistributedVar * %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iProtected;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "T* pT = static_cast<T*>(this);
+long Dim;
+
+Dim = m_dLocalDistADEqns;
+size_array(20, m_nLocalDistADEqns, Dim, (double*&) m_LocalDistADEqns);
+size_array(20, m_nLocalDistEqns, m_dLocalDistEqns, m_LocalDistADEqnVars);
+
+// call the equation once to ensure the distributed variable is initialized to correct size.
+(pT->*(eqn))();
+
+m_LocalDistADEqns[m_nLocalDistADEqns] = eqn;
+m_LocalDistADEqnVars[m_nLocalDistADEqns] = eqnVar;
+m_nLocalDistADEqns++;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID e7425ab3-93b0-444a-aa16-51803cdc4755;
+					- _name = "GetJacobianValues";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 4;
+						- value = 
+						{ IArgument 
+							- _id = GUID f1df0cec-19f7-4a3a-8460-129edfd8ddae;
+							- _name = "iJac";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 5cca6333-9304-4c04-920b-cb1ab1eab657;
+								- _declaration = "long * %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID ec036901-cf94-49fa-8e68-33c921280e85;
+							- _name = "nJac";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "long";
+								- _id = GUID 8d6ece2f-4774-4e46-a346-b71b55717d33;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID af983217-4a5f-4ecb-b471-9da789b62baa;
+							- _name = "t";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "double";
+								- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 66637d50-b63b-4c11-be86-62d9e3445759;
+							- _name = "jacobians";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID a0a5127c-0c95-44b3-89bc-2a5fc56dd6a9;
+								- _declaration = "double * %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID c899b4de-dd63-47c0-aa9f-ef2a0e9d02ee;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iProtected;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "HRESULT hr = S_OK;
+  long i, j;
+long iEqn, iVar, nVar, iVarColor, nItems;
+long iDistEqn, iRes, iResTest, iResMin, iResMax;
+T* pT = static_cast<T*>(this);
+
+  Fdouble res;
+m_time = t;
+i = 0;
+while ( (i < nJac) && SUCCEEDED(hr) )
+{
+  // read the equation and variable index from the iJac[] vector
+  iEqn = iJac[2*i];
+  iVar = iJac[2*i+1];
+
+  
+  if (iEqn < m_nLocalEqns)
+  {
+    // count the number of jacobians being sought for the current equation
+    nVar = 0;
+    nItems = 0;
+    //for (j = i; (iEqn == iJac[2*j]) && (j < nJac) && (j == i || iVar != iJac[2*j+1]); j++)
+    for (j = i; (iEqn == iJac[2*j]) && (j < nJac); j++)
+    {
+      nItems++;
+      nVar++;
+    }
+  }
+  else
+  {
+    // Have multiple residuals associated with one function.  
+    // Need to initialize all variables to write their outputs to a given unique slot.
+    // After the function is called, read the residuals back for each variable from the designated slots.
+
+    // reset the residuals for all distributed equation vars
+    for (j = 0; j < m_nLocalDistEqns; j++)
+      m_LocalDistADEqnVars[j]->diff(-1, 0);
+
+    // determine which residual equation is involved, and seek all variables referencing this equation
+    iRes = iEqn - m_nLocalEqns;
+    iResMin = 0;
+    nItems = 0;
+    iVarColor = 0;
+    for (iDistEqn = 0; iDistEqn < m_nLocalDistEqns; iDistEqn++)
+    {
+      // find the iDistEqn that will calculate iRes
+      iResMax = iResMin + m_LocalDistEqnResCount[iDistEqn] - 1;
+      if (iRes <= iResMax)
+      {
+        // reset the AD variable coloring
+        for (j = 0; j < m_varC.nADVars; j++) m_ad_x_color[j] = -1;
+        
+        // while within the same iDistEqn, color the referenced variables
+        for (j = i; j < nJac; j++)
+        {
+          iResTest = iJac[2*j] - m_nLocalEqns;
+          if (iResTest >= iResMin && iResTest <= iResMax)
+          {
+            nItems++;
+            iVar = iJac[2*j+1];
+            if (m_ad_x_color[iVar] >= 0)
+              m_ad_x_color[iVar] = iVarColor++;
+          }
+          else
+            break;
+        }
+        // count the colored variables
+        for (j = 0, nVar = 0; j < m_varC.nADVars; j++) if (m_ad_x_color[j] >= 0) nVar++;
+        break;
+      }
+      else
+      {
+        iRes -= m_LocalDistEqnResCount[iDistEqn];
+      }
+      iResMin += m_LocalDistEqnResCount[iDistEqn];
+    }
+  }
+
+  // reset the derivative vectors of all AD vars (I suspect there is a simplification)
+  for (j = 0; j < m_varC.nADVars; j++) 
+  {
+    m_varC.FVars[j]->diff(-1, 0);
+    m_varC.derFVars[j]->diff(-1, 0);
+  }
+
+  if (iEqn < m_nLocalEqns)
+  {
+    // mark only those variables for which the jacobian should be calculated
+    for (j = 0; j < nItems; j++)
+    {
+      iVar = iJac[2*(i+j)+1];
+      if (iVar < m_varC.nADVars) 
+        m_varC.FVars[iVar]->diff(j, nVar);
+    }
+  }
+  else
+  {
+    for (iVar = 0; iVar < m_varC.nADVars; iVar++)
+    {
+      iVarColor = m_ad_x_color[iVar];
+      if (m_ad_x_color[iVar] >= 0)
+        m_varC.FVars[iVar]->diff(iVarColor, nVar);
+    }
+  }
+
+  if (iEqn < m_nLocalEqns)
+  {
+    // call the equation
+    #ifdef _SIM_ARTISAN
+      hr = (pT->*(m_LocalADEqns[iEqn]))(&res);
+    #else
+      hr = (pT->*(m_LocalADEqns[iEqn]))(res);
+    #endif
+  }
+  else
+  {
+    hr = (pT->*(m_LocalDistADEqns[iDistEqn]))();
+  }
+
+  if (iEqn < m_nLocalEqns)
+  {
+    // record the jacobian results
+    for (j = 0; j < nVar; j++) jacobians[i+j] = res.d(j);
+
+    // reset the residual vector
+    res.diff(-1, 0);
+  }
+  else
+  {
+    // record the jacobian results
+    for (j = 0; j < nItems; j++)
+    {
+      iEqn = iJac[2*(i+j)] - m_nLocalEqns - iResMin;
+      iVar = iJac[2*(i+j)+1];
+      iVarColor = m_ad_x_color[iVar];
+      jacobians[i+j] = m_LocalDistADEqnVars[iDistEqn]->pVal[iEqn].d(iVarColor);
+    }
+    // residual vector reset above
+  }
+
+  // increment i past the number of jacobians calculated above
+  if (iEqn < m_nLocalEqns)
+    i += nVar;
+  else
+    i += nItems;
+}
+
+return hr;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 20eb9069-3806-43e7-a1e0-7bc4076ec7ed;
+					- _name = "GetDiffJacobianValues";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 4;
+						- value = 
+						{ IArgument 
+							- _id = GUID 6aa72f8f-7c6a-4184-bbe6-01f5ddd3002c;
+							- _name = "iJac";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID a4648fec-ad1c-47ee-b7a3-8f00a7184042;
+								- _declaration = "long * %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID d53a3f80-2d7b-408f-abda-f1c59442d8d2;
+							- _name = "nJac";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "long";
+								- _id = GUID 8d6ece2f-4774-4e46-a346-b71b55717d33;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 084de8d8-2289-4865-95df-44cd97816292;
+							- _name = "t";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "double";
+								- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 04a4080e-de85-4ffe-ad8b-8b6f2ff3fb9c;
+							- _name = "jacobians";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID c5252b87-270f-4d4d-82ff-47bcb9e44a7d;
+								- _declaration = "double * %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 7d3bf070-3f33-4a25-8856-1d83d9bdcf48;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iProtected;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "HRESULT hr = S_OK;
+  long i, j;
+long iEqn, iVar, nVar, iVarColor, nItems;
+long iDistEqn, iRes, iResTest, iResMin, iResMax;
+T* pT = static_cast<T*>(this);
+
+  Fdouble res;
+m_time = t;
+i = 0;
+while ( (i < nJac) && SUCCEEDED(hr) )
+{
+  // read the equation and variable index from the iJac[] vector
+  iEqn = iJac[2*i];
+  iVar = iJac[2*i+1];
+
+  
+  if (iEqn < m_nLocalEqns)
+  {
+    // count the number of jacobians being sought for the current equation
+    nVar = 0;
+    nItems = 0;
+    //for (j = i; (iEqn == iJac[2*j]) && (j < nJac) && (j == i || iVar != iJac[2*j+1]); j++)
+    for (j = i; (iEqn == iJac[2*j]) && (j < nJac); j++)
+    {
+      nItems++;
+      nVar++;
+    }
+  }
+  else
+  {
+    // Have multiple residuals associated with one function.  
+    // Need to initialize all variables to write their outputs to a given unique slot.
+    // After the function is called, read the residuals back for each variable from the designated slots.
+
+    // reset the residuals for all distributed equation vars
+    for (j = 0; j < m_nLocalDistEqns; j++)
+      m_LocalDistADEqnVars[j]->diff(-1, 0);
+
+    // determine which residual equation is involved, and seek all variables referencing this equation
+    iRes = iEqn - m_nLocalEqns;
+    iResMin = 0;
+    nItems = 0;
+    iVarColor = 0;
+    for (iDistEqn = 0; iDistEqn < m_nLocalDistEqns; iDistEqn++)
+    {
+      // find the iDistEqn that will calculate iRes
+      iResMax = iResMin + m_LocalDistEqnResCount[iDistEqn] - 1;
+      if (iRes <= iResMax)
+      {
+        // reset the AD variable coloring
+        for (j = 0; j < m_varC.nADVars; j++) m_ad_x_color[j] = -1;
+        
+        // while within the same iDistEqn, color the referenced variables
+        for (j = i; j < nJac; j++)
+        {
+          iResTest = iJac[2*j] - m_nLocalEqns;
+          if (iResTest >= iResMin && iResTest <= iResMax)
+          {
+            nItems++;
+            iVar = iJac[2*j+1];
+            if (m_ad_x_color[iVar] >= 0)
+              m_ad_x_color[iVar] = iVarColor++;
+          }
+          else
+            break;
+        }
+        // count the colored variables
+        for (j = 0, nVar = 0; j < m_varC.nADVars; j++) if (m_ad_x_color[j] >= 0) nVar++;
+        break;
+      }
+      else
+      {
+        iRes -= m_LocalDistEqnResCount[iDistEqn];
+      }
+      iResMin += m_LocalDistEqnResCount[iDistEqn];
+    }
+  }
+
+  // reset the derivative vectors of all AD vars (I suspect there is a simplification)
+  for (j = 0; j < m_varC.nADVars; j++) 
+  {
+    m_varC.FVars[j]->diff(-1, 0);
+    m_varC.derFVars[j]->diff(-1, 0);
+  }
+
+  if (iEqn < m_nLocalEqns)
+  {
+    // mark only those variables for which the jacobian should be calculated
+    for (j = 0; j < nItems; j++)
+    {
+      iVar = iJac[2*(i+j)+1];
+      if (iVar < m_varC.nADVars) 
+        m_varC.derFVars[iVar]->diff(j, nVar);
+    }
+  }
+  else
+  {
+    for (iVar = 0; iVar < m_varC.nADVars; iVar++)
+    {
+      iVarColor = m_ad_x_color[iVar];
+      if (m_ad_x_color[iVar] >= 0)
+        m_varC.derFVars[iVar]->diff(iVarColor, nVar);
+    }
+  }
+
+  if (iEqn < m_nLocalEqns)
+  {
+    // call the equation
+    #ifdef _SIM_ARTISAN
+      hr = (pT->*(m_LocalADEqns[iEqn]))(&res);
+    #else
+      hr = (pT->*(m_LocalADEqns[iEqn]))(res);
+    #endif
+  }
+  else
+  {
+    hr = (pT->*(m_LocalDistADEqns[iDistEqn]))();
+  }
+
+  if (iEqn < m_nLocalEqns)
+  {
+    // record the jacobian results
+    for (j = 0; j < nVar; j++) jacobians[i+j] = res.d(j);
+
+    // reset the residual vector
+    res.diff(-1, 0);
+  }
+  else
+  {
+    // record the jacobian results
+    for (j = 0; j < nItems; j++)
+    {
+      iEqn = iJac[2*(i+j)] - m_nLocalEqns - iResMin;
+      iVar = iJac[2*(i+j)+1];
+      iVarColor = m_ad_x_color[iVar];
+      jacobians[i+j] = m_LocalDistADEqnVars[iDistEqn]->pVal[iEqn].d(iVarColor);
+    }
+    // residual vector reset above
+  }
+
+  // increment i past the number of jacobians calculated above
+  if (iEqn < m_nLocalEqns)
+    i += nVar;
+  else
+    i += nItems;
+}
+
+return hr;";
+					}
+				}
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 4;
+				- value = 
+				{ IAttribute 
+					- _id = GUID e78d2ed3-8191-4b4b-9a23-46bd332c88e6;
+					- _name = "m_LocalEqns";
+					- _comment = "normal residual equation pointers";
+					- _defaultValue = "";
+					- myTypeOf = { IType 
+						- _id = GUID b595f123-11ef-4db1-a733-58d7ac0f56a4;
+						- _declaration = "COnUMLDaeEsoBaseImpl<T>::residual_eqn * %s";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 7c47d891-e030-4d8b-88bb-07db7c4d83ce;
+					- _name = "m_LocalADEqns";
+					- _defaultValue = "";
+					- myTypeOf = { IType 
+						- _id = GUID 41611d9f-f055-41a1-acb6-0d190592083c;
+						- _declaration = "COnUMLDaeEsoBaseImpl<T>::ad_residual_eqn * %s";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID beeb7142-bfff-42ad-85ae-d0304475de70;
+					- _name = "m_LocalDistEqns";
+					- _comment = "distributed residual equation pointers";
+					- _defaultValue = "";
+					- myTypeOf = { IType 
+						- _id = GUID 604b4846-3b44-47a0-8609-d139d2fa31c2;
+						- _declaration = "COnUMLDaeEsoBaseImpl<T>::dist_residual_eqn * %s";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 1cd2b00e-c024-4d33-a206-8b7c624a1ebf;
+					- _name = "m_LocalDistADEqns";
+					- _defaultValue = "";
+					- myTypeOf = { IType 
+						- _id = GUID 2f80fab1-a3dc-4e22-afe2-1e8b70615a69;
+						- _declaration = "COnUMLDaeEsoBaseImpl<T>::ad_dist_residual_eqn * %s";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID c08b7e7b-ae88-4f22-a76c-ffe1da8f258d;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 47a564de-20e8-459a-b579-50a798c7f20d;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID d5aa6068-f9d2-4c0f-80ac-b5b7a135da22;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 2;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
+									- value = 
+									{ IProperty 
+										- _Name = "FileName";
+										- _Value = "OnUMLDaeEsoImpl";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+					{ IPropertySubject 
+						- _Name = "CPP_CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "AdditionalBaseClasses";
+										- _Value = "public COnUMLDaeEsoBaseImpl<T>";
+										- _Type = String;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "COnUMLDaeEsoImpl";
+			- TemplateParameters = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ ITemplateParameter 
+					- _id = GUID 38cc6779-0e71-4031-a910-24d1100f18ee;
+					- _name = "T";
+					- _defaultValue = "";
+					- myTypeOf = { IType 
+						- _id = GUID ba61dcbf-3ccf-43da-9514-1e0278b9225d;
+						- _declaration = "class";
+					}
+					- _tpDefaultValue = { IHandle 
+						- _m2Class = "";
+					}
+					- _tpName = NULL;
+					- _tpDefaultValueOnTheFly = NULL;
+				}
+			}
+			- weakCGTime = 12.9.2002::15:5:50;
+			- strongCGTime = 12.9.2002::15:5:50;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 6;
+				- value = 
+				{ IConstructor 
+					- _id = GUID 2c5d31ac-dd95-4f4a-b37f-ffcf24886214;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _initializer = "";
+				}
+				{ IDestructor 
+					- _id = GUID a66f8810-495b-4f54-a2bd-f70094e729e7;
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID c7214c39-2f51-41c6-976a-4c9e5c26f893;
+					- _name = "Connect";
+					- _comment = "connections";
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ IArgument 
+							- _id = GUID 02d9bebb-2665-4cb1-b5d5-95de1e268203;
+							- _name = "ppsaConnA";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID f1b25e44-1edb-4d17-84ff-7cdbefb77134;
+								- _declaration = "SAFEARRAY * * %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID abdccf20-d6fd-4f39-a992-1946ddf612f8;
+							- _name = "ppsaConnB";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 87d295ee-3abf-4ec6-a1e0-d3a7ca4fc97b;
+								- _declaration = "SAFEARRAY * * %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 640ecdbf-c9f9-4705-b455-d4a9bee698cf;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long idx = m_nAssociations;
+long* vec = NULL;
+long i, j;
+long lbound;
+long ubound;
+long size;
+
+size_ptr_array(20, m_nAssociations, m_dAssociations, m_Associations);
+
+m_Associations[idx] = new COnUMLAssociation();
+
+SafeArrayAccessData(*ppsaConnA, (void HUGEP* FAR*)& vec);
+SafeArrayGetLBound(*ppsaConnA, (unsigned int) 1, &lbound);
+SafeArrayGetUBound(*ppsaConnA, (unsigned int) 1, &ubound);
+size = ubound - lbound + 1;
+
+m_Associations[idx]->nFromIds = size;
+m_Associations[idx]->FromIds = new long[size];
+for (i = 0, j = lbound; i < size; i++, j++) 
+  m_Associations[idx]->FromIds[i] = vec[j];
+
+SafeArrayUnaccessData(*ppsaConnA);
+
+
+SafeArrayAccessData(*ppsaConnB, (void HUGEP* FAR*)& vec);
+SafeArrayGetLBound(*ppsaConnB, (unsigned int) 1, &lbound);
+SafeArrayGetUBound(*ppsaConnB, (unsigned int) 1, &ubound);
+size = ubound - lbound + 1;
+
+m_Associations[idx]->nToIds = size;
+m_Associations[idx]->ToIds = new long[size];
+for (i = 0, j = lbound; i < size; i++, j++) 
+  m_Associations[idx]->ToIds[i] = vec[j];
+
+SafeArrayUnaccessData(*ppsaConnB);
+
+m_nAssociations++;
+
+return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID d1f2c963-9aba-4feb-b96c-e42929dd9b34;
+					- _name = "GetAssociations";
+					- _comment = "method implemented on derived class that loads Eso associations";
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 3;
+						- value = 
+						{ IArgument 
+							- _id = GUID affae1b3-3d93-4316-8d22-f1b812d7c452;
+							- _name = "Assoc";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID a43460e1-0cab-4cb9-8452-71a4182c4bb4;
+								- _declaration = "long * * %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID f1abb7d3-2377-4b3a-9dd3-7efd608f905d;
+							- _name = "Size";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 5ea3bf4a-4dfa-4db4-9888-aaf4b8ca19c1;
+								- _declaration = "long * * %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID f9d3c797-1723-4626-9e35-76a022f25aa2;
+							- _name = "nSize";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID d7561923-8e5e-4ef7-9d65-1026bce57763;
+								- _declaration = "long * %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 2a602f20-eccd-4790-b97a-f67548129abb;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "return E_NOTIMPL;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID a457d27c-d058-4d3d-86a1-21d66fb51938;
+					- _name = "InitAssociations";
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- myReturnType = { IType 
+						- _id = GUID f6ff7f00-1778-4d5c-945b-02af0904dcd4;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long* Assoc = NULL;
+long* Size = NULL;
+long nSize = 0;
+long i, j, k;
+
+for (i = 0; i < m_nEsos; i++) m_Esos[i]->InitAssociations();
+
+if (m_nAssociations == 0) // if the number of associations is not zero, associations have been added through the connect mechanism.
+{
+  if (SUCCEEDED(GetAssociations(&Assoc, &Size, &nSize) ))
+  {
+  
+    m_nAssociations = nSize / 2;
+    m_Associations = new COnUMLAssociation*[m_nAssociations];
+    m_dAssociations = m_nAssociations;
+
+    k = 0;
+    for (i = 0; i < m_nAssociations; i++) 
+    {
+      m_Associations[i] = new COnUMLAssociation();
+      m_Associations[i]->nFromIds = Size[2*i];
+      m_Associations[i]->FromIds = new long[m_Associations[i]->nFromIds];
+      for (j = 0; j < m_Associations[i]->nFromIds; j++) m_Associations[i]->FromIds[j] = Assoc[k++];
+      m_Associations[i]->nToIds = Size[2*i+1];
+      m_Associations[i]->ToIds = new long[m_Associations[i]->nToIds];
+      for (j = 0; j < m_Associations[i]->nToIds; j++) m_Associations[i]->ToIds[j] = Assoc[k++];
+    }
+  }
+}
+
+DESTROY_VECTOR(Assoc)
+DESTROY_VECTOR(Size)
+
+return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID f46b4ae7-2f4b-43ac-aa02-08a54ec6f04b;
+					- _name = "iInitializeGlobalNode";
+					- _virtual = 1;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- myReturnType = { IType 
+						- _id = GUID 17249b2c-243f-4b45-a7c3-d837338de786;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "HRESULT hr = S_OK;
+long i, j, k;
+long nBlocks = 0;
+long* spBlocks = NULL;
+long* cNZBlocks = NULL;
+COnUMLDaeEsoBase** pEsos = NULL;
+
+hr = InitAssociations();
+if (SUCCEEDED(hr))
+{
+  hr = GetAssociationBlocks(nBlocks, spBlocks, cNZBlocks, pEsos);
+  if (SUCCEEDED(hr))
+  {
+    for (i = 0; i < nBlocks; i++)
+    {
+      k = spBlocks[i] + 1;
+      for (j = 1; j < cNZBlocks[i]; j++)
+      {
+        pEsos[spBlocks[i]]->AddMemberEso(pEsos[k++], NULL);
+      }
+      pEsos[spBlocks[i]]->SetMasterNodeStatus(true);
+    }
+  }
+}
+
+DESTROY_VECTOR(spBlocks)
+DESTROY_VECTOR(cNZBlocks)
+DESTROY_VECTOR(pEsos)
+
+
+return hr;";
+					}
+				}
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 666cac0e-2da7-4614-bb72-af9734c063ef;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "COnUMLLink";
+			- weakCGTime = 12.9.2002::12:38:15;
+			- strongCGTime = 12.9.2002::12:38:15;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 603013ba-e0df-4d8a-9d71-8a39e53e21b8;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "DistributedVar";
+			- weakCGTime = 12.9.2002::12:38:19;
+			- strongCGTime = 12.9.2002::12:38:19;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID b748fba6-b4d7-4d2d-b48c-9063517f65db;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "Fdouble";
+			- weakCGTime = 12.9.2002::12:38:22;
+			- strongCGTime = 12.9.2002::12:38:22;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 4e12c462-f24f-407b-82b6-a36698a70811;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "IIsDaeEso";
+			- weakCGTime = 12.9.2002::12:38:35;
+			- strongCGTime = 12.9.2002::12:38:35;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 554cdd31-5512-4318-9ba1-de103ad43da8;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "IIsDaeEsoCImpl";
+			- weakCGTime = 12.9.2002::12:38:41;
+			- strongCGTime = 12.9.2002::12:38:41;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 792b1a12-e7b0-45bf-9099-9e824af730eb;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "IOnEnv";
+			- weakCGTime = 12.9.2002::12:38:53;
+			- strongCGTime = 12.9.2002::12:38:53;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID e69d651b-6d55-469b-b442-f9f57adc7629;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "IOnEventSink";
+			- weakCGTime = 12.9.2002::12:38:57;
+			- strongCGTime = 12.9.2002::12:38:57;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 58f195ad-435f-4e60-b943-79ce3727feb7;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "IOnModelExec";
+			- weakCGTime = 12.9.2002::12:39:5;
+			- strongCGTime = 12.9.2002::12:39:5;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 64e7e248-b19f-4cd5-b71a-e275f9bd62b1;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "CG";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Class";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
+									- value = 
+									{ IProperty 
+										- _Name = "FileName";
+										- _Value = "IOnVarInit";
+										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "UseAsExternal";
+										- _Value = "True";
+										- _Type = Bool;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "IOnVarInit";
+			- weakCGTime = 12.10.2002::22:25:38;
+			- strongCGTime = 12.10.2002::22:25:38;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- Events = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Types = { IRPYRawContainer 
+		- size = 26;
+		- value = 
+		{ IType 
+			- _id = GUID e9e31931-dbef-4458-822c-af44322274ab;
+			- _name = "pre";
+			- _declaration = "#define %s(ITEM) old_##ITEM ";
+		}
+		{ IType 
+			- _id = GUID 02d81d2b-8ec6-46e2-955c-8dc111a37f6e;
+			- _name = "PRE";
+			- _declaration = "#define %s(ITEM) old_##ITEM ";
+		}
+		{ IType 
+			- _id = GUID ab4d1b7f-779c-4caf-906d-494098d0e1f6;
+			- _name = "ad";
+			- _declaration = "#define %s(ITEM) ad_##ITEM";
+		}
+		{ IType 
+			- _id = GUID a0c949dd-8f28-4474-9eb9-1d0b84d94023;
+			- _name = "AD";
+			- _declaration = "#define %s(ITEM) ad_##ITEM";
+		}
+		{ IType 
+			- _id = GUID 0f306489-6cb6-468f-84be-1ff3c1e7b54c;
+			- _name = "ADD_LOCAL_AD_EQN";
+			- _declaration = "#define %s(CLASS, EQN) AddLocalADEqn( CLASS::EQN, _T(#EQN) );";
+		}
+		{ IType 
+			- _id = GUID 63cbe207-b038-4830-8552-ce5ccd393fbc;
+			- _name = "ADD_LOCAL_CIPAR";
+			- _declaration = "#define %s(CIPAR) AddLocalIPar( &CIPAR, _T(#CIPAR), \\
+  prefix, pars, Names, nPars, dPars );";
+		}
+		{ IType 
+			- _id = GUID adbc5ef5-2d4f-469c-adce-f88518f92b0b;
+			- _name = "ADD_LOCAL_CRPAR";
+			- _declaration = "#define %s(CRPAR) AddLocalRPar( &CRPAR, _T(#CRPAR), \\
+  prefix, pars, Names, nPars, dPars );";
+		}
+		{ IType 
+			- _id = GUID 64643b34-7545-4d18-ae58-ba57580c4fd7;
+			- _name = "ADD_LOCAL_CVAR";
+			- _declaration = "#define %s(CVAR) AddLocalVar( CVAR, _T(#CVAR), \\
+  prefix, varC, bADOnly);";
+		}
+		{ IType 
+			- _id = GUID acb4518a-70fb-4f37-8f39-f0e329658311;
+			- _name = "ADD_LOCAL_DIST_AD_EQN";
+			- _declaration = "#define %s(CLASS, EQN, EQNVAR) AddLocalDistADEqn( CLASS::EQN, _T(#EQN), &EQNVAR);";
+		}
+		{ IType 
+			- _id = GUID e31183b1-5164-46b0-88ab-ac95e4e66760;
+			- _name = "ADD_LOCAL_DIST_EQN";
+			- _declaration = "#define %s(CLASS, EQN, EQNVAR) AddLocalDistEqn( CLASS::EQN, _T(#EQN), &(EQNVAR));";
+		}
+		{ IType 
+			- _id = GUID 25349059-3087-4be7-88d0-f9e203272969;
+			- _name = "ADD_LOCAL_DIST_SVAR";
+			- _declaration = "#define %s(VAR) AddLocalVar( &VAR, &_##VAR, _T(#VAR), \\
+  prefix, varC, bADOnly);";
+		}
+		{ IType 
+			- _id = GUID 93483dfe-5a68-4534-8bc9-3f08febb55f1;
+			- _name = "ADD_LOCAL_EQN";
+			- _declaration = "#define %s(CLASS, EQN) AddLocalEqn( CLASS::EQN, _T(#EQN) );";
+		}
+		{ IType 
+			- _id = GUID 8d8f97e8-8cb6-4589-ac43-639af54cb533;
+			- _name = "ADD_LOCAL_ESO";
+			- _declaration = "#define %s(ESO) AddMemberEso(ESO, _T(#ESO));";
+		}
+		{ IType 
+			- _id = GUID 3a4a7e5d-80a6-408e-bde4-ee00a8282425;
+			- _name = "ADD_LOCAL_MIPAR";
+			- _declaration = "#define %s(MAT, SIZE1, SIZE2) AddLocalIPar( MAT, SIZE1, SIZE2, _T(#MAT), \\
+  prefix, pars, Names, nPars, dPars );";
+		}
+		{ IType 
+			- _id = GUID 70dde710-72aa-4f65-9c82-5c7caabc2719;
+			- _name = "ADD_LOCAL_MRPAR";
+			- _declaration = "#define %s(MAT, SIZE1, SIZE2) AddLocalRPar( MAT, SIZE1, SIZE2, _T(#MAT), \\
+  prefix, pars, Names, nPars, dPars );";
+		}
+		{ IType 
+			- _id = GUID 9874cc6d-723d-47e1-9d2a-9864dc23cc18;
+			- _name = "ADD_LOCAL_MVAR";
+			- _declaration = "#define %s(MAT, SIZE1, SIZE2) AddLocalVar( MAT, der_##MAT, old_##MAT, der_old_##MAT, ad_##MAT, der_ad_##MAT, SIZE1, SIZE2, _T(#MAT), \\
+  prefix, varC, bADOnly);";
+		}
+		{ IType 
+			- _id = GUID 7f95f035-4732-480a-98f3-ec6be3bb7484;
+			- _name = "ADD_LOCAL_SIPAR";
+			- _declaration = "#define %s(IPAR) AddLocalIPar( &IPAR, _T(#IPAR), \\
+  prefix, pars, Names, nPars, dPars );";
+		}
+		{ IType 
+			- _id = GUID 442c02d0-d916-4160-a653-35202bc50aa4;
+			- _name = "ADD_LOCAL_SRPAR";
+			- _declaration = "#define %s(RPAR) AddLocalRPar( &RPAR, _T(#RPAR), \\
+  prefix, pars, Names, nPars, dPars );";
+		}
+		{ IType 
+			- _id = GUID 45af9c13-c307-45c1-9881-ec3d44534b07;
+			- _name = "ADD_LOCAL_SVAR";
+			- _declaration = "#define %s(VAR) AddLocalVar( &VAR, &der_##VAR, &old_##VAR, &der_old_##VAR, &ad_##VAR, &der_ad_##VAR, _T(#VAR), \\
+  prefix, varC, bADOnly);";
+		}
+		{ IType 
+			- _id = GUID cf3ee135-8117-456c-94af-8feef7cf3275;
+			- _name = "ADD_LOCAL_VIPAR";
+			- _declaration = "#define %s(VEC, SIZE) AddLocalIPar( VEC, SIZE, _T(#VEC), \\
+  prefix, pars, Names, nPars, dPars );";
+		}
+		{ IType 
+			- _id = GUID 163cfe82-ab53-4290-9c5a-283b0849c2f1;
+			- _name = "ADD_LOCAL_VRPAR";
+			- _declaration = "#define %s(VEC, SIZE) AddLocalRPar( VEC, SIZE, _T(#VEC), \\
+  prefix, pars, Names, nPars, dPars );";
+		}
+		{ IType 
+			- _id = GUID c71b8a99-c58f-40c4-b4ba-d8348f40900b;
+			- _name = "ADD_LOCAL_VVAR";
+			- _declaration = "#define %s(VEC, SIZE) AddLocalVar( VEC, der_##VEC, old_##VEC, der_old_##VEC, ad_##VEC, der_ad_##VEC, SIZE, _T(#VEC), \\
+  prefix, varC, bADOnly);";
+		}
+		{ IType 
+			- _id = GUID 0c9fbc92-aecf-415f-8d07-c9a84ac8fe12;
+			- _name = "der";
+			- _declaration = "#define %s(ITEM) der_##ITEM ";
+		}
+		{ IType 
+			- _id = GUID 9390dcdc-4f1d-44e1-b750-435adae0d01e;
+			- _name = "DER";
+			- _declaration = "#define %s(ITEM) der_##ITEM ";
+		}
+		{ IType 
+			- _id = GUID 22f4a8fb-f8d0-4fd7-b899-a5405aaf7bdb;
+			- _name = "old";
+			- _declaration = "#define %s(ITEM) old_##ITEM ";
+		}
+		{ IType 
+			- _id = GUID b79d5323-ab9c-4f87-8d98-33a6f9bd9ec4;
+			- _name = "OLD";
+			- _declaration = "#define %s(ITEM) old_##ITEM ";
+		}
+	}
+	- UseCases = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Actors = { IRPYRawContainer 
+		- size = 0;
+	}
+	- _configurationRelatedTime = 12.9.2002::14:14:43;
+}
+

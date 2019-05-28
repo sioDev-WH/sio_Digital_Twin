@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmissionVB.vbVehicle.1 = s 'vbVehicle Class'
+	{
+		CLSID = s '{851E4885-7325-454B-B66C-705BCCCBF30E}'
+	}
+	RtsOnTransmissionVB.vbVehicle = s 'vbVehicle Class'
+	{
+		CLSID = s '{851E4885-7325-454B-B66C-705BCCCBF30E}'
+		CurVer = s 'RtsOnTransmissionVB.vbVehicle.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {851E4885-7325-454B-B66C-705BCCCBF30E} = s 'vbVehicle Class'
+		{
+			ProgID = s 'RtsOnTransmissionVB.vbVehicle.1'
+			VersionIndependentProgID = s 'RtsOnTransmissionVB.vbVehicle'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A0FB58BE-0E08-45F6-8A4A-732A46D7FE96}'
+		}
+	}
+}

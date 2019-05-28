@@ -1,0 +1,6 @@
+// OnInitDlg.cpp : Implementation of COnInitDlg
+#include "stdafx.h"
+#include "OnInitDlg.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// COnInitDlg

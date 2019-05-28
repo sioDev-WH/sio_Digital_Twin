@@ -1,0 +1,50 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8447.0 (9f79eee5).
+//
+// c:\distcomponents\oninitializationdialogs\debug\BeeGdp10.tlh
+//
+// C++ source equivalent of Win32 type library C:\Program Files\BeeGrid\BeeGdp10.dll
+// compiler-generated file created 06/22/03 at 23:16:42 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct /* coclass */ PageGeneral;
+struct /* coclass */ PageColumns;
+struct /* coclass */ PageValueItems;
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("1d6c5d1a-c19b-4fb2-8000-831f8b8205bf"))
+PageGeneral;
+    // [ default ] interface IUnknown
+
+struct __declspec(uuid("f0ee0b0c-2ab4-4821-be60-15792489137d"))
+PageColumns;
+    // [ default ] interface IUnknown
+
+struct __declspec(uuid("8aff99b3-db58-4187-ad57-ebcadb8e6bde"))
+PageValueItems;
+    // [ default ] interface IUnknown
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_StingaBeeGridPPages10 =
+    {0xd34ea3ca,0x982e,0x11d2,{0x8e,0xc8,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_PageGeneral =
+    {0x1d6c5d1a,0xc19b,0x4fb2,{0x80,0x00,0x83,0x1f,0x8b,0x82,0x05,0xbf}};
+extern "C" const GUID __declspec(selectany) CLSID_PageColumns =
+    {0xf0ee0b0c,0x2ab4,0x4821,{0xbe,0x60,0x15,0x79,0x24,0x89,0x13,0x7d}};
+extern "C" const GUID __declspec(selectany) CLSID_PageValueItems =
+    {0x8aff99b3,0xdb58,0x4187,{0xad,0x57,0xeb,0xca,0xdb,0x8e,0x6b,0xde}};
+
+#pragma pack(pop)

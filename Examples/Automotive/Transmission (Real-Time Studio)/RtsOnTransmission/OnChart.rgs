@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmission.OnChart.1 = s 'OnChart Class'
+	{
+		CLSID = s '{A0B5F84A-7758-4EF9-8BE8-16D1C0ABFB3E}'
+	}
+	RtsOnTransmission.OnChart = s 'OnChart Class'
+	{
+		CLSID = s '{A0B5F84A-7758-4EF9-8BE8-16D1C0ABFB3E}'
+		CurVer = s 'RtsOnTransmission.OnChart.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {A0B5F84A-7758-4EF9-8BE8-16D1C0ABFB3E} = s 'OnChart Class'
+		{
+			ProgID = s 'RtsOnTransmission.OnChart.1'
+			VersionIndependentProgID = s 'RtsOnTransmission.OnChart'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{AE0C22E3-138D-43A6-8E18-2B3A855352E2}'
+		}
+	}
+}

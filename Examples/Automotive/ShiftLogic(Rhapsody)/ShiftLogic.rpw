@@ -1,0 +1,93 @@
+I-Logix-RPY-Archive version 4.0.4 *
+{ CGEMdiWorkspace 
+	- stubList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- myViewsWithID = { IRPYRawContainer 
+		- size = 3;
+		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 88;
+				- m_nTop = 88;
+				- m_nRight = 702;
+				- m_nBottom = 578;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChart";
+				- _filename = "AppSimple.sbs";
+				- _subsystem = "AppSimple";
+				- _class = "theExtApp2";
+				- _name = "";
+				- _id = GUID 089c84d4-4c8f-4811-826c-e53d4a1947a9;
+			}
+			- _UpLeft = -0.41490390397381 3.22741234195754 ;
+			- _DownRight = 28.8979362825541 25.4235527888021 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 132;
+				- m_nTop = 132;
+				- m_nRight = 750;
+				- m_nBottom = 626;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChart";
+				- _filename = "Application.sbs";
+				- _subsystem = "Application";
+				- _class = "theTestApp";
+				- _name = "";
+				- _id = GUID bd234dce-b485-42cd-a6b4-c3a566df98c8;
+			}
+			- _UpLeft = -7.99968866749689 0.703926681195505 ;
+			- _DownRight = 23.9508094645081 27.828771014944 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -23;
+				- m_nLeft = 66;
+				- m_nTop = 66;
+				- m_nRight = 711;
+				- m_nBottom = 556;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChart";
+				- _filename = "TransmissionControlModels.sbs";
+				- _subsystem = "TransmissionControlModels";
+				- _class = "Controller";
+				- _name = "";
+				- _id = GUID daa6523d-f8a8-49a3-9f1b-0264da6e2022;
+			}
+			- _UpLeft = -7.04920142922835 -11.900409452497 ;
+			- _DownRight = 50.7896625840798 29.7062572409473 ;
+			- _instanceName = "Controller[0]";
+		}
+	}
+	- _fullName = "C:\\DistComponents\\ShiftLogic\\ShiftLogic";
+}
+

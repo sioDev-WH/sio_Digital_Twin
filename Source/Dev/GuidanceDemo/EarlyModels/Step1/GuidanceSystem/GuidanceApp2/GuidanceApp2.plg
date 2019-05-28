@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GuidanceApp2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP5E3.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib    OnUMLEso.lib IsDaeCOSolver.lib MSoxfinst.lib MSaomanim.lib MSomComAppl.lib wsock32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/AnimationComponent.pdb" /debug /machine:I386 /out:"C:\Rhapsody40\GuidanceSystem\AnimationComponent\DefaultConfig\AnimationComponent.exe" /pdbtype:sept /libpath:"c:\distcomponents\bin" /libpath:"C:\Rhapsody40\Share\LangCpp\lib" 
+.\Debug\StdAfx.obj
+.\Debug\GuidanceApp2.obj
+.\Debug\AeroCoeff.obj
+.\Debug\AeroDynamics.obj
+.\Debug\AirFrame.obj
+.\Debug\AirFrameAutoPilotSystem.obj
+.\Debug\AtmoCoeff.obj
+.\Debug\Atmosphere.obj
+.\Debug\AutoPilot.obj
+.\Debug\AutoPilotCoeff.obj
+.\Debug\BodyDynamics.obj
+.\Debug\BodyDynamicsCoeff.obj
+.\Debug\FinActuator.obj
+.\Debug\FinActuatorCoeff.obj
+.\Debug\Guidance.obj
+.\Debug\GuidancePkg.obj
+.\Debug\myFactory.obj
+.\Debug\On1DConn.obj
+.\Debug\On3DConn.obj
+.\Debug\OnConnector_On1DConn.obj
+.\Debug\OnConnector_On3DConn.obj
+.\Debug\OnModel_AeroDynamics.obj
+.\Debug\OnModel_AirFrame.obj
+.\Debug\OnModel_BodyDynamics.obj
+.\Debug\OnModel_FinActuator.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Bradshaw\LOCALS~1\Temp\RSP5E3.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+AnimationComponent.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

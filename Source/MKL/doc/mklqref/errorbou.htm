@@ -1,0 +1,189 @@
+<HTML>
+<HEAD>
+<title>Error Bounds for Linear Equations</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Error Bounds for Linear Equations
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="gerfs"></A>
+
+<B>?gerfs</B>
+refines the solution of a system of linear equations with a general matrix and estimates its error.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgerfs (trans, n, nrhs, SA, lda, SAF, ldaf, IPIV, SB, ldb, SX, ldx, sferr, sberr, SWORK, IWORK, info)<BR>
+call dgerfs (trans, n, nrhs, DA, lda, DAF, ldaf, IPIV, DB, ldb, DX, ldx, dferr, dberr, DWORK, IWORK, info)<BR>
+call cgerfs (trans, n, nrhs, CA, lda, CAF, ldaf, IPIV, CB, ldb, CX, ldx, sferr, sberr, CWORK, SWORK, info)<BR>
+call zgerfs (trans, n, nrhs, ZA, lda, ZAF, ldaf, IPIV, ZB, ldb, ZX, ldx, dferr, dberr, ZWORK, DWORK, info)
+</font></code>
+
+<p><A NAME="gbrfs"></A>
+
+<B>?gbrfs</B>
+refines the solution of a system of linear
+equations with a general band matrix
+and estimates its error.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgbrfs (trans, n, kl, ku, nrhs, SAB, ldab, SAFB, ldafb, IPIV, SB, ldb, SX, ldx, sferr, sberr, SWORK, IWORK, info)<BR>
+call dgbrfs (trans, n, kl, ku, nrhs, DAB, ldab, DAFB, ldafb, IPIV, DB, ldb, DX, ldx, dferr, dberr, DWORK, IWORK, info)<BR>
+call cgbrfs (trans, n, kl, ku, nrhs, CAB, ldab, CAFB, ldafb, IPIV, CB, ldb, CX, ldx, sferr, sberr, CWORK, SWORK, info)<BR>
+call zgbrfs (trans, n, kl, ku, nrhs, ZAB, ldab, ZAFB, ldafb, IPIV, ZB, ldb, ZX, ldx, dferr, dberr, ZWORK, DWORK, info)
+</font></code>
+
+<p><A NAME="porfs"></A>
+
+<B>?porfs</B>
+refines the solution of a system of linear
+equations with a symmetric (Hermitian)
+positive-definite matrix and estimates its
+error.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sporfs (uplo, n, nrhs, SA, lda, SAF, ldaf, SB, ldb, SX, ldx, sferr, sberr, SWORK, IWORK, info)<BR>
+call dporfs (uplo, n, nrhs, DA, lda, DAF, ldaf, DB, ldb, DX, ldx, dferr, dberr, DWORK, IWORK, info)<BR>
+call cporfs (uplo, n, nrhs, CA, lda, CAF, ldaf, CB, ldb, CX, ldx, sferr, sberr, CWORK, SWORK, info)<BR>
+call zporfs (uplo, n, nrhs, ZA, lda, ZAF, ldaf, ZB, ldb, ZX, ldx, dferr, dberr, ZWORK, DWORK, info)
+</font></code>
+
+<p><A NAME="pprfs"></A>
+
+<B>?pprfs</B>
+refines the solution of a system of linear
+equations with a packed symmetric
+(Hermitian) positive-definite matrix and
+estimates its error.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call spprfs (uplo, n, nrhs, SAP, SAFP, SB, ldb, SX, ldx, sferr, sberr, SWORK, IWORK, info)<BR>
+call dpprfs (uplo, n, nrhs, DAP, DAFP, DB, ldb, DX, ldx, dferr, dberr, DWORK, IWORK, info)<BR>
+call cpprfs (uplo, n, nrhs, CAP, CAFP, CB, ldb, CX, ldx, sferr, sberr, CWORK, SWORK, info)<BR>
+call zpprfs (uplo, n, nrhs, ZAP, ZAFP, ZB, ldb, ZX, ldx, dferr, dberr, ZWORK, DWORK, info)
+</font></code>
+
+<p><A NAME="pbrfs"></A>
+
+<B>?pbrfs</B>
+refines the solution of a system of linear
+equations with a band symmetric
+(Hermitian) positive-definite matrix and
+estimates its error.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call spbrfs (uplo, n, kd, nrhs, SAB, ldab, SAFB, ldafb, SB, ldb, SX, ldx, sferr, sberr, SWORK, IWORK, info)<BR>
+call dpbrfs (uplo, n, kd, nrhs, DAB, ldab, DAFB, ldafb, DB, ldb, DX, ldx, dferr, dberr, DWORK, IWORK, info)<BR>
+call cpbrfs (uplo, n, kd, nrhs, CAB, ldab, CAFB, ldafb, CB, ldb, CX, ldx, sferr, sberr, CWORK, SWORK, info)<BR>
+call zpbrfs (uplo, n, kd, nrhs, ZAB, ldab, ZAFB, ldafb, ZB, ldb, ZX, ldx, dferr, dberr, ZWORK, DWORK, info)
+</font></code>
+
+<p><A NAME="syrfs"></A>
+
+<B>?syrfs</B>
+refines the solution of a system of linear
+equations with a symmetric matrix and
+estimates its error.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssyrfs (uplo, n, nrhs, SA, lda, SAF, ldaf, IPIV, SB, ldb, SX, ldx, sferr, sberr, SWORK, IWORK, info)<BR>
+call dsyrfs (uplo, n, nrhs, DA, lda, DAF, ldaf, IPIV, DB, ldb, DX, ldx, dferr, dberr, DWORK, IWORK, info)<BR>
+call csyrfs (uplo, n, nrhs, CA, lda, CAF, ldaf, IPIV, CB, ldb, CX, ldx, sferr, sberr, CWORK, SWORK, info)<BR>
+call zsyrfs (uplo, n, nrhs, ZA, lda, ZAF, ldaf, IPIV, ZB, ldb, ZX, ldx, dferr, dberr, ZWORK, DWORK, info)
+</font></code>
+
+<p><A NAME="herfs"></A>
+
+<B>?herfs</B>
+refines the solution of a system of linear equations with a complex Hermitian matrix and estimates its error.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cherfs (uplo, n, nrhs, CA, lda, CAF, ldaf, IPIV, CB, ldb, CX, ldx, sferr, sberr, CWORK, SWORK, info)<BR>
+call zherfs (uplo, n, nrhs, ZA, lda, ZAF, ldaf, IPIV, ZB, ldb, ZX, ldx, dferr, dberr, ZWORK, DWORK, info)
+</font></code>
+
+<p><A NAME="sprfs"></A>
+
+<B>?sprfs</B>
+refines the solution of a system of linear
+equations with a packed symmetric
+matrix and estimates the solution error.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssprfs (uplo, n, nrhs, SAP, afp, IPIV, SB, ldb, SX, ldx, sferr, sberr, SWORK, IWORK, info)<BR>
+call dsprfs (uplo, n, nrhs, DAP, afp, IPIV, DB, ldb, DX, ldx, dferr, dberr, DWORK, IWORK, info)<BR>
+call csprfs (uplo, n, nrhs, CAP, afp, IPIV, CB, ldb, CX, ldx, sferr, sberr, CWORK, SWORK, info)<BR>
+call zsprfs (uplo, n, nrhs, ZAP, afp, IPIV, ZB, ldb, ZX, ldx, dferr, dberr, ZWORK, DWORK, info)
+</font></code>
+
+<p><A NAME="hprfs"></A>
+
+<B>?hprfs</B>
+refines the solution of a system of linear
+equations with a packed complex Hermitian
+matrix and estimates the solution error.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chprfs (uplo, n, nrhs, CAP, CAFP, IPIV, CB, ldb, CX, ldx, sferr, sberr, CWORK, SWORK, info)<BR>
+call zhprfs (uplo, n, nrhs, ZAP, ZAFP, IPIV, ZB, ldb, ZX, ldx, dferr, dberr, ZWORK, DWORK, info) </font></code>
+
+<p><A NAME="trrfs"></A>
+
+<B>?trrfs</B>
+Estimates the error in the solution of
+a system of linear equations with a
+triangular matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call strrfs (uplo,  trans, diag, n, nrhs, SA, lda, SB, ldb, SX, ldx, sferr, sberr, SWORK, IWORK, info)<BR>
+call dtrrfs (uplo,  trans, diag, n, nrhs, DA, lda, DB, ldb, DX, ldx, dferr, dberr, DWORK, IWORK, info)<BR>
+call ctrrfs (uplo,  trans, diag, n, nrhs, CA, lda, CB, ldb, CX, ldx, sferr, sberr, CWORK, SWORK, info)<BR>
+call ztrrfs (uplo,  trans, diag, n, nrhs, ZA, lda, ZB, ldb, ZX, ldx, dferr, dberr, ZWORK, DWORK, info)
+</font></code>
+
+<p><A NAME="tprfs"></A>
+
+<B>?tprfs</B>
+Estimates the error in the solution of
+a system of linear equations with a
+packed triangular matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call stprfs (uplo, trans, diag, n, nrhs, SAP, SB, ldb, SX, ldx, sferr, sberr, SWORK, IWORK, info)<BR>
+call dtprfs (uplo, trans, diag, n, nrhs, DAP, DB, ldb, DX, ldx, dferr, dberr, DWORK, IWORK, info)<BR>
+call ctprfs (uplo, trans, diag, n, nrhs, CAP, CB, ldb, CX, ldx, sferr, sberr, CWORK, SWORK, info)<BR>
+call ztprfs (uplo, trans, diag, n, nrhs, ZAP, ZB, ldb, ZX, ldx, dferr, dberr, ZWORK, DWORK, info)
+</font></code>
+
+<p><A NAME="tbrfs"></A>
+
+<B>?tbrfs</B>
+Estimates the error in the solution of
+a system of linear equations with a
+triangular band matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call stbrfs (uplo, trans, diag, n, kd, nrhs, SAB, ldab, SB, ldb, SX, ldx, sferr, sberr, SWORK, IWORK, info)<BR>
+call dtbrfs (uplo, trans, diag, n, kd, nrhs, DAB, ldab, DB, ldb, DX, ldx, dferr, dberr, DWORK, IWORK, info)<BR>
+call ctbrfs (uplo, trans, diag, n, kd, nrhs, CAB, ldab, CB, ldb, CX, ldx, sferr, sberr, CWORK, SWORK, info)<BR>
+call ztbrfs (uplo, trans, diag, n, kd, nrhs, ZAB, ldab, ZB, ldb, ZX, ldx, dferr, dberr, ZWORK, DWORK, info) </font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

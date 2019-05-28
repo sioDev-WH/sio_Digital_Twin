@@ -1,0 +1,229 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IComponent 
+	- _id = GUID 0a05d0de-f87a-4f2b-b035-3a3ea64ad2dc;
+	- _myState = 139264;
+	- _name = "DefaultComponent";
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID 34abdc42-2b44-41ef-9d59-bdddaf6a55ba;
+		- _myState = 8192;
+		- _name = "Files";
+		- m_path = "";
+		- Elements = { IRPYRawContainer 
+			- size = 1;
+			- value = 
+			{ IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "ReverseEngineering.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "ReverseEngineering";
+				- _id = GUID d1018bc8-2020-48ed-8622-bdd83efadcfe;
+			}
+		}
+		- Files = { IRPYRawContainer 
+			- size = 0;
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID d1c18fc7-da27-4fa0-ac5d-0a0af99ad028;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID d1c18fc7-da27-4fa0-ac5d-0a0af99ad028;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "ReverseEngineering";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Main";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Files";
+										- _Value = "C:\\DistComponents\\PDE\\Unit.cpp,C:\\DistComponents\\PDE\\DistributedEqn.cpp,C:\\DistComponents\\PDE\\DistributedEqn.h,C:\\DistComponents\\PDE\\DistributedVar.cpp,C:\\DistComponents\\PDE\\DistributedVar.h,C:\\DistComponents\\PDE\\DistributionDomain.cpp,C:\\DistComponents\\PDE\\DistributionDomain.h,C:\\DistComponents\\PDE\\D_Mesh.h,C:\\DistComponents\\PDE\\Unit.h";
+										- _Type = String;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "DefaultConfig";
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = None;
+			- _timeModel = RealTime;
+			- m_generateActors = 1;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _root = { IFolder 
+				- _id = GUID a6a9bf41-fcd8-47d6-b9df-870f5ebee64e;
+				- _name = "DefaultConfig";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 10.20.2002::10:58:49;
+			- strongCGTime = 10.20.2002::10:58:49;
+		}
+	}
+	- HandlesInMe = { IRPYRawContainer 
+		- size = 15;
+		- value = 
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Default.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Default";
+			- _id = GUID f854e431-2e82-4cd1-8022-6749dcd4e4e1;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Models.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Models";
+			- _id = GUID a71e2a03-2693-4d22-a678-070b237fd274;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "ReverseEngineering.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "ReverseEngineering";
+			- _id = GUID d1018bc8-2020-48ed-8622-bdd83efadcfe;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 92125814-16df-4f35-8566-f0675a7664fc;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "D_Mesh";
+			- _id = GUID d2bdf698-9b13-471d-a03a-cadc89edb65a;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "DistributedEqn";
+			- _id = GUID 0d0981fa-9c9b-45e9-85ae-ce4eac46d033;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "DistributedVar";
+			- _id = GUID dcb65c68-c2aa-4875-95a5-ae2a0e3264e4;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "DistributionDomain";
+			- _id = GUID f57b1791-b33c-449b-b332-d11968f04890;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "Unit";
+			- _id = GUID 696df73d-afd3-4585-b7c0-e7e953d280c7;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Models.sbs";
+			- _subsystem = "Models";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 2280dfe1-f685-417b-8ba9-fafdf3adf79a;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Models.sbs";
+			- _subsystem = "Models";
+			- _class = "";
+			- _name = "TubularReactor";
+			- _id = GUID a5a1cc3a-2038-44da-a59d-02c0bf8f4cb3;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Models.sbs";
+			- _subsystem = "Models";
+			- _class = "";
+			- _name = "GasAbsorber";
+			- _id = GUID 700e2d82-be66-4b77-988d-a34f2cd5d7c8;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Models.sbs";
+			- _subsystem = "Models";
+			- _class = "";
+			- _name = "MixerTank";
+			- _id = GUID 83f1b5fd-2c2f-425d-a9ed-efe80ec4cdcc;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Models.sbs";
+			- _subsystem = "Models";
+			- _class = "";
+			- _name = "Absorber";
+			- _id = GUID dc48b4be-e8ef-4274-96e2-2edbb0aa2be7;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "ReverseEngineering.sbs";
+			- _subsystem = "ReverseEngineering";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 4fc54a6a-2603-41ff-8ec7-09671fcb0322;
+		}
+	}
+	- weakCGTime = 10.20.2002::12:59:11;
+	- strongCGTime = 10.20.2002::10:58:54;
+}
+

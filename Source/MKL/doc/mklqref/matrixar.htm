@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+<title>Matrix Arguments in BLAS and LAPACK</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Matrix Arguments in BLAS and LAPACK
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+To pass matrices to BLAS or LAPACK routines,
+you'll need to use (some or all of) the following parameters:
+
+<p>
+<A NAME="Array"></A>
+
+<i><b>array</b></i> that holds the matrix elements (for example,
+<code><font face="Courier New,Courier,codetxt" color="#000099">SA</font></code>
+contains elements of the matrix <i>A</i> in single precision);
+see also
+<a href="matrixst.htm#top">Matrix Storage Schemes</a> and
+<a href="namingco.htm#top">Naming Conventions</a>.
+
+<p>
+<A NAME="LeadingDimension"></A>
+<i><b>leading dimension</b></i> of the array
+(for example,
+<code><font face="Courier New,Courier,codetxt" color="#000099">lda</font></code>).
+For <a href="matrixst.htm#top">full-storage matrices</a>,
+the leading dimension must not be less than the number of rows in the matrix.
+For <a href="matrixst.htm#top">band matrices</a>,
+it must not be less than the matrix band width.
+
+<p>
+<A NAME="MatrixOrder"></A>
+<i><b>numbers of rows and columns</b></i> in the matrix, or the matrix order
+(for example,
+<code><font face="Courier New,Courier,codetxt" color="#000099">m</font></code>,
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>, or
+<code><font face="Courier New,Courier,codetxt" color="#000099">k</font></code>).
+
+<p>
+<A NAME="uploParameter"></A>
+<b><code><font face="Courier New,Courier,codetxt" color="#000099">uplo</font></code> <i>parameter</i></b>
+for triangular, symmetric, or Hermitian matrices.
+This parameter specifies whether the upper or lower triangle of the
+matrix is stored.
+See <a href="matrixst.htm#top">Matrix Storage Schemes</a> for more information.
+
+<p>
+<A NAME="transParameter"></A>
+<i><b>transposition parameter</b></i>
+(for example,
+<code><font face="Courier New,Courier,codetxt" color="#000099">transa</font></code>).
+This parameter specifies  whether to transpose/conjugate the passed matrix <i>A</i>.
+
+<br>
+If
+<code><font face="Courier New,Courier,codetxt" color="#000099">transa='N'</font></code>,
+the routine works with the matrix <i>A</i> without transposition or conjugation.
+In the routine description, op(<i>A</i>)&nbsp;=&nbsp;<i>A</i>.
+
+<br>
+If
+<code><font face="Courier New,Courier,codetxt" color="#000099">transa='T'</font></code>,
+the routine works with the transposed matrix (<i>A<sup><small>T</small></sup></i>).
+In the routine description, op(<i>A</i>)&nbsp;=&nbsp;<i>A<sup><small>T</small></sup></i>.
+
+<br>
+If
+<code><font face="Courier New,Courier,codetxt" color="#000099">transa='C'</font></code>,
+the routine works with the conjugated transposed matrix (<i>A<sup><small>H</small></sup></i>).
+In the routine description, op(<i>A</i>)&nbsp;=&nbsp;<i>A<sup><small>H</small></sup></i>.
+
+<br>
+(Similar conventions apply to the parameter
+<code><font face="Courier New,Courier,codetxt" color="#000099">transb</font></code>
+and the matrix <i>B</i>.)
+
+<p>
+<A NAME="diagParameter"></A>
+<b><code><font face="Courier New,Courier,codetxt" color="#000099">diag</font></code> <i>parameter.</i></b>
+This parameter specifies whether the matrix has unit diagonal elements.
+
+<br>
+If
+<code><font face="Courier New,Courier,codetxt" color="#000099">diag='U'</font></code>,
+all diagonal elements are assumed to be 1; the routine does not actually reference the corresponding locations in the array.
+
+<br>
+If
+<code><font face="Courier New,Courier,codetxt" color="#000099">diag='N'</font></code>,
+the routine works with the values of diagonal matrix elements
+stored in the array.
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

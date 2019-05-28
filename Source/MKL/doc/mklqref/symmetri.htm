@@ -1,0 +1,233 @@
+<HTML>
+<HEAD>
+<title>Symmetric Eigenvalue Problems</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Symmetric Eigenvalue Problems
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="sytrd"></A>
+
+<B>?sytrd</B>
+reduces a real symmetric matrix to tridiagonal form.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssytrd (uplo, n, SA, lda, SD, SE, STAU, SWORK, lwork, info)<BR>
+call dsytrd (uplo, n, DA, lda, DD, DE, DTAU, DWORK, lwork, info)
+</font></code>
+
+<p><A NAME="orgtr"></A>
+
+<B>?orgtr</B>
+generates the real orthogonal matrix <i>Q</i> determined by
+<a href="#sytrd">?sytrd</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sorgtr (uplo, n, SA, lda, STAU, SWORK, lwork, info)<BR>
+call dorgtr (uplo, n, DA, lda, DTAU, DWORK, lwork, info)
+</font></code>
+
+<p><A NAME="ormtr"></A>
+
+<B>?ormtr</B>
+multiplies a real matrix by the real orthogonal matrix <i>Q</i> determined by
+<a href="#sytrd">?sytrd</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sormtr (side, uplo, trans, m, n, SA, lda, STAU, SC, ldc, SWORK, lwork, info)<BR>
+call dormtr (side, uplo, trans, m, n, DA, lda, DTAU, DC, ldc, DWORK, lwork, info)
+</font></code>
+
+<p><A NAME="hetrd"></A>
+
+<B>?hetrd</B>
+reduces a complex Hermitian matrix to tridiagonal form.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chetrd (uplo, n, CA, lda, SD, SE, CTAU, CWORK, lwork, info)<BR>
+call zhetrd (uplo, n, ZA, lda, DD, DE, ZTAU, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="ungtr"></A>
+
+<B>?ungtr</B>
+generates the complex unitary matrix Q determined by
+<a href="#hetrd">?hetrd</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cungtr (uplo, n, CA, lda, CTAU, CWORK, lwork, info)<BR>
+call zungtr (uplo, n, ZA, lda, ZTAU, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="unmtr"></A>
+
+<B>?unmtr</B>
+multiplies a complex matrix by the complex unitary matrix Q determined by
+<a href="#hetrd">?hetrd</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cunmtr (side, uplo, trans, m, n, CA, lda, CTAU, CC, ldc, CWORK, lwork, info)<BR>
+call zunmtr (side, uplo, trans, m, n, ZA, lda, ZTAU, ZC, ldc, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="sptrd"></A>
+
+<B>?sptrd</B>
+reduces a real symmetric matrix to tridiagonal form using packed storage.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssptrd (uplo, n, SAP, SD, SE, STAU, info)<BR>
+call dsptrd (uplo, n, DAP, DD, DE, DTAU, info)
+</font></code>
+
+<p><A NAME="opgtr"></A>
+
+<B>?opgtr</B>
+Generates the real orthogonal matrix Q determined by
+<a href="#sptrd">?sptrd</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sopgtr (uplo, n, SAP, STAU, SQ, ldq, SWORK, info)<BR>
+call dopgtr (uplo, n, DAP, DTAU, DQ, ldq, DWORK, info)
+</font></code>
+
+<p><A NAME="opmtr"></A>
+
+<B>?opmtr</B>
+multiplies a real matrix by the real orthogonal matrix Q determined by
+<a href="#sptrd">?sptrd</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sopmtr (side, uplo, trans, m, n, SAP, STAU, SC, ldc, SWORK, info)<BR>
+call dopmtr (side, uplo, trans, m, n, DAP, DTAU, DC, ldc, DWORK, info)
+</font></code>
+
+<p><A NAME="hptrd"></A>
+
+<B>?hptrd</B>
+reduces a complex Hermitian matrix to tridiagonal form using packed storage.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chptrd (uplo, n, CAP, SD, SE, CTAU, info)<BR>
+call zhptrd (uplo, n, ZAP, DD, DE, ZTAU, info)
+</font></code>
+
+<p><A NAME="upgtr"></A>
+
+<B>?upgtr</B>
+generates the complex unitary matrix Q determined by
+<a href="#hptrd">?hptrd</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cupgtr (uplo, n, CAP, CTAU, CQ, ldq, CWORK, info)<BR>
+call zupgtr (uplo, n, ZAP, ZTAU, ZQ, ldq, ZWORK, info)
+</font></code>
+
+<p><A NAME="upmtr"></A>
+
+<B>?upmtr</B>
+multiplies a complex matrix by the unitary matrix <i>Q</i> determined by
+<a href="#hptrd">?hptrd</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cupmtr (side, uplo, trans, m, n, CAP, CTAU, CC, ldc, CWORK, info)<BR>
+call zupmtr (side, uplo, trans, m, n, ZAP, ZTAU, ZC, ldc, ZWORK, info)
+</font></code>
+
+<p><A NAME="sbtrd"></A>
+
+<B>?sbtrd</B>
+reduces a real symmetric band matrix to tridiagonal form.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssbtrd (vect, uplo, n, kd, SAB, ldab, SD, SE, SQ, ldq, SWORK, info)<BR>
+call dsbtrd (vect, uplo, n, kd, DAB, ldab, DD, DE, DQ, ldq, DWORK, info)
+</font></code>
+
+<p><A NAME="hbtrd"></A>
+
+<B>?hbtrd</B>
+reduces a complex Hermitian band matrix to tridiagonal form.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chbtrd (vect, uplo, n, kd, CAB, ldab, SD, SE, CQ, ldq, CWORK, info)<BR>
+call zhbtrd (vect, uplo, n, kd, ZAB, ldab, DD, DE, ZQ, ldq, ZWORK, info)
+</font></code>
+
+<p><A NAME="steqr"></A>
+
+<B>?steqr</B>
+computes all eigenvalues and eigenvectors of a symmetric or Hermitian matrix reduced to tridiagonal form.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssteqr (compz, n, SD, SE, SZ, ldz, SWORK, info)<BR>
+call dsteqr (compz, n, DD, DE, DZ, ldz, DWORK, info)<BR>
+call csteqr (compz, n, CD, CE, CZ, ldz, SWORK, info)<BR>
+call zsteqr (compz, n, ZD, ZE, ZZ, ldz, DWORK, info)
+</font></code>
+
+<p><A NAME="sterf"></A>
+
+<B>?sterf</B>
+computes all eigenvalues of a real symmetric tridiagonal matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssterf (n, SD, SE, info)<BR>
+call dsterf (n, DD, DE, info)
+</font></code>
+
+<p><A NAME="pteqr"></A>
+
+<B>?pteqr</B>
+computes all eigenvalues and (optionally) all eigenvectors of a real symmetric positive-definite tridiagonal matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call spteqr (compz, n, SD, SE, SZ, ldz, SWORK, info)<BR>
+call dpteqr (compz, n, DD, DE, DZ, ldz, DWORK, info)<BR>
+call cpteqr (compz, n, SD, SE, CZ, ldz, SWORK, info)<BR>
+call zpteqr (compz, n, DD, DE, ZZ, ldz, DWORK, info)
+</font></code>
+
+<p><A NAME="stebz"></A>
+
+<B>?stebz</B>
+computes selected eigenvalues of a real symmetric tridiagonal matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sstebz (range, order, n, svl, svu, il, iu, stol, SD, SE, m, nsplit, SW, IBLOCK, ISPLIT, SWORK, IWORK, info)<BR>
+call dstebz (range, order, n, dvl, dvu, il, iu, dtol, DD, DE, m, nsplit, DW, IBLOCK, ISPLIT, DWORK, IWORK, info)
+</font></code>
+
+<p><A NAME="stein"></A>
+
+<B>?stein</B>
+computes the eigenvectors corresponding to specified eigenvalues of a real symmetric tridiagonal matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sstein (n, SD, SE, m, SW, IBLOCK, ISPLIT, SZ, ldz, SWORK, IWORK, IFAILV, info)<BR>
+call dstein (n, DD, DD, m, DW, IBLOCK, ISPLIT, DZ, ldz, DWORK, IWORK, IFAILV, info)<BR>
+call cstein (n, SD, SE, m, SW, IBLOCK, ISPLIT, CZ, ldz, SWORK, IWORK, IFAILV, info)<BR>
+call zstein (n, DD, DD, m, DW, IBLOCK, ISPLIT, ZZ, ldz, DWORK, IWORK, IFAILV, info)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

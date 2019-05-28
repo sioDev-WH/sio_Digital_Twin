@@ -1,0 +1,2588 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ ISubsystem 
+	- _id = GUID a71e2a03-2693-4d22-a678-070b237fd274;
+	- _myState = 8192;
+	- _name = "Models";
+	- _lastID = 4;
+	- weakCGTime = 10.20.2002::22:7:13;
+	- strongCGTime = 10.20.2002::10:49:20;
+	- _defaultComposite = GUID 2280dfe1-f685-417b-8ba9-fafdf3adf79a;
+	- _eventsBaseID = 30001;
+	- Classes = { IRPYRawContainer 
+		- size = 5;
+		- value = 
+		{ IClass 
+			- _id = GUID 2280dfe1-f685-417b-8ba9-fafdf3adf79a;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 12.31.1969::19:0:0;
+			- strongCGTime = 12.31.1969::19:0:0;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID a5a1cc3a-2038-44da-a59d-02c0bf8f4cb3;
+			- _myState = 8192;
+			- _name = "TubularReactor";
+			- _lastID = 17;
+			- weakCGTime = 10.20.2002::20:52:44;
+			- strongCGTime = 10.20.2002::20:45:27;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 7;
+				- value = 
+				{ ILink 
+					- _id = GUID bd04f76b-b559-4a63-a33f-6d48dc361c6e;
+					- _name = "phi";
+					- _multiplicity = "3";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "DistributedVar";
+						- _id = GUID dcb65c68-c2aa-4875-95a5-ae2a0e3264e4;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+				{ ILink 
+					- _id = GUID 64cd45f2-4a3d-4965-8431-d314a07dc6a2;
+					- _name = "phi_BC0";
+					- _multiplicity = "3";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "DistributedVar";
+						- _id = GUID dcb65c68-c2aa-4875-95a5-ae2a0e3264e4;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+				{ ILink 
+					- _id = GUID 97503794-4ea1-453a-96c9-5f95632763bd;
+					- _name = "phi_MB";
+					- _multiplicity = "3";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "DistributedVar";
+						- _id = GUID dcb65c68-c2aa-4875-95a5-ae2a0e3264e4;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+				{ ILink 
+					- _id = GUID a6f6f79e-b35f-4b12-b63a-10d233738599;
+					- _name = "phi_BCL";
+					- _multiplicity = "3";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "DistributedVar";
+						- _id = GUID dcb65c68-c2aa-4875-95a5-ae2a0e3264e4;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+				{ ILink 
+					- _id = GUID 445e4ef0-b2d6-4a40-91ba-23d345a240f7;
+					- _name = "BC0";
+					- _multiplicity = "3";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "DistributedVar";
+						- _id = GUID dcb65c68-c2aa-4875-95a5-ae2a0e3264e4;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+				{ ILink 
+					- _id = GUID 0c583e31-ad24-419b-a59f-6ecc31714b82;
+					- _name = "MB";
+					- _multiplicity = "3";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "DistributedVar";
+						- _id = GUID dcb65c68-c2aa-4875-95a5-ae2a0e3264e4;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+				{ ILink 
+					- _id = GUID 79616e45-dcef-4fea-a811-1b773d2c2d07;
+					- _name = "BCL";
+					- _multiplicity = "3";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "DistributedVar";
+						- _id = GUID dcb65c68-c2aa-4875-95a5-ae2a0e3264e4;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 5;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID f6c7b340-a261-4e60-a4a1-973cd093b0b9;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_BC0";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- myReturnType = { IType 
+						- _id = GUID e286b6ce-9b5e-4ca7-9cc6-9ddb8e25a872;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "	long i;
+	
+	for(i=0;i<3;i++)
+	{
+		// Boundary condition at lambda=0
+		BC0[i] = - K1 * phi_BC0[i].PARTIAL(Axial) + phi_BC0[i] -  phi_in[i] ;  
+	}   
+	
+	return S_OK;
+";
+					}
+				}
+				{ IConstructor 
+					- _id = GUID 079287c9-8a44-44ce-b5c5-73cd77dba70f;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "	long i;
+	phi_in = new double[3];
+	phi_in[0] = 0.0;
+	phi_in[1] = 0.0;
+	phi_in[2] = 0.0;
+	
+	nu = new double[3];
+	nu[0] = -1.0;
+	nu[1] = -1.0;
+	nu[2] = +2.0;
+	
+	Axial.setMesh(Mesh);
+
+	for(i=0;i<3;i++)
+	  phi[i].init(conc); // set names to A,B and C
+
+	phi_BC0 = new DistributedVar[3];
+	phi_MB = new DistributedVar[3];
+	phi_BCL = new DistributedVar[3];
+	
+	for(i=0;i<3;i++)
+	{
+		phi_BC0[i] = phi[i] | (Axial|0); // for Boundary condition at lambda=0
+		phi_MB[i] = phi[i] | ((Axial - 0) -L); // for Mass Balance equation
+		phi_BCL[i] = phi[i] | (Axial|L); // for Boundary condition at lambda=L=1.0
+	}
+
+	// ***** Equations *******
+	BC0 = new DistributedVar[3];
+	MB = new DistributedVar[3];
+	BCL = new DistributedVar[3];
+";
+					}
+					- _initializer = "";
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID e2107d66-e758-4f2a-98b5-f3d0ac5841e8;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_MB";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- myReturnType = { IType 
+						- _id = GUID 1a262b34-0623-400b-90bb-2fb75c56903d;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "	long i;
+	
+	for(i=0;i<3;i++){
+		// Mass Balance equation (applicable inside the reactor)
+		MB[i] = - DER(phi_MB[i])
+				+ K1 * phi_MB[i].PARTIAL(Axial).PARTIAL(Axial)
+				+ phi_MB[i].PARTIAL(Axial)
+				+ nu[i]*K2*phi_MB[0]*phi_MB[1]; 
+	}   
+	
+	return S_OK;
+";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID dc94339c-f459-4bdb-85fe-64896459b9f4;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_BCL";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- myReturnType = { IType 
+						- _id = GUID 276f9abd-d659-4d46-92af-167b2c374bfe;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "	long i;
+	
+	for(i=0;i<3;i++){
+		// Mass Balance equation (applicable inside the reactor)
+		MB[i] = - DER(phi_MB[i])
+				+ K1 * phi_MB[i].PARTIAL(Axial).PARTIAL(Axial)
+				+ phi_MB[i].PARTIAL(Axial)
+				+ nu[i]*K2*phi_MB[0]*phi_MB[1]; 
+	}   
+	
+	return S_OK;
+";
+					}
+				}
+				{ IDestructor 
+					- _id = GUID 77eb9944-0bb5-4348-afb4-08b9d507dc24;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "	long i;
+	if (phi_in)
+	{
+	  delete[] phi_in;
+	  phi_in = NULL;
+	}
+	
+	if (nu)
+	{
+	  delete[] nu;
+	  nu = NULL;
+	}
+
+	if (phi_BC0)
+	{
+	  delete[] phi_BC0;
+	  phi_BC0 = NULL;
+	}
+	
+	if (phi_MB)
+	{
+	  delete[] phi_MB;
+	  phi_MB = NULL;
+	}
+	
+	if (phi_BCL)
+	{
+	  delete[] phi_BCL;
+	  phi_BCL = NULL;
+	}
+	
+	if (BC0)
+	{
+	  delete[] BC0;
+	  BC0 = NULL;
+	}
+	
+	if (MB)
+	{
+	  delete[] MB;
+	  MB = NULL;
+	}
+	
+	if (BCL)
+	{
+	  delete[] BCL;
+	  BCL = NULL;
+	}  
+";
+					}
+				}
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 9;
+				- value = 
+				{ IAttribute 
+					- _id = GUID f26bcce3-dd30-408c-b365-746e09d76f66;
+					- _name = "L";
+					- _comment = "All units are scled to length = 1";
+					- _defaultValue = "1.0";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID fa87b4bd-5ec0-4783-8dab-dce9c9997317;
+					- _name = "K1";
+					- _defaultValue = "0.1";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID fd3285fc-b60a-4320-86e4-a66d42c76acd;
+					- _name = "K2";
+					- _defaultValue = "3.0";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 8f09e4ef-cbd7-4da6-ae23-68fa51a84521;
+					- _name = "phi_in";
+					- _comment = "initial input concentration";
+					- _defaultValue = "NULL";
+					- myTypeOf = { IType 
+						- _id = GUID 4898e430-ce0f-4d90-b2f1-501b98301e9d;
+						- _declaration = "double*";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 7e11ac2a-afc9-43d6-baf3-2e30fa7fc6fb;
+					- _name = "nu";
+					- _comment = "Stoichiometric coefficients";
+					- _defaultValue = "NULL";
+					- myTypeOf = { IType 
+						- _id = GUID 16abd31c-d9b9-4548-8413-00c4f8efe66b;
+						- _declaration = "double*";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID f8fe8e87-db1d-4b80-9c00-29e406dcade3;
+					- _name = "Axial";
+					- _defaultValue = "\"Axial\",0,L,false,false";
+					- myTypeOf = { IType 
+						- _id = GUID 731a3532-6abb-4acb-be4a-2281f0908eb1;
+						- _declaration = "DistributionDomain";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 0dade805-3efa-4a50-9fc2-4e1af20de17e;
+					- _name = "Mesh";
+					- _defaultValue = "OCFEM,3,15";
+					- myTypeOf = { IType 
+						- _id = GUID b0fabe51-b80e-41c8-96e2-6dc9f7d2c9b8;
+						- _declaration = "D_Mesh";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID be5d37b5-d5cb-4ce0-b2db-07f490076a33;
+					- _myState = 2048;
+					- _name = "attribute_12";
+					- _defaultValue = "";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID cb60a504-e8ef-4ce6-8bd2-f3f47d83f2d8;
+					- _name = "conc";
+					- _defaultValue = "\"C\",\"kmol/m^3\",1,&Axial";
+					- myTypeOf = { IType 
+						- _id = GUID 5c21ca6f-9fb4-467e-9946-0a4c30461bdd;
+						- _declaration = "DistributedVar";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 700e2d82-be66-4b77-988d-a34f2cd5d7c8;
+			- _myState = 8192;
+			- _name = "GasAbsorber";
+			- _lastID = 27;
+			- weakCGTime = 10.20.2002::21:21:25;
+			- strongCGTime = 10.20.2002::21:13:37;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 5;
+				- value = 
+				{ ILink 
+					- _id = GUID b29d3cc9-3d89-4763-ba3c-75e930e48372;
+					- _name = "phi";
+					- _multiplicity = "3";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "DistributedVar";
+						- _id = GUID dcb65c68-c2aa-4875-95a5-ae2a0e3264e4;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+				{ ILink 
+					- _id = GUID 199e6288-756a-4d46-9eaa-5b30099a5d48;
+					- _name = "psi_BC0";
+					- _multiplicity = "3";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "DistributedVar";
+						- _id = GUID dcb65c68-c2aa-4875-95a5-ae2a0e3264e4;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+				{ ILink 
+					- _id = GUID aff6d172-1092-46b2-b0b8-51c8d5d3b71c;
+					- _name = "psi_MB";
+					- _multiplicity = "3";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "DistributedVar";
+						- _id = GUID dcb65c68-c2aa-4875-95a5-ae2a0e3264e4;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+				{ ILink 
+					- _id = GUID 1df4729c-cb91-4eb7-8d9a-76e140e58ef2;
+					- _name = "BCG0";
+					- _multiplicity = "3";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "DistributedVar";
+						- _id = GUID dcb65c68-c2aa-4875-95a5-ae2a0e3264e4;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+				{ ILink 
+					- _id = GUID 97a0800d-72c6-40b6-9fc1-9793227b15bf;
+					- _name = "MBG";
+					- _multiplicity = "3";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _filename = "Default.sbs";
+						- _subsystem = "Default";
+						- _class = "";
+						- _name = "DistributedVar";
+						- _id = GUID dcb65c68-c2aa-4875-95a5-ae2a0e3264e4;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 6;
+				- value = 
+				{ IConstructor 
+					- _id = GUID 5ed42605-4787-4738-925e-ce09562cc6bd;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "	psi_in = new double[3];
+	psi_in[0] = 0.0;
+	psi_in[1] = 0.0;
+	psi_in[2] = 0.0;
+	
+	Forward.setMesh(ForwardMesh);
+	Reverse.setMesh(ReverseMesh);
+
+	// ***** Variables ******
+	psi = new DistributedVar[3];
+	for(i=0;i<3;i++)
+	  psi[i].init(gasConc);
+	
+	psi_BC0 = new DistributedVar[3];
+	psi_MB = new DistributedVar[3];
+	for(i=0;i<3;i++)
+	{
+		psi_BC0[i] = psi[i] | (Forward|0); // for Gas Boundary condition at zeta=0
+		psi_MB[i] = psi[i] | ((Forward - 0)); // for Gas Phase Mass Balance equation
+	}
+	
+	psi_MBL = psi[2] | (Forward - L);  // may require interpolation
+	theta_MBG = theta | (Reverse - 0); // may require interpolation if grid points are not matching
+	theta_BCL = theta | (Reverse|L); // for Boundary condition at zeta=L=1.0
+	theta_MBL = theta | (Reverse - L); // for Liquid Phase Mass Balance equation
+	
+	// ***** Equations *******
+	BCG0 = new DistributedVar[3];
+	MBG = new DistributedVar[3];
+	
+";
+					}
+					- _initializer = "";
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 9c5c302a-1a9d-48fc-8f76-4270b081837b;
+					- _name = "r_BCG0";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "	// Boundary condition at zeta=0
+	long i;
+	
+	for(i=0;i<3;i++) 
+	  BCG0[i] = psi_BC0[i] -  psi_in[i];	  
+	       
+    return S_OK;
+";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 574d6bfb-2326-43e5-9d64-dfb6a7dcf14a;
+					- _name = "r_MBG";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "	// Mass Balance equation (gas phase inside the absorber)
+	MBG[0] = - DER(psi_MB[0]) - K3 * psi_MB[0].PARTIAL(Forward);
+	MBG[1] = - DER(psi_MB[1]) - K3 * psi_MB[1].PARTIAL(Forward);
+	MBG[2] = - DER(psi_MB[2]) - K3 * psi_MB[2].PARTIAL(Forward)
+			 - K4 * (psi_MB[2] - K5 * theta_MBG);
+
+    return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 7b42100d-fcd9-4d37-bc59-07e339e47d17;
+					- _name = "r_MBL";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "	MBL = - DER(theta_MBL) + K6 * theta_MBL.PARTIAL(Reverse)
+			 + (K4/K7) * (psi_MBL - K5 * theta_MBG);
+
+    return S_OK;
+";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID ada4f7c9-f362-4b3e-877b-f4a30f495e22;
+					- _name = "r_BCLL";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "	// Boundary condition liquid phase at zeta=L=1.0
+	BCLL = theta_BCL - theta_in; // theta_in = 0 all time
+
+    return S_OK;";
+					}
+				}
+				{ IDestructor 
+					- _id = GUID 8f89ff55-3b59-4911-a38c-55191be619d0;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "	if (psi_in)
+	{
+	  delete[] psi_in;
+	  psi_in = NULL;
+	}
+	
+	// ***** Variables ******
+	if (psi)
+	{
+	  delete[] psi;
+	  psi = NULL;
+	}
+	
+	if (psi_BC0)
+	{
+	  delete[] psi_BC0; 
+	  psi_BC0 = NULL;
+	}
+	
+	if (psi_MB)
+	{
+	  delete[] psi_MB;
+	  psi_MB = NULL;
+	}
+	  
+ 	// ***** Equations *******
+	if (BCG0)
+	{
+	  delete[] BCG0;
+	  BCG0 = NULL;
+	}
+	
+	if (MBG)
+	{
+	  delete[] MBG;
+	  MBG = NULL;
+	}  
+";
+					}
+				}
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 19;
+				- value = 
+				{ IAttribute 
+					- _id = GUID bd640b50-acaa-43cd-bbb8-a42d10b61de8;
+					- _name = "K3";
+					- _defaultValue = "0.1";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID cc419814-5a3d-4f78-84be-91d20aeb419a;
+					- _name = "K4";
+					- _defaultValue = "20.0";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID e67cbd36-1288-4035-93ea-00a305a90865;
+					- _name = "K5";
+					- _defaultValue = "10.0";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID c1b084d9-c5b7-4481-8db6-da53b853a603;
+					- _name = "K6";
+					- _defaultValue = "0.003";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID facff0db-a59e-4ca4-af3a-0d0d787062f8;
+					- _name = "K7";
+					- _defaultValue = "75.0";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID f41d08b7-ab14-413a-9f8c-3bf4bbc5559c;
+					- _name = "psi_in";
+					- _defaultValue = "NULL";
+					- myTypeOf = { IType 
+						- _id = GUID a7208ee9-c914-4acb-98ae-26d49cc9ebad;
+						- _declaration = "double*";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID a9cf1d90-4041-4d54-a324-6a23926ce16c;
+					- _name = "theta_in";
+					- _defaultValue = "0.0";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 1f65a284-5cb3-4efa-a433-257ea6d6637c;
+					- _name = "Forward";
+					- _defaultValue = "\"Forward\",0,L,false,false";
+					- myTypeOf = { IType 
+						- _id = GUID fb36d7c2-5023-4842-b554-38b23407e393;
+						- _declaration = "DistributionDomain";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID c4c5caaf-dafe-4ebb-9415-2d997e8624f3;
+					- _name = "Reverse";
+					- _defaultValue = "\"Reverse\",0,L,false,false";
+					- myTypeOf = { IType 
+						- _id = GUID 1bbd1d74-0883-4a4e-8eb7-1c33f389bb15;
+						- _declaration = "DistributionDomain";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 3f557996-19b9-402c-8937-1f1049beb9f0;
+					- _name = "ForwardMesh";
+					- _defaultValue = "BFDM,1,40";
+					- myTypeOf = { IType 
+						- _id = GUID c7a6f798-8a5c-4061-845e-9f7b5f40d4b8;
+						- _declaration = "D_Mesh";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 5e7a0e94-57b2-451e-95a0-8e418133f1ce;
+					- _name = "ReveseMesh";
+					- _defaultValue = "CFDM,2,40";
+					- myTypeOf = { IType 
+						- _id = GUID 5d0211a9-db6d-45fa-8d3c-413b97587514;
+						- _declaration = "D_Mesh";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID c6925e66-091e-4997-81b6-cb466c2b1270;
+					- _name = "theta";
+					- _defaultValue = "\"Liquid Phase\",\"kmol/m^3\",1,&Reverse";
+					- myTypeOf = { IType 
+						- _id = GUID 0b56a481-e200-4d9c-bb15-f0b90cdd1496;
+						- _declaration = "DistributedVar";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 4e775dda-7817-4a33-a59e-4625809fc3ae;
+					- _name = "gasConc";
+					- _defaultValue = "\" \",\"kmol/m^3\",1,&Forward";
+					- myTypeOf = { IType 
+						- _id = GUID fce8ef31-9df1-41d5-9d8e-5b18ff95450f;
+						- _declaration = "DistributedVar";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID d16a3490-b42e-4d98-b4e0-dc189ae6067c;
+					- _name = "psi_MBL";
+					- _defaultValue = "";
+					- myTypeOf = { IType 
+						- _id = GUID 7b8c425e-7226-441d-bde6-be8e24c2ac64;
+						- _declaration = "DistributedVar";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 2f277dd7-d954-419c-9a2c-2439a9b3c22b;
+					- _name = "theta_MBG";
+					- _defaultValue = "";
+					- myTypeOf = { IType 
+						- _id = GUID 2b8313a5-8384-428a-a418-da5d31c94dc9;
+						- _declaration = "DistributedVar";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 60e686c5-94ec-4625-827d-34a5e5aeabfc;
+					- _name = "theta_BCL";
+					- _defaultValue = "";
+					- myTypeOf = { IType 
+						- _id = GUID d0e81f7f-a221-401d-aae8-00df5787b971;
+						- _declaration = "DistributedVar";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID d96a833d-3de4-460a-9ab0-85a04da323e4;
+					- _name = "theta_MBL";
+					- _defaultValue = "";
+					- myTypeOf = { IType 
+						- _id = GUID 809407ed-b30a-45d1-b52f-41ffb7a0092f;
+						- _declaration = "DistributedVar";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 0e38c19e-8253-4a60-958a-f7f97041d746;
+					- _name = "MBL";
+					- _defaultValue = "";
+					- myTypeOf = { IType 
+						- _id = GUID 729ea937-0ad1-400b-b31b-773a49871a64;
+						- _declaration = "DistributedVar";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 304ed92f-a15e-44c0-ba0d-4eae6f7f0394;
+					- _name = "BCLL";
+					- _defaultValue = "";
+					- myTypeOf = { IType 
+						- _id = GUID dea578cc-393c-4421-b302-36d8091d8102;
+						- _declaration = "DistributedVar";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 83f1b5fd-2c2f-425d-a9ed-efe80ec4cdcc;
+			- _myState = 8192;
+			- _name = "MixerTank";
+			- _lastID = 8;
+			- weakCGTime = 10.20.2002::21:36:20;
+			- strongCGTime = 10.20.2002::21:34:36;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 5;
+				- value = 
+				{ IConstructor 
+					- _id = GUID 1a040ea3-544e-4958-a99b-6a1ff988c7ca;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "	feed_in = new double[3];
+	feed_in[0] = 0.0;
+	feed_in[1] = 0.0;
+	feed_in[2] = 0.0;
+	
+	recycle_in = new double[3];
+	recycle_in[0] = 0.0;
+	recycle_in[1] = 0.0;
+	recycle_in[2] = 0.0;
+
+	gamma = new double[3];
+	gamma[0] = 0.0;
+	gamma[1] = 0.0;
+	gamma[2] = 0.0;
+	
+";
+					}
+					- _initializer = "";
+				}
+				{ IDestructor 
+					- _id = GUID 404d0b8d-bcd1-4530-bd69-a2e56a7c9327;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "	if (feed_in)
+	{
+	  delete[] feed_in;
+	  feed_in = NULL;
+	}
+	
+	if (recycle_in)
+	{
+	  delete[] recycle_in;
+	  recycle_in = NULL;
+	}
+
+	if (gamma)
+	{
+	  delete[] gamma;
+	  gamma = NULL;
+	}
+	
+";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID b578bcac-0222-4ced-ad4d-3d8815368d85;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_res0";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID cf096996-bb8b-4876-a2cb-448e4ce2c447;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID cefe5cae-1149-432a-ab8d-3822b286e13e;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 49fa3a80-aef1-41fd-8084-d8bceaa856fb;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 0;
+
+*res = -DER(gamma[i]) + K8*(feed_in[i] + K9*recycle_in[i] - (1+K9)*gamma[i]);
+
+return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 3f81d517-676b-4585-b78d-3d46cdb4ca33;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_res1";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 0424f3ae-df7d-4e49-b34d-f07dc1b40eb4;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 3faeebda-9efd-409d-8944-502786f2e687;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 400ef004-2efa-4f86-9cbb-394dcf295f07;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 1;
+
+*res = -DER(gamma[i]) + K8*(feed_in[i] + K9*recycle_in[i] - (1+K9)*gamma[i]);
+
+return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 497286e2-fa0d-4ec3-9d92-819c556da29c;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_res2";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID ae59fa44-3409-4c71-8c00-557004f89441;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID dd308b27-e6ba-4362-a1df-95285aaa25b2;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID a8c5b147-a6e4-47ca-b657-1bd4695ac5d2;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 2;
+
+*res = -DER(gamma[i]) + K8*(feed_in[i] + K9*recycle_in[i] - (1+K9)*gamma[i]);
+
+return S_OK;";
+					}
+				}
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 5;
+				- value = 
+				{ IAttribute 
+					- _id = GUID e3fccbd7-b918-4e4d-8e49-8220d6018229;
+					- _name = "K8";
+					- _defaultValue = "30.7";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 49b7e1d1-ed0e-4567-b7a1-be4568ac72bd;
+					- _name = "K9";
+					- _defaultValue = "0.5";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "double";
+						- _id = GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 3859f9b5-d046-431c-853a-642aaf643e49;
+					- _name = "feed_in";
+					- _defaultValue = "NULL";
+					- myTypeOf = { IType 
+						- _id = GUID 7b5a2338-758b-43f8-aed8-f12cb5de6157;
+						- _declaration = "double*";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 52f10b8b-9fc9-4ac9-8281-55b558c0c387;
+					- _name = "recycle_in";
+					- _defaultValue = "NULL";
+					- myTypeOf = { IType 
+						- _id = GUID 294163a9-fd9e-43f1-891d-31ea33374451;
+						- _declaration = "double*";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+				{ IAttribute 
+					- _id = GUID b8ba870e-d600-459b-841f-1d54def41f84;
+					- _name = "gamma";
+					- _defaultValue = "NULL";
+					- myTypeOf = { IType 
+						- _id = GUID ea8468a2-967c-4f8d-9d0e-47d9194fa31d;
+						- _declaration = "double*";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID dc48b4be-e8ef-4274-96e2-2edbb0aa2be7;
+			- _myState = 8192;
+			- _name = "Absorber";
+			- _lastID = 13;
+			- weakCGTime = 10.20.2002::22:12:22;
+			- strongCGTime = 10.20.2002::22:9:1;
+			- _multiplicity = "";
+			- _hotLink = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 3;
+				- value = 
+				{ ILink 
+					- _id = GUID a416a8ff-2382-4acb-9b97-5f50da34e30e;
+					- _name = "pAbsorber";
+					- _multiplicity = "1";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 700e2d82-be66-4b77-988d-a34f2cd5d7c8;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+				{ ILink 
+					- _id = GUID 2ed1b712-d841-447a-b1ae-8fbfd2742ff8;
+					- _name = "pReactor";
+					- _multiplicity = "1";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _id = GUID a5a1cc3a-2038-44da-a59d-02c0bf8f4cb3;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+				{ ILink 
+					- _id = GUID a7c20620-acb0-418b-bbb6-cc1b883c257a;
+					- _name = "pMixer";
+					- _multiplicity = "1";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 83f1b5fd-2c2f-425d-a9ed-efe80ec4cdcc;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 14;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID f40a6c02-f679-4a92-8985-225de5088bff;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_mixer_recycle0";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID b855d845-f384-4277-b08c-b166b5b052d8;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 50e4f33f-2cca-4fe8-a2c3-b967ef704ebb;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID e7145d8f-1be0-41a3-bb2c-e1eab540a0d8;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 0;
+
+*res = pMixer->recycle_in[i] - pAbsorber->psi[i].getVal(&L);
+
+return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 1f32a824-d300-4c96-8bf9-88da82ee8c4d;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_mixer_recycle1";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID c496ab28-31eb-4f0e-8f48-c32559500726;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID def6377f-d8f4-4dc1-9b34-ca7c37d011fa;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID c18a23c8-9217-48b2-8f81-25d4d9dd2701;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 1;
+
+*res = pMixer->recycle_in[i] - pAbsorber->psi[i].getVal(&L);
+
+return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID dee1b685-ed50-4336-a326-d029b34a0fa0;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_mixer_recycle2";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID f477ba52-d9f7-4bbb-b810-3b1636017865;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 602261b8-121c-4aaf-b0ea-8a2adcad5ec3;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 9d4b39de-a1b7-4225-8e57-6555a3c0dd19;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 2;
+
+*res = pMixer->recycle_in[i] - pAbsorber->psi[i].getVal(&L);
+
+return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 3f5e9eab-21fb-4cba-9224-5dbc50bd386a;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_mixer_feed0";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 0011dc6e-27f7-4bfa-be59-53c3bf12907a;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 2e4b09c0-4850-4a98-88e1-36bb1405d2a3;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 51a4571f-ad64-41db-8a64-b9043a7eb60b;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 0;
+
+*res = pMixer->feed_in[i] - feed[i];
+
+return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 35443a30-f56c-4e07-9e5c-70dd33384de7;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_mixer_feed1";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 55879fdf-e317-4a16-a0af-2ac23be55bda;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 751eeb2d-2103-40d1-b691-a7b07b63a507;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 69a372ed-75f0-41fa-9e5a-70187762a99a;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 1;
+
+*res = pMixer->feed_in[i] - feed[i];
+
+return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID b7f09809-1b78-4d75-84e8-c69dfe9f6a88;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_mixer_feed2";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 2e654cfa-92a4-4381-9c10-af418afd508e;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID be997acc-7b5e-451b-9403-e2e430253e67;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 36ac7da9-960e-4544-a10a-ad2a8f575d79;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 2;
+
+*res = pMixer->feed_in[i] - feed[i];
+
+return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID ba1a0903-0e35-4a54-a5fa-0e359ab2bb4b;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_absorber_feed0";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 5d148272-9c9c-4ff6-b03d-1fd11ae576b3;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 60d573db-85b4-4a45-9ef6-a222c8c3e6a8;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 6129cd81-c0b2-4d52-9e75-f7969f21ad77;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 0;
+
+*res = pAbsorber->psi_in[i] - pReactor->phi[i].getVal(&L);
+
+return S_OK;
+";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID eb64858d-e967-471a-ad62-30f097459177;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_absorber_feed1";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 11acdaaf-9339-4d2a-8fb8-bc75ca207fa3;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 024723f4-8c28-4dec-816e-9201143dae6a;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 88780480-8c43-4474-8a0d-572dfa4170df;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 1;
+
+*res = pAbsorber->psi_in[i] - pReactor->phi[i].getVal(&L);
+
+return S_OK;
+";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID fa16fee3-d7d1-4b7e-a094-ca9e4a8620c0;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_absorber_feed2";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 82e9c745-1c71-4e78-9d4c-1c7cb0d754f1;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID c6c201ad-7238-46d8-8447-15ef30cd43fb;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID c1513f07-560f-40a4-b94c-579a7bb4d326;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 2;
+
+*res = pAbsorber->psi_in[i] - pReactor->phi[i].getVal(&L);
+
+return S_OK;
+";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 37d9fbba-9252-4454-a342-2dbef8b9a0b8;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_reactor_feed0";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 4ecd2d12-a584-43ca-b7cf-47695ecf61ac;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID d5b6d840-21c6-4720-bdc2-11ac9502c537;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 0a583a83-e156-4f9f-ba8d-e43fd8519e8b;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 0;
+
+*res = pReactor->phi_in[i] - pMixer->gamma[i];
+
+return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 0ccc93b9-1fc1-450b-8909-aaf7e1a21e21;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_reactor_feed1";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 6a529aa2-fcbe-4e41-bbbf-a7256b992b3c;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID b87d4caf-4a42-4b1b-aa06-9ac88e62a584;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID c7512d54-87c5-467e-9a13-a949fe8082bb;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 1;
+
+*res = pReactor->phi_in[i] - pMixer->gamma[i];
+
+return S_OK;";
+					}
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID b3346410-f502-44f5-b5f8-f63d304ea02e;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 2;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "none";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+											{ IProperty 
+												- _Name = "Kind";
+												- _Value = "common";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "common,abstract";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "r_reactor_feed2";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IArgument 
+							- _id = GUID 7e64b203-4c0e-472e-b880-bb5c8f1abe6d;
+							- _name = "res";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 83c0a2f8-328b-447c-a7ef-8114a9e79939;
+								- _declaration = "double*";
+							}
+							- _argumentDirection = InOut;
+						}
+					}
+					- myReturnType = { IType 
+						- _id = GUID 8ed10ea0-1ab2-4392-bad5-d24ccd7a12c2;
+						- _declaration = "HRESULT";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "long i = 2;
+
+*res = pReactor->phi_in[i] - pMixer->gamma[i];
+
+return S_OK;";
+					}
+				}
+				{ IConstructor 
+					- _id = GUID 74733219-7fa8-4f66-b0e1-e908fcc335ae;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "pAbsorber = new GasAbsorber();
+pReactor = new TubularReactor();
+pMixer = new MixerTank();
+
+feed = new double[3];
+feed[0] = 0.0;
+feed[1] = 0.0;
+feed[2] = 0.0;
+
+";
+					}
+					- _initializer = "";
+				}
+				{ IDestructor 
+					- _id = GUID 0b6be724-f5f5-4c7c-bd95-3c8f4e5e926b;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "if (pAbsorber)
+{
+  delete pAbsorber;
+  pAbsorber = NULL;
+}
+
+if (pReactor)
+{
+  delete pReactor;
+  pReactor = NULL;
+}
+
+if (pMixer)
+{
+  delete pMixer;
+  pMixer = NULL;
+}
+
+if (feed)
+{
+  delete[] feed;
+  feed = NULL;
+}    
+";
+					}
+				}
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAttribute 
+					- _id = GUID 2d31de8e-ac9d-4057-954f-bdeb6f5a3d12;
+					- _name = "feed";
+					- _defaultValue = "NULL";
+					- myTypeOf = { IType 
+						- _id = GUID 5b4e4466-6ca0-479f-94b4-4ca5ca8c3dbf;
+						- _declaration = "double*";
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- Events = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Types = { IRPYRawContainer 
+		- size = 0;
+	}
+	- UseCases = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Actors = { IRPYRawContainer 
+		- size = 0;
+	}
+	- _configurationRelatedTime = 12.31.1969::19:0:0;
+}
+

@@ -1,0 +1,578 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8447.0 (480c7884).
+//
+// IsDaeCOSolver.tlh
+//
+// C++ source equivalent of Win32 type library .\..\..\bin\IsDaeCOSolver.tlb
+// compiler-generated file created 09/05/01 at 07:32:08 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("77cbd767-8006-11d4-98a7-00c04f6801a9"))
+/* dispinterface */ _IOnModelExecEvents;
+struct /* coclass */ IsDaeSolver;
+struct __declspec(uuid("77cbd765-8006-11d4-98a7-00c04f6801a9"))
+/* dual interface */ IIsDaeSolver;
+struct __declspec(uuid("efa96fd0-b83d-11d4-839b-00600894e802"))
+/* dual interface */ IIsDaeEso;
+struct __declspec(uuid("3f35cf66-839e-11d4-838d-00600894e802"))
+/* dual interface */ IIsMatrix;
+struct __declspec(uuid("58cf6f05-d4ac-481e-b94d-fa4f4de091c7"))
+/* dual interface */ IOnModelExec;
+struct /* coclass */ IsMatrix;
+struct /* coclass */ IsNlaSolver;
+struct __declspec(uuid("717e8183-92e1-11d4-98a8-00c04f6801a9"))
+/* dual interface */ IIsNlaSolver;
+struct __declspec(uuid("a6a32b44-92e2-11d4-98a8-00c04f6801a9"))
+/* dual interface */ IIsNlaEso;
+struct /* coclass */ IsCINlaEso;
+struct /* coclass */ IsDaeEsoIImpl;
+struct __declspec(uuid("732a30a3-cbe5-11d4-83a2-00600894e802"))
+/* dual interface */ IIsDaeEsoIImpl;
+struct __declspec(uuid("bfc328f0-cbf6-11d4-83a2-00600894e802"))
+/* dual interface */ IIsDaeEsoImpl;
+struct /* coclass */ IsDaeEsoCImpl;
+struct __declspec(uuid("43d71c20-e726-4786-800e-15c06968adf3"))
+/* dual interface */ IIsDaeEsoCImpl;
+struct /* coclass */ OnModelExec;
+struct /* coclass */ OnTest;
+struct __declspec(uuid("215f714b-4c21-476a-a22e-725f57167b83"))
+/* dual interface */ IOnTest;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IOnModelExecEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IIsDaeSolver, __uuidof(IIsDaeSolver));
+_COM_SMARTPTR_TYPEDEF(IIsDaeEso, __uuidof(IIsDaeEso));
+_COM_SMARTPTR_TYPEDEF(IIsMatrix, __uuidof(IIsMatrix));
+_COM_SMARTPTR_TYPEDEF(IOnModelExec, __uuidof(IOnModelExec));
+_COM_SMARTPTR_TYPEDEF(IIsNlaSolver, __uuidof(IIsNlaSolver));
+_COM_SMARTPTR_TYPEDEF(IIsNlaEso, __uuidof(IIsNlaEso));
+_COM_SMARTPTR_TYPEDEF(IIsDaeEsoIImpl, __uuidof(IIsDaeEsoIImpl));
+_COM_SMARTPTR_TYPEDEF(IIsDaeEsoImpl, __uuidof(IIsDaeEsoImpl));
+_COM_SMARTPTR_TYPEDEF(IIsDaeEsoCImpl, __uuidof(IIsDaeEsoCImpl));
+_COM_SMARTPTR_TYPEDEF(IOnTest, __uuidof(IOnTest));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("77cbd767-8006-11d4-98a7-00c04f6801a9"))
+_IOnModelExecEvents : IDispatch
+{};
+
+struct __declspec(uuid("77cbd766-8006-11d4-98a7-00c04f6801a9"))
+IsDaeSolver;
+    // [ default ] interface IIsDaeSolver
+
+struct __declspec(uuid("77cbd765-8006-11d4-98a7-00c04f6801a9"))
+IIsDaeSolver : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Step ( ) = 0;
+    virtual HRESULT __stdcall SetEso (
+        struct IIsDaeEso * pEso ) = 0;
+    virtual HRESULT __stdcall SetTimedEvent (
+        double t ) = 0;
+};
+
+struct __declspec(uuid("efa96fd0-b83d-11d4-839b-00600894e802"))
+IIsDaeEso : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall SetRelTolerance (
+        SAFEARRAY * * relTolValue ) = 0;
+    virtual HRESULT __stdcall GetRelTolerance (
+        SAFEARRAY * * relTolValue ) = 0;
+    virtual HRESULT __stdcall SetAbsTolerance (
+        SAFEARRAY * * absTolValues ) = 0;
+    virtual HRESULT __stdcall GetAbsTolerance (
+        SAFEARRAY * * absTolValues ) = 0;
+    virtual HRESULT __stdcall GetAllResiduals (
+        SAFEARRAY * * residuals,
+        VARIANT_BOOL * validVal ) = 0;
+    virtual HRESULT __stdcall GetResiduals (
+        SAFEARRAY * * Indices,
+        SAFEARRAY * * residuals,
+        VARIANT_BOOL * validVal ) = 0;
+    virtual HRESULT __stdcall GetJacobianStruct (
+        long * nColIndices,
+        SAFEARRAY * * ColIndices,
+        SAFEARRAY * * cNZCols,
+        SAFEARRAY * * CalcMethod ) = 0;
+    virtual HRESULT __stdcall GetJacobianValues (
+        SAFEARRAY * * Indices,
+        SAFEARRAY * * JacVals ) = 0;
+    virtual HRESULT __stdcall GetAllJacobianValues (
+        struct IIsMatrix * * ppJacVals ) = 0;
+    virtual HRESULT __stdcall GetDiffJacobianStruct (
+        long * nColIndices,
+        SAFEARRAY * * ColIndices,
+        SAFEARRAY * * cNZCols,
+        SAFEARRAY * * CalcMethod ) = 0;
+    virtual HRESULT __stdcall GetDiffJacobianValues (
+        SAFEARRAY * * Indices,
+        SAFEARRAY * * MassVals ) = 0;
+    virtual HRESULT __stdcall GetAllDiffJacobianValues (
+        struct IIsMatrix * * ppMassVals ) = 0;
+    virtual HRESULT __stdcall GetVariables (
+        SAFEARRAY * * Indices,
+        double t,
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall GetVariable (
+        long index,
+        double t,
+        double * val ) = 0;
+    virtual HRESULT __stdcall SetVariables (
+        SAFEARRAY * * Indices,
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall GetAllVariables (
+        double t,
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall SetAllVariables (
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall GetDerivatives (
+        SAFEARRAY * * Indices,
+        double t,
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall GetDerivative (
+        long index,
+        double t,
+        double * val ) = 0;
+    virtual HRESULT __stdcall SetDerivatives (
+        SAFEARRAY * * Indices,
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall GetAllDerivatives (
+        double t,
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall SetAllDerivatives (
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall GetNumVars (
+        long * nVars ) = 0;
+    virtual HRESULT __stdcall GetNumEqns (
+        long * nEqns ) = 0;
+    virtual HRESULT __stdcall GetNumLocalVars (
+        long * nVars ) = 0;
+    virtual HRESULT __stdcall GetNumLocalEqns (
+        long * nEqns ) = 0;
+    virtual HRESULT __stdcall GetLastTime (
+        double * t ) = 0;
+    virtual HRESULT __stdcall GetTime (
+        double * t ) = 0;
+    virtual HRESULT __stdcall get_ContainerIndex (
+        long * index ) = 0;
+    virtual HRESULT __stdcall put_ContainerIndex (
+        long index ) = 0;
+    virtual HRESULT __stdcall get_VariableMap (
+        SAFEARRAY * * pVal ) = 0;
+    virtual HRESULT __stdcall put_VariableMap (
+        SAFEARRAY * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Type (
+        enum EsoType * pType ) = 0;
+    virtual HRESULT __stdcall InitTime (
+        double StartTime,
+        VARIANT_BOOL bReverse ) = 0;
+    virtual HRESULT __stdcall SetTime (
+        double Time ) = 0;
+    virtual HRESULT __stdcall SetLastTime (
+        double last_time ) = 0;
+    virtual HRESULT __stdcall GetVariablesIndex (
+        SAFEARRAY * * index ) = 0;
+    virtual HRESULT __stdcall AddEso (
+        struct IIsDaeEso * pEso ) = 0;
+    virtual HRESULT __stdcall GetEso (
+        long index,
+        struct IIsDaeEso * * pEso ) = 0;
+    virtual HRESULT __stdcall RemoveEso (
+        long index ) = 0;
+    virtual HRESULT __stdcall GetNumEso (
+        long * count ) = 0;
+    virtual HRESULT __stdcall GetReportInfo (
+        long * StepperCalls,
+        long * functionCalls,
+        long * jacobiansCalls,
+        long * DecompCalls,
+        long * Substitutions,
+        long * TotalSteps,
+        long * errorRejectedSteps,
+        long * newtonRejectedSteps,
+        long * growthRejectedSteps,
+        long * funcRejectedSteps,
+        long * nEvents ) = 0;
+    virtual HRESULT __stdcall EvalStateCondition (
+        double ZeroCrossingTime,
+        long iDisEqn,
+        long iTransition,
+        VARIANT_BOOL * bEvent ) = 0;
+    virtual HRESULT __stdcall GetCPPPtr (
+        unsigned long * pIsDaeEso ) = 0;
+    virtual HRESULT __stdcall GetNumRealPars (
+        long * nRPars ) = 0;
+    virtual HRESULT __stdcall GetRealPar (
+        long index,
+        double * val ) = 0;
+    virtual HRESULT __stdcall SetRealPar (
+        long index,
+        double newVal ) = 0;
+    virtual HRESULT __stdcall GetNumIntPars (
+        long * nIPars ) = 0;
+    virtual HRESULT __stdcall GetIntPar (
+        long index,
+        long * val ) = 0;
+    virtual HRESULT __stdcall SetIntPar (
+        long index,
+        long newVal ) = 0;
+    virtual HRESULT __stdcall SetModelExec (
+        struct IOnModelExec * pModelExec ) = 0;
+    virtual HRESULT __stdcall PostTransition (
+        long iNewState ) = 0;
+    virtual HRESULT __stdcall PostRealParameter (
+        long Id,
+        double newVal ) = 0;
+    virtual HRESULT __stdcall PostIntegerParameter (
+        long Id,
+        long newVal ) = 0;
+};
+
+enum Jac_Calc_Method
+{
+    JCM_NC = 0,
+    JCM_AD = 1,
+    JCM_NUM = 2,
+    JCM_SYM = 3,
+    JCM_CONST = 4
+};
+
+struct __declspec(uuid("3f35cf66-839e-11d4-838d-00600894e802"))
+IIsMatrix : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Init (
+        long nRows,
+        long nCols ) = 0;
+    virtual HRESULT __stdcall GetData (
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall Attach (
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall Detach (
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall GetRow (
+        long Row,
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall SetRow (
+        long Row,
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall GetCol (
+        long Col,
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall SetCol (
+        long Col,
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall get_Value (
+        long Row,
+        long Col,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Value (
+        long Row,
+        long Col,
+        double pVal ) = 0;
+};
+
+enum EsoType
+{
+    DaeEso = 0,
+    DaeEsoX = 1,
+    STNDaeEso = 2,
+    CompDaeEso = 3
+};
+
+struct __declspec(uuid("58cf6f05-d4ac-481e-b94d-fa4f4de091c7"))
+IOnModelExec : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall PostRPar (
+        long iGlobalId,
+        double val ) = 0;
+    virtual HRESULT __stdcall PostIPar (
+        long iGlobalId,
+        long val ) = 0;
+    virtual HRESULT __stdcall SetModel (
+        struct IIsDaeEso * pModel ) = 0;
+    virtual HRESULT __stdcall PostStateEvent (
+        double EventTime,
+        BSTR EventId,
+        long iEventEqn,
+        struct IIsDaeEso * pEventEso ) = 0;
+    virtual HRESULT __stdcall get_StepSize (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_StepSize (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall Step ( ) = 0;
+    virtual HRESULT __stdcall OnTransition (
+        double event_time,
+        long iEventEqn,
+        long iNewState,
+        struct IIsDaeEso * pEventModel ) = 0;
+};
+
+struct __declspec(uuid("3f35cf67-839e-11d4-838d-00600894e802"))
+IsMatrix;
+    // [ default ] interface IIsMatrix
+
+struct __declspec(uuid("717e8184-92e1-11d4-98a8-00c04f6801a9"))
+IsNlaSolver;
+    // [ default ] interface IIsNlaSolver
+
+struct __declspec(uuid("717e8183-92e1-11d4-98a8-00c04f6801a9"))
+IIsNlaSolver : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall SetEso (
+        struct IIsNlaEso * pEso ) = 0;
+    virtual HRESULT __stdcall Solve ( ) = 0;
+};
+
+struct __declspec(uuid("a6a32b44-92e2-11d4-98a8-00c04f6801a9"))
+IIsNlaEso : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetNumEqns (
+        long * nEqns ) = 0;
+    virtual HRESULT __stdcall GetNumVars (
+        long * nVars ) = 0;
+    virtual HRESULT __stdcall GetAllVariables (
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall SetAllVariables (
+        SAFEARRAY * * Vals ) = 0;
+    virtual HRESULT __stdcall GetResiduals (
+        SAFEARRAY * * x,
+        SAFEARRAY * * residuals ) = 0;
+    virtual HRESULT __stdcall GetResidual (
+        long iEqn,
+        SAFEARRAY * * x,
+        double * residual ) = 0;
+    virtual HRESULT __stdcall GetJacobianStruct (
+        long * nColIndices,
+        SAFEARRAY * * ColIndices,
+        SAFEARRAY * * cNZCols,
+        SAFEARRAY * * CalcMethod ) = 0;
+    virtual HRESULT __stdcall GetJacobianValues (
+        SAFEARRAY * * Indices,
+        SAFEARRAY * * JacVals ) = 0;
+    virtual HRESULT __stdcall GetAllJacobianValues (
+        SAFEARRAY * * Indices,
+        SAFEARRAY * * JacVals ) = 0;
+    virtual HRESULT __stdcall Solve ( ) = 0;
+};
+
+struct __declspec(uuid("e3ca3c2a-9466-11d4-98a8-00c04f6801a9"))
+IsCINlaEso;
+    // [ default ] interface IIsNlaEso
+
+struct __declspec(uuid("732a30a4-cbe5-11d4-83a2-00600894e802"))
+IsDaeEsoIImpl;
+    // [ default ] interface IIsDaeEsoIImpl
+
+struct __declspec(uuid("732a30a3-cbe5-11d4-83a2-00600894e802"))
+IIsDaeEsoIImpl : IIsDaeEso
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall SetEso (
+        struct IIsDaeEsoImpl * pEso ) = 0;
+};
+
+struct __declspec(uuid("bfc328f0-cbf6-11d4-83a2-00600894e802"))
+IIsDaeEsoImpl : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Initialize (
+        long * nEqns,
+        long * nVars,
+        long * nRPars,
+        long * nIPars,
+        double * t,
+        SAFEARRAY * * atol,
+        SAFEARRAY * * rtol,
+        SAFEARRAY * * x,
+        SAFEARRAY * * xdot,
+        SAFEARRAY * * rpar,
+        SAFEARRAY * * ipar ) = 0;
+    virtual HRESULT __stdcall GetJacobianStruct (
+        long * nColIndices,
+        SAFEARRAY * * ColIndices,
+        SAFEARRAY * * cNZCols,
+        SAFEARRAY * * CalcMethod ) = 0;
+    virtual HRESULT __stdcall GetDiffJacobianStruct (
+        long * nColIndices,
+        SAFEARRAY * * ColIndices,
+        SAFEARRAY * * cNZCols,
+        SAFEARRAY * * CalcMethod ) = 0;
+    virtual HRESULT __stdcall GetResiduals (
+        SAFEARRAY * * iEqn,
+        long nEqn,
+        double t,
+        SAFEARRAY * * x,
+        SAFEARRAY * * xdot,
+        SAFEARRAY * * rpar,
+        SAFEARRAY * * ipar,
+        SAFEARRAY * * residuals ) = 0;
+    virtual HRESULT __stdcall GetJacobianValues (
+        SAFEARRAY * * iJac,
+        long nJac,
+        double t,
+        SAFEARRAY * * x,
+        SAFEARRAY * * xdot,
+        SAFEARRAY * * rpar,
+        SAFEARRAY * * ipar,
+        SAFEARRAY * * jacobians ) = 0;
+    virtual HRESULT __stdcall GetDiffJacobianValues (
+        SAFEARRAY * * iJac,
+        long nJac,
+        double t,
+        SAFEARRAY * * x,
+        SAFEARRAY * * xdot,
+        SAFEARRAY * * rpar,
+        SAFEARRAY * * ipar,
+        SAFEARRAY * * jacobians ) = 0;
+    virtual HRESULT __stdcall GetEqnForm (
+        SAFEARRAY * * form,
+        SAFEARRAY * * diff_form ) = 0;
+    virtual HRESULT __stdcall EvalStateCondition (
+        SAFEARRAY * * EqnState,
+        SAFEARRAY * * x,
+        SAFEARRAY * * xdot,
+        double EventTime,
+        long iDisEqn,
+        long iTransition,
+        VARIANT_BOOL * bEvent ) = 0;
+    virtual HRESULT __stdcall GetMemberEsos (
+        long * nEsos,
+        SAFEARRAY * * Esos ) = 0;
+    virtual HRESULT __stdcall GetSTNStruct (
+        long * nStates,
+        long * nTransitions,
+        long * iDefaultState,
+        SAFEARRAY * * TransEventIds,
+        SAFEARRAY * * SrcStates,
+        SAFEARRAY * * StateToEqnMap,
+        SAFEARRAY * * TransToEqnMap ) = 0;
+    virtual HRESULT __stdcall TriggerEvent (
+        double EventTime,
+        BSTR EventId,
+        long iEventEqn ) = 0;
+    virtual HRESULT __stdcall GetMasterNodeStatus (
+        VARIANT_BOOL * bMasterNodeStatus ) = 0;
+};
+
+enum EqnForm
+{
+    EqnForm_Continuous = 0,
+    EqnForm_Discontinuous = 1,
+    EqnForm_Reset = 2
+};
+
+enum EqnDiffForm
+{
+    EqnDiffForm_Numeric = 0,
+    EqnDiffForm_Automatic = 1,
+    EqnDiffForm_Symbolic = 2
+};
+
+struct __declspec(uuid("704b0744-be48-4e89-84b6-6ac44ba12933"))
+IsDaeEsoCImpl;
+    // [ default ] interface IIsDaeEsoCImpl
+
+struct __declspec(uuid("43d71c20-e726-4786-800e-15c06968adf3"))
+IIsDaeEsoCImpl : IIsDaeEso
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall SetEso (
+        IUnknown * pEso ) = 0;
+    virtual HRESULT __stdcall GetEsoNames (
+        SAFEARRAY * * pEsoNames ) = 0;
+    virtual HRESULT __stdcall get_Eso (
+        BSTR Name,
+        struct IIsDaeEsoCImpl * * pEso ) = 0;
+    virtual HRESULT __stdcall GetVarNames (
+        SAFEARRAY * * pVarNames ) = 0;
+    virtual HRESULT __stdcall get_Var (
+        BSTR Name,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_Var (
+        BSTR Name,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall GetRParNames (
+        SAFEARRAY * * pRParNames ) = 0;
+    virtual HRESULT __stdcall get_rpar (
+        BSTR Name,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_rpar (
+        BSTR Name,
+        double pVal ) = 0;
+    virtual HRESULT __stdcall GetIParNames (
+        SAFEARRAY * * pIParNames ) = 0;
+    virtual HRESULT __stdcall get_ipar (
+        BSTR Name,
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_ipar (
+        BSTR Name,
+        long pVal ) = 0;
+    virtual HRESULT __stdcall GetEqnNames (
+        SAFEARRAY * * pEqnNames ) = 0;
+};
+
+struct __declspec(uuid("0bf65e89-4b0c-40e8-8065-da9e82ef0faa"))
+OnModelExec;
+    // [ default ] interface IOnModelExec
+    // [ default, source ] dispinterface _IOnModelExecEvents
+
+struct __declspec(uuid("24be2738-c38d-430e-a966-2896238b1d0c"))
+OnTest;
+    // [ default ] interface IOnTest
+
+struct __declspec(uuid("215f714b-4c21-476a-a22e-725f57167b83"))
+IOnTest : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall SparseTest ( ) = 0;
+};
+
+#pragma pack(pop)

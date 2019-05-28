@@ -1,0 +1,52 @@
+I-Logix-RPY-Archive version 4.0.4 *
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 8;
+	- value = "DefaultComponent\\DefaultConfig\\Absorber.cpp" 11.2.2002::22:53:42
+	"DefaultComponent\\DefaultConfig\\Absorber.h" 11.2.2002::22:53:42
+	"DefaultComponent\\DefaultConfig\\GasAbsorber.cpp" 11.2.2002::22:53:42
+	"DefaultComponent\\DefaultConfig\\GasAbsorber.h" 11.2.2002::22:53:42
+	"DefaultComponent\\DefaultConfig\\MixerTank.cpp" 11.2.2002::22:53:42
+	"DefaultComponent\\DefaultConfig\\MixerTank.h" 11.2.2002::22:53:42
+	"DefaultComponent\\DefaultConfig\\TubularReactor.cpp" 11.2.2002::22:53:42
+	"DefaultComponent\\DefaultConfig\\TubularReactor.h" 11.2.2002::22:53:42
+	
+}
+- size = 4;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Models.sbs";
+	- _subsystem = "Models";
+	- _class = "";
+	- _name = "Absorber";
+	- _id = GUID dc48b4be-e8ef-4274-96e2-2edbb0aa2be7;
+}
+- genTime = 11.2.2002::22:53:42;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Models.sbs";
+	- _subsystem = "Models";
+	- _class = "";
+	- _name = "GasAbsorber";
+	- _id = GUID 700e2d82-be66-4b77-988d-a34f2cd5d7c8;
+}
+- genTime = 11.2.2002::22:53:42;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Models.sbs";
+	- _subsystem = "Models";
+	- _class = "";
+	- _name = "MixerTank";
+	- _id = GUID 83f1b5fd-2c2f-425d-a9ed-efe80ec4cdcc;
+}
+- genTime = 11.2.2002::22:53:42;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Models.sbs";
+	- _subsystem = "Models";
+	- _class = "";
+	- _name = "TubularReactor";
+	- _id = GUID a5a1cc3a-2038-44da-a59d-02c0bf8f4cb3;
+}
+- genTime = 11.2.2002::22:53:42;
+

@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmissionVB.vbClutch.1 = s 'vbClutch Class'
+	{
+		CLSID = s '{32066F91-763F-42D5-8BE6-FFE063A21F00}'
+	}
+	RtsOnTransmissionVB.vbClutch = s 'vbClutch Class'
+	{
+		CLSID = s '{32066F91-763F-42D5-8BE6-FFE063A21F00}'
+		CurVer = s 'RtsOnTransmissionVB.vbClutch.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {32066F91-763F-42D5-8BE6-FFE063A21F00} = s 'vbClutch Class'
+		{
+			ProgID = s 'RtsOnTransmissionVB.vbClutch.1'
+			VersionIndependentProgID = s 'RtsOnTransmissionVB.vbClutch'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A0FB58BE-0E08-45F6-8A4A-732A46D7FE96}'
+		}
+	}
+}

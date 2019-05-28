@@ -1,0 +1,69 @@
+void NamedMutexExample (void)
+{
+  HANDLE  hMutex;
+  TCHAR szMsg[100];
+
+  hMutex = CreateMutex (
+                NULL,                       // No security descriptor
+                FALSE,                      // Mutex object not owned
+                TEXT("NameOfMutexObject")); // Object name
+
+  if (NULL == hMutex)
+  {
+    // Your code to deal with the error goes here.
+
+    // Here is one example of what might be done.
+    wsprintf (szMsg, TEXT("CreateMutex error: %d."), GetLastError ());
+    MessageBox (NULL, szMsg, TEXT("Error"), MB_OK);
+  }
+  else
+  {
+    // Not an error -- deal with success
+    if ( ERROR_ALREADY_EXISTS == GetLastError () )
+      MessageBox (NULL, TEXT("CreateMutex opened existing mutex."),
+                  TEXT("Results"), MB_OK);
+    else
+      MessageBox (NULL, TEXT("CreateMutex created new mutex."),
+                  TEXT("Results"), MB_OK);
+  }
+} // End of NamedMutexExample code
+
+The following code example opens a handle of an existing mutex object. Additionally, it uses the try-finally structured exception-handling syntax to ensure that the thread properly releases the mutex object. To prevent the mutex object from being abandoned inadvertently, the finally block of code executes no matter how the try block terminates, unless the try block includes a call to the TerminateThread function.
+
+BOOL WriteToDatabase (HANDLE hMutex)
+{
+  DWORD dwWaitResult;
+
+  dwWaitResult = WaitForSingleObject (hMutex,   // Handle of mutex object
+                                      5000L);   // Five-second time-out
+  switch (dwWaitResult)
+  {
+    case WAIT_OBJECT_0:
+      __try
+      {
+        // Your code to write to the database goes here.
+      }
+      __finally
+      {
+        // Your code to clean up the database operations goes here.
+
+        if (! ReleaseMutex (hMutex))
+        {
+          // Your code to deal with the error goes here.
+        }
+      }
+      break;
+
+    // Cannot get mutex object ownership due to time-out
+    case WAIT_TIMEOUT:
+      return FALSE;
+
+    // Got ownership of an abandoned mutex object
+    case WAIT_ABANDONED:
+      return FALSE;
+  }
+
+  return TRUE;
+} // End of WriteToDatabase example code
+
+ 

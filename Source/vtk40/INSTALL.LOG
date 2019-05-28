@@ -1,0 +1,560 @@
+***  Installation Started 10/15/2002 22:08  ***
+Title: 
+Source: E:\Documents\VTK 4.0\vtk40Core.exe | 10-14-2002 | 23:15:50 | 2958432
+Made Dir: E:\Program Files\vtk40
+File Copy: E:\Program Files\vtk40\UNWISE.EXE | 05-10-2001 | 10:04:28 | | 162304 | 432c52a3
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\VTK 40 Core
+RegDB Val: VTK 40 Core
+RegDB Name: DisplayName
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\VTK 40 Core
+RegDB Val: E:\PROGRA~1\vtk40\UNWISE.EXE E:\PROGRA~1\vtk40\INSTALL.LOG
+RegDB Name: UninstallString
+RegDB Root: 2
+File Copy: E:\Program Files\vtk40\README.html | 01-25-2002 | 07:00:40 | | 16575 | 1239394b
+Made Dir: E:\Program Files\vtk40\Examples
+File Copy: E:\Program Files\vtk40\Examples\CMakeLists.txt | 07-13-2001 | 12:01:38 | | 81 | 7a5a5650
+File Copy: E:\Program Files\vtk40\Examples\README.txt | 09-28-2001 | 08:41:04 | | 2607 | 1d5ef681
+Made Dir: E:\Program Files\vtk40\Examples\CVS
+File Copy: E:\Program Files\vtk40\Examples\CVS\Root | 11-29-2001 | 14:05:40 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\CVS\Repository | 11-29-2001 | 14:05:40 | | 14 | ec83d2b
+File Copy: E:\Program Files\vtk40\Examples\CVS\Tag | 02-13-2002 | 07:01:08 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\CVS\Entries | 12-21-2001 | 05:31:46 | | 364 | e18f8efb
+Made Dir: E:\Program Files\vtk40\Examples\Annotation
+Made Dir: E:\Program Files\vtk40\Examples\Annotation\CVS
+File Copy: E:\Program Files\vtk40\Examples\Annotation\CVS\Root | 11-29-2001 | 14:05:40 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Annotation\CVS\Repository | 11-29-2001 | 14:05:40 | | 25 | ec1a3da1
+File Copy: E:\Program Files\vtk40\Examples\Annotation\CVS\Entries | 11-29-2001 | 14:47:40 | | 11 | a5dc34bf
+File Copy: E:\Program Files\vtk40\Examples\Annotation\CVS\Tag | 02-13-2002 | 07:01:08 | | 14 | 94d74905
+Made Dir: E:\Program Files\vtk40\Examples\Annotation\Tcl
+File Copy: E:\Program Files\vtk40\Examples\Annotation\Tcl\TestText.tcl | 11-02-2001 | 10:48:38 | | 1660 | 6504f74a
+File Copy: E:\Program Files\vtk40\Examples\Annotation\Tcl\annotatePick.tcl | 11-02-2001 | 10:48:38 | | 2788 | 913bd8c2
+File Copy: E:\Program Files\vtk40\Examples\Annotation\Tcl\cubeAxes.tcl | 11-02-2001 | 10:48:38 | | 3753 | 3053d820
+File Copy: E:\Program Files\vtk40\Examples\Annotation\Tcl\labeledMesh.tcl | 11-02-2001 | 10:48:38 | | 4700 | 57739448
+File Copy: E:\Program Files\vtk40\Examples\Annotation\Tcl\multiLineText.tcl | 11-02-2001 | 10:48:40 | | 7222 | b40c1e34
+File Copy: E:\Program Files\vtk40\Examples\Annotation\Tcl\textOrigin.tcl | 11-02-2001 | 10:48:40 | | 1750 | f877c3b
+File Copy: E:\Program Files\vtk40\Examples\Annotation\Tcl\xyPlot.tcl | 11-02-2001 | 10:48:40 | | 6413 | 3cf744d6
+Made Dir: E:\Program Files\vtk40\Examples\Annotation\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\Annotation\Tcl\CVS\Root | 11-29-2001 | 14:05:40 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Annotation\Tcl\CVS\Repository | 11-29-2001 | 14:05:40 | | 29 | 11d3ab5a
+File Copy: E:\Program Files\vtk40\Examples\Annotation\Tcl\CVS\Tag | 02-13-2002 | 07:01:08 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Annotation\Tcl\CVS\Entries | 12-11-2001 | 04:31:12 | | 421 | bf6f3ea8
+Made Dir: E:\Program Files\vtk40\Examples\DataManipulation
+Made Dir: E:\Program Files\vtk40\Examples\DataManipulation\CVS
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\CVS\Root | 11-29-2001 | 14:05:40 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\CVS\Repository | 11-29-2001 | 14:05:40 | | 31 | 86798348
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\CVS\Entries | 11-29-2001 | 14:47:40 | | 22 | 8515e1f3
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\CVS\Tag | 02-13-2002 | 07:01:16 | | 14 | 94d74905
+Made Dir: E:\Program Files\vtk40\Examples\DataManipulation\Cxx
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Cxx\Arrays.cxx | 10-02-2001 | 14:17:44 | | 3747 | c0158308
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Cxx\CMakeLists.txt | 10-31-2001 | 07:42:50 | | 377 | bbcc3836
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Cxx\Cube.cxx | 10-30-2001 | 17:37:20 | | 2407 | d20f105e
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Cxx\RGrid.cxx | 10-31-2001 | 07:42:50 | | 3921 | 31b885be
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Cxx\SGrid.cxx | 10-31-2001 | 06:21:50 | | 3328 | 3bf60124
+Made Dir: E:\Program Files\vtk40\Examples\DataManipulation\Cxx\CVS
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Cxx\CVS\Root | 11-29-2001 | 14:05:40 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Cxx\CVS\Repository | 11-29-2001 | 14:05:40 | | 35 | d8245670
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Cxx\CVS\Tag | 02-13-2002 | 07:01:16 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Cxx\CVS\Entries | 12-11-2001 | 04:31:12 | | 283 | 781c7888
+Made Dir: E:\Program Files\vtk40\Examples\DataManipulation\Tcl
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Tcl\Arrays.tcl | 11-02-2001 | 10:48:42 | | 2665 | deff0cac
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Tcl\BuildUGrid.tcl | 11-02-2001 | 10:48:42 | | 13337 | a9809de0
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Tcl\CreateStrip.tcl | 11-02-2001 | 10:48:42 | | 1762 | 6f974c4b
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Tcl\FinancialField.tcl | 11-02-2001 | 10:48:42 | | 8272 | 53e0bce0
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Tcl\marching.tcl | 11-02-2001 | 11:41:30 | | 6676 | ba309749
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Tcl\pointToCellData.tcl | 11-02-2001 | 10:48:44 | | 3312 | da849a5d
+Made Dir: E:\Program Files\vtk40\Examples\DataManipulation\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Tcl\CVS\Root | 11-29-2001 | 14:05:42 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Tcl\CVS\Repository | 11-29-2001 | 14:05:42 | | 35 | 96d3c6d0
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Tcl\CVS\Tag | 02-13-2002 | 07:01:16 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\DataManipulation\Tcl\CVS\Entries | 12-11-2001 | 04:31:14 | | 367 | 3e417b85
+Made Dir: E:\Program Files\vtk40\Examples\GUI
+Made Dir: E:\Program Files\vtk40\Examples\GUI\CVS
+File Copy: E:\Program Files\vtk40\Examples\GUI\CVS\Root | 11-29-2001 | 14:05:42 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\GUI\CVS\Repository | 11-29-2001 | 14:05:42 | | 18 | a2bb17e8
+File Copy: E:\Program Files\vtk40\Examples\GUI\CVS\Entries | 11-29-2001 | 14:47:40 | | 37 | 904dfaeb
+File Copy: E:\Program Files\vtk40\Examples\GUI\CVS\Tag | 02-13-2002 | 07:01:16 | | 14 | 94d74905
+Made Dir: E:\Program Files\vtk40\Examples\GUI\Motif
+File Copy: E:\Program Files\vtk40\Examples\GUI\Motif\CMakeLists.txt | 09-28-2001 | 09:01:34 | | 499 | fc23303e
+File Copy: E:\Program Files\vtk40\Examples\GUI\Motif\Example1.cxx | 09-27-2001 | 16:08:18 | | 2542 | 59042478
+File Copy: E:\Program Files\vtk40\Examples\GUI\Motif\Example2.cxx | 09-27-2001 | 16:08:16 | | 3474 | 1cf7fa04
+Made Dir: E:\Program Files\vtk40\Examples\GUI\Motif\CVS
+File Copy: E:\Program Files\vtk40\Examples\GUI\Motif\CVS\Root | 11-29-2001 | 14:05:42 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\GUI\Motif\CVS\Repository | 11-29-2001 | 14:05:42 | | 24 | 199a7e5f
+File Copy: E:\Program Files\vtk40\Examples\GUI\Motif\CVS\Tag | 02-13-2002 | 07:01:16 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\GUI\Motif\CVS\Entries | 12-11-2001 | 04:31:14 | | 179 | 88d638b4
+Made Dir: E:\Program Files\vtk40\Examples\GUI\Tcl
+File Copy: E:\Program Files\vtk40\Examples\GUI\Tcl\Mace.tcl | 11-02-2001 | 10:48:44 | | 4776 | 272e2429
+File Copy: E:\Program Files\vtk40\Examples\GUI\Tcl\MaceTk.tcl | 10-04-2001 | 18:17:30 | | 8490 | a488105
+Made Dir: E:\Program Files\vtk40\Examples\GUI\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\GUI\Tcl\CVS\Root | 11-29-2001 | 14:05:42 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\GUI\Tcl\CVS\Repository | 11-29-2001 | 14:05:42 | | 22 | e46d9ee4
+File Copy: E:\Program Files\vtk40\Examples\GUI\Tcl\CVS\Tag | 02-13-2002 | 07:01:18 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\GUI\Tcl\CVS\Entries | 12-11-2001 | 04:31:14 | | 113 | d41d206f
+Made Dir: E:\Program Files\vtk40\Examples\GUI\Win32
+Made Dir: E:\Program Files\vtk40\Examples\GUI\Win32\CVS
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\CVS\Root | 11-29-2001 | 14:05:42 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\CVS\Repository | 11-29-2001 | 14:05:42 | | 24 | e938b84b
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\CVS\Entries | 11-29-2001 | 14:47:40 | | 34 | 21a70930
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\CVS\Tag | 02-13-2002 | 07:01:18 | | 14 | 94d74905
+Made Dir: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\CMakeLists.txt | 11-07-2001 | 14:04:24 | | 618 | cedb135f
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\ChildFrm.cpp | 09-27-2001 | 16:13:18 | | 1533 | 4191b871
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\ChildFrm.h | 09-27-2001 | 16:13:18 | | 1397 | af70adfa
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\MainFrm.cpp | 09-27-2001 | 16:13:18 | | 1510 | e748f026
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\MainFrm.h | 09-27-2001 | 16:13:18 | | 1382 | ab7fbb5f
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\Resource.h | 09-27-2001 | 16:13:18 | | 494 | e1af3fbc
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\Sample.cpp | 09-27-2001 | 16:13:18 | | 4536 | 12946f3c
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\Sample.h | 09-27-2001 | 16:13:18 | | 1356 | 4b8c7611
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\Sample.rc | 09-27-2001 | 16:13:18 | | 11622 | c72ccfe
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\SampleDoc.h | 09-27-2001 | 16:13:18 | | 1702 | abb31773
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\SampleView.cpp | 09-27-2001 | 16:13:18 | | 2100 | 835598c9
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\SampleView.h | 09-27-2001 | 16:13:18 | | 1705 | 56a8db12
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\StdAfx.cpp | 09-27-2001 | 16:13:16 | | 208 | 679a2fe7
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\StdAfx.h | 09-27-2001 | 16:13:16 | | 1054 | f89caafd
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\vtkMFCDocument.cpp | 09-27-2001 | 16:13:16 | | 1546 | 27e5a895
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\vtkMFCDocument.h | 09-27-2001 | 16:13:16 | | 1619 | 5cde250d
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\vtkMFCRenderView.h | 09-27-2001 | 16:13:16 | | 2288 | e81e80d6
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\vtkMFCView.cpp | 09-27-2001 | 16:13:16 | | 3196 | af90033d
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\vtkMFCView.h | 09-27-2001 | 16:13:16 | | 2253 | 8cbefc28
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\weldedSpheres.vtk | 09-27-2001 | 16:13:16 | | 144119 | 290874f5
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\SampleDoc.cpp | 01-24-2002 | 10:57:04 | | 2707 | 348e2756
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\vtkMFCRenderView.cpp | 01-24-2002 | 10:57:04 | | 6232 | 7534e9d4
+Made Dir: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\CVS
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\CVS\Root | 11-29-2001 | 14:05:42 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\CVS\Repository | 11-29-2001 | 14:05:42 | | 34 | 5348e4e8
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\CVS\Tag | 02-13-2002 | 07:01:18 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\CVS\Entries | 01-24-2002 | 10:57:04 | | 1310 | 5b3f9db0
+Made Dir: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\res
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\res\Sample.ico | 12-12-2001 | 11:37:44 | | 1078 | 120de4e4
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\res\Sample.rc2 | 12-12-2001 | 11:37:44 | | 398 | aaf5cb2a
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\res\SampleDoc.ico | 12-12-2001 | 11:37:44 | | 1078 | 8390e823
+Made Dir: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\res\CVS
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\res\CVS\Root | 12-12-2001 | 11:38:58 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\res\CVS\Repository | 12-12-2001 | 11:38:58 | | 38 | da5442ac
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\res\CVS\Tag | 02-13-2002 | 07:01:18 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SampleMFC\res\CVS\Entries | 12-12-2001 | 11:38:58 | | 192 | e121e556
+Made Dir: E:\Program Files\vtk40\Examples\GUI\Win32\SimpleCxx
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SimpleCxx\CMakeLists.txt | 09-24-2001 | 14:51:08 | | 294 | 9cd6f398
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SimpleCxx\Win32Cone.cxx | 09-24-2001 | 14:51:08 | | 4578 | d82dd8ff
+Made Dir: E:\Program Files\vtk40\Examples\GUI\Win32\SimpleCxx\CVS
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SimpleCxx\CVS\Root | 11-29-2001 | 14:05:44 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SimpleCxx\CVS\Repository | 11-29-2001 | 14:05:44 | | 34 | c7659f9e
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SimpleCxx\CVS\Tag | 02-13-2002 | 07:01:18 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\GUI\Win32\SimpleCxx\CVS\Entries | 12-11-2001 | 04:31:14 | | 122 | 4e91eaf8
+Made Dir: E:\Program Files\vtk40\Examples\IO
+Made Dir: E:\Program Files\vtk40\Examples\IO\CVS
+File Copy: E:\Program Files\vtk40\Examples\IO\CVS\Root | 11-29-2001 | 14:05:44 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\IO\CVS\Repository | 11-29-2001 | 14:05:44 | | 17 | 2813a438
+File Copy: E:\Program Files\vtk40\Examples\IO\CVS\Entries | 11-29-2001 | 14:47:40 | | 11 | a5dc34bf
+File Copy: E:\Program Files\vtk40\Examples\IO\CVS\Tag | 02-13-2002 | 07:01:20 | | 14 | 94d74905
+Made Dir: E:\Program Files\vtk40\Examples\IO\Tcl
+File Copy: E:\Program Files\vtk40\Examples\IO\Tcl\flamingo.tcl | 11-02-2001 | 10:48:44 | | 1713 | c0695ea3
+File Copy: E:\Program Files\vtk40\Examples\IO\Tcl\stl.tcl | 11-02-2001 | 10:48:46 | | 1249 | 74a643c6
+Made Dir: E:\Program Files\vtk40\Examples\IO\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\IO\Tcl\CVS\Root | 11-29-2001 | 14:05:44 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\IO\Tcl\CVS\Repository | 11-29-2001 | 14:05:44 | | 21 | 6e923beb
+File Copy: E:\Program Files\vtk40\Examples\IO\Tcl\CVS\Tag | 02-13-2002 | 07:01:20 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\IO\Tcl\CVS\Entries | 12-11-2001 | 04:31:16 | | 114 | 77909af4
+Made Dir: E:\Program Files\vtk40\Examples\ImageProcessing
+Made Dir: E:\Program Files\vtk40\Examples\ImageProcessing\CVS
+File Copy: E:\Program Files\vtk40\Examples\ImageProcessing\CVS\Root | 11-29-2001 | 14:05:44 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\ImageProcessing\CVS\Repository | 11-29-2001 | 14:05:44 | | 30 | bdfda531
+File Copy: E:\Program Files\vtk40\Examples\ImageProcessing\CVS\Entries | 11-29-2001 | 14:47:40 | | 11 | a5dc34bf
+File Copy: E:\Program Files\vtk40\Examples\ImageProcessing\CVS\Tag | 02-13-2002 | 07:01:20 | | 14 | 94d74905
+Made Dir: E:\Program Files\vtk40\Examples\ImageProcessing\Tcl
+File Copy: E:\Program Files\vtk40\Examples\ImageProcessing\Tcl\Contours2D.tcl | 11-02-2001 | 13:49:36 | | 1396 | ce12bf84
+File Copy: E:\Program Files\vtk40\Examples\ImageProcessing\Tcl\Histogram.tcl | 11-02-2001 | 14:00:52 | | 1821 | fcbc67ce
+File Copy: E:\Program Files\vtk40\Examples\ImageProcessing\Tcl\HistogramWidget.tcl | 11-02-2001 | 14:00:52 | | 5946 | 7a7def2c
+Made Dir: E:\Program Files\vtk40\Examples\ImageProcessing\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\ImageProcessing\Tcl\CVS\Root | 11-29-2001 | 14:05:44 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\ImageProcessing\Tcl\CVS\Repository | 11-29-2001 | 14:05:44 | | 34 | 52c0a7ff
+File Copy: E:\Program Files\vtk40\Examples\ImageProcessing\Tcl\CVS\Tag | 02-13-2002 | 07:01:20 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\ImageProcessing\Tcl\CVS\Entries | 12-11-2001 | 04:31:16 | | 187 | 744c3d46
+Made Dir: E:\Program Files\vtk40\Examples\MangledMesa
+File Copy: E:\Program Files\vtk40\Examples\MangledMesa\README.txt | 09-19-2001 | 14:54:30 | | 1590 | 72a782bd
+Made Dir: E:\Program Files\vtk40\Examples\MangledMesa\CVS
+File Copy: E:\Program Files\vtk40\Examples\MangledMesa\CVS\Root | 11-29-2001 | 14:05:44 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\MangledMesa\CVS\Repository | 11-29-2001 | 14:05:44 | | 26 | e6edefb3
+File Copy: E:\Program Files\vtk40\Examples\MangledMesa\CVS\Tag | 02-13-2002 | 07:01:20 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\MangledMesa\CVS\Entries | 12-11-2001 | 04:31:16 | | 67 | 9c8d90de
+Made Dir: E:\Program Files\vtk40\Examples\MangledMesa\Tcl
+File Copy: E:\Program Files\vtk40\Examples\MangledMesa\Tcl\OffScreenCone.tcl | 10-04-2001 | 18:17:54 | | 1141 | 48e1dee6
+File Copy: E:\Program Files\vtk40\Examples\MangledMesa\Tcl\OffScreenPrinting.tcl | 10-04-2001 | 18:17:54 | | 2781 | 53bf5891
+Made Dir: E:\Program Files\vtk40\Examples\MangledMesa\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\MangledMesa\Tcl\CVS\Root | 11-29-2001 | 14:05:44 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\MangledMesa\Tcl\CVS\Repository | 11-29-2001 | 14:05:44 | | 30 | dee64b74
+File Copy: E:\Program Files\vtk40\Examples\MangledMesa\Tcl\CVS\Tag | 02-13-2002 | 07:01:20 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\MangledMesa\Tcl\CVS\Entries | 12-11-2001 | 04:31:18 | | 133 | 554fa19f
+Made Dir: E:\Program Files\vtk40\Examples\Modelling
+Made Dir: E:\Program Files\vtk40\Examples\Modelling\CVS
+File Copy: E:\Program Files\vtk40\Examples\Modelling\CVS\Root | 11-29-2001 | 14:05:46 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Modelling\CVS\Repository | 11-29-2001 | 14:05:46 | | 24 | a43ccec0
+File Copy: E:\Program Files\vtk40\Examples\Modelling\CVS\Entries | 11-29-2001 | 14:47:40 | | 22 | 8515e1f3
+File Copy: E:\Program Files\vtk40\Examples\Modelling\CVS\Tag | 02-13-2002 | 07:01:22 | | 14 | 94d74905
+Made Dir: E:\Program Files\vtk40\Examples\Modelling\Cxx
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Cxx\CMakeLists.txt | 10-28-2001 | 10:09:38 | | 273 | 3e5b2e2e
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Cxx\finance.cxx | 11-02-2001 | 11:41:30 | | 6303 | 37644e54
+Made Dir: E:\Program Files\vtk40\Examples\Modelling\Cxx\CVS
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Cxx\CVS\Root | 11-29-2001 | 14:05:46 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Cxx\CVS\Repository | 11-29-2001 | 14:05:46 | | 28 | d0e52c93
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Cxx\CVS\Tag | 02-13-2002 | 07:01:22 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Cxx\CVS\Entries | 12-11-2001 | 04:31:18 | | 120 | a2c64b95
+Made Dir: E:\Program Files\vtk40\Examples\Modelling\Tcl
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Tcl\DelMesh.tcl | 11-02-2001 | 10:48:46 | | 2816 | f79266fd
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Tcl\Delaunay3D.tcl | 11-02-2001 | 10:48:46 | | 1821 | 51970c42
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Tcl\constrainedDelaunay.tcl | 11-02-2001 | 10:48:46 | | 4816 | a940b8a5
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Tcl\expCos.tcl | 11-02-2001 | 10:48:46 | | 2716 | 68e16eec
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Tcl\faultLines.tcl | 11-02-2001 | 10:48:48 | | 2247 | dbabbf72
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Tcl\hello.tcl | 11-02-2001 | 10:48:48 | | 2112 | 23a2789d
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Tcl\iceCream.tcl | 11-02-2001 | 10:48:48 | | 3393 | 2b159d84
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Tcl\reconstructSurface.tcl | 11-02-2001 | 10:48:48 | | 2650 | d6cbe4b0
+Made Dir: E:\Program Files\vtk40\Examples\Modelling\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Tcl\CVS\Root | 11-29-2001 | 14:05:46 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Tcl\CVS\Repository | 11-29-2001 | 14:05:46 | | 28 | 9e12bc33
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Tcl\CVS\Tag | 02-13-2002 | 07:01:22 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Modelling\Tcl\CVS\Entries | 12-11-2001 | 04:31:18 | | 486 | 3c202443
+Made Dir: E:\Program Files\vtk40\Examples\ParallelProcessing
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\CMakeLists.txt | 07-13-2001 | 12:01:54 | | 20 | 4756f442
+Made Dir: E:\Program Files\vtk40\Examples\ParallelProcessing\CVS
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\CVS\Root | 11-29-2001 | 14:05:46 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\CVS\Repository | 11-29-2001 | 14:05:46 | | 33 | c7764900
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\CVS\Tag | 02-13-2002 | 07:01:22 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\CVS\Entries | 02-13-2002 | 07:01:58 | | 86 | ae7fe9a2
+Made Dir: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\CMakeLists.txt | 07-13-2001 | 12:02:10 | | 16 | 727602ac
+Made Dir: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\CVS
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\CVS\Root | 11-29-2001 | 14:05:46 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\CVS\Repository | 11-29-2001 | 14:05:46 | | 41 | 97e7eceb
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\CVS\Tag | 02-13-2002 | 07:01:22 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\CVS\Entries | 12-11-2001 | 04:31:18 | | 71 | 4cf9aa0e
+Made Dir: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\ParallelIso.cxx | 08-28-2001 | 10:44:54 | | 8279 | 42d44e81
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\PipelineParallelism.cxx | 10-10-2001 | 16:16:12 | | 1848 | be73de36
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\PipelineParallelism.h | 10-05-2001 | 16:10:30 | | 168 | 15efb576
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\TaskParallelism.cxx | 10-10-2001 | 16:16:12 | | 3204 | c7b264cc
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\TaskParallelism.h | 10-05-2001 | 12:16:48 | | 1045 | 5be14752
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\TaskParallelismWithPorts.cxx | 10-19-2001 | 10:58:16 | | 2139 | ca96e0f5
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\TaskParallelismWithPorts.h | 10-19-2001 | 10:58:16 | | 849 | f8cbe9b
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\pipe1.cxx | 10-05-2001 | 16:10:30 | | 1469 | 2ffe5db9
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\pipe2.cxx | 10-05-2001 | 16:10:30 | | 2120 | 44c51a19
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\task1.cxx | 10-05-2001 | 13:16:52 | | 1926 | d4d154c8
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\task2.cxx | 10-05-2001 | 13:16:54 | | 2360 | d0a20fb9
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\task3.cxx | 10-19-2001 | 10:58:16 | | 2791 | c29c7d6
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\task4.cxx | 10-19-2001 | 10:58:16 | | 2076 | 17821df2
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\CMakeLists.txt | 12-21-2001 | 10:47:24 | | 1641 | edc1fcde
+Made Dir: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\CVS
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\CVS\Root | 11-29-2001 | 14:05:46 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\CVS\Repository | 11-29-2001 | 14:05:46 | | 45 | 4103ebe0
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\CVS\Tag | 02-13-2002 | 07:01:24 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\Generic\Cxx\CVS\Entries | 12-21-2001 | 10:47:26 | | 869 | 8a279701
+Made Dir: E:\Program Files\vtk40\Examples\ParallelProcessing\MPI
+Made Dir: E:\Program Files\vtk40\Examples\ParallelProcessing\MPI\CVS
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\MPI\CVS\Root | 11-29-2001 | 14:05:48 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\MPI\CVS\Repository | 11-29-2001 | 14:05:48 | | 37 | 63e0eeea
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\MPI\CVS\Entries | 11-29-2001 | 14:47:40 | | 11 | a5dc34bf
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\MPI\CVS\Tag | 02-13-2002 | 07:01:24 | | 14 | 94d74905
+Made Dir: E:\Program Files\vtk40\Examples\ParallelProcessing\MPI\Tcl
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\MPI\Tcl\PVTKDemo.tcl | 10-10-2001 | 15:04:00 | | 2938 | cfce1637
+Made Dir: E:\Program Files\vtk40\Examples\ParallelProcessing\MPI\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\MPI\Tcl\CVS\Root | 11-29-2001 | 14:05:48 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\MPI\Tcl\CVS\Repository | 11-29-2001 | 14:05:48 | | 41 | 415d6889
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\MPI\Tcl\CVS\Tag | 02-13-2002 | 07:01:24 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\ParallelProcessing\MPI\Tcl\CVS\Entries | 12-11-2001 | 04:31:20 | | 61 | c8c28fc3
+Made Dir: E:\Program Files\vtk40\Examples\Rendering
+Made Dir: E:\Program Files\vtk40\Examples\Rendering\CVS
+File Copy: E:\Program Files\vtk40\Examples\Rendering\CVS\Root | 11-29-2001 | 14:05:48 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Rendering\CVS\Repository | 11-29-2001 | 14:05:48 | | 24 | 7bd0c23c
+File Copy: E:\Program Files\vtk40\Examples\Rendering\CVS\Entries | 11-29-2001 | 14:47:40 | | 22 | 8515e1f3
+File Copy: E:\Program Files\vtk40\Examples\Rendering\CVS\Tag | 02-13-2002 | 07:01:24 | | 14 | 94d74905
+Made Dir: E:\Program Files\vtk40\Examples\Rendering\Cxx
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Cxx\CMakeLists.txt | 10-29-2001 | 14:01:20 | | 276 | 375070fb
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Cxx\Cylinder.cxx | 10-29-2001 | 14:01:22 | | 2406 | 75da91c0
+Made Dir: E:\Program Files\vtk40\Examples\Rendering\Cxx\CVS
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Cxx\CVS\Root | 11-29-2001 | 14:05:48 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Cxx\CVS\Repository | 11-29-2001 | 14:05:48 | | 28 | f1e80f4d
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Cxx\CVS\Tag | 02-13-2002 | 07:01:26 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Cxx\CVS\Entries | 12-11-2001 | 04:31:22 | | 121 | 8f29607a
+Made Dir: E:\Program Files\vtk40\Examples\Rendering\Tcl
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\CADPart.tcl | 11-02-2001 | 10:48:50 | | 2353 | dacb33de
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\CSpline.tcl | 11-02-2001 | 10:48:50 | | 3419 | c70e59ba
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\Cylinder.tcl | 11-02-2001 | 10:48:50 | | 2254 | ab825895
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\FilterCADPart.tcl | 11-02-2001 | 10:48:50 | | 2860 | 6e10673f
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\KeyFrame.tcl | 10-02-2001 | 10:00:30 | | 2983 | 4eb8b9e9
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\RenderLargeImage.tcl | 11-02-2001 | 10:48:50 | | 1798 | 78b81843
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\TPlane.tcl | 11-02-2001 | 10:48:52 | | 1510 | 98565f40
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\assembly.tcl | 11-02-2001 | 10:48:52 | | 2902 | faff7e82
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\keyBottle.tcl | 10-04-2001 | 18:18:30 | | 3177 | d746a847
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\rainbow.tcl | 11-02-2001 | 10:48:52 | | 3361 | a88c5799
+Made Dir: E:\Program Files\vtk40\Examples\Rendering\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\CVS\Root | 11-29-2001 | 14:05:48 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\CVS\Repository | 11-29-2001 | 14:05:48 | | 28 | bf1f9fed
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\CVS\Tag | 02-13-2002 | 07:01:26 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Rendering\Tcl\CVS\Entries | 12-11-2001 | 04:31:22 | | 592 | 167a922
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\README.txt | 09-24-2001 | 11:06:30 | | 266 | 79d4cd72
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\CVS
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\CVS\Root | 11-29-2001 | 14:05:48 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\CVS\Repository | 11-29-2001 | 14:05:48 | | 23 | ee84d776
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\CVS\Tag | 02-13-2002 | 07:01:26 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\CVS\Entries | 12-11-2001 | 04:31:22 | | 82 | f505893f
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step1
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step1\CVS
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\CVS\Root | 11-29-2001 | 14:05:50 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\CVS\Repository | 11-29-2001 | 14:05:50 | | 29 | 41b9f63d
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\CVS\Entries | 11-29-2001 | 14:47:40 | | 48 | 5d384cba
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\CVS\Tag | 02-13-2002 | 07:01:26 | | 14 | 94d74905
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step1\Cxx
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Cxx\CMakeLists.txt | 09-25-2001 | 13:52:20 | | 265 | 3a83eee1
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Cxx\Cone.cxx | 09-19-2001 | 13:53:34 | | 2455 | 455a2d0c
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step1\Cxx\CVS
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Cxx\CVS\Root | 11-29-2001 | 14:05:50 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Cxx\CVS\Repository | 11-29-2001 | 14:05:50 | | 33 | 18052c38
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Cxx\CVS\Tag | 02-13-2002 | 07:01:26 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Cxx\CVS\Entries | 12-11-2001 | 04:31:22 | | 117 | a01aa2e6
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step1\Java
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Java\Cone.java | 10-15-2001 | 17:40:42 | | 2738 | f6f1ee21
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step1\Java\CVS
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Java\CVS\Root | 11-29-2001 | 14:05:50 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Java\CVS\Repository | 11-29-2001 | 14:05:50 | | 34 | be61ccaa
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Java\CVS\Tag | 02-13-2002 | 07:01:26 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Java\CVS\Entries | 12-11-2001 | 04:31:24 | | 58 | eeb71fda
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step1\Python
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Python\Cone.py | 09-24-2001 | 14:57:24 | | 1888 | ed88dd3d
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step1\Python\CVS
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Python\CVS\Root | 11-29-2001 | 14:05:50 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Python\CVS\Repository | 11-29-2001 | 14:05:50 | | 36 | f5fb8171
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Python\CVS\Tag | 02-13-2002 | 07:01:26 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Python\CVS\Entries | 12-11-2001 | 04:31:24 | | 56 | 29db1333
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step1\Tcl
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Tcl\Cone.tcl | 10-04-2001 | 18:18:40 | | 1987 | 5e639f98
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step1\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Tcl\CVS\Root | 11-29-2001 | 14:05:50 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Tcl\CVS\Repository | 11-29-2001 | 14:05:50 | | 33 | 56f2bc98
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Tcl\CVS\Tag | 02-13-2002 | 07:01:28 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step1\Tcl\CVS\Entries | 12-11-2001 | 04:31:26 | | 57 | eb80362a
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step2
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step2\CVS
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\CVS\Root | 11-29-2001 | 14:05:50 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\CVS\Repository | 11-29-2001 | 14:05:50 | | 29 | 43ff4864
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\CVS\Entries | 11-29-2001 | 14:47:40 | | 48 | 5d384cba
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\CVS\Tag | 02-13-2002 | 07:01:28 | | 14 | 94d74905
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step2\Cxx
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Cxx\CMakeLists.txt | 09-25-2001 | 13:52:20 | | 267 | 56a8844d
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Cxx\Cone2.cxx | 11-14-2001 | 16:58:44 | | 1839 | 96ede580
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step2\Cxx\CVS
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Cxx\CVS\Root | 11-29-2001 | 14:05:50 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Cxx\CVS\Repository | 11-29-2001 | 14:05:50 | | 33 | 29ed36a5
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Cxx\CVS\Tag | 02-13-2002 | 07:01:28 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Cxx\CVS\Entries | 12-11-2001 | 04:31:26 | | 118 | 71b5cd40
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step2\Java
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Java\Cone2.java | 09-24-2001 | 13:13:50 | | 2023 | 52c3cadb
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step2\Java\CVS
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Java\CVS\Root | 11-29-2001 | 14:05:50 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Java\CVS\Repository | 11-29-2001 | 14:05:50 | | 34 | 30eecb49
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Java\CVS\Tag | 02-13-2002 | 07:01:28 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Java\CVS\Entries | 12-11-2001 | 04:31:26 | | 59 | 29ad2e
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step2\Python
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Python\Cone2.py | 09-24-2001 | 14:57:32 | | 1086 | a7adf01f
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step2\Python\CVS
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Python\CVS\Root | 11-29-2001 | 14:05:52 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Python\CVS\Repository | 11-29-2001 | 14:05:52 | | 36 | 1ecc3a72
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Python\CVS\Tag | 02-13-2002 | 07:01:28 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Python\CVS\Entries | 12-11-2001 | 04:31:28 | | 57 | 4fdd8450
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step2\Tcl
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Tcl\Cone2.tcl | 10-04-2001 | 18:18:50 | | 1250 | 16da18fd
+Made Dir: E:\Program Files\vtk40\Examples\Tutorial\Step2\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Tcl\CVS\Root | 11-29-2001 | 14:05:52 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Tcl\CVS\Repository | 11-29-2001 | 14:05:52 | | 33 | 671aa605
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Tcl\CVS\Tag | 02-13-2002 | 07:01:28 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Tutorial\Step2\Tcl\CVS\Entries | 12-11-2001 | 04:31:28 | | 58 | 2a844874
+Made Dir: E:\Program Files\vtk40\Examples\VisualizationAlgorithms
+Made Dir: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\CVS
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\CVS\Root | 11-29-2001 | 14:05:52 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\CVS\Repository | 11-29-2001 | 14:05:52 | | 38 | 9c288edf
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\CVS\Entries | 11-29-2001 | 14:47:40 | | 11 | a5dc34bf
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\CVS\Tag | 02-13-2002 | 07:01:30 | | 14 | 94d74905
+Made Dir: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\ClipCow.tcl | 11-02-2001 | 10:48:54 | | 4282 | 604bf7cd
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\ColorIsosurface.tcl | 11-02-2001 | 10:48:54 | | 2606 | 9fb78188
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\CutCombustor.tcl | 11-02-2001 | 10:48:54 | | 2687 | ae063ae0
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\DepthSort.tcl | 11-02-2001 | 10:48:54 | | 3032 | d9b7167a
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\ExtractGeometry.tcl | 11-02-2001 | 10:48:56 | | 2390 | 77db77d4
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\ExtractUGrid.tcl | 10-31-2001 | 09:19:20 | | 3240 | 69c0fcfc
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\GenerateTextureCoords.tcl | 10-31-2001 | 06:21:50 | | 2082 | 4d42d2cd
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\SubsampleGrid.tcl | 11-02-2001 | 10:48:56 | | 2517 | d1c7fb0f
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\VisQuad.tcl | 11-02-2001 | 10:48:56 | | 2014 | 93183f95
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\deciFran.tcl | 11-02-2001 | 10:48:56 | | 1725 | c86c29fe
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\imageWarp.tcl | 11-03-2001 | 18:34:58 | | 1734 | baeb3a9a
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\officeTube.tcl | 11-02-2001 | 10:48:58 | | 11959 | 68da00d9
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\officeTubes.tcl | 11-02-2001 | 10:48:58 | | 12216 | 9f93e9a2
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\probeComb.tcl | 10-30-2001 | 16:44:40 | | 3848 | a884d016
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\smoothFran.tcl | 11-02-2001 | 10:48:58 | | 1840 | 34c13cb5
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\spikeF.tcl | 11-02-2001 | 10:48:58 | | 3086 | a8e8ea64
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\streamSurface.tcl | 11-02-2001 | 10:48:58 | | 2570 | defe1126
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\warpComb.tcl | 11-02-2001 | 10:48:58 | | 3452 | d88f5d10
+Made Dir: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\CVS\Root | 11-29-2001 | 14:05:52 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\CVS\Repository | 11-29-2001 | 14:05:52 | | 42 | e05e19f1
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\CVS\Tag | 02-13-2002 | 07:01:30 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\VisualizationAlgorithms\Tcl\CVS\Entries | 12-11-2001 | 04:31:30 | | 1098 | 5c2915e1
+Made Dir: E:\Program Files\vtk40\Examples\VolumeRendering
+Made Dir: E:\Program Files\vtk40\Examples\VolumeRendering\CVS
+File Copy: E:\Program Files\vtk40\Examples\VolumeRendering\CVS\Root | 11-29-2001 | 14:05:52 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\VolumeRendering\CVS\Repository | 11-29-2001 | 14:05:52 | | 30 | 25dcb0c8
+File Copy: E:\Program Files\vtk40\Examples\VolumeRendering\CVS\Entries | 11-29-2001 | 14:47:40 | | 11 | a5dc34bf
+File Copy: E:\Program Files\vtk40\Examples\VolumeRendering\CVS\Tag | 02-13-2002 | 07:01:30 | | 14 | 94d74905
+Made Dir: E:\Program Files\vtk40\Examples\VolumeRendering\Tcl
+File Copy: E:\Program Files\vtk40\Examples\VolumeRendering\Tcl\SimpleRayCast.tcl | 11-02-2001 | 09:31:56 | | 1997 | 997ee589
+File Copy: E:\Program Files\vtk40\Examples\VolumeRendering\Tcl\SimpleTextureMap2D.tcl | 11-02-2001 | 09:31:56 | | 1865 | 261bc395
+File Copy: E:\Program Files\vtk40\Examples\VolumeRendering\Tcl\volSimpleLOD.tcl | 11-02-2001 | 10:48:58 | | 9677 | 81e1d02c
+Made Dir: E:\Program Files\vtk40\Examples\VolumeRendering\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\VolumeRendering\Tcl\CVS\Root | 11-29-2001 | 14:05:52 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\VolumeRendering\Tcl\CVS\Repository | 11-29-2001 | 14:05:52 | | 34 | c10891dc
+File Copy: E:\Program Files\vtk40\Examples\VolumeRendering\Tcl\CVS\Tag | 02-13-2002 | 07:01:30 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\VolumeRendering\Tcl\CVS\Entries | 12-11-2001 | 04:31:32 | | 196 | 95e727a7
+Made Dir: E:\Program Files\vtk40\Examples\Build
+Made Dir: E:\Program Files\vtk40\Examples\Build\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\CVS\Root | 12-21-2001 | 05:31:02 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\CVS\Repository | 12-21-2001 | 05:31:02 | | 20 | 5450a8ed
+File Copy: E:\Program Files\vtk40\Examples\Build\CVS\Tag | 02-13-2002 | 07:01:08 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\CVS\Entries | 12-21-2001 | 05:31:46 | | 13 | cfde3f09
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\README | 12-20-2001 | 14:06:56 | | 3371 | 8309e06
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\CMakeLists.txt | 12-22-2001 | 07:00:44 | | 1229 | 387cdf3c
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\vtkMy.cmake | 01-08-2002 | 07:00:48 | | 5665 | 9fc28c2e
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\CVS\Root | 12-21-2001 | 05:31:04 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\CVS\Repository | 12-21-2001 | 05:31:04 | | 26 | 721866f5
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\CVS\Tag | 02-13-2002 | 07:01:08 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\CVS\Entries | 01-08-2002 | 07:00:48 | | 258 | 65c12282
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Common
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Common\vtkBar.cxx | 12-20-2001 | 14:03:46 | | 759 | d259188b
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Common\vtkBar.h | 12-20-2001 | 14:03:46 | | 806 | 6684bc09
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Common\vtkmyCommonWin32Header.h | 12-20-2001 | 14:03:46 | | 575 | 28aaea59
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Common\vtkmyConfigure.h.in | 12-20-2001 | 14:03:46 | | 465 | 9bda324e
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Common\CMakeLists.txt | 12-22-2001 | 07:00:46 | | 2082 | e045a3d6
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Common\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Common\CVS\Root | 12-21-2001 | 05:31:04 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Common\CVS\Repository | 12-21-2001 | 05:31:04 | | 33 | a2b5e4a8
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Common\CVS\Tag | 02-13-2002 | 07:01:08 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Common\CVS\Entries | 12-22-2001 | 07:00:46 | | 328 | 35a0322e
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\CMakeLists.txt | 12-20-2001 | 14:03:46 | | 14 | b14f2726
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\CVS\Root | 12-21-2001 | 05:31:04 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\CVS\Repository | 12-21-2001 | 05:31:04 | | 35 | 6af91234
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\CVS\Tag | 02-13-2002 | 07:01:10 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\CVS\Entries | 12-21-2001 | 05:31:46 | | 86 | e7b37092
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\CMakeLists.txt | 01-09-2002 | 07:01:06 | | 529 | e515359
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\CVS\Root | 12-21-2001 | 05:31:04 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\CVS\Repository | 12-21-2001 | 05:31:04 | | 39 | 9723ad8b
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\CVS\Tag | 02-13-2002 | 07:01:10 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\CVS\Entries | 01-09-2002 | 07:01:58 | | 86 | 26a1fad0
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex1
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex1\CMakeLists.txt | 12-20-2001 | 14:03:48 | | 65 | 5102067e
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex1\vtkmyEx1.cxx | 01-09-2002 | 07:01:08 | | 1051 | 3e807d43
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex1\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex1\CVS\Root | 12-21-2001 | 05:31:04 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex1\CVS\Repository | 12-21-2001 | 05:31:04 | | 43 | 54e0aab1
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex1\CVS\Tag | 02-13-2002 | 07:01:10 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex1\CVS\Entries | 01-09-2002 | 07:01:08 | | 129 | 1abf1d45
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex2
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex2\CMakeLists.txt | 01-08-2002 | 10:05:18 | | 65 | fe7dc55e
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex2\vtkmyEx2.cxx | 01-08-2002 | 10:05:18 | | 2433 | 529d430b
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex2\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex2\CVS\Root | 01-09-2002 | 07:01:08 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex2\CVS\Repository | 01-09-2002 | 07:01:08 | | 43 | 56a614e8
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex2\CVS\Tag | 02-13-2002 | 07:01:10 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Cxx\Ex2\CVS\Entries | 01-09-2002 | 07:01:08 | | 129 | 93085bf0
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Tcl
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Tcl\vtkmyEx1.Tcl | 01-09-2002 | 07:01:08 | | 1100 | adbb0ad1
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Tcl\vtkmyEx2.tcl | 01-08-2002 | 10:05:20 | | 2284 | 1773cdd1
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Tcl\CVS\Root | 12-21-2001 | 05:31:04 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Tcl\CVS\Repository | 12-21-2001 | 05:31:04 | | 39 | d9d43d2b
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Tcl\CVS\Tag | 02-13-2002 | 07:01:10 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Examples\Tcl\CVS\Entries | 01-09-2002 | 07:01:10 | | 127 | 66bd234f
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Imaging
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Imaging\vtkImageFoo.cxx | 12-20-2001 | 14:03:48 | | 5014 | b75c83eb
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Imaging\vtkImageFoo.h | 12-20-2001 | 14:03:50 | | 2456 | e89e837b
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Imaging\vtkmyImagingWin32Header.h | 12-20-2001 | 14:03:50 | | 583 | acdc53b8
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Imaging\CMakeLists.txt | 12-22-2001 | 07:00:46 | | 2652 | da54cf1e
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Imaging\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Imaging\CVS\Root | 12-21-2001 | 05:31:06 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Imaging\CVS\Repository | 12-21-2001 | 05:31:06 | | 34 | de0971cd
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Imaging\CVS\Tag | 02-13-2002 | 07:01:12 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Imaging\CVS\Entries | 12-22-2001 | 07:00:46 | | 270 | 5cae0251
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Unsorted
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Unsorted\vtkBar2.cxx | 12-20-2001 | 14:03:50 | | 766 | 6eff31ce
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Unsorted\vtkBar2.h | 12-20-2001 | 14:03:50 | | 823 | 656dcda0
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Unsorted\vtkmyUnsortedWin32Header.h | 12-20-2001 | 14:03:50 | | 591 | e0d04eb
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Unsorted\CMakeLists.txt | 12-22-2001 | 07:00:48 | | 4743 | 5a8da2e7
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Unsorted\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Unsorted\CVS\Root | 12-21-2001 | 05:31:06 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Unsorted\CVS\Repository | 12-21-2001 | 05:31:06 | | 35 | 3fbd47e5
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Unsorted\CVS\Tag | 02-13-2002 | 07:01:12 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Unsorted\CVS\Entries | 12-22-2001 | 07:00:48 | | 263 | a8befaf6
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\hints
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\CVS\Root | 12-21-2001 | 05:31:06 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\CVS\Repository | 12-21-2001 | 05:31:06 | | 35 | de4b37ac
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\CVS\Tag | 02-13-2002 | 07:01:12 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\CVS\Entries | 12-21-2001 | 05:31:46 | | 66 | f3553d91
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\MakePackages.tcl | 12-20-2001 | 14:03:50 | | 277 | ff88b4f0
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\CVS\Root | 12-21-2001 | 05:31:06 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\CVS\Repository | 12-21-2001 | 05:31:06 | | 39 | 8559cbc4
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\CVS\Tag | 02-13-2002 | 07:01:12 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\CVS\Entries | 12-21-2001 | 05:31:46 | | 139 | 3cf9b084
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmy
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmy\pkgIndex.tcl | 12-20-2001 | 14:03:52 | | 553 | acff6f79
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmy\vtkmy.tcl | 12-20-2001 | 14:03:52 | | 121 | ad0e2065
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmy\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmy\CVS\Root | 12-21-2001 | 05:31:06 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmy\CVS\Repository | 12-21-2001 | 05:31:06 | | 45 | dd588025
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmy\CVS\Tag | 02-13-2002 | 07:01:14 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmy\CVS\Entries | 12-21-2001 | 05:31:06 | | 124 | ee82aacb
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmycommon
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmycommon\pkgIndex.tcl | 12-20-2001 | 14:03:52 | | 565 | 3d72a91d
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmycommon\vtkmycommon.tcl | 12-20-2001 | 14:03:52 | | 255 | 6956660b
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmycommon\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmycommon\CVS\Root | 12-21-2001 | 05:31:06 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmycommon\CVS\Repository | 12-21-2001 | 05:31:06 | | 51 | 61fdec05
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmycommon\CVS\Tag | 02-13-2002 | 07:01:14 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmycommon\CVS\Entries | 12-21-2001 | 05:31:08 | | 130 | f7d2880f
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyimaging
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyimaging\pkgIndex.tcl | 12-20-2001 | 14:03:52 | | 567 | d7bb1226
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyimaging\vtkmyimaging.tcl | 12-20-2001 | 14:03:52 | | 298 | 3007c241
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyimaging\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyimaging\CVS\Root | 12-21-2001 | 05:31:08 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyimaging\CVS\Repository | 12-21-2001 | 05:31:08 | | 52 | 76ade690
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyimaging\CVS\Tag | 02-13-2002 | 07:01:14 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyimaging\CVS\Entries | 12-21-2001 | 05:31:08 | | 131 | b03947d6
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyunsorted
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyunsorted\pkgIndex.tcl | 12-20-2001 | 14:03:52 | | 569 | e66db510
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyunsorted\vtkmyunsorted.tcl | 12-20-2001 | 14:03:52 | | 286 | 10e1a624
+Made Dir: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyunsorted\CVS
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyunsorted\CVS\Root | 12-21-2001 | 05:31:08 | | 50 | d2a66225
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyunsorted\CVS\Repository | 12-21-2001 | 05:31:08 | | 53 | 2acfce3b
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyunsorted\CVS\Tag | 02-13-2002 | 07:01:14 | | 14 | 94d74905
+File Copy: E:\Program Files\vtk40\Examples\Build\vtkMy\Wrapping\Tcl\vtkmyunsorted\CVS\Entries | 12-21-2001 | 05:31:08 | | 132 | c17f90a4
+Made Dir: E:\Program Files\vtk40\bin
+File Copy: E:\Program Files\vtk40\bin\vtkParallel.dll | 01-30-2002 | 07:08:14 | | 360448 | ada85694
+File Copy: E:\Program Files\vtk40\bin\vtkjpeg.dll | 11-30-2001 | 10:20:48 | | 106496 | 38a5ce51
+File Copy: E:\Program Files\vtk40\bin\vtkpng.dll | 11-30-2001 | 10:20:40 | | 106496 | 371f8147
+File Copy: E:\Program Files\vtk40\bin\vtkCommon.dll | 01-24-2002 | 11:09:32 | | 1159168 | e658fe83
+File Copy: E:\Program Files\vtk40\bin\vtkFiltering.dll | 01-24-2002 | 11:24:00 | | 286720 | 730b3275
+File Copy: E:\Program Files\vtk40\bin\vtkGraphics.dll | 01-30-2002 | 07:05:34 | | 1753088 | 232bc8d9
+File Copy: E:\Program Files\vtk40\bin\vtkHybrid.dll | 01-30-2002 | 07:07:58 | | 819200 | ab4618e4
+File Copy: E:\Program Files\vtk40\bin\vtkImaging.dll | 01-24-2002 | 11:30:40 | | 1777664 | a09920ed
+File Copy: E:\Program Files\vtk40\bin\vtkIO.dll | 01-24-2002 | 12:08:56 | | 1122304 | ebec903e
+File Copy: E:\Program Files\vtk40\bin\vtkRendering.dll | 01-30-2002 | 07:07:18 | | 1249280 | d689b7b3
+File Copy: E:\Program Files\vtk40\bin\vtkzlib.dll | 11-30-2001 | 10:20:10 | 1.1.3.0 | 61440 | 5a190e6b
+RegDB Key: Software\Kitware\VTK\40
+RegDB Val: E:\PROGRA~1\vtk40
+RegDB Root: 2

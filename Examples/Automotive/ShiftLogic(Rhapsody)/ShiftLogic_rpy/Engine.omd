@@ -1,0 +1,449 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IDiagram 
+	- _id = GUID 5301e90d-2a3b-4b0c-b678-2f19c6b19483;
+	- _myState = 8192;
+	- _name = "Engine";
+	- _graphicChart = { CGIClassChart 
+		- _id = GUID 0d3d16f5-b053-4f37-8135-ef538b5f618e;
+		- m_type = 0;
+		- m_pModelObject = { IHandle 
+			- _m2Class = "IDiagram";
+			- _id = GUID 5301e90d-2a3b-4b0c-b678-2f19c6b19483;
+		}
+		- m_pParent = ;
+		- m_name = { CGIText 
+			- m_str = "";
+			- m_style = "Arial" 10 0 0 0 0 ;
+			- m_color = { IColor 
+				- m_fgColor = 0;
+				- m_bgColor = 0;
+				- m_bgFlag = 0;
+			}
+			- m_position = 1 0 0  ;
+			- m_nIdent = 0;
+			- m_bImplicitSetRectPoints = 0;
+		}
+		- m_drawBehavior = 0;
+		- elementList = 5;
+		{ CGICompositeClass 
+			- _id = GUID 4f338414-4f93-41f7-8806-e9d0261e81d1;
+			- m_type = 78;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "TopLevel";
+				- _id = GUID 37a160c0-67c9-4713-a1f5-3cdc49d717d1;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "TopLevel";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 0;
+			- m_color = { IColor 
+				- m_fgColor = 1;
+				- m_bgColor = 1;
+				- m_bgFlag = 1;
+			}
+			- m_lineWidth = 0;
+			- m_polygon = 4 -3.98116462590738 27.7259339975093  31.8609900373599 27.7259339975093  31.8609900373599 5.6032711955168  -3.98116462590738 5.6032711955168  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID ca72ff7b-f797-4108-82aa-dbf508c0c259;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "TransmissionModels.sbs";
+				- _subsystem = "TransmissionModels";
+				- _class = "";
+				- _name = "CRigidConnector";
+				- _id = GUID 2866d86d-dd8a-4892-837e-7a3a14435447;
+			}
+			- m_pParent = GUID 4f338414-4f93-41f7-8806-e9d0261e81d1;
+			- m_name = { CGIText 
+				- m_str = "TransmissionModels::CRigidConnector";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 25.2257160647572 12.5954234122042  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 18.6877334993773 13.1954234122042  31.763698630137 13.1954234122042  31.763698630137 7.19542341220423  18.6877334993773 7.19542341220423  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID 1dd92749-a5e3-4e4c-add3-60a92b1ae269;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "TransmissionModels.sbs";
+				- _subsystem = "TransmissionModels";
+				- _class = "";
+				- _name = "Engine";
+				- _id = GUID b07473cd-630a-49f6-833c-517286d91e2b;
+			}
+			- m_pParent = GUID 4f338414-4f93-41f7-8806-e9d0261e81d1;
+			- m_name = { CGIText 
+				- m_str = "TransmissionModels::Engine";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 4.97937419153849 22.0521511955168  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -3.98116462590738 22.6521511955168  13.9399130089843 22.6521511955168  13.9399130089843 5.6032711955168  -3.98116462590738 5.6032711955168  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 5;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Engine";
+					- _name = "RPM";
+					- _id = GUID b6514958-a8d5-46b1-8e54-409902770d39;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Engine";
+					- _name = "engineTorque";
+					- _id = GUID 49776db8-27d5-4ce3-afbe-a197079d2776;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Engine";
+					- _name = "throttle";
+					- _id = GUID f9667006-1dfc-4f45-abd8-c159b9ded358;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Engine";
+					- _name = "engineThrottleLag";
+					- _id = GUID 1ce7ad56-5a0e-4d32-8c64-bfba69a0bff8;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Engine";
+					- _name = "inertia";
+					- _id = GUID 1a3856f6-89d9-48ab-8372-295477bb1a71;
+				}
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 6;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Engine";
+					- _name = "r_OffTorque(double * )";
+					- _id = GUID 74b0aba2-40ab-4329-8f60-0f88a5c9819a;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Engine";
+					- _name = "r_StartupTorque(double * )";
+					- _id = GUID cf7270af-50eb-480c-902b-1201a81db1eb;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Engine";
+					- _name = "r_OnTorque(double * )";
+					- _id = GUID 06f4960e-1d3e-4488-9263-cb5af224fd98;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Engine";
+					- _name = "r_RPM(double * )";
+					- _id = GUID 97856202-23b2-4a09-9630-246af2fa0166;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Engine";
+					- _name = "r_EngineDynamics(double * )";
+					- _id = GUID fbab01d7-b8eb-4108-85f1-0069958f4db0;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionModels.sbs";
+					- _subsystem = "TransmissionModels";
+					- _class = "Engine";
+					- _name = "z_OnRPM(double * )";
+					- _id = GUID ed1b227e-41e0-4036-a596-ba9732f1f2ae;
+				}
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		{ CGILink 
+			- _id = GUID 36efb16d-2b72-447a-b398-9047e3068b5c;
+			- m_type = 92;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "TransmissionModels.sbs";
+				- _subsystem = "TransmissionModels";
+				- _class = "Engine";
+				- _name = "n";
+				- _id = GUID e14a3470-da79-4f62-a6ae-b29571d1a160;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID 1dd92749-a5e3-4e4c-add3-60a92b1ae269;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID ca72ff7b-f797-4108-82aa-dbf508c0c259;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 4 13.9399130089843 12.3873761984896  16.3138232541808 12.3873761984896  16.3138232541808 11.4652443571603  18.6877334993773 11.4652443571603  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = 1 0 ;
+			- m_anglePoint2 = 1 0 ;
+			- m_line_style = 2;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "";
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 1;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 1;
+			- m_bShowTargetRole = 1;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "n";
+				- m_style = "Arial" 10 0 0 2 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 18.0210469096703 10.8885779258697  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "1";
+				- m_style = "Arial" 10 0 0 2 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 18.0210469096703 11.442071977465  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = type_122;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID 92a0b399-877b-455a-aef8-60ee2013e077;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "StandardModels.sbs";
+				- _subsystem = "StandardModels";
+				- _class = "";
+				- _name = "LookupTable";
+				- _id = GUID 3bd442d0-4897-43d5-867d-b0133fde7b73;
+			}
+			- m_pParent = GUID 4f338414-4f93-41f7-8806-e9d0261e81d1;
+			- m_name = { CGIText 
+				- m_str = "StandardModels::LookupTable";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 30.4794520547945 26.7610523038605  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 18.9212328767123 27.3610523038605  29.4287048567871 27.3610523038605  29.4287048567871 21.3610523038605  18.9212328767123 21.3610523038605  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		
+		- m_access = 'Z';
+		- m_modified = 'N';
+		- m_fileVersion = "";
+		- m_nModifyDate = 0;
+		- m_nCreateDate = 0;
+		- m_creator = "";
+		- m_bScaleWithZoom = 1;
+		- m_arrowStyle = 'S';
+		- m_pRoot = GUID 4f338414-4f93-41f7-8806-e9d0261e81d1;
+		- m_currentLeftTop = -15.1891344956414 -13.3115815691158 ;
+		- m_currentRightBottom = 40.2669676214197 28.6015566625156 ;
+	}
+	- _defaultSubsystem = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Default.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Default";
+		- _id = GUID 9fcee889-9879-48b2-875c-62ca01308855;
+	}
+}
+

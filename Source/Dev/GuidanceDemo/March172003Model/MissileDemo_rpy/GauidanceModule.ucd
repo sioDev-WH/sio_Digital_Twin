@@ -1,0 +1,640 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IUCDiagram 
+	- _id = GUID 06e2ab3d-c677-4fb5-927b-7b1561fc210a;
+	- _myState = 8192;
+	- _name = "GauidanceModule";
+	- _graphicChart = { CGIClassChart 
+		- _id = GUID 540db74a-b5ec-43c3-bdc4-d651fa642e1c;
+		- m_type = 0;
+		- m_pModelObject = { IHandle 
+			- _m2Class = "IUCDiagram";
+			- _id = GUID 06e2ab3d-c677-4fb5-927b-7b1561fc210a;
+		}
+		- m_pParent = ;
+		- m_name = { CGIText 
+			- m_str = "";
+			- m_style = "Arial" 10 0 0 0 1 ;
+			- m_color = { IColor 
+				- m_fgColor = 0;
+				- m_bgColor = 0;
+				- m_bgFlag = 0;
+			}
+			- m_position = 1 0 0  ;
+			- m_nIdent = 0;
+			- m_bImplicitSetRectPoints = 0;
+		}
+		- m_drawBehavior = 0;
+		- elementList = 17;
+		{ CGIBasicClass 
+			- _id = GUID 715a618f-2c18-40d5-ad75-ec798ad704b8;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "regulating";
+				- _id = GUID 4577bb24-afc5-4eed-8b5d-8713c1cb442d;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "regulating";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 15.0764894753358 -2.08221085424679  15.0764894753358 -4.06463315941446  20.0325444948466 -4.06463315941446  20.0325444948466 -2.08221085424679  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 74ebca7f-93e0-456c-b33e-9da743a6b98c;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Acquistion";
+				- _id = GUID c7c7235b-369e-463b-a405-d8f78dcb8eaa;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Acquistion";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 10.3650060809763 14.7102165752034  10.3650060809763 12.8801507350523  15.0891288749368 12.8801507350523  15.0891288749368 14.7102165752034  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 80fffe3b-0a3d-4fa9-a944-a402e6e3d2b8;
+			- m_type = 124;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IActor";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Radar Dish";
+				- _id = GUID f23cebdb-ca79-4aea-b7fe-6c1e97ae208f;
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "Radar Dish";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 4 26.0246544709856 13.4054687209892  26.0246544709856 12.6001096595148  22.6173661339787 12.6001096595148  22.6173661339787 13.4054687209892  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 23.1849994857887 17.7747657560867  23.1849994857887 13.7152222061716  25.4570211191757 13.7152222061716  25.4570211191757 17.7747657560867  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID a30af6b8-48bc-4490-a441-7a3356711deb;
+			- m_type = 124;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IActor";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Gimbal";
+				- _id = GUID e50869c0-c44b-4885-b42c-3f791b22d1ec;
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "Gimbal";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 4 2.85406499544309 13.8411413687551  2.85406499544309 11.7967683665509  -0.491272644527353 11.7967683665509  -0.491272644527353 13.8411413687551  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 0.287643090732934 17.3428701565266  0.287643090732934 14.1508948539375  2.0751492601828 14.1508948539375  2.0751492601828 17.3428701565266  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGICompositeClass 
+			- _id = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_type = 78;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "TopLevel";
+				- _id = GUID 4582fb6d-0ad0-11d7-b329-00c04f680d9d;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 0;
+			- m_color = { IColor 
+				- m_fgColor = 1;
+				- m_bgColor = 1;
+				- m_bgFlag = 1;
+			}
+			- m_lineWidth = 0;
+			- m_polygon = 4 0.287643090732934 21.6758898425978  26.0558809902248 21.6758898425978  26.0558809902248 -12.9772237457651  0.287643090732934 -12.9772237457651  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID aa674dbd-2075-435c-8b0c-1fbaa6390a48;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Missile Guiding";
+				- _id = GUID 0c20dc75-7963-455d-b95d-6bcd264190a4;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Missile Guiding";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 8.63449086169789 10.2002248502098  8.63449086169789 7.61557932812227  16.8196440942152 7.61557932812227  16.8196440942152 10.2002248502098  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID abeada93-d715-45dc-be10-725031747873;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Cruising";
+				- _id = GUID e7888b95-8030-4bda-84c2-f665231d325d;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Cruising";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 5.32604667689841 6.28113477047398  5.32604667689841 4.36066266673723  10.0342994038688 4.36066266673723  10.0342994038688 6.28113477047398  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID e35e9155-b530-4d94-a910-b3757d0462a1;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Target Tracking";
+				- _id = GUID 702fa9b8-9e0c-4f49-b0f2-601f414e2df8;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Target Tracking";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 8.63232365879645 18.9682545407054  8.63232365879645 16.904938563346  16.8218112971166 16.904938563346  16.8218112971166 18.9682545407054  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID ea5f3a7c-172e-4757-a4a8-b6611763b845;
+			- m_type = 124;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IActor";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Fin Actuator";
+				- _id = GUID 8c37da6e-a8a2-485a-ac6f-67424fe5d060;
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "Fin Actuator";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 4 14.7951875605293 -13.4418539735388  14.7951875605293 -15.0525720964875  11.7596034057413 -15.0525720964875  11.7596034057413 -13.4418539735388  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 12.2559633863068 -8.97661469985349  12.2559633863068 -12.9772237457651  14.2988275799638 -12.9772237457651  14.2988275799638 -8.97661469985349  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID f2d24a53-c0fa-43d4-9085-787106150294;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "homing";
+				- _id = GUID 47ee9f7a-101e-444e-91d8-92811c9baf09;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "homing";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 15.0869107398695 6.38708784149842  15.0869107398695 4.36896587023201  20.0325444948466 4.36896587023201  20.0325444948466 6.38708784149842  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID fbc21e2f-028f-4edc-9578-8f45b7473956;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Locking";
+				- _id = GUID bd61a53f-6dfe-4d20-ad8b-0b6da6d3bb21;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Locking";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 15.1807430137837 14.6744377204155  15.1807430137837 13.0337614112426  20.0325444948466 13.0337614112426  20.0325444948466 14.6744377204155  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 0969d51c-d482-4bee-b562-13617af81b16;
+			- m_type = 124;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IActor";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Environment";
+				- _id = GUID 7331f4e3-0799-49b3-b3fb-143e108b8512;
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "Environment";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 4 5.16815512630935 -4.80804152385233  5.16815512630935 -6.60461173791053  -1.27471736548558 -6.60461173791053  -1.27471736548558 -4.80804152385233  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 0.800631294990314 -0.285640640188589  0.800631294990314 -4.49828803866989  3.09280646583346 -4.49828803866989  3.09280646583346 -0.285640640188589  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 1c8cabfc-ff26-40e5-9013-12bb66b75752;
+			- m_type = 124;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IActor";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Missile Sensors";
+				- _id = GUID 7300ea70-e5dc-4432-bbcb-6b21978f2016;
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "Missile Sensors";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 4 26.6704759378174 -3.54762466548855  26.6704759378174 -5.15834278843728  23.0153848126645 -5.15834278843728  23.0153848126645 -3.54762466548855  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 23.6299797602571 1.31601358472094  23.6299797602571 -3.2378711803061  26.0558809902248 -3.2378711803061  26.0558809902248 1.31601358472094  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 4a2f9549-f261-4ad8-b84c-d87a23e7560d;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "adapting";
+				- _id = GUID 33aa9e8e-ad60-4372-80c7-2dd4d1637374;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "adapting";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 5.32604667689841 -2.0202601572103  5.32604667689841 -4.00268246237797  10.4060056304608 -4.00268246237797  10.4060056304608 -2.0202601572103  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBox 
+			- _id = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_type = 123;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "";
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "Guidanced Missile Control System";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 7.53130796992315 19.843181446574  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 4.35826859305786 21.6758898425978  21.151448730546 21.6758898425978  21.151448730546 -7.40996983383937  4.35826859305786 -7.40996983383937  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 4cba252b-cfb9-465b-961c-3ded8dd2faba;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Missile Controlling";
+				- _id = GUID 1f141422-f474-495b-9631-062c50a668d1;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Missile Controlling";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 7.92588831736499 2.16141234865497  7.92588831736499 -0.533443295264653  17.5282466385481 -0.533443295264653  17.5282466385481 2.16141234865497  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 52e57672-347b-4577-b2d3-e8cec32706f5;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Seeking";
+				- _id = GUID 79ee968f-1cbd-47c2-96c6-94137c83669b;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Seeking";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 5.32604667689841 14.6490843536364  5.32604667689841 12.9718092597026  9.96505078332778 12.9718092597026  9.96505078332778 14.6490843536364  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		
+		- m_access = 'Z';
+		- m_modified = 'N';
+		- m_fileVersion = "";
+		- m_nModifyDate = 0;
+		- m_nCreateDate = 0;
+		- m_creator = "";
+		- m_bScaleWithZoom = 1;
+		- m_arrowStyle = 'S';
+		- m_pRoot = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+		- m_currentLeftTop = -4.40322314547342 -33.1504854180464 ;
+		- m_currentRightBottom = 47.263658182959 23.069772142568 ;
+	}
+	- _defaultSubsystem = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Default.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Default";
+		- _id = GUID 4582fb6c-0ad0-11d7-b329-00c04f680d9d;
+	}
+}
+

@@ -1,0 +1,272 @@
+I-Logix-RPY-Archive version 4.0.4 *
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 48;
+	- value = "AnimationComponent\\DefaultConfig\\AeroCoeff.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\AeroCoeff.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\AeroDynamics.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\AeroDynamics.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\AirFrame.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\AirFrame.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\AirFrameAutoPilotSystem.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\AirFrameAutoPilotSystem.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\AtmoCoeff.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\AtmoCoeff.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\Atmosphere.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\Atmosphere.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\AutoPilot.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\AutoPilot.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\AutoPilotCoeff.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\AutoPilotCoeff.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\BodyDynamics.cpp" 12.10.2002::23:24:19
+	"AnimationComponent\\DefaultConfig\\BodyDynamics.h" 12.10.2002::23:24:19
+	"AnimationComponent\\DefaultConfig\\BodyDynamicsCoeff.cpp" 12.10.2002::22:57:29
+	"AnimationComponent\\DefaultConfig\\BodyDynamicsCoeff.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\Default.cpp" 12.9.2002::15:24:52
+	"AnimationComponent\\DefaultConfig\\Default.h" 12.9.2002::15:25:38
+	"AnimationComponent\\DefaultConfig\\FinActuator.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\FinActuator.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\FinActuatorCoeff.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\FinActuatorCoeff.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\Guidance.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\Guidance.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\GuidancePkg.cpp" 12.10.2002::23:4:20
+	"AnimationComponent\\DefaultConfig\\GuidancePkg.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\On1DConn.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\On1DConn.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\On3DConn.cpp" 12.10.2002::22:57:30
+	"AnimationComponent\\DefaultConfig\\On3DConn.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\OnConnector_On1DConn.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\OnConnector_On1DConn.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\OnConnector_On3DConn.cpp" 12.10.2002::22:59:45
+	"AnimationComponent\\DefaultConfig\\OnConnector_On3DConn.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\OnModel_AeroDynamics.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\OnModel_AeroDynamics.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\OnModel_AirFrame.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\OnModel_AirFrame.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\OnModel_BodyDynamics.cpp" 12.10.2002::22:59:45
+	"AnimationComponent\\DefaultConfig\\OnModel_BodyDynamics.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\OnModel_FinActuator.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\OnModel_FinActuator.h" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\myFactory.cpp" 12.10.2002::22:55:2
+	"AnimationComponent\\DefaultConfig\\myFactory.h" 12.10.2002::22:55:2
+	
+}
+- size = 24;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "AeroDynamics";
+	- _id = GUID 22dfd167-3d2b-43c0-96ac-aee80d530cfb;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "Default.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Default";
+	- _id = GUID 4582fb6c-0ad0-11d7-b329-00c04f680d9d;
+}
+- genTime = 12.9.2002::15:24:52;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "BodyDynamicsCoeff";
+	- _id = GUID f802dab1-0a6b-4062-a631-c7d63d2b0a87;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "OnConnector_On1DConn";
+	- _id = GUID 2b18dbb5-18c4-4898-a6e9-0ce38ff415c0;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "AutoPilotCoeff";
+	- _id = GUID 7b40d2f3-81fc-4cb9-a170-00350e345ab1;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "Guidance";
+	- _id = GUID 4582fbf7-0ad0-11d7-b329-00c04f680d9d;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "AutoPilot";
+	- _id = GUID 5e16ef38-bc28-415f-967d-7462e4c948aa;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "Atmosphere";
+	- _id = GUID 708cbe3b-0b95-4ddd-9d2c-5e8e1507a5aa;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "OnModel_AirFrame";
+	- _id = GUID 05acebcd-7092-44fc-aa33-6703b40dac62;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "OnConnector_On3DConn";
+	- _id = GUID a5218144-b782-4158-b38a-41c89fdbf55c;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "OnModel_AeroDynamics";
+	- _id = GUID 987825f4-4ec6-429d-b47f-ab5c9642c3eb;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "AtmoCoeff";
+	- _id = GUID 3a27ac68-2f73-47a4-866a-bb425caa301f;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "OnModel_FinActuator";
+	- _id = GUID 71016999-22bf-488a-bd3d-82a994ac6375;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "AeroCoeff";
+	- _id = GUID e23cc183-013d-4057-920e-e77a8a9b4ab3;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "FinActuatorCoeff";
+	- _id = GUID f93c77fe-0083-479b-8a05-aa63abb87a5a;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "AirFrameAutoPilotSystem";
+	- _id = GUID 107ab005-4240-48ac-8d12-5004f285be82;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "GuidancePkg";
+	- _id = GUID e57df4ae-c7c0-4684-a34b-61f6e934aed0;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "On1DConn";
+	- _id = GUID 804ccced-2aa9-4052-9cd0-aaf162c62158;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "myFactory";
+	- _id = GUID 16514675-0af4-11d7-b329-00c04f680d9d;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "FinActuator";
+	- _id = GUID 07a2767e-6557-4476-8be3-4b2e1b59c601;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "OnModel_BodyDynamics";
+	- _id = GUID e63eaac0-8c7f-4a73-add0-4a70cc27fa0d;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "AirFrame";
+	- _id = GUID df5da5b3-e909-4410-b257-29b6263b4877;
+}
+- genTime = 12.10.2002::22:55:3;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "BodyDynamics";
+	- _id = GUID f19a6fbd-82a5-4b21-b74e-9664cad3b783;
+}
+- genTime = 12.10.2002::23:24:19;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "GuidancePkg.sbs";
+	- _subsystem = "GuidancePkg";
+	- _class = "";
+	- _name = "On3DConn";
+	- _id = GUID 57f73a8e-4edc-44d6-abb8-b8f4c9e7367a;
+}
+- genTime = 12.10.2002::22:55:3;
+

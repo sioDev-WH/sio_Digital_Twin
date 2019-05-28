@@ -1,0 +1,4071 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8964.0 (27872c2e).
+//
+// c:\distcomponents\rtsontransmission\debugu\TeeChart.tlh
+//
+// C++ source equivalent of Win32 type library .\..\..\TeeChart\TeeChart.ocx
+// compiler-generated file created 01/22/03 at 19:31:34 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("008bbe7c-c096-11d0-b4e3-00a0c901d681"))
+/* dual interface */ ITChart;
+struct __declspec(uuid("008bbe7d-c096-11d0-b4e3-00a0c901d681"))
+/* dispinterface */ ITChartEvents;
+struct /* coclass */ TChart;
+struct __declspec(uuid("d389a20a-c6e4-11d0-84b8-006097386599"))
+/* dual interface */ IPen;
+struct __declspec(uuid("6f617f1b-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IBrush;
+struct __declspec(uuid("ee05dfe2-5549-11d0-9ea9-0020af3d82da"))
+/* dual interface */ IStrings;
+struct __declspec(uuid("8b625a00-3a9a-11d1-ab4e-00400141862d"))
+/* dual interface */ ICanvas;
+struct __declspec(uuid("e8b97a90-3e69-11d1-ab59-00400141862d"))
+/* dual interface */ IAspect;
+struct __declspec(uuid("dd96fa40-d15c-11d0-9f64-9b8561b59916"))
+/* dual interface */ IAxes;
+struct __declspec(uuid("9b02a321-cdf4-11d0-84b8-006097386599"))
+/* dual interface */ IAxis;
+struct __declspec(uuid("b6352504-45fd-11d1-ab84-00400141862d"))
+/* dual interface */ IAxisLabels;
+struct __declspec(uuid("133fe602-d1cd-11d0-84b8-006097386599"))
+/* dual interface */ IAxisTitle;
+struct __declspec(uuid("495a9400-d2b9-11d0-9f64-9fe810e73741"))
+/* dual interface */ ILegend;
+struct __declspec(uuid("b6352500-45fd-11d1-ab84-00400141862d"))
+/* dual interface */ IExport;
+struct __declspec(uuid("b6352502-45fd-11d1-ab84-00400141862d"))
+/* dual interface */ IImport;
+struct __declspec(uuid("07a65c42-3da6-11d1-ab57-00400141862d"))
+/* dual interface */ IScroll;
+struct __declspec(uuid("07a65c40-3da6-11d1-ab57-00400141862d"))
+/* dual interface */ IZoom;
+struct __declspec(uuid("f3a0ed84-3c01-11d1-ab52-00400141862d"))
+/* dual interface */ IPrinter;
+struct __declspec(uuid("4c33d2e0-d291-11d0-9f64-bcc543d9c168"))
+/* dual interface */ IWall;
+struct __declspec(uuid("f3a0ed82-3c01-11d1-ab52-00400141862d"))
+/* dual interface */ IWalls;
+struct __declspec(uuid("2800eca0-d098-11d0-9f64-bf71ef49fef2"))
+/* dual interface */ ITitles;
+struct __declspec(uuid("7d423ba1-d053-11d0-9f64-837b7e193d48"))
+/* dual interface */ IGradient;
+struct __declspec(uuid("c648f0c8-b5c8-11d0-9f64-b10c6d3c1c4f"))
+/* dual interface */ IPage;
+struct __declspec(uuid("297dacc0-d044-11d0-9f64-c8fd4aeab040"))
+/* dual interface */ IPanel;
+struct __declspec(uuid("6f617f0e-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ ISeries;
+struct __declspec(uuid("6f617f44-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ ITeeFunction;
+struct __declspec(uuid("6f617f18-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IMarks;
+struct __declspec(uuid("6f617f43-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IValueList;
+struct __declspec(uuid("6f617f39-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IPointer;
+struct __declspec(uuid("6f617f0f-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ ICustomSeries;
+struct __declspec(uuid("6f617f11-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IAreaSeries;
+struct __declspec(uuid("6f617f12-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IPointSeries;
+struct __declspec(uuid("6f617f10-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ ILineSeries;
+struct __declspec(uuid("6f617f41-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IFastLineSeries;
+struct __declspec(uuid("6f617f3f-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ ICircledSeries;
+struct __declspec(uuid("6f617f40-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IPieSeries;
+struct __declspec(uuid("00561f61-efa9-11d0-9f64-de033fb8e6c0"))
+/* dual interface */ IBubbleSeries;
+struct __declspec(uuid("00561f60-efa9-11d0-9f64-de033fb8e6c0"))
+/* dual interface */ IGanttSeries;
+struct __declspec(uuid("66833f80-ef3f-11d0-9f64-a6119fa8432f"))
+/* dual interface */ IShapeSeries;
+struct __declspec(uuid("00561f62-efa9-11d0-9f64-de033fb8e6c0"))
+/* dual interface */ IArrowSeries;
+struct __declspec(uuid("6f617f13-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ ICustomBarSeries;
+struct __declspec(uuid("6f617f14-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IBarSeries;
+struct __declspec(uuid("6f617f15-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IHorizBarSeries;
+struct __declspec(uuid("d151bd23-0900-11d1-abc8-006097385ff5"))
+/* dual interface */ ICandleSeries;
+struct __declspec(uuid("e472e511-4ba2-11d2-aecf-00400141862d"))
+/* dual interface */ ICustomPolarSeries;
+struct __declspec(uuid("dfbf939d-46fd-11d2-aec3-00400141862d"))
+/* dual interface */ ICustom3DSeries;
+struct __declspec(uuid("49006ac1-099b-11d1-9f64-444553540000"))
+/* dual interface */ IErrorBarSeries;
+struct __declspec(uuid("49006ac3-099b-11d1-9f64-444553540000"))
+/* dual interface */ IVolumeSeries;
+struct __declspec(uuid("6f617f45-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IAddFunction;
+struct __declspec(uuid("6f617f46-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ ISubtractFunction;
+struct __declspec(uuid("6f617f47-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IMultiplyFunction;
+struct __declspec(uuid("6f617f48-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IDivideFunction;
+struct __declspec(uuid("6f617f49-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IAverageFunction;
+struct __declspec(uuid("6f617f4a-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ IHighFunction;
+struct __declspec(uuid("6f617f4b-cfa9-11d0-beed-00aa00c9a74f"))
+/* dual interface */ ILowFunction;
+struct __declspec(uuid("a9752900-3fa0-11d1-9f64-444553540000"))
+/* dual interface */ ICurveFittingFunction;
+struct __declspec(uuid("a9752904-3fa0-11d1-9f64-444553540000"))
+/* dual interface */ IExpAvgFunction;
+struct __declspec(uuid("a9752906-3fa0-11d1-9f64-444553540000"))
+/* dual interface */ IMovingAvgFunction;
+struct __declspec(uuid("bef6e002-a874-101a-8bba-00aa00300cab"))
+/* dual interface */ IChartFont;
+struct __declspec(uuid("8e41f391-672e-11d1-b5b2-00a0c901d681"))
+/* dual interface */ IMomentumFunction;
+struct __declspec(uuid("9f932473-4311-11d2-aebc-00400141862d"))
+/* dual interface */ IPieOtherSlice;
+struct __declspec(uuid("9f932476-4311-11d2-aebc-00400141862d"))
+/* dual interface */ IExplodedSlices;
+struct __declspec(uuid("dfbf939f-46fd-11d2-aec3-00400141862d"))
+/* dual interface */ ICustom3DGridSeries;
+struct __declspec(uuid("dfbf9393-46fd-11d2-aec3-00400141862d"))
+/* dual interface */ IContourSeries;
+struct __declspec(uuid("dfbf9397-46fd-11d2-aec3-00400141862d"))
+/* dual interface */ IBezierSeries;
+struct __declspec(uuid("dfbf9399-46fd-11d2-aec3-00400141862d"))
+/* dual interface */ IRadarSeries;
+struct __declspec(uuid("dfbf939b-46fd-11d2-aec3-00400141862d"))
+/* dual interface */ IErrorSeries;
+struct __declspec(uuid("dfbf9395-46fd-11d2-aec3-00400141862d"))
+/* dual interface */ IPoint3DSeries;
+struct __declspec(uuid("d151bd25-0900-11d1-abc8-006097385ff5"))
+/* dual interface */ ISurfaceSeries;
+struct __declspec(uuid("554b3031-47c5-11d2-aec7-00400141862d"))
+/* dual interface */ ISeriesMarksPositions;
+struct __declspec(uuid("554b3033-47c5-11d2-aec7-00400141862d"))
+/* dual interface */ ISeriesMarkPosition;
+struct __declspec(uuid("d151bd20-0900-11d1-abc8-006097385ff5"))
+/* dual interface */ IPolarSeries;
+struct __declspec(uuid("a75a3de1-4be2-11d2-aecf-00400141862d"))
+/* dual interface */ ICircleLabels;
+struct __declspec(uuid("3edc0324-4c6c-11d2-aed0-00400141862d"))
+/* dual interface */ ITrendFunction;
+struct __declspec(uuid("3edc0326-4c6c-11d2-aed0-00400141862d"))
+/* dual interface */ IStdDeviationFunction;
+struct __declspec(uuid("3edc0328-4c6c-11d2-aed0-00400141862d"))
+/* dual interface */ ICumulativeFunction;
+struct __declspec(uuid("3edc032a-4c6c-11d2-aed0-00400141862d"))
+/* dual interface */ IRSIFunction;
+struct __declspec(uuid("3edc032c-4c6c-11d2-aed0-00400141862d"))
+/* dual interface */ ICountFunction;
+struct __declspec(uuid("fade0a30-6d8a-11d2-af1e-00400141862d"))
+/* dual interface */ IEnvironment;
+struct __declspec(uuid("68e1284a-8f10-11d2-8098-006097385ff5"))
+/* dual interface */ ITeeLinked;
+struct __declspec(uuid("bee97213-8536-11d2-808c-006097385ff5"))
+/* dispinterface */ ITeeCommanderEvents;
+struct __declspec(uuid("bee97211-8536-11d2-808c-006097385ff5"))
+/* dual interface */ ITeeCommander;
+struct __declspec(uuid("97eb1711-8a61-11d2-8093-006097385ff5"))
+/* dual interface */ ITeeListBox;
+struct __declspec(uuid("97eb1715-8a61-11d2-8093-006097385ff5"))
+/* dispinterface */ ITeeListBoxEvents;
+struct /* coclass */ TeeListBox;
+struct __declspec(uuid("68e12840-8f10-11d2-8098-006097385ff5"))
+/* dual interface */ ITeeEditor;
+struct __declspec(uuid("68e12842-8f10-11d2-8098-006097385ff5"))
+/* dual interface */ ITeePreviewer;
+struct /* coclass */ TeeEditor;
+struct /* coclass */ TeePreviewer;
+struct /* coclass */ TeeCommander;
+struct __declspec(uuid("273020d3-95b6-11d2-809c-006097385ff5"))
+/* dual interface */ ITeePoint2D;
+struct __declspec(uuid("273020d1-95b6-11d2-809c-006097385ff5"))
+/* dual interface */ ITeePoint3D;
+struct __declspec(uuid("273020d5-95b6-11d2-809c-006097385ff5"))
+/* dual interface */ ITeeEditorShowPages;
+struct __declspec(uuid("273020d7-95b6-11d2-809c-006097385ff5"))
+/* dual interface */ ITeeEditorOptions;
+struct __declspec(uuid("273020d9-95b6-11d2-809c-006097385ff5"))
+/* dual interface */ ITeePreviewerOptions;
+struct __declspec(uuid("a748ecf1-a3dd-11d2-80a6-006097385ff5"))
+/* dual interface */ ITeeOpenGL;
+struct __declspec(uuid("ed84fb81-a700-11d2-80ab-006097385ff5"))
+/* dual interface */ IClockSeries;
+struct __declspec(uuid("ed84fb83-a700-11d2-80ab-006097385ff5"))
+/* dual interface */ IWindRoseSeries;
+struct __declspec(uuid("23e77a81-ace1-11d2-80ae-006097385ff5"))
+/* dual interface */ IBar3DSeries;
+struct __declspec(uuid("d9393e16-aefa-11d2-80af-006097385ff5"))
+/* dual interface */ IImageBarSeries;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ITChart, __uuidof(ITChart));
+_COM_SMARTPTR_TYPEDEF(ITChartEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IPen, __uuidof(IPen));
+_COM_SMARTPTR_TYPEDEF(IBrush, __uuidof(IBrush));
+_COM_SMARTPTR_TYPEDEF(IStrings, __uuidof(IStrings));
+_COM_SMARTPTR_TYPEDEF(ICanvas, __uuidof(ICanvas));
+_COM_SMARTPTR_TYPEDEF(IAspect, __uuidof(IAspect));
+_COM_SMARTPTR_TYPEDEF(IAxes, __uuidof(IAxes));
+_COM_SMARTPTR_TYPEDEF(IAxis, __uuidof(IAxis));
+_COM_SMARTPTR_TYPEDEF(IAxisLabels, __uuidof(IAxisLabels));
+_COM_SMARTPTR_TYPEDEF(IAxisTitle, __uuidof(IAxisTitle));
+_COM_SMARTPTR_TYPEDEF(ILegend, __uuidof(ILegend));
+_COM_SMARTPTR_TYPEDEF(IExport, __uuidof(IExport));
+_COM_SMARTPTR_TYPEDEF(IImport, __uuidof(IImport));
+_COM_SMARTPTR_TYPEDEF(IScroll, __uuidof(IScroll));
+_COM_SMARTPTR_TYPEDEF(IZoom, __uuidof(IZoom));
+_COM_SMARTPTR_TYPEDEF(IPrinter, __uuidof(IPrinter));
+_COM_SMARTPTR_TYPEDEF(IWall, __uuidof(IWall));
+_COM_SMARTPTR_TYPEDEF(IWalls, __uuidof(IWalls));
+_COM_SMARTPTR_TYPEDEF(ITitles, __uuidof(ITitles));
+_COM_SMARTPTR_TYPEDEF(IGradient, __uuidof(IGradient));
+_COM_SMARTPTR_TYPEDEF(IPage, __uuidof(IPage));
+_COM_SMARTPTR_TYPEDEF(IPanel, __uuidof(IPanel));
+_COM_SMARTPTR_TYPEDEF(ISeries, __uuidof(ISeries));
+_COM_SMARTPTR_TYPEDEF(ITeeFunction, __uuidof(ITeeFunction));
+_COM_SMARTPTR_TYPEDEF(IMarks, __uuidof(IMarks));
+_COM_SMARTPTR_TYPEDEF(IValueList, __uuidof(IValueList));
+_COM_SMARTPTR_TYPEDEF(IPointer, __uuidof(IPointer));
+_COM_SMARTPTR_TYPEDEF(ICustomSeries, __uuidof(ICustomSeries));
+_COM_SMARTPTR_TYPEDEF(IAreaSeries, __uuidof(IAreaSeries));
+_COM_SMARTPTR_TYPEDEF(IPointSeries, __uuidof(IPointSeries));
+_COM_SMARTPTR_TYPEDEF(ILineSeries, __uuidof(ILineSeries));
+_COM_SMARTPTR_TYPEDEF(IFastLineSeries, __uuidof(IFastLineSeries));
+_COM_SMARTPTR_TYPEDEF(ICircledSeries, __uuidof(ICircledSeries));
+_COM_SMARTPTR_TYPEDEF(IPieSeries, __uuidof(IPieSeries));
+_COM_SMARTPTR_TYPEDEF(IBubbleSeries, __uuidof(IBubbleSeries));
+_COM_SMARTPTR_TYPEDEF(IGanttSeries, __uuidof(IGanttSeries));
+_COM_SMARTPTR_TYPEDEF(IShapeSeries, __uuidof(IShapeSeries));
+_COM_SMARTPTR_TYPEDEF(IArrowSeries, __uuidof(IArrowSeries));
+_COM_SMARTPTR_TYPEDEF(ICustomBarSeries, __uuidof(ICustomBarSeries));
+_COM_SMARTPTR_TYPEDEF(IBarSeries, __uuidof(IBarSeries));
+_COM_SMARTPTR_TYPEDEF(IHorizBarSeries, __uuidof(IHorizBarSeries));
+_COM_SMARTPTR_TYPEDEF(ICandleSeries, __uuidof(ICandleSeries));
+_COM_SMARTPTR_TYPEDEF(ICustomPolarSeries, __uuidof(ICustomPolarSeries));
+_COM_SMARTPTR_TYPEDEF(ICustom3DSeries, __uuidof(ICustom3DSeries));
+_COM_SMARTPTR_TYPEDEF(IErrorBarSeries, __uuidof(IErrorBarSeries));
+_COM_SMARTPTR_TYPEDEF(IVolumeSeries, __uuidof(IVolumeSeries));
+_COM_SMARTPTR_TYPEDEF(IAddFunction, __uuidof(IAddFunction));
+_COM_SMARTPTR_TYPEDEF(ISubtractFunction, __uuidof(ISubtractFunction));
+_COM_SMARTPTR_TYPEDEF(IMultiplyFunction, __uuidof(IMultiplyFunction));
+_COM_SMARTPTR_TYPEDEF(IDivideFunction, __uuidof(IDivideFunction));
+_COM_SMARTPTR_TYPEDEF(IAverageFunction, __uuidof(IAverageFunction));
+_COM_SMARTPTR_TYPEDEF(IHighFunction, __uuidof(IHighFunction));
+_COM_SMARTPTR_TYPEDEF(ILowFunction, __uuidof(ILowFunction));
+_COM_SMARTPTR_TYPEDEF(ICurveFittingFunction, __uuidof(ICurveFittingFunction));
+_COM_SMARTPTR_TYPEDEF(IExpAvgFunction, __uuidof(IExpAvgFunction));
+_COM_SMARTPTR_TYPEDEF(IMovingAvgFunction, __uuidof(IMovingAvgFunction));
+_COM_SMARTPTR_TYPEDEF(IChartFont, __uuidof(IChartFont));
+_COM_SMARTPTR_TYPEDEF(IMomentumFunction, __uuidof(IMomentumFunction));
+_COM_SMARTPTR_TYPEDEF(IPieOtherSlice, __uuidof(IPieOtherSlice));
+_COM_SMARTPTR_TYPEDEF(IExplodedSlices, __uuidof(IExplodedSlices));
+_COM_SMARTPTR_TYPEDEF(ICustom3DGridSeries, __uuidof(ICustom3DGridSeries));
+_COM_SMARTPTR_TYPEDEF(IContourSeries, __uuidof(IContourSeries));
+_COM_SMARTPTR_TYPEDEF(IBezierSeries, __uuidof(IBezierSeries));
+_COM_SMARTPTR_TYPEDEF(IRadarSeries, __uuidof(IRadarSeries));
+_COM_SMARTPTR_TYPEDEF(IErrorSeries, __uuidof(IErrorSeries));
+_COM_SMARTPTR_TYPEDEF(IPoint3DSeries, __uuidof(IPoint3DSeries));
+_COM_SMARTPTR_TYPEDEF(ISurfaceSeries, __uuidof(ISurfaceSeries));
+_COM_SMARTPTR_TYPEDEF(ISeriesMarksPositions, __uuidof(ISeriesMarksPositions));
+_COM_SMARTPTR_TYPEDEF(ISeriesMarkPosition, __uuidof(ISeriesMarkPosition));
+_COM_SMARTPTR_TYPEDEF(IPolarSeries, __uuidof(IPolarSeries));
+_COM_SMARTPTR_TYPEDEF(ICircleLabels, __uuidof(ICircleLabels));
+_COM_SMARTPTR_TYPEDEF(ITrendFunction, __uuidof(ITrendFunction));
+_COM_SMARTPTR_TYPEDEF(IStdDeviationFunction, __uuidof(IStdDeviationFunction));
+_COM_SMARTPTR_TYPEDEF(ICumulativeFunction, __uuidof(ICumulativeFunction));
+_COM_SMARTPTR_TYPEDEF(IRSIFunction, __uuidof(IRSIFunction));
+_COM_SMARTPTR_TYPEDEF(ICountFunction, __uuidof(ICountFunction));
+_COM_SMARTPTR_TYPEDEF(IEnvironment, __uuidof(IEnvironment));
+_COM_SMARTPTR_TYPEDEF(ITeeLinked, __uuidof(ITeeLinked));
+_COM_SMARTPTR_TYPEDEF(ITeeCommanderEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(ITeeCommander, __uuidof(ITeeCommander));
+_COM_SMARTPTR_TYPEDEF(ITeeListBox, __uuidof(ITeeListBox));
+_COM_SMARTPTR_TYPEDEF(ITeeListBoxEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(ITeeEditor, __uuidof(ITeeEditor));
+_COM_SMARTPTR_TYPEDEF(ITeePreviewer, __uuidof(ITeePreviewer));
+_COM_SMARTPTR_TYPEDEF(ITeePoint2D, __uuidof(ITeePoint2D));
+_COM_SMARTPTR_TYPEDEF(ITeePoint3D, __uuidof(ITeePoint3D));
+_COM_SMARTPTR_TYPEDEF(ITeeEditorShowPages, __uuidof(ITeeEditorShowPages));
+_COM_SMARTPTR_TYPEDEF(ITeeEditorOptions, __uuidof(ITeeEditorOptions));
+_COM_SMARTPTR_TYPEDEF(ITeePreviewerOptions, __uuidof(ITeePreviewerOptions));
+_COM_SMARTPTR_TYPEDEF(ITeeOpenGL, __uuidof(ITeeOpenGL));
+_COM_SMARTPTR_TYPEDEF(IClockSeries, __uuidof(IClockSeries));
+_COM_SMARTPTR_TYPEDEF(IWindRoseSeries, __uuidof(IWindRoseSeries));
+_COM_SMARTPTR_TYPEDEF(IBar3DSeries, __uuidof(IBar3DSeries));
+_COM_SMARTPTR_TYPEDEF(IImageBarSeries, __uuidof(IImageBarSeries));
+
+//
+// Type library items
+//
+
+enum EPanelBevel
+{
+    bvNone = 0,
+    bvLowered = 1,
+    bvRaised = 2
+};
+
+enum EBorderStyle
+{
+    bsNone = 0,
+    bsSingle = 1
+};
+
+enum EDragMode
+{
+    dmManual = 0,
+    dmAutomatic = 1
+};
+
+enum EChartPenStyle
+{
+    psSolid = 0,
+    psDash = 1,
+    psDot = 2,
+    psDashDot = 3,
+    psDashDotDot = 4,
+    psClear = 5,
+    psInsideFrame = 6,
+    psSmallDots = 7
+};
+
+enum ELegendStyle
+{
+    lsAuto = 0,
+    lsSeries = 1,
+    lsValues = 2,
+    lsLastValues = 3
+};
+
+enum EMouseButton
+{
+    mbLeft = 1,
+    mbRight = 2,
+    mbMiddle = 4
+};
+
+enum EDragState
+{
+    dsDragEnter = 0,
+    dsDragLeave = 1,
+    dsDragMove = 2
+};
+
+enum EGradientDirection
+{
+    gdTopBottom = 0,
+    gdBottomTop = 1,
+    gdLeftRight = 2,
+    gdRightLeft = 3,
+    gdFromCenter = 4,
+    gdFromTopLeft = 5,
+    gdFromBottomLeft = 6
+};
+
+enum EAxisLabelStyle
+{
+    talAuto = 0,
+    talNone = 1,
+    talValue = 2,
+    talMark = 3,
+    talText = 4
+};
+
+enum EHorizontalAxis
+{
+    aTopAxis = 0,
+    aBottomAxis = 1,
+    aBothHorizAxis = 2,
+    aCustomHorizAxis = 3
+};
+
+enum EBrushStyle
+{
+    bsSolid = 0,
+    bsClear = 1,
+    bsHorizontal = 2,
+    bsVertical = 3,
+    bsFDiagonal = 4,
+    bsBDiagonal = 5,
+    bsCross = 6,
+    bsDiagCross = 7
+};
+
+enum EMultiArea
+{
+    maNone = 0,
+    maStacked = 1,
+    maStacked100 = 2
+};
+
+enum EMultiBar
+{
+    mbNone = 0,
+    mbSide = 1,
+    mbStacked = 2,
+    mbStacked100 = 3
+};
+
+enum EMarkStyle
+{
+    smsValue = 0,
+    smsPercent = 1,
+    smsLabel = 2,
+    smsLabelPercent = 3,
+    smsLabelValue = 4,
+    smsLegend = 5,
+    smsPercentTotal = 6,
+    smsLabelPercentTotal = 7,
+    smsXValue = 8
+};
+
+enum EBarStyle
+{
+    bsRectangle = 0,
+    bsPyramid = 1,
+    bsInvPyramid = 2,
+    bsCilinder = 3,
+    bsEllipse = 4,
+    bsArrow = 5,
+    bsRectGradient = 6
+};
+
+enum EChartScroll
+{
+    pmNone = 0,
+    pmHorizontal = 1,
+    pmVertical = 2,
+    pmBoth = 3
+};
+
+enum ELegendAlignment
+{
+    laLeft = 0,
+    laRight = 1,
+    laTop = 2,
+    laBottom = 3
+};
+
+enum ELegendTextStyle
+{
+    ltsPlain = 0,
+    ltsLeftValue = 1,
+    ltsRightValue = 2,
+    ltsLeftPercent = 3,
+    ltsRightPercent = 4,
+    ltsXValue = 5
+};
+
+enum EAxisType
+{
+    atLeft = 0,
+    atTop = 1,
+    atRight = 2,
+    atBottom = 3,
+    atDepth = 4,
+    atCustom = 5
+};
+
+enum EDateTimeStep
+{
+    dtOneSecond = 0,
+    dtFiveSeconds = 1,
+    dtTenSeconds = 2,
+    dtFifteenSeconds = 3,
+    dtThirtySeconds = 4,
+    dtOneMinute = 5,
+    dtFiveMinutes = 6,
+    dtTenMinutes = 7,
+    dtFifteenMinutes = 8,
+    dtThirtyMinutes = 9,
+    dtOneHour = 10,
+    dtTwoHours = 11,
+    dtSixHours = 12,
+    dtTwelveHours = 13,
+    dtOneDay = 14,
+    dtTwoDays = 15,
+    dtThreeDays = 16,
+    dtOneWeek = 17,
+    dtHalfMonth = 18,
+    dtOneMonth = 19,
+    dtTwoMonths = 20,
+    dtSixMonths = 21,
+    dtOneYear = 22
+};
+
+enum EJPEGPerformance
+{
+    jpegBestQuality = 0,
+    jpegBestSpeed = 1
+};
+
+enum EConstants
+{
+    clTeeColor = 536870912,
+    clNone = 536870911
+};
+
+enum EFunctionType
+{
+    tfCopy = 0,
+    tfAdd = 1,
+    tfSubtract = 2,
+    tfMultiply = 3,
+    tfDivide = 4,
+    tfAverage = 5,
+    tfHigh = 6,
+    tfLow = 7,
+    tfMovavg = 8,
+    tfExpavg = 9,
+    tfMomentum = 10,
+    tfCurveFit = 11,
+    tfRSI = 12,
+    tfTrend = 13,
+    tfStdDeviation = 14,
+    tfCumulative = 15,
+    tfCount = 16
+};
+
+enum EShapeXYStyle
+{
+    xysPixels = 0,
+    xysAxis = 1,
+    xysAxisOrigin = 2
+};
+
+enum ECandleStyle
+{
+    csCandleBar = 0,
+    csCandleStick = 1
+};
+
+enum EErrorWidthUnits
+{
+    ewuPercent = 0,
+    ewuPixels = 1
+};
+
+enum EValueListOrder
+{
+    loNone = 0,
+    loAscending = 1,
+    loDescending = 2
+};
+
+enum EShapeStyle
+{
+    chasRectangle = 0,
+    chasCircle = 1,
+    chasVertLine = 2,
+    chasHorizLine = 3,
+    chasTriangle = 4,
+    chasInvertTriangle = 5,
+    chasLine = 6,
+    chasDiamond = 7,
+    chasCube = 8,
+    chasCross = 9,
+    chasDiagCross = 10,
+    chasStar = 11,
+    chasPyramid = 12,
+    chasInvertPyramid = 13
+};
+
+enum ESeriesClass
+{
+    scLine = 0,
+    scBar = 1,
+    scHorizBar = 2,
+    scArea = 3,
+    scPoint = 4,
+    scPie = 5,
+    scFastLine = 6,
+    scShape = 7,
+    scGantt = 8,
+    scBubble = 9,
+    scArrow = 10,
+    scCandle = 11,
+    scPolar = 12,
+    scSurface = 13,
+    scVolume = 14,
+    scErrorBar = 15,
+    scBezier = 16,
+    scContour = 17,
+    scError = 18,
+    scPoint3D = 19,
+    scRadar = 20,
+    scClock = 21,
+    scWindRose = 22,
+    scBar3D = 23,
+    scImageBar = 24
+};
+
+enum EPrinterOrientation
+{
+    poPortrait = 0,
+    poLandscape = 1
+};
+
+enum EPointerStyle
+{
+    psRectangle = 0,
+    psCircle = 1,
+    psTriangle = 2,
+    psDownTriangle = 3,
+    psCross = 4,
+    psDiagCross = 5,
+    psStar = 6,
+    psDiamond = 7,
+    psSmallDot = 8
+};
+
+enum ETypeFitting
+{
+    cfPolynomial = 0,
+    cfLogarithmic = 1,
+    cfExponential = 2
+};
+
+enum EBackImageMode
+{
+    pbmStretch = 0,
+    pbmTile = 1,
+    pbmCenter = 2
+};
+
+enum ETextAlignment
+{
+    aLeft = 0,
+    aRight = 1,
+    aCenter = 2
+};
+
+enum EVerticalAxis
+{
+    aLeftAxis = 0,
+    aRightAxis = 1,
+    aBothVertAxis = 2,
+    aCustomVertAxis = 3
+};
+
+enum EShiftState
+{
+    ssShift = 1,
+    ssAlt = 2,
+    ssCtrl = 4,
+    ssNone = 0
+};
+
+enum ETitleAlignment
+{
+    taLeftJustify = 0,
+    taRightJustify = 1,
+    taCenter = 2
+};
+
+struct __declspec(uuid("008bbe7c-c096-11d0-b4e3-00a0c901d681"))
+ITChart : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Aspect (
+        struct IAspect * * Aspect ) = 0;
+    virtual HRESULT __stdcall get_Axis (
+        struct IAxes * * Axis ) = 0;
+    virtual HRESULT __stdcall get_Canvas (
+        struct ICanvas * * Canvas ) = 0;
+    virtual HRESULT __stdcall get_ClipPoints (
+        VARIANT_BOOL * ClipPoints ) = 0;
+    virtual HRESULT __stdcall put_ClipPoints (
+        VARIANT_BOOL ClipPoints ) = 0;
+    virtual HRESULT __stdcall get_Cursor (
+        short * Cursor ) = 0;
+    virtual HRESULT __stdcall put_Cursor (
+        short Cursor ) = 0;
+    virtual HRESULT __stdcall get_DragCursor (
+        short * DragCursor ) = 0;
+    virtual HRESULT __stdcall put_DragCursor (
+        short DragCursor ) = 0;
+    virtual HRESULT __stdcall get_DragMode (
+        enum EDragMode * DragMode ) = 0;
+    virtual HRESULT __stdcall put_DragMode (
+        enum EDragMode DragMode ) = 0;
+    virtual HRESULT __stdcall get_Enabled (
+        VARIANT_BOOL * Enabled ) = 0;
+    virtual HRESULT __stdcall put_Enabled (
+        VARIANT_BOOL Enabled ) = 0;
+    virtual HRESULT __stdcall get_Export (
+        struct IExport * * Export ) = 0;
+    virtual HRESULT __stdcall get_Footer (
+        struct ITitles * * Footer ) = 0;
+    virtual HRESULT __stdcall get_Frame (
+        struct IPen * * Frame ) = 0;
+    virtual HRESULT __stdcall get_Header (
+        struct ITitles * * Header ) = 0;
+    virtual HRESULT __stdcall get_Height (
+        long * Height ) = 0;
+    virtual HRESULT __stdcall put_Height (
+        long Height ) = 0;
+    virtual HRESULT __stdcall get_Import (
+        struct IImport * * Import ) = 0;
+    virtual HRESULT __stdcall get_Left (
+        long * Left ) = 0;
+    virtual HRESULT __stdcall put_Left (
+        long Left ) = 0;
+    virtual HRESULT __stdcall get_Legend (
+        struct ILegend * * Legend ) = 0;
+    virtual HRESULT __stdcall get_Page (
+        struct IPage * * Page ) = 0;
+    virtual HRESULT __stdcall get_Panel (
+        struct IPanel * * Panel ) = 0;
+    virtual HRESULT __stdcall get_Printer (
+        struct IPrinter * * Printer ) = 0;
+    virtual HRESULT __stdcall get_Scroll (
+        struct IScroll * * Scroll ) = 0;
+    virtual HRESULT __stdcall get_Series (
+        long SeriesIndex,
+        struct ISeries * * Index ) = 0;
+    virtual HRESULT __stdcall get_SeriesCount (
+        long * SeriesCount ) = 0;
+    virtual HRESULT __stdcall get_Top (
+        long * Top ) = 0;
+    virtual HRESULT __stdcall put_Top (
+        long Top ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Visible ) = 0;
+    virtual HRESULT __stdcall put_Visible (
+        VARIANT_BOOL Visible ) = 0;
+    virtual HRESULT __stdcall get_Walls (
+        struct IWalls * * Walls ) = 0;
+    virtual HRESULT __stdcall get_Width (
+        long * Width ) = 0;
+    virtual HRESULT __stdcall put_Width (
+        long Width ) = 0;
+    virtual HRESULT __stdcall get_Zoom (
+        struct IZoom * * Zoom ) = 0;
+    virtual HRESULT __stdcall AboutBox ( ) = 0;
+    virtual HRESULT __stdcall AddSeries (
+        enum ESeriesClass SeriesClass ) = 0;
+    virtual HRESULT __stdcall ChangeSeriesType (
+        long SeriesIndex,
+        enum ESeriesClass NewSeriesType ) = 0;
+    virtual HRESULT __stdcall CloneSeries (
+        long SourceSeriesIndex,
+        long * SeriesIndex ) = 0;
+    virtual HRESULT __stdcall Draw (
+        long DC,
+        long Left,
+        long Top,
+        long Right,
+        long Bottom ) = 0;
+    virtual HRESULT __stdcall ExchangeSeries (
+        long Series1,
+        long Series2 ) = 0;
+    virtual HRESULT __stdcall GetDateTimeStep (
+        enum EDateTimeStep DateTimeStep,
+        double * Step ) = 0;
+    virtual HRESULT __stdcall GetFreeSeriesColor (
+        VARIANT_BOOL CheckBackgroundColor,
+        OLE_COLOR * CheckBackground ) = 0;
+    virtual HRESULT __stdcall GetLabelsSeries (
+        enum EAxisType DestAxis,
+        struct ISeries * * Axis ) = 0;
+    virtual HRESULT __stdcall IsFreeSeriesColor (
+        OLE_COLOR AColor,
+        VARIANT_BOOL CheckBackgroundColor,
+        VARIANT_BOOL * CheckBackground ) = 0;
+    virtual HRESULT __stdcall RemoveAllSeries ( ) = 0;
+    virtual HRESULT __stdcall RemoveSeries (
+        long SeriesIndex ) = 0;
+    virtual HRESULT __stdcall Repaint ( ) = 0;
+    virtual HRESULT __stdcall SeriesTitleLegend (
+        long ASeriesIndex,
+        BSTR * SeriesIndex ) = 0;
+    virtual HRESULT __stdcall ShowEditor (
+        long SeriesIndex ) = 0;
+    virtual HRESULT __stdcall StopMouse ( ) = 0;
+    virtual HRESULT __stdcall get_TimerEnabled (
+        VARIANT_BOOL * TimerEnabled ) = 0;
+    virtual HRESULT __stdcall put_TimerEnabled (
+        VARIANT_BOOL TimerEnabled ) = 0;
+    virtual HRESULT __stdcall get_TimerInterval (
+        long * TimerInterval ) = 0;
+    virtual HRESULT __stdcall put_TimerInterval (
+        long TimerInterval ) = 0;
+    virtual HRESULT __stdcall get_AutoRepaint (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_AutoRepaint (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall EditOneSeries (
+        long SeriesIndex ) = 0;
+    virtual HRESULT __stdcall get_Environment (
+        struct IEnvironment * * Value ) = 0;
+    virtual HRESULT __stdcall get_ChartLink (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall get_MousePosition (
+        struct ITeePoint2D * * Value ) = 0;
+    virtual HRESULT __stdcall ChartRect (
+        long Left,
+        long Top,
+        long Right,
+        long Bottom ) = 0;
+};
+
+struct __declspec(uuid("008bbe7d-c096-11d0-b4e3-00a0c901d681"))
+ITChartEvents : IDispatch
+{};
+
+struct __declspec(uuid("008bbe7e-c096-11d0-b4e3-00a0c901d681"))
+TChart;
+    // [ default ] interface ITChart
+    // [ default, source ] dispinterface ITChartEvents
+
+struct __declspec(uuid("d389a20a-c6e4-11d0-84b8-006097386599"))
+IPen : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Color (
+        OLE_COLOR * Color ) = 0;
+    virtual HRESULT __stdcall put_Color (
+        OLE_COLOR Color ) = 0;
+    virtual HRESULT __stdcall get_Width (
+        long * Width ) = 0;
+    virtual HRESULT __stdcall put_Width (
+        long Width ) = 0;
+    virtual HRESULT __stdcall get_Style (
+        enum EChartPenStyle * Style ) = 0;
+    virtual HRESULT __stdcall put_Style (
+        enum EChartPenStyle Style ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Visible ) = 0;
+    virtual HRESULT __stdcall put_Visible (
+        VARIANT_BOOL Visible ) = 0;
+};
+
+struct __declspec(uuid("6f617f1b-cfa9-11d0-beed-00aa00c9a74f"))
+IBrush : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Color (
+        OLE_COLOR * Color ) = 0;
+    virtual HRESULT __stdcall put_Color (
+        OLE_COLOR Color ) = 0;
+    virtual HRESULT __stdcall get_Style (
+        enum EBrushStyle * Style ) = 0;
+    virtual HRESULT __stdcall put_Style (
+        enum EBrushStyle Style ) = 0;
+};
+
+struct __declspec(uuid("ee05dfe2-5549-11d0-9ea9-0020af3d82da"))
+IStrings : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ControlDefault (
+        long Index,
+        VARIANT * Value ) = 0;
+    virtual HRESULT __stdcall put_ControlDefault (
+        long Index,
+        VARIANT Value ) = 0;
+    virtual HRESULT __stdcall Count (
+        long * Count ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long Index,
+        VARIANT * Value ) = 0;
+    virtual HRESULT __stdcall put_Item (
+        long Index,
+        VARIANT Value ) = 0;
+    virtual HRESULT __stdcall Remove (
+        long Index ) = 0;
+    virtual HRESULT __stdcall Clear ( ) = 0;
+    virtual HRESULT __stdcall Add (
+        VARIANT AItem,
+        long * Item ) = 0;
+    virtual HRESULT __stdcall _NewEnum (
+        IUnknown * * _NewEnum ) = 0;
+};
+
+struct __declspec(uuid("8b625a00-3a9a-11d1-ab4e-00400141862d"))
+ICanvas : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Brush (
+        struct IBrush * * Brush ) = 0;
+    virtual HRESULT __stdcall get_Pen (
+        struct IPen * * Pen ) = 0;
+    virtual HRESULT __stdcall LineTo (
+        long X,
+        long Y ) = 0;
+    virtual HRESULT __stdcall MoveTo (
+        long X,
+        long Y ) = 0;
+    virtual HRESULT __stdcall Rectangle (
+        long Left,
+        long Top,
+        long Right,
+        long Bottom ) = 0;
+    virtual HRESULT __stdcall get_Font (
+        struct IChartFont * * Font ) = 0;
+    virtual HRESULT __stdcall Arc (
+        long X1,
+        long Y1,
+        long X2,
+        long Y2,
+        long X3,
+        long Y3,
+        long X4,
+        long Y4 ) = 0;
+    virtual HRESULT __stdcall Ellipse (
+        long X1,
+        long Y1,
+        long X2,
+        long Y2 ) = 0;
+    virtual HRESULT __stdcall TextOut (
+        long X,
+        long Y,
+        BSTR Text ) = 0;
+    virtual HRESULT __stdcall TextHeight (
+        BSTR SomeText,
+        long * St ) = 0;
+    virtual HRESULT __stdcall TextWidth (
+        BSTR SomeText,
+        long * St ) = 0;
+    virtual HRESULT __stdcall ClipRectangle (
+        long Left,
+        long Top,
+        long Right,
+        long Bottom ) = 0;
+    virtual HRESULT __stdcall UnClipRectangle ( ) = 0;
+    virtual HRESULT __stdcall RotateLabel (
+        long X,
+        long Y,
+        BSTR St,
+        long RotDegree ) = 0;
+    virtual HRESULT __stdcall IsScreenHighColor (
+        VARIANT_BOOL * IsScreenHighColor ) = 0;
+    virtual HRESULT __stdcall get_Top (
+        long * Top ) = 0;
+    virtual HRESULT __stdcall get_Left (
+        long * Left ) = 0;
+    virtual HRESULT __stdcall get_Width (
+        long * Width ) = 0;
+    virtual HRESULT __stdcall get_Height (
+        long * Height ) = 0;
+    virtual HRESULT __stdcall get_BackMode (
+        enum ECanvasBackMode * Value ) = 0;
+    virtual HRESULT __stdcall put_BackMode (
+        enum ECanvasBackMode Value ) = 0;
+    virtual HRESULT __stdcall get_BackColor (
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall put_BackColor (
+        OLE_COLOR Value ) = 0;
+    virtual HRESULT __stdcall get_SupportsFullRotation (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall get_UseBuffer (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_UseBuffer (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall Pie3D (
+        long XCenter,
+        long YCenter,
+        long XRadius,
+        long YRadius,
+        long Z0,
+        long Z1,
+        double StartAngle,
+        double EndAngle,
+        VARIANT_BOOL DarkSides,
+        VARIANT_BOOL DrawSides ) = 0;
+    virtual HRESULT __stdcall LineWithZ (
+        long X0,
+        long Y0,
+        long X1,
+        long Y1,
+        long Z ) = 0;
+    virtual HRESULT __stdcall MoveTo3D (
+        long X,
+        long Y,
+        long Z ) = 0;
+    virtual HRESULT __stdcall LineTo3D (
+        long X,
+        long Y,
+        long Z ) = 0;
+    virtual HRESULT __stdcall Plane3D (
+        long X0,
+        long Y0,
+        long X1,
+        long Y1,
+        long Z0,
+        long Z1 ) = 0;
+    virtual HRESULT __stdcall ZLine3D (
+        long X,
+        long Y,
+        long Z0,
+        long Z1 ) = 0;
+    virtual HRESULT __stdcall RotateLabel3D (
+        long X,
+        long Y,
+        long Z,
+        BSTR St,
+        long RotDegree ) = 0;
+    virtual HRESULT __stdcall get_TextAlign (
+        enum ECanvasTextAlign * Value ) = 0;
+    virtual HRESULT __stdcall put_TextAlign (
+        enum ECanvasTextAlign Value ) = 0;
+    virtual HRESULT __stdcall VertLine3D (
+        long X,
+        long Top,
+        long Bottom,
+        long Z ) = 0;
+    virtual HRESULT __stdcall HorizLine3D (
+        long Left,
+        long Right,
+        long Y,
+        long Z ) = 0;
+    virtual HRESULT __stdcall Cylinder (
+        VARIANT_BOOL Vertical,
+        long Left,
+        long Top,
+        long Right,
+        long Bottom,
+        long Z0,
+        long Z1,
+        VARIANT_BOOL DarkCover ) = 0;
+    virtual HRESULT __stdcall Cube (
+        long Left,
+        long Right,
+        long Top,
+        long Bottom,
+        long Z0,
+        long Z1,
+        VARIANT_BOOL DarkSides ) = 0;
+    virtual HRESULT __stdcall EllipseWithZ (
+        long X1,
+        long Y1,
+        long X2,
+        long Y2,
+        long Z ) = 0;
+    virtual HRESULT __stdcall PlaneWithZ (
+        long X1,
+        long Y1,
+        long X2,
+        long Y2,
+        long X3,
+        long Y3,
+        long X4,
+        long Y4,
+        long Z ) = 0;
+    virtual HRESULT __stdcall PlaneFour3D (
+        long X1,
+        long Y1,
+        long X2,
+        long Y2,
+        long X3,
+        long Y3,
+        long X4,
+        long Y4,
+        long Z0,
+        long Z1 ) = 0;
+    virtual HRESULT __stdcall RectangleWithZ (
+        long Left,
+        long Top,
+        long Right,
+        long Bottom,
+        long Z ) = 0;
+    virtual HRESULT __stdcall RectangleZ (
+        long Left,
+        long Top,
+        long Bottom,
+        long Z0,
+        long Z1 ) = 0;
+    virtual HRESULT __stdcall TextOut3D (
+        long X,
+        long Y,
+        long Z,
+        BSTR Text ) = 0;
+    virtual HRESULT __stdcall TriangleWithZ (
+        long X1,
+        long Y1,
+        long X2,
+        long Y2,
+        long X3,
+        long Y3,
+        long Z ) = 0;
+    virtual HRESULT __stdcall Frame3D (
+        long Left,
+        long Top,
+        long Right,
+        long Bottom,
+        OLE_COLOR TopColor,
+        OLE_COLOR BottomColor,
+        long Width ) = 0;
+    virtual HRESULT __stdcall EraseBackground (
+        long Left,
+        long Top,
+        long Right,
+        long Bottom ) = 0;
+    virtual HRESULT __stdcall GradientFill (
+        long Left,
+        long Top,
+        long Right,
+        long Bottom,
+        OLE_COLOR StartColor,
+        OLE_COLOR EndColor,
+        enum EGradientDirection Direction ) = 0;
+    virtual HRESULT __stdcall Line (
+        long X0,
+        long Y0,
+        long X1,
+        long Y1 ) = 0;
+    virtual HRESULT __stdcall RectangleY (
+        long Left,
+        long Top,
+        long Right,
+        long Z0,
+        long Z1 ) = 0;
+    virtual HRESULT __stdcall Pixels3D (
+        long X,
+        long Y,
+        long Z,
+        OLE_COLOR Value ) = 0;
+    virtual HRESULT __stdcall get_HandleDC (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall Cone (
+        VARIANT_BOOL Vertical,
+        long Left,
+        long Top,
+        long Right,
+        long Bottom,
+        long Z0,
+        long Z1,
+        long ConePercent ) = 0;
+    virtual HRESULT __stdcall Sphere (
+        long X,
+        long Y,
+        long Z,
+        double Radius ) = 0;
+    virtual HRESULT __stdcall Arrow (
+        VARIANT_BOOL Filled,
+        long X0,
+        long Y0,
+        long X1,
+        long Y1,
+        long HeadWidth,
+        long HeadHeight,
+        long Z ) = 0;
+};
+
+struct __declspec(uuid("e8b97a90-3e69-11d1-ab59-00400141862d"))
+IAspect : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ApplyZOrder (
+        VARIANT_BOOL * ApplyZOrder ) = 0;
+    virtual HRESULT __stdcall put_ApplyZOrder (
+        VARIANT_BOOL ApplyZOrder ) = 0;
+    virtual HRESULT __stdcall get_Chart3DPercent (
+        long * Chart3DPercent ) = 0;
+    virtual HRESULT __stdcall put_Chart3DPercent (
+        long Chart3DPercent ) = 0;
+    virtual HRESULT __stdcall get_Height3D (
+        long * Height3D ) = 0;
+    virtual HRESULT __stdcall get_View3D (
+        VARIANT_BOOL * View3D ) = 0;
+    virtual HRESULT __stdcall put_View3D (
+        VARIANT_BOOL View3D ) = 0;
+    virtual HRESULT __stdcall get_Width3D (
+        long * Width3D ) = 0;
+    virtual HRESULT __stdcall get_Rotation (
+        long * RotationX ) = 0;
+    virtual HRESULT __stdcall put_Rotation (
+        long RotationX ) = 0;
+    virtual HRESULT __stdcall get_Elevation (
+        long * RotationY ) = 0;
+    virtual HRESULT __stdcall put_Elevation (
+        long RotationY ) = 0;
+    virtual HRESULT __stdcall get_Zoom (
+        long * Zoom ) = 0;
+    virtual HRESULT __stdcall put_Zoom (
+        long Zoom ) = 0;
+    virtual HRESULT __stdcall get_ZoomText (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ZoomText (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_HorizOffset (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_HorizOffset (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_VertOffset (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_VertOffset (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_Tilt (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_Tilt (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_Orthogonal (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Orthogonal (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Perspective (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_Perspective (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_OpenGL (
+        struct ITeeOpenGL * * Value ) = 0;
+};
+
+struct __declspec(uuid("dd96fa40-d15c-11d0-9f64-9b8561b59916"))
+IAxes : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Left (
+        struct IAxis * * Left ) = 0;
+    virtual HRESULT __stdcall get_Right (
+        struct IAxis * * Right ) = 0;
+    virtual HRESULT __stdcall get_Top (
+        struct IAxis * * Top ) = 0;
+    virtual HRESULT __stdcall get_Bottom (
+        struct IAxis * * Bottom ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Visible ) = 0;
+    virtual HRESULT __stdcall put_Visible (
+        VARIANT_BOOL Visible ) = 0;
+    virtual HRESULT __stdcall get_Depth (
+        struct IAxis * * Value ) = 0;
+    virtual HRESULT __stdcall get_DrawAxesBeforeSeries (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_DrawAxesBeforeSeries (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall AddCustom (
+        VARIANT_BOOL IsHorizontal,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall get_Custom (
+        long CustomAxisIndex,
+        struct IAxis * * Value ) = 0;
+    virtual HRESULT __stdcall get_CustomCount (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall RemoveCustom (
+        long CustomAxisIndex ) = 0;
+    virtual HRESULT __stdcall RemoveAllCustom ( ) = 0;
+};
+
+struct __declspec(uuid("9b02a321-cdf4-11d0-84b8-006097386599"))
+IAxis : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Automatic (
+        VARIANT_BOOL * Automatic ) = 0;
+    virtual HRESULT __stdcall put_Automatic (
+        VARIANT_BOOL Automatic ) = 0;
+    virtual HRESULT __stdcall get_AutomaticMaximum (
+        VARIANT_BOOL * AutomaticMaximum ) = 0;
+    virtual HRESULT __stdcall put_AutomaticMaximum (
+        VARIANT_BOOL AutomaticMaximum ) = 0;
+    virtual HRESULT __stdcall get_AutomaticMinimum (
+        VARIANT_BOOL * AutomaticMinimum ) = 0;
+    virtual HRESULT __stdcall put_AutomaticMinimum (
+        VARIANT_BOOL AutomaticMinimum ) = 0;
+    virtual HRESULT __stdcall get_AxisPen (
+        struct IPen * * AxisPen ) = 0;
+    virtual HRESULT __stdcall get_AxisType (
+        enum EAxisType * AxisType ) = 0;
+    virtual HRESULT __stdcall get_ExactDateTime (
+        VARIANT_BOOL * ExactDateTime ) = 0;
+    virtual HRESULT __stdcall put_ExactDateTime (
+        VARIANT_BOOL ExactDateTime ) = 0;
+    virtual HRESULT __stdcall get_GridPen (
+        struct IPen * * GridPen ) = 0;
+    virtual HRESULT __stdcall get_Increment (
+        double * Increment ) = 0;
+    virtual HRESULT __stdcall put_Increment (
+        double Increment ) = 0;
+    virtual HRESULT __stdcall get_Inverted (
+        VARIANT_BOOL * Inverted ) = 0;
+    virtual HRESULT __stdcall put_Inverted (
+        VARIANT_BOOL Inverted ) = 0;
+    virtual HRESULT __stdcall get_Labels (
+        struct IAxisLabels * * Labels ) = 0;
+    virtual HRESULT __stdcall get_Logarithmic (
+        VARIANT_BOOL * Logarithmic ) = 0;
+    virtual HRESULT __stdcall put_Logarithmic (
+        VARIANT_BOOL Logarithmic ) = 0;
+    virtual HRESULT __stdcall get_Maximum (
+        double * Maximum ) = 0;
+    virtual HRESULT __stdcall put_Maximum (
+        double Maximum ) = 0;
+    virtual HRESULT __stdcall get_Minimum (
+        double * Minimum ) = 0;
+    virtual HRESULT __stdcall put_Minimum (
+        double Minimum ) = 0;
+    virtual HRESULT __stdcall get_MinorTickCount (
+        long * MinorTickCount ) = 0;
+    virtual HRESULT __stdcall put_MinorTickCount (
+        long MinorTickCount ) = 0;
+    virtual HRESULT __stdcall get_MinorTickLength (
+        long * MinorTickLength ) = 0;
+    virtual HRESULT __stdcall put_MinorTickLength (
+        long MinorTickLength ) = 0;
+    virtual HRESULT __stdcall get_MinorTicks (
+        struct IPen * * MinorTicks ) = 0;
+    virtual HRESULT __stdcall get_Position (
+        long * Position ) = 0;
+    virtual HRESULT __stdcall get_TickInnerLength (
+        long * TickInnerLength ) = 0;
+    virtual HRESULT __stdcall put_TickInnerLength (
+        long TickInnerLength ) = 0;
+    virtual HRESULT __stdcall get_TickLength (
+        long * TickLength ) = 0;
+    virtual HRESULT __stdcall put_TickLength (
+        long TickLength ) = 0;
+    virtual HRESULT __stdcall get_TickOnLabelsOnly (
+        VARIANT_BOOL * TickOnLabelsOnly ) = 0;
+    virtual HRESULT __stdcall put_TickOnLabelsOnly (
+        VARIANT_BOOL TickOnLabelsOnly ) = 0;
+    virtual HRESULT __stdcall get_Ticks (
+        struct IPen * * Ticks ) = 0;
+    virtual HRESULT __stdcall get_TicksInner (
+        struct IPen * * TicksInner ) = 0;
+    virtual HRESULT __stdcall get_Title (
+        struct IAxisTitle * * Title ) = 0;
+    virtual HRESULT __stdcall get_TitleSize (
+        long * TitleSize ) = 0;
+    virtual HRESULT __stdcall put_TitleSize (
+        long TitleSize ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Visible ) = 0;
+    virtual HRESULT __stdcall put_Visible (
+        VARIANT_BOOL Visible ) = 0;
+    virtual HRESULT __stdcall AdjustMaxMin ( ) = 0;
+    virtual HRESULT __stdcall CalcXPosValue (
+        double SomeValue,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall CalcYPosValue (
+        double SomeValue,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall CalcXSizeValue (
+        double SomeValue,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall CalcYSizeValue (
+        double SomeValue,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall CalcPosPoint (
+        long SomeValue,
+        double * Value ) = 0;
+    virtual HRESULT __stdcall Clicked (
+        long XCoord,
+        long YCoord,
+        VARIANT_BOOL * Y ) = 0;
+    virtual HRESULT __stdcall CustomDraw (
+        long APosLabels,
+        long APosTitle,
+        long APosAxis,
+        VARIANT_BOOL GridVisible ) = 0;
+    virtual HRESULT __stdcall IsDateTime (
+        VARIANT_BOOL * IsDateTime ) = 0;
+    virtual HRESULT __stdcall MaxXValue (
+        double * MaxXValue ) = 0;
+    virtual HRESULT __stdcall MaxYValue (
+        double * MaxYValue ) = 0;
+    virtual HRESULT __stdcall MinXValue (
+        double * MinXValue ) = 0;
+    virtual HRESULT __stdcall MinYValue (
+        double * MinYValue ) = 0;
+    virtual HRESULT __stdcall Scroll (
+        double Offset,
+        VARIANT_BOOL CheckLimits ) = 0;
+    virtual HRESULT __stdcall SetMinMax (
+        double AMin,
+        double AMax ) = 0;
+    virtual HRESULT __stdcall get_GridCentered (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_GridCentered (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_PositionPercent (
+        double * Value ) = 0;
+    virtual HRESULT __stdcall put_PositionPercent (
+        double Value ) = 0;
+    virtual HRESULT __stdcall get_StartPosition (
+        double * Value ) = 0;
+    virtual HRESULT __stdcall put_StartPosition (
+        double Value ) = 0;
+    virtual HRESULT __stdcall get_EndPosition (
+        double * Value ) = 0;
+    virtual HRESULT __stdcall put_EndPosition (
+        double Value ) = 0;
+    virtual HRESULT __stdcall get_LogarithmicBase (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_LogarithmicBase (
+        long Value ) = 0;
+    virtual HRESULT __stdcall CustomDrawMinMax (
+        long APosLabels,
+        long APosTitle,
+        long APosAxis,
+        VARIANT_BOOL GridVisible,
+        double AMinimum,
+        double AMaximum,
+        long AStartPosition,
+        long AEndPosition ) = 0;
+    virtual HRESULT __stdcall get_MinorGrid (
+        struct IPen * * Value ) = 0;
+    virtual HRESULT __stdcall get_Otherside (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Otherside (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("b6352504-45fd-11d1-ab84-00400141862d"))
+IAxisLabels : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Angle (
+        long * Angle ) = 0;
+    virtual HRESULT __stdcall put_Angle (
+        long Angle ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Visible ) = 0;
+    virtual HRESULT __stdcall put_Visible (
+        VARIANT_BOOL Visible ) = 0;
+    virtual HRESULT __stdcall get_DateTimeFormat (
+        BSTR * DateTimeFormat ) = 0;
+    virtual HRESULT __stdcall put_DateTimeFormat (
+        BSTR DateTimeFormat ) = 0;
+    virtual HRESULT __stdcall get_Font (
+        struct IChartFont * * Font ) = 0;
+    virtual HRESULT __stdcall FormattedValue (
+        double SomeValue,
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall GetPos (
+        long * GetPos ) = 0;
+    virtual HRESULT __stdcall Height (
+        double SomeValue,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall MaxWidth (
+        long * MaxWidth ) = 0;
+    virtual HRESULT __stdcall get_OnAxis (
+        VARIANT_BOOL * OnAxis ) = 0;
+    virtual HRESULT __stdcall put_OnAxis (
+        VARIANT_BOOL OnAxis ) = 0;
+    virtual HRESULT __stdcall get_RoundFirstLabel (
+        VARIANT_BOOL * RoundFirstLabel ) = 0;
+    virtual HRESULT __stdcall put_RoundFirstLabel (
+        VARIANT_BOOL RoundFirstLabel ) = 0;
+    virtual HRESULT __stdcall get_Separation (
+        long * Separation ) = 0;
+    virtual HRESULT __stdcall put_Separation (
+        long Separation ) = 0;
+    virtual HRESULT __stdcall get_Size (
+        long * Size ) = 0;
+    virtual HRESULT __stdcall put_Size (
+        long Size ) = 0;
+    virtual HRESULT __stdcall get_Style (
+        enum EAxisLabelStyle * Style ) = 0;
+    virtual HRESULT __stdcall put_Style (
+        enum EAxisLabelStyle Style ) = 0;
+    virtual HRESULT __stdcall get_ValueFormat (
+        BSTR * ValueFormat ) = 0;
+    virtual HRESULT __stdcall put_ValueFormat (
+        BSTR ValueFormat ) = 0;
+    virtual HRESULT __stdcall Width (
+        double SomeValue,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall get_Multiline (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Multiline (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall TeeSplitInLines (
+        BSTR * St,
+        BSTR Separator ) = 0;
+};
+
+struct __declspec(uuid("133fe602-d1cd-11d0-84b8-006097386599"))
+IAxisTitle : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Angle (
+        long * Angle ) = 0;
+    virtual HRESULT __stdcall put_Angle (
+        long Angle ) = 0;
+    virtual HRESULT __stdcall get_Caption (
+        BSTR * Caption ) = 0;
+    virtual HRESULT __stdcall put_Caption (
+        BSTR Caption ) = 0;
+    virtual HRESULT __stdcall get_Font (
+        struct IChartFont * * Font ) = 0;
+};
+
+struct __declspec(uuid("495a9400-d2b9-11d0-9f64-9fe810e73741"))
+ILegend : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Alignment (
+        enum ELegendAlignment * Alignment ) = 0;
+    virtual HRESULT __stdcall put_Alignment (
+        enum ELegendAlignment Alignment ) = 0;
+    virtual HRESULT __stdcall get_Color (
+        OLE_COLOR * Color ) = 0;
+    virtual HRESULT __stdcall put_Color (
+        OLE_COLOR Color ) = 0;
+    virtual HRESULT __stdcall get_ColorWidth (
+        long * ColorWidth ) = 0;
+    virtual HRESULT __stdcall put_ColorWidth (
+        long ColorWidth ) = 0;
+    virtual HRESULT __stdcall get_DividingLines (
+        struct IPen * * DividingLines ) = 0;
+    virtual HRESULT __stdcall get_FirstValue (
+        long * FirstValue ) = 0;
+    virtual HRESULT __stdcall put_FirstValue (
+        long FirstValue ) = 0;
+    virtual HRESULT __stdcall get_Font (
+        struct IChartFont * * Font ) = 0;
+    virtual HRESULT __stdcall get_Frame (
+        struct IPen * * Frame ) = 0;
+    virtual HRESULT __stdcall get_HorizMargin (
+        long * HorizMargin ) = 0;
+    virtual HRESULT __stdcall put_HorizMargin (
+        long HorizMargin ) = 0;
+    virtual HRESULT __stdcall get_Inverted (
+        VARIANT_BOOL * Inverted ) = 0;
+    virtual HRESULT __stdcall put_Inverted (
+        VARIANT_BOOL Inverted ) = 0;
+    virtual HRESULT __stdcall get_LegendStyle (
+        enum ELegendStyle * LegendStyle ) = 0;
+    virtual HRESULT __stdcall put_LegendStyle (
+        enum ELegendStyle LegendStyle ) = 0;
+    virtual HRESULT __stdcall get_ResizeChart (
+        VARIANT_BOOL * ResizeChart ) = 0;
+    virtual HRESULT __stdcall put_ResizeChart (
+        VARIANT_BOOL ResizeChart ) = 0;
+    virtual HRESULT __stdcall get_ShadowColor (
+        OLE_COLOR * ShadowColor ) = 0;
+    virtual HRESULT __stdcall put_ShadowColor (
+        OLE_COLOR ShadowColor ) = 0;
+    virtual HRESULT __stdcall get_ShadowSize (
+        long * ShadowSize ) = 0;
+    virtual HRESULT __stdcall put_ShadowSize (
+        long ShadowSize ) = 0;
+    virtual HRESULT __stdcall get_TextStyle (
+        enum ELegendTextStyle * TextStyle ) = 0;
+    virtual HRESULT __stdcall put_TextStyle (
+        enum ELegendTextStyle TextStyle ) = 0;
+    virtual HRESULT __stdcall get_TopPos (
+        long * TopPos ) = 0;
+    virtual HRESULT __stdcall put_TopPos (
+        long TopPos ) = 0;
+    virtual HRESULT __stdcall get_VertMargin (
+        long * VertMargin ) = 0;
+    virtual HRESULT __stdcall put_VertMargin (
+        long VertMargin ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Visible ) = 0;
+    virtual HRESULT __stdcall put_Visible (
+        VARIANT_BOOL Visible ) = 0;
+    virtual HRESULT __stdcall Formatted (
+        long SomeSeriesOrValueIndex,
+        BSTR * SeriesOrValueIndex ) = 0;
+    virtual HRESULT __stdcall FormattedValue (
+        long ASeries,
+        long SomeValueIndex,
+        BSTR * ValueIndex ) = 0;
+    virtual HRESULT __stdcall Clicked (
+        long X,
+        long Y,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall get_MaxNumRows (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_MaxNumRows (
+        long Value ) = 0;
+    virtual HRESULT __stdcall BackImageLoad (
+        BSTR Filename ) = 0;
+    virtual HRESULT __stdcall BackImageClear ( ) = 0;
+    virtual HRESULT __stdcall get_Brush (
+        struct IBrush * * Value ) = 0;
+};
+
+struct __declspec(uuid("b6352500-45fd-11d1-ab84-00400141862d"))
+IExport : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall CopyToClipboardBitmap ( ) = 0;
+    virtual HRESULT __stdcall CopyToClipboardMetafile (
+        VARIANT_BOOL Enhanced ) = 0;
+    virtual HRESULT __stdcall SaveToBitmapFile (
+        BSTR Filename ) = 0;
+    virtual HRESULT __stdcall SaveToFile (
+        BSTR Filename ) = 0;
+    virtual HRESULT __stdcall SaveToJPEGFile (
+        BSTR Filename,
+        VARIANT_BOOL Gray,
+        enum EJPEGPerformance Performance,
+        long Quality,
+        long Width,
+        long Height ) = 0;
+    virtual HRESULT __stdcall SaveToMetafile (
+        BSTR Filename ) = 0;
+    virtual HRESULT __stdcall SaveToMetafileEnh (
+        BSTR Filename ) = 0;
+    virtual HRESULT __stdcall ShowExport ( ) = 0;
+    virtual HRESULT __stdcall SaveChartDialog (
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall ConvertTeeFileToText (
+        BSTR InputFile,
+        BSTR OutputFile ) = 0;
+};
+
+struct __declspec(uuid("b6352502-45fd-11d1-ab84-00400141862d"))
+IImport : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall LoadFromFile (
+        BSTR Filename ) = 0;
+    virtual HRESULT __stdcall LoadFromURL (
+        BSTR URL ) = 0;
+};
+
+struct __declspec(uuid("07a65c42-3da6-11d1-ab57-00400141862d"))
+IScroll : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Enable (
+        enum EChartScroll * Enable ) = 0;
+    virtual HRESULT __stdcall put_Enable (
+        enum EChartScroll Enable ) = 0;
+};
+
+struct __declspec(uuid("07a65c40-3da6-11d1-ab57-00400141862d"))
+IZoom : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Enable (
+        VARIANT_BOOL * Enable ) = 0;
+    virtual HRESULT __stdcall put_Enable (
+        VARIANT_BOOL Enable ) = 0;
+    virtual HRESULT __stdcall get_Animated (
+        VARIANT_BOOL * Animated ) = 0;
+    virtual HRESULT __stdcall put_Animated (
+        VARIANT_BOOL Animated ) = 0;
+    virtual HRESULT __stdcall get_AnimatedSteps (
+        long * AnimatedSteps ) = 0;
+    virtual HRESULT __stdcall put_AnimatedSteps (
+        long AnimatedSteps ) = 0;
+    virtual HRESULT __stdcall Undo ( ) = 0;
+    virtual HRESULT __stdcall ZoomRect (
+        long Left,
+        long Top,
+        long Right,
+        long Bottom ) = 0;
+    virtual HRESULT __stdcall get_Zoomed (
+        VARIANT_BOOL * Value ) = 0;
+};
+
+struct __declspec(uuid("f3a0ed84-3c01-11d1-ab52-00400141862d"))
+IPrinter : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Detail (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_Detail (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_MarginBottom (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_MarginBottom (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_MarginLeft (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_MarginLeft (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_MarginTop (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_MarginTop (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_MarginRight (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_MarginRight (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_Orientation (
+        enum EPrinterOrientation * Value ) = 0;
+    virtual HRESULT __stdcall put_Orientation (
+        enum EPrinterOrientation Value ) = 0;
+    virtual HRESULT __stdcall Print ( ) = 0;
+    virtual HRESULT __stdcall PrintLandscape ( ) = 0;
+    virtual HRESULT __stdcall PrintPortrait ( ) = 0;
+    virtual HRESULT __stdcall ShowPreview ( ) = 0;
+    virtual HRESULT __stdcall PrintPartial (
+        long Left,
+        long Top,
+        long Right,
+        long Bottom ) = 0;
+    virtual HRESULT __stdcall BeginDoc ( ) = 0;
+    virtual HRESULT __stdcall EndDoc ( ) = 0;
+    virtual HRESULT __stdcall get_PrinterIndex (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_PrinterIndex (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_PrinterCount (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall get_PrinterDescription (
+        long Index,
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall PrintChart ( ) = 0;
+    virtual HRESULT __stdcall get_PageHeight (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall get_PageWidth (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall get_JobTitle (
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall put_JobTitle (
+        BSTR Value ) = 0;
+    virtual HRESULT __stdcall get_PrintProportional (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_PrintProportional (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall PrintPartialHandle (
+        VARIANT DC,
+        long Left,
+        long Top,
+        long Right,
+        long Bottom ) = 0;
+};
+
+struct __declspec(uuid("4c33d2e0-d291-11d0-9f64-bcc543d9c168"))
+IWall : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Brush (
+        struct IBrush * * Brush ) = 0;
+    virtual HRESULT __stdcall get_Color (
+        OLE_COLOR * Color ) = 0;
+    virtual HRESULT __stdcall put_Color (
+        OLE_COLOR Color ) = 0;
+    virtual HRESULT __stdcall get_Pen (
+        struct IPen * * Pen ) = 0;
+    virtual HRESULT __stdcall get_Size (
+        long * Size ) = 0;
+    virtual HRESULT __stdcall put_Size (
+        long Size ) = 0;
+    virtual HRESULT __stdcall get_Transparent (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Transparent (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Dark3D (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Dark3D (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("f3a0ed82-3c01-11d1-ab52-00400141862d"))
+IWalls : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Bottom (
+        struct IWall * * Bottom ) = 0;
+    virtual HRESULT __stdcall get_Left (
+        struct IWall * * Left ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Visible ) = 0;
+    virtual HRESULT __stdcall put_Visible (
+        VARIANT_BOOL Visible ) = 0;
+    virtual HRESULT __stdcall get_BackColor (
+        OLE_COLOR * BackColor ) = 0;
+    virtual HRESULT __stdcall put_BackColor (
+        OLE_COLOR BackColor ) = 0;
+    virtual HRESULT __stdcall get_Back (
+        struct IWall * * Value ) = 0;
+};
+
+struct __declspec(uuid("2800eca0-d098-11d0-9f64-bf71ef49fef2"))
+ITitles : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_AdjustFrame (
+        VARIANT_BOOL * AdjustFrame ) = 0;
+    virtual HRESULT __stdcall put_AdjustFrame (
+        VARIANT_BOOL AdjustFrame ) = 0;
+    virtual HRESULT __stdcall get_Alignment (
+        enum ETitleAlignment * Alignment ) = 0;
+    virtual HRESULT __stdcall put_Alignment (
+        enum ETitleAlignment Alignment ) = 0;
+    virtual HRESULT __stdcall get_Brush (
+        struct IBrush * * Brush ) = 0;
+    virtual HRESULT __stdcall get_Font (
+        struct IChartFont * * Font ) = 0;
+    virtual HRESULT __stdcall get_Frame (
+        struct IPen * * Frame ) = 0;
+    virtual HRESULT __stdcall get_Text (
+        struct IStrings * * Text ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Visible ) = 0;
+    virtual HRESULT __stdcall put_Visible (
+        VARIANT_BOOL Visible ) = 0;
+    virtual HRESULT __stdcall get_Color (
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall put_Color (
+        OLE_COLOR Value ) = 0;
+};
+
+struct __declspec(uuid("7d423ba1-d053-11d0-9f64-837b7e193d48"))
+IGradient : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Direction (
+        enum EGradientDirection * Direction ) = 0;
+    virtual HRESULT __stdcall put_Direction (
+        enum EGradientDirection Direction ) = 0;
+    virtual HRESULT __stdcall get_StartColor (
+        OLE_COLOR * StartColor ) = 0;
+    virtual HRESULT __stdcall put_StartColor (
+        OLE_COLOR StartColor ) = 0;
+    virtual HRESULT __stdcall get_EndColor (
+        OLE_COLOR * EndColor ) = 0;
+    virtual HRESULT __stdcall put_EndColor (
+        OLE_COLOR EndColor ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Visible ) = 0;
+    virtual HRESULT __stdcall put_Visible (
+        VARIANT_BOOL Visible ) = 0;
+};
+
+struct __declspec(uuid("c648f0c8-b5c8-11d0-9f64-b10c6d3c1c4f"))
+IPage : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Next ( ) = 0;
+    virtual HRESULT __stdcall Previous ( ) = 0;
+    virtual HRESULT __stdcall get_MaxPointsPerPage (
+        long * MaxPointsPerPage ) = 0;
+    virtual HRESULT __stdcall put_MaxPointsPerPage (
+        long MaxPointsPerPage ) = 0;
+    virtual HRESULT __stdcall get_Current (
+        long * Current ) = 0;
+    virtual HRESULT __stdcall put_Current (
+        long Current ) = 0;
+    virtual HRESULT __stdcall get_ScaleLastPage (
+        VARIANT_BOOL * ScaleLastPage ) = 0;
+    virtual HRESULT __stdcall put_ScaleLastPage (
+        VARIANT_BOOL ScaleLastPage ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Count ) = 0;
+};
+
+struct __declspec(uuid("297dacc0-d044-11d0-9f64-c8fd4aeab040"))
+IPanel : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_BackImageInside (
+        VARIANT_BOOL * BackImageInside ) = 0;
+    virtual HRESULT __stdcall put_BackImageInside (
+        VARIANT_BOOL BackImageInside ) = 0;
+    virtual HRESULT __stdcall get_BackImageMode (
+        enum EBackImageMode * BackImageMode ) = 0;
+    virtual HRESULT __stdcall put_BackImageMode (
+        enum EBackImageMode BackImageMode ) = 0;
+    virtual HRESULT __stdcall get_BevelInner (
+        enum EPanelBevel * BevelInner ) = 0;
+    virtual HRESULT __stdcall put_BevelInner (
+        enum EPanelBevel BevelInner ) = 0;
+    virtual HRESULT __stdcall get_BevelOuter (
+        enum EPanelBevel * BevelOuter ) = 0;
+    virtual HRESULT __stdcall put_BevelOuter (
+        enum EPanelBevel BevelOuter ) = 0;
+    virtual HRESULT __stdcall get_BevelWidth (
+        long * BevelWidth ) = 0;
+    virtual HRESULT __stdcall put_BevelWidth (
+        long BevelWidth ) = 0;
+    virtual HRESULT __stdcall get_BevelOffset (
+        long * BevelOffset ) = 0;
+    virtual HRESULT __stdcall put_BevelOffset (
+        long BevelOffset ) = 0;
+    virtual HRESULT __stdcall get_BorderStyle (
+        enum EBorderStyle * BorderStyle ) = 0;
+    virtual HRESULT __stdcall put_BorderStyle (
+        enum EBorderStyle BorderStyle ) = 0;
+    virtual HRESULT __stdcall get_Color (
+        OLE_COLOR * Color ) = 0;
+    virtual HRESULT __stdcall put_Color (
+        OLE_COLOR Color ) = 0;
+    virtual HRESULT __stdcall get_Gradient (
+        struct IGradient * * Gradient ) = 0;
+    virtual HRESULT __stdcall get_MarginLeft (
+        long * MarginLeft ) = 0;
+    virtual HRESULT __stdcall put_MarginLeft (
+        long MarginLeft ) = 0;
+    virtual HRESULT __stdcall get_MarginTop (
+        long * MarginTop ) = 0;
+    virtual HRESULT __stdcall put_MarginTop (
+        long MarginTop ) = 0;
+    virtual HRESULT __stdcall get_MarginRight (
+        long * MarginRight ) = 0;
+    virtual HRESULT __stdcall put_MarginRight (
+        long MarginRight ) = 0;
+    virtual HRESULT __stdcall get_MarginBottom (
+        long * MarginBottom ) = 0;
+    virtual HRESULT __stdcall put_MarginBottom (
+        long MarginBottom ) = 0;
+    virtual HRESULT __stdcall BackImageClear ( ) = 0;
+    virtual HRESULT __stdcall BackImageLoad (
+        BSTR Filename ) = 0;
+};
+
+struct __declspec(uuid("6f617f0e-cfa9-11d0-beed-00aa00c9a74f"))
+ISeries : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Active (
+        VARIANT_BOOL * Active ) = 0;
+    virtual HRESULT __stdcall put_Active (
+        VARIANT_BOOL Active ) = 0;
+    virtual HRESULT __stdcall get_asArea (
+        struct IAreaSeries * * asArea ) = 0;
+    virtual HRESULT __stdcall get_asArrow (
+        struct IArrowSeries * * asArrow ) = 0;
+    virtual HRESULT __stdcall get_asBar (
+        struct IBarSeries * * asBar ) = 0;
+    virtual HRESULT __stdcall get_asBubble (
+        struct IBubbleSeries * * asBubble ) = 0;
+    virtual HRESULT __stdcall get_asCandle (
+        struct ICandleSeries * * asCandle ) = 0;
+    virtual HRESULT __stdcall get_asErrorBar (
+        struct IErrorBarSeries * * asErrorBar ) = 0;
+    virtual HRESULT __stdcall get_asFastLine (
+        struct IFastLineSeries * * asFastLine ) = 0;
+    virtual HRESULT __stdcall get_asGantt (
+        struct IGanttSeries * * asGantt ) = 0;
+    virtual HRESULT __stdcall get_asHorizBar (
+        struct IHorizBarSeries * * asHorizBar ) = 0;
+    virtual HRESULT __stdcall get_asLine (
+        struct ICustomSeries * * asLine ) = 0;
+    virtual HRESULT __stdcall get_asPie (
+        struct IPieSeries * * asPie ) = 0;
+    virtual HRESULT __stdcall get_asPoint (
+        struct IPointSeries * * asPoint ) = 0;
+    virtual HRESULT __stdcall get_asPolar (
+        struct IPolarSeries * * asPolar ) = 0;
+    virtual HRESULT __stdcall get_asShape (
+        struct IShapeSeries * * asShape ) = 0;
+    virtual HRESULT __stdcall get_asSurface (
+        struct ISurfaceSeries * * asSurface ) = 0;
+    virtual HRESULT __stdcall get_asVolume (
+        struct IVolumeSeries * * asVolume ) = 0;
+    virtual HRESULT __stdcall get_Color (
+        OLE_COLOR * Color ) = 0;
+    virtual HRESULT __stdcall put_Color (
+        OLE_COLOR Color ) = 0;
+    virtual HRESULT __stdcall get_ColorEachPoint (
+        VARIANT_BOOL * ColorEachPoint ) = 0;
+    virtual HRESULT __stdcall put_ColorEachPoint (
+        VARIANT_BOOL ColorEachPoint ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Count ) = 0;
+    virtual HRESULT __stdcall get_Cursor (
+        short * Cursor ) = 0;
+    virtual HRESULT __stdcall put_Cursor (
+        short Cursor ) = 0;
+    virtual HRESULT __stdcall get_DataSource (
+        BSTR * DataSource ) = 0;
+    virtual HRESULT __stdcall put_DataSource (
+        BSTR DataSource ) = 0;
+    virtual HRESULT __stdcall get_FirstValueIndex (
+        long * FirstValueIndex ) = 0;
+    virtual HRESULT __stdcall get_FunctionType (
+        struct ITeeFunction * * FunctionType ) = 0;
+    virtual HRESULT __stdcall get_HorizontalAxis (
+        enum EHorizontalAxis * HorizontalAxis ) = 0;
+    virtual HRESULT __stdcall put_HorizontalAxis (
+        enum EHorizontalAxis HorizontalAxis ) = 0;
+    virtual HRESULT __stdcall get_LabelsSource (
+        BSTR * LabelsSource ) = 0;
+    virtual HRESULT __stdcall put_LabelsSource (
+        BSTR LabelsSource ) = 0;
+    virtual HRESULT __stdcall get_LastValueIndex (
+        long * LastValueIndex ) = 0;
+    virtual HRESULT __stdcall get_Marks (
+        struct IMarks * * Marks ) = 0;
+    virtual HRESULT __stdcall get_Name (
+        BSTR * Name ) = 0;
+    virtual HRESULT __stdcall put_Name (
+        BSTR Name ) = 0;
+    virtual HRESULT __stdcall get_PercentFormat (
+        BSTR * PercentFormat ) = 0;
+    virtual HRESULT __stdcall put_PercentFormat (
+        BSTR PercentFormat ) = 0;
+    virtual HRESULT __stdcall get_PointColor (
+        long Index,
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall put_PointColor (
+        long Index,
+        OLE_COLOR Value ) = 0;
+    virtual HRESULT __stdcall get_PointLabel (
+        long Index,
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall put_PointLabel (
+        long Index,
+        BSTR Value ) = 0;
+    virtual HRESULT __stdcall get_PointValue (
+        long Index,
+        double * Value ) = 0;
+    virtual HRESULT __stdcall put_PointValue (
+        long Index,
+        double Value ) = 0;
+    virtual HRESULT __stdcall get_SeriesType (
+        enum ESeriesClass * SeriesType ) = 0;
+    virtual HRESULT __stdcall get_ShowInLegend (
+        VARIANT_BOOL * ShowInLegend ) = 0;
+    virtual HRESULT __stdcall put_ShowInLegend (
+        VARIANT_BOOL ShowInLegend ) = 0;
+    virtual HRESULT __stdcall get_Title (
+        BSTR * Title ) = 0;
+    virtual HRESULT __stdcall put_Title (
+        BSTR Title ) = 0;
+    virtual HRESULT __stdcall get_ValueFormat (
+        BSTR * ValueFormat ) = 0;
+    virtual HRESULT __stdcall put_ValueFormat (
+        BSTR ValueFormat ) = 0;
+    virtual HRESULT __stdcall get_ValueMarkText (
+        long ValueIndex,
+        BSTR * Index ) = 0;
+    virtual HRESULT __stdcall get_VerticalAxis (
+        enum EVerticalAxis * VerticalAxis ) = 0;
+    virtual HRESULT __stdcall put_VerticalAxis (
+        enum EVerticalAxis VerticalAxis ) = 0;
+    virtual HRESULT __stdcall get_XValues (
+        struct IValueList * * XValues ) = 0;
+    virtual HRESULT __stdcall get_YValues (
+        struct IValueList * * YValues ) = 0;
+    virtual HRESULT __stdcall get_ZOrder (
+        long * ZOrder ) = 0;
+    virtual HRESULT __stdcall Add (
+        double AValue,
+        BSTR ALabel,
+        OLE_COLOR Value,
+        long * AColor ) = 0;
+    virtual HRESULT __stdcall AddNull (
+        BSTR SomeLabel,
+        long * ALabel ) = 0;
+    virtual HRESULT __stdcall AddXY (
+        double AX,
+        double AY,
+        BSTR ALabel,
+        OLE_COLOR Value,
+        long * AColor ) = 0;
+    virtual HRESULT __stdcall CalcXPos (
+        long SomeValueIndex,
+        long * ValueIndex ) = 0;
+    virtual HRESULT __stdcall CalcXPosValue (
+        double SomeValue,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall CalcXSizeValue (
+        double SomeValue,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall CalcYPos (
+        long SomeValueIndex,
+        long * ValueIndex ) = 0;
+    virtual HRESULT __stdcall CalcYPosValue (
+        double SomeValue,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall CalcYSizeValue (
+        double SomeValue,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall CheckDataSource ( ) = 0;
+    virtual HRESULT __stdcall Clear ( ) = 0;
+    virtual HRESULT __stdcall Clicked (
+        long XCoord,
+        long YCoord,
+        long * Y ) = 0;
+    virtual HRESULT __stdcall Delete (
+        long Index ) = 0;
+    virtual HRESULT __stdcall FillSampleValues (
+        long NumValues ) = 0;
+    virtual HRESULT __stdcall GetMousePoint (
+        long * GetMousePoint ) = 0;
+    virtual HRESULT __stdcall IsNull (
+        long ValueIndex,
+        VARIANT_BOOL * Index ) = 0;
+    virtual HRESULT __stdcall RefreshSeries ( ) = 0;
+    virtual HRESULT __stdcall SetFunction (
+        enum EFunctionType AFunction ) = 0;
+    virtual HRESULT __stdcall SwapValues (
+        long a,
+        long b ) = 0;
+    virtual HRESULT __stdcall XScreenToValue (
+        long ScreenCoord,
+        double * ScreenPos ) = 0;
+    virtual HRESULT __stdcall XValueToText (
+        double SomeValue,
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall YScreenToValue (
+        long ScreenCoord,
+        double * ScreenPos ) = 0;
+    virtual HRESULT __stdcall YValueToText (
+        double SomeValue,
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall get_asBezier (
+        struct IBezierSeries * * Value ) = 0;
+    virtual HRESULT __stdcall get_asContour (
+        struct IContourSeries * * Value ) = 0;
+    virtual HRESULT __stdcall get_asError (
+        struct IErrorSeries * * Value ) = 0;
+    virtual HRESULT __stdcall get_asPoint3D (
+        struct IPoint3DSeries * * Value ) = 0;
+    virtual HRESULT __stdcall get_asRadar (
+        struct IRadarSeries * * Value ) = 0;
+    virtual HRESULT __stdcall AddNullXY (
+        long X,
+        long Y,
+        BSTR ALabel,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall LegendString (
+        long LegendIndex,
+        enum ELegendTextStyle LegendTextStyle,
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall LegendItemColor (
+        long LegendIndex,
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall CountLegendItems (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall LegendToValueIndex (
+        long LegendIndex,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall VisibleCount (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall AssignValues (
+        long SeriesIndex ) = 0;
+    virtual HRESULT __stdcall get_HorizontalAxisCustom (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_HorizontalAxisCustom (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_VerticalAxisCustom (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_VerticalAxisCustom (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_asClock (
+        struct IClockSeries * * Value ) = 0;
+    virtual HRESULT __stdcall get_asWindRose (
+        struct IWindRoseSeries * * Value ) = 0;
+    virtual HRESULT __stdcall get_asBar3D (
+        struct IBar3DSeries * * Value ) = 0;
+    virtual HRESULT __stdcall get_asImageBar (
+        struct IImageBarSeries * * Value ) = 0;
+    virtual HRESULT __stdcall DisconnectAxisCustom (
+        VARIANT_BOOL IsHorizontal ) = 0;
+    virtual HRESULT __stdcall get_MouseValues (
+        struct ITeePoint2D * * Value ) = 0;
+};
+
+struct __declspec(uuid("6f617f44-cfa9-11d0-beed-00aa00c9a74f"))
+ITeeFunction : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Period (
+        double * Period ) = 0;
+    virtual HRESULT __stdcall put_Period (
+        double Period ) = 0;
+    virtual HRESULT __stdcall get_asCurveFit (
+        struct ICurveFittingFunction * * asCurveFit ) = 0;
+    virtual HRESULT __stdcall get_asExpAvg (
+        struct IExpAvgFunction * * asExpAvg ) = 0;
+    virtual HRESULT __stdcall get_asMovAvg (
+        struct IMovingAvgFunction * * asMovAvg ) = 0;
+    virtual HRESULT __stdcall get_PeriodStyle (
+        enum EFunctionPeriodStyle * Value ) = 0;
+    virtual HRESULT __stdcall put_PeriodStyle (
+        enum EFunctionPeriodStyle Value ) = 0;
+    virtual HRESULT __stdcall get_PeriodAlign (
+        enum EFunctionPeriodAlign * Value ) = 0;
+    virtual HRESULT __stdcall put_PeriodAlign (
+        enum EFunctionPeriodAlign Value ) = 0;
+    virtual HRESULT __stdcall get_asStdDeviation (
+        struct IStdDeviationFunction * * Value ) = 0;
+    virtual HRESULT __stdcall BeginUpdate ( ) = 0;
+    virtual HRESULT __stdcall EndUpdate ( ) = 0;
+};
+
+struct __declspec(uuid("6f617f18-cfa9-11d0-beed-00aa00c9a74f"))
+IMarks : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Arrow (
+        struct IPen * * Arrow ) = 0;
+    virtual HRESULT __stdcall get_ArrowLength (
+        long * ArrowLength ) = 0;
+    virtual HRESULT __stdcall put_ArrowLength (
+        long ArrowLength ) = 0;
+    virtual HRESULT __stdcall get_BackColor (
+        OLE_COLOR * BackColor ) = 0;
+    virtual HRESULT __stdcall put_BackColor (
+        OLE_COLOR BackColor ) = 0;
+    virtual HRESULT __stdcall get_Clip (
+        VARIANT_BOOL * Clip ) = 0;
+    virtual HRESULT __stdcall put_Clip (
+        VARIANT_BOOL Clip ) = 0;
+    virtual HRESULT __stdcall get_Font (
+        struct IChartFont * * Font ) = 0;
+    virtual HRESULT __stdcall get_Frame (
+        struct IPen * * Frame ) = 0;
+    virtual HRESULT __stdcall get_Style (
+        enum EMarkStyle * Style ) = 0;
+    virtual HRESULT __stdcall put_Style (
+        enum EMarkStyle Style ) = 0;
+    virtual HRESULT __stdcall get_Transparent (
+        VARIANT_BOOL * Transparent ) = 0;
+    virtual HRESULT __stdcall put_Transparent (
+        VARIANT_BOOL Transparent ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Visible ) = 0;
+    virtual HRESULT __stdcall put_Visible (
+        VARIANT_BOOL Visible ) = 0;
+    virtual HRESULT __stdcall get_Positions (
+        struct ISeriesMarksPositions * * Value ) = 0;
+    virtual HRESULT __stdcall Clicked (
+        long X,
+        long Y,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall get_ZPosition (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_ZPosition (
+        long Value ) = 0;
+};
+
+struct __declspec(uuid("6f617f43-cfa9-11d0-beed-00aa00c9a74f"))
+IValueList : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Count (
+        long * Count ) = 0;
+    virtual HRESULT __stdcall get_DateTime (
+        VARIANT_BOOL * DateTime ) = 0;
+    virtual HRESULT __stdcall put_DateTime (
+        VARIANT_BOOL DateTime ) = 0;
+    virtual HRESULT __stdcall get_First (
+        double * First ) = 0;
+    virtual HRESULT __stdcall get_Last (
+        double * Last ) = 0;
+    virtual HRESULT __stdcall get_Maximum (
+        double * Maximum ) = 0;
+    virtual HRESULT __stdcall get_Minimum (
+        double * Minimum ) = 0;
+    virtual HRESULT __stdcall get_Order (
+        enum EValueListOrder * Order ) = 0;
+    virtual HRESULT __stdcall put_Order (
+        enum EValueListOrder Order ) = 0;
+    virtual HRESULT __stdcall get_Total (
+        double * Total ) = 0;
+    virtual HRESULT __stdcall get_TotalABS (
+        double * TotalABS ) = 0;
+    virtual HRESULT __stdcall get_Value (
+        long Index,
+        double * Value ) = 0;
+    virtual HRESULT __stdcall put_Value (
+        long Index,
+        double Value ) = 0;
+    virtual HRESULT __stdcall get_ValueSource (
+        BSTR * ValueSource ) = 0;
+    virtual HRESULT __stdcall put_ValueSource (
+        BSTR ValueSource ) = 0;
+    virtual HRESULT __stdcall Delete (
+        long Index ) = 0;
+    virtual HRESULT __stdcall FillSequence ( ) = 0;
+    virtual HRESULT __stdcall Locate (
+        double SomeValue,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall Sort ( ) = 0;
+};
+
+struct __declspec(uuid("6f617f39-cfa9-11d0-beed-00aa00c9a74f"))
+IPointer : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Brush (
+        struct IBrush * * Brush ) = 0;
+    virtual HRESULT __stdcall get_Draw3D (
+        VARIANT_BOOL * Draw3D ) = 0;
+    virtual HRESULT __stdcall put_Draw3D (
+        VARIANT_BOOL Draw3D ) = 0;
+    virtual HRESULT __stdcall get_HorizontalSize (
+        long * HorizontalSize ) = 0;
+    virtual HRESULT __stdcall put_HorizontalSize (
+        long HorizontalSize ) = 0;
+    virtual HRESULT __stdcall get_VerticalSize (
+        long * VerticalSize ) = 0;
+    virtual HRESULT __stdcall put_VerticalSize (
+        long VerticalSize ) = 0;
+    virtual HRESULT __stdcall get_InflateMargins (
+        VARIANT_BOOL * InflateMargins ) = 0;
+    virtual HRESULT __stdcall put_InflateMargins (
+        VARIANT_BOOL InflateMargins ) = 0;
+    virtual HRESULT __stdcall get_Pen (
+        struct IPen * * Pen ) = 0;
+    virtual HRESULT __stdcall get_Style (
+        enum EPointerStyle * Style ) = 0;
+    virtual HRESULT __stdcall put_Style (
+        enum EPointerStyle Style ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Visible ) = 0;
+    virtual HRESULT __stdcall put_Visible (
+        VARIANT_BOOL Visible ) = 0;
+    virtual HRESULT __stdcall get_Dark3D (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Dark3D (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("6f617f0f-cfa9-11d0-beed-00aa00c9a74f"))
+ICustomSeries : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Pointer (
+        struct IPointer * * Pointer ) = 0;
+    virtual HRESULT __stdcall get_Stairs (
+        VARIANT_BOOL * Stairs ) = 0;
+    virtual HRESULT __stdcall put_Stairs (
+        VARIANT_BOOL Stairs ) = 0;
+    virtual HRESULT __stdcall get_InvertedStairs (
+        VARIANT_BOOL * InvertedStairs ) = 0;
+    virtual HRESULT __stdcall put_InvertedStairs (
+        VARIANT_BOOL InvertedStairs ) = 0;
+    virtual HRESULT __stdcall get_LinePen (
+        struct IPen * * LinePen ) = 0;
+    virtual HRESULT __stdcall get_LineBrush (
+        enum EBrushStyle * LineBrush ) = 0;
+    virtual HRESULT __stdcall put_LineBrush (
+        enum EBrushStyle LineBrush ) = 0;
+    virtual HRESULT __stdcall get_ClickableLine (
+        VARIANT_BOOL * ClickableLine ) = 0;
+    virtual HRESULT __stdcall put_ClickableLine (
+        VARIANT_BOOL ClickableLine ) = 0;
+    virtual HRESULT __stdcall get_LineHeight (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_LineHeight (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_Dark3D (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Dark3D (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("6f617f11-cfa9-11d0-beed-00aa00c9a74f"))
+IAreaSeries : ICustomSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_AreaBrush (
+        enum EBrushStyle * AreaBrush ) = 0;
+    virtual HRESULT __stdcall put_AreaBrush (
+        enum EBrushStyle AreaBrush ) = 0;
+    virtual HRESULT __stdcall get_AreaPen (
+        struct IPen * * AreaPen ) = 0;
+    virtual HRESULT __stdcall get_MultiArea (
+        enum EMultiArea * MultiArea ) = 0;
+    virtual HRESULT __stdcall put_MultiArea (
+        enum EMultiArea MultiArea ) = 0;
+    virtual HRESULT __stdcall GetOriginPos (
+        long AValueIndex,
+        long * ValueIndex ) = 0;
+};
+
+struct __declspec(uuid("6f617f12-cfa9-11d0-beed-00aa00c9a74f"))
+IPointSeries : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Pointer (
+        struct IPointer * * Pointer ) = 0;
+    virtual HRESULT __stdcall get_Dark3D (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Dark3D (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("6f617f10-cfa9-11d0-beed-00aa00c9a74f"))
+ILineSeries : ICustomSeries
+{};
+
+struct __declspec(uuid("6f617f41-cfa9-11d0-beed-00aa00c9a74f"))
+IFastLineSeries : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_LinePen (
+        struct IPen * * LinePen ) = 0;
+    virtual HRESULT __stdcall AddRealTime (
+        double X,
+        double Y,
+        BSTR SomeLabel,
+        OLE_COLOR SomeColor,
+        long * AColor ) = 0;
+};
+
+struct __declspec(uuid("6f617f3f-cfa9-11d0-beed-00aa00c9a74f"))
+ICircledSeries : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_XRadius (
+        long * XRadius ) = 0;
+    virtual HRESULT __stdcall put_XRadius (
+        long XRadius ) = 0;
+    virtual HRESULT __stdcall get_YRadius (
+        long * YRadius ) = 0;
+    virtual HRESULT __stdcall put_YRadius (
+        long YRadius ) = 0;
+    virtual HRESULT __stdcall get_XCenter (
+        long * XCenter ) = 0;
+    virtual HRESULT __stdcall get_YCenter (
+        long * YCenter ) = 0;
+    virtual HRESULT __stdcall get_CircleWidth (
+        long * CircleWidth ) = 0;
+    virtual HRESULT __stdcall get_CircleHeight (
+        long * CircleHeight ) = 0;
+    virtual HRESULT __stdcall get_CircleBackColor (
+        OLE_COLOR * CircleBackColor ) = 0;
+    virtual HRESULT __stdcall put_CircleBackColor (
+        OLE_COLOR CircleBackColor ) = 0;
+    virtual HRESULT __stdcall get_Circled (
+        VARIANT_BOOL * Circled ) = 0;
+    virtual HRESULT __stdcall put_Circled (
+        VARIANT_BOOL Circled ) = 0;
+    virtual HRESULT __stdcall get_RotationAngle (
+        long * RotationAngle ) = 0;
+    virtual HRESULT __stdcall put_RotationAngle (
+        long RotationAngle ) = 0;
+    virtual HRESULT __stdcall AngleToPoint (
+        double Angle,
+        double AXRadius,
+        double AYRadius,
+        long * X,
+        long * Y ) = 0;
+    virtual HRESULT __stdcall PointToAngle (
+        long XCoord,
+        long YCoord,
+        double * Y ) = 0;
+};
+
+struct __declspec(uuid("6f617f40-cfa9-11d0-beed-00aa00c9a74f"))
+IPieSeries : ICircledSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_UsePatterns (
+        VARIANT_BOOL * UsePatterns ) = 0;
+    virtual HRESULT __stdcall put_UsePatterns (
+        VARIANT_BOOL UsePatterns ) = 0;
+    virtual HRESULT __stdcall get_PieValues (
+        struct IValueList * * PieValues ) = 0;
+    virtual HRESULT __stdcall get_Dark3D (
+        VARIANT_BOOL * Dark3D ) = 0;
+    virtual HRESULT __stdcall put_Dark3D (
+        VARIANT_BOOL Dark3D ) = 0;
+    virtual HRESULT __stdcall get_ExplodeBiggest (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_ExplodeBiggest (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_OtherSlice (
+        struct IPieOtherSlice * * Value ) = 0;
+    virtual HRESULT __stdcall get_ExplodedSlice (
+        struct IExplodedSlices * * Value ) = 0;
+    virtual HRESULT __stdcall get_PiePen (
+        struct IPen * * Value ) = 0;
+};
+
+struct __declspec(uuid("00561f61-efa9-11d0-9f64-de033fb8e6c0"))
+IBubbleSeries : IPointSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_RadiusValues (
+        struct IValueList * * RadiusValues ) = 0;
+    virtual HRESULT __stdcall get_Squared (
+        VARIANT_BOOL * Squared ) = 0;
+    virtual HRESULT __stdcall put_Squared (
+        VARIANT_BOOL Squared ) = 0;
+    virtual HRESULT __stdcall AddBubble (
+        double AX,
+        double AY,
+        double ARadius,
+        BSTR AXLabel,
+        OLE_COLOR Value,
+        long * AColor ) = 0;
+};
+
+struct __declspec(uuid("00561f60-efa9-11d0-9f64-de033fb8e6c0"))
+IGanttSeries : IPointSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ConnectingPen (
+        struct IPen * * ConnectingPen ) = 0;
+    virtual HRESULT __stdcall get_EndValues (
+        struct IValueList * * EndValues ) = 0;
+    virtual HRESULT __stdcall get_StartValues (
+        struct IValueList * * StartValues ) = 0;
+    virtual HRESULT __stdcall get_NextTask (
+        struct IValueList * * NextTask ) = 0;
+    virtual HRESULT __stdcall AddGantt (
+        double AStart,
+        double AEnd,
+        double AY,
+        BSTR SomeLabel,
+        long * AXLabel ) = 0;
+    virtual HRESULT __stdcall AddGanttColor (
+        double AStart,
+        double AEnd,
+        double AY,
+        BSTR AXLabel,
+        OLE_COLOR Value,
+        long * AColor ) = 0;
+};
+
+struct __declspec(uuid("66833f80-ef3f-11d0-9f64-a6119fa8432f"))
+IShapeSeries : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Alignment (
+        enum ETextAlignment * Alignment ) = 0;
+    virtual HRESULT __stdcall put_Alignment (
+        enum ETextAlignment Alignment ) = 0;
+    virtual HRESULT __stdcall get_Brush (
+        struct IBrush * * Brush ) = 0;
+    virtual HRESULT __stdcall get_Font (
+        struct IChartFont * * Font ) = 0;
+    virtual HRESULT __stdcall get_Pen (
+        struct IPen * * Pen ) = 0;
+    virtual HRESULT __stdcall get_RoundRectangle (
+        VARIANT_BOOL * RoundRectangle ) = 0;
+    virtual HRESULT __stdcall put_RoundRectangle (
+        VARIANT_BOOL RoundRectangle ) = 0;
+    virtual HRESULT __stdcall get_Style (
+        enum EShapeStyle * Style ) = 0;
+    virtual HRESULT __stdcall put_Style (
+        enum EShapeStyle Style ) = 0;
+    virtual HRESULT __stdcall get_Text (
+        struct IStrings * * Text ) = 0;
+    virtual HRESULT __stdcall put_Text (
+        struct IStrings * Text ) = 0;
+    virtual HRESULT __stdcall get_Transparent (
+        VARIANT_BOOL * Transparent ) = 0;
+    virtual HRESULT __stdcall put_Transparent (
+        VARIANT_BOOL Transparent ) = 0;
+    virtual HRESULT __stdcall get_X0 (
+        double * X0 ) = 0;
+    virtual HRESULT __stdcall put_X0 (
+        double X0 ) = 0;
+    virtual HRESULT __stdcall get_X1 (
+        double * X1 ) = 0;
+    virtual HRESULT __stdcall put_X1 (
+        double X1 ) = 0;
+    virtual HRESULT __stdcall get_XYStyle (
+        enum EShapeXYStyle * XYStyle ) = 0;
+    virtual HRESULT __stdcall put_XYStyle (
+        enum EShapeXYStyle XYStyle ) = 0;
+    virtual HRESULT __stdcall get_Y0 (
+        double * Y0 ) = 0;
+    virtual HRESULT __stdcall put_Y0 (
+        double Y0 ) = 0;
+    virtual HRESULT __stdcall get_Y1 (
+        double * Y1 ) = 0;
+    virtual HRESULT __stdcall put_Y1 (
+        double Y1 ) = 0;
+    virtual HRESULT __stdcall ShapeImageLoad (
+        BSTR Filename ) = 0;
+    virtual HRESULT __stdcall ShapeImageClear ( ) = 0;
+};
+
+struct __declspec(uuid("00561f62-efa9-11d0-9f64-de033fb8e6c0"))
+IArrowSeries : IPointSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ArrowHeight (
+        long * ArrowHeight ) = 0;
+    virtual HRESULT __stdcall put_ArrowHeight (
+        long ArrowHeight ) = 0;
+    virtual HRESULT __stdcall get_ArrowWidth (
+        long * ArrowWidth ) = 0;
+    virtual HRESULT __stdcall put_ArrowWidth (
+        long ArrowWidth ) = 0;
+    virtual HRESULT __stdcall get_EndXValues (
+        struct IValueList * * EndXValues ) = 0;
+    virtual HRESULT __stdcall get_EndYValues (
+        struct IValueList * * EndYValues ) = 0;
+    virtual HRESULT __stdcall get_StartXValues (
+        struct IValueList * * StartXValues ) = 0;
+    virtual HRESULT __stdcall get_StartYValues (
+        struct IValueList * * StartYValues ) = 0;
+    virtual HRESULT __stdcall AddArrow (
+        double X0,
+        double Y0,
+        double X1,
+        double Y1,
+        BSTR ALabel,
+        OLE_COLOR Value,
+        long * AColor ) = 0;
+};
+
+struct __declspec(uuid("6f617f13-cfa9-11d0-beed-00aa00c9a74f"))
+ICustomBarSeries : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_MultiBar (
+        enum EMultiBar * MultiBar ) = 0;
+    virtual HRESULT __stdcall put_MultiBar (
+        enum EMultiBar MultiBar ) = 0;
+    virtual HRESULT __stdcall get_AutoMarkPosition (
+        VARIANT_BOOL * AutoMarkPosition ) = 0;
+    virtual HRESULT __stdcall put_AutoMarkPosition (
+        VARIANT_BOOL AutoMarkPosition ) = 0;
+    virtual HRESULT __stdcall get_BarBrush (
+        struct IBrush * * BarBrush ) = 0;
+    virtual HRESULT __stdcall get_BarPen (
+        struct IPen * * BarPen ) = 0;
+    virtual HRESULT __stdcall get_BarStyle (
+        enum EBarStyle * BarStyle ) = 0;
+    virtual HRESULT __stdcall put_BarStyle (
+        enum EBarStyle BarStyle ) = 0;
+    virtual HRESULT __stdcall get_BarWidthPercent (
+        long * BarWidthPercent ) = 0;
+    virtual HRESULT __stdcall put_BarWidthPercent (
+        long BarWidthPercent ) = 0;
+    virtual HRESULT __stdcall get_Dark3D (
+        VARIANT_BOOL * Dark3D ) = 0;
+    virtual HRESULT __stdcall put_Dark3D (
+        VARIANT_BOOL Dark3D ) = 0;
+    virtual HRESULT __stdcall get_OffsetPercent (
+        long * OffsetPercent ) = 0;
+    virtual HRESULT __stdcall put_OffsetPercent (
+        long OffsetPercent ) = 0;
+    virtual HRESULT __stdcall get_SideMargins (
+        VARIANT_BOOL * SideMargins ) = 0;
+    virtual HRESULT __stdcall put_SideMargins (
+        VARIANT_BOOL SideMargins ) = 0;
+    virtual HRESULT __stdcall get_UseOrigin (
+        VARIANT_BOOL * UseOrigin ) = 0;
+    virtual HRESULT __stdcall put_UseOrigin (
+        VARIANT_BOOL UseOrigin ) = 0;
+    virtual HRESULT __stdcall get_Origin (
+        double * Origin ) = 0;
+    virtual HRESULT __stdcall put_Origin (
+        double Origin ) = 0;
+    virtual HRESULT __stdcall GetOriginPos (
+        long SomeValueIndex,
+        long * ValueIndex ) = 0;
+    virtual HRESULT __stdcall get_AutoBarSize (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_AutoBarSize (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall BarImageLoad (
+        BSTR Filename ) = 0;
+    virtual HRESULT __stdcall BarImageClear ( ) = 0;
+};
+
+struct __declspec(uuid("6f617f14-cfa9-11d0-beed-00aa00c9a74f"))
+IBarSeries : ICustomBarSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_BarWidth (
+        long * BarWidth ) = 0;
+    virtual HRESULT __stdcall put_BarWidth (
+        long BarWidth ) = 0;
+};
+
+struct __declspec(uuid("6f617f15-cfa9-11d0-beed-00aa00c9a74f"))
+IHorizBarSeries : ICustomBarSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_BarHeight (
+        long * BarHeight ) = 0;
+    virtual HRESULT __stdcall put_BarHeight (
+        long BarHeight ) = 0;
+};
+
+struct __declspec(uuid("d151bd23-0900-11d1-abc8-006097385ff5"))
+ICandleSeries : IPointSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_CandleStyle (
+        enum ECandleStyle * CandleStyle ) = 0;
+    virtual HRESULT __stdcall put_CandleStyle (
+        enum ECandleStyle CandleStyle ) = 0;
+    virtual HRESULT __stdcall get_CandleWidth (
+        long * CandleWidth ) = 0;
+    virtual HRESULT __stdcall put_CandleWidth (
+        long CandleWidth ) = 0;
+    virtual HRESULT __stdcall get_CloseValues (
+        struct IValueList * * CloseValues ) = 0;
+    virtual HRESULT __stdcall get_DateValues (
+        struct IValueList * * DateValues ) = 0;
+    virtual HRESULT __stdcall get_DownCloseColor (
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall put_DownCloseColor (
+        OLE_COLOR Value ) = 0;
+    virtual HRESULT __stdcall get_HighValues (
+        struct IValueList * * HighValues ) = 0;
+    virtual HRESULT __stdcall get_LowValues (
+        struct IValueList * * LowValues ) = 0;
+    virtual HRESULT __stdcall get_OpenValues (
+        struct IValueList * * OpenValues ) = 0;
+    virtual HRESULT __stdcall get_ShowCloseTick (
+        VARIANT_BOOL * ShowCloseTick ) = 0;
+    virtual HRESULT __stdcall put_ShowCloseTick (
+        VARIANT_BOOL ShowCloseTick ) = 0;
+    virtual HRESULT __stdcall get_ShowOpenTick (
+        VARIANT_BOOL * ShowOpenTick ) = 0;
+    virtual HRESULT __stdcall put_ShowOpenTick (
+        VARIANT_BOOL ShowOpenTick ) = 0;
+    virtual HRESULT __stdcall get_UpCloseColor (
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall put_UpCloseColor (
+        OLE_COLOR Value ) = 0;
+    virtual HRESULT __stdcall AddCandle (
+        double DateValue,
+        double OpenValue,
+        double HighValue,
+        double LowValue,
+        double CloseValue,
+        long * AClose ) = 0;
+};
+
+struct __declspec(uuid("e472e511-4ba2-11d2-aecf-00400141862d"))
+ICustomPolarSeries : ICircledSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_AngleIncrement (
+        double * AngleIncrement ) = 0;
+    virtual HRESULT __stdcall put_AngleIncrement (
+        double AngleIncrement ) = 0;
+    virtual HRESULT __stdcall get_CloseCircle (
+        VARIANT_BOOL * CloseCircle ) = 0;
+    virtual HRESULT __stdcall put_CloseCircle (
+        VARIANT_BOOL CloseCircle ) = 0;
+    virtual HRESULT __stdcall get_Pen (
+        struct IPen * * Pen ) = 0;
+    virtual HRESULT __stdcall get_Pointer (
+        struct IPointer * * Pointer ) = 0;
+    virtual HRESULT __stdcall get_RadiusIncrement (
+        double * RadiusIncrement ) = 0;
+    virtual HRESULT __stdcall put_RadiusIncrement (
+        double RadiusIncrement ) = 0;
+    virtual HRESULT __stdcall get_AngleValues (
+        struct IValueList * * AngleValues ) = 0;
+    virtual HRESULT __stdcall get_RadiusValues (
+        struct IValueList * * RadiusValues ) = 0;
+    virtual HRESULT __stdcall DrawRing (
+        double Value,
+        long Z ) = 0;
+    virtual HRESULT __stdcall get_CirclePen (
+        struct IPen * * CirclePen ) = 0;
+    virtual HRESULT __stdcall get_CircleLabels (
+        struct ICircleLabels * * Value ) = 0;
+    virtual HRESULT __stdcall get_Brush (
+        struct IBrush * * Value ) = 0;
+    virtual HRESULT __stdcall LoadBackImage (
+        BSTR Filename ) = 0;
+    virtual HRESULT __stdcall ClearBackImage ( ) = 0;
+};
+
+struct __declspec(uuid("dfbf939d-46fd-11d2-aec3-00400141862d"))
+ICustom3DSeries : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall AddXYZ (
+        long AX,
+        double AY,
+        long AZ,
+        BSTR AXLabel,
+        OLE_COLOR Value,
+        long * AColor ) = 0;
+    virtual HRESULT __stdcall MaxZValue ( ) = 0;
+    virtual HRESULT __stdcall MinZValue ( ) = 0;
+    virtual HRESULT __stdcall get_TimesZOrder (
+        long * TimesZOrder ) = 0;
+    virtual HRESULT __stdcall put_TimesZOrder (
+        long TimesZOrder ) = 0;
+    virtual HRESULT __stdcall get_ZValues (
+        struct IValueList * * ZValues ) = 0;
+    virtual HRESULT __stdcall get_ZValue (
+        long Index,
+        double * Value ) = 0;
+    virtual HRESULT __stdcall put_ZValue (
+        long Index,
+        double Value ) = 0;
+};
+
+struct __declspec(uuid("49006ac1-099b-11d1-9f64-444553540000"))
+IErrorBarSeries : IBarSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ErrorPen (
+        struct IPen * * ErrorPen ) = 0;
+    virtual HRESULT __stdcall get_ErrorValues (
+        struct IValueList * * ErrorValues ) = 0;
+    virtual HRESULT __stdcall get_ErrorWidth (
+        long * ErrorWidth ) = 0;
+    virtual HRESULT __stdcall put_ErrorWidth (
+        long ErrorWidth ) = 0;
+    virtual HRESULT __stdcall get_ErrorWidthUnits (
+        enum EErrorWidthUnits * ErrorWidthUnits ) = 0;
+    virtual HRESULT __stdcall put_ErrorWidthUnits (
+        enum EErrorWidthUnits ErrorWidthUnits ) = 0;
+    virtual HRESULT __stdcall AddErrorBar (
+        double AX,
+        double AY,
+        double AError,
+        BSTR AXLabel,
+        OLE_COLOR Value,
+        long * AColor ) = 0;
+};
+
+struct __declspec(uuid("49006ac3-099b-11d1-9f64-444553540000"))
+IVolumeSeries : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_VolumeValues (
+        struct IValueList * * VolumeValues ) = 0;
+    virtual HRESULT __stdcall get_LinePen (
+        struct IPen * * LinePen ) = 0;
+};
+
+struct __declspec(uuid("6f617f45-cfa9-11d0-beed-00aa00c9a74f"))
+IAddFunction : IDispatch
+{};
+
+struct __declspec(uuid("6f617f46-cfa9-11d0-beed-00aa00c9a74f"))
+ISubtractFunction : IDispatch
+{};
+
+struct __declspec(uuid("6f617f47-cfa9-11d0-beed-00aa00c9a74f"))
+IMultiplyFunction : IDispatch
+{};
+
+struct __declspec(uuid("6f617f48-cfa9-11d0-beed-00aa00c9a74f"))
+IDivideFunction : IDispatch
+{};
+
+struct __declspec(uuid("6f617f49-cfa9-11d0-beed-00aa00c9a74f"))
+IAverageFunction : IDispatch
+{};
+
+struct __declspec(uuid("6f617f4a-cfa9-11d0-beed-00aa00c9a74f"))
+IHighFunction : IDispatch
+{};
+
+struct __declspec(uuid("6f617f4b-cfa9-11d0-beed-00aa00c9a74f"))
+ILowFunction : IDispatch
+{};
+
+struct __declspec(uuid("a9752900-3fa0-11d1-9f64-444553540000"))
+ICurveFittingFunction : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_PolyDegree (
+        long * PolyDegree ) = 0;
+    virtual HRESULT __stdcall put_PolyDegree (
+        long PolyDegree ) = 0;
+    virtual HRESULT __stdcall get_TypeFitting (
+        enum ETypeFitting * TypeFitting ) = 0;
+    virtual HRESULT __stdcall put_TypeFitting (
+        enum ETypeFitting TypeFitting ) = 0;
+    virtual HRESULT __stdcall get_FirstPoint (
+        long * FirstPoint ) = 0;
+    virtual HRESULT __stdcall put_FirstPoint (
+        long FirstPoint ) = 0;
+    virtual HRESULT __stdcall get_LastPoint (
+        long * LastPoint ) = 0;
+    virtual HRESULT __stdcall put_LastPoint (
+        long LastPoint ) = 0;
+    virtual HRESULT __stdcall get_FirstCalcPoint (
+        long * FirstCalcPoint ) = 0;
+    virtual HRESULT __stdcall put_FirstCalcPoint (
+        long FirstCalcPoint ) = 0;
+    virtual HRESULT __stdcall get_LastCalcPoint (
+        long * LastCalcPoint ) = 0;
+    virtual HRESULT __stdcall put_LastCalcPoint (
+        long LastCalcPoint ) = 0;
+    virtual HRESULT __stdcall get_AnswerVector (
+        long Index,
+        double * Value ) = 0;
+    virtual HRESULT __stdcall GetCurveYValue (
+        double X,
+        double * Value ) = 0;
+};
+
+struct __declspec(uuid("a9752904-3fa0-11d1-9f64-444553540000"))
+IExpAvgFunction : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Weight (
+        double * Weight ) = 0;
+    virtual HRESULT __stdcall put_Weight (
+        double Weight ) = 0;
+};
+
+struct __declspec(uuid("a9752906-3fa0-11d1-9f64-444553540000"))
+IMovingAvgFunction : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Weighted (
+        VARIANT_BOOL * Weighted ) = 0;
+    virtual HRESULT __stdcall put_Weighted (
+        VARIANT_BOOL Weighted ) = 0;
+};
+
+struct __declspec(uuid("bef6e002-a874-101a-8bba-00aa00300cab"))
+IChartFont : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Name (
+        BSTR * Name ) = 0;
+    virtual HRESULT __stdcall put_Name (
+        BSTR Name ) = 0;
+    virtual HRESULT __stdcall get_Size (
+        long * Size ) = 0;
+    virtual HRESULT __stdcall put_Size (
+        long Size ) = 0;
+    virtual HRESULT __stdcall get_Bold (
+        VARIANT_BOOL * Bold ) = 0;
+    virtual HRESULT __stdcall put_Bold (
+        VARIANT_BOOL Bold ) = 0;
+    virtual HRESULT __stdcall get_Italic (
+        VARIANT_BOOL * Italic ) = 0;
+    virtual HRESULT __stdcall put_Italic (
+        VARIANT_BOOL Italic ) = 0;
+    virtual HRESULT __stdcall get_Underline (
+        VARIANT_BOOL * Underline ) = 0;
+    virtual HRESULT __stdcall put_Underline (
+        VARIANT_BOOL Underline ) = 0;
+    virtual HRESULT __stdcall get_Strikethrough (
+        VARIANT_BOOL * Strikethrough ) = 0;
+    virtual HRESULT __stdcall put_Strikethrough (
+        VARIANT_BOOL Strikethrough ) = 0;
+    virtual HRESULT __stdcall get_Charset (
+        short * Charset ) = 0;
+    virtual HRESULT __stdcall put_Charset (
+        short Charset ) = 0;
+    virtual HRESULT __stdcall get_Color (
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall put_Color (
+        OLE_COLOR Value ) = 0;
+    virtual HRESULT __stdcall get_Height (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_Height (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_PixelsPerInch (
+        long * Value ) = 0;
+};
+
+struct __declspec(uuid("8e41f391-672e-11d1-b5b2-00a0c901d681"))
+IMomentumFunction : IDispatch
+{};
+
+enum ECanvasBackMode
+{
+    cbmOpaque = 2,
+    cbmTransparent = 1,
+    cbmNone = 0
+};
+
+enum ECanvasTextAlign
+{
+    ctaLeft = 0,
+    ctaCenter = 1,
+    ctaRight = 2
+};
+
+struct __declspec(uuid("9f932473-4311-11d2-aebc-00400141862d"))
+IPieOtherSlice : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Style (
+        enum EPieOtherStyle * Value ) = 0;
+    virtual HRESULT __stdcall put_Style (
+        enum EPieOtherStyle Value ) = 0;
+    virtual HRESULT __stdcall get_Text (
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall put_Text (
+        BSTR Value ) = 0;
+    virtual HRESULT __stdcall get_Value (
+        double * Value ) = 0;
+    virtual HRESULT __stdcall put_Value (
+        double Value ) = 0;
+};
+
+enum EPieOtherStyle
+{
+    poNone = 0,
+    poBelowPercent = 1,
+    poBelowValue = 2
+};
+
+struct __declspec(uuid("9f932476-4311-11d2-aebc-00400141862d"))
+IExplodedSlices : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Value (
+        long Index,
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_Value (
+        long Index,
+        long Value ) = 0;
+};
+
+struct __declspec(uuid("dfbf939f-46fd-11d2-aec3-00400141862d"))
+ICustom3DGridSeries : ICustom3DSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_EndColor (
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall put_EndColor (
+        OLE_COLOR Value ) = 0;
+    virtual HRESULT __stdcall get_NumXValues (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_NumXValues (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_NumZValues (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_NumZValues (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_PaletteSteps (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_PaletteSteps (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_StartColor (
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall put_StartColor (
+        OLE_COLOR Value ) = 0;
+    virtual HRESULT __stdcall get_UseColorRange (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_UseColorRange (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_UsePalette (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_UsePalette (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall GetXZValue (
+        long X,
+        long Z,
+        double * Value ) = 0;
+    virtual HRESULT __stdcall GetSurfacePaletteColor (
+        double Y,
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall AddPalette (
+        double Value,
+        OLE_COLOR Color,
+        long * Value1 ) = 0;
+    virtual HRESULT __stdcall ClearPalette ( ) = 0;
+    virtual HRESULT __stdcall CreateDefaultPalette (
+        long NumSteps ) = 0;
+};
+
+struct __declspec(uuid("dfbf9393-46fd-11d2-aec3-00400141862d"))
+IContourSeries : ICustom3DGridSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_NumLevels (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_NumLevels (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_YPositionLevel (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_YPositionLevel (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_YPosition (
+        double * Value ) = 0;
+    virtual HRESULT __stdcall put_YPosition (
+        double Value ) = 0;
+};
+
+struct __declspec(uuid("dfbf9397-46fd-11d2-aec3-00400141862d"))
+IBezierSeries : ICustomSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_NumBezierPoints (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_NumBezierPoints (
+        long Value ) = 0;
+};
+
+struct __declspec(uuid("dfbf9399-46fd-11d2-aec3-00400141862d"))
+IRadarSeries : ICustomPolarSeries
+{};
+
+struct __declspec(uuid("dfbf939b-46fd-11d2-aec3-00400141862d"))
+IErrorSeries : IErrorBarSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ErrorStyle (
+        enum EErrorSeriesStyle * Value ) = 0;
+    virtual HRESULT __stdcall put_ErrorStyle (
+        enum EErrorSeriesStyle Value ) = 0;
+};
+
+struct __declspec(uuid("dfbf9395-46fd-11d2-aec3-00400141862d"))
+IPoint3DSeries : ICustom3DSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_DepthSize (
+        double * Value ) = 0;
+    virtual HRESULT __stdcall put_DepthSize (
+        double Value ) = 0;
+    virtual HRESULT __stdcall get_Pointer (
+        struct IPointer * * Value ) = 0;
+    virtual HRESULT __stdcall get_LinePen (
+        struct IPen * * Value ) = 0;
+};
+
+struct __declspec(uuid("d151bd25-0900-11d1-abc8-006097385ff5"))
+ISurfaceSeries : ICustom3DGridSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Brush (
+        struct IBrush * * Brush ) = 0;
+    virtual HRESULT __stdcall get_DotFrame (
+        VARIANT_BOOL * DotFrame ) = 0;
+    virtual HRESULT __stdcall put_DotFrame (
+        VARIANT_BOOL DotFrame ) = 0;
+    virtual HRESULT __stdcall get_Pen (
+        struct IPen * * Pen ) = 0;
+    virtual HRESULT __stdcall get_WireFrame (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_WireFrame (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("554b3031-47c5-11d2-aec7-00400141862d"))
+ISeriesMarksPositions : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Position (
+        long Index,
+        struct ISeriesMarkPosition * * Value ) = 0;
+    virtual HRESULT __stdcall Automatic (
+        long Index ) = 0;
+};
+
+struct __declspec(uuid("554b3033-47c5-11d2-aec7-00400141862d"))
+ISeriesMarkPosition : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ArrowFrom (
+        struct ITeePoint2D * * Value ) = 0;
+    virtual HRESULT __stdcall get_ArrowTo (
+        struct ITeePoint2D * * Value ) = 0;
+    virtual HRESULT __stdcall get_Custom (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Custom (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Height (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_Height (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_LeftTop (
+        struct ITeePoint2D * * Value ) = 0;
+    virtual HRESULT __stdcall get_Width (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_Width (
+        long Value ) = 0;
+};
+
+struct __declspec(uuid("d151bd20-0900-11d1-abc8-006097385ff5"))
+IPolarSeries : ICustomPolarSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall AddPolar (
+        double Angle,
+        double Value,
+        BSTR ALabel,
+        OLE_COLOR Valu,
+        long * AColor ) = 0;
+};
+
+struct __declspec(uuid("a75a3de1-4be2-11d2-aecf-00400141862d"))
+ICircleLabels : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Visible (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Font (
+        struct IChartFont * * Value ) = 0;
+    virtual HRESULT __stdcall get_Rotated (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Rotated (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_DegreeSymbol (
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall put_DegreeSymbol (
+        BSTR Value ) = 0;
+};
+
+enum EErrorSeriesStyle
+{
+    essLeft = 0,
+    essRight = 1,
+    essLeftRight = 2,
+    essTop = 3,
+    essBottom = 4,
+    essTopBottom = 5
+};
+
+enum EFunctionPeriodAlign
+{
+    paFirst = 0,
+    paCenter = 1,
+    paLast = 2
+};
+
+enum EFunctionPeriodStyle
+{
+    psNumPoints = 0,
+    psRange = 1
+};
+
+struct __declspec(uuid("3edc0324-4c6c-11d2-aed0-00400141862d"))
+ITrendFunction : IDispatch
+{};
+
+struct __declspec(uuid("3edc0326-4c6c-11d2-aed0-00400141862d"))
+IStdDeviationFunction : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Complete (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Complete (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("3edc0328-4c6c-11d2-aed0-00400141862d"))
+ICumulativeFunction : IDispatch
+{};
+
+struct __declspec(uuid("3edc032a-4c6c-11d2-aed0-00400141862d"))
+IRSIFunction : IDispatch
+{};
+
+struct __declspec(uuid("3edc032c-4c6c-11d2-aed0-00400141862d"))
+ICountFunction : IDispatch
+{};
+
+struct __declspec(uuid("fade0a30-6d8a-11d2-af1e-00400141862d"))
+IEnvironment : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_NoPromptDBConnect (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_NoPromptDBConnect (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_IEPrintWithPage (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_IEPrintWithPage (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("68e1284a-8f10-11d2-8098-006097385ff5"))
+ITeeLinked : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall put_Chart (
+        struct ITChart * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_ChartLink (
+        long _arg1 ) = 0;
+    virtual HRESULT __stdcall AboutBox ( ) = 0;
+};
+
+struct __declspec(uuid("bee97213-8536-11d2-808c-006097385ff5"))
+ITeeCommanderEvents : IDispatch
+{};
+
+struct __declspec(uuid("bee97211-8536-11d2-808c-006097385ff5"))
+ITeeCommander : ITeeLinked
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_LabelValues (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_LabelValues (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Color (
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall put_Color (
+        OLE_COLOR Value ) = 0;
+    virtual HRESULT __stdcall get_Enabled (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Enabled (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall put_Editor (
+        struct ITeeEditor * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_Previewer (
+        struct ITeePreviewer * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_EditorLink (
+        long _arg1 ) = 0;
+    virtual HRESULT __stdcall put_PreviewerLink (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("97eb1711-8a61-11d2-8093-006097385ff5"))
+ITeeListBox : ITeeLinked
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Color (
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall put_Color (
+        OLE_COLOR Value ) = 0;
+    virtual HRESULT __stdcall UpdateSeries ( ) = 0;
+    virtual HRESULT __stdcall get_SelectedSeries (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_SelectedSeries (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_ShowActive (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ShowActive (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ShowColor (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ShowColor (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ShowTitle (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ShowTitle (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ShowIcon (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ShowIcon (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("97eb1715-8a61-11d2-8093-006097385ff5"))
+ITeeListBoxEvents : IDispatch
+{};
+
+struct __declspec(uuid("97eb1713-8a61-11d2-8093-006097385ff5"))
+TeeListBox;
+    // [ default ] interface ITeeListBox
+    // [ default, source ] dispinterface ITeeListBoxEvents
+
+struct __declspec(uuid("68e12840-8f10-11d2-8098-006097385ff5"))
+ITeeEditor : ITeeLinked
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_EditorTitle (
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall put_EditorTitle (
+        BSTR Value ) = 0;
+    virtual HRESULT __stdcall get_DefaultPage (
+        enum ETeeEditorPage * Value ) = 0;
+    virtual HRESULT __stdcall put_DefaultPage (
+        enum ETeeEditorPage Value ) = 0;
+    virtual HRESULT __stdcall ShowEditor ( ) = 0;
+    virtual HRESULT __stdcall get_AutoRepaint (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_AutoRepaint (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ShowPages (
+        struct ITeeEditorShowPages * * Value ) = 0;
+    virtual HRESULT __stdcall get_EditorLink (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall get_Options (
+        struct ITeeEditorOptions * * Value ) = 0;
+};
+
+struct __declspec(uuid("68e12842-8f10-11d2-8098-006097385ff5"))
+ITeePreviewer : ITeeLinked
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_PreviewTitle (
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall put_PreviewTitle (
+        BSTR Value ) = 0;
+    virtual HRESULT __stdcall ShowPreview ( ) = 0;
+    virtual HRESULT __stdcall get_PaperColor (
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall put_PaperColor (
+        OLE_COLOR Value ) = 0;
+    virtual HRESULT __stdcall get_PreviewerLink (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall get_Maximized (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Maximized (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Options (
+        struct ITeePreviewerOptions * * Value ) = 0;
+};
+
+struct __declspec(uuid("68e12844-8f10-11d2-8098-006097385ff5"))
+TeeEditor;
+    // [ default ] interface ITeeEditor
+
+struct __declspec(uuid("68e12846-8f10-11d2-8098-006097385ff5"))
+TeePreviewer;
+    // [ default ] interface ITeePreviewer
+
+struct __declspec(uuid("bee97215-8536-11d2-808c-006097385ff5"))
+TeeCommander;
+    // [ default ] interface ITeeCommander
+    // [ default, source ] dispinterface ITeeCommanderEvents
+
+enum ETeeEditorPage
+{
+    epMain = 0,
+    epGeneral = 1,
+    epAxis = 2,
+    epTitles = 3,
+    epLegend = 4,
+    epPanel = 5,
+    epPaging = 6,
+    epWalls = 7,
+    epAspect = 8,
+    epSeriesGeneral = 9,
+    epSeriesMarks = 10
+};
+
+struct __declspec(uuid("273020d3-95b6-11d2-809c-006097385ff5"))
+ITeePoint2D : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_X (
+        double * Value ) = 0;
+    virtual HRESULT __stdcall put_X (
+        double Value ) = 0;
+    virtual HRESULT __stdcall get_Y (
+        double * Value ) = 0;
+    virtual HRESULT __stdcall put_Y (
+        double Value ) = 0;
+};
+
+struct __declspec(uuid("273020d1-95b6-11d2-809c-006097385ff5"))
+ITeePoint3D : ITeePoint2D
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Z (
+        double * Value ) = 0;
+    virtual HRESULT __stdcall put_Z (
+        double Value ) = 0;
+};
+
+struct __declspec(uuid("273020d5-95b6-11d2-809c-006097385ff5"))
+ITeeEditorShowPages : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Main (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Main (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_General (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_General (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Axis (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Axis (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Titles (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Titles (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Legend (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Legend (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Panel (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Panel (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Paging (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Paging (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Walls (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Walls (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Aspect (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Aspect (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_SeriesGeneral (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_SeriesGeneral (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_SeriesMarks (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_SeriesMarks (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("273020d7-95b6-11d2-809c-006097385ff5"))
+ITeeEditorOptions : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Add (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Add (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Delete (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Delete (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Change (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Change (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Clone (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Clone (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_DataSource (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_DataSource (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Title (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Title (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_Help (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Help (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("273020d9-95b6-11d2-809c-006097385ff5"))
+ITeePreviewerOptions : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ChangePrinter (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ChangePrinter (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_SetupPrinter (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_SetupPrinter (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ResizeImage (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ResizeImage (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_MoveImage (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_MoveImage (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ChangeDetail (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ChangeDetail (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ChangePaperOrientation (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ChangePaperOrientation (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ChangeMargins (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ChangeMargins (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_DragImage (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_DragImage (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_PrintPanel (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_PrintPanel (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_AsBitmap (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_AsBitmap (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("a748ecf1-a3dd-11d2-80a6-006097385ff5"))
+ITeeOpenGL : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Active (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_Active (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_AmbientLight (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_AmbientLight (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_LightPosition (
+        struct ITeePoint3D * * Value ) = 0;
+    virtual HRESULT __stdcall get_LightColor (
+        OLE_COLOR * Value ) = 0;
+    virtual HRESULT __stdcall put_LightColor (
+        OLE_COLOR Value ) = 0;
+    virtual HRESULT __stdcall get_FontOutlines (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_FontOutlines (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ShadeQuality (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ShadeQuality (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("ed84fb81-a700-11d2-80ab-006097385ff5"))
+IClockSeries : ICustomPolarSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_RomanNumbers (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_RomanNumbers (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("ed84fb83-a700-11d2-80ab-006097385ff5"))
+IWindRoseSeries : IPolarSeries
+{};
+
+struct __declspec(uuid("23e77a81-ace1-11d2-80ae-006097385ff5"))
+IBar3DSeries : IBarSeries
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall AddBar (
+        double AX,
+        double AY,
+        double AOffset,
+        BSTR ALabel,
+        OLE_COLOR AColor,
+        long * Value ) = 0;
+};
+
+struct __declspec(uuid("d9393e16-aefa-11d2-80af-006097385ff5"))
+IImageBarSeries : IBarSeries
+{};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_TeeChart =
+    {0x008bbe7b,0xc096,0x11d0,{0xb4,0xe3,0x00,0xa0,0xc9,0x01,0xd6,0x81}};
+extern "C" const GUID __declspec(selectany) IID_ITChart =
+    {0x008bbe7c,0xc096,0x11d0,{0xb4,0xe3,0x00,0xa0,0xc9,0x01,0xd6,0x81}};
+extern "C" const GUID __declspec(selectany) DIID_ITChartEvents =
+    {0x008bbe7d,0xc096,0x11d0,{0xb4,0xe3,0x00,0xa0,0xc9,0x01,0xd6,0x81}};
+extern "C" const GUID __declspec(selectany) CLSID_TChart =
+    {0x008bbe7e,0xc096,0x11d0,{0xb4,0xe3,0x00,0xa0,0xc9,0x01,0xd6,0x81}};
+extern "C" const GUID __declspec(selectany) IID_IPen =
+    {0xd389a20a,0xc6e4,0x11d0,{0x84,0xb8,0x00,0x60,0x97,0x38,0x65,0x99}};
+extern "C" const GUID __declspec(selectany) IID_IBrush =
+    {0x6f617f1b,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IStrings =
+    {0xee05dfe2,0x5549,0x11d0,{0x9e,0xa9,0x00,0x20,0xaf,0x3d,0x82,0xda}};
+extern "C" const GUID __declspec(selectany) IID_ICanvas =
+    {0x8b625a00,0x3a9a,0x11d1,{0xab,0x4e,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IAspect =
+    {0xe8b97a90,0x3e69,0x11d1,{0xab,0x59,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IAxes =
+    {0xdd96fa40,0xd15c,0x11d0,{0x9f,0x64,0x9b,0x85,0x61,0xb5,0x99,0x16}};
+extern "C" const GUID __declspec(selectany) IID_IAxis =
+    {0x9b02a321,0xcdf4,0x11d0,{0x84,0xb8,0x00,0x60,0x97,0x38,0x65,0x99}};
+extern "C" const GUID __declspec(selectany) IID_IAxisLabels =
+    {0xb6352504,0x45fd,0x11d1,{0xab,0x84,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IAxisTitle =
+    {0x133fe602,0xd1cd,0x11d0,{0x84,0xb8,0x00,0x60,0x97,0x38,0x65,0x99}};
+extern "C" const GUID __declspec(selectany) IID_ILegend =
+    {0x495a9400,0xd2b9,0x11d0,{0x9f,0x64,0x9f,0xe8,0x10,0xe7,0x37,0x41}};
+extern "C" const GUID __declspec(selectany) IID_IExport =
+    {0xb6352500,0x45fd,0x11d1,{0xab,0x84,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IImport =
+    {0xb6352502,0x45fd,0x11d1,{0xab,0x84,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IScroll =
+    {0x07a65c42,0x3da6,0x11d1,{0xab,0x57,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IZoom =
+    {0x07a65c40,0x3da6,0x11d1,{0xab,0x57,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IPrinter =
+    {0xf3a0ed84,0x3c01,0x11d1,{0xab,0x52,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IWall =
+    {0x4c33d2e0,0xd291,0x11d0,{0x9f,0x64,0xbc,0xc5,0x43,0xd9,0xc1,0x68}};
+extern "C" const GUID __declspec(selectany) IID_IWalls =
+    {0xf3a0ed82,0x3c01,0x11d1,{0xab,0x52,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_ITitles =
+    {0x2800eca0,0xd098,0x11d0,{0x9f,0x64,0xbf,0x71,0xef,0x49,0xfe,0xf2}};
+extern "C" const GUID __declspec(selectany) IID_IGradient =
+    {0x7d423ba1,0xd053,0x11d0,{0x9f,0x64,0x83,0x7b,0x7e,0x19,0x3d,0x48}};
+extern "C" const GUID __declspec(selectany) IID_IPage =
+    {0xc648f0c8,0xb5c8,0x11d0,{0x9f,0x64,0xb1,0x0c,0x6d,0x3c,0x1c,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IPanel =
+    {0x297dacc0,0xd044,0x11d0,{0x9f,0x64,0xc8,0xfd,0x4a,0xea,0xb0,0x40}};
+extern "C" const GUID __declspec(selectany) IID_ISeries =
+    {0x6f617f0e,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_ITeeFunction =
+    {0x6f617f44,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IMarks =
+    {0x6f617f18,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IValueList =
+    {0x6f617f43,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IPointer =
+    {0x6f617f39,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_ICustomSeries =
+    {0x6f617f0f,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IAreaSeries =
+    {0x6f617f11,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IPointSeries =
+    {0x6f617f12,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_ILineSeries =
+    {0x6f617f10,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IFastLineSeries =
+    {0x6f617f41,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_ICircledSeries =
+    {0x6f617f3f,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IPieSeries =
+    {0x6f617f40,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IBubbleSeries =
+    {0x00561f61,0xefa9,0x11d0,{0x9f,0x64,0xde,0x03,0x3f,0xb8,0xe6,0xc0}};
+extern "C" const GUID __declspec(selectany) IID_IGanttSeries =
+    {0x00561f60,0xefa9,0x11d0,{0x9f,0x64,0xde,0x03,0x3f,0xb8,0xe6,0xc0}};
+extern "C" const GUID __declspec(selectany) IID_IShapeSeries =
+    {0x66833f80,0xef3f,0x11d0,{0x9f,0x64,0xa6,0x11,0x9f,0xa8,0x43,0x2f}};
+extern "C" const GUID __declspec(selectany) IID_IArrowSeries =
+    {0x00561f62,0xefa9,0x11d0,{0x9f,0x64,0xde,0x03,0x3f,0xb8,0xe6,0xc0}};
+extern "C" const GUID __declspec(selectany) IID_ICustomBarSeries =
+    {0x6f617f13,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IBarSeries =
+    {0x6f617f14,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IHorizBarSeries =
+    {0x6f617f15,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_ICandleSeries =
+    {0xd151bd23,0x0900,0x11d1,{0xab,0xc8,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ICustomPolarSeries =
+    {0xe472e511,0x4ba2,0x11d2,{0xae,0xcf,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_ICustom3DSeries =
+    {0xdfbf939d,0x46fd,0x11d2,{0xae,0xc3,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IErrorBarSeries =
+    {0x49006ac1,0x099b,0x11d1,{0x9f,0x64,0x44,0x45,0x53,0x54,0x00,0x00}};
+extern "C" const GUID __declspec(selectany) IID_IVolumeSeries =
+    {0x49006ac3,0x099b,0x11d1,{0x9f,0x64,0x44,0x45,0x53,0x54,0x00,0x00}};
+extern "C" const GUID __declspec(selectany) IID_IAddFunction =
+    {0x6f617f45,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_ISubtractFunction =
+    {0x6f617f46,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IMultiplyFunction =
+    {0x6f617f47,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IDivideFunction =
+    {0x6f617f48,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IAverageFunction =
+    {0x6f617f49,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_IHighFunction =
+    {0x6f617f4a,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_ILowFunction =
+    {0x6f617f4b,0xcfa9,0x11d0,{0xbe,0xed,0x00,0xaa,0x00,0xc9,0xa7,0x4f}};
+extern "C" const GUID __declspec(selectany) IID_ICurveFittingFunction =
+    {0xa9752900,0x3fa0,0x11d1,{0x9f,0x64,0x44,0x45,0x53,0x54,0x00,0x00}};
+extern "C" const GUID __declspec(selectany) IID_IExpAvgFunction =
+    {0xa9752904,0x3fa0,0x11d1,{0x9f,0x64,0x44,0x45,0x53,0x54,0x00,0x00}};
+extern "C" const GUID __declspec(selectany) IID_IMovingAvgFunction =
+    {0xa9752906,0x3fa0,0x11d1,{0x9f,0x64,0x44,0x45,0x53,0x54,0x00,0x00}};
+extern "C" const GUID __declspec(selectany) IID_IChartFont =
+    {0xbef6e002,0xa874,0x101a,{0x8b,0xba,0x00,0xaa,0x00,0x30,0x0c,0xab}};
+extern "C" const GUID __declspec(selectany) IID_IMomentumFunction =
+    {0x8e41f391,0x672e,0x11d1,{0xb5,0xb2,0x00,0xa0,0xc9,0x01,0xd6,0x81}};
+extern "C" const GUID __declspec(selectany) IID_IPieOtherSlice =
+    {0x9f932473,0x4311,0x11d2,{0xae,0xbc,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IExplodedSlices =
+    {0x9f932476,0x4311,0x11d2,{0xae,0xbc,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_ICustom3DGridSeries =
+    {0xdfbf939f,0x46fd,0x11d2,{0xae,0xc3,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IContourSeries =
+    {0xdfbf9393,0x46fd,0x11d2,{0xae,0xc3,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IBezierSeries =
+    {0xdfbf9397,0x46fd,0x11d2,{0xae,0xc3,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IRadarSeries =
+    {0xdfbf9399,0x46fd,0x11d2,{0xae,0xc3,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IErrorSeries =
+    {0xdfbf939b,0x46fd,0x11d2,{0xae,0xc3,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IPoint3DSeries =
+    {0xdfbf9395,0x46fd,0x11d2,{0xae,0xc3,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_ISurfaceSeries =
+    {0xd151bd25,0x0900,0x11d1,{0xab,0xc8,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ISeriesMarksPositions =
+    {0x554b3031,0x47c5,0x11d2,{0xae,0xc7,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_ISeriesMarkPosition =
+    {0x554b3033,0x47c5,0x11d2,{0xae,0xc7,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IPolarSeries =
+    {0xd151bd20,0x0900,0x11d1,{0xab,0xc8,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ICircleLabels =
+    {0xa75a3de1,0x4be2,0x11d2,{0xae,0xcf,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_ITrendFunction =
+    {0x3edc0324,0x4c6c,0x11d2,{0xae,0xd0,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IStdDeviationFunction =
+    {0x3edc0326,0x4c6c,0x11d2,{0xae,0xd0,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_ICumulativeFunction =
+    {0x3edc0328,0x4c6c,0x11d2,{0xae,0xd0,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IRSIFunction =
+    {0x3edc032a,0x4c6c,0x11d2,{0xae,0xd0,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_ICountFunction =
+    {0x3edc032c,0x4c6c,0x11d2,{0xae,0xd0,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_IEnvironment =
+    {0xfade0a30,0x6d8a,0x11d2,{0xaf,0x1e,0x00,0x40,0x01,0x41,0x86,0x2d}};
+extern "C" const GUID __declspec(selectany) IID_ITeeLinked =
+    {0x68e1284a,0x8f10,0x11d2,{0x80,0x98,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) DIID_ITeeCommanderEvents =
+    {0xbee97213,0x8536,0x11d2,{0x80,0x8c,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ITeeCommander =
+    {0xbee97211,0x8536,0x11d2,{0x80,0x8c,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ITeeListBox =
+    {0x97eb1711,0x8a61,0x11d2,{0x80,0x93,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) DIID_ITeeListBoxEvents =
+    {0x97eb1715,0x8a61,0x11d2,{0x80,0x93,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) CLSID_TeeListBox =
+    {0x97eb1713,0x8a61,0x11d2,{0x80,0x93,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ITeeEditor =
+    {0x68e12840,0x8f10,0x11d2,{0x80,0x98,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ITeePreviewer =
+    {0x68e12842,0x8f10,0x11d2,{0x80,0x98,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) CLSID_TeeEditor =
+    {0x68e12844,0x8f10,0x11d2,{0x80,0x98,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) CLSID_TeePreviewer =
+    {0x68e12846,0x8f10,0x11d2,{0x80,0x98,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) CLSID_TeeCommander =
+    {0xbee97215,0x8536,0x11d2,{0x80,0x8c,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ITeePoint2D =
+    {0x273020d3,0x95b6,0x11d2,{0x80,0x9c,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ITeePoint3D =
+    {0x273020d1,0x95b6,0x11d2,{0x80,0x9c,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ITeeEditorShowPages =
+    {0x273020d5,0x95b6,0x11d2,{0x80,0x9c,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ITeeEditorOptions =
+    {0x273020d7,0x95b6,0x11d2,{0x80,0x9c,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ITeePreviewerOptions =
+    {0x273020d9,0x95b6,0x11d2,{0x80,0x9c,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_ITeeOpenGL =
+    {0xa748ecf1,0xa3dd,0x11d2,{0x80,0xa6,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_IClockSeries =
+    {0xed84fb81,0xa700,0x11d2,{0x80,0xab,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_IWindRoseSeries =
+    {0xed84fb83,0xa700,0x11d2,{0x80,0xab,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_IBar3DSeries =
+    {0x23e77a81,0xace1,0x11d2,{0x80,0xae,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+extern "C" const GUID __declspec(selectany) IID_IImageBarSeries =
+    {0xd9393e16,0xaefa,0x11d2,{0x80,0xaf,0x00,0x60,0x97,0x38,0x5f,0xf5}};
+
+#pragma pack(pop)

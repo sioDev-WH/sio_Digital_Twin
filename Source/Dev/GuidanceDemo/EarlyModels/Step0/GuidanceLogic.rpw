@@ -1,0 +1,147 @@
+I-Logix-RPY-Archive version 4.0.4 *
+{ CGEMdiWorkspace 
+	- stubList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- myViewsWithID = { IRPYRawContainer 
+		- size = 5;
+		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -1;
+				- m_ptMaxPositionY = -1;
+				- m_nLeft = 198;
+				- m_nTop = 198;
+				- m_nRight = 838;
+				- m_nBottom = 638;
+			}
+			- _wasOpenedOnCloseProject = 0;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChart";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Guidance";
+				- _name = "ROOT.Running.state_13.FuzeMode";
+				- _id = GUID 4582fdb5-0ad0-11d7-b329-00c04f680d9d;
+			}
+			- _UpLeft = -5.37506169449865 -2.38020682501862 ;
+			- _DownRight = 30.3750616944986 24.8579824237412 ;
+			- _instanceName = "Guidance[0]";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -1;
+				- m_ptMaxPositionY = -1;
+				- m_nLeft = 0;
+				- m_nTop = 0;
+				- m_nRight = 402;
+				- m_nBottom = 640;
+			}
+			- _wasOpenedOnCloseProject = 0;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChart";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Guidance";
+				- _name = "ROOT.Running.state_12.GuidanceMode";
+				- _id = GUID 4582fd46-0ad0-11d7-b329-00c04f680d9d;
+			}
+			- _UpLeft = 6.41599226964372 -5.06330081092501 ;
+			- _DownRight = 20.678510580822 17.5507990781892 ;
+			- _instanceName = "Guidance[0]";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -1;
+				- m_ptMaxPositionY = -1;
+				- m_nLeft = 176;
+				- m_nTop = 176;
+				- m_nRight = 816;
+				- m_nBottom = 616;
+			}
+			- _wasOpenedOnCloseProject = 0;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChart";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Guidance";
+				- _name = "ROOT.Running.state_12.GuidanceMode";
+				- _id = GUID 4582fd46-0ad0-11d7-b329-00c04f680d9d;
+			}
+			- _UpLeft = 1.8779182615416 -1.24979324109129 ;
+			- _DownRight = 25.2165845889241 13.7372915083553 ;
+			- _instanceName = "Guidance[0] - Guidance[0]";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -1;
+				- m_ptMaxPositionY = -1;
+				- m_nLeft = 198;
+				- m_nTop = 198;
+				- m_nRight = 865;
+				- m_nBottom = 698;
+			}
+			- _wasOpenedOnCloseProject = 0;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChart";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Guidance";
+				- _name = "";
+				- _id = GUID 4582fd39-0ad0-11d7-b329-00c04f680d9d;
+			}
+			- _UpLeft = -1.09781478902933 0.763590930336694 ;
+			- _DownRight = 26.0978147890293 20.0431217579745 ;
+			- _instanceName = "Guidance[0]";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -1;
+				- m_ptMaxPositionY = -1;
+				- m_nLeft = 44;
+				- m_nTop = 44;
+				- m_nRight = 684;
+				- m_nBottom = 484;
+			}
+			- _wasOpenedOnCloseProject = 0;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Model1.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Model1";
+				- _id = GUID 4582fb76-0ad0-11d7-b329-00c04f680d9d;
+			}
+			- _UpLeft = -0.523259234563305 2.87591250657801 ;
+			- _DownRight = 25.5232592345633 19.6018630921446 ;
+			- _instanceName = "";
+		}
+	}
+	- _fullName = "E:\\DistComponents\\AvionicsLib\\GuidanceLogic\\GuidanceLogic";
+}
+

@@ -1,0 +1,26 @@
+HKCR
+{
+	OnTransmission.OnTransModelFactory.1 = s 'OnTransModelFactory Class'
+	{
+		CLSID = s '{881EE912-657D-4CFA-B927-C64581CDE66F}'
+	}
+	OnTransmission.OnTransModelFactory = s 'OnTransModelFactory Class'
+	{
+		CLSID = s '{881EE912-657D-4CFA-B927-C64581CDE66F}'
+		CurVer = s 'OnTransmission.OnTransModelFactory.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {881EE912-657D-4CFA-B927-C64581CDE66F} = s 'OnTransModelFactory Class'
+		{
+			ProgID = s 'OnTransmission.OnTransModelFactory.1'
+			VersionIndependentProgID = s 'OnTransmission.OnTransModelFactory'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{FB938A98-05B5-48AE-A8C0-07AAA6FCF88B}'
+		}
+	}
+}

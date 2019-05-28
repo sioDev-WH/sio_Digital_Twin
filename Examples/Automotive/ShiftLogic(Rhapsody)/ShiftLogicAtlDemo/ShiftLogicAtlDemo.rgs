@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{9F2E6DE1-0333-4A0A-8E6C-05E8CF37A54A} = s 'ShiftLogicAtlDemo'
+		'ShiftLogicAtlDemo.EXE'
+		{
+			val AppID = s {9F2E6DE1-0333-4A0A-8E6C-05E8CF37A54A}
+		}
+	}
+}

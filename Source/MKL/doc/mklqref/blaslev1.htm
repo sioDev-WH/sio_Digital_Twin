@@ -1,0 +1,251 @@
+<HTML>
+<HEAD>
+<title>BLAS Level 1</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+BLAS Level 1 Routines
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="asum"></A>
+<B>?asum</B> computes the sum of magnitudes of all vector elements or,
+for a complex vector <i>x</i>, the sum <br>
+|Re<i>x</i><sub>1</sub>| + |Im<i>x</i><sub>1</sub>| + |Re<i>x</i><sub>2</sub>| + |Im<i>x</i><sub>2</sub>| + ... <BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+svalue = sasum (n, SX, incx)<br>
+svalue = scasum (n, CX, incx)<br>
+dvalue = dasum (n, DX, incx)<br>
+dvalue = dzasum (n, ZX, incx)
+</font></code>
+
+<p><A NAME="axpy"></A>
+<B>?axpy</B>
+updates the vector <i>y</i> as <i>y<sub>i</sub></i>&nbsp;= <i>ax<sub>i</sub></i>&nbsp;+ <i>y<sub>i</sub></i>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call saxpy (n, sa, SX, incx, SY, incy)<br>
+call daxpy (n, da, DX, incx, DY, incy)<br>
+call caxpy (n, ca, CX, incx, CY, incy)<br>
+call zaxpy (n, za, ZX, incx, ZY, incy)
+</font></code>
+
+<p><A NAME="copy"></A>
+<B>?copy</B>
+copies the vector <i>x</i> to the vector <i>y</i>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call scopy (n, SX, incx, SY, incy)<br>
+call dcopy (n, DX, incx, DY, incy)<br>
+call ccopy (n, CX, incx, CY, incy)<br>
+call zcopy (n, ZX, incx, ZY, incy)
+</font></code>
+
+<p><A NAME="dot"></A>
+<B>?dot</B>
+computes the dot product (<i>x</i>&nbsp;&#183;&nbsp;<i>y</i>) of two real vectors <i>x</i> and <i>y</i>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+svalue = sdot (n, SX, incx, SY, incy)<br>
+dvalue = ddot (n, DX, incx, DY, incy)
+</font></code>
+
+<p><A NAME="dotc"></A>
+<B>?dotc</B>
+computes the dot product (<i>x</i>*&nbsp;&#183;&nbsp;<i>y</i>) of two complex vectors <i>x</i> and <i>y</i>.
+Here <i>x</i>* denotes the conjugate of <i>x</i>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+cvalue = cdotc (n, CX, incx, CY, incy)<br>
+zvalue = zdotc (n, ZX, incx, ZY, incy)
+</font></code>
+
+<p><A NAME="dotu"></A>
+<B>?dotu</B>
+computes the dot product (<i>x</i>&nbsp;&#183;&nbsp;<i>y</i>) of two complex vectors <i>x</i> and <i>y</i>,
+without complex conjugation.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+cvalue = cdotu (n, CX, incx, CY, incy)<br>
+zvalue = zdotu (n, ZX, incx, ZY, incy)
+</font></code>
+
+<p><A NAME="nrm2"></A>
+<B>?nrm2</B>
+computes the Euclidean norm of the vector <i>x</i>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+svalue = snrm2 (n, SX, incx)<br>
+dvalue = dnrm2 (n, DX, incx)<br>
+svalue = scnrm2 (n, CX, incx)<br>
+dvalue = dznrm2 (n, ZX, incx)
+</font></code>
+
+<p><A NAME="rot"></A>
+<B>?rot</B>
+performs the Givens rotation of points in the plane (<i>x</i>, <i>y</i>) as follows:<BR>
+<i>x<sub>i</sub></i> = <i>cx<sub>i</sub></i> + <i>sy<sub>i</sub></i><br>
+<i>y<sub>i</sub></i> = <i>cy<sub>i</sub></i> <font face="Courier New,Courier">-</font> <i>sx<sub>i</sub></i><br>
+
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call srot (n, SX, incx, SY, incy, sc, ss)<br>
+call drot (n, DX, incx, DY, incy, dc, ds)<br>
+call csrot (n, CX, incx, CY, incy, sc, ss)<br>
+call zdrot (n, ZX, incx, ZY, incy, dc, ds)
+</font></code>
+
+<p><A NAME="rotg"></A>
+<B>?rotg</B>
+returns the parameters <i>r</i>, <i>z</i>, <i>c</i>, and <i>s</i> for the Givens rotation that zeros
+the <i>y</i>-coordinate of the point (<i>a</i>,<i>b</i>), given the Cartesian coordinates <i>a</i> and <i>b</i>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call srotg (sa, sb, sc, ss)<br>
+call drotg (da, db, dc, ds)<br>
+call crotg (ca, cb, sc, cs)<br>
+call zrotg (za, zb, dc, zs)
+</font></code>
+
+<p><A NAME="rotm"></A>
+<B>?rotm</B>
+performs the modified Givens transformation of points in the plane (<i>x</i>, <i>y</i>) as follows:<BR>
+<i>x<sub>i</sub></i> = <i>h</i><sub>11</sub><i>x<sub>i</sub></i> + <i>h</i><sub>12</sub><i> y<sub>i</sub></i><br>
+<i>y<sub>i</sub></i> = <i>h</i><sub>21</sub><i>x<sub>i</sub></i> + <i>h</i><sub>22</sub><i> y<sub>i</sub></i><br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call srotm (n, SX, incx, SY, incy, SPARAM)<br>
+call drotm (n, SX, incx, DY, incy, DPARAM)
+</font></code>
+
+<p>
+Depending on <code><font face="Courier New,Courier,codetxt" color="#000099">?PARAM(1)</font></code>,
+the routine uses the following values for <i>h<sub>ij</sub></i>:
+
+<table border=1 cellpadding=2 cellspacing=0>
+<tr>
+<td align=center><code><font face="Courier New,Courier,codetxt" color="#000099">?PARAM(1)</font></code></td>
+<td align=center><font face="times new roman,times,bodytxt"><i>h</i><sub>11</sub></font></td>
+<td align=center><font face="times new roman,times,bodytxt"><i>h</i><sub>21</sub></font></td>
+<td align=center><font face="times new roman,times,bodytxt"><i>h</i><sub>12</sub></font></td>
+<td align=center><font face="times new roman,times,bodytxt"><i>h</i><sub>22</sub></font></td>
+</tr>
+<tr>
+<td align=center><font face="Courier New,Courier">-</font><font face="times new roman,times,bodytxt">1.0</font></td>
+<td align=center><code><font face="Courier New,Courier,codetxt" color="#000099">?PARAM(2)</font></code></td>
+<td align=center><code><font face="Courier New,Courier,codetxt" color="#000099">?PARAM(3)</font></code></td>
+<td align=center><code><font face="Courier New,Courier,codetxt" color="#000099">?PARAM(4)</font></code></td>
+<td align=center><code><font face="Courier New,Courier,codetxt" color="#000099">?PARAM(5)</font></code></td>
+</tr>
+<tr>
+<td align=center><font face="times new roman,times,bodytxt">0.0</font></td>
+<td align=center><font face="times new roman,times,bodytxt">1.0</font></td>
+<td align=center><code><font face="Courier New,Courier,codetxt" color="#000099">?PARAM(3)</font></code></td>
+<td align=center><code><font face="Courier New,Courier,codetxt" color="#000099">?PARAM(4)</font></code></td>
+<td align=center><font face="times new roman,times,bodytxt">1.0</font></td>
+</tr>
+<tr>
+<td align=center><font face="times new roman,times,bodytxt">1.0</font></td>
+<td align=center><code><font face="Courier New,Courier,codetxt" color="#000099">?PARAM(2)</font></code></td>
+<td align=center><font face="Courier New,Courier">-</font><font face="times new roman,times,bodytxt">1.0</font></td>
+<td align=center><font face="times new roman,times,bodytxt">1.0</font></td>
+<td align=center><code><font face="Courier New,Courier,codetxt" color="#000099">?PARAM(5)</font></code></td>
+</tr>
+<tr>
+<td align=center><font face="Courier New,Courier">-</font><font face="times new roman,times,bodytxt">2.0</font></td>
+<td align=center><font face="times new roman,times,bodytxt">1.0</font></td>
+<td align=center><font face="times new roman,times,bodytxt">0.0</font></td>
+<td align=center><font face="times new roman,times,bodytxt">0.0</font></td>
+<td align=center><font face="times new roman,times,bodytxt">1.0</font></td>
+</tr>
+</table>
+
+
+
+<p><A NAME="rotmg"></A>
+<B>?rotmg</B>
+constructs the modified Givens transformation matrix <i>h<sub>ij</sub></i> that zeros the second
+component of the 2-vector
+(<code><font face="Courier New,Courier,codetxt" color="#000099">sqrt(?d1)*?x</font></code>,
+<code><font face="Courier New,Courier,codetxt" color="#000099">sqrt(?d2)*?y</font></code>).
+<BR>
+See <A href="#rotm">?rotm</A> for information on the storage of <i>h<sub>ij</sub></i>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call srotmg (sd1, sd2, sx, sy, SPARAM)<br>
+call drotmg (dd1, dd2, dx, dy, DPARAM)
+</font></code>
+
+<p><A NAME="scal"></A>
+<B>?scal</B>
+scales the vector <i>x</i> as <i>x</i> = <i>ax</i>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sscal (n, sa, SX, incx)<br>
+call dscal (n, da, DX, incx)<br>
+call cscal (n, ca, CX, incx)<br>
+call zscal (n, za, ZX, incx)<br>
+call csscal (n, sa, CX, incx)<br>
+call zdscal (n, da, ZX, incx)
+</font></code>
+
+<p><A NAME="swap"></A>
+<B>?swap</B>
+swaps the vectors <i>x</i> and <i>y</i>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sswap (n, SX, incx, SY, incy)<br>
+call dswap (n, DX, incx, DY, incy)<br>
+call cswap (n, CX, incx, CY, incy)<br>
+call zswap (n, ZX, incx, ZY, incy)
+</font></code>
+
+<p><A NAME="iamax"></A>
+<B>i?amax</B>
+returns the index <i>i</i> of the vector
+element that has the largest absolute value or, for complex flavors, the
+index of the element with the largest sum
+|Re<i>x<sub>i</sub></i>| + |Im<i>x<sub>i</sub></i>| in the given vector <i>x</i>.
+<BR>
+
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+index = isamax (n, SX, incx)<br>
+index = idamax (n, DX, incx)<br>
+index = icamax (n, CX, incx)<br>
+index = izamax (n, ZX, incx)
+</font></code>
+
+<p><A NAME="iamin"></A>
+<B>i?amin</B>
+returns the index <i>i</i> of the vector
+element that has the smallest absolute value or, for complex flavors, the
+index of the element with the smallest sum
+|Re<i>x<sub>i</sub></i>| + |Im<i>x<sub>i</sub></i>| in the given vector <i>x</i>.
+<BR>
+
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+index = isamin (n, SX, incx)<br>
+index = idamin (n, DX, incx)<br>
+index = icamin (n, CX, incx)<br>
+index = izamin (n, ZX, incx)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

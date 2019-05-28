@@ -1,0 +1,11 @@
+
+1. Create base classes for aerodynamics, atmosphere, body dynamics, actuators, aero Coeff, connectors, controller interfaces, scheduled controllers, etc.
+2. Create template class for a missile embedding the structure (****composition****, UML)
+3. Derive classes for aerodynamics, atmosphere, body dynamics, actuators, aero Coeff,connectors, controller interfaces, scheduled controllers, etc.
+4. Create trail-and-error instances of template missiles using different derived classes of components (3DOF, 6DOF, lookup tables, etc.)
+
+The key issueare:
+
+1. Efficiency through (a) composition templates & polymorphism (b) plug-n-play, (c) control over versions/specifications upgrade/detail enhancement (d)
+
+2. Organization of Information through typed physical signals and systems (checking validation), template library organization,  inheritance, encapsulation

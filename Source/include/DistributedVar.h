@@ -1,0 +1,94 @@
+// DistributedVar.h: interface for the DistributedVar class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_DISTRIBUTEDVAR_H__7D5C3A9E_F96B_4664_963A_AE52837E41B8__INCLUDED_)
+#define AFX_DISTRIBUTEDVAR_H__7D5C3A9E_F96B_4664_963A_AE52837E41B8__INCLUDED_
+
+#include "OnUMLEsoExports.h"
+
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+// TODO:
+
+/*
+1) Modify so use pParent everywhere
+2) Initialize pParent from domain slicing
+3) Don't copy data from pParent
+4) Centralize the handling of local to global using utility functions
+5) Biggest task is in the partial calculations
+  a) Get root parent
+  b) Use the local domain to limit the calculation subset.
+
+*/
+
+class ONUML_API DistributedVar  
+{
+
+public:
+	char* Name;
+	char* Units;
+	long nDomains;
+	DistributionDomain* Domains; // Domains can be assigned indecies to order pVals accordingly
+	// long Dimension;
+	bool bIsRoot;
+	DistributedVar* pParent;
+	long nVal;
+	double* pVal;
+	long* lowerIndex;
+	long* upperIndex;
+
+public:
+	DistributedVar();
+	DistributedVar(DistributedVar& Src);
+	DistributedVar(	char* VarName,
+					char* VarUnits,
+					long numberOfDomains,
+					DistributionDomain* VarDomains);
+  void init(char* VarName,
+					char* VarUnits,
+					long VarnDomains,
+					DistributionDomain* VarDomains);
+
+  void init(DistributedVar& Src);
+
+	virtual ~DistributedVar();
+
+	double getVal(double* domainPoint);
+	DistributedVar& PARTIAL(DistributionDomain& partialDomain);
+	
+	operator = (DistributedVar& Src);
+	DistributedVar& operator | (DistributionDomain& AtSlice);
+	DistributedVar& operator + (DistributedVar& opVar);
+	DistributedVar& operator + ();
+	DistributedVar& operator - (DistributedVar& opVar);
+	DistributedVar& operator - ();
+	DistributedVar& operator * (DistributedVar& opVar);
+	DistributedVar& operator * (double opConst);
+	DistributedVar& operator / (DistributedVar& opVar);
+	DistributedVar& operator / (double opConst);
+
+	void mesh(bool bInitVal=false);
+	void copyData(DistributedVar* pSrc);
+	void setData(long index, double pData);
+
+	long getGlobalIndex (long* gridIndex);
+	void getLocalIndex (long index, long* &gridIndex);
+
+	bool isCompatible(DistributedVar& otherVar, long* index=0);
+	bool inDomain(long* index);
+  void setParent(DistributedVar& src);
+
+};
+
+DistributedVar ONUML_API operator + (double opConst, DistributedVar& opVar);
+DistributedVar ONUML_API operator + ( DistributedVar& opVar, double opConst);
+DistributedVar ONUML_API operator - (double opConst, DistributedVar& opVar);
+DistributedVar ONUML_API operator - ( DistributedVar& opVar, double opConst);
+DistributedVar ONUML_API operator * (double opConst, DistributedVar& opVar);
+DistributedVar ONUML_API operator / (double opConst, DistributedVar& opVar);
+
+#endif // !defined(AFX_DISTRIBUTEDVAR_H__7D5C3A9E_F96B_4664_963A_AE52837E41B8__INCLUDED_)

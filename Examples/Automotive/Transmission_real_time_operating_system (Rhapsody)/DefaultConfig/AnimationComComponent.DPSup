@@ -1,0 +1,50 @@
+<Suppress Comment="Version 7.01.04">
+	<ErrType Category=5 >
+		<Module Name="OnUMLEso.DLL" >
+			<File Name="OnUMLDaeEsoBase.cpp" >
+				<Function Name="public: long __thiscall COnUMLDaeEsoBase::GetAssociationBlocks(long &,long * &,long * &,class COnUMLDaeEsoBase * * &)" >
+				</Function>
+			</File>
+		</Module>
+	</ErrType>
+	<ErrType Category=6 >
+		<Module Name="ISDaeCOSolver.DLL" >
+			<File Name="isdaeeso.cpp" >
+				<Function Name="public: long __thiscall CIsDaeEsoBase::iGetResiduals(long *,long,double,double *,double *,double *,bool &,double *,long *)" >
+				</Function>
+			</File>
+		</Module>
+	</ErrType>
+	<ErrType Category=28 >
+		<Module Name="AnimationComComponent.exe" >
+			<File Name="eventbroadcast.h" >
+				<Function Name="public: virtual bool __thiscall COnListener<class Controller,long>::receive(void)" >
+				</Function>
+				<Function Name="public: virtual bool __thiscall COnListener<class Vehicle5,double>::receive(void)" >
+				</Function>
+			</File>
+		</Module>
+	</ErrType>
+	<ErrType Category=31 >
+		<Module Name="ISDaeCOSolver.DLL" >
+			<File Name="isnlasolver.cpp" >
+				<Function Name="protected: void __thiscall CIsNlaSolver::qrupdt(double * *,double * *,long,double *,double *)" >
+				</Function>
+			</File>
+		</Module>
+	</ErrType>
+	<ErrType Category=34 >
+		<Module Name="X465PSU.DLL" >
+			<Address Value=0x000045B4 >
+			</Address>
+		</Module>
+	</ErrType>
+	<ErrType Category=37 >
+		<Module Name="ISDaeCOSolver.DLL" >
+			<File Name="onmapbstr.cpp" >
+				<Function Name="protected: struct COnMapBSTR::CAssoc * __thiscall COnMapBSTR::NewAssoc(void)" >
+				</Function>
+			</File>
+		</Module>
+	</ErrType>
+</Suppress>

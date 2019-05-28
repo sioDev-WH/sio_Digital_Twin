@@ -1,0 +1,20 @@
+'fft1f.sum'     NAME OF SUMMARY OUTPUT FILE
+7               UNIT NUMBER OF SUMMARY FILE
+'fft1f.snp'     NAME OF SNAPSHOT OUTPUT FILE
+8               UNIT NUMBER OF SNAPSHOT FILE (NOT USED IF .LT. 0)
+T               LOGICAL FLAG, T TO SELF TEST - DFT AND FFT SAMPLES
+F               LOGICAL FLAG, T TO COMPARE RESULTS WITH DFT ROUTINE
+F               LOGICAL FLAG, T TO STOP ON FAILURES
+T               LOGICAL FLAG, T TO TEST ERROR EXITS
+T               LOGICAL FLAG, T FOR COMPUTE TESTING
+1.0e-12                         Double precision Epsilon  (1.0e-12 is normal)
+1.0e-6                          Single precision Epsilon  (1.0e-6 is normal)
+16              Align arrays on number byte boundary    
+17                              NUMBER OF VECTOR LENGTHS
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20      VECTOR LENGTHS (POWERS OF 2)
+ZFFT1D   T       FFT FUNCTION NAME, PUT F FOR NO TEST
+DZFFT1D  T       FFT FUNCTION NAME, PUT F FOR NO TEST
+ZDFFT1D  T       FFT FUNCTION NAME, PUT F FOR NO TEST
+CFFT1D   T       FFT FUNCTION NAME, PUT F FOR NO TEST
+SCFFT1D  T       FFT FUNCTION NAME, PUT F FOR NO TEST
+CSFFT1D  T       FFT FUNCTION NAME, PUT F FOR NO TEST

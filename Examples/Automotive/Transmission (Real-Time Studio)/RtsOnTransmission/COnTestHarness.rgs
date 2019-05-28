@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmission.COnTestHarness.1 = s 'COnTestHarness Class'
+	{
+		CLSID = s '{612AC51E-6CB5-46C3-B603-6268202D48DC}'
+	}
+	RtsOnTransmission.COnTestHarness = s 'COnTestHarness Class'
+	{
+		CLSID = s '{612AC51E-6CB5-46C3-B603-6268202D48DC}'
+		CurVer = s 'RtsOnTransmission.COnTestHarness.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {612AC51E-6CB5-46C3-B603-6268202D48DC} = s 'COnTestHarness Class'
+		{
+			ProgID = s 'RtsOnTransmission.COnTestHarness.1'
+			VersionIndependentProgID = s 'RtsOnTransmission.COnTestHarness'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{90658CC2-ACB7-4219-A977-DE7A3104F20D}'
+		}
+	}
+}

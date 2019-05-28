@@ -1,0 +1,1949 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8964.0 (ada199f2).
+//
+// c:\distcomponents\oninitializationdialogs\debug\OnInitialization.tlh
+//
+// C++ source equivalent of Win32 type library OnInitialization.ocx
+// compiler-generated file created 06/22/03 at 23:04:56 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//  #import "C:\WINDOWS\System32\msvbvm60.dll"
+//  #import "C:\DistComponents\bin\ISDaeCOSolver.dll"
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("ed7df5fa-20be-45c3-b101-6a4b53c2b2fe"))
+/* dual interface */ _ctlInitialization;
+struct /* coclass */ ctlInitialization;
+struct __declspec(uuid("4c9143ea-7080-4bc1-84f6-50935435e0a7"))
+/* dual interface */ _clsVar;
+struct /* coclass */ clsVar;
+struct __declspec(uuid("53163479-35ec-4972-b481-faa0f53bcc89"))
+/* dual interface */ _clsCVar;
+struct /* coclass */ clsCVar;
+struct __declspec(uuid("deca34c4-1f6b-4df0-8f19-3533dc83b0db"))
+/* dual interface */ _clsVarManager;
+struct /* coclass */ clsVarManager;
+struct __declspec(uuid("4acdf901-8c5e-4f8b-8ffd-afdf5509c45d"))
+/* dual interface */ _ctlEquationEditor;
+struct /* coclass */ ctlEquationEditor;
+struct __declspec(uuid("c9a0a35f-4543-433b-9fd2-ee99d985aea3"))
+/* dual interface */ _ctlMessageWindow;
+struct /* coclass */ ctlMessageWindow;
+struct __declspec(uuid("388305a9-a31c-4d2e-bac8-52d6af9f9d26"))
+/* dual interface */ _OnScriptParser;
+struct /* coclass */ OnScriptParser;
+struct __declspec(uuid("64970e55-6c10-4f33-90e9-62efc31e3c07"))
+/* dispinterface */ __ctlInitialization;
+struct __declspec(uuid("0ecaea74-52a4-4a81-9557-601ed4112ffb"))
+/* dispinterface */ __ctlEquationEditor;
+struct __declspec(uuid("7785b142-e38d-4a67-9edd-5b25439f09de"))
+/* dispinterface */ __ctlMessageWindow;
+struct __declspec(uuid("f2d89834-d2c8-47aa-893f-c19c01afd00b"))
+/* dispinterface */ __OnScriptParser;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_ctlInitialization, __uuidof(_ctlInitialization));
+_COM_SMARTPTR_TYPEDEF(_clsVar, __uuidof(_clsVar));
+_COM_SMARTPTR_TYPEDEF(_clsCVar, __uuidof(_clsCVar));
+_COM_SMARTPTR_TYPEDEF(_clsVarManager, __uuidof(_clsVarManager));
+_COM_SMARTPTR_TYPEDEF(_ctlEquationEditor, __uuidof(_ctlEquationEditor));
+_COM_SMARTPTR_TYPEDEF(_ctlMessageWindow, __uuidof(_ctlMessageWindow));
+_COM_SMARTPTR_TYPEDEF(_OnScriptParser, __uuidof(_OnScriptParser));
+_COM_SMARTPTR_TYPEDEF(__ctlInitialization, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(__ctlEquationEditor, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(__ctlMessageWindow, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(__OnScriptParser, __uuidof(IDispatch));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("ed7df5fa-20be-45c3-b101-6a4b53c2b2fe"))
+_ctlInitialization : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT _VtblGapPlaceholder1( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder2( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder3( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder4( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder5( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder6( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder7( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder8( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder9( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder10( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder11( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder12( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder13( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder14( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder15( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder16( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder17( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder18( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder19( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder20( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder21( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder22( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder23( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder24( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder25( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder26( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder27( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder28( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder29( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder30( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder31( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder32( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder33( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder34( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder35( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder36( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder37( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder38( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder39( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder40( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder41( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder42( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder43( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder44( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder45( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder46( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder47( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder48( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder49( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder50( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder51( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder52( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder53( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder54( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder55( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder56( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder57( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder58( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder59( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder60( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder61( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder62( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder63( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder64( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder65( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder66( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder67( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder68( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder69( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder70( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder71( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder72( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder73( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder74( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder75( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder76( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder77( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder78( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder79( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder80( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder81( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder82( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder83( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder84( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder85( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder86( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder87( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder88( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder89( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder90( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder91( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder92( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder93( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder94( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder95( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder96( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder97( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder98( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder99( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder100( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder101( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder102( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder103( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder104( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder105( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder106( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder107( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder108( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder109( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder110( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder111( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder112( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder113( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder114( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder115( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder116( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder117( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder118( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder119( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder120( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder121( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder122( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder123( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder124( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder125( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder126( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder127( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder128( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder129( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder130( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder131( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder132( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder133( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder134( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder135( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder136( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder137( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder138( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder139( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder140( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder141( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder142( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder143( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder144( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder145( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder146( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder147( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder148( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder149( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder150( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder151( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder152( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder153( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder154( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder155( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder156( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder157( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder158( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder159( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder160( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder161( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder162( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder163( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder164( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder165( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder166( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder167( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder168( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder169( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder170( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder171( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder172( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder173( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder174( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder175( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder176( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder177( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder178( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder179( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder180( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder181( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder182( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder183( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder184( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder185( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder186( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder187( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder188( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder189( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder190( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder191( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder192( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder193( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder194( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder195( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder196( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder197( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder198( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder199( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder200( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder201( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder202( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder203( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder204( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder205( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder206( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder207( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder208( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder209( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder210( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder211( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder212( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder213( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder214( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder215( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder216( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder217( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder218( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder219( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder220( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder221( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder222( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder223( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder224( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder225( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder226( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder227( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder228( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder229( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder230( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder231( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder232( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder233( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder234( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder235( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder236( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder237( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder238( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder239( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder240( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder241( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder242( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder243( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder244( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder245( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder246( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder247( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder248( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder249( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder250( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder251( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder252( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder253( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder254( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder255( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder256( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder257( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder258( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder259( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder260( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder261( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder262( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder263( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder264( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder265( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder266( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder267( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder268( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder269( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder270( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder271( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder272( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder273( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder274( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder275( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder276( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder277( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder278( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder279( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder280( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder281( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder282( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder283( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder284( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder285( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder286( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder287( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder288( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder289( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder290( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder291( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder292( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder293( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder294( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder295( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder296( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder297( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder298( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder299( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder300( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder301( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder302( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder303( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder304( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder305( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder306( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder307( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder308( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder309( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder310( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder311( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder312( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder313( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder314( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder315( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder316( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder317( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder318( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder319( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder320( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder321( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder322( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder323( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder324( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder325( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder326( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder327( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder328( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder329( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder330( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder331( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder332( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder333( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder334( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder335( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder336( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder337( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder338( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder339( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder340( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder341( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder342( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder343( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder344( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder345( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder346( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder347( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder348( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder349( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder350( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder351( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder352( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder353( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder354( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder355( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder356( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder357( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder358( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder359( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder360( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder361( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder362( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder363( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder364( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder365( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder366( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder367( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder368( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder369( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder370( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder371( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder372( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder373( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder374( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder375( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder376( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder377( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder378( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder379( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder380( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder381( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder382( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder383( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder384( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder385( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder386( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder387( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder388( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder389( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder390( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder391( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder392( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder393( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder394( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder395( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder396( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder397( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder398( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder399( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder400( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder401( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder402( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder403( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder404( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder405( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder406( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder407( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder408( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder409( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder410( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder411( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder412( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder413( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder414( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder415( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder416( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder417( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder418( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder419( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder420( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder421( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder422( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder423( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder424( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder425( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder426( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder427( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder428( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder429( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder430( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder431( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder432( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder433( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder434( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder435( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder436( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder437( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder438( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder439( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder440( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder441( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder442( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder443( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder444( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder445( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder446( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder447( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder448( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder449( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder450( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder451( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder452( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder453( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder454( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder455( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder456( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder457( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder458( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder459( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder460( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder461( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder462( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder463( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder464( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder465( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder466( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder467( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder468( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder469( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder470( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder471( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder472( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder473( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder474( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder475( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder476( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder477( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder478( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder479( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder480( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder481( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder482( ) { return E_NOTIMPL; }
+    virtual HRESULT __stdcall init (
+        struct _OnScriptParser * * sp,
+        struct _clsVarManager * * vm ) = 0;
+    virtual HRESULT __stdcall Destroy ( ) = 0;
+    virtual HRESULT __stdcall OnApply ( ) = 0;
+    virtual HRESULT __stdcall IsMsgWindowVisible (
+        VARIANT_BOOL * _arg1 ) = 0;
+    virtual HRESULT __stdcall ShowMessageWindow ( ) = 0;
+    virtual HRESULT __stdcall SizeStatusBar (
+        long * Y ) = 0;
+};
+
+struct __declspec(uuid("d16fd96c-e4d6-46b6-ac9e-bd2ce0be9f2e"))
+ctlInitialization;
+    // [ default ] interface _ctlInitialization
+    // [ default, source ] dispinterface __ctlInitialization
+
+struct __declspec(uuid("4c9143ea-7080-4bc1-84f6-50935435e0a7"))
+_clsVar : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_longName (
+        BSTR * longName ) = 0;
+    virtual HRESULT __stdcall put_longName (
+        BSTR longName ) = 0;
+    virtual HRESULT __stdcall get_Name (
+        BSTR * Name ) = 0;
+    virtual HRESULT __stdcall put_Name (
+        BSTR Name ) = 0;
+    virtual HRESULT __stdcall get_Force (
+        VARIANT_BOOL * Force ) = 0;
+    virtual HRESULT __stdcall put_Force (
+        VARIANT_BOOL Force ) = 0;
+    virtual HRESULT __stdcall get_DerForce (
+        VARIANT_BOOL * DerForce ) = 0;
+    virtual HRESULT __stdcall put_DerForce (
+        VARIANT_BOOL DerForce ) = 0;
+    virtual HRESULT __stdcall get_ActiveIdx (
+        long * ActiveIdx ) = 0;
+    virtual HRESULT __stdcall put_ActiveIdx (
+        long ActiveIdx ) = 0;
+    virtual HRESULT __stdcall get_GlobalIdx (
+        long * GlobalIdx ) = 0;
+    virtual HRESULT __stdcall put_GlobalIdx (
+        long GlobalIdx ) = 0;
+    virtual HRESULT __stdcall get_GenEv (
+        VARIANT_BOOL * GenEv ) = 0;
+    virtual HRESULT __stdcall put_GenEv (
+        VARIANT_BOOL GenEv ) = 0;
+    virtual HRESULT __stdcall get_Root (
+        VARIANT_BOOL * Root ) = 0;
+    virtual HRESULT __stdcall put_Root (
+        VARIANT_BOOL Root ) = 0;
+    virtual HRESULT __stdcall get_m_vm (
+        struct _clsVarManager * * m_vm ) = 0;
+    virtual HRESULT _VtblGapPlaceholder1( ) { return E_NOTIMPL; }
+    virtual HRESULT __stdcall putref_m_vm (
+        struct _clsVarManager * m_vm ) = 0;
+    virtual HRESULT __stdcall init (
+        BSTR * itsName,
+        BSTR * itsLongName,
+        VARIANT_BOOL * IsRoot,
+        long * ActiveId,
+        long * GlobalId,
+        double * v,
+        double * dv,
+        struct _clsVarManager * * vm ) = 0;
+    virtual HRESULT __stdcall get_Value (
+        double * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_Value (
+        double * _arg1 ) = 0;
+    virtual HRESULT __stdcall get_der (
+        long * derIdx,
+        double * _arg2 ) = 0;
+    virtual HRESULT __stdcall put_der (
+        long * derIdx,
+        double * _arg2 ) = 0;
+    virtual HRESULT __stdcall Destroy ( ) = 0;
+};
+
+struct __declspec(uuid("0897d1f1-6fc5-4649-9854-af148ed60049"))
+clsVar;
+    // [ default ] interface _clsVar
+
+struct __declspec(uuid("53163479-35ec-4972-b481-faa0f53bcc89"))
+_clsCVar : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Name (
+        BSTR * Name ) = 0;
+    virtual HRESULT __stdcall put_Name (
+        BSTR Name ) = 0;
+    virtual HRESULT __stdcall get_longName (
+        BSTR * longName ) = 0;
+    virtual HRESULT __stdcall put_longName (
+        BSTR longName ) = 0;
+    virtual HRESULT __stdcall get_Root (
+        VARIANT_BOOL * Root ) = 0;
+    virtual HRESULT __stdcall put_Root (
+        VARIANT_BOOL Root ) = 0;
+    virtual HRESULT __stdcall get_m_vm (
+        struct _clsVarManager * * m_vm ) = 0;
+    virtual HRESULT _VtblGapPlaceholder1( ) { return E_NOTIMPL; }
+    virtual HRESULT __stdcall putref_m_vm (
+        struct _clsVarManager * m_vm ) = 0;
+    virtual HRESULT __stdcall init (
+        BSTR * itsName,
+        BSTR * itsLongName,
+        VARIANT_BOOL * IsRoot,
+        struct _clsVarManager * * vm ) = 0;
+    virtual HRESULT __stdcall Add (
+        BSTR * itemKey,
+        IDispatch * * newItem ) = 0;
+    virtual HRESULT __stdcall removeAll ( ) = 0;
+    virtual HRESULT __stdcall remove (
+        VARIANT * itemKey ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        VARIANT * itemKey,
+        IDispatch * * _arg2 ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall Destroy ( ) = 0;
+};
+
+struct __declspec(uuid("47a4423a-34a8-4de5-ab74-3948b3f7aa2a"))
+clsCVar;
+    // [ default ] interface _clsCVar
+
+struct __declspec(uuid("deca34c4-1f6b-4df0-8f19-3533dc83b0db"))
+_clsVarManager : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_vars (
+        struct _Collection * * vars ) = 0;
+    virtual HRESULT _VtblGapPlaceholder1( ) { return E_NOTIMPL; }
+    virtual HRESULT __stdcall putref_vars (
+        struct _Collection * vars ) = 0;
+    virtual HRESULT __stdcall get_CVars (
+        struct _Collection * * CVars ) = 0;
+    virtual HRESULT _VtblGapPlaceholder2( ) { return E_NOTIMPL; }
+    virtual HRESULT __stdcall putref_CVars (
+        struct _Collection * CVars ) = 0;
+    virtual HRESULT __stdcall get_EqnV (
+        struct _Collection * * EqnV ) = 0;
+    virtual HRESULT _VtblGapPlaceholder3( ) { return E_NOTIMPL; }
+    virtual HRESULT __stdcall putref_EqnV (
+        struct _Collection * EqnV ) = 0;
+    virtual HRESULT __stdcall get_EqnDV1 (
+        struct _Collection * * EqnDV1 ) = 0;
+    virtual HRESULT _VtblGapPlaceholder4( ) { return E_NOTIMPL; }
+    virtual HRESULT __stdcall putref_EqnDV1 (
+        struct _Collection * EqnDV1 ) = 0;
+    virtual HRESULT __stdcall get_EqnDV2 (
+        struct _Collection * * EqnDV2 ) = 0;
+    virtual HRESULT _VtblGapPlaceholder5( ) { return E_NOTIMPL; }
+    virtual HRESULT __stdcall putref_EqnDV2 (
+        struct _Collection * EqnDV2 ) = 0;
+    virtual HRESULT __stdcall get_EqnDV3 (
+        struct _Collection * * EqnDV3 ) = 0;
+    virtual HRESULT _VtblGapPlaceholder6( ) { return E_NOTIMPL; }
+    virtual HRESULT __stdcall putref_EqnDV3 (
+        struct _Collection * EqnDV3 ) = 0;
+    virtual HRESULT __stdcall Destroy ( ) = 0;
+    virtual HRESULT __stdcall EnableEvents ( ) = 0;
+    virtual HRESULT __stdcall DisableEvents ( ) = 0;
+    virtual HRESULT __stdcall init (
+        long * nVars,
+        SAFEARRAY * * VarOrder,
+        SAFEARRAY * * VarNames,
+        SAFEARRAY * * Vals,
+        SAFEARRAY * * DerVals ) = 0;
+    virtual HRESULT __stdcall InitStruct ( ) = 0;
+    virtual HRESULT __stdcall ReportStruct (
+        long * der,
+        struct _clsVar * * var ) = 0;
+};
+
+struct __declspec(uuid("f469f156-6ac1-4063-a534-e054bf7b8a86"))
+clsVarManager;
+    // [ default ] interface _clsVarManager
+
+struct __declspec(uuid("4acdf901-8c5e-4f8b-8ffd-afdf5509c45d"))
+_ctlEquationEditor : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT _VtblGapPlaceholder1( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder2( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder3( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder4( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder5( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder6( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder7( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder8( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder9( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder10( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder11( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder12( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder13( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder14( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder15( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder16( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder17( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder18( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder19( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder20( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder21( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder22( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder23( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder24( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder25( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder26( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder27( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder28( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder29( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder30( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder31( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder32( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder33( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder34( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder35( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder36( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder37( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder38( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder39( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder40( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder41( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder42( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder43( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder44( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder45( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder46( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder47( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder48( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder49( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder50( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder51( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder52( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder53( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder54( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder55( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder56( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder57( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder58( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder59( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder60( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder61( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder62( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder63( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder64( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder65( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder66( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder67( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder68( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder69( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder70( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder71( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder72( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder73( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder74( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder75( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder76( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder77( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder78( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder79( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder80( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder81( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder82( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder83( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder84( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder85( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder86( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder87( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder88( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder89( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder90( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder91( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder92( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder93( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder94( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder95( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder96( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder97( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder98( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder99( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder100( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder101( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder102( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder103( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder104( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder105( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder106( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder107( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder108( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder109( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder110( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder111( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder112( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder113( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder114( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder115( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder116( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder117( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder118( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder119( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder120( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder121( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder122( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder123( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder124( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder125( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder126( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder127( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder128( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder129( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder130( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder131( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder132( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder133( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder134( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder135( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder136( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder137( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder138( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder139( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder140( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder141( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder142( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder143( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder144( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder145( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder146( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder147( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder148( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder149( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder150( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder151( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder152( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder153( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder154( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder155( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder156( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder157( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder158( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder159( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder160( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder161( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder162( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder163( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder164( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder165( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder166( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder167( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder168( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder169( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder170( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder171( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder172( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder173( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder174( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder175( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder176( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder177( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder178( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder179( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder180( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder181( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder182( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder183( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder184( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder185( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder186( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder187( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder188( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder189( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder190( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder191( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder192( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder193( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder194( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder195( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder196( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder197( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder198( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder199( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder200( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder201( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder202( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder203( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder204( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder205( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder206( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder207( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder208( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder209( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder210( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder211( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder212( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder213( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder214( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder215( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder216( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder217( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder218( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder219( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder220( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder221( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder222( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder223( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder224( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder225( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder226( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder227( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder228( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder229( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder230( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder231( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder232( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder233( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder234( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder235( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder236( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder237( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder238( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder239( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder240( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder241( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder242( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder243( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder244( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder245( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder246( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder247( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder248( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder249( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder250( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder251( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder252( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder253( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder254( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder255( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder256( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder257( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder258( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder259( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder260( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder261( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder262( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder263( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder264( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder265( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder266( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder267( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder268( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder269( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder270( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder271( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder272( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder273( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder274( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder275( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder276( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder277( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder278( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder279( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder280( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder281( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder282( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder283( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder284( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder285( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder286( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder287( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder288( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder289( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder290( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder291( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder292( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder293( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder294( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder295( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder296( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder297( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder298( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder299( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder300( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder301( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder302( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder303( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder304( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder305( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder306( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder307( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder308( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder309( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder310( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder311( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder312( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder313( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder314( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder315( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder316( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder317( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder318( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder319( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder320( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder321( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder322( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder323( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder324( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder325( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder326( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder327( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder328( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder329( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder330( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder331( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder332( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder333( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder334( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder335( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder336( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder337( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder338( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder339( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder340( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder341( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder342( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder343( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder344( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder345( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder346( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder347( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder348( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder349( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder350( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder351( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder352( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder353( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder354( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder355( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder356( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder357( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder358( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder359( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder360( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder361( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder362( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder363( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder364( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder365( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder366( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder367( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder368( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder369( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder370( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder371( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder372( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder373( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder374( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder375( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder376( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder377( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder378( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder379( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder380( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder381( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder382( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder383( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder384( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder385( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder386( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder387( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder388( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder389( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder390( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder391( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder392( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder393( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder394( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder395( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder396( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder397( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder398( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder399( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder400( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder401( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder402( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder403( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder404( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder405( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder406( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder407( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder408( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder409( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder410( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder411( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder412( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder413( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder414( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder415( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder416( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder417( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder418( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder419( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder420( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder421( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder422( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder423( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder424( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder425( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder426( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder427( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder428( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder429( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder430( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder431( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder432( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder433( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder434( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder435( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder436( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder437( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder438( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder439( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder440( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder441( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder442( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder443( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder444( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder445( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder446( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder447( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder448( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder449( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder450( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder451( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder452( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder453( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder454( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder455( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder456( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder457( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder458( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder459( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder460( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder461( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder462( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder463( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder464( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder465( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder466( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder467( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder468( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder469( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder470( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder471( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder472( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder473( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder474( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder475( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder476( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder477( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder478( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder479( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder480( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder481( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder482( ) { return E_NOTIMPL; }
+    virtual HRESULT __stdcall get_GridIndex (
+        long * GridIndex ) = 0;
+    virtual HRESULT __stdcall put_GridIndex (
+        long GridIndex ) = 0;
+    virtual HRESULT __stdcall get_EqnIndex (
+        long * EqnIndex ) = 0;
+    virtual HRESULT __stdcall put_EqnIndex (
+        long EqnIndex ) = 0;
+    virtual HRESULT __stdcall get_eqnName (
+        BSTR * eqnName ) = 0;
+    virtual HRESULT __stdcall put_eqnName (
+        BSTR eqnName ) = 0;
+    virtual HRESULT __stdcall init (
+        struct _OnScriptParser * * sp,
+        struct _clsVarManager * * vm,
+        struct _ctlMessageWindow * * st ) = 0;
+    virtual HRESULT __stdcall Destroy ( ) = 0;
+    virtual HRESULT __stdcall put_EqnBody (
+        BSTR * _arg1 ) = 0;
+    virtual HRESULT __stdcall get_EqnBody (
+        BSTR * _arg1 ) = 0;
+    virtual HRESULT __stdcall Fmt (
+        BSTR * VIn,
+        BSTR * _arg2 ) = 0;
+};
+
+struct __declspec(uuid("f16d8da2-a244-4f7a-9e2c-abf5c1ab126a"))
+ctlEquationEditor;
+    // [ default ] interface _ctlEquationEditor
+    // [ default, source ] dispinterface __ctlEquationEditor
+
+struct __declspec(uuid("c9a0a35f-4543-433b-9fd2-ee99d985aea3"))
+_ctlMessageWindow : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT _VtblGapPlaceholder1( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder2( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder3( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder4( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder5( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder6( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder7( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder8( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder9( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder10( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder11( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder12( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder13( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder14( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder15( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder16( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder17( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder18( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder19( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder20( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder21( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder22( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder23( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder24( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder25( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder26( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder27( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder28( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder29( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder30( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder31( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder32( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder33( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder34( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder35( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder36( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder37( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder38( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder39( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder40( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder41( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder42( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder43( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder44( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder45( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder46( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder47( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder48( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder49( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder50( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder51( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder52( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder53( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder54( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder55( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder56( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder57( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder58( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder59( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder60( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder61( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder62( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder63( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder64( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder65( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder66( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder67( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder68( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder69( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder70( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder71( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder72( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder73( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder74( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder75( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder76( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder77( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder78( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder79( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder80( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder81( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder82( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder83( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder84( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder85( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder86( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder87( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder88( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder89( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder90( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder91( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder92( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder93( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder94( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder95( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder96( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder97( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder98( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder99( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder100( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder101( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder102( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder103( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder104( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder105( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder106( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder107( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder108( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder109( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder110( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder111( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder112( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder113( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder114( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder115( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder116( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder117( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder118( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder119( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder120( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder121( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder122( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder123( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder124( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder125( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder126( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder127( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder128( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder129( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder130( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder131( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder132( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder133( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder134( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder135( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder136( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder137( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder138( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder139( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder140( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder141( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder142( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder143( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder144( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder145( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder146( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder147( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder148( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder149( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder150( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder151( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder152( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder153( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder154( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder155( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder156( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder157( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder158( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder159( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder160( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder161( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder162( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder163( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder164( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder165( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder166( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder167( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder168( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder169( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder170( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder171( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder172( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder173( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder174( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder175( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder176( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder177( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder178( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder179( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder180( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder181( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder182( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder183( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder184( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder185( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder186( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder187( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder188( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder189( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder190( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder191( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder192( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder193( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder194( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder195( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder196( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder197( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder198( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder199( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder200( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder201( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder202( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder203( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder204( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder205( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder206( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder207( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder208( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder209( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder210( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder211( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder212( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder213( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder214( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder215( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder216( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder217( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder218( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder219( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder220( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder221( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder222( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder223( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder224( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder225( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder226( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder227( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder228( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder229( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder230( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder231( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder232( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder233( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder234( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder235( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder236( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder237( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder238( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder239( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder240( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder241( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder242( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder243( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder244( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder245( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder246( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder247( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder248( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder249( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder250( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder251( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder252( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder253( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder254( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder255( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder256( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder257( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder258( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder259( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder260( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder261( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder262( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder263( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder264( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder265( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder266( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder267( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder268( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder269( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder270( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder271( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder272( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder273( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder274( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder275( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder276( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder277( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder278( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder279( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder280( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder281( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder282( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder283( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder284( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder285( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder286( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder287( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder288( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder289( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder290( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder291( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder292( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder293( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder294( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder295( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder296( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder297( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder298( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder299( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder300( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder301( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder302( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder303( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder304( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder305( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder306( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder307( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder308( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder309( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder310( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder311( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder312( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder313( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder314( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder315( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder316( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder317( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder318( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder319( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder320( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder321( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder322( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder323( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder324( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder325( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder326( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder327( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder328( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder329( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder330( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder331( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder332( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder333( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder334( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder335( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder336( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder337( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder338( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder339( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder340( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder341( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder342( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder343( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder344( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder345( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder346( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder347( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder348( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder349( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder350( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder351( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder352( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder353( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder354( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder355( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder356( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder357( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder358( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder359( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder360( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder361( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder362( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder363( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder364( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder365( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder366( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder367( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder368( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder369( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder370( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder371( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder372( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder373( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder374( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder375( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder376( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder377( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder378( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder379( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder380( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder381( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder382( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder383( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder384( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder385( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder386( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder387( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder388( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder389( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder390( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder391( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder392( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder393( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder394( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder395( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder396( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder397( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder398( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder399( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder400( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder401( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder402( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder403( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder404( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder405( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder406( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder407( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder408( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder409( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder410( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder411( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder412( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder413( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder414( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder415( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder416( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder417( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder418( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder419( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder420( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder421( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder422( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder423( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder424( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder425( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder426( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder427( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder428( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder429( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder430( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder431( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder432( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder433( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder434( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder435( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder436( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder437( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder438( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder439( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder440( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder441( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder442( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder443( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder444( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder445( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder446( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder447( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder448( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder449( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder450( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder451( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder452( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder453( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder454( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder455( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder456( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder457( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder458( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder459( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder460( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder461( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder462( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder463( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder464( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder465( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder466( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder467( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder468( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder469( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder470( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder471( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder472( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder473( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder474( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder475( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder476( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder477( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder478( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder479( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder480( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder481( ) { return E_NOTIMPL; }
+    virtual HRESULT _VtblGapPlaceholder482( ) { return E_NOTIMPL; }
+    virtual HRESULT __stdcall Destroy ( ) = 0;
+    virtual HRESULT __stdcall LogMessage (
+        BSTR * strMsg ) = 0;
+    virtual HRESULT __stdcall ClearMessageWindow ( ) = 0;
+    virtual HRESULT __stdcall MaximizeMessageWindow (
+        short * ucHeight,
+        short * ucWidth ) = 0;
+    virtual HRESULT __stdcall putref_ActiveForm (
+        IDispatch * * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("fdc0fdce-fd09-42d9-a667-0be7a75591d0"))
+ctlMessageWindow;
+    // [ default ] interface _ctlMessageWindow
+    // [ default, source ] dispinterface __ctlMessageWindow
+
+struct __declspec(uuid("388305a9-a31c-4d2e-bac8-52d6af9f9d26"))
+_OnScriptParser : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall SetModelExec (
+        struct IOnModelExec * * pModelExec ) = 0;
+    virtual HRESULT __stdcall get_nVars (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall get_nEqns (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall get_nModelVars (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall get_nModelEqns (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall get_nActiveEqns (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall get_nActiveVars (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall get_VarOrder (
+        long * iActiveVar,
+        long * _arg2 ) = 0;
+    virtual HRESULT __stdcall get_EqnOrder (
+        long * iActiveEqn,
+        long * _arg2 ) = 0;
+    virtual HRESULT __stdcall get_itVarOrder (
+        long * iVar,
+        long * _arg2 ) = 0;
+    virtual HRESULT __stdcall get_itEqnOrder (
+        long * iEqn,
+        long * _arg2 ) = 0;
+    virtual HRESULT __stdcall ShowDialog ( ) = 0;
+    virtual HRESULT __stdcall SetScripts (
+        long * nScripts,
+        SAFEARRAY * * AssignedVars,
+        SAFEARRAY * * ScriptNames,
+        SAFEARRAY * * ScriptVars,
+        SAFEARRAY * * ScriptResiduals,
+        SAFEARRAY * * ScriptBodies,
+        SAFEARRAY * * ScriptVarCount ) = 0;
+    virtual HRESULT __stdcall SetTrimVars (
+        long * nTrimVars,
+        SAFEARRAY * * TrimVars,
+        SAFEARRAY * * TrimVarVals ) = 0;
+    virtual HRESULT __stdcall GetScripts (
+        long * nScripts,
+        SAFEARRAY * * AssignedVars,
+        SAFEARRAY * * ScriptNames,
+        SAFEARRAY * * ScriptVars,
+        SAFEARRAY * * ScriptResiduals,
+        SAFEARRAY * * ScriptBodies,
+        SAFEARRAY * * ScriptVarCount ) = 0;
+    virtual HRESULT __stdcall GetTrimVars (
+        long * nTrimVars,
+        SAFEARRAY * * TrimVars,
+        SAFEARRAY * * TrimVarVals ) = 0;
+    virtual HRESULT __stdcall eqnName (
+        long * iEqn,
+        BSTR * _arg2 ) = 0;
+    virtual HRESULT __stdcall VarName (
+        long * iVar,
+        BSTR * _arg2 ) = 0;
+    virtual HRESULT __stdcall initModelVar (
+        long * iActiveVar,
+        VARIANT_BOOL * bActive,
+        long * aIndex,
+        BSTR * aAssignedEqn,
+        BSTR * aName,
+        long * aDER,
+        double * aValue ) = 0;
+    virtual HRESULT __stdcall initModelEqn (
+        long * iActiveEqn,
+        VARIANT_BOOL * bActive,
+        long * aIndex,
+        BSTR * aAssignedVar,
+        BSTR * aName,
+        BSTR * aVars,
+        double * aResidual ) = 0;
+    virtual HRESULT __stdcall Test (
+        BSTR * sName,
+        BSTR * sScript,
+        BSTR * sFinalScript,
+        VARIANT_BOOL * bErr,
+        double * retVal,
+        long * errLine,
+        long * errCol,
+        BSTR * errDesc,
+        BSTR * errText ) = 0;
+    virtual HRESULT __stdcall Eval (
+        BSTR * eqnName,
+        BSTR * script,
+        BSTR * finalScript,
+        double * _arg4 ) = 0;
+    virtual HRESULT __stdcall GetEqnStruct (
+        BSTR * script,
+        struct _Collection * * v,
+        struct _Collection * * dv1,
+        struct _Collection * * dv2,
+        struct _Collection * * dv3,
+        double * result ) = 0;
+    virtual HRESULT __stdcall Fmt (
+        BSTR * VIn,
+        BSTR * _arg2 ) = 0;
+};
+
+struct __declspec(uuid("fbe4c91a-6686-4133-bb27-9956857b6c99"))
+OnScriptParser;
+    // [ default ] interface _OnScriptParser
+    // [ default, source ] dispinterface __OnScriptParser
+
+struct __declspec(uuid("64970e55-6c10-4f33-90e9-62efc31e3c07"))
+__ctlInitialization : IDispatch
+{};
+
+struct __declspec(uuid("0ecaea74-52a4-4a81-9557-601ed4112ffb"))
+__ctlEquationEditor : IDispatch
+{};
+
+struct __declspec(uuid("7785b142-e38d-4a67-9edd-5b25439f09de"))
+__ctlMessageWindow : IDispatch
+{};
+
+struct __declspec(uuid("f2d89834-d2c8-47aa-893f-c19c01afd00b"))
+__OnScriptParser : IDispatch
+{};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_OnInitialization =
+    {0x0ad9f58c,0xd5a4,0x489e,{0x8c,0x61,0x92,0xdb,0x65,0xab,0x82,0x48}};
+extern "C" const GUID __declspec(selectany) IID__ctlInitialization =
+    {0xed7df5fa,0x20be,0x45c3,{0xb1,0x01,0x6a,0x4b,0x53,0xc2,0xb2,0xfe}};
+extern "C" const GUID __declspec(selectany) CLSID_ctlInitialization =
+    {0xd16fd96c,0xe4d6,0x46b6,{0xac,0x9e,0xbd,0x2c,0xe0,0xbe,0x9f,0x2e}};
+extern "C" const GUID __declspec(selectany) IID__clsVar =
+    {0x4c9143ea,0x7080,0x4bc1,{0x84,0xf6,0x50,0x93,0x54,0x35,0xe0,0xa7}};
+extern "C" const GUID __declspec(selectany) CLSID_clsVar =
+    {0x0897d1f1,0x6fc5,0x4649,{0x98,0x54,0xaf,0x14,0x8e,0xd6,0x00,0x49}};
+extern "C" const GUID __declspec(selectany) IID__clsCVar =
+    {0x53163479,0x35ec,0x4972,{0xb4,0x81,0xfa,0xa0,0xf5,0x3b,0xcc,0x89}};
+extern "C" const GUID __declspec(selectany) CLSID_clsCVar =
+    {0x47a4423a,0x34a8,0x4de5,{0xab,0x74,0x39,0x48,0xb3,0xf7,0xaa,0x2a}};
+extern "C" const GUID __declspec(selectany) IID__clsVarManager =
+    {0xdeca34c4,0x1f6b,0x4df0,{0x8f,0x19,0x35,0x33,0xdc,0x83,0xb0,0xdb}};
+extern "C" const GUID __declspec(selectany) CLSID_clsVarManager =
+    {0xf469f156,0x6ac1,0x4063,{0xa5,0x34,0xe0,0x54,0xbf,0x7b,0x8a,0x86}};
+extern "C" const GUID __declspec(selectany) IID__ctlEquationEditor =
+    {0x4acdf901,0x8c5e,0x4f8b,{0x8f,0xfd,0xaf,0xdf,0x55,0x09,0xc4,0x5d}};
+extern "C" const GUID __declspec(selectany) CLSID_ctlEquationEditor =
+    {0xf16d8da2,0xa244,0x4f7a,{0x9e,0x2c,0xab,0xf5,0xc1,0xab,0x12,0x6a}};
+extern "C" const GUID __declspec(selectany) IID__ctlMessageWindow =
+    {0xc9a0a35f,0x4543,0x433b,{0x9f,0xd2,0xee,0x99,0xd9,0x85,0xae,0xa3}};
+extern "C" const GUID __declspec(selectany) CLSID_ctlMessageWindow =
+    {0xfdc0fdce,0xfd09,0x42d9,{0xa6,0x67,0x0b,0xe7,0xa7,0x55,0x91,0xd0}};
+extern "C" const GUID __declspec(selectany) IID__OnScriptParser =
+    {0x388305a9,0xa31c,0x4d2e,{0xba,0xc8,0x52,0xd6,0xaf,0x9f,0x9d,0x26}};
+extern "C" const GUID __declspec(selectany) CLSID_OnScriptParser =
+    {0xfbe4c91a,0x6686,0x4133,{0xbb,0x27,0x99,0x56,0x85,0x7b,0x6c,0x99}};
+extern "C" const GUID __declspec(selectany) DIID___ctlInitialization =
+    {0x64970e55,0x6c10,0x4f33,{0x90,0xe9,0x62,0xef,0xc3,0x1e,0x3c,0x07}};
+extern "C" const GUID __declspec(selectany) DIID___ctlEquationEditor =
+    {0x0ecaea74,0x52a4,0x4a81,{0x95,0x57,0x60,0x1e,0xd4,0x11,0x2f,0xfb}};
+extern "C" const GUID __declspec(selectany) DIID___ctlMessageWindow =
+    {0x7785b142,0xe38d,0x4a67,{0x9e,0xdd,0x5b,0x25,0x43,0x9f,0x09,0xde}};
+extern "C" const GUID __declspec(selectany) DIID___OnScriptParser =
+    {0xf2d89834,0xd2c8,0x47aa,{0x89,0x3f,0xc1,0x9c,0x01,0xaf,0xd0,0x0b}};
+
+#pragma pack(pop)

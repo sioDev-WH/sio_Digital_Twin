@@ -1,0 +1,49 @@
+Questions:
+
+1) How do the states in ClutchBase relate to the states in our previous clutch
+
+Slipping
+Locked
+Sticking
+
+
+was:
+
+Stick
+Slip
+Reverse
+
+
+2) How are the following transitions triggered:
+
+a) Slipping to sticking
+
+b) sticking to slipping
+
+c) sticking to locked
+
+d) locked to slipping
+
+
+3) How is Engine::r_interpolation(double *res) supposed to work
+
+//*res = torque -  torqueMap.interpolate_2D(throttle,RPM,torque); 
+
+// TODO: fix the following line per the intent.  It won't compile this way.  
+//*res = p->T - torqueMap.interpolate_2D(throttle,RPM,&(p->T)); 
+	
+
+->my solution:
+  double t = 0.0;
+  // TODO: confirm that this is correct
+  torqueMap.interpolate_2D(throttle,RPM,&t); 
+  *res = p->T - t; 
+ 
+
+4) Clutch base class
+
+-->> notes on how I had to implement it:
+
+Put all the Init() functions in the derived Esos.
+Couldn't have clutch base derive from model base because it caused ambiguous inheritance.
+The implication is that a complete model cannot used as a base class for a derived model.  We will have to get around this.

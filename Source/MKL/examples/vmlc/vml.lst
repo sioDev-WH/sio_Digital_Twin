@@ -1,0 +1,12 @@
+VML = \
+vssin+ vdsin+ vscos+ vdcos+ vstan+ vdtan+ vssincos+ vdsincos+             \
+vsexp+ vdexp+ vsln+ vdln+ vslog10+ vdlog10+ vspow+ vdpow+ vssqrt+ vdsqrt+ \
+vscbrt+ vdcbrt+ vsinvsqrt+ vdinvsqrt+ vsinvcbrt+ vdinvcbrt+               \
+vsinv+ vdinv+ vsdiv+ vddiv+                                               \
+vssinh+ vdsinh+ vscosh+ vdcosh+ vstanh+ vdtanh+                           \
+vsasinh+ vdasinh+ vsacosh+ vdacosh+ vsatanh+ vdatanh+                     \
+vsasin+ vdasin+ vsacos+ vdacos+ vsatan+ vdatan+ vsatan2+ vdatan2+         \
+vspacki+ vdpacki+ vspackv+ vdpackv+ vspackm+ vdpackm+                     \
+vsunpacki+ vdunpacki+ vsunpackv+ vdunpackv+ vsunpackm+ vdunpackm+         \
+mode+                                                                     \
+errstatus+ callback+

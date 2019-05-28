@@ -1,0 +1,565 @@
+<HTML>
+<HEAD>
+<title>BLAS Level 2</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+BLAS Level 2 Routines
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="gbmv"></A>
+<B>?gbmv</B>
+performs one of the following matrix-vector operations:<BR>
+<i>y</i> = <code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code><i> Ax</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">beta</font></code><i> y</i>
+&nbsp;for <code><font face="Courier New,Courier,codetxt" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier,codetxt" color="#000099">'N'</font></code>;
+<BR>
+
+<i>y</i> = <code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code><i> A<sup><small>T</small></sup>x</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">beta</font></code><i> y</i>
+&nbsp;for <code><font face="Courier New,Courier,codetxt" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier,codetxt" color="#000099">'T'</font></code>;
+<BR>
+
+<i>y</i> = <code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code><i> A<sup><small>H</small></sup>x</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">beta</font></code><i> y</i>
+&nbsp;for <code><font face="Courier New,Courier,codetxt" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier,codetxt" color="#000099">'C'</font></code>.
+
+<BR>
+Here <i>A</i> is an
+<code><font face="Courier New,Courier,codetxt" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+band matrix with
+<code><font face="Courier New,Courier,codetxt" color="#000099">ku</font></code>
+superdiagonals and
+<code><font face="Courier New,Courier,codetxt" color="#000099">kl</font></code>
+subdiagonals;
+<i>x</i> and <i>y</i> are vectors.
+
+<br>
+
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgbmv (trans, m, n, kl, ku, salpha, SA, lda, SX, inxc, sbeta, SY, incy)<br>
+call dgbmv (trans, m, n, kl, ku, dalpha, DA, lda, DX, incx, dbeta, DY, incy)<br>
+call cgbmv (trans, m, n, kl, ku, calpha, CA, lda, CX, incx, cbeta, CY, incy)<br>
+call zgbmv (trans, m, n, kl, ku, zalpha, ZA, lda, ZX, incx, zbeta, ZY, incy)
+</font></code>
+
+<p><A NAME="gemv"></A>
+
+<B>?gemv</B>
+performs one of the following matrix-vector operations:
+<BR>
+
+<i>y</i> = <code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code><i> Ax</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">beta</font></code><i> y</i>
+&nbsp;for <code><font face="Courier New,Courier,codetxt" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier,codetxt" color="#000099">'N'</font></code>;
+<BR>
+
+<i>y</i> = <code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code><i> A<sup><small>T</small></sup>x</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">beta</font></code><i> y</i>
+&nbsp;for <code><font face="Courier New,Courier,codetxt" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier,codetxt" color="#000099">'T'</font></code>;
+<BR>
+
+<i>y</i> = <code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code><i> A<sup><small>H</small></sup>x</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">beta</font></code><i> y</i>
+&nbsp;for <code><font face="Courier New,Courier,codetxt" color="#000099">trans</font></code> =
+<code><font face="Courier New,Courier,codetxt" color="#000099">'C'</font></code>.
+<BR>
+
+Here <i>A</i> is a general
+<code><font face="Courier New,Courier,codetxt" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+matrix;
+<i>x</i> and <i>y</i> are vectors.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgemv (trans, m, n, salpha, SA, lda, SX, incx, sbeta, SY, incy)<br>
+call dgemv (trans, m, n, dalpha, DA, lda, DX, incx, dbeta, DY, incy)<br>
+call cgemv (trans, m, n, calpha, CA, lda, CX, incx, cbeta, CY, incy)<br>
+call zgemv (trans, m, n, zalpha, ZA, lda, ZX, incx, zbeta, ZY, incy)
+</font></code>
+
+<p><A NAME="ger"></A>
+
+<B>?ger</B>
+performs a rank-1 update of a real
+<code><font face="Courier New,Courier,codetxt" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+matrix <i>A</i>:<BR>
+<i>A</i> = <i>A</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code>
+<i>xy<sup><small>T</small></sup></i>.
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sger (m, n, salpha, SX, incx, SY, incy, SA, lda)<br>
+call dger (m, n, dalpha, DX, incx, DY, incy, DA, lda)
+</font></code>
+
+<p><A NAME="gerc"></A>
+
+<B>?gerc</B>
+performs a rank-1 update of a complex
+<code><font face="Courier New,Courier,codetxt" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+matrix <i>A</i>, with conjugation:<BR>
+<i>A</i> = <i>A</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code>
+<i>xy<sup><small>H</small></sup></i>.
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cgerc (m, n, calpha, CX, incx, CY, incy, CA, lda)<br>
+call zgerc (m, n, zalpha, ZX, incx, ZY, incy, ZA, lda)
+</font></code>
+
+<p><A NAME="geru"></A>
+
+<B>?geru</B>
+performs a rank-1 update of a complex
+<code><font face="Courier New,Courier,codetxt" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+matrix <i>A</i>, without conjugation:<BR>
+<i>A</i> = <i>A</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code>
+<i>xy<sup><small>T</small></sup></i>.
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cgerc (m, n, calpha, CX, incx, CY, incy, CA, lda)<br>
+call zgerc (m, n, zalpha, ZX, incx, ZY, incy, ZA, lda)
+</font></code>
+
+<p><A NAME="hbmv"></A>
+
+<B>?hbmv</B>
+performs the following matrix-vector operation:
+<BR>
+
+<i>y</i> = <code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code><i> A<sup></sup>x</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">beta</font></code><i> y</i>.
+
+<BR>
+Here <i>A</i> is an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+Hermitian band matrix with
+<code><font face="Courier New,Courier,codetxt" color="#000099">k</font></code>
+subdiagonals;
+<i>x</i> and <i>y</i> are vectors.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chbmv (uplo, n, k, calpha, CA, lda, CX, incx, cbeta, CY, incy)<br>
+call zhbmv (uplo, n, k, zalpha, ZA, lda, ZX, incx, zbeta, ZY, incy)
+</font></code>
+
+<p><A NAME="hemv"></A>
+
+<B>?hemv</B>
+performs the following matrix-vector operation:
+<BR>
+
+<i>y</i> = <code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code><i> A<sup></sup>x</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">beta</font></code><i> y</i>.
+
+<BR>
+Here <i>A</i> is an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+Hermitian matrix;
+<i>x</i> and <i>y</i> are vectors.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chemv (uplo, n, calpha, CA, lda, CX, incx, cbeta, CY, incy)<br>
+call zhemv (uplo, n, zalpha, ZA, lda, ZX, incx, zbeta, ZY, incy)
+</font></code>
+
+<p><A NAME="her"></A>
+
+<B>?her</B>
+performs a rank-1 update of an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+Hermitian matrix <i>A</i>:<BR>
+<i>A</i> = <i>A</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code>
+<i>xx<sup><small>H</small></sup></i>.
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cher (uplo, n, salpha, CX, incx, CA, lda)<br>
+call zher (uplo, n, dalpha, ZX, incx, ZA, lda)
+</font></code>
+
+
+<p><A NAME="her2"></A>
+
+<B>?her2</B>
+performs a rank-2 update of an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+Hermitian matrix <i>A</i>:<BR>
+<i>A</i> = <i>A</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code>
+<i>xy<sup><small>H</small></sup></i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">conjg(alpha)</font></code>
+<i>yx<sup><small>H</small></sup></i>.
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cher2 (uplo, n, calpha, CX, incx, CY, incy, CA, lda)<br>
+call zher2 (uplo, n, zalpha, ZX, incx, ZY, incy, ZA, lda)
+</font></code>
+
+<p><A NAME="hpmv"></A>
+
+<B>?hpmv</B>
+performs the following matrix-vector operation:
+<BR>
+
+<i>y</i> = <code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code><i> A<sup></sup>x</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">beta</font></code><i> y</i>.
+
+<BR>
+Here <i>A</i> is an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+packed Hermitian matrix;
+<i>x</i> and <i>y</i> are vectors.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chpmv (uplo, n, calpha, CAP, CX, incx, cbeta, CY, incy)<br>
+call zhpmv (uplo, n, zalpha, ZAP, ZX, incx, zbeta, ZY, incy)
+</font></code>
+
+<p><A NAME="hpr"></A>
+
+<B>?hpr</B>
+performs a rank-1 update of an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+packed Hermitian matrix <i>A</i>:<BR>
+<i>A</i> = <i>A</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code>
+<i>xx<sup><small>H</small></sup></i>.
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chpr (uplo, n, salpha, CX, incx, CAP)<br>
+call zhpr (uplo, n, dalpha, ZX, incx, ZAP)
+</font></code>
+
+
+<p><A NAME="hpr2"></A>
+
+<B>?hpr2</B>
+performs a rank-2 update of an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+packed Hermitian matrix <i>A</i>:<BR>
+<i>A</i> = <i>A</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code>
+<i>xy<sup><small>H</small></sup></i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">conjg(alpha)</font></code>
+<i>yx<sup><small>H</small></sup></i>.
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chpr2 (uplo, n, calpha, CX, incx, CY, incy, CAP)<br>
+call zhpr2 (uplo, n, zalpha, ZX, incx, ZY, incy, ZAP)
+</font></code>
+
+<p><A NAME="sbmv"></A>
+
+<B>?sbmv</B>
+performs the following matrix-vector operation:
+<BR>
+
+<i>y</i> = <code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code><i> A<sup></sup>x</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">beta</font></code><i> y</i>.
+
+<BR>
+Here <i>A</i> is an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+symmetric band matrix with
+<code><font face="Courier New,Courier,codetxt" color="#000099">k</font></code>
+subdiagonals;
+<i>x</i> and <i>y</i> are vectors.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssbmv (uplo, n, k, salpha, SA, lda, SX, incx, sbeta, SY, incy)<br>
+call dsbmv (uplo, n, k, dalpha, DA, lda, DX, incx, dbeta, DY, incy)
+</font></code>
+
+
+<p><A NAME="spmv"></A>
+
+<B>?spmv</B>
+performs the following matrix-vector operation:
+<BR>
+<i>y</i> = <code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code><i> A<sup></sup>x</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">beta</font></code><i> y</i>.
+
+<BR>
+Here <i>A</i> is an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+packed symmetric matrix;
+<i>x</i> and <i>y</i> are vectors.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sspmv (uplo, n, salpha, SAP, SX, incx, sbeta, SY, incy)<br>
+call dspmv (uplo, n, dalpha, DAP, DX, incx, dbeta, DY, incy)
+</font></code>
+
+
+<p><A NAME="spr"></A>
+
+<B>?spr</B>
+performs a rank-1 update of an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+packed symmetric matrix <i>A</i>:<BR>
+<i>A</i> = <i>A</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code>
+<i>xx<sup><small>T</small></sup></i>.
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sspr(uplo, n, salpha, SX, incx, SAP)<br>
+call dspr(uplo, n, dalpha, DX, incx, DAP)
+</font></code>
+
+
+<p><A NAME="spr2"></A>
+
+<B>?spr2</B>
+performs a rank-2 update of an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+packed symmetric matrix <i>A</i>:<BR>
+<i>A</i> = <i>A</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code>
+<i>xy<sup><small>T</small></sup></i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">conjg(alpha)</font></code>
+<i>yx<sup><small>T</small></sup></i>.
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sspr2( uplo, n, salpha, SX, incx, SY, incy, SAP)<br>
+call dspr2( uplo, n, dalpha, DX, incx, DY, incy, DAP)
+</font></code>
+
+
+
+<p><A NAME="symv"></A>
+
+<B>?symv</B>
+performs the following matrix-vector operation:
+<BR>
+
+<i>y</i> = <code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code><i> A<sup></sup>x</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">beta</font></code><i> y</i>.
+
+<BR>
+Here <i>A</i> is an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+symmetric matrix;
+<i>x</i> and <i>y</i> are vectors.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssymv ( uplo, n, salpha, SA, lda, SX, incx, sbeta, SY, incy )<br>
+call dsymv ( uplo, n, dalpha, DA, lda, DX, incx, dbeta, DY, incy )
+</font></code>
+
+
+
+
+<p><A NAME="syr"></A>
+
+<B>?syr</B>
+performs a rank-1 update of an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+symmetric matrix <i>A</i>:<BR>
+<i>A</i> = <i>A</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code>
+<i>xx<sup><small>T</small></sup></i>.
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssyr (uplo, n, salpha, SX, incx, SA, lda)<br>
+call dsyr (uplo, n, dalpha, DX, incx, DA, lda)
+</font></code>
+
+
+<p><A NAME="syr2"></A>
+
+<B>?syr2</B>
+performs a rank-2 update of an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+symmetric matrix <i>A</i>:<BR>
+<i>A</i> = <i>A</i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">alpha</font></code>
+<i>xy<sup><small>T</small></sup></i> +
+<code><font face="Courier New,Courier,codetxt" color="#000099">conjg(alpha)</font></code>
+<i>yx<sup><small>T</small></sup></i>.
+<br>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssyr2 (uplo, n, salpha, SX, incx, SY, incy, SA, lda)<br>
+call dsyr2 (uplo, n, dalpha, DX, incx, DY, incy, DA, lda)
+</font></code>
+
+<p><A NAME="tbmv"></A>
+
+<B>?tbmv</B>
+computes the matrix-vector product <i>Ax</i> and stores it in <i>x</i>.
+Here <i>A</i> is an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+triangular band matrix.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call stbmv (uplo, trans, diag, n, k, SA, lda, SX, incx)<br>
+call dtbmv (uplo, trans, diag, n, k, DA, lda, DX, incx)<br>
+call ctbmv (uplo, trans, diag, n, k, CA, lda, CX, incx)<br>
+call ztbmv (uplo, trans, diag, n, k, ZA, lda, ZX, incx)
+</font></code>
+
+<p><A NAME="tbsv"></A>
+
+<B>?tbsv</B>
+solves a system of linear equations <i>Ax = b</i> with an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+triangular band matrix <i>A</i>. On entry, assumes that the right-hand side <i>b</i>
+is stored in the array
+<code><font face="Courier New,Courier,codetxt" color="#000099">?X</font></code>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call stbsv (uplo, trans, diag, n, k, SA, lda, SX, incx)<br>
+call dtbsv (uplo, trans, diag, n, k, DA, lda, DX, incx)<br>
+call ctbsv (uplo, trans, diag, n, k, CA, lda, CX, incx)<br>
+call ztbsv (uplo, trans, diag, n, k, ZA, lda, ZX, incx)
+</font></code>
+
+<p><A NAME="tpmv"></A>
+
+<B>?tpmv</B>
+computes the matrix-vector product <i>Ax</i> and stores it in <i>x</i>.
+Here <i>A</i> is an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+packed triangular matrix.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call stpmv (uplo, trans, diag, n, SAP, SX, incx)<br>
+call dtpmv (uplo, trans, diag, n, DAP, DX, incx)<br>
+call ctpmv (uplo, trans, diag, n, CAP, CX, incx)<br>
+call ztpmv (uplo, trans, diag, n, ZAP, ZX, incx)
+</font></code>
+
+<p><A NAME="tpsv"></A>
+
+<B>?tpsv</B>
+solves a system of linear equations <i>Ax = b</i> with an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+packed triangular matrix <i>A</i>. On entry, assumes that the right-hand side <i>b</i>
+is stored in the array
+<code><font face="Courier New,Courier,codetxt" color="#000099">?X</font></code>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call stpsv (uplo, trans, diag, n, SAP, SX, incx)<br>
+call dtpsv (uplo, trans, diag, n, DAP, DX, incx)<br>
+call ctpsv (uplo, trans, diag, n, CAP, CX, incx)<br>
+call ztpsv (uplo, trans, diag, n, ZAP, ZX, incx)
+</font></code>
+
+<p><A NAME="trmv"></A>
+
+<B>?trmv</B>
+computes the matrix-vector product <i>Ax</i> and stores it in <i>x</i>.
+Here <i>A</i> is an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+triangular matrix.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call strmv (uplo, trans, diag, n, SA, lda, SX, incx)<br>
+call dtrmv (uplo, trans, diag, n, DA, lda, DX, incx)<br>
+call ctrmv (uplo, trans, diag, n, CA, lda, CX, incx)<br>
+call ztrmv (uplo, trans, diag, n, ZA, lda, ZX, incx)
+</font></code>
+
+<p><A NAME="trsv"></A>
+
+<B>?trsv</B>
+solves a system of linear equations <i>Ax = b</i> with an
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+triangular matrix <i>A</i>. On entry, assumes that the right-hand side <i>b</i>
+is stored in the array
+<code><font face="Courier New,Courier,codetxt" color="#000099">?X</font></code>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call strsv (uplo, trans, diag, n, SA, lda, SX, incx)<br>
+call dtrsv (uplo, trans, diag, n, DA, lda, DX, incx)<br>
+call ctrsv (uplo, trans, diag, n, CA, lda, CX, incx)<br>
+call ztrsv (uplo, trans, diag, n, ZA, lda, ZX, incx)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

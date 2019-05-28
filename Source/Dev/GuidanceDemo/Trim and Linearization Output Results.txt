@@ -1,0 +1,132 @@
+This script file (aero_lin_aero.m) demonstrates how to trim and
+linearize the non-linear Simulink model aero_guidance_airframe.mdl.
+The first problem is to find the elevator deflection, and the
+resulting trimmed body rate (q), which will generate a given
+incidence value when the missile is travelling at a set speed.
+Once the trim condition is found, a linear model can be derived
+for the dynamics of the perturbations in the states around 
+the trim condition. 
+ 
+          Fixed parameters  :- 
+                              Mach Number 
+                              Incidence 
+                              Body Attitude
+                              Position
+          Trimmed parameters :-
+                              Elevator deflection
+                              Body rate
+          Output parameters :-
+                              Normal acceleration az
+ 
+Step 1 : Define fixed state values.
+ 
+h_ini       = 10000/m2ft;      % Trim Height [m]
+M_ini       = 3;               % Trim Mach Number
+alpha_ini   = -10*d2r;         % Trim Incidence [rad]
+theta_ini   = 0*d2r;           % Trim Flightpath Angle [rad]
+echo off
+ 
+Step 2 : Initialize states which are allowed to vary.
+ 
+
+q_ini       = 0;               % Pitch Body Rate [rad/sec]
+
+echo off;
+ 
+** Press any key **
+Step 3 : Find names and ordering of states from Simulink model.
+ 
+
+[sizes,x0,names]=aero_guidance_airframe([],[],[],0);
+
+echo off
+ 
+ State Names :-
+ 
+    'q'    'U,w'    'U,w'    'Theta'    'Position'    'Position'
+
+ 
+** Press any key **
+ Step 4: Specify which states (fixed_states) are fixed,
+         and which state derivatives (fixed_derivatives) are to be trimmed.
+ 
+
+fixed_states            = [{'U,w'} {'Theta'} {'Position'}];
+fixed_derivatives       = [{'U,w'} {'q'}];        % w and q
+fixed_outputs           = [];                     % Velocity
+fixed_inputs            = [];
+
+echo off
+ 
+** Press any key **
+
+Step 5 : Trim model
+ 
+
+[X_trim,U_trim,Y_trim,DX]=trim('aero_guidance_airframe',x0,[0],[0 0 v_ini]', ...
+                                          n_states,fixed_inputs,fixed_outputs, ...
+                                          [],n_deriv);
+
+echo off
+ 
+Trimmed states with incidence = -10 degrees and,  Mach number = 3
+ 
+q       -0.216
+U,w      967.7
+U,w     -170.6
+Theta        0
+Position     0
+Position -3048
+ 
+Trimmed elevator deflection = 7.801 degrees
+Trimmed body rate           = -12.38 degrees/second
+Trimmed normal acceleration = 20.31 g's
+ 
+** Press any key **
+
+Step 6 : Derive linear model for perturbations around trim condition (X_trim, U_trim).
+ 
+          dx/dt = A x + B u
+          y     = C x + D u
+ 
+
+[A,B,C,D]=linmodv5('aero_guidance_airframe',X_trim,U_trim);
+
+echo off
+ 
+** Press any key **
+
+Step 7 : Arrange and display linearized model for trimmed states.
+ 
+
+%
+% Select trimmed states and create LTI object
+%
+airframe = ss(A(n_deriv,n_deriv),B(n_deriv,:),C([2 1],n_deriv),D([2 1],:));
+set(airframe,'statename',state_names(n_deriv), ...
+             'inputname',{'Elevator'}, ...
+             'outputname',[{'az'} {'q'}]);
+
+%
+% Transform State Space model to zero/pole/gain model
+%
+zpk(airframe)
+ 
+Zero/pole/gain from input "Elevator" to output...
+      -170.4501 (s-28.33) (s+56.69)
+ az:  -----------------------------
+          (s^2  + 30.01s + 276)
+ 
+      -194.6598 (s+1.453)
+ q:  ---------------------
+     (s^2  + 30.01s + 276)
+ 
+
+%
+% View Frequency Response of model
+%
+ltiview('bode',airframe)
+end
+echo off
+ 
+** Linearization demo complete **

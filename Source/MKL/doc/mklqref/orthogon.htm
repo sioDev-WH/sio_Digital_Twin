@@ -1,0 +1,166 @@
+<HTML>
+<HEAD>
+<title>QR and LQ Factorizations</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+QR and LQ Factorizations
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="geqrf"></A>
+
+<B>?geqrf</B>
+computes the <i>QR</i> factorization of a general
+<code><font face="Courier New,Courier,codetxt" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgeqrf ( m, n, SA, lda, STAU, SWORK, lwork, info )<BR>
+call dgeqrf ( m, n, DA, lda, DTAU, DWORK, lwork, info )<BR>
+call cgeqrf ( m, n, CA, lda, CTAU, CWORK, lwork, info )<BR>
+call zgeqrf ( m, n, ZA, lda, ZTAU, ZWORK, lwork, info )
+</font></code>
+
+<p><A NAME="geqpf"></A>
+
+<B>?geqpf</B>
+computes the <i>QR</i> factorization of a general
+<code><font face="Courier New,Courier,codetxt" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+matrix with pivoting.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgeqpf ( m, n, SA, lda, JPVT, STAU, SWORK, info )<BR>
+call dgeqpf ( m, n, DA, lda, JPVT, DTAU, DWORK, info )<BR>
+call cgeqpf ( m, n, CA, lda, JPVT, CTAU, CWORK, SRWORK, info )<BR>
+call zgeqpf ( m, n, ZA, lda, JPVT, ZTAU, ZWORK, DRWORK, info )
+</font></code>
+
+<p><A NAME="orgqr"></A>
+
+<B>?orgqr</B>
+generates the real orthogonal matrix <i>Q</i> of the <i>QR</i> factorization formed by
+<a href="#geqrf">?geqrf</a> or <a href="#geqpf">?geqpf</a>.
+<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sorgqr (m, n, k, SA, lda, STAU, SWORK, lwork, info)<BR>
+call dorgqr (m, n, k, DA, lda, DTAU, DWORK, lwork, info)
+</font></code>
+
+<p><A NAME="ormqr"></A>
+
+<B>?ormqr</B>
+multiplies a real matrix by the orthogonal matrix <i>Q</i> of the <i>QR</i> factorization formed by
+<a href="#geqrf">?geqrf</a> or <a href="#geqpf">?geqpf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sormqr (side, trans, m, n, k, SA, lda, STAU, SC, ldc, SWORK, lwork, info)<BR>
+call dormqr (side, trans, m, n, k, DA, lda, DTAU, DC, ldc, DWORK, lwork, info)
+</font></code>
+
+<p><A NAME="ungqr"></A>
+
+<B>?ungqr</B>
+generates the complex unitary matrix <i>Q</i> of the <i>QR</i> factorization formed by
+<a href="#geqrf">?geqrf</a> or <a href="#geqpf">?geqpf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cungqr (m, n, k, CA, lda, CTAU, CWORK, lwork, info)<BR>
+call zungqr (m, n, k, ZA, lda, ZTAU, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="unmqr"></A>
+
+<B>?unmqr</B>
+multiplies a complex matrix by the unitary matrix <i>Q</i> of the <i>QR</i> factorization formed by
+<a href="#geqrf">?geqrf</a> or <a href="#geqpf">?geqpf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cunmqr (side, trans, m, n, k, CA, lda, CTAU, CC, ldc, CWORK, lwork, info)<BR>
+call zunmqr (side, trans, m, n, k, ZA, lda, ZTAU, ZC, ldc, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="gelqf"></A>
+
+<B>?gelqf</B>
+computes the <i>LQ</i> factorization of a general
+<code><font face="Courier New,Courier,codetxt" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgelqf (m, n, SA, lda, STAU, SWORK, lwork, info)<BR>
+call dgelqf (m, n, DA, lda, DTAU, DWORK, lwork, info)<BR>
+call cgelqf (m, n, CA, lda, CTAU, CWORK, lwork, info)<BR>
+call zgelqf (m, n, ZA, lda, ZTAU, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="orglq"></A>
+
+<B>?orglq</B>
+generates the real orthogonal matrix <i>Q</i> of the <i>LQ</i> factorization formed by
+<a href="#gelqf">?gelqf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sorglq (m, n, k, SA, lda, STAU, SWORK, lwork, info)<BR>
+call dorglq (m, n, k, DA, lda, DTAU, DWORK, lwork, info)
+</font></code>
+
+<p><A NAME="ormlq"></A>
+
+<B>?ormlq</B>
+multiplies a real matrix by the orthogonal matrix <i>Q</i> of the <i>LQ</i> factorization formed by
+<a href="#gelqf">?gelqf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sormlq (side, trans, m, n, k, SA, lda, STAU, SC, ldc, SWORK, lwork, info)<BR>
+call dormlq (side, trans, m, n, k, DA, lda, DTAU, DC, ldc, DWORK, lwork, info)
+</font></code>
+
+<p><A NAME="unglq"></A>
+
+<B>?unglq</B>
+generates the complex unitary matrix <i>Q</i> of the <i>LQ</i> factorization formed by
+<a href="#gelqf">?gelqf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cunglq (m, n, k, CA, lda, CTAU, CWORK, lwork, info)<BR>
+call zunglq (m, n, k, ZA, lda, ZTAU, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="unmlq"></A>
+
+<B>?unmlq</B>
+multiplies a complex matrix by the unitary matrix <i>Q</i> of the <i>LQ</i> factorization formed by
+<a href="#gelqf">?gelqf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call cunmlq (side, trans, m, n, k, CA, lda, CTAU, CC, ldc, CWORK, lwork, info)<BR>
+call zunmlq (side, trans, m, n, k, ZA, lda, ZTAU, ZC, ldc, ZWORK, lwork, info)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

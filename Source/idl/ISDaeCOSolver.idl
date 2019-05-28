@@ -1,0 +1,782 @@
+// ISDaeCOSolver.idl : IDL source for ISDaeCOSolver.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ISDaeCOSolver.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+typedef enum Jac_Calc_Method
+{
+	[helpstring("not computable")]
+	JCM_NC,
+	[helpstring("automatic differentiation")]
+	JCM_AD,
+	[helpstring("numeric")]
+	JCM_NUM,
+	[helpstring("symbolic")]
+	JCM_SYM,
+	[helpstring("constant value (recalculation not required)")]
+	JCM_CONST,
+} Jac_Calc_Method;
+
+typedef enum EqnForm
+{
+    EqnForm_Continuous,
+	EqnForm_Discontinuous,
+	EqnForm_Reset,
+} EqnForm;
+
+typedef enum EqnDiffForm
+{
+    EqnDiffForm_Numeric,
+	EqnDiffForm_Automatic,
+	EqnDiffForm_Symbolic,
+} EqnDiffForm;
+
+
+typedef enum SetType
+{
+	SetType_Balance,
+	SetType_Equal,
+} SetType;
+
+typedef enum InitStage
+{
+	InitStage_Init,
+	InitStage_Reset,
+	InitStage_Trim,
+    InitStage_Solve,
+} InitStage;
+
+// prototypes
+interface IIsMatrix;
+interface IIsDaeEso;
+// interface IIsDaeSolver;
+interface IIsNlaEso;
+interface IIsDaeEsoIImpl;
+interface IOnModelExec;
+
+	[
+		object,
+		uuid(EFA96FD0-B83D-11d4-839B-00600894E802),
+		dual,
+		helpstring("IIsDaeEso Interface"),
+		pointer_default(unique)
+	]
+	interface IIsDaeEso : IDispatch
+	{
+		// initialize tolerance from executive
+		[id(1), helpstring("SetRelTolerance()")] 
+		HRESULT SetRelTolerance([in] SAFEARRAY(double)* relTolValue);
+		[id(2), helpstring("GetRelTolerance()")] 
+		HRESULT GetRelTolerance([out] SAFEARRAY(double)* relTolValue);
+		[id(3), helpstring("SetAbsTolerance()")] 
+		HRESULT SetAbsTolerance([in] SAFEARRAY(double)* absTolValues);
+		[id(4), helpstring("GetAbsTolerance()")] 
+		HRESULT GetAbsTolerance([out] SAFEARRAY(double)* absTolValues);
+
+		// evaluate all equations
+		[id(5), helpstring("GetAllResiduals()")]
+		HRESULT GetAllResiduals([in, out] SAFEARRAY(double)* residuals,	[in, out] VARIANT_BOOL* validVal);
+		// evaluate some equations
+		[id(6), helpstring("GetResiduals()")]
+		HRESULT GetResiduals([in] SAFEARRAY(long)* Indices, [in] SAFEARRAY(double)* residuals, [in, out] VARIANT_BOOL* validVal);
+
+		// Jacobian matrix
+		[id(7), helpstring("Each entry encoded: -1.0 = not computable, 0.0 = always 0, other = computable.")]
+		HRESULT GetJacobianStruct([in, out] long* nColIndices, [in, out] SAFEARRAY(long)* ColIndices, [in, out] SAFEARRAY(long)* cNZCols, [in, out] SAFEARRAY(Jac_Calc_Method)* CalcMethod);
+		[id(8), helpstring("GetJacobianValues()")]
+		HRESULT GetJacobianValues([in] SAFEARRAY(long)* Indices, [in, out] SAFEARRAY(double)* JacVals);
+		[id(9), helpstring("GetAllJacobianValues()")]
+		HRESULT GetAllJacobianValues([out] IIsMatrix** ppJacVals);
+
+		// Mass matrix
+		[id(10), helpstring("Each entry encoded: -1.0 = not computable, 0.0 = always 0, other = computable.")]
+		HRESULT GetDiffJacobianStruct([in, out] long* nColIndices, [in, out] SAFEARRAY(long)* ColIndices, [in, out] SAFEARRAY(long)* cNZCols, [in, out] SAFEARRAY(Jac_Calc_Method)* CalcMethod);
+		[id(11), helpstring("GetMassValues()")]
+		HRESULT GetDiffJacobianValues([in] SAFEARRAY(long)* Indices, [in, out] SAFEARRAY(double)* MassVals);
+		[id(12), helpstring("GetAllMassValues()")]
+		HRESULT GetAllDiffJacobianValues([out] IIsMatrix** ppMassVals);
+
+		// Variables
+		[id(13), helpstring("GetVariables()")]
+		HRESULT GetVariables([in] SAFEARRAY(long)* Indices, [in] double t, [in, out] SAFEARRAY(double)* Vals);
+		[id(14), helpstring("GetVariable()")]
+		HRESULT GetVariable([in] long index, [in] double t, [out] double* val);
+		[id(15), helpstring("GetVariableId()")]
+		HRESULT GetVariableId([in] BSTR Name, [out] long* idx);
+		[id(16), helpstring("SetVariables()")]
+		HRESULT SetVariables([in] SAFEARRAY(long)* Indices, [in] SAFEARRAY(double)* Vals);
+		[id(17), helpstring("GetAllVariables()")]
+		HRESULT GetAllVariables([in] double t, [in, out] SAFEARRAY(double)* Vals);
+		[id(18), helpstring("SetAllVariables()")]
+		HRESULT SetAllVariables([in] SAFEARRAY(double)* Vals);
+
+		// Derivatives
+		[id(19), helpstring("GetDerivatives()")]
+		HRESULT GetDerivatives([in] SAFEARRAY(long)* Indices, [in] double t, [in, out] SAFEARRAY(double)* Vals);
+		[id(20), helpstring("GetDerivative()")]
+		HRESULT GetDerivative([in] long index, [in] double t, [out] double* val);
+		[id(21), helpstring("SetDerivatives()")]
+		HRESULT SetDerivatives([in] SAFEARRAY(long)* Indices, [in] SAFEARRAY(double)* Vals);
+		[id(22), helpstring("GetAllDerivatives()")]
+		HRESULT GetAllDerivatives([in] double t, [in, out] SAFEARRAY(double)* Vals);
+		[id(23), helpstring("SetAllDerivatives()")]
+		HRESULT SetAllDerivatives([in] SAFEARRAY(double)* Vals);
+
+		// equation / variable structure
+		[id(24), helpstring("GetNumVars()")]
+		HRESULT GetNumVars([out] long* nVars);
+		[id(25), helpstring("GetNumEqns()")]
+		HRESULT GetNumEqns([out] long* nEqns);
+		[id(26), helpstring("GetNumLocalVars()")]
+		HRESULT GetNumLocalVars([out] long* nVars);
+		[id(27), helpstring("GetNumLocalEqns()")]
+		HRESULT GetNumLocalEqns([out] long* nEqns);
+
+		// time
+		[id(28), helpstring("Get time of last step")]
+		HRESULT GetLastTime(double* t);
+		[id(29), helpstring("Get time of current step")]
+		HRESULT GetTime(double* t);
+
+		[propget, id(30), helpstring("Index of Eso within its containing STN or graph Eso")]
+		HRESULT ContainerIndex([out, retval] long* Index);
+		[propput, id(30), helpstring("Index of Eso within its containing STN or graph Eso")]
+		HRESULT ContainerIndex([in] long Index);
+		[propget, id(31), helpstring("Variable map of local variables to container variables.  map[iLocal] = iGlobal")] 
+		HRESULT VariableMap([out, retval] SAFEARRAY(long)* pVal);
+		[propput, id(31), helpstring("Variable map of local variables to container variables.  map[iLocal] = iGlobal")] 
+		HRESULT VariableMap([in] SAFEARRAY(long)* newVal);
+
+		[id(33), helpstring("InitTime()")] 
+		HRESULT InitTime([in] double StartTime, [in] VARIANT_BOOL bReverse);
+		[id(34), helpstring("Set the current time")]
+		HRESULT SetTime([in] double time);
+		[id(35), helpstring("Set the time of the last step")]
+		HRESULT SetLastTime([in] double last_time);
+		
+		[id(36), helpstring("Get index for each variable (MSS)")]
+		HRESULT GetVariablesIndex([in, out] SAFEARRAY(short)* Index);
+
+		[id(37), helpstring("method AddEso()")]
+		HRESULT AddEso([in] IIsDaeEso* pEso);
+		[id(38), helpstring("method GetEso()")]
+		HRESULT GetEso([in] long index, [out] IIsDaeEso** pEso);
+		[id(39), helpstring("method RemoveEso()")]
+		HRESULT RemoveEso([in] long index);
+		[id(40), helpstring("method GetNumEso()")]
+		HRESULT GetNumEso([out] long* count);
+
+		[id(41), helpstring("Get statistics on the solver operation")]
+		HRESULT GetReportInfo([out] long* StepperCalls, [out] long* functionCalls, [out] long* jacobiansCalls, 
+			[out] long* DecompCalls, [out] long* Substitutions, [out] long* TotalSteps, 
+			[out] long* errorRejectedSteps, [out] long* newtonRejectedSteps,
+			[out] long* growthRejectedSteps, [out] long* funcRejectedSteps, 
+			[out] long* nStateEvents, [out] long* nParameterEvents,
+			[out] long* nStepSizeChanges);
+
+		[id(42), helpstring("Evaluate state condition at zero crossing time to determine if an event has occurred")]
+		HRESULT EvalStateCondition([in] double ZeroCrossingTime, [in] long iDisEqn, [in] long iTransition, [out] VARIANT_BOOL* bEvent);
+
+		[id(43), hidden, helpstring("Access C++ pointer")]
+		HRESULT GetCPPPtr([out] DWORD* pIsDaeEso);
+
+		// methods for parameters
+		[id(44), helpstring("")]
+		HRESULT GetNumRealPars([in, out] long* nRPars);
+		[id(45), helpstring("")]
+		HRESULT GetRealPar([in] long index, [in, out] double* Val);
+		[id(46), helpstring("")]
+		HRESULT GetRealParId([in] BSTR Name, [in, out] long* idx);
+		[id(47), helpstring("")]
+		HRESULT SetRealPar([in] long index, [in] double newVal);
+		[id(48), helpstring("")]
+		HRESULT GetNumIntPars([in, out] long* nIPars);
+		[id(49), helpstring("")]
+		HRESULT GetIntPar([in] long index, [in, out] long* Val);
+		[id(50), helpstring("")]
+		HRESULT GetIntParId([in] BSTR Name, [in, out] long* idx);
+		[id(51), helpstring("")]
+		HRESULT SetIntPar([in] long index, [in] long newVal);
+		[id(52), helpstring("method SetModelExec")] 
+		HRESULT SetModelExec([in] IOnModelExec* pModelExec);
+		[id(53), helpstring("method PostStateEvent")] 
+		HRESULT PostStateEvent([in] double t, [in] BSTR EventId);
+		[id(54), helpstring("method OnTransition")] 
+		HRESULT PostTransition([in] long iNewState);
+		[id(55), helpstring("method PostRealParameter")] 
+		HRESULT PostRealParameter([in] double t, [in] long Id, [in] double newVal);
+		[id(56), helpstring("method PostIntegerParameter")] 
+		HRESULT PostIntegerParameter([in] double t, [in] long Id, [in] long newVal);
+	};
+
+/*
+	[
+		object,
+		uuid(77CBD765-8006-11D4-98A7-00C04F6801A9),
+		dual,
+		helpstring("IIsDaeSolver Interface"),
+		pointer_default(unique)
+	]
+	interface IIsDaeSolver : IDispatch
+	{
+		[id(1), helpstring("Take 1 step.")]
+		HRESULT Step();
+		[id(2), helpstring("Initialize Eso reference")]
+		HRESULT SetEso(IIsDaeEso* pEso);
+	};
+*/
+
+	[
+		object,
+		uuid(3F35CF66-839E-11D4-838D-00600894E802),
+		dual,
+		helpstring("IIsMatrix Interface"),
+		pointer_default(unique)
+	]
+	interface IIsMatrix : IDispatch
+	{
+		// initialization
+		[id(1), helpstring("Initialize from row[0]..row[n] stream, or array of row arrays.")]
+		HRESULT Init([in] long nRows, [in] long nCols);
+		// read / write matrix data
+		[id(2), helpstring("Get array of row arrays.")]
+		HRESULT GetData([in, out] SAFEARRAY(VARIANT)* Vals);
+		[id(3), helpstring("Attach external matrix (SA of SAs)")]
+		HRESULT Attach([in] SAFEARRAY(VARIANT)* Vals);
+		[id(4), helpstring("Detach internal matrix (SA of SAs)")]
+		HRESULT Detach([out] SAFEARRAY(VARIANT)* Vals);
+		// read / write row / col data
+		[id(5), helpstring("GetRow()")]
+		HRESULT GetRow([in] long Row, [in, out] SAFEARRAY(double)* Vals);
+		[id(6), helpstring("SetRow()")]
+		HRESULT SetRow([in] long Row, [in] SAFEARRAY(double)* Vals);
+		[id(7), helpstring("GetCol()")]
+		HRESULT GetCol([in] long Col, [in, out] SAFEARRAY(double)* Vals);
+		[id(8), helpstring("SetCol()")]
+		HRESULT SetCol([in] long Col, [in] SAFEARRAY(double)* Vals);
+		[propget, id(DISPID_VALUE), helpstring("Value")]
+		HRESULT Value([in] long Row, [in] long Col, [out, retval] double* pVal);
+		[propput, id(DISPID_VALUE), helpstring("Value")]
+		HRESULT Value([in] long Row, [in] long Col, [in] double Val);
+	};
+
+	[
+		object,
+		uuid(717E8183-92E1-11D4-98A8-00C04F6801A9),
+		dual,
+		helpstring("IIsNlaSolver Interface"),
+		pointer_default(unique)
+	]
+	interface IIsNlaSolver : IDispatch
+	{
+		[id(1), helpstring("Set equation set object")]
+		HRESULT SetEso([in] IIsNlaEso* pEso);
+		[id(2), helpstring("Solve")]
+		HRESULT Solve();
+	};
+
+
+	[
+		object,
+		uuid(A6A32B44-92E2-11d4-98A8-00C04F6801A9),
+		dual,
+		helpstring("IIsNlaEso Interface"),
+		pointer_default(unique)
+	]
+	interface IIsNlaEso : IDispatch
+	{
+		// initialization
+		[id(1), helpstring("GetNumEqns()")]
+		HRESULT GetNumEqns([in, out] long* nEqns);
+		[id(2), helpstring("GetNumVars()")]
+		HRESULT GetNumVars([in, out] long* nVars);
+		[id(3), helpstring("GetAllVariables()")]
+		HRESULT GetAllVariables([in, out] SAFEARRAY(double)* Vals);
+		[id(4), helpstring("SetAllVariables()")]
+		HRESULT SetAllVariables([in] SAFEARRAY(double)* Vals);
+		[id(5), helpstring("Calculate residuals for x")]
+		HRESULT GetResiduals([in] SAFEARRAY(double)* x, [in, out] SAFEARRAY(double)* residuals);
+		[id(6), helpstring("Calculate iEqn residual for x")]
+		HRESULT GetResidual([in] long iEqn, [in] SAFEARRAY(double)* x, [in, out] double* residual);
+
+		// Jacobian matrix
+		[id(7), helpstring("Each entry encoded: nc - not computable, num - numeric, ad - automatic differentiation, sym - symbolic")]
+		HRESULT GetJacobianStruct([in, out] long* nColIndices, [in, out] SAFEARRAY(long)* ColIndices, [in, out] SAFEARRAY(long)* cNZCols, [in, out] SAFEARRAY(Jac_Calc_Method)* CalcMethod);
+		[id(8), helpstring("GetJacobianValues().  Indices are in [row, column] pairs.  ")]
+		HRESULT GetJacobianValues([in] SAFEARRAY(long)* Indices, [in, out] SAFEARRAY(double)* JacVals);
+		[id(9), helpstring("GetAllJacobianValues()  Both arrays are return values.  The indices array (size = 2n) contains [row, column] indices for non-zero jacobian values (size = n)")]
+		HRESULT GetAllJacobianValues([in, out] SAFEARRAY(long)* Indices, [in, out] SAFEARRAY(double)* JacVals);
+
+		// solve for consistent initialization
+		[id(10), helpstring("Solve for consistent initialization")]
+		HRESULT Solve();
+	};
+
+	[
+		object,
+		uuid(BFC328F0-CBF6-11d4-83A2-00600894E802),
+		dual,
+		helpstring("IIsDaeEsoImpl Interface"),
+		pointer_default(unique)
+	]
+	interface IIsDaeEsoImpl : IDispatch
+	{
+		[id(1), helpstring("Initialize equation, variable, tolerance, and parameter dimensions and values")]
+		HRESULT Initialize(
+			[in, out] long* nEqns, [in, out] long* nVars, 
+			[in, out] long* nRPars, [in, out] long* nIPars, 
+			[in, out] double* t, 
+			[in, out] SAFEARRAY(double)* atol, [in, out] SAFEARRAY(double)* rtol, 
+			[in, out] SAFEARRAY(double)* x, [in, out] SAFEARRAY(double)* xdot,
+			[in, out] SAFEARRAY(double)* rpar, [in, out] SAFEARRAY(long)* ipar);
+
+		[id(2), helpstring("Get jacobian structure in sparse form.  Identify calculation method for each entry.")]
+		HRESULT GetJacobianStruct(
+			[in, out] long* nColIndices,
+			[in, out] SAFEARRAY(long)* ColIndices, 
+			[in, out] SAFEARRAY(long)* cNZCols,
+			[in, out] SAFEARRAY(Jac_Calc_Method)* CalcMethod);
+
+		[id(3), helpstring("Get differential jacobian structure in sparse form.  Identify calculation method for each entry.")]
+		HRESULT GetDiffJacobianStruct(
+			[in, out] long* nColIndices,
+			[in, out] SAFEARRAY(long)* ColIndices, 
+			[in, out] SAFEARRAY(long)* cNZCols,
+			[in, out] SAFEARRAY(Jac_Calc_Method)* CalcMethod);
+
+		[id(4), helpstring("Get residual value for equations iEqn[nEqn]")]
+		HRESULT GetResiduals(
+			[in] SAFEARRAY(long)* iEqn, [in] long nEqn, [in] double t,
+			[in] SAFEARRAY(double)* x, [in] SAFEARRAY(double)* xdot, 
+			[in] SAFEARRAY(double)* rPar, [in] SAFEARRAY(long)* iPar,
+			[in, out] SAFEARRAY(double)* residuals);
+
+		[id(5), helpstring("Get jacobian value for equation / variable combinations {n=iEqn,n+1=iVar} iJac[nJac]")]
+		HRESULT GetJacobianValues(
+			[in] SAFEARRAY(long)* iJac, [in] long nJac, [in] double t,
+			[in] SAFEARRAY(double)* x, [in] SAFEARRAY(double)* xdot, 
+			[in] SAFEARRAY(double)* rPar, [in] SAFEARRAY(long)* iPar,
+			[in, out] SAFEARRAY(double)* jacobians);
+		
+		[id(6), helpstring("Get differential jacobian value for equation / variable combinations {n=iEqn,n+1=iVar} iJac[nJac]")]
+		HRESULT GetDiffJacobianValues(
+			[in] SAFEARRAY(long)* iJac, [in] long nJac, [in] double t,
+			[in] SAFEARRAY(double)* x, [in] SAFEARRAY(double)* xdot, 
+			[in] SAFEARRAY(double)* rPar, [in] SAFEARRAY(long)* iPar,
+			[in, out] SAFEARRAY(double)* jacobians);
+
+		// beginning of EsoX unique methods
+		[id(7), helpstring("Get form of each member equation (discontinuous, residual reset, or explicit reset")]
+		HRESULT GetEqnForm([in, out] SAFEARRAY(EqnForm)* form, [in, out] SAFEARRAY(EqnDiffForm)* diff_form);
+
+		[id(8), helpstring("Evaluate state condition to determine if an event occurred.")]
+		HRESULT EvalStateCondition(
+			[in] SAFEARRAY(VARIANT_BOOL)* EqnState, 
+			[in] SAFEARRAY(double)* x,
+			[in] SAFEARRAY(double)* xdot,
+			[in] double EventTime, 
+			[in] long iDisEqn, 
+			[in] long iTransition,
+			[in, out] VARIANT_BOOL* bEvent);
+
+		[id(9), helpstring("Get member Esos (if any).  Zero based array of IIsDaeEsoImpl pointers")]
+		HRESULT GetMemberEsos([in, out] long* nEsos, [in, out] SAFEARRAY(IIsDaeEsoImpl*)* Esos);
+
+		[id(10), helpstring("Get finite state machine information (if any).  Eqn maps are arrays of arrays")]
+		HRESULT GetSTNStruct(
+			[in, out] long* nStates, 
+			[in, out] long* nTransitions, 
+			[in, out] long* iDefaultState, 
+			[in, out] SAFEARRAY(BSTR)* TransEventIds, 
+			[in, out] SAFEARRAY(long)* SrcStates, 
+			[in, out] SAFEARRAY(VARIANT)* StateToEqnMap, 
+			[in, out] SAFEARRAY(VARIANT)* TransToEqnMap);
+
+		[id(11), helpstring("Internal event trigger to propagate state change")]
+		HRESULT TriggerEvent([in] double EventTime, [in] BSTR EventId, [in] long iEventEqn);
+
+		[id(12), helpstring("Query if this node is a master node (master of connected connector nodes)")]
+		HRESULT GetMasterNodeStatus(VARIANT_BOOL* bMasterNodeStatus);
+	};
+
+
+	[
+		object,
+		uuid(732A30A3-CBE5-11D4-83A2-00600894E802),
+		dual,
+		helpstring("IIsDaeEsoIImpl Interface"),
+		pointer_default(unique)
+	]
+	interface IIsDaeEsoIImpl : IIsDaeEso
+	{
+		[id(60), helpstring("method SetEso")] HRESULT SetEso([in] IIsDaeEsoImpl* pEso);
+	};
+
+
+	[
+		object,
+		uuid(43D71C20-E726-4786-800E-15C06968ADF3),
+		dual,
+		helpstring("IIsDaeEsoCImpl Interface"),
+		pointer_default(unique)
+	]
+	interface IIsDaeEsoCImpl : IIsDaeEso
+	{
+		[id(60), helpstring("Set IOnUMLDaeEsoImplBase")] 
+		HRESULT SetEso([in] IUnknown* pEso);
+		[id(61), helpstring("Get Eso names")] 
+		HRESULT GetEsoNames([in, out] SAFEARRAY(BSTR)* pEsoNames);
+		[propget, id(62), helpstring("Get Eso by name")] 
+		HRESULT Eso([in] BSTR Name, [out, retval] IIsDaeEsoCImpl** pEso);
+		[id(63), helpstring("Get Var names")] 
+		HRESULT GetVarNames([in, out] SAFEARRAY(BSTR)* pVarNames);
+		[propget, id(64), helpstring("Get Var by name")] 
+		HRESULT Var([in] BSTR Name, [out, retval] double* pVal);
+		[propput, id(64), helpstring("Set Var by name")] 
+		HRESULT Var([in] BSTR Name, [in] double Val);
+		[id(65), helpstring("Get RPar names")] 
+		HRESULT GetRParNames([in, out] SAFEARRAY(BSTR)* pRParNames);
+		[propget, id(66), helpstring("Get RPar by name")] 
+		HRESULT RPar([in] BSTR Name, [out, retval] double* pVal);
+		[propput, id(66), helpstring("Set RPar by name")] 
+		HRESULT RPar([in] BSTR Name, [in] double Val);
+		[id(67), helpstring("Get IPar names")] 
+		HRESULT GetIParNames([in, out] SAFEARRAY(BSTR)* pIParNames);
+		[propget, id(68), helpstring("Get IPar by name")] 
+		HRESULT IPar([in] BSTR Name, [out, retval] long* pVal);
+		[propput, id(68), helpstring("Set IPar by name")] 
+		HRESULT IPar([in] BSTR Name, [in] long Val);
+		[id(69), helpstring("Get equation names")] 
+		HRESULT GetEqnNames([in, out] SAFEARRAY(BSTR)* pEqnNames);
+		[id(70), helpstring("method Connect")] 
+		HRESULT Connect([in, out] SAFEARRAY(long)* ConnA, [in, out] SAFEARRAY(long)* ConnB);
+		[id(71), helpstring("method AddModel")] 
+		HRESULT AddModel([in] IIsDaeEsoCImpl* pEso, [in] BSTR modelName);
+		[propget, id(72), helpstring("Eso Implmentation")] 
+		HRESULT EsoImpl([out, retval] IUnknown** pEsoImpl);
+		[id(73), helpstring("method CompositeModelComplete")] 
+		HRESULT CompositeModelComplete();
+	};
+
+	[
+		object,
+		uuid(60453BD6-4CD9-425c-868B-E04F7D4E16C2),
+		dual,
+		helpstring("IOnModelExecEvents Interface"),
+		pointer_default(unique)
+	]
+	interface IOnModelExecEvents : IDispatch
+	{
+		[id(1), helpstring("method BeforeRParEvent")] 
+		HRESULT BeforeRParEvent(double Time, long iGlobalId, double Value);
+		[id(2), helpstring("method BeforeIParEvent")] 
+		HRESULT BeforeIParEvent(double Time, long iGlobalId, long Value);
+		[id(3), helpstring("method BeforeStateEvent")] 
+		HRESULT BeforeStateEvent(double Time, BSTR EvId, long iEvEqn);
+
+		[id(4), helpstring("method AfterRParEvent")] 
+		HRESULT AfterRParEvent(double Time, long iGlobalId, double Value);
+		[id(5), helpstring("method AfterIParEvent")] 
+		HRESULT AfterIParEvent(double Time, long iGlobalId, long Value);
+		[id(6), helpstring("method AfterStateEvent")] 
+		HRESULT AfterStateEvent(double Time, BSTR EvId, long iEvEqn);
+
+		[id(7), helpstring("method InitializationInfo")]  
+        HRESULT InitializationInfo(
+			[in] VARIANT_BOOL fault, 
+		    [in] long stage,
+			[in] long nModelEqns,
+			[in] long nModelVars,
+			[in] long nActiveEqns,
+			[in] long nActiveVars,
+			[in] long nAugmentedEqns,
+			[in] long nAugmentedVars,
+			[in, out] SAFEARRAY(BSTR)* EqnNames, 
+			[in, out] SAFEARRAY(BSTR)* VarNames, 
+			[in] long nColIndices,
+			[in, out] SAFEARRAY(long)* cNZCols, 
+			[in, out] SAFEARRAY(long)* spRowPage, 
+			[in, out] SAFEARRAY(long)* ColIndices,
+			[in, out] SAFEARRAY(long)* EqnOrder, 
+			[in, out] SAFEARRAY(long)* VarOrder, 
+			[in, out] SAFEARRAY(long)* VAL,
+			[in, out] SAFEARRAY(long)* EAL,
+			[in, out] SAFEARRAY(long)* AssignedEqn,
+			[in, out] SAFEARRAY(double)* VarVals,
+			[in, out] SAFEARRAY(double)* VarDotVals,
+			[in, out] SAFEARRAY(double)* ResVals);
+
+		[id(8), helpstring("method GetTrimEqns")]  
+		HRESULT GetTrimEqns(
+			[in, out] long* nEqns, 
+			[in, out] long* nColIndices, 
+			[in, out] SAFEARRAY(long)* cNZCols, 
+			[in, out] SAFEARRAY(long)* spRowPage, 
+			[in, out] SAFEARRAY(long)* ColIndices);
+
+		[id(9), helpstring("method GetTrimVars")]  
+		HRESULT GetTrimVars(
+			[in, out] long* nVars, 
+			[in, out] SAFEARRAY(long)* VarIds, 
+			[in, out] SAFEARRAY(double)* VarVals);
+
+		[id(10), helpstring("method SetVariables")]  
+		HRESULT SetVariables([in, out] SAFEARRAY(double)* VarVals);
+
+		[id(11), helpstring("method GetResiduals")]  
+		HRESULT GetResiduals(
+			[in] long nEqns, 
+			[in, out] SAFEARRAY(long)* EqnIds, 
+			[in, out] SAFEARRAY(double)* Residuals);
+
+		[id(12), helpstring("method SetResiduals")]  
+		HRESULT SetResiduals([in, out] SAFEARRAY(double)* ResVals);
+
+		[id(13), helpstring("method ShowDialog")]  
+		HRESULT ShowDialog([in] BSTR msg);
+
+	};
+
+
+	[
+		object,
+		uuid(58CF6F05-D4AC-481E-B94D-FA4F4DE091C7),
+		dual,
+		helpstring("IOnModelExec Interface"),
+		pointer_default(unique)
+	]
+	interface IOnModelExec : IDispatch
+	{
+		[id(1), helpstring("Post a change in a real-valued parameter to be included at the start of the next simulation interval.")] 
+		HRESULT PostRPar([in] double event_time, [in] long iGlobalId, [in] double val);
+		[id(2), helpstring("Post a change in an integer-valued parameter to be included at the start of the next simulation interval.")] 
+		HRESULT PostIPar([in] double event_time, [in] long iGlobalId, [in] long val);
+		[id(3), helpstring("Assign the global simulation model.  The assignment automatically triggers initialization.")] 
+		HRESULT SetModel([in] IIsDaeEso* pModel);
+		[id(4), helpstring("Post an event to the event queue.  Transition and event equation indices defaults are -1 for external events.  External events are processed at the beginning of the next simulation interval.")] 
+		HRESULT PostStateEvent([in] double EventTime, [in] BSTR EventId, [in] long iEventEqn, [in] IIsDaeEso* pEventEso);
+		[propget, id(5), helpstring("Maximum step size (constrain for interpolation accuracy).  Step size defaults to the variable step size used by the solver.  Setting step size negative restores the default.")] 
+		HRESULT MaxStepSize([out, retval] double *pVal);
+		[propput, id(5), helpstring("Maximum step size (constrain for interpolation accuracy).  Step size defaults to the variable step size used by the solver.  Setting step size negative restores the default.")] 
+		HRESULT MaxStepSize([in] double newVal);
+		[id(6), helpstring("method Step")] 
+		HRESULT Step([in] double external_time);
+		[id(7), helpstring("method OnTransition")] 
+		HRESULT OnTransition([in] double event_time, [in] long iEventEqn, [in] BSTR EventId, [in] long iNewState, [in] IIsDaeEso* pEventModel);
+		[id(8), helpstring("method Save")] HRESULT Save([in] BSTR filename);
+		[id(9), helpstring("method Load")] HRESULT Load([in] BSTR filename);
+		[id(10), helpstring("Force reinitialization to clear non-recoverable inconsistency in variables.")] 
+		HRESULT ForceReset();
+		[propget, id(11), helpstring("Retry Initialization flag")] 
+		HRESULT RetryInitialization([out, retval] VARIANT_BOOL* bVal);
+		[propput, id(11), helpstring("Retry Initialization flag")] 
+		HRESULT RetryInitialization([in] VARIANT_BOOL bVal);
+		[id(12), helpstring("Get Residuals for initialization equations.")] 
+		HRESULT GetResiduals([in] long nEqns, [in, out] SAFEARRAY(long)* EqnIds, [in, out] SAFEARRAY(double)* Residuals);
+		[id(13), helpstring("Set Variables for initialization equations.")] 
+		HRESULT SetVariables([in, out] SAFEARRAY(double)* VarVals);
+		[id(14), helpstring("method HandleInitEvents")] 
+		HRESULT HandleInitEvents();
+	};
+
+	[
+		object,
+		uuid(215F714B-4C21-476A-A22E-725F57167B83),
+		dual,
+		helpstring("IOnTest Interface"),
+		pointer_default(unique)
+	]
+	interface IOnTest : IDispatch
+	{
+		[id(1), helpstring("method SparseTest")] HRESULT SparseTest();
+	};
+
+[
+	uuid(77CBD757-8006-11D4-98A7-00C04F6801A9),
+	version(1.0),
+	helpstring("ISDaeCOSolver 1.0 Type Library")
+]
+library ISDAECOSOLVERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(77CBD767-8006-11D4-98A7-00C04F6801A9),
+		helpstring("_IOnModelExecEvents Interface")
+	]
+	dispinterface _IOnModelExecEvents
+	{
+		properties:
+		methods:
+
+		[id(1), helpstring("method BeforeRParEvent")] 
+		void BeforeRParEvent(double Time, long iGlobalId, double Value);
+		[id(2), helpstring("method BeforeIParEvent")] 
+		void BeforeIParEvent(double Time, long iGlobalId, long Value);
+		[id(3), helpstring("method BeforeStateEvent")] 
+		void BeforeStateEvent(double Time, BSTR EvId, long iEvEqn);
+
+		[id(4), helpstring("method AfterRParEvent")] 
+		void AfterRParEvent(double Time, long iGlobalId, double Value);
+		[id(5), helpstring("method AfterIParEvent")] 
+		void AfterIParEvent(double Time, long iGlobalId, long Value);
+		[id(6), helpstring("method AfterStateEvent")] 
+		void AfterStateEvent(double Time, BSTR EvId, long iEvEqn);
+
+		[id(7), helpstring("method InitializationInfo")]  
+        void InitializationInfo(
+			[in] VARIANT_BOOL fault, 
+		    [in] long stage,
+			[in] long nModelEqns,
+			[in] long nModelVars,
+			[in] long nActiveEqns,
+			[in] long nActiveVars,
+			[in] long nAugmentedEqns,
+			[in] long nAugmentedVars,
+			[in, out] SAFEARRAY(BSTR)* EqnNames, 
+			[in, out] SAFEARRAY(BSTR)* VarNames, 
+			[in] long nColIndices,
+			[in, out] SAFEARRAY(long)* cNZCols, 
+			[in, out] SAFEARRAY(long)* spRowPage, 
+			[in, out] SAFEARRAY(long)* ColIndices,
+			[in, out] SAFEARRAY(long)* EqnOrder, 
+			[in, out] SAFEARRAY(long)* VarOrder, 
+			[in, out] SAFEARRAY(long)* VAL,
+			[in, out] SAFEARRAY(long)* EAL,
+			[in, out] SAFEARRAY(long)* AssignedEqn,
+			[in, out] SAFEARRAY(double)* VarVals,
+			[in, out] SAFEARRAY(double)* VarDotVals,
+			[in, out] SAFEARRAY(double)* ResVals);
+
+		[id(8), helpstring("method GetTrimEqns")]  
+		void GetTrimEqns(
+			[in, out] long* nEqns, 
+			[in, out] long* nColIndices, 
+			[in, out] SAFEARRAY(long)* cNZCols, 
+			[in, out] SAFEARRAY(long)* spRowPage, 
+			[in, out] SAFEARRAY(long)* ColIndices);
+
+		[id(9), helpstring("method GetTrimVars")]
+		void GetTrimVars(
+			[in, out] long* nVars,
+			[in, out] SAFEARRAY(long)* VarIds,
+			[in, out] SAFEARRAY(double)* VarVals); 
+
+		[id(10), helpstring("method SetVariables")]  
+		void SetVariables([in, out] SAFEARRAY(double)* VarVals);
+
+		[id(11), helpstring("method GetResiduals")]  
+		void GetResiduals(
+			[in] long nEqns, 
+			[in, out] SAFEARRAY(long)* EqnIds, 
+			[in, out] SAFEARRAY(double)* Residuals);
+
+		[id(12), helpstring("method SetResiduals")]  
+		void SetResiduals([in, out] SAFEARRAY(double)* ResVals);
+
+		[id(13), helpstring("method ShowDialog")]  
+		void ShowDialog([in] BSTR msg);
+
+	};
+	[
+		object,
+		uuid(BD8956DB-B293-44AB-88FD-8E659094DD86),
+		dual,
+		helpstring("IOnEnv Interface"),
+		pointer_default(unique)
+	]
+	interface IOnEnv : IDispatch
+	{
+		[propget, id(1), helpstring("property DataPath")] HRESULT DataPath([out, retval] BSTR *pVal);
+		[propput, id(1), helpstring("property DataPath")] HRESULT DataPath([in] BSTR newVal);
+		[propget, id(2), helpstring("property GraphicPath")] HRESULT GraphicPath([out, retval] BSTR *pVal);
+		[propput, id(2), helpstring("property GraphicPath")] HRESULT GraphicPath([in] BSTR newVal);
+	};
+	
+
+/*
+	[
+		uuid(77CBD766-8006-11D4-98A7-00C04F6801A9),
+		helpstring("IsDaeSolver Class")
+	]
+	coclass IsDaeSolver
+	{
+		[default] interface IIsDaeSolver;
+	};
+*/
+
+	[
+		uuid(3F35CF67-839E-11D4-838D-00600894E802),
+		helpstring("IsMatrix Class")
+	]
+	coclass IsMatrix
+	{
+		[default] interface IIsMatrix;
+	};
+
+	[
+		uuid(717E8184-92E1-11D4-98A8-00C04F6801A9),
+		helpstring("IsNlaSolver Class")
+	]
+	coclass IsNlaSolver
+	{
+		[default] interface IIsNlaSolver;
+	};
+	[
+		uuid(E3CA3C2A-9466-11D4-98A8-00C04F6801A9),
+		helpstring("IsCINlaEso Class")
+	]
+	coclass IsCINlaEso
+	{
+		[default] interface IIsNlaEso;
+	};
+
+	[
+		uuid(732A30A4-CBE5-11D4-83A2-00600894E802),
+		helpstring("IsDaeEsoIImpl Class")
+	]
+	coclass IsDaeEsoIImpl
+	{
+		[default] interface IIsDaeEsoIImpl;
+	};
+	
+	[
+		uuid(704B0744-BE48-4E89-84B6-6AC44BA12933),
+		helpstring("IsDaeEsoCImpl Class")
+	]
+	coclass IsDaeEsoCImpl
+	{
+		[default] interface IIsDaeEsoCImpl;
+	};
+	
+	[
+		uuid(0BF65E89-4B0C-40E8-8065-DA9E82EF0FAA),
+		helpstring("OnModelExec Class")
+	]
+	coclass OnModelExec
+	{
+		[default] interface IOnModelExec;
+		[default, source] dispinterface _IOnModelExecEvents;
+	};
+	[
+		uuid(24BE2738-C38D-430E-A966-2896238B1D0C),
+		helpstring("OnTest Class")
+	]
+	coclass OnTest
+	{
+		[default] interface IOnTest;
+	};
+	[
+		uuid(F1B06AA9-2721-4516-8BC4-12B56F2C5E31),
+		helpstring("OnEnv Class")
+	]
+	coclass OnEnv
+	{
+		[default] interface IOnEnv;
+	};
+};

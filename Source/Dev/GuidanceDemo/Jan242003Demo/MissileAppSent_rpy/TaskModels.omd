@@ -1,0 +1,115 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IDiagram 
+	- _id = GUID a4c77e0e-eb57-408e-b0c6-51c88c29e522;
+	- _myState = 8192;
+	- _name = "TaskModels";
+	- _graphicChart = { CGIClassChart 
+		- _id = GUID 1570a364-c19d-4480-b295-0bd65622173d;
+		- _properties = { IPropertyContainer 
+			- Subjects = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPropertySubject 
+					- _Name = "General";
+					- Metaclasses = { IRPYRawContainer 
+						- size = 1;
+						- value = 
+						{ IPropertyMetaclass 
+							- _Name = "Graphics";
+							- Properties = { IRPYRawContainer 
+								- size = 2;
+								- value = 
+								{ IProperty 
+									- _Name = "grid_display";
+									- _Value = "False";
+									- _Type = Bool;
+								}
+								{ IProperty 
+									- _Name = "grid_snap";
+									- _Value = "False";
+									- _Type = Bool;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		- m_type = 0;
+		- m_pModelObject = { IHandle 
+			- _m2Class = "IDiagram";
+			- _id = GUID a4c77e0e-eb57-408e-b0c6-51c88c29e522;
+		}
+		- m_pParent = ;
+		- m_name = { CGIText 
+			- m_str = "";
+			- m_style = "Arial" 10 0 0 0 1 ;
+			- m_color = { IColor 
+				- m_fgColor = 0;
+				- m_bgColor = 0;
+				- m_bgFlag = 0;
+			}
+			- m_position = 1 0 0  ;
+			- m_nIdent = 0;
+			- m_bImplicitSetRectPoints = 0;
+		}
+		- m_drawBehavior = 0;
+		- elementList = 1;
+		{ CGICompositeClass 
+			- _id = GUID da9b5620-3711-40ce-88b6-81cd4a4150be;
+			- m_type = 78;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "TopLevel";
+				- _id = GUID 4582fb6d-0ad0-11d7-b329-00c04f680d9d;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "TopLevel";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 0;
+			- m_color = { IColor 
+				- m_fgColor = 1;
+				- m_bgColor = 1;
+				- m_bgFlag = 1;
+			}
+			- m_lineWidth = 0;
+			- m_polygon = 4 -3.7311944136653 21.7254317933951  28.331895202126 21.7254317933951  28.331895202126 6.36230423913387  -3.7311944136653 6.36230423913387  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		
+		- m_access = 'Z';
+		- m_modified = 'N';
+		- m_fileVersion = "";
+		- m_nModifyDate = 0;
+		- m_nCreateDate = 0;
+		- m_creator = "";
+		- m_bScaleWithZoom = 1;
+		- m_arrowStyle = 'S';
+		- m_pRoot = GUID da9b5620-3711-40ce-88b6-81cd4a4150be;
+		- m_currentLeftTop = -2.43616911677826 2.84093963938225 ;
+		- m_currentRightBottom = 24.3618776532731 22.6275199113175 ;
+	}
+	- _defaultSubsystem = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Default.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Default";
+		- _id = GUID 4582fb6c-0ad0-11d7-b329-00c04f680d9d;
+	}
+}
+

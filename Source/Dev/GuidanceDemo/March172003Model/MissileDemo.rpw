@@ -1,0 +1,93 @@
+I-Logix-RPY-Archive version 4.0.4 *
+{ CGEMdiWorkspace 
+	- stubList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- myViewsWithID = { IRPYRawContainer 
+		- size = 3;
+		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 182;
+				- m_nTop = 182;
+				- m_nRight = 1040;
+				- m_nBottom = 720;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IMSC";
+				- _filename = "Seeking_01.msc";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Seeking_01";
+				- _id = GUID 79a4a4cc-29d7-47b5-a2bb-d387bdc50ccc;
+			}
+			- _UpLeft = 2.38045503791983 -24.158170639629 ;
+			- _DownRight = 30.1904550379198 4.35817063962895 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 52;
+				- m_nTop = 52;
+				- m_nRight = 734;
+				- m_nBottom = 598;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IActivityGraph";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Stabilized ImageryControl";
+				- _name = "ROOT.AcquireGimbalControlData";
+				- _id = GUID 1ae7bbdc-9f2a-4b13-adbe-e2ca2fc05b45;
+			}
+			- _UpLeft = -1.43829215463883 1.18402247744362 ;
+			- _DownRight = 26.4382921546388 22.2936191452325 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 26;
+				- m_nTop = 26;
+				- m_nRight = 725;
+				- m_nBottom = 572;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IUCDiagram";
+				- _filename = "GuidedMissileControlSystem.ucd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "GuidedMissileControlSystem";
+				- _id = GUID 06e2ab3d-c677-4fb5-927b-7b1561fc210a;
+			}
+			- _UpLeft = -0.369304221062926 -6.50046424820224 ;
+			- _DownRight = 30.0733546643186 15.9691173100555 ;
+			- _instanceName = "";
+		}
+	}
+	- _fullName = "E:\\Dev\\GuidanceDemo\\March172003Model\\MissileDemo";
+}
+

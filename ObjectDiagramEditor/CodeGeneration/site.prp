@@ -1,0 +1,76 @@
+Subject ShapeDefinitions
+
+   	Metaclass Class
+		Property UDIDefCollection MultiLine "None"
+  	end 
+
+end
+
+Subject Simulation
+
+   	Metaclass Class
+		Property OnCg Bool "False"
+		Property SimType Enum
+		"Undefined,Model,AbstractModel,Connector,Structure,NonSimulation" "Undefined"
+		Property AttributeOrder MultiLine "None"
+		Property OperationOrder MultiLine "None"
+		Property StateOrder MultiLine "None"
+		Property TransitionOrder MultiLine "None"
+  	end 
+
+	Metaclass Attribute
+		Property OnCg Bool "False"
+		Property bSim Bool "False"
+		Property SimType Enum
+		"Undefined,Variable,Parameter,Connector,Model,Struct,Broadcaster,Listener,DataCollector,Input,Output" "Undefined"
+		Property SimSubType Enum
+		"Undefined,Scalar,Array,Matrix,valarray" "Scalar"
+		Property Dimension1 String "0"
+		Property Dimension2 String "0"
+		Property Derivative Bool "False"
+		Property OldValue Bool "False"
+		Property AutoDiff Bool "False"
+	end
+
+	Metaclass Relation
+		Property OnCg Bool "False"
+		Property bSim Bool "False"
+		Property SimType Enum
+		"Undefined,Variable,Parameter,Connector,Model,Struct,Broadcaster,Listener,DataCollector,Input,Output" "Undefined"
+		Property SimSubType Enum
+		"Undefined,Scalar,Array,Matrix,valarray" "Scalar"
+		Property Dimension1 String "0"
+		Property Dimension2 String "0"
+	end
+
+	Metaclass Operation
+		Property OnCg Bool "False"
+		Property bSim Bool "False"
+		Property SimType Enum
+		"Undefined,Continuous,Discontinuous,Reset,Get,Set,ContinuousArray" "Continuous"
+		Property SimSubType Enum
+		"Undefined,Scalar,Array,valarray,Distributed" "Scalar"
+		Property DiffType Enum
+		"Undefined,Automatic,Numeric" "Automatic"
+		Property AutoDiff Bool "False"
+	end
+
+	Metaclass State
+		Property nEqn Int "0"
+		Property Eqns MultiLine "None"
+	end
+
+	Metaclass Transition
+		Property nResetEqn Int "0"
+		Property ResetEqns MultiLine "None"
+		Property nTrigger Int "0"
+		Property Triggers MultiLine "None"
+	end
+
+end
+
+end
+
+
+
+

@@ -1,0 +1,26 @@
+HKCR
+{
+	RpyPDEReactor.RpyPDEReactorTest.1 = s 'RpyPDEReactorTest Class'
+	{
+		CLSID = s '{162A3AE1-0CAE-4DA1-9675-74C98AC7940D}'
+	}
+	RpyPDEReactor.RpyPDEReactorTest = s 'RpyPDEReactorTest Class'
+	{
+		CLSID = s '{162A3AE1-0CAE-4DA1-9675-74C98AC7940D}'
+		CurVer = s 'RpyPDEReactor.RpyPDEReactorTest.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {162A3AE1-0CAE-4DA1-9675-74C98AC7940D} = s 'RpyPDEReactorTest Class'
+		{
+			ProgID = s 'RpyPDEReactor.RpyPDEReactorTest.1'
+			VersionIndependentProgID = s 'RpyPDEReactor.RpyPDEReactorTest'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{50A4441F-8E87-4E5E-AA02-683A12A1DDCA}'
+		}
+	}
+}

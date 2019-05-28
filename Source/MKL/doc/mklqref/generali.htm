@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<title>Generalized Eigenvalue Problems</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Generalized Eigenvalue Problems
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="sygst"></A>
+
+<B>?sygst</B>
+reduces a real symmetric-definite generalized eigenvalue problem to the standard form.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssygst (itype, uplo, n, SA, lda, SB, ldb, info)<br>
+call dsygst (itype, uplo, n, DA, lda, DB, ldb, info)
+</font></code>
+
+<p><A NAME="hegst"></A>
+
+<B>?hegst</B>
+reduces a complex Hermitian-definite generalized eigenvalue problem to the standard form.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chegst (itype, uplo, n, CA, lda, CB, ldb, info)<br>
+call zhegst (itype, uplo, n, ZA, lda, ZB, ldb, info)
+</font></code>
+
+<p><A NAME="spgst"></A>
+
+<B>?spgst</B>
+reduces a real symmetric-definite generalized eigenvalue problem to the standard form using packed storage.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sspgst (itype, uplo, n, SAP, SBP, info)<br>
+call dspgst (itype, uplo, n, DAP, DBP, info)
+</font></code>
+
+<p><A NAME="hpgst"></A>
+
+<B>?hpgst</B>
+reduces a complex Hermitian-definite generalized eigenvalue problem to the standard form using packed storage.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chpgst (itype, uplo, n, CAP, CBP, info)<br>
+call zhpgst (itype, uplo, n, ZAP, ZBP, info)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

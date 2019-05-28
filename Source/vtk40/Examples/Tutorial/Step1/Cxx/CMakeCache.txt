@@ -1,0 +1,301 @@
+# This is the CMakeCache file.
+# For build in directory: e:/Program Files/vtk40/Examples/Tutorial/Step1/cxx
+# You can edit this file to change values found and used by cmake.
+# If you do not want to change any of the values, simply exit the editor.
+# If you do want to change a value, simply edit, save, and exit the editor.
+# The syntax for the file is as follows:
+# KEY:TYPE=VALUE
+# KEY is the name of a varible in the cache.
+# TYPE is a hint to GUI's for the type of VALUE, DO NOT EDIT TYPE!.
+# VALUE is the current value for the KEY.
+
+########################
+# EXTERNAL cache entries
+########################
+
+//Single output directory for building all executables.
+EXECUTABLE_OUTPUT_PATH:PATH=E:/Program Files/vtk40/Examples/Tutorial/Step1/Cxx/Debug
+
+//Single output directory for building all libraries.
+LIBRARY_OUTPUT_PATH:PATH=E:/Program Files/vtk40/Examples/Tutorial/Step1/Cxx/Debug
+
+//Value Computed by CMake
+Step1_BINARY_DIR:STATIC=E:/Program Files/vtk40/Examples/Tutorial/Step1/cxx
+
+//Value Computed by CMake
+Step1_SOURCE_DIR:STATIC=E:/Program Files/vtk40/Examples/Tutorial/Step1/cxx
+
+//Use a built (versus installed) version of VTK. Be sure that VTK_BINARY_PATH
+// is correct.
+USE_BUILT_VTK:BOOL=OFF
+
+//Use an installed (versus built from source) version of VTK. Be
+// sure that VTK_INSTALL_PATH is correct.
+USE_INSTALLED_VTK:BOOL=ON
+
+//What is the path where the file UseVTK.cmake can be found
+VTK_BINARY_PATH:PATH=E:/Program Files/vtk40/include/vtk
+
+//What is the path where the file include/vtk/UseVTK.cmake can
+// be found
+VTK_INSTALL_PATH:PATH=E:/Program Files/vtk40/include/vtk
+
+
+########################
+# INTERNAL cache entries
+########################
+
+//What is the target build tool cmake is generating for.
+CMAKE_BUILD_TOOL:INTERNAL=msdev
+//This is the directory where this CMakeCahe.txt was created
+CMAKE_CACHEFILE_DIR:INTERNAL=e:/Program Files/vtk40/Examples/Tutorial/Step1/cxx
+//Major version of cmake used to create the current loaded cache
+//
+CMAKE_CACHE_MAJOR_VERSION:INTERNAL=1
+//Minor version of cmake used to create the current loaded cache
+//
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=4
+//Path to CMake executable.
+CMAKE_COMMAND:INTERNAL=E:/Program Files/CMake/bin/cmake.exe
+//DO NOT EDIT, CMAKE_CXX_COMPILER loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+CMAKE_CXX_COMPILER:INTERNAL=cl
+//Advanced flag for variable: CMAKE_CXX_COMPILER
+CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
+//DO NOT EDIT, CMAKE_CXX_FLAGS loaded from external file.  To change
+// this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+CMAKE_CXX_FLAGS:INTERNAL=/nologo /W3 /Zm1000 /GX /GR
+//DO NOT EDIT, CMAKE_CXX_FLAGS_DEBUG loaded from external file.
+//  To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+CMAKE_CXX_FLAGS_DEBUG:INTERNAL=/MDd /Zi /Od /GZ
+//Advanced flag for variable: CMAKE_CXX_FLAGS_DEBUG
+CMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//DO NOT EDIT, CMAKE_CXX_FLAGS_MINSIZEREL loaded from external
+// file.  To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+CMAKE_CXX_FLAGS_MINSIZEREL:INTERNAL=/MD /O1
+//Advanced flag for variable: CMAKE_CXX_FLAGS_MINSIZEREL
+CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//DO NOT EDIT, CMAKE_CXX_FLAGS_RELEASE loaded from external file.
+//  To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+CMAKE_CXX_FLAGS_RELEASE:INTERNAL=/MD /O2
+//Advanced flag for variable: CMAKE_CXX_FLAGS_RELEASE
+CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//DO NOT EDIT, CMAKE_CXX_FLAGS_RELWITHDEBINFO loaded from external
+// file.  To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+CMAKE_CXX_FLAGS_RELWITHDEBINFO:INTERNAL=/MD /Zi /O2
+//Advanced flag for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
+CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//Path to cache edit program executable.
+CMAKE_EDIT_COMMAND:INTERNAL=E:/Program Files/CMake/bin/CMakeSetup.exe
+//Executable suffix.
+CMAKE_EXECUTABLE_SUFFIX:INTERNAL=.exe
+//Advanced flag for variable: CMAKE_EXECUTABLE_SUFFIX
+CMAKE_EXECUTABLE_SUFFIX-ADVANCED:INTERNAL=1
+//DO NOT EDIT, CMAKE_EXTRA_LINK_FLAGS loaded from external file.
+//  To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+CMAKE_EXTRA_LINK_FLAGS:INTERNAL=/STACK:10000000
+//Advanced flag for variable: CMAKE_EXTRA_LINK_FLAGS
+CMAKE_EXTRA_LINK_FLAGS-ADVANCED:INTERNAL=1
+//Name of generator.
+CMAKE_GENERATOR:INTERNAL=Visual Studio 6
+//Start directory with the top level CMakeLists.txt file for this
+// project
+CMAKE_HOME_DIRECTORY:INTERNAL=E:/Program Files/vtk40/Examples/Tutorial/Step1/cxx
+//DO NOT EDIT, CMAKE_MAKE_PROGRAM loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+CMAKE_MAKE_PROGRAM:INTERNAL=msdev
+//Advanced flag for variable: CMAKE_MAKE_PROGRAM
+CMAKE_MAKE_PROGRAM-ADVANCED:INTERNAL=1
+//Module library suffix.
+CMAKE_MODULE_SUFFIX:INTERNAL=.dll
+//Advanced flag for variable: CMAKE_MODULE_SUFFIX
+CMAKE_MODULE_SUFFIX-ADVANCED:INTERNAL=1
+//Object file suffix.
+CMAKE_OBJECT_FILE_SUFFIX:INTERNAL=.obj
+//Advanced flag for variable: CMAKE_OBJECT_FILE_SUFFIX
+CMAKE_OBJECT_FILE_SUFFIX-ADVANCED:INTERNAL=1
+//Path to CMake installation.
+CMAKE_ROOT:INTERNAL=E:/Program Files/CMake
+//Shared library suffix.
+CMAKE_SHLIB_SUFFIX:INTERNAL=.dll
+//Advanced flag for variable: CMAKE_SHLIB_SUFFIX
+CMAKE_SHLIB_SUFFIX-ADVANCED:INTERNAL=1
+//Size of char data type
+CMAKE_SIZEOF_CHAR:INTERNAL=1
+//Size of double data type
+CMAKE_SIZEOF_DOUBLE:INTERNAL=8
+//Size of float data type
+CMAKE_SIZEOF_FLOAT:INTERNAL=4
+//Size of int data type
+CMAKE_SIZEOF_INT:INTERNAL=4
+//Size of long data type
+CMAKE_SIZEOF_LONG:INTERNAL=4
+//Size of short data type
+CMAKE_SIZEOF_SHORT:INTERNAL=2
+//Size of void* data type
+CMAKE_SIZEOF_VOID_P:INTERNAL=4
+//Static library suffix.
+CMAKE_STATICLIB_SUFFIX:INTERNAL=.lib
+//Advanced flag for variable: CMAKE_STATICLIB_SUFFIX
+CMAKE_STATICLIB_SUFFIX-ADVANCED:INTERNAL=1
+//What system is this.  Result of uname.
+CMAKE_SYSTEM:INTERNAL=Win32
+//DO NOT EDIT, CMAKE_USE_WIN32_THREADS loaded from external file.
+//  To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+CMAKE_USE_WIN32_THREADS:INTERNAL=1
+//Advanced flag for variable: CMAKE_USE_WIN32_THREADS
+CMAKE_USE_WIN32_THREADS-ADVANCED:INTERNAL=1
+//Path to an executable
+Cone_CMAKE_PATH:INTERNAL=E:/Program Files/vtk40/Examples/Tutorial/Step1/cxx
+//DO NOT EDIT, DART_ROOT loaded from external file.  To change
+// this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+DART_ROOT:INTERNAL=NOTFOUND
+//Advanced flag for variable: HAVE_LIMITS_H
+HAVE_LIMITS_H-ADVANCED:INTERNAL=1
+//Advanced flag for variable: HAVE_UNISTD_H
+HAVE_UNISTD_H-ADVANCED:INTERNAL=1
+//DO NOT EDIT, OPENGL_LIBRARY loaded from external file.  To change
+// this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+OPENGL_LIBRARY:INTERNAL=opengl32
+//DO NOT EDIT, VTKJPEG_BINARY_DIR loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTKJPEG_BINARY_DIR:INTERNAL=E:/Documents/VTK4/Utilities/jpeg
+//DO NOT EDIT, VTKJPEG_SOURCE_DIR loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTKJPEG_SOURCE_DIR:INTERNAL=E:/Documents/VTK 4.0/vtk40Src/VTK/Utilities/jpeg
+//DO NOT EDIT, VTKPNG_BINARY_DIR loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTKPNG_BINARY_DIR:INTERNAL=E:/Documents/VTK4/Utilities/png
+//DO NOT EDIT, VTKPNG_SOURCE_DIR loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTKPNG_SOURCE_DIR:INTERNAL=E:/Documents/VTK 4.0/vtk40Src/VTK/Utilities/png
+//DO NOT EDIT, VTKZLIB_BINARY_DIR loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTKZLIB_BINARY_DIR:INTERNAL=E:/Documents/VTK4/Utilities/zlib
+//DO NOT EDIT, VTKZLIB_SOURCE_DIR loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTKZLIB_SOURCE_DIR:INTERNAL=E:/Documents/VTK 4.0/vtk40Src/VTK/Utilities/zlib
+//DO NOT EDIT, VTK_BINARY_DIR loaded from external file.  To change
+// this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_BINARY_DIR:INTERNAL=E:/Documents/VTK4
+//DO NOT EDIT, VTK_BUILD_SHARED_LIBS loaded from external file.
+//  To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_BUILD_SHARED_LIBS:INTERNAL=OFF
+//DO NOT EDIT, VTK_DATA_ROOT loaded from external file.  To change
+// this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_DATA_ROOT:INTERNAL=NOTFOUND
+//DO NOT EDIT, VTK_DEBUG_LEAKS loaded from external file.  To change
+// this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_DEBUG_LEAKS:INTERNAL=OFF
+//DO NOT EDIT, VTK_LIBRARY_PATH loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_LIBRARY_PATH:INTERNAL=E:/Documents/VTK4/bin
+//DO NOT EDIT, VTK_MANGLE_MESA loaded from external file.  To change
+// this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_MANGLE_MESA:INTERNAL=OFF
+//DO NOT EDIT, VTK_SOURCE_DIR loaded from external file.  To change
+// this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_SOURCE_DIR:INTERNAL=E:/Documents/VTK 4.0/vtk40Src/VTK
+//DO NOT EDIT, VTK_USE_64BIT_IDS loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_USE_64BIT_IDS:INTERNAL=OFF
+//DO NOT EDIT, VTK_USE_ANSI_STDLIB loaded from external file. 
+// To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_USE_ANSI_STDLIB:INTERNAL=OFF
+//DO NOT EDIT, VTK_USE_HYBRID loaded from external file.  To change
+// this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_USE_HYBRID:INTERNAL=OFF
+//DO NOT EDIT, VTK_USE_PARALLEL loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_USE_PARALLEL:INTERNAL=OFF
+//DO NOT EDIT, VTK_USE_PATENTED loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_USE_PATENTED:INTERNAL=OFF
+//DO NOT EDIT, VTK_USE_RENDERING loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_USE_RENDERING:INTERNAL=ON
+//DO NOT EDIT, VTK_USE_VOLUMEPRO loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_USE_VOLUMEPRO:INTERNAL=OFF
+//DO NOT EDIT, VTK_WRAP_JAVA loaded from external file.  To change
+// this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_WRAP_JAVA:INTERNAL=OFF
+//DO NOT EDIT, VTK_WRAP_PYTHON loaded from external file.  To change
+// this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_WRAP_PYTHON:INTERNAL=OFF
+//DO NOT EDIT, VTK_WRAP_TCL loaded from external file.  To change
+// this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+VTK_WRAP_TCL:INTERNAL=OFF
+//Advanced flag for variable: WORDS_BIGENDIAN
+WORDS_BIGENDIAN-ADVANCED:INTERNAL=1
+//DO NOT EDIT, vtkCommon_LIB_DEPENDS loaded from external file.
+//  To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+vtkCommon_LIB_DEPENDS:INTERNAL=
+//DO NOT EDIT, vtkFiltering_LIB_DEPENDS loaded from external file.
+//  To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+vtkFiltering_LIB_DEPENDS:INTERNAL=vtkCommon;
+//DO NOT EDIT, vtkGraphics_LIB_DEPENDS loaded from external file.
+//  To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+vtkGraphics_LIB_DEPENDS:INTERNAL=vtkCommon;vtkFiltering;
+//DO NOT EDIT, vtkIO_LIB_DEPENDS loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+vtkIO_LIB_DEPENDS:INTERNAL=vtkpng;vtkzlib;vtkjpeg;vtkCommon;vtkFiltering;
+//DO NOT EDIT, vtkImaging_LIB_DEPENDS loaded from external file.
+//  To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+vtkImaging_LIB_DEPENDS:INTERNAL=vtkCommon;vtkFiltering;
+//DO NOT EDIT, vtkRendering_LIB_DEPENDS loaded from external file.
+//  To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+vtkRendering_LIB_DEPENDS:INTERNAL=opengl32;vtkCommon;vtkFiltering;vtkImaging;vtkGraphics;
+//DO NOT EDIT, vtkjpeg_LIB_DEPENDS loaded from external file. 
+// To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+vtkjpeg_LIB_DEPENDS:INTERNAL=
+//DO NOT EDIT, vtkpng_LIB_DEPENDS loaded from external file.  To
+// change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+vtkpng_LIB_DEPENDS:INTERNAL=vtkzlib;
+//DO NOT EDIT, vtkzlib_LIB_DEPENDS loaded from external file. 
+// To change this value edit this file: E:/Documents/VTK4//CMakeCache.txt
+//
+vtkzlib_LIB_DEPENDS:INTERNAL=
+

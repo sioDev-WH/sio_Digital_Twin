@@ -1,0 +1,11 @@
+I-Logix-RPY-Archive version 4.0.4 *
+
+- filesTable = { IRPYRawContainer 
+	- size = 4;
+	- value = "GuidanceLogic.rpy" ""
+	"GuidanceLogic_rpy\\Default.sbs" "Default"
+	"GuidanceLogic_rpy\\DefaultComponent.cmp" "DefaultComponent"
+	"GuidanceLogic_rpy\\Model1.omd" "Model1"
+	
+}
+

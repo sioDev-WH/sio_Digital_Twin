@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmissionVB.vbTorque_Converter.1 = s 'vbTorque_Converter Class'
+	{
+		CLSID = s '{33F21A86-FAAC-4D64-885C-70DE23EE4AFE}'
+	}
+	RtsOnTransmissionVB.vbTorque_Converter = s 'vbTorque_Converter Class'
+	{
+		CLSID = s '{33F21A86-FAAC-4D64-885C-70DE23EE4AFE}'
+		CurVer = s 'RtsOnTransmissionVB.vbTorque_Converter.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {33F21A86-FAAC-4D64-885C-70DE23EE4AFE} = s 'vbTorque_Converter Class'
+		{
+			ProgID = s 'RtsOnTransmissionVB.vbTorque_Converter.1'
+			VersionIndependentProgID = s 'RtsOnTransmissionVB.vbTorque_Converter'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A0FB58BE-0E08-45F6-8A4A-732A46D7FE96}'
+		}
+	}
+}

@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmissionVB.vbBand_Brake.1 = s 'vbBand_Brake Class'
+	{
+		CLSID = s '{68106DC2-0D2E-43EE-9C27-9631CD9A76FA}'
+	}
+	RtsOnTransmissionVB.vbBand_Brake = s 'vbBand_Brake Class'
+	{
+		CLSID = s '{68106DC2-0D2E-43EE-9C27-9631CD9A76FA}'
+		CurVer = s 'RtsOnTransmissionVB.vbBand_Brake.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {68106DC2-0D2E-43EE-9C27-9631CD9A76FA} = s 'vbBand_Brake Class'
+		{
+			ProgID = s 'RtsOnTransmissionVB.vbBand_Brake.1'
+			VersionIndependentProgID = s 'RtsOnTransmissionVB.vbBand_Brake'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A0FB58BE-0E08-45F6-8A4A-732A46D7FE96}'
+		}
+	}
+}

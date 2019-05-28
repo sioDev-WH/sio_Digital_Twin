@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+    <Settings>
+        <Setting
+            Name = "LogFile"
+            Value = "CGModeler.log"
+        />
+        <Setting
+            Name = "GenerateInterfacesForClasses"
+            Value = "FALSE"
+        />
+        <Setting
+            Name = "ProjectName"
+            Value = "CGModeler"
+        />
+        <Setting
+            Name = "OutputName"
+            Value = "CGModeler.vbproj"
+        />
+        <Setting
+            Name = "OutputDir"
+            Value = "C:\ARTIST\CD\Nov23VB_Backup\CgModelerVBProject\CGModeler.NET"
+        />
+        <Setting
+            Name = "ProjectPath"
+            Value = "C:\ARTIST\CD\Nov23VB_Backup\CgModelerVBProject\CGModeler.vbp"
+        />
+        <Setting
+            Name = "MigrateProjectTo"
+            Value = "1"
+        />
+    </Settings>
+</UpgradeLog>
+

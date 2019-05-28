@@ -1,0 +1,950 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IComponent 
+	- _id = GUID c37924db-5baf-44fc-a324-ac84ddbcb484;
+	- _myState = 139264;
+	- _name = "DefaultComponent";
+	- _lastID = 1;
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID 631d287c-f051-4966-a179-b7da5ce6d0ae;
+		- _myState = 8192;
+		- _name = "Files";
+		- m_path = "";
+		- Elements = { IRPYRawContainer 
+			- size = 8;
+			- value = 
+			{ IHandle 
+				- _m2Class = "";
+			}
+			{ IHandle 
+				- _m2Class = "";
+			}
+			{ IHandle 
+				- _m2Class = "";
+			}
+			{ IHandle 
+				- _m2Class = "";
+			}
+			{ IHandle 
+				- _m2Class = "";
+			}
+			{ IHandle 
+				- _m2Class = "";
+			}
+			{ IHandle 
+				- _m2Class = "";
+			}
+			{ IHandle 
+				- _m2Class = "";
+			}
+		}
+		- Files = { IRPYRawContainer 
+			- size = 0;
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID 598a80ca-cb0e-42b8-844c-725976862045;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 2;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID 7741967d-a847-4260-b7a9-c3d9f5bf2f8f;
+			- _myState = 8192;
+			- _properties = { IPropertyContainer 
+				- Subjects = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertySubject 
+						- _Name = "ReverseEngineering";
+						- Metaclasses = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertyMetaclass 
+								- _Name = "Main";
+								- Properties = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "Files";
+										- _Value = "C:\\DistComponents\\RtsOnTransmission\\ThrottleDlg.cpp,C:\\DistComponents\\RtsOnTransmission\\ThrottleDlg.h";
+										- _Type = String;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			- _name = "DefaultConfig";
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = None;
+			- _timeModel = RealTime;
+			- m_generateActors = 1;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _root = { IFolder 
+				- _id = GUID 517853ed-31e5-4e25-8555-47dc7ad31211;
+				- _name = "DefaultConfig";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 6.7.2002::15:35:30;
+			- strongCGTime = 6.7.2002::15:35:30;
+		}
+		{ ICodeGenConfigInfo 
+			- _id = GUID 598a80ca-cb0e-42b8-844c-725976862045;
+			- _myState = 8192;
+			- _name = "Animation";
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = Animation;
+			- _timeModel = RealTime;
+			- m_generateActors = 1;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "";
+				}
+			}
+			- _root = { IFolder 
+				- _id = GUID 3d91ba02-4c48-47ea-982e-28a5a9df7be7;
+				- _name = "Animation";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 9.11.2002::22:48:34;
+			- strongCGTime = 9.8.2002::22:6:19;
+		}
+	}
+	- HandlesInMe = { IRPYRawContainer 
+		- size = 98;
+		- value = 
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Default.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Default";
+			- _id = GUID 9fcee889-9879-48b2-875c-62ca01308855;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "StandardModels.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "StandardModels";
+			- _id = GUID a2236308-c3da-4241-90a9-c1711c52e9f4;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "TransmissionModels";
+			- _id = GUID 7caa7464-2b8a-4465-8d85-fb8fef46bd60;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "TransmissionControlModels.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "TransmissionControlModels";
+			- _id = GUID 4e9450f2-fe60-4001-a990-d065fd57f1cb;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "VehicleModels.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "VehicleModels";
+			- _id = GUID a7a94d15-ada1-46b6-a54b-8424efd5595d;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "GUIModels.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "GUIModels";
+			- _id = GUID 376c0f1c-16a6-4c5e-92c2-a714945c0fa1;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Application.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Application";
+			- _id = GUID 4733a771-c671-4ffe-87f0-f44d8854f1c3;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "ReverseEngineering.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "ReverseEngineering";
+			- _id = GUID 13a45ede-34de-429b-88b2-f8a88356a644;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "UI.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "UI";
+			- _id = GUID 06e73ac4-2cd8-11d7-b349-00c04f680d9d;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "DemoApp.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "DemoApp";
+			- _id = GUID 16b05e75-80af-40ae-a849-94bb5e7e4c1d;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Application1.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Application1";
+			- _id = GUID be0f965b-8e33-498e-8f89-5a5e5174ceb2;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "DiscreteTransmissionModels.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "DiscreteTransmissionModels";
+			- _id = GUID 9f1ed50f-c3e5-42c5-b6ca-e736c51d1bb3;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "AppSimple";
+			- _id = GUID 39e523aa-b778-4336-b3ca-0d980f05b6ae;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 37a160c0-67c9-4713-a1f5-3cdc49d717d1;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "mdl_junk";
+			- _id = GUID 51bd3328-fa80-4796-be18-06bf719f6f0e;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "app_junkSS";
+			- _id = GUID 6833fc8f-e8b5-4bc5-9052-903f5df983ed;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "app_junk_task_0100ms";
+			- _id = GUID 383dd4f2-db97-4acd-8751-deba6a655814;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "app_junk";
+			- _id = GUID 9b89f5cb-56c6-411a-b9c3-0985123224ad;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "mdl_junk2";
+			- _id = GUID 75264ca3-792c-4c36-a228-d07b76be1a07;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "mdl_junk4";
+			- _id = GUID e00a51e4-5bfe-4740-8d5d-af8033321e00;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "StandardModels.sbs";
+			- _subsystem = "StandardModels";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID d3e5e3cb-dfc4-4220-ac0b-da768d237eae;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "StandardModels.sbs";
+			- _subsystem = "StandardModels";
+			- _class = "";
+			- _name = "LookupTable";
+			- _id = GUID 3bd442d0-4897-43d5-867d-b0133fde7b73;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "StandardModels.sbs";
+			- _subsystem = "StandardModels";
+			- _class = "";
+			- _name = "CDamper";
+			- _id = GUID 5348bad2-1499-4532-8437-230f50987d42;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "StandardModels.sbs";
+			- _subsystem = "StandardModels";
+			- _class = "";
+			- _name = "CFrame";
+			- _id = GUID 8954490a-8855-4886-9f2d-115201fcabf7;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "StandardModels.sbs";
+			- _subsystem = "StandardModels";
+			- _class = "";
+			- _name = "CMass";
+			- _id = GUID 6248d6f1-ca37-4b04-a503-d43b58d7e12b;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "StandardModels.sbs";
+			- _subsystem = "StandardModels";
+			- _class = "";
+			- _name = "CSpring";
+			- _id = GUID 59849dcd-2715-43f8-8514-d34a01645482;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID e056ee77-ed34-4a92-95d1-3e9dd5c28640;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "Oneway_Clutch";
+			- _id = GUID 4c79a9e9-e7f7-44ba-9872-19849266e8cd;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "PlanetaryCoupler";
+			- _id = GUID 722db8db-e232-4be8-9976-bb88a1858c5d;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "Ravigneaux";
+			- _id = GUID 81860606-94e3-4fcd-b92f-df574331591c;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "Torque_Converter";
+			- _id = GUID 377a23f6-c276-4f83-88b1-cc3ef67aac3a;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "Actuator";
+			- _id = GUID e28f8081-5825-4888-b501-7ed30445c386;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "ActuatorClutchConnector";
+			- _id = GUID f181b86e-6f1a-4033-9ab7-d3b96c208d45;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "Band_Brake";
+			- _id = GUID da252185-5aaf-46c2-be47-c7a31f5d42d0;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "BrakeActuator";
+			- _id = GUID d7512002-89f7-4bb9-ac58-b2f122acac01;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "Clutch";
+			- _id = GUID 77f03e67-69b5-438d-a104-7177191eaad8;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "ClutchBase";
+			- _id = GUID c030246b-624f-4eda-9733-cd6a64b0bb57;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "CRigidConnector";
+			- _id = GUID 2866d86d-dd8a-4892-837e-7a3a14435447;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "Engine";
+			- _id = GUID b07473cd-630a-49f6-833c-517286d91e2b;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionModels.sbs";
+			- _subsystem = "TransmissionModels";
+			- _class = "";
+			- _name = "Gear";
+			- _id = GUID e5897e4f-a017-43b4-85c6-e658a47b62c9;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionControlModels.sbs";
+			- _subsystem = "TransmissionControlModels";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID e623f3ab-ab07-4183-8aab-6bdd0b3607f6;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionControlModels.sbs";
+			- _subsystem = "TransmissionControlModels";
+			- _class = "";
+			- _name = "ShiftData";
+			- _id = GUID dffab2a4-ea31-4cd9-8d05-912dc476d468;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionControlModels.sbs";
+			- _subsystem = "TransmissionControlModels";
+			- _class = "";
+			- _name = "Clutch_Schedule";
+			- _id = GUID d962344e-41d1-414d-ad5b-6a468e0adfb1;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionControlModels.sbs";
+			- _subsystem = "TransmissionControlModels";
+			- _class = "";
+			- _name = "Controller";
+			- _id = GUID 7a6f97be-4759-4f68-ae25-5bf06a850182;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "TransmissionControlModels.sbs";
+			- _subsystem = "TransmissionControlModels";
+			- _class = "";
+			- _name = "GearInfo";
+			- _id = GUID 0a253371-81a5-4299-9491-6ad30c5afd61;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "VehicleModels.sbs";
+			- _subsystem = "VehicleModels";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 303d0316-eea7-4b7f-8199-c21e0397be6a;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "VehicleModels.sbs";
+			- _subsystem = "VehicleModels";
+			- _class = "";
+			- _name = "Vehicle5";
+			- _id = GUID 8f57cd4d-ae06-4919-bafc-1929c2b2f915;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "VehicleModels.sbs";
+			- _subsystem = "VehicleModels";
+			- _class = "";
+			- _name = "Vehicle";
+			- _id = GUID fe2f0b07-b907-465e-9f5c-5890344e2fb3;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "GUIModels.sbs";
+			- _subsystem = "GUIModels";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 19a6b437-5f50-4e7e-bc00-d52dff96d79a;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "GUIModels.sbs";
+			- _subsystem = "GUIModels";
+			- _class = "";
+			- _name = "Chart";
+			- _id = GUID f0ab4546-6856-4cb4-b200-1afb4ccb4b37;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "GUIModels.sbs";
+			- _subsystem = "GUIModels";
+			- _class = "";
+			- _name = "Brakes";
+			- _id = GUID e2330dc4-8a77-4958-8705-550417674840;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "GUIModels.sbs";
+			- _subsystem = "GUIModels";
+			- _class = "";
+			- _name = "ShiftLever";
+			- _id = GUID 6f61bb17-a8dd-42b8-b4f3-3620fc2fecce;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "GUIModels.sbs";
+			- _subsystem = "GUIModels";
+			- _class = "";
+			- _name = "Throttle";
+			- _id = GUID 44b0da11-ac2a-4a82-870d-1ecfb7011543;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 7b1bc0e3-5ac0-4edc-8e7f-ccc826ed5d37;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "theApp";
+			- _id = GUID 8a493155-bbbb-4655-bab0-6d1abc3d8070;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "DemoDrivetrain";
+			- _id = GUID 58e3c3ed-4cce-43ee-893a-44a8a8edde06;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "DemoDrivetrainSubsystem";
+			- _id = GUID 2ea8829b-b368-427b-aa4c-942c12ac4e57;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "DemoDrivetrain_task_0100ms";
+			- _id = GUID f5c89ab4-6504-4db1-ad11-5af4a67aaef0;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "DemoDrivetrainApp";
+			- _id = GUID 87f3ec8c-6315-4f63-b494-3ba2c4f8818a;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "DriveTrain12";
+			- _id = GUID 5a39fc2e-9b01-49a4-9990-9d46fc723b78;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "DriveTrain12Subsystem";
+			- _id = GUID c4363159-1d31-4598-b20c-771fc7c87935;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "DriveTrain12_task_0100ms";
+			- _id = GUID e152ac3a-bd8f-49ec-b484-a51de34e092e;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "DriveTrain12App";
+			- _id = GUID c07bdf97-39cf-4a1f-ade6-9ab7a5f273f7;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "TestDrivetrain01";
+			- _id = GUID 2d884ff2-fb4e-4f80-9f0b-df1d162616b5;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "TestDrivetrainSS";
+			- _id = GUID 7a3ce1f7-2f67-4c62-8197-b6f4f6f7d3c0;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "TestDrivetrainApp_task_0100ms";
+			- _id = GUID 15d03c4e-9fc7-4f2f-ab31-9b83a48a14d9;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "TestDrivetrainApp";
+			- _id = GUID 54521690-143c-4de7-9982-8ff706e602fc;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application.sbs";
+			- _subsystem = "Application";
+			- _class = "";
+			- _name = "theTestApp";
+			- _id = GUID 1456de79-c1d6-4e99-bc0d-7fa2d72eb75f;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "ReverseEngineering.sbs";
+			- _subsystem = "ReverseEngineering";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 5d08bf11-6b56-4a92-9c7b-597b3c9d0480;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "UI.sbs";
+			- _subsystem = "UI";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 06e73ac5-2cd8-11d7-b349-00c04f680d9d;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "UI.sbs";
+			- _subsystem = "UI";
+			- _class = "";
+			- _name = "Driver";
+			- _id = GUID 06e73b4e-2cd8-11d7-b349-00c04f680d9d;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "DemoApp.sbs";
+			- _subsystem = "DemoApp";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 8599d49a-7a9f-4ff8-b5fe-f65002135713;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "DemoApp.sbs";
+			- _subsystem = "DemoApp";
+			- _class = "";
+			- _name = "dcar";
+			- _id = GUID 51b31d46-17c2-4771-a137-b12f244384da;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "DemoApp.sbs";
+			- _subsystem = "DemoApp";
+			- _class = "";
+			- _name = "dcarAppSS";
+			- _id = GUID 5d8f3be9-5273-4311-aca5-7e06b199fd2e;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "DemoApp.sbs";
+			- _subsystem = "DemoApp";
+			- _class = "";
+			- _name = "dcarAppT_task_0100ms";
+			- _id = GUID 0e923ca7-f619-46db-9a05-1733ff3cbdac;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "DemoApp.sbs";
+			- _subsystem = "DemoApp";
+			- _class = "";
+			- _name = "dcarApp";
+			- _id = GUID 8369a1b0-603a-4f9f-830d-f404311c8a5c;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application1.sbs";
+			- _subsystem = "Application1";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 4345c561-f943-4de4-8596-d2edc1d64e57;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application1.sbs";
+			- _subsystem = "Application1";
+			- _class = "";
+			- _name = "Car100";
+			- _id = GUID 0c05f5bf-e6cb-4455-b842-28903055b392;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application1.sbs";
+			- _subsystem = "Application1";
+			- _class = "";
+			- _name = "App100SS";
+			- _id = GUID 51210681-6ee6-4f2e-86ac-d11d0605941d;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application1.sbs";
+			- _subsystem = "Application1";
+			- _class = "";
+			- _name = "App100_task_0100ms";
+			- _id = GUID 06530022-6656-4317-b4a0-04b36bac94c5;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Application1.sbs";
+			- _subsystem = "Application1";
+			- _class = "";
+			- _name = "App100";
+			- _id = GUID 294f3143-f482-45b2-96af-780cba55f502;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "DiscreteTransmissionModels.sbs";
+			- _subsystem = "DiscreteTransmissionModels";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 6d1ad81a-cbc8-4585-99a5-5cd262604309;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "DiscreteTransmissionModels.sbs";
+			- _subsystem = "DiscreteTransmissionModels";
+			- _class = "";
+			- _name = "SimpleGearbox";
+			- _id = GUID 79d55823-e7f5-4f5f-b669-d2dcbf4fd4b9;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID da8d3143-6882-44cf-b744-e413998929ad;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "SimpleApp_task_0100ms";
+			- _id = GUID 3f4ed23b-00dd-4be9-ad5f-163db9ae9f0b;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "SimpleApp";
+			- _id = GUID f1cec2d5-8fba-4481-bdeb-b757a17d180b;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "theSimpleApp";
+			- _id = GUID f1f9629a-e711-422f-a0a5-a5e6fe511e11;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "StdCar";
+			- _id = GUID 713d9987-786b-4f2c-af07-4941cc3cdf33;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "StdCarSS";
+			- _id = GUID 25220968-a971-419f-ad3f-8b1681d4c55d;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "StdApp_task_0100ms";
+			- _id = GUID b06c846c-7c6c-43a6-80bd-e7f15d7e850e;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "StdApp";
+			- _id = GUID 6d446f58-6b2e-4f5d-bc5b-e39567243afc;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "theStdApp";
+			- _id = GUID 8357aef0-e781-4f63-a2c6-90c0438f80c2;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "ExtCar";
+			- _id = GUID 312568a1-0acd-42c4-8c4f-104953e60843;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "ExtCarSS";
+			- _id = GUID 23dfc2b0-6c2c-44ca-9ab9-2a15076ed3a9;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "ExtApp_task_0100ms";
+			- _id = GUID 145ceccb-23cd-4c28-bb58-9b6252e6b96a;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "ExtApp";
+			- _id = GUID 0d13b77c-626d-44a9-87d4-0ab0d9a5fa3c;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "theExtApp";
+			- _id = GUID 1cf64689-e8bd-4ff7-a885-334a21acf10e;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "AppSimple.sbs";
+			- _subsystem = "AppSimple";
+			- _class = "";
+			- _name = "theExtApp2";
+			- _id = GUID ce4822cf-bfb5-4e68-8a54-539e0655576b;
+		}
+	}
+	- weakCGTime = 9.12.2002::0:35:36;
+	- strongCGTime = 7.20.2002::15:40:30;
+}
+

@@ -1,0 +1,399 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IDiagram 
+	- _id = GUID af9f1386-17f9-4c2c-a293-27a3655352aa;
+	- _myState = 8192;
+	- _name = "ClutchSchedule";
+	- _graphicChart = { CGIClassChart 
+		- _id = GUID 5f12b78b-7883-4759-9601-462a7730fb1f;
+		- m_type = 0;
+		- m_pModelObject = { IHandle 
+			- _m2Class = "IDiagram";
+			- _id = GUID af9f1386-17f9-4c2c-a293-27a3655352aa;
+		}
+		- m_pParent = ;
+		- m_name = { CGIText 
+			- m_str = "";
+			- m_style = "Arial" 10 0 0 0 0 ;
+			- m_color = { IColor 
+				- m_fgColor = 0;
+				- m_bgColor = 0;
+				- m_bgFlag = 0;
+			}
+			- m_position = 1 0 0  ;
+			- m_nIdent = 0;
+			- m_bImplicitSetRectPoints = 0;
+		}
+		- m_drawBehavior = 0;
+		- elementList = 4;
+		{ CGILink 
+			- _id = GUID 2f1f8452-eccf-4876-915a-aa11508a17b1;
+			- m_type = 92;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "TransmissionControlModels.sbs";
+				- _subsystem = "TransmissionControlModels";
+				- _class = "Clutch_Schedule";
+				- _name = "Gears";
+				- _id = GUID 0ea1a62b-18db-4281-8ff0-73757560d7ba;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID 8223d0a3-84dc-4b15-8d37-506843b38f2a;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 56557247-6911-4d21-82b8-b0b3c245562c;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 2 -13.434799333536 -28.2973706381984  -13.434799333536 -33.1843785405266  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = 0 -1 ;
+			- m_anglePoint2 = 0 -1 ;
+			- m_line_style = 0;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "";
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 1;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 1;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "1";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 -13.3931302743282 -32.5468268979288  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = type_122;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID 56557247-6911-4d21-82b8-b0b3c245562c;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "TransmissionControlModels.sbs";
+				- _subsystem = "TransmissionControlModels";
+				- _class = "";
+				- _name = "GearInfo";
+				- _id = GUID 0a253371-81a5-4299-9491-6ad30c5afd61;
+			}
+			- m_pParent = GUID c5a76897-bd49-4413-ac54-17f6b5c7c75b;
+			- m_name = { CGIText 
+				- m_str = "GearInfo";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 -11.0487813759365 -33.7843785405266  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 28680;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -17.482282242487 -33.1843785405266  -4.61528050938614 -33.1843785405266  -4.61528050938614 -37.8378883127207  -17.482282242487 -37.8378883127207  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionControlModels.sbs";
+					- _subsystem = "TransmissionControlModels";
+					- _class = "GearInfo";
+					- _name = "ID";
+					- _id = GUID 9f481a80-2c60-47bc-a960-656825a9bae7;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionControlModels.sbs";
+					- _subsystem = "TransmissionControlModels";
+					- _class = "GearInfo";
+					- _name = "ClutchState";
+					- _id = GUID 6c2bfd1d-3277-4ca0-9bd1-3aaf3912e01e;
+				}
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID 8223d0a3-84dc-4b15-8d37-506843b38f2a;
+			- m_type = 87;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "TransmissionControlModels.sbs";
+				- _subsystem = "TransmissionControlModels";
+				- _class = "";
+				- _name = "Clutch_Schedule";
+				- _id = GUID d962344e-41d1-414d-ad5b-6a468e0adfb1;
+			}
+			- m_pParent = GUID c5a76897-bd49-4413-ac54-17f6b5c7c75b;
+			- m_name = { CGIText 
+				- m_str = "TransmissionControlModels::Clutch_Schedule";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 -9.13852446196437 -18.6486241664394  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -17.3299447809147 -18.0486229394849  -0.947104143014034 -18.0486229394849  -0.947104143014034 -28.2973706381984  -17.3299447809147 -28.2973706381984  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 4;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionControlModels.sbs";
+					- _subsystem = "TransmissionControlModels";
+					- _class = "Clutch_Schedule";
+					- _name = "nGears";
+					- _id = GUID e3ad8084-8be2-49e5-bae7-273da571a9d2;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionControlModels.sbs";
+					- _subsystem = "TransmissionControlModels";
+					- _class = "Clutch_Schedule";
+					- _name = "nClutches";
+					- _id = GUID a941b761-66a3-4d89-9687-aa4080889ec6;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionControlModels.sbs";
+					- _subsystem = "TransmissionControlModels";
+					- _class = "Clutch_Schedule";
+					- _name = "engageList";
+					- _id = GUID 59c6c219-e48e-4ffc-bb89-da62fe4509a3;
+				}
+				{ IHandle 
+					- _m2Class = "IAttribute";
+					- _filename = "TransmissionControlModels.sbs";
+					- _subsystem = "TransmissionControlModels";
+					- _class = "Clutch_Schedule";
+					- _name = "disengageList";
+					- _id = GUID 5725b030-2956-4b40-8883-dce5ff24fb1d;
+				}
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 4;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionControlModels.sbs";
+					- _subsystem = "TransmissionControlModels";
+					- _class = "Clutch_Schedule";
+					- _name = "update(const long ,const long )";
+					- _id = GUID c35027b1-edb8-45d1-97c2-05ae0375fb97;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionControlModels.sbs";
+					- _subsystem = "TransmissionControlModels";
+					- _class = "Clutch_Schedule";
+					- _name = "init()";
+					- _id = GUID ebc22f40-c3d2-4b0c-a06d-be1c5e756098;
+				}
+				{ IHandle 
+					- _m2Class = "IPrimitiveOperation";
+					- _filename = "TransmissionControlModels.sbs";
+					- _subsystem = "TransmissionControlModels";
+					- _class = "Clutch_Schedule";
+					- _name = "clean()";
+					- _id = GUID fe476c68-3621-483d-a563-b7e89ec63652;
+				}
+				{ IHandle 
+					- _m2Class = "IConstructor";
+					- _filename = "TransmissionControlModels.sbs";
+					- _subsystem = "TransmissionControlModels";
+					- _class = "Clutch_Schedule";
+					- _name = "Clutch_Schedule()";
+					- _id = GUID 8eebd7d7-1152-4a3b-bdb3-ae71c0a3b01f;
+				}
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = NULL;
+		}
+		{ CGICompositeClass 
+			- _id = GUID c5a76897-bd49-4413-ac54-17f6b5c7c75b;
+			- m_type = 78;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "TopLevel";
+				- _id = GUID 37a160c0-67c9-4713-a1f5-3cdc49d717d1;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "TopLevel";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 0;
+			- m_color = { IColor 
+				- m_fgColor = 1;
+				- m_bgColor = 1;
+				- m_bgFlag = 1;
+			}
+			- m_lineWidth = 0;
+			- m_polygon = 4 -17.482282242487 -18.0486229394849  -0.947104143014034 -18.0486229394849  -0.947104143014034 -37.8378883127207  -17.482282242487 -37.8378883127207  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		
+		- m_access = 'Z';
+		- m_modified = 'N';
+		- m_fileVersion = "";
+		- m_nModifyDate = 0;
+		- m_nCreateDate = 0;
+		- m_creator = "";
+		- m_bScaleWithZoom = 1;
+		- m_arrowStyle = 'S';
+		- m_pRoot = GUID c5a76897-bd49-4413-ac54-17f6b5c7c75b;
+		- m_currentLeftTop = -17.7303099139791 -38.1347272933192 ;
+		- m_currentRightBottom = -0.69907647152194 -17.7517839588864 ;
+	}
+	- _defaultSubsystem = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Default.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Default";
+		- _id = GUID 9fcee889-9879-48b2-875c-62ca01308855;
+	}
+}
+

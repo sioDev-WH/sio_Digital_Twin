@@ -1,0 +1,156 @@
+04, 06, 2003 (23:29:24): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo.rpy
+04, 06, 2003 (23:29:24): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo.rpy on Sunday, April 06, 2003 (23:29:24)
+
+04, 06, 2003 (23:29:24): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\filesTable.dat on Sunday, April 06, 2003 (23:29:24)
+
+04, 06, 2003 (23:29:24): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\filesTable.dat on Sunday, April 06, 2003 (23:29:24)
+
+04, 06, 2003 (23:29:24): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Requirement.sbs
+04, 06, 2003 (23:29:24): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Requirement.sbs on Sunday, April 06, 2003 (23:29:24)
+
+04, 06, 2003 (23:29:24): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Tracking_01.msc
+04, 06, 2003 (23:29:24): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Tracking_01.msc on Sunday, April 06, 2003 (23:29:24)
+
+04, 06, 2003 (23:29:24): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Tracking_01.msc on Sunday, April 06, 2003 (23:29:24)
+
+04, 06, 2003 (23:29:24): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Seeking_01.msc
+04, 06, 2003 (23:29:24): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Seeking_01.msc on Sunday, April 06, 2003 (23:29:24)
+
+04, 06, 2003 (23:29:24): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Seeking_01.msc on Sunday, April 06, 2003 (23:29:24)
+
+04, 06, 2003 (23:29:25): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Requirement.sbs on Sunday, April 06, 2003 (23:29:25)
+
+04, 06, 2003 (23:29:25): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AirframePkg.sbs
+04, 06, 2003 (23:29:25): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AirframePkg.sbs on Sunday, April 06, 2003 (23:29:25)
+
+04, 06, 2003 (23:29:26): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AirframePkg.sbs on Sunday, April 06, 2003 (23:29:26)
+
+04, 06, 2003 (23:29:26): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\GuidancePkg.sbs
+04, 06, 2003 (23:29:26): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\GuidancePkg.sbs on Sunday, April 06, 2003 (23:29:26)
+
+04, 06, 2003 (23:29:26): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\GuidancePkg.sbs on Sunday, April 06, 2003 (23:29:26)
+
+04, 06, 2003 (23:29:26): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AutopilotPkg.sbs
+04, 06, 2003 (23:29:26): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AutopilotPkg.sbs on Sunday, April 06, 2003 (23:29:26)
+
+04, 06, 2003 (23:29:26): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AutopilotPkg.sbs on Sunday, April 06, 2003 (23:29:26)
+
+04, 06, 2003 (23:29:26): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Application.sbs
+04, 06, 2003 (23:29:26): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Application.sbs on Sunday, April 06, 2003 (23:29:26)
+
+04, 06, 2003 (23:29:26): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Application.sbs on Sunday, April 06, 2003 (23:29:26)
+
+04, 06, 2003 (23:29:26): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\TrackingSubsystemPkg.sbs
+04, 06, 2003 (23:29:26): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\TrackingSubsystemPkg.sbs on Sunday, April 06, 2003 (23:29:26)
+
+04, 06, 2003 (23:29:27): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\TrackingSubsystemPkg.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\TargetPkg.sbs
+04, 06, 2003 (23:29:27): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\TargetPkg.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\TargetPkg.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\DisplayPkg.sbs
+04, 06, 2003 (23:29:27): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\DisplayPkg.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\DisplayPkg.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\LibraryPkg.sbs
+04, 06, 2003 (23:29:27): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\LibraryPkg.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AvionicsPkg.sbs
+04, 06, 2003 (23:29:27): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AvionicsPkg.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AvionicsPkg.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\LibraryPkg.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\RequirementClasses.sbs
+04, 06, 2003 (23:29:27): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\RequirementClasses.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\RequirementClasses.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\TestReGen.sbs
+04, 06, 2003 (23:29:27): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\TestReGen.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\TestReGen.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\EarlyModel.sbs
+04, 06, 2003 (23:29:27): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\EarlyModel.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\EarlyModel.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:27): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\CGTest.sbs
+04, 06, 2003 (23:29:27): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\CGTest.sbs on Sunday, April 06, 2003 (23:29:27)
+
+04, 06, 2003 (23:29:28): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\CGTest.sbs on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AutopilotModels.omd
+04, 06, 2003 (23:29:28): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AutopilotModels.omd on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AutopilotModels.omd on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\SeekerSubsystemModels.omd
+04, 06, 2003 (23:29:28): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\SeekerSubsystemModels.omd on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\SeekerSubsystemModels.omd on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\MissileGuidanceApplication.omd
+04, 06, 2003 (23:29:28): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\MissileGuidanceApplication.omd on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\MissileGuidanceApplication.omd on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Application.omd
+04, 06, 2003 (23:29:28): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Application.omd on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\Application.omd on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AnimationComponent.cmp
+04, 06, 2003 (23:29:28): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AnimationComponent.cmp on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AnimationComponent.cmp on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\DefaultComponent.cmp
+04, 06, 2003 (23:29:28): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\DefaultComponent.cmp on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\DefaultComponent.cmp on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AnimationComComponent.cmp
+04, 06, 2003 (23:29:28): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AnimationComComponent.cmp on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\AnimationComComponent.cmp on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Creating E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\GuidedMissileControlSystem.ucd
+04, 06, 2003 (23:29:28): 
+Started writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\GuidedMissileControlSystem.ucd on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo_rpy\GuidedMissileControlSystem.ucd on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): Finished writing E:\Dev\GuidanceDemo\April052003Model\MissileDemo.rpy on Sunday, April 06, 2003 (23:29:28)
+
+04, 06, 2003 (23:29:28): End Log

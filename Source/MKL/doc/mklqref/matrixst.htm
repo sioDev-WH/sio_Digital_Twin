@@ -1,0 +1,239 @@
+<HTML>
+<HEAD>
+<title>Matrix Storage Schemes</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Matrix Storage Schemes
+</h3>
+</font>
+
+<font face="times new roman,times,bodytxt">
+<p>
+
+You can pass matrix arguments to BLAS and LAPACK routines in one- or two- dimensional arrays,
+using the following storage schemes:
+<ul>
+<li><a href="#FullStorage">full storage</a> (in a two-dimensional array)
+<li><a href="#PackedStorage">packed storage</a> for Hermitian, symmetric, or triangular matrices (in a one-dimensional array)
+<li><a href="#BandStorage">band storage</a> for band matrices (in a two-dimensional array).
+</ul>
+
+<p><A NAME="FullStorage"></A>
+
+<B>Full storage</B>
+is the following obvious scheme:
+a matrix <i>A</i> is stored in a two-dimensional array
+<code><font face="Courier New,Courier,codetxt" color="#000099">a</font></code>,
+with the matrix element <i>a<sub>ij</sub></i>
+stored in the array element
+<code><font face="Courier New,Courier,codetxt" color="#000099">a(i,j)</font></code>.
+
+If a matrix is triangular (upper or lower, as specified by the argument
+<code><font face="Courier New,Courier,codetxt" color="#000099">uplo</font></code>),
+only the elements of the relevant triangle are stored;
+the remaining elements of the array need not be set.
+
+Routines that handle symmetric or Hermitian matrices allow for either
+the upper or lower triangle of the matrix to be stored in the corresponding
+elements of the array:
+
+<p>
+<center>
+<table border=1 cellpadding=4 cellspacing=0>
+<tr>
+<td valign=top>
+<code><font face="Courier New,Courier,codetxt" color="#000099">uplo='U'</font></code>
+</td>
+<td><font face="times new roman,times,bodytxt">
+<i>a<sub>ij</sub></i> is stored in
+<code><font face="Courier New,Courier,codetxt" color="#000099">a(i,j)</font></code>
+for <i>i</i>&nbsp;<small><u>&lt;</u></small>&nbsp;<i>j</i>;
+<br>
+other elements of
+<code><font face="Courier New,Courier,codetxt" color="#000099">a</font></code>
+need not be set.
+</font>
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+<code><font face="Courier New,Courier,codetxt" color="#000099">uplo='L'</font></code>
+</td>
+<td><font face="times new roman,times,bodytxt">
+<i>a<sub>ij</sub></i> is stored in
+<code><font face="Courier New,Courier,codetxt" color="#000099">a(i,j)</font></code>
+for <i>j</i>&nbsp;<small><u>&lt;</u></small>&nbsp;<i>i</i>;
+<br>
+other elements of
+<code><font face="Courier New,Courier,codetxt" color="#000099">a</font></code>
+need not be set.
+</font>
+</td>
+</tr>
+</table>
+</center>
+
+<p><A NAME="PackedStorage"></A>
+
+<B>Packed storage</B>
+allows you to store symmetric, Hermitian, or triangular matrices more compactly:
+the relevant triangle (again, as specified by the argument
+<code><font face="Courier New,Courier,codetxt" color="#000099">uplo</font></code>)
+is packed by columns in a one-dimensional array
+<code><font face="Courier New,Courier,codetxt" color="#000099">ap</font></code>:
+
+<p>
+<center>
+<table border=1 cellpadding=4 cellspacing=0>
+<tr>
+<td valign=top>
+<code><font face="Courier New,Courier,codetxt" color="#000099">uplo='U'</font></code>
+</td>
+<td><font face="times new roman,times,bodytxt">
+<i>a<sub>ij</sub></i> is stored in
+<code><font face="Courier New,Courier,codetxt" color="#000099">ap(i+j*(j-1)/2)</font></code>
+for&nbsp;<i>i</i>&nbsp;<small><u>&lt;</u></small>&nbsp;<i>j</i>.
+</font>
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+<code><font face="Courier New,Courier,codetxt" color="#000099">uplo='L'</font></code>
+</td>
+<td><font face="times new roman,times,bodytxt">
+<i>a<sub>ij</sub></i> is stored in
+<code><font face="Courier New,Courier,codetxt" color="#000099">ap(i+(2*n-j)*(j-1)/2)</font></code>
+for&nbsp;<i>j</i>&nbsp;<small><u>&lt;</u></small>&nbsp;<i>i</i>.
+</font>
+</td>
+</tr>
+</table>
+</center>
+
+<p><A NAME="BandStorage"></A>
+
+<B>Band storage</B> is as follows:
+
+an
+<code><font face="Courier New,Courier,codetxt" color="#000099">m</font></code>
+by
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>
+band matrix with
+<code><font face="Courier New,Courier,codetxt" color="#000099">kl</font></code>
+non-zero sub-diagonals and
+<code><font face="Courier New,Courier,codetxt" color="#000099">ku</font></code>
+non-zero super-diagonals is stored compactly in a two-dimensional array
+<code><font face="Courier New,Courier,codetxt" color="#000099">ab</font></code>
+with <code><font face="Courier New,Courier,codetxt" color="#000099">kl+ku+1</font></code> rows and
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code> columns.
+
+Columns of the matrix are stored in the corresponding columns of the array,
+and diagonals of the matrix are stored in rows of the array.
+
+<p>
+Thus,
+<i>a<sub>ij</sub></i> is stored in
+<code><font face="Courier New,Courier,codetxt" color="#000099">ab(ku+1+i-j,j)</font></code>
+
+for&nbsp;max(<code><font face="Courier New,Courier,codetxt" color="#000099">n,j-ku</font></code>)&nbsp;<small><u>&lt;</u></small>&nbsp;<i><code><font face="Courier New,Courier,codetxt" color="#000099">i</font></code></i>&nbsp;<small><u>&lt;</u></small>&nbsp;min(<code><font face="Courier New,Courier,codetxt" color="#000099">n,j+kl</font></code>).
+
+<p>
+Use the band storage scheme only when
+<code><font face="Courier New,Courier,codetxt" color="#000099">kl</font></code>
+and
+<code><font face="Courier New,Courier,codetxt" color="#000099">ku</font></code>
+are much less than the matrix size
+<code><font face="Courier New,Courier,codetxt" color="#000099">n</font></code>.
+(Although the routines work correctly for all values of
+<code><font face="Courier New,Courier,codetxt" color="#000099">kl</font></code>
+and
+<code><font face="Courier New,Courier,codetxt" color="#000099">ku</font></code>,
+it's inefficient to use the band storage if your matrices are not really banded.)
+
+<p>
+When you supply a general band matrix for <i>LU</i> factorization,
+allow space to store
+<code><font face="Courier New,Courier,codetxt" color="#000099">kl</font></code>
+additional super-diagonals generated by fill-in as a result of row interchanges.
+This means that the matrix is stored according to the above scheme,
+but with <code><font face="Courier New,Courier,codetxt" color="#000099">kl+ku</font></code>
+super-diagonals.
+
+<p>
+Triangular band matrices are stored in the same format,
+with either
+<code><font face="Courier New,Courier,codetxt" color="#000099">kl=0</font></code>
+if upper triangular, or
+<code><font face="Courier New,Courier,codetxt" color="#000099">ku=0</font></code>
+if lower triangular.
+
+<p>
+For symmetric or Hermitian band matrices with
+<code><font face="Courier New,Courier,codetxt" color="#000099">k</font></code>
+sub-diagonals or super-diagonals, you need to store only the upper or lower triangle,
+as specified by the argument
+<code><font face="Courier New,Courier,codetxt" color="#000099">uplo</font></code>:
+
+<p>
+<center>
+<table border=1 cellpadding=4 cellspacing=0>
+<tr>
+<td valign=top>
+<code><font face="Courier New,Courier,codetxt" color="#000099">uplo='U'</font></code>
+</td>
+<td><font face="times new roman,times,bodytxt">
+<i>a<sub>ij</sub></i> is stored in
+<code><font face="Courier New,Courier,codetxt" color="#000099">ab(k+1+i-j,j)</font></code>
+for&nbsp;max(1,&nbsp;<code><font face="Courier New,Courier,codetxt" color="#000099">j-k</font></code>)&nbsp;<small
+><u>&lt;</u></small>&nbsp;<code><font face="Courier New,Courier,codetxt" color="#000099">i</font></code>&nbsp;<small
+><u>&lt;</u></small>&nbsp;<code><font face="Courier New,Courier,codetxt" color="#000099">j</font></code>.
+</font>
+</td>
+</tr>
+
+<tr>
+<td valign=top>
+<code><font face="Courier New,Courier,codetxt" color="#000099">uplo='L'</font></code>
+</td>
+<td><font face="times new roman,times,bodytxt">
+<i>a<sub>ij</sub></i> is stored in
+<code><font face="Courier New,Courier,codetxt" color="#000099">ab(1+i-j,j)</font></code>
+for&nbsp;<code><font face="Courier New,Courier,codetxt" color="#000099">j</font></code>&nbsp;<small
+><u>&lt;</u></small>&nbsp;<code><font face="Courier New,Courier,codetxt" color="#000099">i</font></code>&nbsp;<small
+><u>&lt;</u></small>&nbsp;min(<code><font face="Courier New,Courier,codetxt" color="#000099">n,j+k</font></code>).
+</font>
+</td>
+</tr>
+</table>
+</center>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

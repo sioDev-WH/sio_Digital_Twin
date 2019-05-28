@@ -1,0 +1,793 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IDiagram 
+	- _id = GUID bcfd28d4-2a5e-11d7-b346-00c04f680d9d;
+	- _myState = 8192;
+	- _name = "SeekerSubsystemModels";
+	- _graphicChart = { CGIClassChart 
+		- _id = GUID bcfd28d5-2a5e-11d7-b346-00c04f680d9d;
+		- m_type = 0;
+		- m_pModelObject = { IHandle 
+			- _m2Class = "IDiagram";
+			- _id = GUID bcfd28d4-2a5e-11d7-b346-00c04f680d9d;
+		}
+		- m_pParent = ;
+		- m_name = { CGIText 
+			- m_str = "";
+			- m_style = "Arial" 10 0 0 0 0 ;
+			- m_color = { IColor 
+				- m_fgColor = 0;
+				- m_bgColor = 0;
+				- m_bgFlag = 0;
+			}
+			- m_position = 1 0 0  ;
+			- m_nIdent = 0;
+			- m_bImplicitSetRectPoints = 0;
+		}
+		- m_drawBehavior = 0;
+		- elementList = 11;
+		{ CGICompositeClass 
+			- _id = GUID bcfd28d6-2a5e-11d7-b346-00c04f680d9d;
+			- m_type = 78;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "TopLevel";
+				- _id = GUID 4582fb6d-0ad0-11d7-b329-00c04f680d9d;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "TopLevel";
+				- m_style = "Arial" 10 0 0 0 0 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 0;
+			- m_color = { IColor 
+				- m_fgColor = 1;
+				- m_bgColor = 1;
+				- m_bgFlag = 1;
+			}
+			- m_lineWidth = 0;
+			- m_polygon = 4 -12.4202624824665 3.91269057051727  31.3122420797406 3.91269057051727  31.3122420797406 -21.5271474556768  -12.4202624824665 -21.5271474556768  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIClass 
+			- _id = GUID bcfd2913-2a5e-11d7-b346-00c04f680d9d;
+			- m_type = 105;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "SeekerSubsystemPkg.sbs";
+				- _subsystem = "SeekerSubsystemPkg";
+				- _class = "";
+				- _name = "RateStabilizationFilter";
+				- _id = GUID 38231802-083e-4677-ae3d-ce8115146c1d;
+			}
+			- m_pParent = GUID bcfd28d6-2a5e-11d7-b346-00c04f680d9d;
+			- m_name = { CGIText 
+				- m_str = "RateStabilizationFilter";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 -0.252401449104557 -13.8846778429629  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -12.3741819879983 -13.0846778429629  9.33502767035929 -13.0846778429629  9.33502767035929 -21.4601554320577  -12.3741819879983 -21.4601554320577  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+		}
+		{ CGIClass 
+			- _id = GUID bcfd2914-2a5e-11d7-b346-00c04f680d9d;
+			- m_type = 105;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "SeekerSubsystemPkg.sbs";
+				- _subsystem = "SeekerSubsystemPkg";
+				- _class = "";
+				- _name = "SeekerSubsystem";
+				- _id = GUID 2695c2fa-92d1-4fe6-9ebb-fa0b8cb97114;
+			}
+			- m_pParent = GUID bcfd28d6-2a5e-11d7-b346-00c04f680d9d;
+			- m_name = { CGIText 
+				- m_str = "SeekerSubsystem";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 13.9017442031373 2.77767190490565  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 28680;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -12.4202624824665 3.91269057051727  9.13401871998272 3.91269057051727  9.13401871998272 -11.8786064032555  -12.4202624824665 -11.8786064032555  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+		}
+		{ CGIClass 
+			- _id = GUID bcfd2915-2a5e-11d7-b346-00c04f680d9d;
+			- m_type = 105;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "SeekerSubsystemPkg.sbs";
+				- _subsystem = "SeekerSubsystemPkg";
+				- _class = "";
+				- _name = "GimbalController";
+				- _id = GUID cf38eb30-d9fa-4ca6-ad7d-56d02c0bf8dc;
+			}
+			- m_pParent = GUID bcfd28d6-2a5e-11d7-b346-00c04f680d9d;
+			- m_name = { CGIText 
+				- m_str = "GimbalController";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 20.4461894727276 -13.9465467209792  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 28680;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 9.58013686571454 -13.146548253194  31.3122420797406 -13.146548253194  31.3122420797406 -21.5271474556768  9.58013686571454 -21.5271474556768  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+		}
+		{ CGIClass 
+			- _id = GUID bcfd2916-2a5e-11d7-b346-00c04f680d9d;
+			- m_type = 105;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "SeekerSubsystemPkg.sbs";
+				- _subsystem = "SeekerSubsystemPkg";
+				- _class = "";
+				- _name = "EstimatorLOS";
+				- _id = GUID 524b5b69-feec-4f96-b6af-3a3c85938e16;
+			}
+			- m_pParent = GUID bcfd28d6-2a5e-11d7-b346-00c04f680d9d;
+			- m_name = { CGIText 
+				- m_str = "EstimatorLOS";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 20.8596679479038 -1.22096976463877  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 28680;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 9.46903304398903 -3.77115642075498  30.1061833919041 -3.77115642075498  30.1061833919041 -11.8786095943787  9.46903304398903 -11.8786095943787  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID bcfd2917-2a5e-11d7-b346-00c04f680d9d;
+			- m_type = 106;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "SeekerSubsystemPkg.sbs";
+				- _subsystem = "SeekerSubsystemPkg";
+				- _class = "";
+				- _name = "SeekerSubsystemCoeff";
+				- _id = GUID a2de3737-457f-4226-8790-ab8681e06c1d;
+			}
+			- m_pParent = GUID bcfd2914-2a5e-11d7-b346-00c04f680d9d;
+			- m_name = { CGIText 
+				- m_str = "SeekerSubsystemCoeff";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 13.9015203134023 0.0750991068294758  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -10.3435998626093 1.2101177724411  7.0569083206555 1.2101177724411  7.0569083206555 -2.02201903505625  -10.3435998626093 -2.02201903505625  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = { CGIClassInstance 
+				- _id = GUID bcfd2918-2a5e-11d7-b346-00c04f680d9d;
+				- m_type = 106;
+				- m_pModelObject = { IHandle 
+					- _m2Class = "IClassInstance";
+					- _filename = "SeekerSubsystemPkg.sbs";
+					- _subsystem = "SeekerSubsystemPkg";
+					- _class = "SeekerSubsystem";
+					- _name = "Coeff";
+					- _id = GUID aa1543eb-026a-4b0e-a11d-54eb948333bc;
+				}
+				- m_pParent = GUID bcfd2914-2a5e-11d7-b346-00c04f680d9d;
+				- m_name = { CGIText 
+					- m_str = "Coeff:SeekerSubsystemCoeff";
+					- m_style = "Arial" 10 0 0 0 0 ;
+					- m_color = { IColor 
+						- m_fgColor = 0;
+						- m_bgColor = 0;
+						- m_bgFlag = 0;
+					}
+					- m_position = 1 0 0  ;
+					- m_nIdent = 0;
+					- m_bImplicitSetRectPoints = 0;
+				}
+				- m_drawBehavior = 0;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_lineWidth = 1;
+				- m_polygon = 4 -10.3435998626093 1.2101177724411  7.0569083206555 1.2101177724411  7.0569083206555 -2.02201903505625  -10.3435998626093 -2.02201903505625  ;
+				- m_nNameFormat = 0;
+				- m_nIsNameFormat = 0;
+				- m_multiplicity = { CGIText 
+					- m_str = "1";
+					- m_style = "Arial" 10 0 0 0 2 ;
+					- m_color = { IColor 
+						- m_fgColor = 0;
+						- m_bgColor = 0;
+						- m_bgFlag = 0;
+					}
+					- m_position = 1 0 0  ;
+					- m_nIdent = 0;
+					- m_bImplicitSetRectPoints = 0;
+				}
+				- m_pGIClass = GUID bcfd2917-2a5e-11d7-b346-00c04f680d9d;
+			}
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID bcfd2919-2a5e-11d7-b346-00c04f680d9d;
+			- m_type = 106;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "SeekerSubsystemPkg.sbs";
+				- _subsystem = "SeekerSubsystemPkg";
+				- _class = "";
+				- _name = "EstimatorLOSCoeff";
+				- _id = GUID 757de964-d64f-46ad-aa93-daab1bdfc79f;
+			}
+			- m_pParent = GUID bcfd2916-2a5e-11d7-b346-00c04f680d9d;
+			- m_name = { CGIText 
+				- m_str = "EstimatorLOSCoeff";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 20.9988295493754 -4.55488462406405  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 28680;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 11.2678256174958 -7.10507128018025  28.5857140213406 -7.10507128018025  28.5857140213406 -9.63305220052129  11.2678256174958 -9.63305220052129  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = { CGIClassInstance 
+				- _id = GUID bcfd291a-2a5e-11d7-b346-00c04f680d9d;
+				- m_type = 106;
+				- m_pModelObject = { IHandle 
+					- _m2Class = "IClassInstance";
+					- _filename = "SeekerSubsystemPkg.sbs";
+					- _subsystem = "SeekerSubsystemPkg";
+					- _class = "EstimatorLOS";
+					- _name = "Coeff";
+					- _id = GUID c0d6b153-fc6c-4b22-a7b7-bd472088ad60;
+				}
+				- m_pParent = GUID bcfd2916-2a5e-11d7-b346-00c04f680d9d;
+				- m_name = { CGIText 
+					- m_str = "Coeff:EstimatorLOSCoeff";
+					- m_style = "Arial" 10 0 0 0 0 ;
+					- m_color = { IColor 
+						- m_fgColor = 0;
+						- m_bgColor = 0;
+						- m_bgFlag = 0;
+					}
+					- m_position = 1 0 0  ;
+					- m_nIdent = 0;
+					- m_bImplicitSetRectPoints = 0;
+				}
+				- m_drawBehavior = 0;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_lineWidth = 1;
+				- m_polygon = 4 11.2678256174958 -7.10507128018025  28.5857140213406 -7.10507128018025  28.5857140213406 -9.63305220052129  11.2678256174958 -9.63305220052129  ;
+				- m_nNameFormat = 0;
+				- m_nIsNameFormat = 0;
+				- m_multiplicity = { CGIText 
+					- m_str = "1";
+					- m_style = "Arial" 10 0 0 0 2 ;
+					- m_color = { IColor 
+						- m_fgColor = 0;
+						- m_bgColor = 0;
+						- m_bgFlag = 0;
+					}
+					- m_position = 1 0 0  ;
+					- m_nIdent = 0;
+					- m_bImplicitSetRectPoints = 0;
+				}
+				- m_pGIClass = GUID bcfd2919-2a5e-11d7-b346-00c04f680d9d;
+			}
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID bcfd291b-2a5e-11d7-b346-00c04f680d9d;
+			- m_type = 106;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "SeekerSubsystemPkg.sbs";
+				- _subsystem = "SeekerSubsystemPkg";
+				- _class = "";
+				- _name = "RateStabilizationFilterCoeff";
+				- _id = GUID fe19aff9-3dd9-44f7-ae47-26e3acf7b442;
+			}
+			- m_pParent = GUID bcfd2913-2a5e-11d7-b346-00c04f680d9d;
+			- m_name = { CGIText 
+				- m_str = "RateStabilizationFilterCoeff";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 -0.167633761911712 -16.7562616725192  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -10.5524301285557 -15.9562616725192  7.66508846587023 -15.9562616725192  7.66508846587023 -19.1791613122671  -10.5524301285557 -19.1791613122671  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = { CGIClassInstance 
+				- _id = GUID bcfd291c-2a5e-11d7-b346-00c04f680d9d;
+				- m_type = 106;
+				- m_pModelObject = { IHandle 
+					- _m2Class = "IClassInstance";
+					- _filename = "SeekerSubsystemPkg.sbs";
+					- _subsystem = "SeekerSubsystemPkg";
+					- _class = "RateStabilizationFilter";
+					- _name = "Coeff";
+					- _id = GUID 3e081121-5915-4f7f-8ef2-9c5e7db82f27;
+				}
+				- m_pParent = GUID bcfd2913-2a5e-11d7-b346-00c04f680d9d;
+				- m_name = { CGIText 
+					- m_str = "Coeff:RateStabilizationFilterCoeff";
+					- m_style = "Arial" 10 0 0 0 0 ;
+					- m_color = { IColor 
+						- m_fgColor = 0;
+						- m_bgColor = 0;
+						- m_bgFlag = 0;
+					}
+					- m_position = 1 0 0  ;
+					- m_nIdent = 0;
+					- m_bImplicitSetRectPoints = 0;
+				}
+				- m_drawBehavior = 0;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_lineWidth = 1;
+				- m_polygon = 4 -10.5524301285557 -15.9562616725192  7.66508846587023 -15.9562616725192  7.66508846587023 -19.1791613122671  -10.5524301285557 -19.1791613122671  ;
+				- m_nNameFormat = 0;
+				- m_nIsNameFormat = 0;
+				- m_multiplicity = { CGIText 
+					- m_str = "1";
+					- m_style = "Arial" 10 0 0 0 2 ;
+					- m_color = { IColor 
+						- m_fgColor = 0;
+						- m_bgColor = 0;
+						- m_bgFlag = 0;
+					}
+					- m_position = 1 0 0  ;
+					- m_nIdent = 0;
+					- m_bImplicitSetRectPoints = 0;
+				}
+				- m_pGIClass = GUID bcfd291b-2a5e-11d7-b346-00c04f680d9d;
+			}
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID bcfd291d-2a5e-11d7-b346-00c04f680d9d;
+			- m_type = 106;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "SeekerSubsystemPkg.sbs";
+				- _subsystem = "SeekerSubsystemPkg";
+				- _class = "";
+				- _name = "GimbalControllerCoeff";
+				- _id = GUID 7fc53607-31f4-4635-818d-cc35770826f5;
+			}
+			- m_pParent = GUID bcfd2915-2a5e-11d7-b346-00c04f680d9d;
+			- m_name = { CGIText 
+				- m_str = "GimbalControllerCoeff";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 20.5221758545948 -16.634126430472  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 11.4038100305279 -15.9001779216273  29.6405416786617 -15.9001779216273  29.6405416786617 -18.5997532979295  11.4038100305279 -18.5997532979295  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = { CGIClassInstance 
+				- _id = GUID bcfd291e-2a5e-11d7-b346-00c04f680d9d;
+				- m_type = 106;
+				- m_pModelObject = { IHandle 
+					- _m2Class = "IClassInstance";
+					- _filename = "SeekerSubsystemPkg.sbs";
+					- _subsystem = "SeekerSubsystemPkg";
+					- _class = "GimbalController";
+					- _name = "Coeff";
+					- _id = GUID 4e938d78-d60a-44d4-b448-3b930043353b;
+				}
+				- m_pParent = GUID bcfd2915-2a5e-11d7-b346-00c04f680d9d;
+				- m_name = { CGIText 
+					- m_str = "Coeff:GimbalControllerCoeff";
+					- m_style = "Arial" 10 0 0 0 0 ;
+					- m_color = { IColor 
+						- m_fgColor = 0;
+						- m_bgColor = 0;
+						- m_bgFlag = 0;
+					}
+					- m_position = 1 0 0  ;
+					- m_nIdent = 0;
+					- m_bImplicitSetRectPoints = 0;
+				}
+				- m_drawBehavior = 0;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_lineWidth = 1;
+				- m_polygon = 4 11.4038100305279 -15.9001779216273  29.6405416786617 -15.9001779216273  29.6405416786617 -18.5997532979295  11.4038100305279 -18.5997532979295  ;
+				- m_nNameFormat = 0;
+				- m_nIsNameFormat = 0;
+				- m_multiplicity = { CGIText 
+					- m_str = "1";
+					- m_style = "Arial" 10 0 0 0 2 ;
+					- m_color = { IColor 
+						- m_fgColor = 0;
+						- m_bgColor = 0;
+						- m_bgFlag = 0;
+					}
+					- m_position = 1 0 0  ;
+					- m_nIdent = 0;
+					- m_bImplicitSetRectPoints = 0;
+				}
+				- m_pGIClass = GUID bcfd291d-2a5e-11d7-b346-00c04f680d9d;
+			}
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID bcfd291f-2a5e-11d7-b346-00c04f680d9d;
+			- m_type = 106;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "SeekerSubsystemPkg.sbs";
+				- _subsystem = "SeekerSubsystemPkg";
+				- _class = "";
+				- _name = "GimbalController";
+				- _id = GUID cf38eb30-d9fa-4ca6-ad7d-56d02c0bf8dc;
+			}
+			- m_pParent = GUID bcfd2914-2a5e-11d7-b346-00c04f680d9d;
+			- m_name = { CGIText 
+				- m_str = "GimbalController";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 14.032870853912 -3.52176474094082  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 28680;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -10.214886087283 -2.3867460753292  7.19089562634858 -2.3867460753292  7.19089562634858 -5.61888288282655  -10.214886087283 -5.61888288282655  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = { CGIClassInstance 
+				- _id = GUID bcfd2920-2a5e-11d7-b346-00c04f680d9d;
+				- m_type = 106;
+				- m_pModelObject = { IHandle 
+					- _m2Class = "IClassInstance";
+					- _filename = "SeekerSubsystemPkg.sbs";
+					- _subsystem = "SeekerSubsystemPkg";
+					- _class = "SeekerSubsystem";
+					- _name = "itsGimbalController";
+					- _id = GUID 783ef21a-cc51-495e-8ac8-d49105f18222;
+				}
+				- m_pParent = GUID bcfd2914-2a5e-11d7-b346-00c04f680d9d;
+				- m_name = { CGIText 
+					- m_str = ":GimbalController";
+					- m_style = "Arial" 10 0 0 0 0 ;
+					- m_color = { IColor 
+						- m_fgColor = 0;
+						- m_bgColor = 0;
+						- m_bgFlag = 0;
+					}
+					- m_position = 1 0 0  ;
+					- m_nIdent = 0;
+					- m_bImplicitSetRectPoints = 0;
+				}
+				- m_drawBehavior = 0;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_lineWidth = 1;
+				- m_polygon = 4 -10.214886087283 -2.3867460753292  7.19089562634858 -2.3867460753292  7.19089562634858 -5.61888288282655  -10.214886087283 -5.61888288282655  ;
+				- m_nNameFormat = 0;
+				- m_nIsNameFormat = 0;
+				- m_multiplicity = { CGIText 
+					- m_str = "1";
+					- m_style = "Arial" 10 0 0 0 2 ;
+					- m_color = { IColor 
+						- m_fgColor = 0;
+						- m_bgColor = 0;
+						- m_bgFlag = 0;
+					}
+					- m_position = 1 0 0  ;
+					- m_nIdent = 0;
+					- m_bImplicitSetRectPoints = 0;
+				}
+				- m_pGIClass = GUID bcfd291f-2a5e-11d7-b346-00c04f680d9d;
+			}
+		}
+		{ CGIClassAndInstance 
+			- _id = GUID bcfd2921-2a5e-11d7-b346-00c04f680d9d;
+			- m_type = 106;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "SeekerSubsystemPkg.sbs";
+				- _subsystem = "SeekerSubsystemPkg";
+				- _class = "";
+				- _name = "RateStabilizationFilter";
+				- _id = GUID 38231802-083e-4677-ae3d-ce8115146c1d;
+			}
+			- m_pParent = GUID bcfd2914-2a5e-11d7-b346-00c04f680d9d;
+			- m_name = { CGIText 
+				- m_str = "RateStabilizationFilter";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 14.066379266861 -7.05932378939225  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 26632;
+			- m_color = { IColor 
+				- m_fgColor = 44;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -10.21488234228 -5.92430512378063  7.25790870724375 -5.92430512378063  7.25790870724375 -9.15644193127798  -10.21488234228 -9.15644193127798  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Operations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_dSeparatorPosition = 0.5;
+			- m_pInstance = { CGIClassInstance 
+				- _id = GUID bcfd2922-2a5e-11d7-b346-00c04f680d9d;
+				- m_type = 106;
+				- m_pModelObject = { IHandle 
+					- _m2Class = "IClassInstance";
+					- _filename = "SeekerSubsystemPkg.sbs";
+					- _subsystem = "SeekerSubsystemPkg";
+					- _class = "SeekerSubsystem";
+					- _name = "itsRateStabilizationFilter";
+					- _id = GUID 423cfcd1-c149-47d9-aa65-a982bb48f1dc;
+				}
+				- m_pParent = GUID bcfd2914-2a5e-11d7-b346-00c04f680d9d;
+				- m_name = { CGIText 
+					- m_str = ":RateStabilizationFilter";
+					- m_style = "Arial" 10 0 0 0 0 ;
+					- m_color = { IColor 
+						- m_fgColor = 0;
+						- m_bgColor = 0;
+						- m_bgFlag = 0;
+					}
+					- m_position = 1 0 0  ;
+					- m_nIdent = 0;
+					- m_bImplicitSetRectPoints = 0;
+				}
+				- m_drawBehavior = 0;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_lineWidth = 1;
+				- m_polygon = 4 -10.21488234228 -5.92430512378063  7.25790870724375 -5.92430512378063  7.25790870724375 -9.15644193127798  -10.21488234228 -9.15644193127798  ;
+				- m_nNameFormat = 0;
+				- m_nIsNameFormat = 0;
+				- m_multiplicity = { CGIText 
+					- m_str = "1";
+					- m_style = "Arial" 10 0 0 0 2 ;
+					- m_color = { IColor 
+						- m_fgColor = 0;
+						- m_bgColor = 0;
+						- m_bgFlag = 0;
+					}
+					- m_position = 1 0 0  ;
+					- m_nIdent = 0;
+					- m_bImplicitSetRectPoints = 0;
+				}
+				- m_pGIClass = GUID bcfd2921-2a5e-11d7-b346-00c04f680d9d;
+			}
+		}
+		
+		- m_access = 'Z';
+		- m_modified = 'N';
+		- m_fileVersion = "";
+		- m_nModifyDate = 0;
+		- m_nCreateDate = 0;
+		- m_creator = "";
+		- m_bScaleWithZoom = 1;
+		- m_arrowStyle = 'S';
+		- m_pRoot = GUID bcfd28d6-2a5e-11d7-b346-00c04f680d9d;
+		- m_currentLeftTop = -13.0762500508996 -21.9087450260697 ;
+		- m_currentRightBottom = 31.9682296481737 4.29428814091018 ;
+	}
+	- _defaultSubsystem = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Default.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Default";
+		- _id = GUID 4582fb6c-0ad0-11d7-b329-00c04f680d9d;
+	}
+}
+

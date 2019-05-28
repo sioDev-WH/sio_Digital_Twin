@@ -1,0 +1,15 @@
+long i;
+double* pVals = NULL;
+SAFEARRAY* psaVals = NULL;
+
+psaVals = SafeArrayCreateVector(VT_R8, 0, cVals);
+SafeArrayAccessData(psaVals, (void HUGEP* FAR*)& pVals);
+
+for (i = 0; i < cVars; i++)
+  pVals[i] = sourceVals[i];
+
+SafeArrayUnaccessData(psaVals);
+
+SendData(t, psaVals, cVals);
+
+SafeArrayDestroy(psaVals);

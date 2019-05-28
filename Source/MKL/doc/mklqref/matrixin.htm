@@ -1,0 +1,142 @@
+<HTML>
+<HEAD>
+<title>Matrix Inversion</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Matrix Inversion
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="getri"></A>
+
+<B>?getri</B>
+computes the inverse of a general matrix
+that has been factored by <a href="triangul.htm#getrf">?getrf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgetri (n, SA, lda, IPIV, SWORK, lwork, info)<br>
+call dgetri (n, DA, lda, IPIV, DWORK, lwork, info)<br>
+call cgetri (n, CA, lda, IPIV, CWORK, lwork, info)<br>
+call zgetri (n, ZA, lda, IPIV, ZWORK, lwork, info)
+</font></code>
+
+<p><A NAME="potri"></A>
+
+<B>?potri</B>
+computes the inverse of a symmetric (Hermitian) positive-definite matrix
+that has been factored by <a href="triangul.htm#potrf">?potrf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call spotri (uplo, n, SA, lda, info)<br>
+call dpotri (uplo, n, DA, lda, info)<br>
+call cpotri (uplo, n, CA, lda, info)<br>
+call zpotri (uplo, n, ZA, lda, info)
+</font></code>
+
+<p><A NAME="pptri"></A>
+
+<B>?pptri</B>
+computes the inverse of a packed symmetric (Hermitian) positive-definite matrix
+that has been factored by <a href="triangul.htm#pptrf">?pptrf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call spptri (uplo, n, SAP, info)<br>
+call dpptri (uplo, n, DAP, info)<br>
+call cpptri (uplo, n, CAP, info)<br>
+call zpptri (uplo, n, ZAP, info)
+</font></code>
+
+<p><A NAME="sytri"></A>
+
+<B>?sytri</B>
+computes the inverse of a symmetric matrix
+that has been factored by <a href="triangul.htm#sytrf">?sytrf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssytri (uplo, n, SA, lda, IPIV, SWORK, info)<br>
+call dsytri (uplo, n, DA, lda, IPIV, DWORK, info)<br>
+call csytri (uplo, n, CA, lda, IPIV, CWORK, info)<br>
+call zsytri (uplo, n, ZA, lda, IPIV, ZWORK, info)
+</font></code>
+
+<p><A NAME="hetri"></A>
+
+<B>?hetri</B>
+computes the inverse of a complex Hermitian matrix
+that has been factored by <a href="triangul.htm#hetrf">?hetrf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chetri (uplo, n, CA, lda, IPIV, CWORK, info)<br>
+call zhetri (uplo, n, ZA, lda, IPIV, ZWORK, info)
+</font></code>
+
+<p><A NAME="sptri"></A>
+
+<B>?sptri</B>
+computes the inverse of a symmetric matrix using packed storage
+that has been factored by <a href="triangul.htm#sptrf">?sptrf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssptri (uplo, n, SAP, IPIV, SWORK, info)<br>
+call dsptri (uplo, n, DAP, IPIV, DWORK, info)<br>
+call csptri (uplo, n, CAP, IPIV, CWORK, info)<br>
+call zsptri (uplo, n, ZAP, IPIV, ZWORK, info)
+</font></code>
+
+<p><A NAME="hptri"></A>
+
+<B>?hptri</B>
+computes the inverse of a complex Hermitian matrix using packed storage
+that has been factored by <a href="triangul.htm#hptrf">?hptrf</a>.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chptri (uplo, n, CAP, IPIV, CWORK, info)<br>
+call zhptri (uplo, n, ZAP, IPIV, ZWORK, info)
+</font></code>
+
+<p><A NAME="trtri"></A>
+
+<B>?trtri</B>
+computes the inverse of a triangular matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call strtri (uplo, diag, n, SA, lda, info)<br>
+call dtrtri (uplo, diag, n, DA, lda, info)<br>
+call ctrtri (uplo, diag, n, CA, lda, info)<br>
+call ztrtri (uplo, diag, n, ZA, lda, info)
+</font></code>
+
+<p><A NAME="tptri"></A>
+
+<B>?tptri</B>
+computes the inverse of a triangular matrix using packed storage.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call stptri (uplo, diag, n, SAP, info)<br>
+call dtptri (uplo, diag, n, DAP, info)<br>
+call ctptri (uplo, diag, n, CAP, info)<br>
+call ztptri (uplo, diag, n, ZAP, info)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

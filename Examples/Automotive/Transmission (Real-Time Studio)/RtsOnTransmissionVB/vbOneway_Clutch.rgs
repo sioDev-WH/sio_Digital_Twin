@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmissionVB.vbOneway_Clutch.1 = s 'vbOneway_Clutch Class'
+	{
+		CLSID = s '{0CA0A218-5C05-4FB5-81EB-5B21174F833D}'
+	}
+	RtsOnTransmissionVB.vbOneway_Clutch = s 'vbOneway_Clutch Class'
+	{
+		CLSID = s '{0CA0A218-5C05-4FB5-81EB-5B21174F833D}'
+		CurVer = s 'RtsOnTransmissionVB.vbOneway_Clutch.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {0CA0A218-5C05-4FB5-81EB-5B21174F833D} = s 'vbOneway_Clutch Class'
+		{
+			ProgID = s 'RtsOnTransmissionVB.vbOneway_Clutch.1'
+			VersionIndependentProgID = s 'RtsOnTransmissionVB.vbOneway_Clutch'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A0FB58BE-0E08-45F6-8A4A-732A46D7FE96}'
+		}
+	}
+}

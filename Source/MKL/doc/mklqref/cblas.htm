@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<title>CBLAS Interface to BLAS</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+CBLAS Interface to BLAS
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+CBLAS is a C interface to <a href="blasrout.htm">BLAS routines</a>.
+Similar to BLAS, the CBLAS interface includes three levels of functions:
+
+<ul>
+<li><a HREF="cblasle1.htm#top">Level 1</a> (vector-vector operations)
+<li><a HREF="cblasle2.htm#top">Level 2</a> (matrix-vector operations)
+<li><a HREF="cblasle3.htm#top">Level 3</a> (matrix-matrix operations).
+</ul>
+
+To obtain the C interface, the Fortran routine names are prefixed with
+<code><font face="Courier New,Courier,codetxt" color="#000099">cblas_</font></code>
+(for example,
+<code><font face="Courier New,Courier,codetxt" color="#000099">dasum</font></code>
+becomes
+<code><font face="Courier New,Courier,codetxt" color="#000099">cblas_dasum</font></code>).
+Names of all CBLAS functions are in lowercase letters.
+
+<p>
+Complex functions
+<a href="blaslev1.htm#dotc">?dotc</a>
+and
+<a href="blaslev1.htm#dotu">?dotu</a>
+become CBLAS subroutines (void functions); they return the complex result via a void pointer,
+added as the last parameter. CBLAS names of these functions are suffixed with
+<code><font face="Courier New,Courier,codetxt" color="#000099">_sub</font></code>.
+For example, the BLAS function
+<code><font face="Courier New,Courier,codetxt" color="#000099">cdotc</font></code>
+corresponds to
+<code><font face="Courier New,Courier,codetxt" color="#000099">cblas_cdotc_sub</font></code>.
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

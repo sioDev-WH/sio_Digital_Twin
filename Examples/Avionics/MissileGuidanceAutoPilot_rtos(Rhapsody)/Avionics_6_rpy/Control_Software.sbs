@@ -1,0 +1,424 @@
+I-Logix-RPY-Archive version 4.1.8 C++
+{ ISubsystem 
+	- _id = GUID 4430277f-f52e-4b69-84fb-15b14461ceb7;
+	- _myState = 8192;
+	- _properties = { IPropertyContainer 
+		- Subjects = { IRPYRawContainer 
+			- size = 1;
+			- value = 
+			{ IPropertySubject 
+				- _Name = "CG";
+				- Metaclasses = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertyMetaclass 
+						- _Name = "Package";
+						- Properties = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IProperty 
+								- _Name = "GenerateWithAggregates";
+								- _Value = "True";
+								- _Type = Bool;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	- _name = "Control_Software";
+	- _lastID = 2;
+	- weakCGTime = 11.27.2003::15:59:3;
+	- strongCGTime = 11.27.2003::15:59:3;
+	- _defaultComposite = GUID e28c1ab4-defd-42da-984d-1c6bffd3f83d;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 3;
+		- value = 
+		{ IClass 
+			- _id = GUID e28c1ab4-defd-42da-984d-1c6bffd3f83d;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- weakCGTime = 11.27.2003::15:59:3;
+			- strongCGTime = 11.27.2003::15:59:3;
+			- _multiplicity = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 8f7e1f01-d986-4298-9200-fe5791c09308;
+			- _myState = 8192;
+			- _name = "controllerTask";
+			- weakCGTime = 11.27.2003::15:59:3;
+			- strongCGTime = 11.27.2003::15:59:3;
+			- _multiplicity = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ ILink 
+					- _id = GUID e46dcc73-f6a4-4178-a5c1-ccf73a45f2c0;
+					- _myState = 2048;
+					- _name = "itsController";
+					- _multiplicity = "1";
+					- _otherClass = { IClassHandle 
+						- _m2Class = "IClass";
+						- _id = GUID a330424c-9d0f-4832-b0c6-9b2338cecdff;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+				}
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IConstructor 
+					- _id = GUID 7461fb7b-a86d-48aa-a3d3-6c1ba7666057;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 3;
+						- value = 
+						{ IArgument 
+							- _id = GUID 336e8556-6194-4b08-80b4-f556fe659c87;
+							- _name = "model_name";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "char*";
+								- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID 65e03a12-e541-4484-baee-446e85419aed;
+							- _name = "priority";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 9f8c85d0-2b33-4991-b7fe-ecb0224a2d91;
+								- _declaration = "const st_int %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID d621a850-d9a0-445e-bfbe-cedfabe58ed5;
+							- _name = "mean_exec_time";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 979b5e76-0694-42b1-942e-4613ac0fbe45;
+								- _declaration = "const st_Time & %s";
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "itsController = new controller;
+";
+					}
+					- _initializer = "SP_Task(model_name, priority,mean_exec_time)
+  ";
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID 028ab822-8fbd-453c-aafa-660ef9bdcf62;
+					- _properties = { IPropertyContainer 
+						- Subjects = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IPropertySubject 
+								- _Name = "CPP_CG";
+								- Metaclasses = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IPropertyMetaclass 
+										- _Name = "Operation";
+										- Properties = { IRPYRawContainer 
+											- size = 1;
+											- value = 
+											{ IProperty 
+												- _Name = "Inline";
+												- _Value = "in_source";
+												- _Type = Enum;
+												- _ExtraTypeInfo = "none,in_header,in_source,in_declaration";
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					- _name = "start";
+					- _description = { IDescription 
+						- _text = "The computation the tasks make";
+					}
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 3;
+						- value = 
+						{ IArgument 
+							- _id = GUID fce63c9a-6bb7-4ea7-90ce-4813de44789b;
+							- _name = "sd";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID e40840ec-e05c-43a6-93a2-5a9836140b08;
+								- _declaration = "st_RTSys & %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID f4ad5a66-690e-4ef0-8545-380442409a27;
+							- _name = "tid";
+							- _defaultValue = "";
+							- myTypeOf = { IType 
+								- _id = GUID 99ad7eff-a8a5-4071-96e9-3c623021dacd;
+								- _declaration = "st_task_id_t %s";
+							}
+							- _argumentDirection = In;
+						}
+						{ IArgument 
+							- _id = GUID b799b9ed-10be-47e8-b9c1-7cdb0feb8c19;
+							- _name = "user_arg";
+							- _defaultValue = "";
+							- _typeOf = { IHandle 
+								- _m2Class = "IType";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "void *";
+								- _id = GUID 68975846-a809-4f2e-9f11-00ad6073974c;
+							}
+							- _argumentDirection = In;
+						}
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iProtected;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "itsController->handle_tick();
+// SP_Task::start(sd,tid,user_arg);
+st_Time holding_time = st_rnd(random_stream);
+
+sd.hold_cpu(holding_time * 0.5);
+
+std::cout << \"[T\" << tid << \"] Prepare to take the mutex\" << std::endl;
+ST_ASSERT_FATAL(sd.syscall(SYSCALL_MUTEX_ACQUIRE, NULL) == 0);
+std::cout << \"[T\" << tid << \"] Got the mutex. Prepare to hold\" << std::endl;
+
+sd.hold_cpu(holding_time * 0.5);
+
+std::cout << \"[T\" << tid << \"] Back from hold in mutex... release mutex\" << std::endl;
+ST_ASSERT_FATAL(sd.syscall(SYSCALL_MUTEX_RELEASE, NULL) == 0);
+std::cout << \"[T\" << tid << \"] Mutex released\" << std::endl;
+";
+					}
+				}
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IGeneralization 
+					- _id = GUID 990feee0-1733-4208-96dc-d33506c86168;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _filename = "RT_Environment.sbs";
+						- _subsystem = "RT_Environment";
+						- _class = "";
+						- _name = "SP_Task";
+						- _id = GUID 46fc2522-40d9-4ef3-bd5c-2cc8fc711e35;
+					}
+					- _inheritanceType = iPublic;
+					- _isVirtual = 0;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID a330424c-9d0f-4832-b0c6-9b2338cecdff;
+			- _myState = 8192;
+			- _name = "controller";
+			- _lastID = 3;
+			- weakCGTime = 11.27.2003::15:59:3;
+			- strongCGTime = 11.27.2003::15:59:3;
+			- _multiplicity = "";
+			- _itsStateChart = NULL;
+			- Links = { IRPYRawContainer 
+				- size = 0;
+			}
+			- PrimitiveOperations = { IRPYRawContainer 
+				- size = 3;
+				- value = 
+				{ IPrimitiveOperation 
+					- _id = GUID bf4417fd-bf58-4149-a01a-67a3426e454b;
+					- _name = "increment";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "state++;";
+					}
+				}
+				{ IConstructor 
+					- _id = GUID 0010128f-8038-48cd-9f23-3ab88c679efc;
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "";
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _initializer = "state(0)";
+				}
+				{ IPrimitiveOperation 
+					- _id = GUID fc7077c0-d5cf-40ed-a7d2-7f071081c5cd;
+					- _name = "handle_tick";
+					- _virtual = 0;
+					- Args = { IRPYRawContainer 
+						- size = 0;
+					}
+					- _returnType = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "void";
+						- _id = GUID c6b70728-b655-45a0-abb7-8ea5d3da94be;
+					}
+					- _abstract = 0;
+					- _final = 0;
+					- _concurrency = Sequential;
+					- _protection = iPublic;
+					- _static = 0;
+					- _constant = 0;
+					- _itsBody = { IBody 
+						- _bodyData = "increment();";
+					}
+				}
+			}
+			- TriggeredOperations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- EventHandles = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Attrs = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAttribute 
+					- _id = GUID 4d0bb694-d745-497b-8382-dc91e1b8661b;
+					- _name = "state";
+					- _defaultValue = "";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypes.sbs";
+						- _subsystem = "PredefinedTypes";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _protection = iPublic;
+					- _static = 0;
+				}
+			}
+			- Components = { IRPYRawContainer 
+				- size = 0;
+			}
+			- Inheritances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- Events = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Types = { IRPYRawContainer 
+		- size = 0;
+	}
+	- UseCases = { IRPYRawContainer 
+		- size = 0;
+	}
+	- Actors = { IRPYRawContainer 
+		- size = 0;
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+

@@ -1,0 +1,15 @@
+I-Logix-RPY-Archive version 4.0.4 *
+
+- filesTable = { IRPYRawContainer 
+	- size = 8;
+	- value = "Reactor.rpy" ""
+	"Reactor_rpy\\BallDemo.sbs" "BallDemo"
+	"Reactor_rpy\\BouncingBallDemo.omd" "BouncingBallDemo"
+	"Reactor_rpy\\Default.sbs" "Default"
+	"Reactor_rpy\\DefaultComponent.cmp" "DefaultComponent"
+	"Reactor_rpy\\ProcessModels.sbs" "ProcessModels"
+	"Reactor_rpy\\Reactor_Components.omd" "Reactor Components"
+	"Reactor_rpy\\ReverseEngineering.sbs" "ReverseEngineering"
+	
+}
+

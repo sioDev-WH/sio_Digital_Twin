@@ -1,0 +1,250 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""ShiftLogicDialogs.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ShiftLogicDialogs Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ShiftLogicDialogs\0"
+            VALUE "LegalCopyright", "Copyright 2003\0"
+            VALUE "OriginalFilename", "ShiftLogicDialogs.DLL\0"
+            VALUE "ProductName", "ShiftLogicDialogs Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "ShiftLogicDialogs"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_CAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SHIFTLEVERDIALOG DIALOG DISCARDABLE  0, 0, 80, 114
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shift Lever"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_ONSHIFTLEVER1,
+                    "{DBAD0A7B-08AA-4431-B67E-86DD110B03EE}",WS_TABSTOP,0,0,
+                    80,113
+END
+
+IDD_THROTTLEDIALOG DIALOG DISCARDABLE  0, 0, 70, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Throttle"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_ONTHROTTLE1,
+                    "{71E96FA0-749E-4CAF-A453-71A278C3CB53}",WS_TABSTOP,0,0,
+                    70,103
+END
+
+IDD_BRAKEDIALOG DIALOG DISCARDABLE  0, 0, 113, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Brakes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_ONBRAKES1,"{A880BF82-2F9A-4575-82DB-7A2193C42189}",
+                    WS_TABSTOP,0,0,113,69
+END
+
+IDD_CHARTDIALOG DIALOG DISCARDABLE  0, 0, 267, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Chart"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_TCHART1,"{B6C10489-FB89-11D4-93C9-006008A7EED4}",
+                    WS_TABSTOP,0,0,267,154
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SHIFTLEVERDIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_THROTTLEDIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_BRAKEDIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 69
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SHIFTLEVERDIALOG DLGINIT
+BEGIN
+    IDC_ONSHIFTLEVER1, 0x376, 76, 0
+0x0000, 0x0000, 0xb293, 0x0000, 0x0048, 0x0000, 0x0003, 0x0008, 0xf20b, 
+0x4757, 0x0020, 0x0000, 0x005f, 0x0065, 0x0078, 0x0074, 0x0065, 0x006e, 
+0x0074, 0x0078, 0x0c67, 0x0000, 0x0003, 0x0008, 0xf20a, 0x4757, 0xffe0, 
+0xffff, 0x005f, 0x0065, 0x0078, 0x0074, 0x0065, 0x006e, 0x0074, 0x0079, 
+0x1304, 0x0000, 
+    0
+END
+
+IDD_THROTTLEDIALOG DLGINIT
+BEGIN
+    IDC_ONTHROTTLE1, 0x376, 76, 0
+0x0000, 0x0000, 0xb293, 0x0000, 0x0048, 0x0000, 0x0003, 0x0008, 0xf20b, 
+0x4757, 0x0020, 0x0000, 0x005f, 0x0065, 0x0078, 0x0074, 0x0065, 0x006e, 
+0x0074, 0x0078, 0x0ada, 0x0000, 0x0003, 0x0008, 0xf20a, 0x4757, 0xffe0, 
+0xffff, 0x005f, 0x0065, 0x0078, 0x0074, 0x0065, 0x006e, 0x0074, 0x0079, 
+0x1143, 0x0000, 
+    0
+END
+
+IDD_BRAKEDIALOG DLGINIT
+BEGIN
+    IDC_ONBRAKES1, 0x376, 76, 0
+0x0000, 0x0000, 0xb293, 0x0000, 0x0048, 0x0000, 0x0003, 0x0008, 0xf20b, 
+0x4757, 0x0020, 0x0000, 0x005f, 0x0065, 0x0078, 0x0074, 0x0065, 0x006e, 
+0x0074, 0x0078, 0x1192, 0x0000, 0x0003, 0x0008, 0xf20a, 0x4757, 0xffe0, 
+0xffff, 0x005f, 0x0065, 0x0078, 0x0074, 0x0065, 0x006e, 0x0074, 0x0079, 
+0x0b93, 0x0000, 
+    0
+END
+
+IDD_CHARTDIALOG DLGINIT
+BEGIN
+    IDC_TCHART1, 0x376, 99, 0
+0x0000, 0x0000, 0x5054, 0x3046, 0x540b, 0x6843, 0x7261, 0x4374, 0x6168, 
+0x7472, 0x0400, 0x654c, 0x7466, 0x0002, 0x5403, 0x706f, 0x0002, 0x5705, 
+0x6469, 0x6874, 0x9103, 0x0601, 0x6548, 0x6769, 0x7468, 0xfa03, 0x1200, 
+0x6954, 0x6c74, 0x2e65, 0x6554, 0x7478, 0x532e, 0x7274, 0x6e69, 0x7367, 
+0x0601, 0x5408, 0x6565, 0x6843, 0x7261, 0x0074, 0x0000, 0x0000, 0x0000, 
+0x0002, 0x0000, 0xff00, 0xffff, "\377" 
+    0
+END
+
+#endif    // English (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "ShiftLogicDialogs.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

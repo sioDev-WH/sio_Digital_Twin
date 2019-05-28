@@ -1,0 +1,97 @@
+// RtsOnTransmission.idl : IDL source for RtsOnTransmission.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (RtsOnTransmission.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "OnUMLEso.idl";
+
+
+	[
+		object,
+		uuid(E4814F69-68C9-49AE-8292-B6A5AC3A3B43),
+		dual,
+		helpstring("IOnChart Interface"),
+		pointer_default(unique)
+	]
+	interface IOnChart : IDispatch
+	{
+		[id(1), helpstring("method Show")] 
+		HRESULT Show();
+		[id(2), helpstring("method Hide")] 
+		HRESULT Hide();
+		[id(3), helpstring("method initPlot")] 
+		HRESULT initPlot([in] long numberOfSeries, [in] VARIANT_BOOL vbPoint, [in] SAFEARRAY(BSTR)* SeriesNames);
+		[id(4), helpstring("method plotData")] 
+		HRESULT plotData([in] double time, [in] SAFEARRAY(double)* psaVals, [in] long count);
+		[id(5), helpstring("method SetCaption")] 
+		HRESULT SetCaption([in] BSTR caption);
+        [id(6), helpstring("method Move")] 
+		HRESULT Move( [in] int x, [in] int y, [in] int nWidth, [in] int nHeight);
+        [id(7), helpstring("method cleanPlot")] 
+		HRESULT cleanPlot();
+		[id(8), helpstring("method GetPosition")] HRESULT GetPosition([in, out] int* x, [in, out] int* y, [in, out] int* nWidth, [in, out] int* nHeight);
+		[id(9), helpstring("method AddSeries")] HRESULT AddSeries([in] BSTR SeriesName);
+		[id(10), helpstring("method plotSeriesData")] HRESULT plotSeriesData([in] double t, [in] double val);
+	};
+	[
+		object,
+		uuid(3669889E-81B0-4D6C-9230-10FD265189A5),
+		dual,
+		helpstring("ICOnTestHarness Interface"),
+		pointer_default(unique)
+	]
+	interface ICOnTestHarness : IDispatch
+	{
+		[id(1), helpstring("method runTest")] HRESULT runTest();
+		[id(2), helpstring("method init")] HRESULT init();
+		[id(3), helpstring("method tick")] HRESULT tick(double t);
+		[id(4), helpstring("method term")] HRESULT term();
+		[propget, id(6), helpstring("property model")] HRESULT model([out, retval] IIsDaeEsoCImpl* *pVal);
+		[propget, id(7), helpstring("property ModelExec")] HRESULT ModelExec([out, retval] IOnModelExec* *pVal);
+		[id(8), helpstring("SetShiftTiming iShift {1 1->2, 2 2->3, 3 3->4}")] HRESULT SetShiftTiming([in] VARIANT_BOOL bUp, [in] long iShift, [in] double val);
+		[id(9), helpstring("SetShiftPeriod iClutch = {0 DC, 1 FC, 2 IOC, 3 LRB, 4 OB, 5 PIC, 6 RC, 7 TCC}")] HRESULT SetShiftPeriod([in] long iClutch, [in] double val);
+		[id(10), helpstring("SetThrottle")] HRESULT SetThrottle([in] double throttle);
+		[id(11), helpstring("Load snapshot")] HRESULT Load([in] BSTR FileName);
+		[id(12), helpstring("Save snapshot")] HRESULT Save([in] BSTR FileName);
+        [id(13), helpstring("GetClutchStates iClutch = {0 DC, 1 FC, 2 IOC, 3 LRB, 4 OB, 5 PIC, 6 RC, 7 TCC}")]  
+		HRESULT GetStates(SAFEARRAY(long)* states);
+	};
+
+    
+
+
+[
+	uuid(90658CC2-ACB7-4219-A977-DE7A3104F20D),
+	version(1.0),
+	helpstring("RtsOnTransmission 1.0 Type Library")
+]
+library RTSONTRANSMISSIONLib
+{
+   
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	[
+		uuid(A0B5F84A-7758-4EF9-8BE8-16D1C0ABFB3E),
+		helpstring("OnChart Class")
+	]
+	coclass OnChart
+	{
+		[default] interface IOnChart;
+	};
+
+
+
+	[
+		uuid(612AC51E-6CB5-46C3-B603-6268202D48DC),
+		helpstring("COnTestHarness Class")
+	]
+	coclass COnTestHarness
+	{
+		[default] interface ICOnTestHarness;
+	};
+};

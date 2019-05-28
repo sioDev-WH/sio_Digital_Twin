@@ -1,0 +1,13 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8964.0 (33fd5d10).
+//
+// c:\rhapsody40\pdereactor\rpypdereactor\debugu\OnUMLEso.tlh
+//
+// C++ source equivalent of Win32 type library .\..\bin\OnUMLEso.tlb
+// compiler-generated file created 11/17/02 at 10:51:48 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+#pragma pack(pop)

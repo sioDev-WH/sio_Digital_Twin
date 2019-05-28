@@ -1,0 +1,15 @@
+
+Reverse Engineering Done.
+
+Adding Attribute 'ad_height' to Class 'BouncingBall'. 
+Adding Attribute 'ad_velocity' to Class 'BouncingBall'. 
+Adding Attribute 'der_ad_height' to Class 'BouncingBall'. 
+Adding Attribute 'der_ad_velocity' to Class 'BouncingBall'. 
+Adding Attribute 'der_height' to Class 'BouncingBall'. 
+Adding Attribute 'der_old_height' to Class 'BouncingBall'. 
+Adding Attribute 'der_old_velocity' to Class 'BouncingBall'. 
+Adding Attribute 'der_velocity' to Class 'BouncingBall'. 
+Adding Attribute 'old_height' to Class 'BouncingBall'. 
+Adding Attribute 'old_velocity' to Class 'BouncingBall'. 
+Adding PrimitiveOperation 'InitLocalVars(const _TCHAR * ,VarCont * ,const bool )' to Class 'BouncingBall'. 
+Adding Generalization 'OnModel_BouncingBall' to Class 'BouncingBall'. 

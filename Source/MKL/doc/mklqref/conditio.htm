@@ -1,0 +1,167 @@
+<HTML>
+<HEAD>
+<title>Condition Numbers</title>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099">
+<script language="JavaScript">
+<!--
+if (
+    parent.document.location==document.location
+    && (""+document.location).toLowerCase().indexOf(".chm")==-1
+    && (""+document.location).toLowerCase().indexOf("~hh")==-1
+   )
+ document.writeln ('<h3><a href="index.htm">Table of Contents</a></h3>');
+//-->
+</script>
+
+<a name="top"></a>
+<p>
+<font face="arial,helvetica,headtxt">
+<h3>
+Condition Numbers
+</h3>
+</font>
+<p>
+
+<font face="times new roman,times,bodytxt">
+
+<p><A NAME="gecon"></A>
+
+<B>?gecon</B>
+estimates the reciprocal of the condition number of a general matrix in either the 1-norm or the infinity-norm.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgecon (norm, n, SA, lda, sanorm, srcond, SWORK, IWORK, info)<BR>
+call dgecon (norm, n, DA, lda, danorm, drcond, DWORK, IWORK, info)<BR>
+call cgecon (norm, n, CA, lda, sanorm, srcond, CWORK, SRWORK, info)<BR>
+call zgecon (norm, n, ZA, lda, danorm, drcond, ZWORK, DRWORK, info)
+</font></code>
+
+<p><A NAME="gbcon"></A>
+
+<B>?gbcon</B>
+estimates the reciprocal of the condition number of a band matrix in either the 1-norm or the infinity-norm.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sgbcon (norm, n, kl, ku, SAB, ldab, IPIV, sanorm, srcond, SWORK, IWORK, info)<BR>
+call dgbcon (norm, n, kl, ku, DAB, ldab, IPIV, danorm, drcond, DWORK, IWORK, info)<BR>
+call cgbcon (norm, n, kl, ku, CAB, ldab, IPIV, sanorm, srcond, CWORK, SRWORK, info)<BR>
+call zgbcon (norm, n, kl, ku, ZAB, ldab, IPIV, danorm, drcond, ZWORK, DRWORK, info)
+</font></code>
+
+<p><A NAME="pocon"></A>
+
+<B>?pocon</B>
+estimates the reciprocal of the condition number of a symmetric (Hermitian) positive-definite matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call spocon (uplo, n, SA, lda, sanorm, srcond, SWORK, IWORK, info)<BR>
+call dpocon (uplo, n, DA, lda, danorm, drcond, DWORK, IWORK, info)<BR>
+call cpocon (uplo, n, CA, lda, sanorm, srcond, CWORK, SRWORK, info)<BR>
+call zpocon (uplo, n, ZA, lda, danorm, drcond, ZWORK, DRWORK, info)
+</font></code>
+
+<p><A NAME="ppcon"></A>
+
+<B>?ppcon</B>
+estimates the reciprocal of the condition number of a packed symmetric (Hermitian) positive-definite matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sppcon (uplo, n, SAP, sanorm, srcond, SWORK, IWORK, info)<BR>
+call dppcon (uplo, n, DAP, danorm, drcond, DWORK, IWORK, info)<BR>
+call cppcon (uplo, n, CAP, sanorm, srcond, CWORK, SRWORK, info)<BR>
+call zppcon (uplo, n, ZAP, danorm, drcond, ZWORK, DRWORK, info)
+</font></code>
+
+<p><A NAME="pbcon"></A>
+
+<B>?pbcon</B>
+estimates the reciprocal of the condition number of a symmetric (Hermitian) positive-definite band matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call spbcon (uplo, n, kd, SAB, ldab, sanorm, srcond, SWORK, IWORK, info)<BR>
+call dpbcon (uplo, n, kd, DAB, ldab, danorm, drcond, DWORK, IWORK, info)<BR>
+call cpbcon (uplo, n, kd, CAB, ldab, sanorm, srcond, CWORK, SRWORK, info)<BR>
+call zpbcon (uplo, n, kd, ZAB, ldab, danorm, drcond, ZWORK, DRWORK, info)
+</font></code>
+
+<p><A NAME="sycon"></A>
+
+<B>?sycon</B>
+estimates the reciprocal of the condition number of a symmetric matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call ssycon (uplo, n, SA, lda, IPIV, sanorm, srcond, SWORK, IWORK, info)<BR>
+call dsycon (uplo, n, DA, lda, IPIV, danorm, drcond, DWORK, IWORK, info)<BR>
+call csycon (uplo, n, CA, lda, IPIV, sanorm, srcond, CWORK, SRWORK, info)<BR>
+call zsycon (uplo, n, ZA, lda, IPIV, danorm, drcond, ZWORK, DRWORK, info)
+</font></code>
+
+<p><A NAME="hecon"></A>
+<B>?hecon</B>
+estimates the reciprocal of the condition number of a Hermitian matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call checon (uplo, n, CA, lda, IPIV, sanorm, srcond, CWORK, SRWORK, info)<BR>
+call zhecon (uplo, n, ZA, lda, IPIV, danorm, drcond, ZWORK, DRWORK, info)
+</font></code>
+
+<p><A NAME="spcon"></A>
+
+<B>?spcon</B>
+estimates the reciprocal of the condition number of a packed symmetric matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call sspcon (uplo, n, SAP, IPIV, sanorm, srcond, SWORK, IWORK, info)<BR>
+call dspcon (uplo, n, DAP, IPIV, danorm, drcond, DWORK, IWORK, info)<BR>
+call cspcon (uplo, n, CAP, IPIV, sanorm, srcond, CWORK, SRWORK, info)<BR>
+call zspcon (uplo, n, ZAP, IPIV, danorm, drcond, ZWORK, DRWORK, info)
+</font></code>
+
+<p><A NAME="hpcon"></A>
+
+<B>?hpcon</B>
+estimates the reciprocal of the condition number of a packed Hermitian matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call chpcon (uplo, n, CAP, IPIV, sanorm, srcond, CWORK, SRWORK, info)<BR>
+call zhpcon (uplo, n, ZAP, IPIV, danorm, drcond, ZWORK, DRWORK, info)
+</font></code>
+
+<p><A NAME="trcon"></A>
+
+<B>?trcon</B>
+estimates the reciprocal of the condition number of a triangular matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call strcon (norm, uplo, diag, n, SA, lda, srcond, SWORK, IWORK, info)<BR>
+call dtrcon (norm, uplo, diag, n, DA, lda, drcond, DWORK, IWORK, info)<BR>
+call ctrcon (norm, uplo, diag, n, CA, lda, srcond, CWORK, SRWORK, info)<BR>
+call ztrcon (norm, uplo, diag, n, ZA, lda, drcond, ZWORK, DRWORK, info)
+</font></code>
+
+<p><A NAME="tpcon"></A>
+
+<B>?tpcon</B>
+estimates the reciprocal of the condition number of a packed triangular matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call stpcon (norm, uplo, diag, n, SAP, srcond, SWORK, IWORK, info)<BR>
+call dtpcon (norm, uplo, diag, n, DAP, drcond, DWORK, IWORK, info)<BR>
+call ctpcon (norm, uplo, diag, n, CAP, srcond, CWORK, SRWORK, info)<BR>
+call ztpcon (norm, uplo, diag, n, ZAP, drcond, ZWORK, DRWORK, info)
+</font></code>
+
+<p><A NAME="tbcon"></A>
+
+<B>?tbcon</B>
+estimates the reciprocal of the condition number of a triangular band matrix.<BR>
+<code><font face="Courier New,Courier,codetxt" color="#000099">
+call stbcon (norm, uplo, diag, n, kd, SAB, ldab, srcond, SWORK, IWORK, info)<BR>
+call dtbcon (norm, uplo, diag, n, kd, DAB, ldab, drcond, DWORK, IWORK, info)<BR>
+call ctbcon (norm, uplo, diag, n, kd, CAB, ldab, srcond, CWORK, SRWORK, info)<BR>
+call ztbcon (norm, uplo, diag, n, kd, ZAB, ldab, drcond, ZWORK, DRWORK, info)
+</font></code>
+
+<!--Page content ends here; don't delete this comment.-->
+</font>
+
+<p>
+<font size=2>
+<font face="arial,helvetica,runtxt">
+* <A HREF="legal.htm"><i>Legal Information</i></A>
+&#169; 1999-2000, Intel Corporation
+</font>
+</font>
+
+</BODY>
+</HTML>

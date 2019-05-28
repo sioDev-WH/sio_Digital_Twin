@@ -1,0 +1,2443 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IUCDiagram 
+	- _id = GUID 06e2ab3d-c677-4fb5-927b-7b1561fc210a;
+	- _myState = 8192;
+	- _name = "GuidedMissileControlSystem";
+	- _graphicChart = { CGIClassChart 
+		- _id = GUID 540db74a-b5ec-43c3-bdc4-d651fa642e1c;
+		- m_type = 0;
+		- m_pModelObject = { IHandle 
+			- _m2Class = "IUCDiagram";
+			- _id = GUID 06e2ab3d-c677-4fb5-927b-7b1561fc210a;
+		}
+		- m_pParent = ;
+		- m_name = { CGIText 
+			- m_str = "";
+			- m_style = "Arial" 10 0 0 0 1 ;
+			- m_color = { IColor 
+				- m_fgColor = 0;
+				- m_bgColor = 0;
+				- m_bgFlag = 0;
+			}
+			- m_position = 1 0 0  ;
+			- m_nIdent = 0;
+			- m_bImplicitSetRectPoints = 0;
+		}
+		- m_drawBehavior = 0;
+		- elementList = 39;
+		{ CGIInheritance 
+			- _id = GUID 2e3296a3-5df7-40ae-942f-69e4ce6c9e0f;
+			- m_type = 103;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IGeneralization";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Detonation";
+				- _name = "Missile Guidance";
+				- _id = GUID 8e1003e0-4263-49d2-9b6b-e035bbad624f;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID cb3d10d6-1ac4-4e4c-b99e-fb9fd07788d4;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID aa674dbd-2075-435c-8b0c-1fbaa6390a48;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 2 18.7008524860139 6.57295584579334  16.0061719871858 8.95666075789643  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = -0.749003585504181 0.662565943059165 ;
+			- m_anglePoint2 = -0.749003585504181 0.662565943059165 ;
+			- m_line_style = 0;
+		}
+		{ CGILink 
+			- _id = GUID 3b9ad2ba-02f9-4cd0-b081-65e2d465b91e;
+			- m_type = 94;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Inertial Sensors";
+				- _name = "itsMissile Guidance";
+				- _id = GUID d7e69700-69af-474d-b248-bc2c926d26fa;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID 1c8cabfc-ff26-40e5-9013-12bb66b75752;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID aa674dbd-2075-435c-8b0c-1fbaa6390a48;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 4 25.2580907111087 6.71997746434003  20.9814378651782 6.71997746434003  20.9814378651782 9.28601648731417  16.7047850192478 9.28601648731417  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = -1 0 ;
+			- m_anglePoint2 = -1 0 ;
+			- m_line_style = 2;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Missile Guidance";
+				- _name = "itsInertial Sensors";
+				- _id = GUID 7769d286-79b9-44b5-a337-9316064e5f4e;
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 0;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 0;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = symmetric_type;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 418b2119-da2e-4d3c-b2a5-f7046fa73068;
+			- m_type = 124;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IActor";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Target";
+				- _id = GUID 745a9c72-0e5d-489e-b374-f54c67127612;
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "Target";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 4 34.3386282466319 14.7482484473876  34.3386282466319 12.8602138502712  28.4227865090007 12.8602138502712  28.4227865090007 14.7482484473876  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 30.4366899219219 19.1913689401292  30.4366899219219 14.9747563259991  32.3247248337107 14.9747563259991  32.3247248337107 19.1913689401292  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 4a2f9549-f261-4ad8-b84c-d87a23e7560d;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "adapting";
+				- _id = GUID 33aa9e8e-ad60-4372-80c7-2dd4d1637374;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "adapting";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 5.4173961515832 -1.65486225847114  5.4173961515832 -3.63728456363881  10.4973551051456 -3.63728456363881  10.4973551051456 -1.65486225847114  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBox 
+			- _id = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_type = 123;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "";
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "Homing-Guidance Missile Control System";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 44;
+					- m_bgColor = 44;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 7.5775330409407 20.2085793453132  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 21;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 4.27679717393472 22.041287741337  22.5472025325465 22.041287741337  22.5472025325465 -7.04457193510021  4.27679717393472 -7.04457193510021  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 4cba252b-cfb9-465b-961c-3ded8dd2faba;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Missile Control";
+				- _id = GUID 1f141422-f474-495b-9631-062c50a668d1;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Missile Control";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 8.01723779204978 2.52681024739413  8.01723779204978 -0.168045396525488  17.6195961132329 -0.168045396525488  17.6195961132329 2.52681024739413  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 52e57672-347b-4577-b2d3-e8cec32706f5;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Seeking";
+				- _id = GUID 79ee968f-1cbd-47c2-96c6-94137c83669b;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Seeking";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 5.04692396121372 14.1084525955769  5.04692396121372 12.3072757857028  9.68592806764309 12.3072757857028  9.68592806764309 14.1084525955769  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIInheritance 
+			- _id = GUID 55826576-fa8a-4902-a781-a1e5c15a27ce;
+			- m_type = 103;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IGeneralization";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Seeking";
+				- _name = "Stabilized ImageryControl";
+				- _id = GUID 9ece8133-27be-4315-9242-92a746ce3a80;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID 52e57672-347b-4577-b2d3-e8cec32706f5;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID e35e9155-b530-4d94-a910-b3757d0462a1;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "<<uses>>";
+				- m_style = "Arial" 8 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 5.4310267554015 14.8725205163865  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 2 7.48726940599115 14.1072295359095  9.86522944593537 17.7072288520045  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = 0.551158690484916 0.834400442175669 ;
+			- m_anglePoint2 = 0.551158690484916 0.834400442175669 ;
+			- m_line_style = 0;
+		}
+		{ CGIInheritance 
+			- _id = GUID 56cb45c7-2f4e-49d4-ac0b-a9ba6871740d;
+			- m_type = 103;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IGeneralization";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "homing";
+				- _name = "Missile Guidance";
+				- _id = GUID 12b36793-a04c-403b-b644-b9d10b46172f;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID f2d24a53-c0fa-43d4-9085-787106150294;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID aa674dbd-2075-435c-8b0c-1fbaa6390a48;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 2 13.0156264081224 6.69263736180748  13.0156264081224 8.53970250276144  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = 0 1 ;
+			- m_anglePoint2 = 0 1 ;
+			- m_line_style = 0;
+		}
+		{ CGIInheritance 
+			- _id = GUID 64d7ffb5-56a9-4aa6-84e6-cb90557c8b5c;
+			- m_type = 128;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IDependency";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Inertial Sensors";
+				- _name = "Airframe Dynamics";
+				- _id = GUID c2b8350b-1efa-4000-adfb-f83934839914;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID 1c8cabfc-ff26-40e5-9013-12bb66b75752;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 6d3df983-2fea-42d5-ba4f-3e5780ce5d60;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 4 27.6839919410764 3.8781179912353  28.0361978687725 3.8781179912353  28.0361978687725 -10.6506676437427  13.4907160696186 -10.6506676437427  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = -1 0 ;
+			- m_anglePoint2 = 1 0 ;
+			- m_line_style = 2;
+		}
+		{ CGIInheritance 
+			- _id = GUID 673bc373-19cd-425d-b679-674f2c0404db;
+			- m_type = 103;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IGeneralization";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Locking";
+				- _name = "Stabilized ImageryControl";
+				- _id = GUID 7fea8851-a8c9-47bb-a197-264c37123f0c;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID 74ebca7f-93e0-456c-b33e-9da743a6b98c;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID e35e9155-b530-4d94-a910-b3757d0462a1;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "<<uses>>";
+				- m_style = "Arial" 8 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 10.1091682706266 14.8053876471634  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 2 12.7900043897863 14.0335621219811  12.7900043897863 17.2703728265519  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = 0 1 ;
+			- m_anglePoint2 = 0 1 ;
+			- m_line_style = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 6d3df983-2fea-42d5-ba4f-3e5780ce5d60;
+			- m_type = 124;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IActor";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Airframe Dynamics";
+				- _id = GUID a4fc9488-d8ff-492e-974c-3b025271ab4b;
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "Airframe Dynamics";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 4 8.99886820038329 -11.3299611746089  15.7675287504685 -11.3299611746089  15.7675287504685 -13.6313057616378  8.99886820038329 -13.7666789726395  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 11.1308691439771 -7.42274679757752  11.1308691439771 -11.139506370062  13.4907160696186 -11.139506370062  13.4907160696186 -7.42274679757752  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 715a618f-2c18-40d5-ad75-ec798ad704b8;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "regulating";
+				- _id = GUID 4577bb24-afc5-4eed-8b5d-8713c1cb442d;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "regulating";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 15.1516334476145 -1.65781674559686  15.1516334476145 -3.64023905076453  20.6376344743066 -3.64023905076453  20.6376344743066 -1.65781674559686  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 74ebca7f-93e0-456c-b33e-9da743a6b98c;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Locking";
+				- _id = GUID c7c7235b-369e-463b-a405-d8f78dcb8eaa;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Locking";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 9.97301327191101 14.0336782323298  9.97301327191101 12.2036123921787  15.518652948979 12.2036123921787  15.518652948979 14.0336782323298  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 80fffe3b-0a3d-4fa9-a944-a402e6e3d2b8;
+			- m_type = 124;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IActor";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "ImagerySensors";
+				- _id = GUID f23cebdb-ca79-4aea-b7fe-6c1e97ae208f;
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "ImagerySensors";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 4 27.0926651816325 15.5557837117802  27.0926651816325 13.9313051797597  23.6180860992554 13.9313051797597  23.6180860992554 15.5557837117802  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 24.2193648237504 19.8504883247795  24.2193648237504 15.7909447748644  26.4913864571375 15.7909447748644  26.4913864571375 19.8504883247795  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIInheritance 
+			- _id = GUID 97b80f03-d2e5-4316-97c1-c8f30a727f16;
+			- m_type = 128;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IDependency";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Airframe Dynamics";
+				- _name = "Atmosphere";
+				- _id = GUID 8df4657a-2fd0-47d0-a58e-157977a52dbf;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID 6d3df983-2fea-42d5-ba4f-3e5780ce5d60;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 0969d51c-d482-4bee-b562-13617af81b16;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 5 12.3207201444351 -11.139506370062  12.3207201444351 -12.5726346794837  29.5224260208251 -12.5726346794837  29.5224260208251 -4.17955904561304  30.3709762158666 -4.17955904561304  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = 1 0 ;
+			- m_anglePoint2 = 0 -1 ;
+			- m_line_style = 2;
+		}
+		{ CGIInheritance 
+			- _id = GUID 9e69acf4-9254-4c66-9bfa-9a4c921108db;
+			- m_type = 103;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IGeneralization";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Tracking";
+				- _name = "Stabilized ImageryControl";
+				- _id = GUID 2b876bd9-9d4f-4d7f-9c4f-9f2df38de6e3;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID fbc21e2f-028f-4edc-9578-8f45b7473956;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID e35e9155-b530-4d94-a910-b3757d0462a1;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "<<uses>>";
+				- m_style = "Arial" 8 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 14.2068612508764 14.8671361290123  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 2 17.7960393737055 14.1539600586124  15.603097665432 17.649729554553  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = -0.531407211286838 0.847116506622522 ;
+			- m_anglePoint2 = -0.531407211286838 0.847116506622522 ;
+			- m_line_style = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID a30af6b8-48bc-4490-a441-7a3356711deb;
+			- m_type = 124;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IActor";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Gimbal Actuator";
+				- _id = GUID e50869c0-c44b-4885-b42c-3f791b22d1ec;
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "Gimbal Actuator";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 4 -0.47245019113841 16.4465160141177  -0.47245019113841 14.6766297167947  -3.6582455263198 14.6766297167947  -3.6582455263198 16.4465160141177  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -2.95910094345404 19.8736523797909  -2.95910094345404 16.6816770772019  -1.17159477400417 16.6816770772019  -1.17159477400417 19.8736523797909  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIInheritance 
+			- _id = GUID a4bf5aa2-29cd-4d7b-9ae9-b141ce1b5cdf;
+			- m_type = 103;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IGeneralization";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "adapting";
+				- _name = "Missile Control";
+				- _id = GUID 29707570-33ef-4621-85b0-45e1f6df5aaf;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID 4a2f9549-f261-4ad8-b84c-d87a23e7560d;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 4cba252b-cfb9-465b-961c-3ded8dd2faba;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 2 7.78429428084791 -1.6571662524521  9.71457577332643 0.151382084368534  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = 0.729742886111812 0.683721668640977 ;
+			- m_anglePoint2 = 0.729742886111812 0.683721668640977 ;
+			- m_line_style = 0;
+		}
+		{ CGICompositeClass 
+			- _id = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_type = 78;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IClass";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "TopLevel";
+				- _id = GUID 4582fb6d-0ad0-11d7-b329-00c04f680d9d;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "TopLevel";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 0;
+			- m_color = { IColor 
+				- m_fgColor = 1;
+				- m_bgColor = 1;
+				- m_bgFlag = 1;
+			}
+			- m_lineWidth = 0;
+			- m_polygon = 4 -2.95910094345404 22.041287741337  32.6631513867097 22.041287741337  32.6631513867097 -12.5726346794837  -2.95910094345404 -12.5726346794837  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGILink 
+			- _id = GUID a8bbc86c-c353-42df-8d67-924485a0e41d;
+			- m_type = 94;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Fin Actuator";
+				- _name = "itsMissile Control";
+				- _id = GUID ff3e04a1-4e05-42be-91f1-56c8b0be6472;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID ea5f3a7c-172e-4757-a4a8-b6611763b845;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 4cba252b-cfb9-465b-961c-3ded8dd2faba;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "ActuatorCommand";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 5.13312002850895 2.95982186078081  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 4 1.73130995184218 5.90756102627474  4.99317051779544 5.90756102627474  4.99317051779544 1.59817715004004  8.25503108374869 1.59817715004004  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = 1 0 ;
+			- m_anglePoint2 = 1 0 ;
+			- m_line_style = 2;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Missile Control";
+				- _name = "itsFin Actuator";
+				- _id = GUID 650a3292-6de0-4454-a020-69631cafc754;
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 0;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 0;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = symmetric_type;
+		}
+		{ CGIBasicClass 
+			- _id = GUID aa674dbd-2075-435c-8b0c-1fbaa6390a48;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Missile Guidance";
+				- _id = GUID 0c20dc75-7963-455d-b95d-6bcd264190a4;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Missile Guidance";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 8.90282896611498 11.1243322506329  8.90282896611498 8.53968672854539  17.0879821986323 8.53968672854539  17.0879821986323 11.1243322506329  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID abeada93-d715-45dc-be10-725031747873;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Cruising";
+				- _id = GUID e7888b95-8030-4bda-84c2-f665231d325d;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Cruising";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 5.4173961515832 6.64653266921315  5.4173961515832 4.7260605654764  10.1256488785536 4.7260605654764  10.1256488785536 6.64653266921315  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGILink 
+			- _id = GUID b65a98fe-a699-4a27-afa7-c9fb3c92b85f;
+			- m_type = 94;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Inertial Sensors";
+				- _name = "itsMissile Control";
+				- _id = GUID e9676f48-4028-42db-9a1d-0eb76ec59972;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID 1c8cabfc-ff26-40e5-9013-12bb66b75752;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 4cba252b-cfb9-465b-961c-3ded8dd2faba;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "SensorData";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 17.7359196047838 1.52073049390237  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 4 25.2580907111087 3.84517017605846  21.4212567202397 3.84517017605846  21.4212567202397 1.34218330935348  17.5844227293707 1.34218330935348  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = -1 0 ;
+			- m_anglePoint2 = -1 0 ;
+			- m_line_style = 2;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Missile Control";
+				- _name = "itsInertial Sensors";
+				- _id = GUID 291d5a89-c5c0-4131-b210-e2694d6397bd;
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 0;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 0;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = symmetric_type;
+		}
+		{ CGILink 
+			- _id = GUID c724ec82-ab5f-479c-b116-d4ee4778466c;
+			- m_type = 94;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Gimbal Actuator";
+				- _name = "itsStabilized ImageryControl";
+				- _id = GUID 89c591c9-d63d-4070-9e5e-69304a08f3ed;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID a30af6b8-48bc-4490-a441-7a3356711deb;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID e35e9155-b530-4d94-a910-b3757d0462a1;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "ActuatorCommand";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 -1.3248755070084 18.5519330978484  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 2 -1.17159477400417 18.3167720347642  8.86893053569153 18.3167720347642  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = 1 0 ;
+			- m_anglePoint2 = 1 0 ;
+			- m_line_style = 2;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Stabilized ImageryControl";
+				- _name = "itsGimbal Actuator";
+				- _id = GUID 5db9c9f3-2ea0-49f1-9af8-e5acece84e57;
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 0;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 0;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = symmetric_type;
+		}
+		{ CGIBasicClass 
+			- _id = GUID cb3d10d6-1ac4-4e4c-b99e-fb9fd07788d4;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Detonation";
+				- _id = GUID 485f7d92-5b8f-443a-a733-472adf9f386c;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Detonation";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 16.0359429669662 6.57311398480057  16.0359429669662 4.62623852677938  21.4635925738652 4.62623852677938  21.4635925738652 6.57311398480057  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIInheritance 
+			- _id = GUID cf9fdbe5-3574-428d-84bc-2dc4b9c4f776;
+			- m_type = 103;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IGeneralization";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Cruising";
+				- _name = "Missile Guidance";
+				- _id = GUID b3a4b652-a581-4afc-bbd9-321a3055a15c;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID abeada93-d715-45dc-be10-725031747873;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID aa674dbd-2075-435c-8b0c-1fbaa6390a48;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 2 7.96859873061186 6.64316197143222  9.89377897769042 8.9888855918794  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = 0.634411916246037 0.7729951620321 ;
+			- m_anglePoint2 = 0.634411916246037 0.7729951620321 ;
+			- m_line_style = 0;
+		}
+		{ CGILink 
+			- _id = GUID da6c6e27-d403-4abe-a204-b2527095f397;
+			- m_type = 94;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Inertial Sensors";
+				- _name = "itsStabilized ImageryControl";
+				- _id = GUID 6e812028-6d77-4e02-9bdc-34dcd2cd956d;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID 1c8cabfc-ff26-40e5-9013-12bb66b75752;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID e35e9155-b530-4d94-a910-b3757d0462a1;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 2 26.1150461012559 8.3990549410855  16.7463954711215 18.2904818721129  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = -0.687660513529328 0.726032380911885 ;
+			- m_anglePoint2 = -0.687660513529328 0.726032380911885 ;
+			- m_line_style = 0;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Stabilized ImageryControl";
+				- _name = "itsInertial Sensors";
+				- _id = GUID a8f94b75-72dc-4dca-b8e5-cc00837046e6;
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 0;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 0;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = symmetric_type;
+		}
+		{ CGIBasicClass 
+			- _id = GUID e35e9155-b530-4d94-a910-b3757d0462a1;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Stabilized ImageryControl";
+				- _id = GUID 702fa9b8-9e0c-4f49-b0f2-601f414e2df8;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Stabilized ImageryControl";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 8.72367313348124 20.1138624373291  8.72367313348124 17.2703385995029  16.9131607718014 17.2703385995029  16.9131607718014 20.1138624373291  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIInheritance 
+			- _id = GUID e978d4a0-423f-419d-a8aa-20aa4390b7d7;
+			- m_type = 103;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IGeneralization";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "regulating";
+				- _name = "Missile Control";
+				- _id = GUID 8932b29b-c723-4005-abb9-f5c534655750;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID 715a618f-2c18-40d5-ad75-ec798ad704b8;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 4cba252b-cfb9-465b-961c-3ded8dd2faba;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 2 17.8890584670353 -1.65781879322716  15.3123064239234 0.0279900430665114  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = -0.836819431725116 0.547478984699189 ;
+			- m_anglePoint2 = -0.836819431725116 0.547478984699189 ;
+			- m_line_style = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID ea5f3a7c-172e-4757-a4a8-b6611763b845;
+			- m_type = 124;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IActor";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Fin Actuator";
+				- _id = GUID 8c37da6e-a8a2-485a-ac6f-67424fe5d060;
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "Fin Actuator";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 4 -0.47657028838072 3.15497240257343  2.27601833532059 3.15497240257343  2.27601833532059 0.447508182539357  -0.47657028838072 0.312134971537654  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 -0.311554241814807 7.34690188115389  -0.311554241814807 3.34629283524229  1.73130995184218 3.34629283524229  1.73130995184218 7.34690188115389  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIInheritance 
+			- _id = GUID ed56602a-f369-492f-9c48-ab39b4162bd3;
+			- m_type = 128;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IDependency";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Airframe Dynamics";
+				- _name = "Fin Actuator";
+				- _id = GUID bb279ae3-4613-4f9c-bc16-a8abeccf8467;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID 6d3df983-2fea-42d5-ba4f-3e5780ce5d60;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID ea5f3a7c-172e-4757-a4a8-b6611763b845;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 4 11.1308691439771 -10.7051528843979  -2.52557783674655 -10.7051528843979  -2.52557783674655 3.54151582703505  -0.311554241814807 3.54151582703505  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = 1 0 ;
+			- m_anglePoint2 = -1 0 ;
+			- m_line_style = 2;
+		}
+		{ CGIBasicClass 
+			- _id = GUID f2d24a53-c0fa-43d4-9085-787106150294;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "homing";
+				- _id = GUID 47ee9f7a-101e-444e-91d8-92811c9baf09;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "homing";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 10.6444155128025 6.69348953032682  10.6444155128025 4.67536755906041  15.5900492677796 4.67536755906041  15.5900492677796 6.69348953032682  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIBasicClass 
+			- _id = GUID fbc21e2f-028f-4edc-9578-8f45b7473956;
+			- m_type = 125;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IUseCase";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Tracking";
+				- _id = GUID bd61a53f-6dfe-4d20-ad8b-0b6da6d3bb21;
+			}
+			- m_pParent = GUID 4bbf22b5-c5a2-4668-8853-2bca5baddff5;
+			- m_name = { CGIText 
+				- m_str = "Tracking";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 15.9286395983142 14.1789306352265  15.9286395983142 12.3197818687241  20.7804410793771 12.3197818687241  20.7804410793771 14.1789306352265  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGILink 
+			- _id = GUID fd1b5e57-b46d-4511-b6d9-354d8cc76243;
+			- m_type = 94;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Stabilized ImageryControl";
+				- _name = "itsImagerySensors";
+				- _id = GUID 8d464831-d57c-46e2-b9b0-7d1f10957074;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID e35e9155-b530-4d94-a910-b3757d0462a1;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 80fffe3b-0a3d-4fa9-a944-a402e6e3d2b8;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "SensorData";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 17.6527615336155 18.4597879344261  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 2 16.730023757501 18.2716590839587  24.2193648237504 18.2716590839587  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = 1 0 ;
+			- m_anglePoint2 = 1 0 ;
+			- m_line_style = 0;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "ImagerySensors";
+				- _name = "itsStabilized ImageryControl";
+				- _id = GUID 10d7b741-5eae-489b-9fcf-64b69925a679;
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 0;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 0;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = symmetric_type;
+		}
+		{ CGILink 
+			- _id = GUID ff986b51-01d8-489f-832f-f792ba7b8b36;
+			- m_type = 94;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Missile Guidance";
+				- _name = "itsImagerySensors";
+				- _id = GUID 87525026-944a-41d4-a411-0fc272d65881;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 21;
+					- m_bgColor = 21;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID aa674dbd-2075-435c-8b0c-1fbaa6390a48;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 80fffe3b-0a3d-4fa9-a944-a402e6e3d2b8;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 4;
+				- m_bgColor = 4;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_arrow = 4 17.0435250207125 10.0219754949158  27.2162116686942 10.0219754949158  27.2162116686942 15.8344163983956  26.4913864571375 15.8344163983956  ;
+			- m_lineWidth = 1;
+			- m_anglePoint1 = -1 0 ;
+			- m_anglePoint2 = 1 0 ;
+			- m_line_style = 2;
+			- m_pInverseModelObject = { ILinkHandle 
+				- _m2Class = "ILink";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "ImagerySensors";
+				- _name = "itsMissile Guidance";
+				- _id = GUID 7a5b99ca-e1bd-4b65-9d80-bce5138752bc;
+			}
+			- m_pInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_pInverseInstance = { ILinkInstanceHandle 
+				- _m2Class = "";
+			}
+			- m_bShowSourceMultiplicity = 0;
+			- m_bShowSourceRole = 0;
+			- m_bShowTargetMultiplicity = 0;
+			- m_bShowTargetRole = 0;
+			- m_bShowLinkName = 1;
+			- m_bShowSpecificType = 0;
+			- m_bInstance = 0;
+			- m_bShowQualifier1 = 0;
+			- m_bShowQualifier2 = 0;
+			- m_sourceRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 1;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetRole = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 2;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 3;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetMultiplicity = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 4;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_sourceQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 5;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_targetQualifier = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 6;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_specificType = symmetric_type;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 0969d51c-d482-4bee-b562-13617af81b16;
+			- m_type = 124;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IActor";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Atmosphere";
+				- _id = GUID 7331f4e3-0799-49b3-b3fb-143e108b8512;
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "Atmosphere";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 4 34.4765131313463 -4.39235739911897  34.4765131313463 -6.74565445675557  28.55761447123 -6.74565445675557  28.55761447123 -4.39235739911897  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 30.3709762158666 0.033088352868262  30.3709762158666 -4.17955904561304  32.6631513867097 -4.17955904561304  32.6631513867097 0.033088352868262  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		{ CGIInheritance 
+			- _id = GUID 1b951bb4-cab5-4466-95b9-542f24f6693d;
+			- m_type = 128;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IDependency";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "ImagerySensors";
+				- _name = "Target";
+				- _id = GUID a6e043fd-76f2-4ce3-9fd9-0695787de815;
+			}
+			- m_pParent = ;
+			- m_name = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 0;
+					- m_bgColor = 0;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 4096;
+			- m_pSource = GUID 80fffe3b-0a3d-4fa9-a944-a402e6e3d2b8;
+			- m_sourceType = 'F';
+			- m_pTarget = GUID 418b2119-da2e-4d3c-b2a5-f7046fa73068;
+			- m_targetType = 'T';
+			- m_direction = ' ';
+			- m_rpn = { CGIText 
+				- m_str = "";
+				- m_style = "Arial" 10 0 0 0 1 ;
+				- m_color = { IColor 
+					- m_fgColor = 2;
+					- m_bgColor = 2;
+					- m_bgFlag = 0;
+				}
+				- m_position = 1 0 0  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_color = { IColor 
+				- m_fgColor = 2;
+				- m_bgColor = 2;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 0;
+			- m_arrow = 4 26.4913864571375 16.7441933895984  28.5092511792244 16.7441933895984  28.5092511792244 18.0039986091444  30.4366899219219 18.0039986091444  ;
+			- m_lineWidth = 0;
+			- m_anglePoint1 = 1 0 ;
+			- m_anglePoint2 = 1 0 ;
+			- m_line_style = 2;
+		}
+		{ CGIBasicClass 
+			- _id = GUID 1c8cabfc-ff26-40e5-9013-12bb66b75752;
+			- m_type = 124;
+			- m_pModelObject = { IHandle 
+				- _m2Class = "IActor";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Inertial Sensors";
+				- _id = GUID 7300ea70-e5dc-4432-bbcb-6b21978f2016;
+			}
+			- m_pParent = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+			- m_name = { CGIText 
+				- m_str = "Inertial Sensors";
+				- m_style = "Arial" 10 0 0 1 2 ;
+				- m_color = { IColor 
+					- m_fgColor = 4;
+					- m_bgColor = 4;
+					- m_bgFlag = 0;
+				}
+				- m_position = 4 28.3284059307066 3.61000911297428  28.3284059307066 1.97915238697169  24.6136767214785 1.97915238697169  24.6136767214785 3.61000911297428  ;
+				- m_nIdent = 0;
+				- m_bImplicitSetRectPoints = 0;
+			}
+			- m_drawBehavior = 2056;
+			- m_color = { IColor 
+				- m_fgColor = 35;
+				- m_bgColor = 1;
+				- m_bgFlag = 0;
+			}
+			- m_lineWidth = 1;
+			- m_polygon = 4 25.2580907111087 8.3990549410855  25.2580907111087 3.84517017605846  27.6839919410764 3.84517017605846  27.6839919410764 8.3990549410855  ;
+			- m_nNameFormat = 0;
+			- m_nIsNameFormat = 0;
+		}
+		
+		- m_access = 'Z';
+		- m_modified = 'N';
+		- m_fileVersion = "";
+		- m_nModifyDate = 0;
+		- m_nCreateDate = 0;
+		- m_creator = "";
+		- m_bScaleWithZoom = 1;
+		- m_arrowStyle = 'S';
+		- m_pRoot = GUID a6b8a560-768d-4141-b1c0-6eecb449f729;
+		- m_currentLeftTop = -3.4934347284065 -13.091843515796 ;
+		- m_currentRightBottom = 33.1974851716622 22.5604965776493 ;
+	}
+	- _defaultSubsystem = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Default.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Default";
+		- _id = GUID 4582fb6c-0ad0-11d7-b329-00c04f680d9d;
+	}
+}
+

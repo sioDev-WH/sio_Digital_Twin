@@ -1,0 +1,15 @@
+
+How can we write models using port's Macro's, so that users can void local vars and directly reference global data members.
+
+for example:
+declare u as a refernce var, e.g., through PORT(u)
+x = old_x + u
+
+
+Target:
+______
+Set period automatically, instead of in init().
+
+
+
+

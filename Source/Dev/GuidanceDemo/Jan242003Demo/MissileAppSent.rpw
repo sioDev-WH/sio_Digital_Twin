@@ -1,0 +1,120 @@
+I-Logix-RPY-Archive version 4.0.4 *
+{ CGEMdiWorkspace 
+	- stubList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- myViewsWithID = { IRPYRawContainer 
+		- size = 4;
+		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 0;
+				- m_nTop = 0;
+				- m_nRight = 478;
+				- m_nBottom = 452;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChart";
+				- _filename = "AirframePkg.sbs";
+				- _subsystem = "AirframePkg";
+				- _class = "BodyDynamics";
+				- _name = "";
+				- _id = GUID a4f415bd-0ad7-4267-9d4d-5e53210e597c;
+			}
+			- _UpLeft = 8.97123745250351 3.85158436523039 ;
+			- _DownRight = 23.9324745280865 17.1873211820472 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 66;
+				- m_nTop = 66;
+				- m_nRight = 728;
+				- m_nBottom = 522;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "AutopilotModels.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "AutopilotModels";
+				- _id = GUID 6fe1d6f7-34ea-448f-a3a7-9df64c9c5b42;
+			}
+			- _UpLeft = -17.3648781276184 -11.4057228722325 ;
+			- _DownRight = 41.2682485758087 31.5821555587091 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 88;
+				- m_nTop = 88;
+				- m_nRight = 750;
+				- m_nBottom = 544;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "MissileGuidanceApplication.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "MissileGuidanceApplication";
+				- _id = GUID 34fae592-6a76-466a-bc98-ff2df6618888;
+			}
+			- _UpLeft = -13.0026509530787 7.34246482732621 ;
+			- _DownRight = 14.2224349487904 24.7493701441118 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 132;
+				- m_nTop = 132;
+				- m_nRight = 794;
+				- m_nBottom = 588;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "SeekerSubsystemModels.omd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "SeekerSubsystemModels";
+				- _id = GUID bcfd28d4-2a5e-11d7-b346-00c04f680d9d;
+			}
+			- _UpLeft = -7.70555700678875 -19.7734142740803 ;
+			- _DownRight = 26.5975366040628 2.15895738892085 ;
+			- _instanceName = "";
+		}
+	}
+	- _fullName = "E:\\Dev\\GuidanceDemo\\Jan242003Demo\\MissileAppSent";
+}
+

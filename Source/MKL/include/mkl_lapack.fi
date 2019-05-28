@@ -1,0 +1,13 @@
+!!
+!!               INTEL CORPORATION PROPRIETARY INFORMATION
+!!  This software is supplied under the terms of a license agreement or
+!!  nondisclosure agreement with Intel Corporation and may not be copied
+!!  or disclosed except in accordance with the terms of that agreement.
+!!    Copyright (c) 1999, 2000 Intel Corporation. All Rights Reserved.
+!!
+!! File    : mkl_lapack.fi
+!! Purpose : MKL Fortran interface for LAPACK routines
+!! Author  : Shemyakin Andrey
+!!
+      include 'mkl_lapack32.fi'
+      include 'mkl_lapack64.fi'

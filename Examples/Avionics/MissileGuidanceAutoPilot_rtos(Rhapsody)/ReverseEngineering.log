@@ -1,0 +1,49 @@
+
+Reverse Engineering 'C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h'
+Adding package 'ReverseEngineering' to Project 'Avionics_6'. ok.
+Adding Type '_OMFLAT_IMPLEMENTATION' to package 'ReverseEngineering'. ok.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 21 #include oxf/oxf.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 22 #include stdafx.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 23 #include App.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 24 #include oxf/omthread.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 25 #include oxf/omreactive.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 26 #include oxf/state.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 27 #include oxf/event.h ignored--file not found.
+Analyzing class 'App' from File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 34
+Adding Class 'App' to Package 'ReverseEngineering'. ok.
+Analyzing class 'App_task_0010ms' from File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 35
+Adding Class 'App_task_0010ms' to Package 'ReverseEngineering'. ok.
+Analyzing class 'theTest' from File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 43
+Analyzing class 'OMReactive' from File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 43
+Adding Class 'OMReactive' to Package 'ReverseEngineering'. ok.
+Adding Type 'theTest_Enum' to class 'theTest'. ok.
+Adding Class 'theTest' to Package 'ReverseEngineering'. ok.
+
+Reverse Engineering 'C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.cpp'
+Adding Type 'NAMESPACE_PREFIX' to package 'ReverseEngineering'. ok.
+Adding Type '_OMSTATECHART_ANIMATED' to package 'ReverseEngineering'. ok.
+Reverse Engineering include file 'C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h'
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 21 #include oxf/oxf.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 22 #include stdafx.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 23 #include App.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 24 #include oxf/omthread.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 25 #include oxf/omreactive.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 26 #include oxf/state.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.h, Line: 27 #include oxf/event.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.cpp, Line: 20 #include App.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.cpp, Line: 21 #include App_task_0010ms.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.cpp, Line: 22 #include math.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.cpp, Line: 23 #include stdafx.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.cpp, Line: 24 #include initguid.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.cpp, Line: 25 #include IsDaeCOSolver.h ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.cpp, Line: 26 #include IsDaeCOSolver_i.c ignored--file not found.
+File: C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.cpp, Line: 27 #include GuidanceLogic.h ignored--file not found.
+Adding Type 'Application3_theTest_theTest_SERIALIZE' to package 'ReverseEngineering'. ok.
+Adding Type 'TICK_INTERVAL' to package 'ReverseEngineering'. ok.
+
+Parsing Summary:
+"C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.cpp":LINE 44 *** syntax error on input theTest
+"C:\DistComponents\AvionicsDemo\Avionics_6\MissileAtlDemo\theTest.cpp":LINE 44 *** parsing resumes at '{'
+
+Reverse Engineering Done.
+

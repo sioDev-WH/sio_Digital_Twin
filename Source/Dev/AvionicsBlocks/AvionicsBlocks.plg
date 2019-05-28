@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AvionicsBlocks - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\wassim\LOCALS~1\Temp\RSP1D.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/AvionicsBlocks.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\wassim\LOCALS~1\Temp\RSP1D.tmp" 
+Creating temporary file "C:\DOCUME~1\wassim\LOCALS~1\Temp\RSP1E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/AvionicsBlocks.pdb" /debug /machine:I386 /out:"Debug/AvionicsBlocks.exe" /pdbtype:sept 
+.\Debug\AvionicsBlocks.obj
+.\Debug\IndexSearch.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\wassim\LOCALS~1\Temp\RSP1E.tmp"
+<h3>Output Window</h3>
+Compiling...
+AvionicsBlocks.cpp
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(163) : error C2065: 'Euler' : undeclared identifier
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(163) : error C2146: syntax error : missing ';' before identifier 'e'
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(163) : error C2065: 'e' : undeclared identifier
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(163) : error C2065: 'res' : undeclared identifier
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(164) : error C2065: 'Vec3' : undeclared identifier
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(164) : error C2146: syntax error : missing ';' before identifier 'v'
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(164) : error C2065: 'v' : undeclared identifier
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(165) : error C2146: syntax error : missing ';' before identifier 'ev'
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(165) : error C2065: 'ev' : undeclared identifier
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(167) : error C2228: left of '.phi' must have class/struct/union type
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(167) : error C2228: left of '.theta' must have class/struct/union type
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(167) : error C2228: left of '.psi' must have class/struct/union type
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(168) : error C2228: left of '.x' must have class/struct/union type
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(168) : error C2228: left of '.y' must have class/struct/union type
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(168) : error C2228: left of '.z' must have class/struct/union type
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(169) : error C2065: 'cross' : undeclared identifier
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(169) : error C2059: syntax error : ')'
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(171) : error C2065: 'dot' : undeclared identifier
+E:\Dev\AvionicsBlocks\AvionicsBlocks.cpp(171) : error C2059: syntax error : ')'
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+AvionicsBlocks.exe - 19 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

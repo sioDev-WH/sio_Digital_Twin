@@ -1,0 +1,123 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8447.0 (2f025fb7).
+//
+// c:\distcomponents\isdaecosolver\debugu\msvbvm60.tli
+//
+// Wrapper implementations for Win32 type library C:\WINDOWS\System32\msvbvm60.dll
+// compiler-generated file created 05/31/03 at 22:10:35 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface _ErrObject wrapper method implementations
+//
+
+inline long _ErrObject::GetNumber ( ) {
+    long _result;
+    HRESULT _hr = get_Number(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _ErrObject::PutNumber ( long pi4 ) {
+    HRESULT _hr = put_Number(pi4);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _ErrObject::GetSource ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Source(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _ErrObject::PutSource ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Source(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _ErrObject::GetDescription ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Description(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _ErrObject::PutDescription ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Description(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _ErrObject::GetHelpFile ( ) {
+    BSTR _result;
+    HRESULT _hr = get_HelpFile(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _ErrObject::PutHelpFile ( _bstr_t pbstr ) {
+    HRESULT _hr = put_HelpFile(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _ErrObject::GetHelpContext ( ) {
+    long _result;
+    HRESULT _hr = get_HelpContext(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _ErrObject::PutHelpContext ( long pi4 ) {
+    HRESULT _hr = put_HelpContext(pi4);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT _ErrObject::Raise ( long Number, VARIANT * Source, VARIANT * Description, VARIANT * HelpFile, VARIANT * HelpContext ) {
+    HRESULT _hr = raw_Raise(Number, Source, Description, HelpFile, HelpContext);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long _ErrObject::GetLastDllError ( ) {
+    long _result;
+    HRESULT _hr = get_LastDllError(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface _Collection wrapper method implementations
+//
+
+inline _variant_t _Collection::Item ( VARIANT * Index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline HRESULT _Collection::Add ( VARIANT * Item, VARIANT * Key, VARIANT * Before, VARIANT * After ) {
+    HRESULT _hr = raw_Add(Item, Key, Before, After);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long _Collection::Count ( ) {
+    long _result;
+    HRESULT _hr = raw_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT _Collection::Remove ( VARIANT * Index ) {
+    HRESULT _hr = raw_Remove(Index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IUnknownPtr _Collection::_NewEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = raw__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}

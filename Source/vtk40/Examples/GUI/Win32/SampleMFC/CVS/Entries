@@ -1,0 +1,23 @@
+/CMakeLists.txt/1.1/Wed Nov  7 19:04:24 2001//Trelease-4-0
+/ChildFrm.cpp/1.1/Thu Sep 27 21:13:18 2001//Trelease-4-0
+/ChildFrm.h/1.1/Thu Sep 27 21:13:18 2001//Trelease-4-0
+/MainFrm.cpp/1.1/Thu Sep 27 21:13:18 2001//Trelease-4-0
+/MainFrm.h/1.1/Thu Sep 27 21:13:18 2001//Trelease-4-0
+/Resource.h/1.1/Thu Sep 27 21:13:18 2001//Trelease-4-0
+/Sample.cpp/1.1/Thu Sep 27 21:13:18 2001//Trelease-4-0
+/Sample.h/1.1/Thu Sep 27 21:13:18 2001//Trelease-4-0
+/Sample.rc/1.1/Thu Sep 27 21:13:18 2001/-kb/Trelease-4-0
+/SampleDoc.h/1.1/Thu Sep 27 21:13:18 2001//Trelease-4-0
+/SampleView.cpp/1.1/Thu Sep 27 21:13:18 2001//Trelease-4-0
+/SampleView.h/1.1/Thu Sep 27 21:13:18 2001//Trelease-4-0
+/StdAfx.cpp/1.1/Thu Sep 27 21:13:16 2001//Trelease-4-0
+/StdAfx.h/1.1/Thu Sep 27 21:13:16 2001//Trelease-4-0
+/vtkMFCDocument.cpp/1.1/Thu Sep 27 21:13:16 2001//Trelease-4-0
+/vtkMFCDocument.h/1.1/Thu Sep 27 21:13:16 2001//Trelease-4-0
+/vtkMFCRenderView.h/1.1/Thu Sep 27 21:13:16 2001//Trelease-4-0
+/vtkMFCView.cpp/1.1/Thu Sep 27 21:13:16 2001//Trelease-4-0
+/vtkMFCView.h/1.1/Thu Sep 27 21:13:16 2001//Trelease-4-0
+/weldedSpheres.vtk/1.1/Thu Sep 27 21:13:16 2001//Trelease-4-0
+D/res////
+/SampleDoc.cpp/1.1.4.1/Thu Jan 24 15:57:04 2002//Trelease-4-0
+/vtkMFCRenderView.cpp/1.1.4.1/Thu Jan 24 15:57:04 2002//Trelease-4-0

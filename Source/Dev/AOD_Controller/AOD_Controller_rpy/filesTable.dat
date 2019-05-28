@@ -1,0 +1,13 @@
+I-Logix-RPY-Archive version 4.0.4 *
+
+- filesTable = { IRPYRawContainer 
+	- size = 6;
+	- value = "AOD_Controller.rpy" ""
+	"AOD_Controller_rpy\\Default.sbs" "Default"
+	"AOD_Controller_rpy\\DefaultComponent.cmp" "DefaultComponent"
+	"AOD_Controller_rpy\\Model1.omd" "Model1"
+	"AOD_Controller_rpy\\Requirement.sbs" "Requirement"
+	"AOD_Controller_rpy\\ShiftLogic.ucd" "Requirement::ShiftLogic"
+	
+}
+

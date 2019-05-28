@@ -1,0 +1,13 @@
+Instancing components 
+Connecting components 
+Assigning data to components 
+Grouping components 
+Creating the model's data structure (INIT) 
+
+--------------------------------------------------------
+UML
+Excellent Documentation, Weak Prototyping
+
+Simulink
+Weak Documentation, excellent Prototyping
+--------------------------------------------------------

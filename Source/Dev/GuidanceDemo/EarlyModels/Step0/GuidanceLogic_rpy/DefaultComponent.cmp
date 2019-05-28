@@ -1,0 +1,116 @@
+I-Logix-RPY-Archive version 4.0.4 C++
+{ IComponent 
+	- _id = GUID 4582fb72-0ad0-11d7-b329-00c04f680d9d;
+	- _myState = 139264;
+	- _name = "DefaultComponent";
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID 4582fb73-0ad0-11d7-b329-00c04f680d9d;
+		- _myState = 8192;
+		- _name = "Files";
+		- m_path = "";
+		- Elements = { IRPYRawContainer 
+			- size = 0;
+		}
+		- Files = { IRPYRawContainer 
+			- size = 0;
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID 4582fb74-0ad0-11d7-b329-00c04f680d9d;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID 4582fb74-0ad0-11d7-b329-00c04f680d9d;
+			- _myState = 8192;
+			- _name = "DefaultConfig";
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = Animation;
+			- _timeModel = RealTime;
+			- m_generateActors = 1;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "Default.sbs";
+					- _subsystem = "Default";
+					- _class = "";
+					- _name = "Guidance";
+					- _id = GUID 4582fbf7-0ad0-11d7-b329-00c04f680d9d;
+				}
+			}
+			- _root = { IFolder 
+				- _id = GUID 4582fb75-0ad0-11d7-b329-00c04f680d9d;
+				- _name = "DefaultConfig";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 12.19.2002::14:38:40;
+			- strongCGTime = 12.8.2002::14:56:12;
+		}
+	}
+	- HandlesInMe = { IRPYRawContainer 
+		- size = 4;
+		- value = 
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Default.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Default";
+			- _id = GUID 4582fb6c-0ad0-11d7-b329-00c04f680d9d;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "TopLevel";
+			- _id = GUID 4582fb6d-0ad0-11d7-b329-00c04f680d9d;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "Guidance";
+			- _id = GUID 4582fbf7-0ad0-11d7-b329-00c04f680d9d;
+		}
+		{ IHandle 
+			- _m2Class = "IClass";
+			- _filename = "Default.sbs";
+			- _subsystem = "Default";
+			- _class = "";
+			- _name = "myFactory";
+			- _id = GUID 16514675-0af4-11d7-b329-00c04f680d9d;
+		}
+	}
+	- weakCGTime = 12.19.2002::16:12:21;
+	- strongCGTime = 1.2.1990::0:0:0;
+}
+

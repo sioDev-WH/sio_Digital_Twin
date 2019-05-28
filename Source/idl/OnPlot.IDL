@@ -1,0 +1,195 @@
+// Generated .IDL file (by the OLE/COM Object Viewer)
+// 
+// typelib filename: OnPlot.ocx
+
+[
+  uuid(161FAEE7-AED9-4438-86A3-0A42AD0D3943),
+  version(1.2),
+  helpstring("OnPlotLib")
+]
+library OnPlotLib
+{
+    // TLib :     // TLib : OLE Automation : {00020430-0000-0000-C000-000000000046}
+    importlib("STDOLE2.TLB");
+
+    // Forward declare all types defined in this typelib
+    interface _OnThrottle;
+    interface _OnBrakes;
+    interface _OnShiftLever;
+    interface _OnPlotDlgMgr;
+    dispinterface __OnThrottle;
+    dispinterface __OnBrakes;
+    dispinterface __OnShiftLever;
+
+    [
+      odl,
+      uuid(AC45BC84-79DD-418F-BA17-570FB32ADD78),
+      version(1.0),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _OnThrottle : IDispatch {
+        [id(0x68030000), propget]
+        HRESULT Throttle([out, retval] double* );
+        [id(0x68030000), propput]
+        HRESULT Throttle([in, out] double* );
+    };
+
+    [
+      uuid(71E96FA0-749E-4CAF-A453-71A278C3CB53),
+      version(1.0),
+      noncreatable,
+      control
+    ]
+    coclass OnThrottle {
+        [default] interface _OnThrottle;
+        [default, source] dispinterface __OnThrottle;
+    };
+
+    [
+      odl,
+      uuid(1AECE0F1-5ABB-422D-9D59-AE73C2C65F92),
+      version(1.0),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _OnBrakes : IDispatch {
+        [id(0x68030000), propput]
+        HRESULT Brake([in, out] double* );
+        [id(0x68030000), propget]
+        HRESULT Brake([out, retval] double* );
+    };
+
+    [
+      uuid(A880BF82-2F9A-4575-82DB-7A2193C42189),
+      version(1.0),
+      noncreatable,
+      control
+    ]
+    coclass OnBrakes {
+        [default] interface _OnBrakes;
+        [default, source] dispinterface __OnBrakes;
+    };
+
+    [
+      odl,
+      uuid(8BC66FF1-5D82-497A-AB3C-2676EE198106),
+      version(1.0),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _OnShiftLever : IDispatch {
+        [id(0x68030000), propput]
+        HRESULT Position([in, out] long* );
+        [id(0x68030000), propget]
+        HRESULT Position([out, retval] long* );
+    };
+
+    [
+      uuid(DBAD0A7B-08AA-4431-B67E-86DD110B03EE),
+      version(1.0),
+      noncreatable,
+      control
+    ]
+    coclass OnShiftLever {
+        [default] interface _OnShiftLever;
+        [default, source] dispinterface __OnShiftLever;
+    };
+
+    [
+      odl,
+      uuid(CF740FA9-357B-4F77-B81C-30D02E5E9B24),
+      version(1.1),
+      hidden,
+      dual,
+      nonextensible,
+      oleautomation
+    ]
+    interface _OnPlotDlgMgr : IDispatch {
+        [id(0x60030006)]
+        HRESULT ShowBrakes();
+        [id(0x60030007)]
+        HRESULT ShowThrottle();
+        [id(0x60030008)]
+        HRESULT ShowShiftLever();
+        [id(0x60030009)]
+        HRESULT ShowChart();
+        [id(0x6803000e), propput]
+        HRESULT BrakeCaption([in, out] BSTR* rhs);
+        [id(0x6803000d), propput]
+        HRESULT ThrottleCaption([in, out] BSTR* rhs);
+        [id(0x6803000c), propput]
+        HRESULT ShiftLeverCaption([in, out] BSTR* rhs);
+        [id(0x68030000), propput]
+        HRESULT ChartCaption([in, out] BSTR* rhs);
+        [id(0x68030003), propput]
+        HRESULT BrakeVal([in, out] double* );
+        [id(0x68030003), propget]
+        HRESULT BrakeVal([out, retval] double* );
+        [id(0x68030002), propput]
+        HRESULT ShiftLeverVal([in, out] long* );
+        [id(0x68030002), propget]
+        HRESULT ShiftLeverVal([out, retval] long* );
+        [id(0x68030001), propput]
+        HRESULT ThrottleVal([in, out] double* );
+        [id(0x68030001), propget]
+        HRESULT ThrottleVal([out, retval] double* );
+        [id(0x6003000a)]
+        HRESULT ChartAddSeries([in, out] BSTR* Name);
+        [id(0x6003000b)]
+        HRESULT ChartPlotData(
+                        [in, out] double* time, 
+                        [in, out] SAFEARRAY(double)* vars, 
+                        [in, out] long* count);
+    };
+
+    [
+      uuid(FAC71F1E-0EB0-4F4C-AD54-1D7F6E8B90C2),
+      version(1.1)
+    ]
+    coclass OnPlotDlgMgr {
+        [default] interface _OnPlotDlgMgr;
+    };
+
+    typedef [uuid(FFC0A160-D2F2-4CA7-ACD8-689ED31BF208), version(1.0), public]
+    _OnPlotDlgMgr OnPlotDlgMgr___v0;
+
+    [
+      uuid(98B50489-5B70-44B5-8EA8-2C37DCBB5133),
+      version(1.0),
+      hidden,
+      nonextensible
+    ]
+    dispinterface __OnThrottle {
+        properties:
+        methods:
+    };
+
+    [
+      uuid(DC857E9B-C80F-4EAE-9C4F-66E75F23294E),
+      version(1.0),
+      hidden,
+      nonextensible
+    ]
+    dispinterface __OnBrakes {
+        properties:
+        methods:
+    };
+
+    [
+      uuid(CCB5353D-19DA-4BD5-A750-C8B24087D18D),
+      version(1.0),
+      hidden,
+      nonextensible
+    ]
+    dispinterface __OnShiftLever {
+        properties:
+        methods:
+    };
+};

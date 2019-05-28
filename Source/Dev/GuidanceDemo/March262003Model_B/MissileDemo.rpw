@@ -1,0 +1,147 @@
+I-Logix-RPY-Archive version 4.0.4 *
+{ CGEMdiWorkspace 
+	- stubList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- myViewsWithID = { IRPYRawContainer 
+		- size = 5;
+		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 66;
+				- m_nTop = 66;
+				- m_nRight = 677;
+				- m_nBottom = 647;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IActivityGraph";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Stabilized ImageryControl";
+				- _name = "";
+				- _id = GUID f9a2072d-5bd1-11d7-b370-00c04f680d9d;
+			}
+			- _UpLeft = 7.28140544494914 -12.4897709292152 ;
+			- _DownRight = 41.2888119058523 17.4809221107968 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 132;
+				- m_nTop = 132;
+				- m_nRight = 743;
+				- m_nBottom = 713;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IActivityGraph";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Stabilized ImageryControl";
+				- _name = "ROOT.BroadcastTrackingData";
+				- _id = GUID e5914d39-003b-4d1a-9e7a-17a3dd29ea81;
+			}
+			- _UpLeft = -5.14307942200758 0.231832693922302 ;
+			- _DownRight = 26.0679059936182 28.6103142961437 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 156;
+				- m_nTop = 156;
+				- m_nRight = 750;
+				- m_nBottom = 702;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IActivityGraph";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Stabilized ImageryControl";
+				- _name = "ROOT.CheckTargetAcquisition";
+				- _id = GUID 0ac61567-9a0b-48e4-99e3-56921ff53c22;
+			}
+			- _UpLeft = 1.52860815203117 1.28125085671374 ;
+			- _DownRight = 23.1309041212321 20.1784974188366 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 182;
+				- m_nTop = 182;
+				- m_nRight = 1040;
+				- m_nBottom = 720;
+			}
+			- _wasOpenedOnCloseProject = 0;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IMSC";
+				- _filename = "Tracking_01.msc";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "Tracking_01";
+				- _id = GUID 79a4a4cc-29d7-47b5-a2bb-d387bdc50ccc;
+			}
+			- _UpLeft = 1.87007766349695 -35.0187123761283 ;
+			- _DownRight = 52.000224062399 -9.01860034492883 ;
+			- _instanceName = "";
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -4;
+				- m_ptMaxPositionY = -27;
+				- m_nLeft = 26;
+				- m_nTop = 26;
+				- m_nRight = 725;
+				- m_nBottom = 572;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IUCDiagram";
+				- _filename = "GuidedMissileControlSystem.ucd";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "GuidedMissileControlSystem";
+				- _id = GUID 06e2ab3d-c677-4fb5-927b-7b1561fc210a;
+			}
+			- _UpLeft = -0.72139173048641 -6.76033836230051 ;
+			- _DownRight = 30.425442173742 16.2289914241538 ;
+			- _instanceName = "";
+		}
+	}
+	- _fullName = "E:\\Dev\\GuidanceDemo\\March262003Model_B\\MissileDemo";
+}
+

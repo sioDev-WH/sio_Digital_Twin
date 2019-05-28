@@ -1,0 +1,26 @@
+HKCR
+{
+	ISDaeCOSolver.IsMatrix.1 = s 'IsMatrix Class'
+	{
+		CLSID = s '{3F35CF67-839E-11D4-838D-00600894E802}'
+	}
+	ISDaeCOSolver.IsMatrix = s 'IsMatrix Class'
+	{
+		CLSID = s '{3F35CF67-839E-11D4-838D-00600894E802}'
+		CurVer = s 'ISDaeCOSolver.IsMatrix.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {3F35CF67-839E-11D4-838D-00600894E802} = s 'IsMatrix Class'
+		{
+			ProgID = s 'ISDaeCOSolver.IsMatrix.1'
+			VersionIndependentProgID = s 'ISDaeCOSolver.IsMatrix'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{77CBD757-8006-11D4-98A7-00C04F6801A9}'
+		}
+	}
+}

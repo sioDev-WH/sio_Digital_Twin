@@ -1,0 +1,3087 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8447.0 (daa9c896).
+//
+// beegd10.tlh
+//
+// C++ source equivalent of Win32 type library beegd10.ocx
+// compiler-generated file created 06/22/03 at 23:24:34 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("bdcd56e9-bc22-4fe6-8bb7-90b785b163bb"))
+/* dual interface */ IsgConditionTest;
+struct __declspec(uuid("28d20e74-4f3a-11d3-b75c-008048e27a77"))
+/* dual interface */ IsgCell;
+struct __declspec(uuid("97bd7a12-77e0-11d2-8eae-008048e27a77"))
+/* dual interface */ IsgGrid;
+struct __declspec(uuid("f0a68cb1-9109-11d2-8ebb-008048e27a77"))
+/* dual interface */ IsgColumns;
+struct __declspec(uuid("f0a68cb0-9109-11d2-8ebb-008048e27a77"))
+/* dual interface */ IsgColumn;
+struct __declspec(uuid("ea2ce601-9388-11d2-8ec1-008048e27a77"))
+/* dual interface */ IsgStyle;
+struct __declspec(uuid("240e3c91-c2a4-11d2-8eff-008048e27a77"))
+/* dual interface */ IsgValueItems;
+struct __declspec(uuid("240e3c90-c2a4-11d2-8eff-008048e27a77"))
+/* dual interface */ IsgValueItem;
+struct __declspec(uuid("1df77b30-c735-11d2-8f0d-008048e27a77"))
+/* dual interface */ IsgControl;
+struct __declspec(uuid("28d20e73-4f3a-11d3-b75c-008048e27a77"))
+/* dual interface */ IsgStyleConditions;
+struct __declspec(uuid("28d20e72-4f3a-11d3-b75c-008048e27a77"))
+/* dual interface */ IsgStyleCondition;
+struct __declspec(uuid("86f749d2-360f-11d3-b736-008048e27a77"))
+/* dual interface */ IsgCondition;
+struct __declspec(uuid("ea2ce602-9388-11d2-8ec1-008048e27a77"))
+/* dual interface */ IsgStyles;
+struct __declspec(uuid("a7542960-a71e-11d2-8ed4-008048e27a77"))
+/* dual interface */ IsgArray;
+struct __declspec(uuid("9f6aa700-d188-11cd-ad48-00aa003c9cb6"))
+/* dual interface */ IRowCursor;
+struct __declspec(uuid("d96465d4-db03-11d2-8f2c-008048e27a77"))
+/* dual interface */ IsgSelection;
+struct __declspec(uuid("d96465d2-db03-11d2-8f2c-008048e27a77"))
+/* dual interface */ IsgRanges;
+struct __declspec(uuid("d96465d0-db03-11d2-8f2c-008048e27a77"))
+/* dual interface */ IsgRange;
+struct __declspec(uuid("acae77f1-e214-11d2-8f41-008048e27a77"))
+/* dual interface */ IsgRows;
+struct __declspec(uuid("acae77f0-e214-11d2-8f41-008048e27a77"))
+/* dual interface */ IsgRow;
+struct __declspec(uuid("35b30f02-3496-11d3-b734-008048e27a77"))
+/* dual interface */ IsgGroupHeading;
+struct __declspec(uuid("35b30f03-3496-11d3-b734-008048e27a77"))
+/* dual interface */ IsgGroupHeadings;
+struct __declspec(uuid("49d306e2-3625-11d3-b736-008048e27a77"))
+/* dual interface */ IsgRowCollection;
+struct __declspec(uuid("5483fe42-2a22-11d3-b729-008048e27a77"))
+/* dual interface */ IsgGroup;
+struct __declspec(uuid("5483fe48-2a22-11d3-b729-008048e27a77"))
+/* dual interface */ IsgCalculations;
+struct __declspec(uuid("5483fe4a-2a22-11d3-b729-008048e27a77"))
+/* dual interface */ IsgCalculation;
+struct __declspec(uuid("28d20e75-4f3a-11d3-b75c-008048e27a77"))
+/* dual interface */ IsgCells;
+struct __declspec(uuid("5483fe43-2a22-11d3-b729-008048e27a77"))
+/* dual interface */ IsgGroups;
+struct __declspec(uuid("cb0ef935-3104-4a0e-a5cb-42611d29a7c1"))
+/* dual interface */ IsgFilters;
+struct __declspec(uuid("5696af6d-2b1f-4a30-8100-b60e61886f9c"))
+/* dual interface */ IsgFilter;
+struct __declspec(uuid("f9c6a98c-39ba-4e46-b3fa-4c4b42b18d28"))
+/* interface */ IsgGridDataSource;
+struct __declspec(uuid("c82546bc-4d53-435c-9532-f521c1e9f828"))
+/* interface */ IsgGridCustomDraw;
+struct sgGridCustomDraw;
+struct __declspec(uuid("97bd7a15-77e0-11d2-8eae-008048e27a77"))
+/* dispinterface */ DIsgGridEvents;
+struct __declspec(uuid("5a77b360-9785-11d3-90c2-008048e27a77"))
+/* dual interface */ IsgDataObject;
+struct __declspec(uuid("0b296473-4ca3-4c31-aec7-5bfb2dfd4824"))
+/* dual interface */ IsgRowBuffer;
+struct /* coclass */ SGArray;
+struct /* coclass */ SGDataObject;
+struct /* coclass */ SGCell;
+struct /* coclass */ SGCells;
+struct /* coclass */ SGCondition;
+struct /* coclass */ SGCalculation;
+struct /* coclass */ SGCalculations;
+struct /* coclass */ SGValueItem;
+struct /* coclass */ SGValueItems;
+struct /* coclass */ SGStyle;
+struct /* coclass */ SGStyles;
+struct /* coclass */ SGStyleCondition;
+struct /* coclass */ SGStyleConditions;
+struct /* coclass */ SGControl;
+struct /* coclass */ SGColumn;
+struct /* coclass */ SGColumns;
+struct /* coclass */ SGRow;
+struct /* coclass */ SGRows;
+struct /* coclass */ SGRowCollection;
+struct /* coclass */ SGGroupHeading;
+struct /* coclass */ SGGroupHeadings;
+struct /* coclass */ SGRange;
+struct /* coclass */ SGRanges;
+struct /* coclass */ SGGroup;
+struct /* coclass */ SGGroups;
+struct /* coclass */ SGSelection;
+struct /* coclass */ SGFilter;
+struct /* coclass */ SGFilters;
+struct /* coclass */ SGRowBuffer;
+struct /* coclass */ SGGrid;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IsgConditionTest, __uuidof(IsgConditionTest));
+_COM_SMARTPTR_TYPEDEF(IsgCell, __uuidof(IsgCell));
+_COM_SMARTPTR_TYPEDEF(IsgGrid, __uuidof(IsgGrid));
+_COM_SMARTPTR_TYPEDEF(IsgColumns, __uuidof(IsgColumns));
+_COM_SMARTPTR_TYPEDEF(IsgColumn, __uuidof(IsgColumn));
+_COM_SMARTPTR_TYPEDEF(IsgStyle, __uuidof(IsgStyle));
+_COM_SMARTPTR_TYPEDEF(IsgValueItems, __uuidof(IsgValueItems));
+_COM_SMARTPTR_TYPEDEF(IsgValueItem, __uuidof(IsgValueItem));
+_COM_SMARTPTR_TYPEDEF(IsgControl, __uuidof(IsgControl));
+_COM_SMARTPTR_TYPEDEF(IsgStyleConditions, __uuidof(IsgStyleConditions));
+_COM_SMARTPTR_TYPEDEF(IsgStyleCondition, __uuidof(IsgStyleCondition));
+_COM_SMARTPTR_TYPEDEF(IsgCondition, __uuidof(IsgCondition));
+_COM_SMARTPTR_TYPEDEF(IsgStyles, __uuidof(IsgStyles));
+_COM_SMARTPTR_TYPEDEF(IsgArray, __uuidof(IsgArray));
+_COM_SMARTPTR_TYPEDEF(IRowCursor, __uuidof(IRowCursor));
+_COM_SMARTPTR_TYPEDEF(IsgSelection, __uuidof(IsgSelection));
+_COM_SMARTPTR_TYPEDEF(IsgRanges, __uuidof(IsgRanges));
+_COM_SMARTPTR_TYPEDEF(IsgRange, __uuidof(IsgRange));
+_COM_SMARTPTR_TYPEDEF(IsgRows, __uuidof(IsgRows));
+_COM_SMARTPTR_TYPEDEF(IsgRow, __uuidof(IsgRow));
+_COM_SMARTPTR_TYPEDEF(IsgGroupHeading, __uuidof(IsgGroupHeading));
+_COM_SMARTPTR_TYPEDEF(IsgGroupHeadings, __uuidof(IsgGroupHeadings));
+_COM_SMARTPTR_TYPEDEF(IsgRowCollection, __uuidof(IsgRowCollection));
+_COM_SMARTPTR_TYPEDEF(IsgGroup, __uuidof(IsgGroup));
+_COM_SMARTPTR_TYPEDEF(IsgCalculations, __uuidof(IsgCalculations));
+_COM_SMARTPTR_TYPEDEF(IsgCalculation, __uuidof(IsgCalculation));
+_COM_SMARTPTR_TYPEDEF(IsgCells, __uuidof(IsgCells));
+_COM_SMARTPTR_TYPEDEF(IsgGroups, __uuidof(IsgGroups));
+_COM_SMARTPTR_TYPEDEF(IsgFilters, __uuidof(IsgFilters));
+_COM_SMARTPTR_TYPEDEF(IsgFilter, __uuidof(IsgFilter));
+_COM_SMARTPTR_TYPEDEF(IsgGridDataSource, __uuidof(IsgGridDataSource));
+_COM_SMARTPTR_TYPEDEF(IsgGridCustomDraw, __uuidof(IsgGridCustomDraw));
+_COM_SMARTPTR_TYPEDEF(DIsgGridEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IsgDataObject, __uuidof(IsgDataObject));
+_COM_SMARTPTR_TYPEDEF(IsgRowBuffer, __uuidof(IsgRowBuffer));
+
+//
+// Type library items
+//
+
+enum sgBuiltInPictures
+{
+    sgbipFirst = 32768,
+    sgbipLast = 33023
+};
+
+enum sgSearchFlag
+{
+    sgSearchDefault = 0,
+    sgSearchText = 1,
+    sgSearchCaseSensitive = 2
+};
+
+enum sgGroupHeaderPicture
+{
+    sgGroupHeaderFetchPicture = 33024,
+    sgGroupHeaderColumnPicture = 33025
+};
+
+struct __declspec(uuid("bdcd56e9-bc22-4fe6-8bb7-90b785b163bb"))
+IsgConditionTest : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Test (
+        VARIANT Value,
+        VARIANT Tag,
+        VARIANT_BOOL * Res ) = 0;
+};
+
+struct __declspec(uuid("28d20e74-4f3a-11d3-b75c-008048e27a77"))
+IsgCell : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Value (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_Value (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_ColKey (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall get_RowKey (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_Column (
+        struct IsgColumn * * Res ) = 0;
+    virtual HRESULT __stdcall get_Row (
+        struct IsgRow * * Res ) = 0;
+    virtual HRESULT __stdcall get_Text (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall get_Style (
+        struct IsgStyle * * Res ) = 0;
+    virtual HRESULT __stdcall put_ReadOnly (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_ReadOnly (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_Left (
+        OLE_XPOS_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_Top (
+        OLE_YPOS_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_Width (
+        OLE_XSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_Height (
+        OLE_YSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_Status (
+        enum sgCellStatus * Res ) = 0;
+    virtual HRESULT __stdcall get_Kind (
+        enum sgCellKind * Res ) = 0;
+    virtual HRESULT __stdcall EnsureVisible ( ) = 0;
+    virtual HRESULT __stdcall Redraw ( ) = 0;
+};
+
+struct __declspec(uuid("97bd7a12-77e0-11d2-8eae-008048e27a77"))
+IsgGrid : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall put_Enabled (
+        VARIANT_BOOL pbool ) = 0;
+    virtual HRESULT __stdcall get_Enabled (
+        VARIANT_BOOL * pbool ) = 0;
+    virtual HRESULT __stdcall get_Window (
+        long * Phwnd ) = 0;
+    virtual HRESULT __stdcall put_Window (
+        long Phwnd ) = 0;
+    virtual HRESULT __stdcall put_TabKeyBehavior (
+        enum sgTabKeyBehavior Res ) = 0;
+    virtual HRESULT __stdcall get_TabKeyBehavior (
+        enum sgTabKeyBehavior * Res ) = 0;
+    virtual HRESULT __stdcall put_EnterKeyBehavior (
+        enum sgEnterKeyBehavior Res ) = 0;
+    virtual HRESULT __stdcall get_EnterKeyBehavior (
+        enum sgEnterKeyBehavior * Res ) = 0;
+    virtual HRESULT __stdcall put_BackColor (
+        OLE_COLOR Pclr ) = 0;
+    virtual HRESULT __stdcall get_BackColor (
+        OLE_COLOR * Pclr ) = 0;
+    virtual HRESULT __stdcall put_GridBorderStyle (
+        enum sgGridBorderStyle Res ) = 0;
+    virtual HRESULT __stdcall get_GridBorderStyle (
+        enum sgGridBorderStyle * Res ) = 0;
+    virtual HRESULT __stdcall put_ScrollBars (
+        enum sgScrollBar Res ) = 0;
+    virtual HRESULT __stdcall get_ScrollBars (
+        enum sgScrollBar * Res ) = 0;
+    virtual HRESULT __stdcall put_LeftCol (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_LeftCol (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_TopRow (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_TopRow (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_FlatScrollBars (
+        enum sgScrollBarMode Res ) = 0;
+    virtual HRESULT __stdcall get_FlatScrollBars (
+        enum sgScrollBarMode * Res ) = 0;
+    virtual HRESULT __stdcall put_ScrollBarTrack (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_ScrollBarTrack (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_ScrollBarTips (
+        enum sgScrollTip Res ) = 0;
+    virtual HRESULT __stdcall get_ScrollBarTips (
+        enum sgScrollTip * Res ) = 0;
+    virtual HRESULT __stdcall put_DataRowCount (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_DataRowCount (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_DataColCount (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_DataColCount (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_HeadingRowCount (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_HeadingRowCount (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_HeadingColCount (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_HeadingColCount (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_BottomRow (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_RightCol (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_TextAlignment (
+        enum sgAlignment Res ) = 0;
+    virtual HRESULT __stdcall get_TextAlignment (
+        enum sgAlignment * Res ) = 0;
+    virtual HRESULT __stdcall put_WordWrap (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_WordWrap (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_Ellipsis (
+        enum sgEllipsis Res ) = 0;
+    virtual HRESULT __stdcall get_Ellipsis (
+        enum sgEllipsis * Res ) = 0;
+    virtual HRESULT __stdcall put_HeadingBackColor (
+        OLE_COLOR Pclr ) = 0;
+    virtual HRESULT __stdcall get_HeadingBackColor (
+        OLE_COLOR * Pclr ) = 0;
+    virtual HRESULT __stdcall put_HeadingForeColor (
+        OLE_COLOR Pclr ) = 0;
+    virtual HRESULT __stdcall get_HeadingForeColor (
+        OLE_COLOR * Pclr ) = 0;
+    virtual HRESULT __stdcall get_HeadingFont (
+        IFontDisp * * Res ) = 0;
+    virtual HRESULT __stdcall put_HeadingFont (
+        IFontDisp * Res ) = 0;
+    virtual HRESULT __stdcall putref_HeadingFont (
+        IFontDisp * Res ) = 0;
+    virtual HRESULT __stdcall put_HeadingTextAlignment (
+        enum sgAlignment Res ) = 0;
+    virtual HRESULT __stdcall get_HeadingTextAlignment (
+        enum sgAlignment * Res ) = 0;
+    virtual HRESULT __stdcall put_HeadingWordWrap (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_HeadingWordWrap (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_HeadingEllipsis (
+        enum sgEllipsis Res ) = 0;
+    virtual HRESULT __stdcall get_HeadingEllipsis (
+        enum sgEllipsis * Res ) = 0;
+    virtual HRESULT __stdcall put_GridLines (
+        enum sgGridLineStyle Res ) = 0;
+    virtual HRESULT __stdcall get_GridLines (
+        enum sgGridLineStyle * Res ) = 0;
+    virtual HRESULT __stdcall put_HeadingGridLines (
+        enum sgGridLineStyle Res ) = 0;
+    virtual HRESULT __stdcall get_HeadingGridLines (
+        enum sgGridLineStyle * Res ) = 0;
+    virtual HRESULT __stdcall put_GridLinesColor (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_GridLinesColor (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall put_HeadingGridLinesColor (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_HeadingGridLinesColor (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall put_EvenOddStyle (
+        enum sgEvenOddStyle Res ) = 0;
+    virtual HRESULT __stdcall get_EvenOddStyle (
+        enum sgEvenOddStyle * Res ) = 0;
+    virtual HRESULT __stdcall put_ColorEven (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_ColorEven (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall put_ColorOdd (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_ColorOdd (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall put_UserResizeAnimate (
+        enum sgResizeAnimation Res ) = 0;
+    virtual HRESULT __stdcall get_UserResizeAnimate (
+        enum sgResizeAnimation * Res ) = 0;
+    virtual HRESULT __stdcall get_Version (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_UserResizing (
+        enum sgUserResizing Res ) = 0;
+    virtual HRESULT __stdcall get_UserResizing (
+        enum sgUserResizing * Res ) = 0;
+    virtual HRESULT __stdcall put_RowHeightMin (
+        OLE_XSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_RowHeightMin (
+        OLE_XSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall put_RowHeightMax (
+        OLE_XSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_RowHeightMax (
+        OLE_XSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall put_ColWidthMin (
+        OLE_YSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_ColWidthMin (
+        OLE_YSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall put_ColWidthMax (
+        OLE_YSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_ColWidthMax (
+        OLE_XSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall put_UserDragging (
+        enum sgUserRowColDrag Res ) = 0;
+    virtual HRESULT __stdcall get_UserDragging (
+        enum sgUserRowColDrag * Res ) = 0;
+    virtual HRESULT __stdcall put_UserHiding (
+        enum sgUserRowColHide Res ) = 0;
+    virtual HRESULT __stdcall get_UserHiding (
+        enum sgUserRowColHide * Res ) = 0;
+    virtual HRESULT __stdcall put_RedrawEnabled (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_RedrawEnabled (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_CellPadding (
+        OLE_XSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_CellPadding (
+        OLE_XSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall put_CellBkgStyle (
+        enum sgCellBkgStyle Res ) = 0;
+    virtual HRESULT __stdcall get_CellBkgStyle (
+        enum sgCellBkgStyle * Res ) = 0;
+    virtual HRESULT __stdcall put_CellBackColor (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_CellBackColor (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall put_CellForeColor (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_CellForeColor (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall get_Font (
+        IFontDisp * * Res ) = 0;
+    virtual HRESULT __stdcall put_Font (
+        IFontDisp * Res ) = 0;
+    virtual HRESULT __stdcall putref_Font (
+        IFontDisp * Res ) = 0;
+    virtual HRESULT __stdcall put_FocusRect (
+        enum sgFocusRect Res ) = 0;
+    virtual HRESULT __stdcall get_FocusRect (
+        enum sgFocusRect * Res ) = 0;
+    virtual HRESULT __stdcall put_FocusRectColor (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_FocusRectColor (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall put_FocusRectLineWidth (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_FocusRectLineWidth (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_RowCount (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_ColCount (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_NavigationWrapMode (
+        enum sgNavigationWrapMode Res ) = 0;
+    virtual HRESULT __stdcall get_NavigationWrapMode (
+        enum sgNavigationWrapMode * Res ) = 0;
+    virtual HRESULT __stdcall put_SkipReadOnly (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_SkipReadOnly (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_Row (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_Row (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_Col (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_Col (
+        long Res ) = 0;
+    virtual HRESULT __stdcall put_DefaultColWidth (
+        OLE_XSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_DefaultColWidth (
+        OLE_XSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall put_DefaultRowHeight (
+        OLE_YSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_DefaultRowHeight (
+        OLE_YSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_ClientWidth (
+        OLE_XSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_ClientHeight (
+        OLE_YSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_IsColVisible (
+        long Col,
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_IsRowVisible (
+        long Row,
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_MouseCol (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_MouseRow (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_CellsBorderColor (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_CellsBorderColor (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall get_CellsBorderVisible (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_CellsBorderVisible (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall put_DataMode (
+        enum sgDataMode Res ) = 0;
+    virtual HRESULT __stdcall get_DataMode (
+        enum sgDataMode * Res ) = 0;
+    virtual HRESULT __stdcall put_RowNumbering (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_RowNumbering (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_Value (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_Value (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_ValueEx (
+        long RowKey,
+        long ColIndex,
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_ValueEx (
+        long RowKey,
+        long ColIndex,
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_EqualRowHeight (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_EqualRowHeight (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_EqualColWidth (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_EqualColWidth (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_Columns (
+        struct IsgColumns * * Res ) = 0;
+    virtual HRESULT __stdcall get_Styles (
+        struct IsgStyles * * Res ) = 0;
+    virtual HRESULT __stdcall put_HScrollHeight (
+        OLE_YSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_HScrollHeight (
+        OLE_YSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall put_VScrollWidth (
+        OLE_XSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_VScrollWidth (
+        OLE_XSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_VisibleRows (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_VisibleCols (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_Format (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_Format (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall get_Array (
+        struct IsgArray * * Res ) = 0;
+    virtual HRESULT __stdcall put_DataSource (
+        struct IRowCursor * Res ) = 0;
+    virtual HRESULT __stdcall get_DataSource (
+        struct IRowCursor * * Res ) = 0;
+    virtual HRESULT __stdcall put_AutoFields (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_AutoFields (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_ErrorText (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_Appearance (
+        enum sgAppearance Res ) = 0;
+    virtual HRESULT __stdcall get_Appearance (
+        enum sgAppearance * Res ) = 0;
+    virtual HRESULT __stdcall put_Images (
+        long _arg1 ) = 0;
+    virtual HRESULT __stdcall putref_BkgPicture (
+        IPictureDisp * Res ) = 0;
+    virtual HRESULT __stdcall get_BkgPicture (
+        IPictureDisp * * Res ) = 0;
+    virtual HRESULT __stdcall put_BkgPictureAlignment (
+        enum sgPicAlignment Res ) = 0;
+    virtual HRESULT __stdcall get_BkgPictureAlignment (
+        enum sgPicAlignment * Res ) = 0;
+    virtual HRESULT __stdcall get_Editing (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_Editing (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_FitLastColumn (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_FitLastColumn (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall put_SelectionMode (
+        enum sgSelectionMode Res ) = 0;
+    virtual HRESULT __stdcall get_SelectionMode (
+        enum sgSelectionMode * Res ) = 0;
+    virtual HRESULT __stdcall put_MultiSelect (
+        enum sgMultiSelect Res ) = 0;
+    virtual HRESULT __stdcall get_MultiSelect (
+        enum sgMultiSelect * Res ) = 0;
+    virtual HRESULT __stdcall get_Selection (
+        struct IsgSelection * * Res ) = 0;
+    virtual HRESULT __stdcall put_CurBookmark (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_CurBookmark (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall get_Rows (
+        struct IsgRows * * Res ) = 0;
+    virtual HRESULT __stdcall put_AllowAddNew (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_AllowAddNew (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_AllowDelete (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_AllowDelete (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_AllowEdit (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_AllowEdit (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_CellTips (
+        enum sgCellTip Res ) = 0;
+    virtual HRESULT __stdcall get_CellTips (
+        enum sgCellTip * Res ) = 0;
+    virtual HRESULT __stdcall put_CellTipsDelay (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_CellTipsDelay (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_SpecialMode (
+        enum sgSpecialMode Res ) = 0;
+    virtual HRESULT __stdcall get_SpecialMode (
+        enum sgSpecialMode * Res ) = 0;
+    virtual HRESULT __stdcall get_License (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall get_Groups (
+        struct IsgGroups * * Res ) = 0;
+    virtual HRESULT __stdcall get_GroupHeadings (
+        struct IsgGroupHeadings * * Res ) = 0;
+    virtual HRESULT __stdcall put_OutlineLines (
+        enum sgOutlineLines Res ) = 0;
+    virtual HRESULT __stdcall get_OutlineLines (
+        enum sgOutlineLines * Res ) = 0;
+    virtual HRESULT __stdcall put_CacheAllRecords (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_CacheAllRecords (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_ColumnClickSort (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_ColumnClickSort (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_EditSelStart (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_EditSelStart (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_EditSelLength (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_EditSelLength (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_EditSelText (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_EditSelText (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_PreviewPaneColumn (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_PreviewPaneColumn (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_PreviewPaneType (
+        enum sgPreviewPaneType Res ) = 0;
+    virtual HRESULT __stdcall get_PreviewPaneType (
+        enum sgPreviewPaneType * Res ) = 0;
+    virtual HRESULT __stdcall put_PreviewPanePosition (
+        enum sgPreviewPanePosition Res ) = 0;
+    virtual HRESULT __stdcall get_PreviewPanePosition (
+        enum sgPreviewPanePosition * Res ) = 0;
+    virtual HRESULT __stdcall put_PreviewPaneSize (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_PreviewPaneSize (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_GroupIndentation (
+        OLE_XSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_GroupIndentation (
+        OLE_XSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_Cell (
+        long RowKey,
+        BSTR ColKey,
+        enum sgCellKind CellKind,
+        struct IsgCell * * Res ) = 0;
+    virtual HRESULT __stdcall get_CellAt (
+        long RowPosition,
+        long ColPosition,
+        struct IsgCell * * Res ) = 0;
+    virtual HRESULT __stdcall get_InactiveSelection (
+        enum sgInactiveSelection * Res ) = 0;
+    virtual HRESULT __stdcall put_InactiveSelection (
+        enum sgInactiveSelection Res ) = 0;
+    virtual HRESULT __stdcall get_AutoScroll (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_AutoScroll (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_AutoResize (
+        enum sgAutoResize * Res ) = 0;
+    virtual HRESULT __stdcall put_AutoResize (
+        enum sgAutoResize Res ) = 0;
+    virtual HRESULT __stdcall get_CellAsPicture (
+        long RowKey,
+        BSTR ColKey,
+        IPictureDisp * * Res ) = 0;
+    virtual HRESULT __stdcall get_OLEDragMode (
+        enum sgOLEDragMode * Res ) = 0;
+    virtual HRESULT __stdcall put_OLEDragMode (
+        enum sgOLEDragMode Res ) = 0;
+    virtual HRESULT __stdcall get_OLEDropMode (
+        enum sgOLEDropMode * Res ) = 0;
+    virtual HRESULT __stdcall put_OLEDropMode (
+        enum sgOLEDropMode Res ) = 0;
+    virtual HRESULT __stdcall get_Text (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall get_CellStyleConditions (
+        struct IsgStyleConditions * * Res ) = 0;
+    virtual HRESULT __stdcall get_RowFilters (
+        struct IsgFilters * * Res ) = 0;
+    virtual HRESULT __stdcall put_Caption (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_Caption (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall get_ScrollTipColumn (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_ScrollTipColumn (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_MaxRows (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_MaxRows (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_MaxColumns (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_MaxColumns (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_CurrentCell (
+        struct IsgCell * * Res ) = 0;
+    virtual HRESULT __stdcall get_FrozenColCount (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_FrozenRowCount (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_NewRowPos (
+        enum sgNewRowPos * Res ) = 0;
+    virtual HRESULT __stdcall put_NewRowPos (
+        enum sgNewRowPos Res ) = 0;
+    virtual HRESULT __stdcall get_BOF (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_EOF (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_SimpleDataSource (
+        struct IsgGridDataSource * * Res ) = 0;
+    virtual HRESULT __stdcall putref_SimpleDataSource (
+        struct IsgGridDataSource * Res ) = 0;
+    virtual HRESULT __stdcall put_CustomBkgDraw (
+        enum sgCustomDrawStage Res ) = 0;
+    virtual HRESULT __stdcall get_CustomBkgDraw (
+        enum sgCustomDrawStage * Res ) = 0;
+    virtual HRESULT __stdcall putref_PaintObject (
+        struct IsgGridCustomDraw * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_AutoGroup (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_AutoGroup (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_AutoResizeHeadings (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_AutoResizeHeadings (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_GroupByBoxVisible (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_GroupByBoxVisible (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_GroupByBoxText (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_GroupByBoxText (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_AlphaBlendEnabled (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_AlphaBlendEnabled (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_DragAlphaLevel (
+        short * Res ) = 0;
+    virtual HRESULT __stdcall put_DragAlphaLevel (
+        short Res ) = 0;
+    virtual HRESULT __stdcall get_RowStyleConditions (
+        struct IsgStyleConditions * * Res ) = 0;
+    virtual HRESULT __stdcall get_AutoSearch (
+        enum sgAutoSearch * Res ) = 0;
+    virtual HRESULT __stdcall put_AutoSearch (
+        enum sgAutoSearch Res ) = 0;
+    virtual HRESULT __stdcall get_AutoSearchDelay (
+        short * Res ) = 0;
+    virtual HRESULT __stdcall put_AutoSearchDelay (
+        short Res ) = 0;
+    virtual HRESULT __stdcall get_Reserved1 (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_Reserved2 (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_EditText (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_EditText (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_Reserved6 (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_Reserved6 (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_Reserved7 (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_Reserved7 (
+        long Res ) = 0;
+    virtual HRESULT __stdcall AboutBox ( ) = 0;
+    virtual HRESULT __stdcall ReBind ( ) = 0;
+    virtual HRESULT __stdcall RowBookmark (
+        long RowPosition,
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall RedrawRow (
+        long RowPosition ) = 0;
+    virtual HRESULT __stdcall RedrawCol (
+        long ColPosition ) = 0;
+    virtual HRESULT __stdcall Redraw (
+        enum sgGridRedrawCode GridSection ) = 0;
+    virtual HRESULT __stdcall Update ( ) = 0;
+    virtual HRESULT __stdcall KeyBookmark (
+        long RowKey,
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall RedrawCell (
+        long RowPosition,
+        long ColPosition ) = 0;
+    virtual HRESULT __stdcall Delete ( ) = 0;
+    virtual HRESULT __stdcall RefreshGroups (
+        enum sgExpand Expand ) = 0;
+    virtual HRESULT __stdcall ExpandAll (
+        short Levels ) = 0;
+    virtual HRESULT __stdcall ExpandRow (
+        long RowKey,
+        short Levels ) = 0;
+    virtual HRESULT __stdcall CollapseAll ( ) = 0;
+    virtual HRESULT __stdcall CollapseRow (
+        long RowKey ) = 0;
+    virtual HRESULT __stdcall Sort (
+        long RowPosStart,
+        long RowPosEnd,
+        SAFEARRAY * * parameters ) = 0;
+    virtual HRESULT __stdcall EnsureCellVisible (
+        long RowKey,
+        BSTR ColKey ) = 0;
+    virtual HRESULT __stdcall GetLayoutString (
+        enum sgLayoutFormat Format,
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall LoadLayoutFromFile (
+        BSTR FilePath,
+        enum sgLayoutFormat Format ) = 0;
+    virtual HRESULT __stdcall LoadLayoutFromURL (
+        BSTR FileURL,
+        enum sgLayoutFormat Format ) = 0;
+    virtual HRESULT __stdcall LoadLayoutString (
+        BSTR LayoutString,
+        enum sgLayoutFormat Format ) = 0;
+    virtual HRESULT __stdcall ExportData (
+        BSTR FilePath,
+        enum sgDataFormat DataFormat,
+        enum sgExportFlag Flags,
+        BSTR CellSeparator,
+        BSTR RowSeparator ) = 0;
+    virtual HRESULT __stdcall ExportDataString (
+        enum sgDataFormat DataFormat,
+        enum sgExportFlag Flags,
+        BSTR CellSeparator,
+        BSTR RowSeparator,
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall ImportData (
+        BSTR FilePath,
+        enum sgDataFormat DataFormat,
+        BSTR CellSeparator,
+        BSTR RowSeparator ) = 0;
+    virtual HRESULT __stdcall ImportDataString (
+        BSTR Data,
+        enum sgDataFormat DataFormat,
+        BSTR CellSeparator,
+        BSTR RowSeparator ) = 0;
+    virtual HRESULT __stdcall ExportHTML (
+        BSTR FilePath,
+        long FirstRowPos,
+        long RowCount,
+        enum sgExportFlag Flags,
+        BSTR HTMLTemplate ) = 0;
+    virtual HRESULT __stdcall ExportHTMLString (
+        long FirstRowPos,
+        long RowCount,
+        enum sgExportFlag Flags,
+        BSTR HTMLTemplate,
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall HitTest (
+        OLE_XPOS_CONTAINER X,
+        OLE_YPOS_CONTAINER Y,
+        enum sgGridHitTest * Res ) = 0;
+    virtual HRESULT __stdcall HitTestEx (
+        OLE_XPOS_CONTAINER X,
+        OLE_YPOS_CONTAINER Y,
+        long * RowKey,
+        BSTR * ColKey,
+        enum sgCellKind * CellKind,
+        enum sgGridHitTest * Res ) = 0;
+    virtual HRESULT __stdcall HitTestObject (
+        OLE_XPOS_CONTAINER X,
+        OLE_YPOS_CONTAINER Y,
+        VARIANT * TopMostObject,
+        enum sgGridHitTest * Res ) = 0;
+    virtual HRESULT __stdcall LoadAllRecords ( ) = 0;
+    virtual HRESULT __stdcall Scroll (
+        long RowCount,
+        long ColCount ) = 0;
+    virtual HRESULT __stdcall MoveFirst ( ) = 0;
+    virtual HRESULT __stdcall MoveLast ( ) = 0;
+    virtual HRESULT __stdcall MoveRelative (
+        long Rows,
+        VARIANT Bookmark ) = 0;
+    virtual HRESULT __stdcall MoveNext ( ) = 0;
+    virtual HRESULT __stdcall MovePrevious ( ) = 0;
+    virtual HRESULT __stdcall MoveToRowKey (
+        long RowKey ) = 0;
+    virtual HRESULT __stdcall CreateRange (
+        enum sgRangeType Type,
+        long Left,
+        long Top,
+        long Right,
+        long Bottom,
+        struct IsgRange * * Res ) = 0;
+    virtual HRESULT __stdcall RefetchRow (
+        long RowKey ) = 0;
+    virtual HRESULT __stdcall AutoSizeColumns (
+        long FirstColPos,
+        long LastColPos ) = 0;
+    virtual HRESULT __stdcall AutoSizeRows (
+        long FirstRowPos,
+        long LastRowPos ) = 0;
+    virtual HRESULT __stdcall OLEDrag ( ) = 0;
+    virtual HRESULT __stdcall LoadArray (
+        VARIANT Array,
+        long RowDim,
+        long ColDim,
+        long PageDim,
+        long CurrPage ) = 0;
+    virtual HRESULT __stdcall PostMessage (
+        long MessageID,
+        VARIANT Data1,
+        VARIANT Data2 ) = 0;
+    virtual HRESULT __stdcall CancelEdit ( ) = 0;
+    virtual HRESULT __stdcall ReservedM2 ( ) = 0;
+    virtual HRESULT __stdcall ReservedM3 ( ) = 0;
+    virtual HRESULT __stdcall ReservedM4 ( ) = 0;
+    virtual HRESULT __stdcall ReservedM5 ( ) = 0;
+};
+
+enum sgTabKeyBehavior
+{
+    sgTabControls = 0,
+    sgTabColumns = 1,
+    sgTabRows = 2
+};
+
+enum sgEnterKeyBehavior
+{
+    sgEnterKeyDefault = 0,
+    sgEnterKeyColumns = 1,
+    sgEnterKeyRows = 2
+};
+
+enum sgGridBorderStyle
+{
+    sgNone = 0,
+    sgFixed = 1
+};
+
+enum sgScrollBar
+{
+    sgSBNone = 0,
+    sgSBVertical = 1,
+    sgSBHorizontal = 2,
+    sgSBAll = 3
+};
+
+enum sgScrollBarMode
+{
+    sgSBRegularMode = 0,
+    sgSBEncartaMode = 1,
+    sgSBFlatMode = 2
+};
+
+enum sgScrollTip
+{
+    sgScrollTipsNone = 0,
+    sgScrollTipsHorizontal = 1,
+    sgScrollTipsVertical = 2,
+    sgScrollTipsBoth = 3
+};
+
+enum sgAlignment
+{
+    sgAlignGeneral = 0,
+    sgAlignLeftTop = 1,
+    sgAlignCenterTop = 2,
+    sgAlignRightTop = 3,
+    sgAlignLeftCenter = 4,
+    sgAlignCenterCenter = 5,
+    sgAlignRightCenter = 6,
+    sgAlignLeftBottom = 7,
+    sgAlignCenterBottom = 8,
+    sgAlignRightBottom = 9
+};
+
+enum sgEllipsis
+{
+    sgNoEllipsis = 0,
+    sgEllipsisEnd = 1,
+    sgEllipsisPath = 2
+};
+
+enum sgGridLineStyle
+{
+    sgGridLineNone = 0,
+    sgGridLineFlat = 1,
+    sgGridLineInset = 2,
+    sgGridLineRaised = 3,
+    sgGridLineFlatHorz = 4,
+    sgGridLineInsetHorz = 5,
+    sgGridLineRaisedHorz = 6,
+    sgGridLineFlatVert = 7,
+    sgGridLineInsetVert = 8,
+    sgGridLineRaisedVert = 9
+};
+
+enum sgEvenOddStyle
+{
+    sgNoEvenOdd = 0,
+    sgEvenOddRows = 1,
+    sgEvenOddCols = 2,
+    sgEvenOddBoth = 3
+};
+
+enum sgResizeAnimation
+{
+    sgNoResizeAnimation = 0,
+    sgAnimateHeadings = 1,
+    sgAnimateRowsColumns = 2
+};
+
+enum sgUserResizing
+{
+    sgNoUserResizing = 0,
+    sgAllowRowResizing = 1,
+    sgAllowColResizing = 2,
+    sgAllowRowColResizing = 3
+};
+
+enum sgUserRowColDrag
+{
+    sgNoRowColDrag = 0,
+    sgAllowRowDrag = 1,
+    sgAllowColDrag = 2,
+    sgAllowRowColDrag = 3
+};
+
+enum sgUserRowColHide
+{
+    sgNoRowColHide = 0,
+    sgAllowRowHide = 1,
+    sgAllowColHide = 2,
+    sgAllowRowColHide = 3
+};
+
+enum sgCellBkgStyle
+{
+    sgCellBkgNone = 0,
+    sgCellBkgSolid = 1,
+    sgCellBkgBDiagonal = 2,
+    sgCellBkgFDiagonal = 3,
+    sgCellBkgCross = 4,
+    sgCellBkgDiagCross = 5,
+    sgCellBkgHorizontal = 6,
+    sgCellBkgVertical = 7,
+    sgCellBkgGradientVertical = 8,
+    sgCellBkgGradientHorizontal = 9
+};
+
+enum sgFocusRect
+{
+    sgFocusRectNone = 0,
+    sgFocusRectDotted = 1,
+    sgFocusRectSolid = 2,
+    sgFocusRectOwnerDraw = 3
+};
+
+enum sgNavigationWrapMode
+{
+    sgNavigationWrapNone = 0,
+    sgNavigationWrapNext = 1,
+    sgNavigationWrapSame = 2
+};
+
+enum sgDataMode
+{
+    sgBound = 0,
+    sgUnbound = 1,
+    sgVirtualEvents = 2,
+    sgVirtualInterface = 3
+};
+
+struct __declspec(uuid("f0a68cb1-9109-11d2-8ebb-008048e27a77"))
+IsgColumns : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Index,
+        struct IsgColumn * * Res ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * Res ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_Current (
+        struct IsgColumn * * Res ) = 0;
+    virtual HRESULT __stdcall get_First (
+        struct IsgColumn * * Res ) = 0;
+    virtual HRESULT __stdcall get_Last (
+        struct IsgColumn * * Res ) = 0;
+    virtual HRESULT __stdcall At (
+        long Position,
+        struct IsgColumn * * Ret ) = 0;
+    virtual HRESULT __stdcall Add (
+        BSTR ColumnKey,
+        struct IsgColumn * * Ret ) = 0;
+    virtual HRESULT __stdcall InsertAt (
+        long Position,
+        BSTR ColumnKey,
+        struct IsgColumn * * Ret ) = 0;
+    virtual HRESULT __stdcall Remove (
+        VARIANT Index ) = 0;
+    virtual HRESULT __stdcall RemoveAt (
+        long Position ) = 0;
+    virtual HRESULT __stdcall RemoveAll (
+        VARIANT_BOOL RemoveHeading ) = 0;
+    virtual HRESULT __stdcall SetDefinition (
+        BSTR XMLDefinition ) = 0;
+    virtual HRESULT __stdcall GetDefinition (
+        BSTR * Res ) = 0;
+};
+
+struct __declspec(uuid("f0a68cb0-9109-11d2-8ebb-008048e27a77"))
+IsgColumn : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall put_Key (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_Key (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_Position (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_Position (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_Caption (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_Caption (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_Hidden (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_Hidden (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_Width (
+        OLE_XSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_Width (
+        OLE_XSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_Heading (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_DBIndex (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_DBField (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_DBField (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall get_Style (
+        struct IsgStyle * * Res ) = 0;
+    virtual HRESULT __stdcall get_DataChanged (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_DataWidth (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_DataWidth (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_ReadOnly (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_ReadOnly (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_AllowSizing (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_AllowSizing (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_ValueItems (
+        struct IsgValueItems * * Res ) = 0;
+    virtual HRESULT __stdcall get_Control (
+        struct IsgControl * * Res ) = 0;
+    virtual HRESULT __stdcall get_ColIndex (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_AllowFocus (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_AllowFocus (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_DefaultValue (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_DefaultValue (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall get_HeadingStyle (
+        struct IsgStyle * * Res ) = 0;
+    virtual HRESULT __stdcall get_Left (
+        OLE_XPOS_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_Right (
+        OLE_XPOS_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_HeadingPicture (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_HeadingPicture (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_DataType (
+        enum sgDataType Res ) = 0;
+    virtual HRESULT __stdcall get_DataType (
+        enum sgDataType * Res ) = 0;
+    virtual HRESULT __stdcall put_SortOrder (
+        enum sgSortOrder Res ) = 0;
+    virtual HRESULT __stdcall get_SortOrder (
+        enum sgSortOrder * Res ) = 0;
+    virtual HRESULT __stdcall put_SortType (
+        enum sgSortType Res ) = 0;
+    virtual HRESULT __stdcall get_SortType (
+        enum sgSortType * Res ) = 0;
+    virtual HRESULT __stdcall get_StyleConditions (
+        struct IsgStyleConditions * * Res ) = 0;
+    virtual HRESULT __stdcall get_FetchCellStyle (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_FetchCellStyle (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_Frozen (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_Frozen (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_MergeCells (
+        enum sgCellMerge * Res ) = 0;
+    virtual HRESULT __stdcall put_MergeCells (
+        enum sgCellMerge Res ) = 0;
+    virtual HRESULT __stdcall get_BaseTableName (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall get_BaseColumnName (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_EditMask (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_EditMask (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_EditMaskDataMode (
+        enum sgMaskDataMode Res ) = 0;
+    virtual HRESULT __stdcall get_EditMaskDataMode (
+        enum sgMaskDataMode * Res ) = 0;
+    virtual HRESULT __stdcall Redraw ( ) = 0;
+    virtual HRESULT __stdcall SetDefinition (
+        BSTR XMLDefinition ) = 0;
+    virtual HRESULT __stdcall GetDefinition (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall AutoSize ( ) = 0;
+};
+
+struct __declspec(uuid("ea2ce601-9388-11d2-8ec1-008048e27a77"))
+IsgStyle : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Value (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_Value (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Name (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_BaseStyle (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_BaseStyle (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_Font (
+        IFontDisp * Res ) = 0;
+    virtual HRESULT __stdcall putref_Font (
+        IFontDisp * Res ) = 0;
+    virtual HRESULT __stdcall get_Font (
+        IFontDisp * * Res ) = 0;
+    virtual HRESULT __stdcall put_BackColor (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_BackColor (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall put_ForeColor (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_ForeColor (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall put_TextAlignment (
+        enum sgAlignment Res ) = 0;
+    virtual HRESULT __stdcall get_TextAlignment (
+        enum sgAlignment * Res ) = 0;
+    virtual HRESULT __stdcall put_WordWrap (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_WordWrap (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_Ellipsis (
+        enum sgEllipsis Res ) = 0;
+    virtual HRESULT __stdcall get_Ellipsis (
+        enum sgEllipsis * Res ) = 0;
+    virtual HRESULT __stdcall put_Padding (
+        OLE_XSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_Padding (
+        OLE_XSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall put_BorderSize (
+        OLE_XSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_BorderSize (
+        OLE_XSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall put_BorderStyle (
+        enum sgCellBorderStyle Res ) = 0;
+    virtual HRESULT __stdcall get_BorderStyle (
+        enum sgCellBorderStyle * Res ) = 0;
+    virtual HRESULT __stdcall put_BkgStyle (
+        enum sgCellBkgStyle Res ) = 0;
+    virtual HRESULT __stdcall get_BkgStyle (
+        enum sgCellBkgStyle * Res ) = 0;
+    virtual HRESULT __stdcall put_BorderColor (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_BorderColor (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall put_Format (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_Format (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall Reset ( ) = 0;
+    virtual HRESULT __stdcall CopyFrom (
+        VARIANT Rhs ) = 0;
+    virtual HRESULT __stdcall put_Appearance (
+        enum sgAppearance Res ) = 0;
+    virtual HRESULT __stdcall get_Appearance (
+        enum sgAppearance * Res ) = 0;
+    virtual HRESULT __stdcall put_PictureAlignment (
+        enum sgPicAlignment Res ) = 0;
+    virtual HRESULT __stdcall get_PictureAlignment (
+        enum sgPicAlignment * Res ) = 0;
+    virtual HRESULT __stdcall put_DisplayType (
+        enum sgDisplayType Res ) = 0;
+    virtual HRESULT __stdcall get_DisplayType (
+        enum sgDisplayType * Res ) = 0;
+    virtual HRESULT __stdcall put_Borders (
+        enum sgCellBorder Res ) = 0;
+    virtual HRESULT __stdcall get_Borders (
+        enum sgCellBorder * Res ) = 0;
+    virtual HRESULT __stdcall put_CustomDraw (
+        enum sgCustomDrawStage Res ) = 0;
+    virtual HRESULT __stdcall get_CustomDraw (
+        enum sgCustomDrawStage * Res ) = 0;
+    virtual HRESULT __stdcall put_AlphaLevel (
+        enum sgAlphaBlendElement Element,
+        short Res ) = 0;
+    virtual HRESULT __stdcall get_AlphaLevel (
+        enum sgAlphaBlendElement Element,
+        short * Res ) = 0;
+    virtual HRESULT __stdcall put_MousePointer (
+        enum sgMousePointer Res ) = 0;
+    virtual HRESULT __stdcall get_MousePointer (
+        enum sgMousePointer * Res ) = 0;
+    virtual HRESULT __stdcall putref_MouseIcon (
+        IPictureDisp * Res ) = 0;
+    virtual HRESULT __stdcall get_MouseIcon (
+        IPictureDisp * * Res ) = 0;
+    virtual HRESULT __stdcall putref_BkgPicture (
+        IPictureDisp * Res ) = 0;
+    virtual HRESULT __stdcall get_BkgPicture (
+        IPictureDisp * * Res ) = 0;
+    virtual HRESULT __stdcall put_BkgPictureAlignment (
+        enum sgPicAlignment Res ) = 0;
+    virtual HRESULT __stdcall get_BkgPictureAlignment (
+        enum sgPicAlignment * Res ) = 0;
+    virtual HRESULT __stdcall put_BackColor2 (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_BackColor2 (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall put_HighlightColor (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_HighlightColor (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall put_ShadowColor (
+        OLE_COLOR Res ) = 0;
+    virtual HRESULT __stdcall get_ShadowColor (
+        OLE_COLOR * Res ) = 0;
+    virtual HRESULT __stdcall SetDefinition (
+        BSTR XMLDefinition ) = 0;
+    virtual HRESULT __stdcall GetDefinition (
+        BSTR * Res ) = 0;
+};
+
+enum sgCellBorderStyle
+{
+    sgCellBorderSolid = 1,
+    sgCellBorderDotted = 2,
+    sgCellBorderDashed = 3
+};
+
+enum sgAppearance
+{
+    sgFlat = 0,
+    sg3D = 1,
+    sg3DLight = 2
+};
+
+enum sgPicAlignment
+{
+    sgPicAlignLeftTop = 0,
+    sgPicAlignCenterTop = 1,
+    sgPicAlignRightTop = 2,
+    sgPicAlignLeftCenter = 3,
+    sgPicAlignCenterCenter = 4,
+    sgPicAlignRightCenter = 5,
+    sgPicAlignLeftBottom = 6,
+    sgPicAlignCenterBottom = 7,
+    sgPicAlignRightBottom = 8,
+    sgPicAlignStretch = 9,
+    sgPicAlignTile = 10
+};
+
+enum sgDisplayType
+{
+    sgDisplayText = 0,
+    sgDisplayTextAndPicture = 1,
+    sgDisplayPicture = 2,
+    sgProgressBar = 3
+};
+
+enum sgCellBorder
+{
+    sgCellNoBorder = 0,
+    sgCellBorderLeft = 1,
+    sgCellBorderTop = 2,
+    sgCellBorderRight = 4,
+    sgCellBorderBottom = 8,
+    sgCellBorderAll = 15
+};
+
+enum sgCustomDrawStage
+{
+    sgNoCustomDraw = 0,
+    sgDrawBeforeGridBkg = 1,
+    sgDrawAfterGridBkg = 2,
+    sgDrawBeforeGridCaption = 3,
+    sgDrawAfterGridCaption = 4,
+    sgDrawBeforeGridCorner = 5,
+    sgDrawAfterGridCorner = 6,
+    sgDrawBeforePreviewPaneSplitter = 7,
+    sgDrawAfterPreviewPaneSplitter = 8,
+    sgDrawBeforeFocusRect = 9,
+    sgDrawAfterFocusRect = 10,
+    sgDrawBeforeCellBorder = 11,
+    sgDrawAfterCellBorder = 12,
+    sgDrawBeforeCellBkg = 13,
+    sgDrawAfterCellBkg = 14,
+    sgDrawBeforeCellButton = 15,
+    sgDrawAfterCellButton = 16,
+    sgDrawBeforeCellBkgPicture = 17,
+    sgDrawAfterCellBkgPicture = 18,
+    sgDrawBeforeCellContent = 19,
+    sgDrawAfterCellContent = 20
+};
+
+enum sgAlphaBlendElement
+{
+    sgAlphaBorder = 1,
+    sgAlphaBackground = 2,
+    sgAlphaBackgroundPicture = 3,
+    sgAlphaContent = 4
+};
+
+enum sgMousePointer
+{
+    sgMPDefault = 0,
+    sgMPArrow = 1,
+    sgMPCross = 2,
+    sgMPIbeam = 3,
+    sgMPIcon = 4,
+    sgMPSize = 5,
+    sgMPSizeNESW = 6,
+    sgMPSizeNS = 7,
+    sgMPSizeNWSE = 8,
+    sgMPSizeEW = 9,
+    sgMPUpArrow = 10,
+    sgMPHourglass = 11,
+    sgMPNoDrop = 12,
+    sgMPArrowHourglass = 13,
+    sgMPArrowQuestion = 14,
+    sgMPSizeAll = 15,
+    sgMPHand = 16,
+    sgMPCustom = 99
+};
+
+struct __declspec(uuid("240e3c91-c2a4-11d2-8eff-008048e27a77"))
+IsgValueItems : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * Res ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long Index,
+        struct IsgValueItem * * Res ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_Default (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_Default (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_Translate (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_Translate (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_LimitToList (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_LimitToList (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_ValueItem (
+        VARIANT DataValue,
+        struct IsgValueItem * * Res ) = 0;
+    virtual HRESULT __stdcall get_DisplayItem (
+        VARIANT DisplayValue,
+        struct IsgValueItem * * Res ) = 0;
+    virtual HRESULT __stdcall put_CycleOnClick (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_CycleOnClick (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall Add (
+        VARIANT DataValue,
+        VARIANT DisplayValue,
+        VARIANT DisplayPicture ) = 0;
+    virtual HRESULT __stdcall Remove (
+        long Index ) = 0;
+    virtual HRESULT __stdcall RemoveAll ( ) = 0;
+};
+
+struct __declspec(uuid("240e3c90-c2a4-11d2-8eff-008048e27a77"))
+IsgValueItem : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Value (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall get_DisplayValue (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall get_DisplayPicture (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall get_Index (
+        long * Res ) = 0;
+};
+
+struct __declspec(uuid("1df77b30-c735-11d2-8f0d-008048e27a77"))
+IsgControl : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Window (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall put_Type (
+        enum sgCellEditorType Res ) = 0;
+    virtual HRESULT __stdcall get_Type (
+        enum sgCellEditorType * Res ) = 0;
+    virtual HRESULT __stdcall get_PopupStyle (
+        struct IsgStyle * * Res ) = 0;
+    virtual HRESULT __stdcall put_Width (
+        OLE_XSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_Width (
+        OLE_XSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall put_Height (
+        OLE_YSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_Height (
+        OLE_YSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall put_AutoOpen (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_AutoOpen (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_ButtonAlignment (
+        enum sgButtonAlignment Res ) = 0;
+    virtual HRESULT __stdcall get_ButtonAlignment (
+        enum sgButtonAlignment * Res ) = 0;
+    virtual HRESULT __stdcall put_PopupAlignment (
+        enum sgPopupAlignment Res ) = 0;
+    virtual HRESULT __stdcall get_PopupAlignment (
+        enum sgPopupAlignment * Res ) = 0;
+    virtual HRESULT __stdcall put_ShowButton (
+        enum sgShowButton Res ) = 0;
+    virtual HRESULT __stdcall get_ShowButton (
+        enum sgShowButton * Res ) = 0;
+    virtual HRESULT __stdcall put_ButtonPicture (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_ButtonPicture (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_SortOrder (
+        enum sgSortOrder Res ) = 0;
+    virtual HRESULT __stdcall get_SortOrder (
+        enum sgSortOrder * Res ) = 0;
+    virtual HRESULT __stdcall put_ItemHeight (
+        enum sgItemHeight Res ) = 0;
+    virtual HRESULT __stdcall get_ItemHeight (
+        enum sgItemHeight * Res ) = 0;
+    virtual HRESULT __stdcall get_DroppedDown (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_PopupRows (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_PopupRows (
+        long * Res ) = 0;
+};
+
+enum sgCellEditorType
+{
+    sgCellGeneral = 0,
+    sgCellTextBox = 1,
+    sgCellCheckBox = 2,
+    sgCellDropDown = 3,
+    sgCellDropList = 4
+};
+
+enum sgButtonAlignment
+{
+    sgButtonLeft = 0,
+    sgButtonRight = 1
+};
+
+enum sgPopupAlignment
+{
+    sgPopupLeft = 0,
+    sgPopupRight = 1
+};
+
+enum sgShowButton
+{
+    sgHideButton = 0,
+    sgShowButtonFocused = 1,
+    sgShowButtonAlways = 2
+};
+
+enum sgSortOrder
+{
+    sgNoSorting = 0,
+    sgSortAscending = 1,
+    sgSortDescending = 2
+};
+
+enum sgItemHeight
+{
+    sgItemHeightFixed = -1,
+    sgItemHeightVariable = -2
+};
+
+enum sgDataType
+{
+    sgtEmpty = 0,
+    sgtShort = 2,
+    sgtLong = 3,
+    sgtFloat = 4,
+    sgtDouble = 5,
+    sgtCurrency = 6,
+    sgtDateTime = 7,
+    sgtString = 8,
+    sgtBoolean = 11,
+    sgtDecimal = 14,
+    sgtByte = 17,
+    sgtBinary = 65
+};
+
+enum sgSortType
+{
+    sgSortTypeDefault = 0,
+    sgSortTypeCustom = 1,
+    sgSortTypeNumber = 2,
+    sgSortTypeString = 3,
+    sgSortTypeNoCaseString = 4,
+    sgSortTypeDateTime = 5
+};
+
+struct __declspec(uuid("28d20e73-4f3a-11d3-b75c-008048e27a77"))
+IsgStyleConditions : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long Index,
+        struct IsgStyleCondition * * Res ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * Res ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall Add (
+        BSTR StyleName,
+        enum sgConditionValueSource ValueSource,
+        enum sgOperator Op,
+        VARIANT Val1,
+        VARIANT Val2,
+        VARIANT ColKey,
+        struct IsgStyleCondition * * Res ) = 0;
+    virtual HRESULT __stdcall Remove (
+        long Index ) = 0;
+    virtual HRESULT __stdcall RemoveAll ( ) = 0;
+    virtual HRESULT __stdcall SetDefinition (
+        BSTR XMLDefinition ) = 0;
+    virtual HRESULT __stdcall GetDefinition (
+        BSTR * Res ) = 0;
+};
+
+struct __declspec(uuid("28d20e72-4f3a-11d3-b75c-008048e27a77"))
+IsgStyleCondition : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Index (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_StyleName (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall get_ValueSource (
+        enum sgConditionValueSource * Res ) = 0;
+    virtual HRESULT __stdcall get_Condition (
+        struct IsgCondition * * Res ) = 0;
+    virtual HRESULT __stdcall get_ConditionColKey (
+        BSTR * Res ) = 0;
+};
+
+enum sgConditionValueSource
+{
+    sgConditionCellValue = 0,
+    sgConditionCellStatus = 1,
+    sgConditionColPosition = 2,
+    sgConditionColIndex = 3,
+    sgConditionColKey = 4,
+    sgConditionRowPosition = 5,
+    sgConditionRowKey = 6,
+    sgConditionRowBookmark = 7,
+    sgConditionRowStatus = 8
+};
+
+struct __declspec(uuid("86f749d2-360f-11d3-b736-008048e27a77"))
+IsgCondition : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall put_Operator (
+        enum sgOperator Res ) = 0;
+    virtual HRESULT __stdcall get_Operator (
+        enum sgOperator * Res ) = 0;
+    virtual HRESULT __stdcall put_Value1 (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_Value1 (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_Value2 (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_Value2 (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_CaseSensitive (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_CaseSensitive (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall Set (
+        enum sgOperator Op,
+        VARIANT Val1,
+        VARIANT Val2,
+        VARIANT_BOOL CaseSensitive ) = 0;
+    virtual HRESULT __stdcall SetDefinition (
+        BSTR XMLDefinition ) = 0;
+    virtual HRESULT __stdcall GetDefinition (
+        BSTR * Res ) = 0;
+};
+
+enum sgOperator
+{
+    sgOpFalse = 0,
+    sgOpTrue = 1,
+    sgOpLessThan = 2,
+    sgOpLessThanOrEqual = 3,
+    sgOpGreaterThan = 4,
+    sgOpGreaterThanOrEqual = 5,
+    sgOpEqual = 6,
+    sgOpBetween = 7,
+    sgOpContains = 8,
+    sgOpRegEx = 9,
+    sgOpCallback = 10,
+    sgOpNot = 16384
+};
+
+enum sgCellMerge
+{
+    sgMergeNone = 0,
+    sgMergeFree = 1
+};
+
+enum sgMaskDataMode
+{
+    sgMaskModeInput = 0,
+    sgMaskModeSaveAll = 1,
+    sgMaskModeIncludeLiterals = 2,
+    sgMaskModeIncludePrompt = 3
+};
+
+struct __declspec(uuid("ea2ce602-9388-11d2-8ec1-008048e27a77"))
+IsgStyles : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        BSTR StyleName,
+        struct IsgStyle * * Res ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * Res ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall Add (
+        BSTR StyleName,
+        struct IsgStyle * * Ret ) = 0;
+    virtual HRESULT __stdcall Remove (
+        BSTR StyleName ) = 0;
+    virtual HRESULT __stdcall RemoveAll ( ) = 0;
+    virtual HRESULT __stdcall Contains (
+        BSTR StyleName,
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall CopyFrom (
+        struct IsgStyles * newStyles ) = 0;
+    virtual HRESULT __stdcall RemoveCustom ( ) = 0;
+    virtual HRESULT __stdcall SetDefinition (
+        BSTR XMLDefinition ) = 0;
+    virtual HRESULT __stdcall GetDefinition (
+        BSTR * Res ) = 0;
+};
+
+struct __declspec(uuid("a7542960-a71e-11d2-8ed4-008048e27a77"))
+IsgArray : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall put_Value (
+        long Row,
+        long Col,
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_Value (
+        long Row,
+        long Col,
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall get_RowCount (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_ColCount (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall Get (
+        long Row,
+        long Col,
+        VARIANT * Val ) = 0;
+    virtual HRESULT __stdcall Set (
+        long Row,
+        long Col,
+        VARIANT * Val ) = 0;
+};
+
+struct __declspec(uuid("9f6aa700-d188-11cd-ad48-00aa003c9cb6"))
+IRowCursor : IDispatch
+{};
+
+enum sgSelectionMode
+{
+    sgSelectionNone = 0,
+    sgSelectionFree = 1,
+    sgSelectionByRow = 2,
+    sgSelectionByColumn = 3,
+    sgSelectionByRowAndColumn = 4,
+    sgSelectionModeAll = 5
+};
+
+enum sgMultiSelect
+{
+    sgMultiSelectNone = 0,
+    sgMultiSelectSimple = 1,
+    sgMultiSelectExtended = 2
+};
+
+struct __declspec(uuid("d96465d4-db03-11d2-8f2c-008048e27a77"))
+IsgSelection : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Style (
+        struct IsgStyle * * Res ) = 0;
+    virtual HRESULT __stdcall get_Ranges (
+        struct IsgRanges * * Res ) = 0;
+    virtual HRESULT __stdcall put_SelectionMode (
+        enum sgSelectionMode Res ) = 0;
+    virtual HRESULT __stdcall get_SelectionMode (
+        enum sgSelectionMode * Res ) = 0;
+    virtual HRESULT __stdcall put_MultiSelect (
+        enum sgMultiSelect Res ) = 0;
+    virtual HRESULT __stdcall get_MultiSelect (
+        enum sgMultiSelect * Res ) = 0;
+    virtual HRESULT __stdcall Clear ( ) = 0;
+    virtual HRESULT __stdcall SelectAll ( ) = 0;
+    virtual HRESULT __stdcall IsEmpty (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall IsRowSelected (
+        long RowPosition,
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall IsColSelected (
+        long ColPosition,
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall IsCellSelected (
+        long RowPosition,
+        long ColPosition,
+        VARIANT_BOOL * Res ) = 0;
+};
+
+struct __declspec(uuid("d96465d2-db03-11d2-8f2c-008048e27a77"))
+IsgRanges : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Index,
+        struct IsgRange * * Res ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * Res ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall Add (
+        enum sgRangeType Type,
+        long Left,
+        long Top,
+        long Right,
+        long Bottom,
+        struct IsgRange * * Res ) = 0;
+    virtual HRESULT __stdcall Remove (
+        VARIANT Index ) = 0;
+    virtual HRESULT __stdcall RemoveAll ( ) = 0;
+};
+
+struct __declspec(uuid("d96465d0-db03-11d2-8f2c-008048e27a77"))
+IsgRange : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Type (
+        enum sgRangeType * Res ) = 0;
+    virtual HRESULT __stdcall put_Name (
+        BSTR Rhs ) = 0;
+    virtual HRESULT __stdcall get_Name (
+        BSTR * Rhs ) = 0;
+    virtual HRESULT __stdcall get_LeftCol (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_RightCol (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_TopRow (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_BottomRow (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall Redraw ( ) = 0;
+    virtual HRESULT __stdcall ApplyStyle (
+        VARIANT Style ) = 0;
+    virtual HRESULT __stdcall SetData (
+        BSTR Data,
+        enum sgDataFormat Format,
+        BSTR CellSeparator,
+        BSTR RowSeparator ) = 0;
+    virtual HRESULT __stdcall GetData (
+        enum sgDataFormat Format,
+        enum sgExportFlag Flags,
+        BSTR CellSeparator,
+        BSTR RowSeparator,
+        BSTR * Res ) = 0;
+};
+
+enum sgRangeType
+{
+    sgRangeFree = 0,
+    sgRangeRow = 1,
+    sgRangeColumn = 2
+};
+
+enum sgDataFormat
+{
+    sgFormatXML = 1,
+    sgFormatCharSeparatedValue = 2
+};
+
+enum sgExportFlag
+{
+    sgExportDefault = 0,
+    sgExportCurrentRowOnly = 1,
+    sgExportFieldNames = 2,
+    sgExportRowsOnly = 4,
+    sgExportHidden = 8,
+    sgExportOverwrite = 16,
+    sgExportAppend = 32
+};
+
+struct __declspec(uuid("acae77f1-e214-11d2-8f41-008048e27a77"))
+IsgRows : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long RowKey,
+        struct IsgRow * * Res ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * Res ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_Current (
+        struct IsgRow * * Res ) = 0;
+    virtual HRESULT __stdcall get_First (
+        struct IsgRow * * Res ) = 0;
+    virtual HRESULT __stdcall get_Last (
+        struct IsgRow * * Res ) = 0;
+    virtual HRESULT __stdcall At (
+        long Position,
+        struct IsgRow * * Ret ) = 0;
+    virtual HRESULT __stdcall Add (
+        enum sgDataFormat Format,
+        BSTR RowData,
+        BSTR CellSeparator ) = 0;
+    virtual HRESULT __stdcall InsertAt (
+        long RowPos,
+        enum sgDataFormat Format,
+        BSTR RowData,
+        BSTR CellSeparator ) = 0;
+    virtual HRESULT __stdcall Remove (
+        long RowKey ) = 0;
+    virtual HRESULT __stdcall Find (
+        BSTR ColKey,
+        enum sgOperator Op,
+        VARIANT Val1,
+        VARIANT Val2,
+        long StartRowPos,
+        long Direction,
+        enum sgSearchFlag SearchFlags,
+        struct IsgRow * * Res ) = 0;
+    virtual HRESULT __stdcall FindTag (
+        enum sgOperator Op,
+        VARIANT Val1,
+        VARIANT Val2,
+        long StartRowPos,
+        long Direction,
+        struct IsgRow * * Res ) = 0;
+    virtual HRESULT __stdcall RemoveAt (
+        long Position ) = 0;
+    virtual HRESULT __stdcall RemoveAll (
+        VARIANT_BOOL RemoveHeading ) = 0;
+};
+
+struct __declspec(uuid("acae77f0-e214-11d2-8f41-008048e27a77"))
+IsgRow : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall put_Bookmark (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_Bookmark (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_Tag (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_Tag (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_Position (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_Position (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_Hidden (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_Hidden (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_Height (
+        OLE_YSIZE_CONTAINER Res ) = 0;
+    virtual HRESULT __stdcall get_Height (
+        OLE_YSIZE_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_Heading (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_Style (
+        struct IsgStyle * * Res ) = 0;
+    virtual HRESULT __stdcall put_AllowSizing (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_AllowSizing (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_OutlineLevel (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_Key (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_AllowFocus (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_AllowFocus (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_Top (
+        OLE_YPOS_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_Bottom (
+        OLE_YPOS_CONTAINER * Res ) = 0;
+    virtual HRESULT __stdcall get_Visible (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_Type (
+        enum sgRowType * Res ) = 0;
+    virtual HRESULT __stdcall get_GroupHeading (
+        struct IsgGroupHeading * * Res ) = 0;
+    virtual HRESULT __stdcall get_DataIndex (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_Cells (
+        struct IsgCells * * Res ) = 0;
+    virtual HRESULT __stdcall get_Status (
+        enum sgRowStatus * Res ) = 0;
+    virtual HRESULT __stdcall get_Frozen (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_Frozen (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_Parent (
+        struct IsgGroupHeading * * Res ) = 0;
+    virtual HRESULT __stdcall get_Expanded (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall SetData (
+        enum sgDataFormat Format,
+        BSTR RowData,
+        BSTR CellSeparator ) = 0;
+    virtual HRESULT __stdcall GetData (
+        enum sgDataFormat Format,
+        BSTR CellSeparator,
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall Redraw ( ) = 0;
+    virtual HRESULT __stdcall Expand (
+        short Levels ) = 0;
+    virtual HRESULT __stdcall Collapse ( ) = 0;
+    virtual HRESULT __stdcall AutoSize ( ) = 0;
+};
+
+enum sgRowType
+{
+    sgSimpleRow = 0,
+    sgGroupHeader = 1,
+    sgGroupFooter = 2
+};
+
+struct __declspec(uuid("35b30f02-3496-11d3-b734-008048e27a77"))
+IsgGroupHeading : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Row (
+        struct IsgRow * * Res ) = 0;
+    virtual HRESULT __stdcall get_Headings (
+        struct IsgGroupHeadings * * Res ) = 0;
+    virtual HRESULT __stdcall get_ChildRows (
+        struct IsgRowCollection * * Res ) = 0;
+    virtual HRESULT __stdcall get_CalculationsCount (
+        short * Res ) = 0;
+    virtual HRESULT __stdcall get_CalculationResult (
+        short CalcIndex,
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall get_GroupDef (
+        struct IsgGroup * * Res ) = 0;
+    virtual HRESULT __stdcall get_GroupingValue (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall get_Expanded (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall Expand (
+        short Levels ) = 0;
+    virtual HRESULT __stdcall Collapse ( ) = 0;
+};
+
+struct __declspec(uuid("35b30f03-3496-11d3-b734-008048e27a77"))
+IsgGroupHeadings : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long Index,
+        struct IsgGroupHeading * * Res ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * Res ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall RemoveGroup (
+        long RowKey ) = 0;
+};
+
+struct __declspec(uuid("49d306e2-3625-11d3-b736-008048e27a77"))
+IsgRowCollection : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long Index,
+        struct IsgRow * * Res ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * Res ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_First (
+        struct IsgRow * * Res ) = 0;
+    virtual HRESULT __stdcall get_Last (
+        struct IsgRow * * Res ) = 0;
+};
+
+struct __declspec(uuid("5483fe42-2a22-11d3-b729-008048e27a77"))
+IsgGroup : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall put_GroupingColumn (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_GroupingColumn (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall get_Index (
+        short * Res ) = 0;
+    virtual HRESULT __stdcall put_HeaderTextSource (
+        enum sgGroupHeaderText Res ) = 0;
+    virtual HRESULT __stdcall get_HeaderTextSource (
+        enum sgGroupHeaderText * Res ) = 0;
+    virtual HRESULT __stdcall put_HeaderCaption (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_HeaderCaption (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_HeaderFormula (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_HeaderFormula (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_PictureExpanded (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_PictureExpanded (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_PictureCollapsed (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_PictureCollapsed (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_FetchHeaderStyle (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_FetchHeaderStyle (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_FooterVisible (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_FooterVisible (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall put_FooterTextSource (
+        enum sgGroupFooterText Res ) = 0;
+    virtual HRESULT __stdcall get_FooterTextSource (
+        enum sgGroupFooterText * Res ) = 0;
+    virtual HRESULT __stdcall put_FooterCaption (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_FooterCaption (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_FooterFormula (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_FooterFormula (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_FetchFooterStyle (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_FetchFooterStyle (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_Calculations (
+        struct IsgCalculations * * Res ) = 0;
+};
+
+enum sgGroupHeaderText
+{
+    sgGrpHdrEmpty = 0,
+    sgGrpHdrColCaptionAndValue = 1,
+    sgGrpHdrCaptionAndValue = 2,
+    sgGrpHdrCaption = 3,
+    sgGrpHdrFormula = 4,
+    sgGrpHdrFireFetchText = 5
+};
+
+enum sgGroupFooterText
+{
+    sgGrpFooterEmpty = 0,
+    sgGrpFooterCaption = 1,
+    sgGrpFooterFormula = 2,
+    sgGrpFooterFireFetchText = 3
+};
+
+struct __declspec(uuid("5483fe48-2a22-11d3-b729-008048e27a77"))
+IsgCalculations : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        short Index,
+        struct IsgCalculation * * Res ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * Res ) = 0;
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall Add (
+        enum sgCalculationType Type,
+        BSTR CalcColumnKey,
+        VARIANT CondColumnKey,
+        VARIANT Op,
+        VARIANT Val1,
+        VARIANT Val2,
+        struct IsgCalculation * * Ret ) = 0;
+    virtual HRESULT __stdcall Remove (
+        short Index ) = 0;
+    virtual HRESULT __stdcall RemoveAll ( ) = 0;
+};
+
+struct __declspec(uuid("5483fe4a-2a22-11d3-b729-008048e27a77"))
+IsgCalculation : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Index (
+        short * Res ) = 0;
+    virtual HRESULT __stdcall put_Type (
+        enum sgCalculationType Res ) = 0;
+    virtual HRESULT __stdcall get_Type (
+        enum sgCalculationType * Res ) = 0;
+    virtual HRESULT __stdcall put_ValueColKey (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_ValueColKey (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_ConditionColKey (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_ConditionColKey (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall get_Condition (
+        struct IsgCondition * * Res ) = 0;
+    virtual HRESULT __stdcall put_ListSeparator (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_ListSeparator (
+        BSTR * Res ) = 0;
+};
+
+enum sgCalculationType
+{
+    sgCalcNone = 0,
+    sgCalcCount = 1,
+    sgCalcMaximum = 2,
+    sgCalcMinimum = 3,
+    sgCalcSum = 4,
+    sgCalcAverage = 5,
+    sgCalcList = 6
+};
+
+struct __declspec(uuid("28d20e75-4f3a-11d3-b75c-008048e27a77"))
+IsgCells : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long Position,
+        struct IsgCell * * Res ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * Res ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Res ) = 0;
+};
+
+enum sgRowStatus
+{
+    sgRowStatusNormal = 0,
+    sgRowStatusCurrent = 1,
+    sgRowStatusDataChanged = 2,
+    sgRowStatusFiltered = 4,
+    sgRowStatusHidden = 8,
+    sgRowStatusSelected = 16,
+    sgRowStatusReadOnly = 32,
+    sgRowStatusExpanded = 64
+};
+
+enum sgCellTip
+{
+    sgCellTipsNone = 0,
+    sgCellTipsStatic = 1,
+    sgCellTipsFloat = 2
+};
+
+enum sgSpecialMode
+{
+    sgModeNone = 0,
+    sgModeListBox = 1
+};
+
+struct __declspec(uuid("5483fe43-2a22-11d3-b729-008048e27a77"))
+IsgGroups : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        short Index,
+        struct IsgGroup * * Res ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * Res ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall Add (
+        VARIANT Column,
+        enum sgSortOrder SortOrder,
+        enum sgSortType SortType,
+        VARIANT_BOOL ShowFooter,
+        VARIANT_BOOL DoRefresh,
+        struct IsgGroup * * Res ) = 0;
+    virtual HRESULT __stdcall Remove (
+        short Index ) = 0;
+    virtual HRESULT __stdcall RemoveAll ( ) = 0;
+    virtual HRESULT __stdcall SetDefinition (
+        BSTR XMLDefinition ) = 0;
+    virtual HRESULT __stdcall GetDefinition (
+        BSTR * Res ) = 0;
+};
+
+enum sgOutlineLines
+{
+    sgNoOutlineLines = 0,
+    sgGroupLines = 1
+};
+
+enum sgPreviewPaneType
+{
+    sgNoPreviewPane = 0,
+    sgPreviewPaneDefault = 1
+};
+
+enum sgPreviewPanePosition
+{
+    sgPreviewPaneLeft = 0,
+    sgPreviewPaneTop = 1,
+    sgPreviewPaneRight = 2,
+    sgPreviewPaneBottom = 3
+};
+
+enum sgCellKind
+{
+    sgCellStandard = 0,
+    sgCellGroupHeader = 2,
+    sgCellGroupFooter = 3,
+    sgCellPreviewPane = 4,
+    sgCellGroupByBox = 5,
+    sgCellGroupByHeadingCell = 6
+};
+
+enum sgInactiveSelection
+{
+    sgHideSelection = 0,
+    sgShowAsInactive = 1,
+    sgShowAsNormal = 2
+};
+
+enum sgAutoResize
+{
+    sgNoAutoResize = 0,
+    sgAutoResizeColumns = 1,
+    sgAutoResizeRows = 2,
+    sgAutoResizeRowsAndColumns = 3
+};
+
+enum sgOLEDragMode
+{
+    sgOLEDragModeManual = 0,
+    sgOLEDragModeAutomatic = 1
+};
+
+enum sgOLEDropMode
+{
+    sgOLEDropModeNone = 0,
+    sgOLEDropModeManual = 1,
+    sgOLEDropModeAutomatic = 2
+};
+
+struct __declspec(uuid("cb0ef935-3104-4a0e-a5cb-42611d29a7c1"))
+IsgFilters : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Index,
+        struct IsgFilter * * Res ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * Res ) = 0;
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall get_FilterAction (
+        enum sgFilterAction * Res ) = 0;
+    virtual HRESULT __stdcall get_Expression (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_Expression (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall Apply (
+        enum sgFilterAction Action,
+        enum sgSearchFlag SearchFlags ) = 0;
+    virtual HRESULT __stdcall ClearMarkers (
+        enum sgFilterAction Action ) = 0;
+    virtual HRESULT __stdcall EnableAll ( ) = 0;
+    virtual HRESULT __stdcall DisableAll ( ) = 0;
+    virtual HRESULT __stdcall Add (
+        BSTR FilterName,
+        BSTR ColKey,
+        enum sgOperator Op,
+        VARIANT Val1,
+        VARIANT Val2,
+        struct IsgFilter * * Res ) = 0;
+    virtual HRESULT __stdcall Remove (
+        VARIANT Index ) = 0;
+    virtual HRESULT __stdcall RemoveAll ( ) = 0;
+    virtual HRESULT __stdcall SetDefinition (
+        BSTR XMLDefinition ) = 0;
+    virtual HRESULT __stdcall GetDefinition (
+        BSTR * Res ) = 0;
+};
+
+struct __declspec(uuid("5696af6d-2b1f-4a30-8100-b60e61886f9c"))
+IsgFilter : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Grid (
+        struct IsgGrid * * Res ) = 0;
+    virtual HRESULT __stdcall get_Name (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall get_Index (
+        short * Res ) = 0;
+    virtual HRESULT __stdcall put_FilterColumn (
+        BSTR Res ) = 0;
+    virtual HRESULT __stdcall get_FilterColumn (
+        BSTR * Res ) = 0;
+    virtual HRESULT __stdcall put_Enabled (
+        VARIANT_BOOL Res ) = 0;
+    virtual HRESULT __stdcall get_Enabled (
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall get_Condition (
+        struct IsgCondition * * Res ) = 0;
+};
+
+enum sgFilterAction
+{
+    sgFilterActionDefault = 0,
+    sgFilterActionMarkHidden = 1,
+    sgFilterActionMarkReadOnly = 2,
+    sgFilterActionSelect = 4,
+    sgFilterActionCustom = 8
+};
+
+enum sgNewRowPos
+{
+    sgNewRowTop = 0,
+    sgNewRowBottom = 1
+};
+
+struct __declspec(uuid("f9c6a98c-39ba-4e46-b3fa-4c4b42b18d28"))
+IsgGridDataSource : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall AddRow (
+        long RowIndex,
+        long ColCount,
+        VARIANT RowData,
+        VARIANT_BOOL * Cancel ) = 0;
+    virtual HRESULT __stdcall DeleteRow (
+        long RowIndex,
+        VARIANT_BOOL * Cancel ) = 0;
+    virtual HRESULT __stdcall GetRowCount (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall GetRowData (
+        long RowIndex,
+        long ColCount,
+        VARIANT * RowData ) = 0;
+    virtual HRESULT __stdcall SetRowData (
+        long RowIndex,
+        long ColCount,
+        VARIANT RowData ) = 0;
+};
+
+struct __declspec(uuid("c82546bc-4d53-435c-9532-f521c1e9f828"))
+IsgGridCustomDraw : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall DrawGridBkg (
+        struct sgGridCustomDraw * DrawInfo,
+        enum sgCustomDrawResponse * Response ) = 0;
+    virtual HRESULT __stdcall DrawCell (
+        struct sgGridCustomDraw * DrawInfo,
+        enum sgCustomDrawResponse * Response ) = 0;
+};
+
+struct sgGridCustomDraw
+{
+    enum sgCustomDrawStage DrawStage;
+    long DC;
+    long Left;
+    long Top;
+    long Right;
+    long Bottom;
+    long RowKey;
+    long RowPos;
+    long RowLevel;
+    BSTR ColKey;
+    long ColIndex;
+    long ColPos;
+    short CellKind;
+    short Heading;
+    short Frozen;
+    short Merged;
+    VARIANT Data;
+    VARIANT Picture;
+};
+
+enum sgCustomDrawResponse
+{
+    sgDoDefault = 0,
+    sgSkipDefault = 1,
+    sgDoDefaultAll = 2,
+    sgSkipDefaultAll = 3
+};
+
+enum sgAutoSearch
+{
+    sgNoAutoSearch = 0,
+    sgAutoSearchFromTop = 1,
+    sgAutoSearchFromCurrentRow = 2
+};
+
+enum sgGridRedrawCode
+{
+    sgRedrawAll = 0,
+    sgRedrawHeadingRow = 1,
+    sgRedrawHeadingCol = 2,
+    sgRedrawBkg = 3,
+    sgRedrawCaption = 4,
+    sgRedrawPreviewPaneSplitter = 5,
+    sgRedrawPreviewPane = 6,
+    sgRedrawGroupByBox = 7,
+    sgRedrawGridCorner = 8
+};
+
+enum sgExpand
+{
+    sgExpandGroups = 1,
+    sgCollapseGroups = 2
+};
+
+enum sgLayoutFormat
+{
+    sgLayoutXML = 1,
+    sgLayoutIgnoreColumns = 256
+};
+
+enum sgGridHitTest
+{
+    sgHitNowhere = 0,
+    sgHitHeadingRow = 1,
+    sgHitHeadingCol = 2,
+    sgHitCell = 3,
+    sgHitCellButton = 4,
+    sgHitBkg = 5,
+    sgHitGroupExpandBtn = 6,
+    sgHitGroupIndentation = 7,
+    sgHitCaption = 8,
+    sgHitPreviewPaneSplitter = 9,
+    sgHitPreviewPane = 10,
+    sgHitGridCorner = 11,
+    sgHitGroupByBox = 12,
+    sgHitGroupByBoxCell = 13
+};
+
+enum sgCellStatus
+{
+    sgCellStatusNormal = 0,
+    sgCellStatusCurrent = 1,
+    sgCellStatusCurrentRow = 2,
+    sgCellStatusDataChanged = 4
+};
+
+struct __declspec(uuid("97bd7a15-77e0-11d2-8eae-008048e27a77"))
+DIsgGridEvents : IDispatch
+{};
+
+struct __declspec(uuid("5a77b360-9785-11d3-90c2-008048e27a77"))
+IsgDataObject : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Clear ( ) = 0;
+    virtual HRESULT __stdcall GetFormat (
+        short Format,
+        VARIANT_BOOL * Res ) = 0;
+    virtual HRESULT __stdcall GetData (
+        short Format,
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall SetData (
+        VARIANT Value = vtMissing,
+        VARIANT Format = vtMissing ) = 0;
+    virtual HRESULT __stdcall get_Files (
+        IDispatch * * Res ) = 0;
+};
+
+struct __declspec(uuid("0b296473-4ca3-4c31-aec7-5bfb2dfd4824"))
+IsgRowBuffer : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall put_Value (
+        long Index,
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_Value (
+        long Index,
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall get_ColumnCount (
+        long * Res ) = 0;
+    virtual HRESULT __stdcall put_Bookmark (
+        VARIANT Res ) = 0;
+    virtual HRESULT __stdcall get_Bookmark (
+        VARIANT * Res ) = 0;
+    virtual HRESULT __stdcall put_RowIndex (
+        long Res ) = 0;
+    virtual HRESULT __stdcall get_RowIndex (
+        long * Res ) = 0;
+};
+
+enum sgGroupOperation
+{
+    sgGroupAdd = 1,
+    sgGroupRemove = 2,
+    sgGroupMove = 3
+};
+
+struct __declspec(uuid("a7542961-a71e-11d2-8ed4-008048e27a77"))
+SGArray;
+    // [ default ] interface IsgArray
+
+struct __declspec(uuid("5a77b361-9785-11d3-90c2-008048e27a77"))
+SGDataObject;
+    // [ default ] interface IsgDataObject
+
+struct __declspec(uuid("28d20e76-4f3a-11d3-b75c-008048e27a77"))
+SGCell;
+    // [ default ] interface IsgCell
+
+struct __declspec(uuid("28d20e77-4f3a-11d3-b75c-008048e27a77"))
+SGCells;
+    // [ default ] interface IsgCells
+
+struct __declspec(uuid("86f749d3-360f-11d3-b736-008048e27a77"))
+SGCondition;
+    // [ default ] interface IsgCondition
+
+struct __declspec(uuid("5483fe4b-2a22-11d3-b729-008048e27a77"))
+SGCalculation;
+    // [ default ] interface IsgCalculation
+
+struct __declspec(uuid("5483fe49-2a22-11d3-b729-008048e27a77"))
+SGCalculations;
+    // [ default ] interface IsgCalculations
+
+struct __declspec(uuid("240e3c92-c2a4-11d2-8eff-008048e27a77"))
+SGValueItem;
+    // [ default ] interface IsgValueItem
+
+struct __declspec(uuid("240e3c93-c2a4-11d2-8eff-008048e27a77"))
+SGValueItems;
+    // [ default ] interface IsgValueItems
+
+struct __declspec(uuid("ea2ce603-9388-11d2-8ec1-008048e27a77"))
+SGStyle;
+    // [ default ] interface IsgStyle
+
+struct __declspec(uuid("ea2ce604-9388-11d2-8ec1-008048e27a77"))
+SGStyles;
+    // [ default ] interface IsgStyles
+
+struct __declspec(uuid("28d20e78-4f3a-11d3-b75c-008048e27a77"))
+SGStyleCondition;
+    // [ default ] interface IsgStyleCondition
+
+struct __declspec(uuid("28d20e79-4f3a-11d3-b75c-008048e27a77"))
+SGStyleConditions;
+    // [ default ] interface IsgStyleConditions
+
+struct __declspec(uuid("1df77b31-c735-11d2-8f0d-008048e27a77"))
+SGControl;
+    // [ default ] interface IsgControl
+
+struct __declspec(uuid("f0a68cb2-9109-11d2-8ebb-008048e27a77"))
+SGColumn;
+    // [ default ] interface IsgColumn
+
+struct __declspec(uuid("f0a68cb3-9109-11d2-8ebb-008048e27a77"))
+SGColumns;
+    // [ default ] interface IsgColumns
+
+struct __declspec(uuid("acae77f2-e214-11d2-8f41-008048e27a77"))
+SGRow;
+    // [ default ] interface IsgRow
+
+struct __declspec(uuid("acae77f3-e214-11d2-8f41-008048e27a77"))
+SGRows;
+    // [ default ] interface IsgRows
+
+struct __declspec(uuid("49d306e3-3625-11d3-b736-008048e27a77"))
+SGRowCollection;
+    // [ default ] interface IsgRowCollection
+
+struct __declspec(uuid("35b30f04-3496-11d3-b734-008048e27a77"))
+SGGroupHeading;
+    // [ default ] interface IsgGroupHeading
+
+struct __declspec(uuid("35b30f05-3496-11d3-b734-008048e27a77"))
+SGGroupHeadings;
+    // [ default ] interface IsgGroupHeadings
+
+struct __declspec(uuid("d96465d1-db03-11d2-8f2c-008048e27a77"))
+SGRange;
+    // [ default ] interface IsgRange
+
+struct __declspec(uuid("d96465d3-db03-11d2-8f2c-008048e27a77"))
+SGRanges;
+    // [ default ] interface IsgRanges
+
+struct __declspec(uuid("5483fe44-2a22-11d3-b729-008048e27a77"))
+SGGroup;
+    // [ default ] interface IsgGroup
+
+struct __declspec(uuid("5483fe45-2a22-11d3-b729-008048e27a77"))
+SGGroups;
+    // [ default ] interface IsgGroups
+
+struct __declspec(uuid("d96465d5-db03-11d2-8f2c-008048e27a77"))
+SGSelection;
+    // [ default ] interface IsgSelection
+
+struct __declspec(uuid("c9cee36a-4d4c-401a-a7da-217d43957ffe"))
+SGFilter;
+    // [ default ] interface IsgFilter
+
+struct __declspec(uuid("ed32a589-3a0b-4b7c-aec3-fd77be997fee"))
+SGFilters;
+    // [ default ] interface IsgFilters
+
+struct __declspec(uuid("f1ebd1d2-1676-4569-8b9e-ec7d4a2295b5"))
+SGRowBuffer;
+    // [ default ] interface IsgRowBuffer
+
+struct __declspec(uuid("97bd7a13-77e0-11d2-8eae-008048e27a77"))
+SGGrid;
+    // [ default ] interface IsgGrid
+    // [ default, source ] dispinterface DIsgGridEvents
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_BeeGrid10 =
+    {0x97bd7a05,0x77e0,0x11d2,{0x8e,0xae,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgConditionTest =
+    {0xbdcd56e9,0xbc22,0x4fe6,{0x8b,0xb7,0x90,0xb7,0x85,0xb1,0x63,0xbb}};
+extern "C" const GUID __declspec(selectany) IID_IsgCell =
+    {0x28d20e74,0x4f3a,0x11d3,{0xb7,0x5c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgGrid =
+    {0x97bd7a12,0x77e0,0x11d2,{0x8e,0xae,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgColumns =
+    {0xf0a68cb1,0x9109,0x11d2,{0x8e,0xbb,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgColumn =
+    {0xf0a68cb0,0x9109,0x11d2,{0x8e,0xbb,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgStyle =
+    {0xea2ce601,0x9388,0x11d2,{0x8e,0xc1,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgValueItems =
+    {0x240e3c91,0xc2a4,0x11d2,{0x8e,0xff,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgValueItem =
+    {0x240e3c90,0xc2a4,0x11d2,{0x8e,0xff,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgControl =
+    {0x1df77b30,0xc735,0x11d2,{0x8f,0x0d,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgStyleConditions =
+    {0x28d20e73,0x4f3a,0x11d3,{0xb7,0x5c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgStyleCondition =
+    {0x28d20e72,0x4f3a,0x11d3,{0xb7,0x5c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgCondition =
+    {0x86f749d2,0x360f,0x11d3,{0xb7,0x36,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgStyles =
+    {0xea2ce602,0x9388,0x11d2,{0x8e,0xc1,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgArray =
+    {0xa7542960,0xa71e,0x11d2,{0x8e,0xd4,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IRowCursor =
+    {0x9f6aa700,0xd188,0x11cd,{0xad,0x48,0x00,0xaa,0x00,0x3c,0x9c,0xb6}};
+extern "C" const GUID __declspec(selectany) IID_IsgSelection =
+    {0xd96465d4,0xdb03,0x11d2,{0x8f,0x2c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgRanges =
+    {0xd96465d2,0xdb03,0x11d2,{0x8f,0x2c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgRange =
+    {0xd96465d0,0xdb03,0x11d2,{0x8f,0x2c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgRows =
+    {0xacae77f1,0xe214,0x11d2,{0x8f,0x41,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgRow =
+    {0xacae77f0,0xe214,0x11d2,{0x8f,0x41,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgGroupHeading =
+    {0x35b30f02,0x3496,0x11d3,{0xb7,0x34,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgGroupHeadings =
+    {0x35b30f03,0x3496,0x11d3,{0xb7,0x34,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgRowCollection =
+    {0x49d306e2,0x3625,0x11d3,{0xb7,0x36,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgGroup =
+    {0x5483fe42,0x2a22,0x11d3,{0xb7,0x29,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgCalculations =
+    {0x5483fe48,0x2a22,0x11d3,{0xb7,0x29,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgCalculation =
+    {0x5483fe4a,0x2a22,0x11d3,{0xb7,0x29,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgCells =
+    {0x28d20e75,0x4f3a,0x11d3,{0xb7,0x5c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgGroups =
+    {0x5483fe43,0x2a22,0x11d3,{0xb7,0x29,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgFilters =
+    {0xcb0ef935,0x3104,0x4a0e,{0xa5,0xcb,0x42,0x61,0x1d,0x29,0xa7,0xc1}};
+extern "C" const GUID __declspec(selectany) IID_IsgFilter =
+    {0x5696af6d,0x2b1f,0x4a30,{0x81,0x00,0xb6,0x0e,0x61,0x88,0x6f,0x9c}};
+extern "C" const GUID __declspec(selectany) IID_IsgGridDataSource =
+    {0xf9c6a98c,0x39ba,0x4e46,{0xb3,0xfa,0x4c,0x4b,0x42,0xb1,0x8d,0x28}};
+extern "C" const GUID __declspec(selectany) IID_IsgGridCustomDraw =
+    {0xc82546bc,0x4d53,0x435c,{0x95,0x32,0xf5,0x21,0xc1,0xe9,0xf8,0x28}};
+extern "C" const GUID __declspec(selectany) DIID_DIsgGridEvents =
+    {0x97bd7a15,0x77e0,0x11d2,{0x8e,0xae,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgDataObject =
+    {0x5a77b360,0x9785,0x11d3,{0x90,0xc2,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) IID_IsgRowBuffer =
+    {0x0b296473,0x4ca3,0x4c31,{0xae,0xc7,0x5b,0xfb,0x2d,0xfd,0x48,0x24}};
+extern "C" const GUID __declspec(selectany) CLSID_SGArray =
+    {0xa7542961,0xa71e,0x11d2,{0x8e,0xd4,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGDataObject =
+    {0x5a77b361,0x9785,0x11d3,{0x90,0xc2,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGCell =
+    {0x28d20e76,0x4f3a,0x11d3,{0xb7,0x5c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGCells =
+    {0x28d20e77,0x4f3a,0x11d3,{0xb7,0x5c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGCondition =
+    {0x86f749d3,0x360f,0x11d3,{0xb7,0x36,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGCalculation =
+    {0x5483fe4b,0x2a22,0x11d3,{0xb7,0x29,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGCalculations =
+    {0x5483fe49,0x2a22,0x11d3,{0xb7,0x29,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGValueItem =
+    {0x240e3c92,0xc2a4,0x11d2,{0x8e,0xff,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGValueItems =
+    {0x240e3c93,0xc2a4,0x11d2,{0x8e,0xff,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGStyle =
+    {0xea2ce603,0x9388,0x11d2,{0x8e,0xc1,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGStyles =
+    {0xea2ce604,0x9388,0x11d2,{0x8e,0xc1,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGStyleCondition =
+    {0x28d20e78,0x4f3a,0x11d3,{0xb7,0x5c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGStyleConditions =
+    {0x28d20e79,0x4f3a,0x11d3,{0xb7,0x5c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGControl =
+    {0x1df77b31,0xc735,0x11d2,{0x8f,0x0d,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGColumn =
+    {0xf0a68cb2,0x9109,0x11d2,{0x8e,0xbb,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGColumns =
+    {0xf0a68cb3,0x9109,0x11d2,{0x8e,0xbb,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGRow =
+    {0xacae77f2,0xe214,0x11d2,{0x8f,0x41,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGRows =
+    {0xacae77f3,0xe214,0x11d2,{0x8f,0x41,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGRowCollection =
+    {0x49d306e3,0x3625,0x11d3,{0xb7,0x36,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGGroupHeading =
+    {0x35b30f04,0x3496,0x11d3,{0xb7,0x34,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGGroupHeadings =
+    {0x35b30f05,0x3496,0x11d3,{0xb7,0x34,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGRange =
+    {0xd96465d1,0xdb03,0x11d2,{0x8f,0x2c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGRanges =
+    {0xd96465d3,0xdb03,0x11d2,{0x8f,0x2c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGGroup =
+    {0x5483fe44,0x2a22,0x11d3,{0xb7,0x29,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGGroups =
+    {0x5483fe45,0x2a22,0x11d3,{0xb7,0x29,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGSelection =
+    {0xd96465d5,0xdb03,0x11d2,{0x8f,0x2c,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+extern "C" const GUID __declspec(selectany) CLSID_SGFilter =
+    {0xc9cee36a,0x4d4c,0x401a,{0xa7,0xda,0x21,0x7d,0x43,0x95,0x7f,0xfe}};
+extern "C" const GUID __declspec(selectany) CLSID_SGFilters =
+    {0xed32a589,0x3a0b,0x4b7c,{0xae,0xc3,0xfd,0x77,0xbe,0x99,0x7f,0xee}};
+extern "C" const GUID __declspec(selectany) CLSID_SGRowBuffer =
+    {0xf1ebd1d2,0x1676,0x4569,{0x8b,0x9e,0xec,0x7d,0x4a,0x22,0x95,0xb5}};
+extern "C" const GUID __declspec(selectany) CLSID_SGGrid =
+    {0x97bd7a13,0x77e0,0x11d2,{0x8e,0xae,0x00,0x80,0x48,0xe2,0x7a,0x77}};
+
+#pragma pack(pop)

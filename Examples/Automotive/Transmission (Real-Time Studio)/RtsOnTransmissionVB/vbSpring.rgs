@@ -1,0 +1,26 @@
+HKCR
+{
+	RtsOnTransmissionVB.vbSpring.1 = s 'vbSpring Class'
+	{
+		CLSID = s '{DE8ED079-5EFD-4C95-A250-8B2D59CB6D95}'
+	}
+	RtsOnTransmissionVB.vbSpring = s 'vbSpring Class'
+	{
+		CLSID = s '{DE8ED079-5EFD-4C95-A250-8B2D59CB6D95}'
+		CurVer = s 'RtsOnTransmissionVB.vbSpring.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {DE8ED079-5EFD-4C95-A250-8B2D59CB6D95} = s 'vbSpring Class'
+		{
+			ProgID = s 'RtsOnTransmissionVB.vbSpring.1'
+			VersionIndependentProgID = s 'RtsOnTransmissionVB.vbSpring'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A0FB58BE-0E08-45F6-8A4A-732A46D7FE96}'
+		}
+	}
+}

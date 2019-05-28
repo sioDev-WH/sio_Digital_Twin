@@ -1,0 +1,13 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8447.0 (2b55b230).
+//
+// OnUMLEso.tlh
+//
+// C++ source equivalent of Win32 type library .\..\bin\OnUMLEso.tlb
+// compiler-generated file created 09/12/01 at 09:25:45 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+#pragma pack(pop)

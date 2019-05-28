@@ -1,0 +1,42 @@
+// RpyPDEReactor.idl : IDL source for RpyPDEReactor.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (RpyPDEReactor.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "c:\distcomponents\OnUMLEso\OnUMLEso.idl";
+	[
+		object,
+		uuid(225F917C-E26F-4E35-B5DB-C6EA501C551C),
+		dual,
+		helpstring("IRpyPDEReactorTest Interface"),
+		pointer_default(unique)
+	]
+	interface IRpyPDEReactorTest : IDispatch
+	{
+		[id(1), helpstring("method Step")] HRESULT Step([in] double time);
+		[id(2), helpstring("method GetVariables")] HRESULT GetVariables([in] double time, [in, out] SAFEARRAY(double)* ppsaVars);
+	};
+
+
+[
+	uuid(50A4441F-8E87-4E5E-AA02-683A12A1DDCA),
+	version(1.0),
+	helpstring("RpyPDEReactor 1.0 Type Library")
+]
+library RPYPDEREACTORLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(162A3AE1-0CAE-4DA1-9675-74C98AC7940D),
+		helpstring("RpyPDEReactorTest Class")
+	]
+	coclass RpyPDEReactorTest
+	{
+		[default] interface IRpyPDEReactorTest;
+	};
+};

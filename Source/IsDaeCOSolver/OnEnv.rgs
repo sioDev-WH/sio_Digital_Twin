@@ -1,0 +1,26 @@
+HKCR
+{
+	ISDaeCOSolver.OnEnv.1 = s 'OnEnv Class'
+	{
+		CLSID = s '{F1B06AA9-2721-4516-8BC4-12B56F2C5E31}'
+	}
+	ISDaeCOSolver.OnEnv = s 'OnEnv Class'
+	{
+		CLSID = s '{F1B06AA9-2721-4516-8BC4-12B56F2C5E31}'
+		CurVer = s 'ISDaeCOSolver.OnEnv.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {F1B06AA9-2721-4516-8BC4-12B56F2C5E31} = s 'OnEnv Class'
+		{
+			ProgID = s 'ISDaeCOSolver.OnEnv.1'
+			VersionIndependentProgID = s 'ISDaeCOSolver.OnEnv'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{77CBD757-8006-11D4-98A7-00C04F6801A9}'
+		}
+	}
+}

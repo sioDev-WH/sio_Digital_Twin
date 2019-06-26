@@ -12,6 +12,7 @@ Specifically, the goals of algorithm migration are to:
 1. Migrate the **simulation engine algorithms and tools**  to the cloud (AWS, Google and Azure) and to enable parallel processing.
 2. Add support to new real-time software modeling environments (non-UML and new profiles)
 3. Migrate the **automatic real-time code generation algorithms** to the cloud to support Hardware-in-the-Loop (HIL) on FPGA and MCU targets.
+4. Add support for machine learning algorithms (with complexity-regularization) for monitorng and diagnosis of the real-time hybrid dynamic systems and embedded software.
 
 ## Hardware
 
